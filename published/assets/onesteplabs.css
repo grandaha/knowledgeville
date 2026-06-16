@@ -35,8 +35,36 @@
   font-weight: 600;
 }
 
-/* Keep the orange a spark: use it for the active/hover accents only
-   (Material already routes accent there). Nav + header lead with blue. */
+/* Header: a light neutral bar so the One Step Labs mark + wordmark read clearly.
+   The body keeps OSL blue as the lead; the header chrome stays neutral. */
 .md-header {
-  box-shadow: 0 0 0.2rem rgba(17, 24, 39, 0.1), 0 0.2rem 0.4rem rgba(17, 24, 39, 0.1);
+  background-color: #F4F5F7;           /* OSL neutral-100 */
+  color: #111827;                      /* dark text + icons */
+  border-bottom: 1px solid #E5E7EB;    /* neutral-200 */
+  box-shadow: none;
 }
+.md-header--shadow {
+  box-shadow: 0 0 0.2rem rgba(17, 24, 39, 0.05), 0 0.2rem 0.4rem rgba(17, 24, 39, 0.05);
+}
+.md-header__title {
+  color: #111827;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.md-header__button,
+.md-header .md-icon {
+  color: #374151;                      /* neutral-700 icons */
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.7rem;                      /* a touch larger so the mark is clearly visible */
+  width: auto;
+}
+/* Search field on a light header */
+.md-search__input {
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: inset 0 0 0 1px #E5E7EB;
+}
+.md-search__input::placeholder { color: #6B7280; }
+.md-search__icon { color: #6B7280; }

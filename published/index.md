@@ -4,10 +4,14 @@ okf_version: "0.1"
 
 # Welcome to Knowledgeville
 
-Knowledgeville is a public, openly-licensed knowledge base built on the
-[Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md).
-Every page is a structured concept — a framework, playbook, assessment, or
-reference — authored directly in the open and continuously validated.
+Knowledgeville is the public knowledge base from **[One Step Labs](https://www.onesteplabs.com)** —
+enterprise-AI research we're doing (and have done), shared openly so it's useful beyond us.
+
+The direction is One Step Labs'; the research and writing are done with Claude. We publish it here as
+structured, openly-licensed concepts — frameworks, playbooks, assessments, and references built on the
+[Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+and continuously validated — so others can learn from the work, not just the conclusions. Learn by
+doing; share what's worth sharing.
 
 ## Frameworks
 

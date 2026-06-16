@@ -1,0 +1,44 @@
+site_name: Knowledgeville
+site_description: A public OKF v0.1 knowledge base.
+site_url: https://knowledge.onesteplabs.com/
+docs_dir: published
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+validation:
+  links:
+    absolute_links: relative_to_docs
+    not_found: warn
+    anchors: warn

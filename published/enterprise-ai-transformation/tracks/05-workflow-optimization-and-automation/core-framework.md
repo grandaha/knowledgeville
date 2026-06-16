@@ -4,9 +4,10 @@ title: Core Framework
 description: How to identify and prioritize AI-enabled workflows across the four levels of integration, with ROI framing and cross-track connections.
 tags: [workflow-optimization, automation, prioritization]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

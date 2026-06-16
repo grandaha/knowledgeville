@@ -4,9 +4,10 @@ title: The 90-Day Launch
 description: What to do in the first 90 days of an AI transformation program regardless of org type, week by week.
 tags: [program-management, launch, 90-day-plan, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

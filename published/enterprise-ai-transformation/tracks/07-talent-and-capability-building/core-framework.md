@@ -4,9 +4,10 @@ title: Core Framework
 description: The capability stack an AI-mature organization needs, AI literacy levels, and build vs. hire vs. partner decisions.
 tags: [talent, capability-building, ai-literacy, core-framework]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

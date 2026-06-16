@@ -4,9 +4,10 @@ title: Program Architecture
 description: How to staff and fund an eight-track AI transformation program, including governance structure and roles.
 tags: [program-management, operating-model, governance, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

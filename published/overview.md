@@ -1,19 +1,19 @@
 ---
 type: Concept
 title: Knowledgeville
-description: Open enterprise-AI research from One Step Labs, shared as a public OKF knowledge base.
+description: Open research from One Step Labs on the things we find important, shared as a public OKF knowledge base.
 tags: [knowledge-base]
 timestamp: "2026-06-16"
 ---
 
 Knowledgeville is the public knowledge base from **[One Step Labs](https://www.onesteplabs.com)** —
-enterprise-AI research we're doing (and have done), shared openly so it's useful beyond us.
+research on the things we find important, shared openly so it's useful beyond us.
 
 The direction is One Step Labs'; the research and writing are done with Claude. We publish it here as
 structured, openly-licensed concepts — frameworks, playbooks, assessments, and references built on the
 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-and continuously validated — so others can learn from the work, not just the conclusions. Learn by
-doing; share what's worth sharing.
+and continuously validated — so others can learn from the work, not just the conclusions. Our first body
+of work is enterprise AI transformation; more topics will follow. Learn by doing; share what's worth sharing.
 
 ## Frameworks
 

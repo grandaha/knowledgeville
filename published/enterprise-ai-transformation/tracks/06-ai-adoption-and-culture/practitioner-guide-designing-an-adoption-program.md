@@ -4,9 +4,10 @@ title: "Practitioner Guide: Designing an Adoption Program"
 description: How to design an AI adoption program from scratch — champions, communication, resistance, and measuring progress.
 tags: [ai-adoption, practitioner-guide, change-management, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

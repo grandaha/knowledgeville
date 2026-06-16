@@ -4,9 +4,10 @@ title: Sequencing Playbooks
 description: Four sequencing archetypes with recommended track prioritization and pacing for different organization types.
 tags: [program-management, sequencing, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 Four sequencing archetypes with recommended track prioritization and pacing.
 

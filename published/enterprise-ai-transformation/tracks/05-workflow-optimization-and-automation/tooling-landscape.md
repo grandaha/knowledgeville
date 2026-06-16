@@ -4,9 +4,10 @@ title: Tooling Landscape
 description: Process mapping and discovery tools, workflow automation platforms, AI agent frameworks and orchestration, and process mining tools.
 tags: [workflow-optimization, tooling, process-mining]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

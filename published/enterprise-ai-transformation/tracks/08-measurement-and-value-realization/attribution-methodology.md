@@ -4,9 +4,10 @@ title: Attribution Methodology
 description: How to attribute value back to specific AI investments and build the investment case from measurement data.
 tags: [measurement, attribution, roi, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

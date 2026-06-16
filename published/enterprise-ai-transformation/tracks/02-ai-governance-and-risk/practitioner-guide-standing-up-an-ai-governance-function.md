@@ -4,9 +4,10 @@ title: "Practitioner Guide: Standing Up an AI Governance Function"
 description: How to design and staff an AI governance function, including policy templates, human-in-the-loop frameworks, and incident response design.
 tags: [ai-governance, policy, incident-response]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

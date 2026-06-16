@@ -4,9 +4,10 @@ title: Tooling Landscape
 description: AI governance platforms, model monitoring and observability tools, regulatory compliance management, and policy management systems.
 tags: [ai-governance, tooling, observability]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

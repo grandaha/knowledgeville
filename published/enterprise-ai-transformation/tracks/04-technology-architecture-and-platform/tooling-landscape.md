@@ -4,9 +4,10 @@ title: Tooling Landscape
 description: AI platform and orchestration tools, API management and cost governance, model evaluation, and developer tooling.
 tags: [ai-platform, tooling, orchestration]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

@@ -4,9 +4,10 @@ title: About This Framework
 description: What the Enterprise AI Transformation framework is, who it's for, and how to use it.
 tags: [ai-transformation, framework, orientation]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

@@ -4,9 +4,10 @@ title: Core Framework
 description: What the AI platform layer owns — tooling standardization, API governance, model selection, and build vs. buy vs. partner decisions.
 tags: [ai-platform, architecture, model-selection]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

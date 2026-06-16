@@ -4,9 +4,10 @@ title: "Practitioner Guide: Capability Building Roadmap"
 description: How to build a capability development roadmap — AI literacy programs, prompt engineering fluency, and developing internal champions.
 tags: [talent, capability-building, practitioner-guide, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

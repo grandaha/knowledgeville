@@ -4,9 +4,10 @@ title: "Practitioner Guide: Running a Workflow Optimization Program"
 description: Running a workflow discovery and prioritization process, redesigning workflows with AI in the loop, and managing change through to measurement.
 tags: [workflow-optimization, change-management, automation]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

@@ -4,9 +4,10 @@ title: "Assessment: Talent Readiness Scoring"
 description: A scoring assessment for talent readiness — skills gap analysis, build vs. buy gaps, and learning program coverage.
 tags: [talent, assessment, readiness-scoring, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

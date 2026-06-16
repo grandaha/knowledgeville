@@ -4,9 +4,10 @@ title: "Assessment: Platform Maturity Scoring"
 description: Platform maturity dimensions, integration coverage audit, cost and governance gap analysis, and build vs. buy readiness.
 tags: [ai-platform, assessment, maturity]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

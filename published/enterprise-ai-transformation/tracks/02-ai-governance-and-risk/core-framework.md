@@ -4,9 +4,10 @@ title: Core Framework
 description: Model risk, vendor risk, regulatory compliance, and the internal policy layer that governs AI deployment.
 tags: [ai-governance, risk, compliance]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

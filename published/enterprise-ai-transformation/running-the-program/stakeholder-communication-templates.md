@@ -4,9 +4,10 @@ title: Stakeholder Communication Templates
 description: Ready-to-use communication templates for boards, employees, IT and data functions, external stakeholders, and program status updates.
 tags: [program-management, communication, templates, reference]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 Ready-to-use communication templates.
 

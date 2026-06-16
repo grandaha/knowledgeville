@@ -4,9 +4,10 @@ title: The Four Levels of Workflow AI Integration
 description: Definitions and examples for each level of workflow AI integration, from AI-assisted tasks to autonomous agentic workflows.
 tags: [workflow-optimization, automation, agentic-ai]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

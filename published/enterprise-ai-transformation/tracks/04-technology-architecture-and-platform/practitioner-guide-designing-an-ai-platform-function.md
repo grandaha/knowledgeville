@@ -4,9 +4,10 @@ title: "Practitioner Guide: Designing an AI Platform Function"
 description: How to design an AI platform function, including vendor evaluation, API cost governance, developer enablement, and integration patterns.
 tags: [ai-platform, vendor-evaluation, integration]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

@@ -4,9 +4,10 @@ title: Executive Summary
 description: A one-page synthesis of the Enterprise AI Transformation framework for leaders deciding where to invest before funding AI programs.
 tags: [ai-transformation, executive-summary, leadership]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 A one-page synthesis of the Enterprise AI Transformation framework — for leaders deciding where to invest before funding AI programs.
 

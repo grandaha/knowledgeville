@@ -4,9 +4,10 @@ title: "Assessment: Workflow Maturity & Opportunity Scoring"
 description: Workflow maturity scoring across functions, opportunity sizing, and a prioritization matrix of value vs. data readiness vs. complexity.
 tags: [workflow-optimization, assessment, prioritization]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

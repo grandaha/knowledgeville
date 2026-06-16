@@ -4,9 +4,10 @@ title: Core Framework
 description: Why most AI programs can't prove they worked, the instrumentation-before-deployment principle, and the measurement-to-reprioritization feedback loop.
 tags: [measurement, value-realization, feedback-loop, core-framework]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

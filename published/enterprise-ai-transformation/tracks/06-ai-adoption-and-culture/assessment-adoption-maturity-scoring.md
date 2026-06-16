@@ -4,9 +4,10 @@ title: "Assessment: Adoption Maturity Scoring"
 description: A scoring assessment for AI adoption maturity — utilization, cultural readiness, and resistance mapping.
 tags: [ai-adoption, assessment, maturity-scoring, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

@@ -4,9 +4,10 @@ title: Integrated Assessment
 description: The full eight-dimension diagnostic that produces a prioritized gap list across all tracks.
 tags: [program-management, assessment, diagnostic, playbook]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 The full eight-dimension diagnostic that produces a prioritized gap list.
 

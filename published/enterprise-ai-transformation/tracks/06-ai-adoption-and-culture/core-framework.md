@@ -4,9 +4,10 @@ title: Core Framework
 description: What AI adoption actually requires beyond tool rollout — the mindset shift, change resistance, and how culture gates every other track.
 tags: [ai-adoption, culture, change-management, core-framework]
 timestamp: "2026-06-12"
+status: planned
 ---
 
-> **Status:** stub — content pending migration/authoring.
+> **Status:** Planned — not yet written.
 
 ## Planned contents
 

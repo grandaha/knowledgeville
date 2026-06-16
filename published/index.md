@@ -2,7 +2,7 @@
 okf_version: "0.1"
 ---
 
-# Knowledgeville
+# Welcome to Knowledgeville
 
 Knowledgeville is a public, openly-licensed knowledge base built on the
 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md).
@@ -24,4 +24,5 @@ reference — authored directly in the open and continuously validated.
 
 ## Browse
 
+* [Assets](assets/)
 * [Enterprise AI Transformation](enterprise-ai-transformation/) - A structured eight-track framework for organizations navigating AI transformation, from strategy and governance through data, workflow, adoption, talent, and value measurement.

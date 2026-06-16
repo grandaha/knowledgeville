@@ -5,6 +5,11 @@ docs_dir: published
 
 theme:
   name: material
+  logo: assets/logo-mark.svg
+  favicon: assets/logo-mark.svg
+  font:
+    text: DM Sans
+    code: DM Mono
   features:
     - navigation.indexes
     - navigation.sections
@@ -16,16 +21,30 @@ theme:
     - toc.follow
   palette:
     - scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
 
+extra_css:
+  - assets/onesteplabs.css
+
 plugins:
   - search
+  - awesome-pages
+
+# The root overview.md is the homepage's source (its body is spliced into the
+# generated root index.md by build_index.py), so it must not also render as its
+# own /overview/ page. Section overviews are kept — they are linked from content.
+exclude_docs: |
+  /overview.md
 
 markdown_extensions:
   - admonition
@@ -42,3 +61,5 @@ validation:
     absolute_links: relative_to_docs
     not_found: warn
     anchors: warn
+  nav:
+    omitted_files: ignore

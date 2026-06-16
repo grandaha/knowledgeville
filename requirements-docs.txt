@@ -2,3 +2,5 @@
 # which stays zero-dependency stdlib). mkdocs-material >= 9.5 requires
 # MkDocs >= 1.6, needed for validation.links.absolute_links: relative_to_docs.
 mkdocs-material>=9.5,<10
+# Clean section nav labels (titles from .pages, not directory names).
+mkdocs-awesome-pages-plugin>=2.9

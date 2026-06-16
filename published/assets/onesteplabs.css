@@ -1,0 +1,42 @@
+/* One Step Labs brand for Knowledgeville (MkDocs Material).
+   Maps the OSL design tokens onto Material's CSS variables.
+   Blue 500 leads; Orange 500 is a spark used sparingly. */
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #1B75BC; /* OSL Blue 500 */
+  --md-primary-fg-color--light: #5FA8DC; /* Blue 300 */
+  --md-primary-fg-color--dark:  #0D5A96; /* Blue 700 */
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color:             #E06030; /* OSL Orange 500 */
+  --md-accent-fg-color--transparent: rgba(224, 96, 48, 0.10);
+}
+
+:root {
+  --md-typeset-a-color: #1B75BC;            /* links = OSL Blue 500 */
+}
+
+/* Light scheme: OSL neutrals for text + page surface. */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color:    #ffffff;
+  --md-typeset-color:       #111827;        /* neutral-900 */
+  --md-default-fg-color--light: #374151;    /* neutral-700 */
+}
+
+/* Headings: DM Sans, tighter tracking per the OSL type scale. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #111827;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+/* Keep the orange a spark: use it for the active/hover accents only
+   (Material already routes accent there). Nav + header lead with blue. */
+.md-header {
+  box-shadow: 0 0 0.2rem rgba(17, 24, 39, 0.1), 0 0.2rem 0.4rem rgba(17, 24, 39, 0.1);
+}

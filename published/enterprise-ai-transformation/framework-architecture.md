@@ -1,6 +1,6 @@
 ---
 type: Concept
-title: The Eight-Track Model
+title: Framework Architecture
 description: The cross-cutting architecture of the framework — what each of the eight tracks owns, how they depend on one another, how to sequence them, the two failure modes, and a maturity matrix.
 tags: [ai-transformation, eight-track-model, architecture, sequencing, maturity-model]
 timestamp: "2026-06-15"
@@ -18,14 +18,14 @@ Every track is accountable for one decision or asset the others depend on. Read 
 
 | # | Track | What it owns | Key output others depend on |
 | --- | --- | --- | --- |
-| 01 | [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/overview.md) | Where AI is allowed to matter, and why | A funded set of priorities every other track is scoped against |
-| 02 | [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/overview.md) | The guardrails — what is permitted, by whom, under what controls | Acceptable-use, model-risk, and compliance boundaries |
-| 03 | [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/overview.md) | Whether the data AI depends on is fit for purpose | Trustworthy, accessible, governed data |
-| 04 | [Technology Architecture & Platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/overview.md) | A coherent platform instead of point-solution sprawl | Standardized tooling, model access, and integration patterns |
-| 05 | [Workflow Optimization & Automation](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/overview.md) | Which work gets redesigned with AI, and how far | Redesigned, higher-leverage workflows |
-| 06 | [AI Adoption & Culture](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/overview.md) | Whether people actually change how they work | Real usage and behavior change, not shelfware |
-| 07 | [Talent & Capability Building](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/overview.md) | Whether the organization has the competencies the work requires | AI-literate people and redesigned roles |
-| 08 | [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/overview.md) | Whether any of it is actually working | Evidence that reprioritizes investment |
+| 01 | [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md) | Where AI is allowed to matter, and why | A funded set of priorities every other track is scoped against |
+| 02 | [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md) | The guardrails — what is permitted, by whom, under what controls | Acceptable-use, model-risk, and compliance boundaries |
+| 03 | [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) | Whether the data AI depends on is fit for purpose | Trustworthy, accessible, governed data |
+| 04 | [Technology Architecture & Platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md) | A coherent platform instead of point-solution sprawl | Standardized tooling, model access, and integration patterns |
+| 05 | [Workflow Optimization & Automation](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/index.md) | Which work gets redesigned with AI, and how far | Redesigned, higher-leverage workflows |
+| 06 | [AI Adoption & Culture](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/index.md) | Whether people actually change how they work | Real usage and behavior change, not shelfware |
+| 07 | [Talent & Capability Building](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/index.md) | Whether the organization has the competencies the work requires | AI-literate people and redesigned roles |
+| 08 | [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) | Whether any of it is actually working | Evidence that reprioritizes investment |
 
 These eight group into four layers, which is the clearest way to hold the model in your head:
 
@@ -115,7 +115,7 @@ Two patterns to watch for in a completed assessment:
 
 ## Using the model
 
-1. **Assess** all eight tracks on the ladder above (see the Integrated Assessment in [Running the Program](/enterprise-ai-transformation/running-the-program/overview.md)).
+1. **Assess** all eight tracks on the ladder above (see the Integrated Assessment in [Running the Program](/enterprise-ai-transformation/running-the-program/index.md)).
 2. **Find the binding constraint** — the lowest track that is throttling the ones downstream of it.
 3. **Sequence by dependency**, not by track number, using the patterns above for your organization type.
 4. **Stagger intensity** and let Measurement (08) pace the next investment.

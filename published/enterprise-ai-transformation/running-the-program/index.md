@@ -1,8 +1,13 @@
 # Running the Program
 
+How to operate all eight tracks as a coherent program — staffing, funding, sequencing, and stakeholder communication.
+
+---
+
+## In this section
+
 | Page | Last updated |
 | --- | --- |
-| [Running the Program](overview.md)<br>How to operate all eight tracks as a coherent program — staffing, funding, sequencing, and stakeholder communication. | Updated 2026-06-12 |
 | [Integrated Assessment](integrated-assessment.md)<br>The full eight-dimension diagnostic that produces a prioritized gap list across all tracks. | Planned |
 | [Program Architecture](program-architecture.md)<br>How to staff and fund an eight-track AI transformation program, including governance structure and roles. | Planned |
 | [Sequencing Playbooks](sequencing-playbooks.md)<br>Four sequencing archetypes with recommended track prioritization and pacing for different organization types. | Planned |

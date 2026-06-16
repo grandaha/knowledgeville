@@ -13,7 +13,6 @@ theme:
     code: DM Mono
   features:
     - navigation.indexes
-    - navigation.sections
     - navigation.top
     - navigation.footer
     - search.suggest
@@ -41,11 +40,11 @@ plugins:
   - search
   - awesome-pages
 
-# The root overview.md is the homepage's source (its body is spliced into the
-# generated root index.md by build_index.py), so it must not also render as its
-# own /overview/ page. Section overviews are kept — they are linked from content.
+# Every overview.md is an AUTHORED SOURCE whose body is spliced into its directory's
+# generated index.md by build_index.py — so no overview.md renders as its own page.
+# (navigation.indexes makes each index.md the section's landing page instead.)
 exclude_docs: |
-  /overview.md
+  overview.md
 
 markdown_extensions:
   - admonition

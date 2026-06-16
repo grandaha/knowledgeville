@@ -1,8 +1,11 @@
 # Data Readiness
 
+The six foundational components of AI data readiness — Data Quality, Data Governance, Access & Integration, Lineage & Metadata, Infrastructure Readiness, and Security & Compliance.
+
+## In this section
+
 | Page | Last updated |
 | --- | --- |
-| [Data Readiness](overview.md)<br>The six foundational components of AI data readiness — Data Quality, Data Governance, Access & Integration, Lineage & Metadata, Infrastructure Readiness, and Security & Compliance. | Updated 2026-06-12 |
 | [Assessment & Measurement](assessment-and-measurement/)<br>Tools for determining where your organization stands across all six readiness dimensions and making the business case for investment. | Updated 2026-06-12 |
 | [Core Framework](core-framework/)<br>The six foundational components of AI data readiness, each covering the full framework, AI-specific failure modes, tooling landscape, and a practical readiness checklist. | Updated 2026-06-12 |
 | [Practitioner Guides](practitioner-guides/)<br>Operational how-to guides for each AI data readiness discipline — methodology, tooling, and step-by-step implementation. | Updated 2026-06-12 |

@@ -15,7 +15,7 @@ Most enterprise AI programs do not fail in the model. They fail in the mandate. 
 
 Read those two figures together and the picture is unambiguous. The binding constraint on AI value is not compute, talent, or tooling. It is strategy and leadership — knowing what to build, why it matters to the business, and who is accountable for the outcome.
 
-This is why AI Strategy & Leadership sits at the top of the stack. It is the upstream track. Everything in [the eight-track model](/enterprise-ai-transformation/the-eight-track-model.md) — governance, data, talent, infrastructure, measurement — gets scoped against what this track decides. Its job is not to produce inspiration. Its job is to produce a funded set of priorities that every other track is scoped against. Without that artifact, the other seven tracks optimize in the dark.
+This is why AI Strategy & Leadership sits at the top of the stack. It is the upstream track. Everything in [the eight-track model](/enterprise-ai-transformation/framework-architecture.md) — governance, data, talent, infrastructure, measurement — gets scoped against what this track decides. Its job is not to produce inspiration. Its job is to produce a funded set of priorities that every other track is scoped against. Without that artifact, the other seven tracks optimize in the dark.
 
 The stakes are set by the sheer magnitude of spend now in motion.
 
@@ -23,7 +23,7 @@ The stakes are set by the sheer magnitude of spend now in motion.
 
 At that scale, the absence of strategy is not a neutral state. It is capital deployed against a hope. The purpose of this page is to define the artifact, the decisions, and the governance that convert that spend into returns — and to name the failure modes that quietly burn it.
 
-For the full scope of this track, see [the track overview](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/overview.md).
+For the full scope of this track, see [the track overview](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md).
 
 ---
 
@@ -102,7 +102,7 @@ Each horizon needs its own success metric and its own patience. Holding a transf
 
 Two implications follow. First, value attribution must tie each initiative back to a specific P&L line, or the portfolio cannot be steered. Second, returns concentrate. As the front-runner evidence shows, companies that drive a single strategic bet to scale are nearly **3x** more likely to beat their ROI expectations — value pools in a few deep bets, not across a wide, shallow field.
 
-This is where strategy depends on measurement. The attribution discipline, the value-realization tracking, and the signal that tells leadership which bets to double down on and which to cut all live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/overview.md). Strategy sets the intent; measurement closes the loop back to it. A strategy with no feedback loop is a strategy that cannot learn.
+This is where strategy depends on measurement. The attribution discipline, the value-realization tracking, and the signal that tells leadership which bets to double down on and which to cut all live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Strategy sets the intent; measurement closes the loop back to it. A strategy with no feedback loop is a strategy that cannot learn.
 
 ---
 
@@ -110,7 +110,7 @@ This is where strategy depends on measurement. The attribution discipline, the v
 
 Above the eight tracks sits a leadership layer. Its job is to hold intent steady, arbitrate trade-offs, and redirect capital as evidence arrives. This is not the same as risk governance — and conflating the two is a common mistake.
 
-The handoff is clean. **Track 01 owns intent**: what the firm is trying to achieve with AI and where it places its bets. [Track 02, AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/overview.md) **owns the guardrails**: the policies, controls, and review gates that keep deployment safe and compliant. Strategy decides *what* and *why*; governance decides *within what limits*. One sets direction, the other sets boundaries, and the steering structure connects them.
+The handoff is clean. **Track 01 owns intent**: what the firm is trying to achieve with AI and where it places its bets. [Track 02, AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md) **owns the guardrails**: the policies, controls, and review gates that keep deployment safe and compliant. Strategy decides *what* and *why*; governance decides *within what limits*. One sets direction, the other sets boundaries, and the steering structure connects them.
 
 The weak point in most organizations is ownership at the top. AI oversight too often lives well below the level where strategic trade-offs actually get made.
 
@@ -139,7 +139,7 @@ The root cause is rarely the pilot. It is the missing funding and operating mode
 
 **3. The loudest-function trap.** A pattern this track names: AI ownership falls to whichever function shouts the most — the team with the most enthusiasm or political capital, rather than the function where value concentrates. The result is scattershot: effort flows to the loudest, not the highest, and the value thesis is never the organizing principle it should be.
 
-**4. The binding-constraint trap.** Leadership funds the most *visible* layer — usually models and tooling, the layer that demos well — instead of the layer actually limiting outcomes, which is often data, talent, or governance. As [the eight-track model](/enterprise-ai-transformation/the-eight-track-model.md) makes explicit, value is gated by the binding constraint, and spending on a non-binding layer produces motion without progress. Leadership's job is to find the real constraint and fund *that*, even when it is unglamorous.
+**4. The binding-constraint trap.** Leadership funds the most *visible* layer — usually models and tooling, the layer that demos well — instead of the layer actually limiting outcomes, which is often data, talent, or governance. As [the eight-track model](/enterprise-ai-transformation/framework-architecture.md) makes explicit, value is gated by the binding constraint, and spending on a non-binding layer produces motion without progress. Leadership's job is to find the real constraint and fund *that*, even when it is unglamorous.
 
 ---
 

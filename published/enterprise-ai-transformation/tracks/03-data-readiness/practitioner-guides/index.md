@@ -1,8 +1,21 @@
 # Practitioner Guides
 
+Operational how-to guides for each AI data readiness discipline. These go beyond the framework into the actual work — methodology, tooling with descriptions and links, and step-by-step implementation.
+
+| Guide | Status |
+| --- | --- |
+| Data Audits & Automated Quality Governance | Complete |
+| Master Data Management (MDM) | Complete |
+| Data Contracts | Complete |
+| Synthetic Data Generation | Complete |
+| Data Labeling & Annotation Programs | Complete |
+| Data Mesh Governance in Practice | Complete |
+| Historical Data Debt — Pre-AI vs. Post-AI Remediation | Complete |
+
+## In this section
+
 | Page | Last updated |
 | --- | --- |
-| [Practitioner Guides](overview.md)<br>Operational how-to guides for each AI data readiness discipline — methodology, tooling, and step-by-step implementation. | Updated 2026-06-12 |
 | [Data Audits & Automated Quality Governance](data-audits-and-automated-quality-governance.md)<br>A practitioner guide to conducting data audits and automating continuous quality governance so data quality becomes an operational property of the infrastructure. | Updated 2026-06-12 |
 | [Data Contracts](data-contracts.md)<br>A practitioner guide to data contracts — formal, enforced agreements between data producers and consumers that prevent silent breaking changes, expressed as code. | Updated 2026-06-12 |
 | [Data Labeling & Annotation Programs](data-labeling-and-annotation-programs.md)<br>A practitioner guide to running production-grade data labeling and annotation programs, where label quality determines model quality. | Updated 2026-06-12 |

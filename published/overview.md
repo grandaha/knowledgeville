@@ -17,7 +17,7 @@ of work is enterprise AI transformation; more topics will follow. Learn by doing
 
 ## Frameworks
 
-- **[Enterprise AI Transformation](/enterprise-ai-transformation/overview.md)** —
+- **[Enterprise AI Transformation](/enterprise-ai-transformation/index.md)** —
   an eight-track model for taking AI from strategy to measured value across an
   enterprise: strategy & leadership, governance & risk, data readiness, platform,
   workflow, adoption, talent, and measurement.
@@ -25,5 +25,5 @@ of work is enterprise AI transformation; more topics will follow. Learn by doing
 ## Where to start
 
 - New here? Read the
-  [Eight-Track Model](/enterprise-ai-transformation/the-eight-track-model.md).
+  [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
 - Use the search box (top of the page) to jump to any concept.

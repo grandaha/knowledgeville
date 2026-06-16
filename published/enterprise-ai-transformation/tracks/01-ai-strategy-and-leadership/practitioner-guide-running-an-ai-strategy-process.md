@@ -76,7 +76,7 @@ Key activities:
 
 - **Baseline current-state maturity.** Assess your AI, data, talent, and operating-model readiness against a structured rubric. Score it with [the strategic readiness scoring diagnostic](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/assessment-strategic-readiness-scoring.md) so the read is defensible, not anecdotal.
 - **Convene the full stakeholder set.** Bring business-unit leaders, IT, data, and risk into the same room and drive them to a shared view of reality. Disagreement surfaced here is cheaper than disagreement surfaced in production.
-- **Name the priority domains.** Identify the two to four areas where AI changes this company's economics — cost structure, growth, or risk — not where the technology is most interesting. Define "where it matters" against [the eight-track model](/enterprise-ai-transformation/the-eight-track-model.md) so the choice is grounded in your actual operating system.
+- **Name the priority domains.** Identify the two to four areas where AI changes this company's economics — cost structure, growth, or risk — not where the technology is most interesting. Define "where it matters" against [the eight-track model](/enterprise-ai-transformation/framework-architecture.md) so the choice is grounded in your actual operating system.
 - **Capture the value-thesis inputs.** Record the assumptions, constraints, and economic logic behind each priority domain to feed the next phase.
 
 Who's involved: the executive sponsor chairs; business-unit leaders own the value call; IT, data, and risk validate feasibility and exposure. The sponsor's job is to force genuine cross-functional agreement, not to ratify a slide.
@@ -204,7 +204,7 @@ Default to centralized early, then federate as demand and capability grow. The e
 > About **70%** of institutions with highly centralized AI operating models have put use cases into production, compared with only about **30%** of those with a fully decentralized approach *(McKinsey, "Scaling gen AI in banking," 2024)*
 > In high-maturity organizations, almost **60%** of leaders have centralized their AI strategy, governance, data, and infrastructure *(Gartner, 2025)*
 
-Finally, set success metrics and a standing re-direction cadence. Define a small set of value, adoption, and risk metrics per initiative; the metrics and the feedback loop that feeds re-direction live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/overview.md). Then schedule a quarterly leadership review that inspects evidence, kills or doubles down, and reallocates the portfolio.
+Finally, set success metrics and a standing re-direction cadence. Define a small set of value, adoption, and risk metrics per initiative; the metrics and the feedback loop that feeds re-direction live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Then schedule a quarterly leadership review that inspects evidence, kills or doubles down, and reallocates the portfolio.
 
 **The quarterly re-direction review covers:**
 - Value, adoption, and risk metrics versus targets, per initiative

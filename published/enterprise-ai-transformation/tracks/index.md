@@ -1,8 +1,11 @@
 # Tracks
 
+The eight workstreams of enterprise AI transformation. Each track contains a core framework, practitioner guides, and assessment tools. For how the tracks fit together — what each owns, how they depend on one another, how to sequence them, and the maturity matrix — see [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
+
+## In this section
+
 | Page | Last updated |
 | --- | --- |
-| [Tracks](overview.md)<br>The eight workstreams of enterprise AI transformation, each containing a core framework, practitioner guides, and assessment tools. | Updated 2026-06-12 |
 | [AI Strategy & Leadership](01-ai-strategy-and-leadership/)<br>What good AI strategy actually contains, how to connect AI investment to business outcomes, and the governance structure that sits above all eight tracks. | Updated 2026-06-12 |
 | [AI Governance & Risk](02-ai-governance-and-risk/)<br>Model risk, vendor risk, regulatory exposure, acceptable use policy, and the governance layer above AI deployment. | Updated 2026-06-12 |
 | [Data Readiness](03-data-readiness/)<br>The six foundational components of AI data readiness — Data Quality, Data Governance, Access & Integration, Lineage & Metadata, Infrastructure Readiness, and Security & Compliance. | Updated 2026-06-12 |

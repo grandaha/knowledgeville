@@ -10,11 +10,13 @@ A structured framework for organizations navigating AI transformation — from s
 
 Organized into eight tracks plus a cross-cutting program layer. Each track contains a core framework, practitioner guides, and assessment tools.
 
+It's written for the people accountable for making AI actually work inside an organization — transformation and strategy leaders, heads of data and platform, and the practitioners running each workstream. The core thesis: AI transformation succeeds or fails as **one interdependent system**, not as a set of isolated pilots — so this framework treats the eight tracks as a whole and helps you find and fund the binding constraint rather than the most visible layer.
+
 ---
 
 ## How to Use This Resource
 
-**New to the topic** → Start with the Executive Summary, then the Eight-Track Model.
+**New to the topic** → Start with the Executive Summary, then Framework Architecture.
 
 **Leading an AI program** → Go to Track 01 (Strategy) and the Running the Program section.
 

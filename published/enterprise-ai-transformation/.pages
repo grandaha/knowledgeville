@@ -2,3 +2,5 @@ title: Enterprise AI Transformation
 nav:
   - Overview: overview.md
   - ...
+  - glossary.md
+  - validation

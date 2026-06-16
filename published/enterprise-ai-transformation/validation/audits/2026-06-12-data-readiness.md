@@ -1,9 +1,10 @@
 ---
 type: Audit
-title: Citation & Stats Validation Audit — June 2026
-description: Results of a full validation sweep of all statistics, external references, and sourced claims across the AI Data Readiness Knowledge Base.
-tags: [audit, citations, validation, data-readiness, governance]
+title: Data Readiness — June 2026
+description: Validation sweep of the statistics, references, and sourced claims in the Data Readiness track.
+tags: [audit, citations, validation, data-readiness]
 timestamp: "2026-06-12"
+status: published
 ---
 
 ## Purpose

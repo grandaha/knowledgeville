@@ -2,6 +2,8 @@
 
 The capability stack an AI-mature organization needs — role redesign, AI literacy, internal champions, and build vs. hire decisions.
 
+---
+
 ## In this section
 
 | Page | Last updated |

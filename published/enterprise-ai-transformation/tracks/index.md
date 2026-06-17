@@ -7,7 +7,7 @@ The eight workstreams of enterprise AI transformation. Each track contains a cor
 | Page | Last updated |
 | --- | --- |
 | [AI Strategy & Leadership](01-ai-strategy-and-leadership/)<br>What good AI strategy actually contains, how to connect AI investment to business outcomes, and the governance structure that sits above all eight tracks. | Updated 2026-06-12 |
-| [AI Governance & Risk](02-ai-governance-and-risk/)<br>Model risk, vendor risk, regulatory exposure, acceptable use policy, and the governance layer above AI deployment. | Updated 2026-06-12 |
+| [AI Governance & Risk](02-ai-governance-and-risk/)<br>Model risk, vendor risk, regulatory exposure, acceptable use policy, and the governance layer above AI deployment. | Updated 2026-06-16 |
 | [Data Readiness](03-data-readiness/)<br>The six foundational components of AI data readiness — Data Quality, Data Governance, Access & Integration, Lineage & Metadata, Infrastructure Readiness, and Security & Compliance. | Updated 2026-06-12 |
 | [Technology Architecture & Platform](04-technology-architecture-and-platform/)<br>The AI platform layer — tooling standardization, API governance, model selection, build vs. buy decisions, and avoiding point-solution sprawl. | Updated 2026-06-12 |
 | [Workflow Optimization & Automation](05-workflow-optimization-and-automation/)<br>How to identify, prioritize, and redesign AI-enabled workflows. From assisted tasks to full agentic automation. | Updated 2026-06-12 |

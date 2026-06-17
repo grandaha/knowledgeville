@@ -7,5 +7,3 @@ timestamp: "2026-06-12"
 ---
 
 What adoption actually requires beyond tool rollout — mindset shift, change resistance, trust-building, and the culture conditions that make AI stick.
-
----

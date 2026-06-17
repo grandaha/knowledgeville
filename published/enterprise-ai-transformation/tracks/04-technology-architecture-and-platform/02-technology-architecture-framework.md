@@ -1,6 +1,6 @@
 ---
 type: Concept
-title: Core Framework
+title: Technology Architecture Framework
 description: What the AI platform layer owns — tooling standardization, API governance, model selection, and build vs. buy vs. partner decisions.
 tags: [ai-platform, architecture, model-selection]
 timestamp: "2026-06-12"

@@ -1,8 +1,8 @@
 ---
 type: Concept
-title: Core Framework
+title: Talent & Capability Framework
 description: The capability stack an AI-mature organization needs, AI literacy levels, and build vs. hire vs. partner decisions.
-tags: [talent, capability-building, ai-literacy, core-framework]
+tags: [talent, capability-building, ai-literacy]
 timestamp: "2026-06-12"
 status: planned
 ---

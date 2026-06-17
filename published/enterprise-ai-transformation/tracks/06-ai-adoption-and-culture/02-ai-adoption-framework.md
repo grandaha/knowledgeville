@@ -1,8 +1,8 @@
 ---
 type: Concept
-title: Core Framework
+title: AI Adoption Framework
 description: What AI adoption actually requires beyond tool rollout — the mindset shift, change resistance, and how culture gates every other track.
-tags: [ai-adoption, culture, change-management, core-framework]
+tags: [ai-adoption, culture, change-management]
 timestamp: "2026-06-12"
 status: planned
 ---

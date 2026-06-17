@@ -4,7 +4,6 @@ title: "Assessment: Platform Maturity Scoring"
 description: A five-dimension diagnostic for scoring AI platform maturity — API governance, tooling consolidation, developer enablement, observability, and build vs. buy discipline.
 tags: [ai-platform, assessment, maturity, api-governance, mlops]
 timestamp: "2026-06-17"
-status: published
 ---
 
 ## What This Is For

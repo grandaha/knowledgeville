@@ -4,7 +4,6 @@ title: Data Readiness
 description: The six foundational components of AI data readiness — Data Quality, Data Governance, Access & Integration, Lineage & Metadata, Infrastructure Readiness, and Security & Compliance.
 tags: [data-readiness, ai-transformation, data-quality, governance]
 timestamp: "2026-06-17"
-status: published
 ---
 
 Data readiness is the most common reason AI programs stall after initial pilots. A model that performs well in a controlled experiment often degrades sharply in production — not because the model is wrong, but because the data feeding it is inconsistent, inaccessible, undocumented, or structured for the system that produced it rather than the system that needs to consume it. Most organizations have more data than they think they need and less usable data than they realize. Closing that gap is not primarily a technology problem; it is an organizational one, requiring governance structures, ownership accountabilities, and engineering investment that many enterprises have deferred.

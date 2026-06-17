@@ -4,7 +4,6 @@ title: Technology Architecture Framework
 description: What the AI platform layer owns — tooling standardization, API governance, model selection, and build vs. buy vs. partner decisions.
 tags: [ai-platform, architecture, model-selection, mlops, api-governance]
 timestamp: "2026-06-17"
-status: published
 ---
 
 ## Why AI Platform Architecture Matters Now

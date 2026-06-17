@@ -4,7 +4,6 @@ title: Validation
 description: How this knowledge base is validated — every statistic, source, and claim is checked, and each sweep is recorded here.
 tags: [validation, citations, audit]
 timestamp: "2026-06-16"
-status: published
 appendix: true
 ---
 

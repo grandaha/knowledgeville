@@ -4,7 +4,6 @@ title: "Practitioner Guide: Designing an AI Platform Function"
 description: How to design an AI platform function, including vendor evaluation, API cost governance, developer enablement, and integration patterns.
 tags: [ai-platform, vendor-evaluation, integration, practitioner-guide, mlops]
 timestamp: "2026-06-17"
-status: published
 ---
 
 ## What this guide is for

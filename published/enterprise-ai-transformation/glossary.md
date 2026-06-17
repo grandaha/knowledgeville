@@ -4,7 +4,6 @@ title: Glossary
 description: A practitioner glossary of AI and data terms used across the framework — fundamentals, agents, governance, architecture, lineage, infrastructure, security, and integration.
 tags: [glossary, reference, ai, governance]
 timestamp: "2026-06-12"
-status: published
 appendix: true
 ---
 

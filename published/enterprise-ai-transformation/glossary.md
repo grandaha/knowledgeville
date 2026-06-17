@@ -14,16 +14,21 @@ A running glossary of AI and data terms — added to as we build out each compon
 
 ## Table of Contents
 
-- **Section 1** — AI & ML Fundamentals: Training, ML, Generative AI, Weights, Ground Truth, Label, Label Noise, Data Drift, Inference, RAG, Hallucination, Feature, Feature Store
-- **Section 2** — Agents, Automations & Workflows: Agent, Agentic Workflow, Automation vs. AI, Orchestration, Tool Use, Multi-Agent System, HITL, Context Window, System Prompt, Memory, Grounding, Deterministic vs. Probabilistic, Training-Serving Skew, Interrupt-Diagnose-Correct-Verify
-- **Section 3** — Governance, Compliance & Accountability: Data Owner, Data Steward, Data Custodian, CDAO, DPO, Governance Council, Model Card, DPIA, Policy as Code, NIST AI RMF, EU AI Act, ISO/IEC 42001, Explainability, Auditability, Fairness Metrics, Prompt Injection
-- **Section 4** — Data Architecture & Integration: Data Silo, ETL/ELT, Data Catalog, API, Data Lake, Data Warehouse, Data Lakehouse, Schema
-- **Section 5** — Lineage, Metadata & Semantic Layer: Data Lineage, Metadata, Data Dictionary, Vector Embedding, Vector Store
-- **Section 6** — Infrastructure & Operations: MLOps, CI/CD, Token/Tokenization, Latency
-- **Section 7** — Security, Privacy & Compliance: RBAC, PII, PHI, Data Masking, Anonymization vs. Pseudonymization, Consent Management
-- **Section 8** — Integration Patterns & Architecture: CDC, Event Streaming, Data Virtualization, Data Fabric, Data Mesh, Semantic Layer, Data Product
-- **Section 11** — Security Threats: Data Poisoning, Model Inversion, Membership Inference, Differential Privacy, Federated Learning, Synthetic Data, Data Minimization, AI Supply Chain Attack, Purpose Limitation, Right to Erasure, ABAC, Inference Data Leakage, Zero Trust
-- **Section 12** — Terms, Abbreviations & Acronyms: GDPR, CCPA, HIPAA, SLA, KPI, MTTD, MTTR, YAML, ODCS, GAN, TSTR/TRTS, IAA, Cohen's Kappa, Krippendorff's Alpha, NLP, NER, CRM, ERP, Golden Record, Survivorship Rules, ADAS, MAL, SPC, SMOTE, SHAP, LIME, CAGR, ICP, DBA, git
+- [**Section 1 — AI & ML Fundamentals**](#section-1-ai-ml-fundamentals) — Core AI/ML concepts: training, generative models, inference, RAG, hallucination, and feature engineering.
+- [**Section 2 — Agents, Automations & Workflows**](#section-2-agents-automations-workflows) — How AI agents work: agentic workflows, orchestration, tool use, multi-agent systems, and human-in-the-loop.
+- [**Section 3 — Governance, Compliance & Accountability**](#section-3-governance-compliance-accountability) — Roles, frameworks, and controls for responsible AI: ownership, model cards, regulatory standards, explainability, and fairness.
+- [**Section 4 — Data Architecture & Integration**](#section-4-data-architecture-integration) — Foundation patterns for AI data: silos, ETL/ELT, data lakes, warehouses, catalogs, and schemas.
+- [**Section 5 — Lineage, Metadata & Semantic Layer**](#section-5-lineage-metadata-semantic-layer) — Tracking and understanding data: lineage, metadata, data dictionaries, and vector stores.
+- [**Section 6 — Infrastructure & Operations**](#section-6-infrastructure-operations) — Running AI in production: MLOps, CI/CD, tokenization, and latency.
+- [**Section 7 — Security, Privacy & Compliance**](#section-7-security-privacy-compliance) — Access control, PII/PHI handling, data masking, AI security threats, and privacy-preserving techniques.
+- [**Section 8 — Integration Patterns & Architecture**](#section-8-integration-patterns-architecture) — Modern data architecture: CDC, event streaming, data mesh, data fabric, and semantic layers.
+- [**Section 9 — Terms, Abbreviations & Acronyms**](#section-9-terms-abbreviations-acronyms) — Quick-reference for regulatory standards, statistical methods, business terms, and technical abbreviations.
+
+---
+
+## SECTION 1 — AI & ML Fundamentals
+
+Core terminology for machine learning, generative AI, and production inference — the building blocks every practitioner needs before diving into the tracks.
 
 ---
 
@@ -591,60 +596,6 @@ The system and processes by which an organization obtains, records, and honors i
 
 ---
 
-## SECTION 8 — Integration Patterns & Architecture
-
-New terms introduced in Component 03 — Access & Integration.
-
----
-
-## Change Data Capture (CDC)
-
-A technique that monitors a database's transaction log and captures every insert, update, and delete in near real-time, streaming those changes to downstream systems. Instead of copying entire tables on a schedule, CDC propagates only what changed. Latency: seconds. The bridge between operational databases and AI pipelines for use cases that need near-real-time data without full streaming infrastructure.
-
----
-
-## Event Streaming
-
-An integration pattern where every business action — a transaction, a click, a sensor reading, a status change — is published as an event to a streaming platform (Kafka, Pulsar) and consumed by downstream systems in real time. Latency: milliseconds. For autonomous agentic AI use cases, streaming is increasingly a production requirement, not an optimization.
-
----
-
-## Data Virtualization
-
-A layer that provides a unified query interface across distributed data sources without physically moving or copying the data. Queries execute against source systems in real time; the virtualization layer handles translation and federation. Useful where data can't or shouldn't be centralized due to regulatory, sovereignty, or cost constraints.
-
----
-
-## Data Fabric
-
-A unified logical layer that connects disparate physical data sources through metadata-driven integration, automation, and governance — without forcing all data into a single repository. Provides a single access point for all users and AI agents regardless of where data physically lives. AI-native by design: an agent queries the fabric; the fabric computes the answer from disparate sources in near real-time.
-
----
-
-## Data Mesh
-
-A decentralized organizational model where domain teams own and publish their own data as products, governed by federated standards. Data mesh distributes responsibility; data fabric centralizes intelligence. AI limitation: mesh governance assumes human discovery workflows — agents need programmatic, autonomous access that the mesh model wasn't designed to support directly.
-
----
-
-## Semantic Layer
-
-A business-friendly translation layer that maps raw database fields and tables to human-readable (and machine-readable) business concepts. Ensures that "revenue" means the same thing whether queried from finance, sales, or an AI agent. For agentic AI, the semantic layer is the machine-readable context that allows agents to understand what data means without human interpretation.
-
----
-
-## Data Product
-
-A curated, governed, and documented data asset published by a domain team for consumption by other teams or AI systems. A core concept of data mesh. Includes defined SLAs for freshness, quality, and availability — making it a reliable input for AI rather than a raw data dump.
-
----
-
-## SECTION 11 — Security, Privacy & Compliance
-
-New terms introduced in Component 06 — Security & Compliance.
-
----
-
 ## Data Poisoning
 
 The deliberate insertion of corrupted, biased, or malicious data into a model's training, fine-tuning, retrieval pipeline, or agent tooling. The attack manipulates what the model learns, making the behavioral change persistent rather than temporary. Unlike prompt injection (which happens at runtime), data poisoning happens before runtime and embeds the malicious behavior into the model's weights. Classified by OWASP and NSA/CISA/FBI as a primary attack vector against AI systems in 2025.
@@ -723,7 +674,55 @@ A security model built on the principle of "never trust, always verify." No user
 
 ---
 
-## SECTION 12 — Terms, Abbreviations & Acronyms
+## SECTION 8 — Integration Patterns & Architecture
+
+New terms introduced in Component 03 — Access & Integration.
+
+---
+
+## Change Data Capture (CDC)
+
+A technique that monitors a database's transaction log and captures every insert, update, and delete in near real-time, streaming those changes to downstream systems. Instead of copying entire tables on a schedule, CDC propagates only what changed. Latency: seconds. The bridge between operational databases and AI pipelines for use cases that need near-real-time data without full streaming infrastructure.
+
+---
+
+## Event Streaming
+
+An integration pattern where every business action — a transaction, a click, a sensor reading, a status change — is published as an event to a streaming platform (Kafka, Pulsar) and consumed by downstream systems in real time. Latency: milliseconds. For autonomous agentic AI use cases, streaming is increasingly a production requirement, not an optimization.
+
+---
+
+## Data Virtualization
+
+A layer that provides a unified query interface across distributed data sources without physically moving or copying the data. Queries execute against source systems in real time; the virtualization layer handles translation and federation. Useful where data can't or shouldn't be centralized due to regulatory, sovereignty, or cost constraints.
+
+---
+
+## Data Fabric
+
+A unified logical layer that connects disparate physical data sources through metadata-driven integration, automation, and governance — without forcing all data into a single repository. Provides a single access point for all users and AI agents regardless of where data physically lives. AI-native by design: an agent queries the fabric; the fabric computes the answer from disparate sources in near real-time.
+
+---
+
+## Data Mesh
+
+A decentralized organizational model where domain teams own and publish their own data as products, governed by federated standards. Data mesh distributes responsibility; data fabric centralizes intelligence. AI limitation: mesh governance assumes human discovery workflows — agents need programmatic, autonomous access that the mesh model wasn't designed to support directly.
+
+---
+
+## Semantic Layer
+
+A business-friendly translation layer that maps raw database fields and tables to human-readable (and machine-readable) business concepts. Ensures that "revenue" means the same thing whether queried from finance, sales, or an AI agent. For agentic AI, the semantic layer is the machine-readable context that allows agents to understand what data means without human interpretation.
+
+---
+
+## Data Product
+
+A curated, governed, and documented data asset published by a domain team for consumption by other teams or AI systems. A core concept of data mesh. Includes defined SLAs for freshness, quality, and availability — making it a reliable input for AI rather than a raw data dump.
+
+---
+
+## SECTION 9 — Terms, Abbreviations & Acronyms
 
 New terms and abbreviations identified across all documents in the knowledge base.
 

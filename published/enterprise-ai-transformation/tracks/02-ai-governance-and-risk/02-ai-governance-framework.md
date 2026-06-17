@@ -1,6 +1,6 @@
 ---
 type: Concept
-title: Core Framework
+title: AI Governance Framework
 description: Model risk, vendor risk, regulatory compliance, and the internal policy layer that governs AI deployment.
 tags: [ai-governance, risk, compliance, model-risk, eu-ai-act]
 timestamp: "2026-06-16"
@@ -19,7 +19,7 @@ This is not a marginal difference. It is a structural one. AI systems have emerg
 
 The governance gap is the management problem of the moment. AI adoption is accelerating — McKinsey's 2025 State of AI found that 88% of organizations are using AI in at least one business function, up from 78% the prior year. But governance maturity has not kept pace: only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance *(McKinsey AI Trust Maturity Survey, 2026)*.
 
-This track builds the coverage that closes that gap. It sits immediately downstream of [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), which sets intent and risk appetite. This track operationalizes both — converting appetite into controls, policy into enforcement, and regulatory obligation into organizational action. The [practitioner guide to standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/practitioner-guide-standing-up-an-ai-governance-function.md) is the companion for organizations building this capability from scratch.
+This track builds the coverage that closes that gap. It sits immediately downstream of [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), which sets intent and risk appetite. This track operationalizes both — converting appetite into controls, policy into enforcement, and regulatory obligation into organizational action. The [practitioner guide to standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md) is the companion for organizations building this capability from scratch.
 
 ---
 
@@ -117,9 +117,9 @@ A minimum-viable AI policy framework contains:
 
 **AI change management.** Changes to AI systems in production — new models, updated models, new use cases for existing models, new data sources — are governed by a defined process analogous to IT change management. Changes are classified by risk, assessed against the model risk framework, approved by appropriate authorities, and documented.
 
-**Incident response.** A defined procedure for AI-related incidents: what constitutes an AI incident, how it is reported, who investigates, how it is documented, and when external disclosure (to regulators, affected individuals, or the public) is required. See the companion [AI incident response guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/practitioner-guide-ai-incident-response.md).
+**Incident response.** A defined procedure for AI-related incidents: what constitutes an AI incident, how it is reported, who investigates, how it is documented, and when external disclosure (to regulators, affected individuals, or the public) is required. See the companion [AI incident response guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-incident-response.md).
 
-The [AI policy and acceptable use practitioner guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/practitioner-guide-ai-policy-and-acceptable-use.md) provides worked examples and drafting templates for each of these elements.
+The [AI policy and acceptable use practitioner guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md) provides worked examples and drafting templates for each of these elements.
 
 ---
 
@@ -148,7 +148,7 @@ Most mature enterprises evolve toward a hybrid of centralized and federated over
 - **Responsible AI Lead.** Owns the bias, fairness, and ethics dimension of AI governance — the part of governance that cannot be fully addressed by technical controls alone.
 - **AI Governance Board or Committee.** Senior cross-functional body that reviews high-risk AI deployments, approves exceptions, and owns AI policy at the organizational level. Provides the governance connection to the board.
 
-For organizations building this function, see the [practitioner guide to standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/practitioner-guide-standing-up-an-ai-governance-function.md).
+For organizations building this function, see the [practitioner guide to standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md).
 
 ---
 
@@ -182,7 +182,7 @@ AI governance fails in patterns. These are the four that account for most of it.
 - [ ] EU AI Act applicability has been assessed; high-risk systems have been identified and compliance preparation is underway
 - [ ] AI governance coverage explicitly addresses agentic and autonomous AI systems, not only predictive and generative models
 
-Assess governance maturity against the companion [governance maturity scoring assessment](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/assessment-governance-maturity-scoring.md). For the data layer that underpins governance, see [Track 03, Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md).
+Assess governance maturity against the companion [governance maturity scoring assessment](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/05-assessment-governance-maturity-scoring.md). For the data layer that underpins governance, see [Track 03, Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md).
 
 ---
 

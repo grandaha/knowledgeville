@@ -12,7 +12,7 @@ Most organizations do not lack AI ambition. They lack a *process* for turning am
 
 > Only **25%** of AI initiatives have delivered the ROI organizations expected over the last few years, and only **16%** have scaled enterprise-wide *(IBM Institute for Business Value, CEO Study, 2025)*
 
-[The core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/core-framework.md) defines *what* a good AI strategy contains — a value thesis, a funded portfolio, the decisions only leadership can make, and the governance above the program. This guide is the *how*: the repeatable process that produces that strategy, run as five sequential phases over roughly a quarter.
+[The core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md) defines *what* a good AI strategy contains — a value thesis, a funded portfolio, the decisions only leadership can make, and the governance above the program. This guide is the *how*: the repeatable process that produces that strategy, run as five sequential phases over roughly a quarter.
 
 | Phase | Produces |
 | --- | --- |
@@ -74,7 +74,7 @@ Treat this as an organizational exercise, not a technical one. The economics bea
 
 Key activities:
 
-- **Baseline current-state maturity.** Assess your AI, data, talent, and operating-model readiness against a structured rubric. Score it with [the strategic readiness scoring diagnostic](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/assessment-strategic-readiness-scoring.md) so the read is defensible, not anecdotal.
+- **Baseline current-state maturity.** Assess your AI, data, talent, and operating-model readiness against a structured rubric. Score it with [the strategic readiness scoring diagnostic](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/05-assessment-strategic-readiness-scoring.md) so the read is defensible, not anecdotal.
 - **Convene the full stakeholder set.** Bring business-unit leaders, IT, data, and risk into the same room and drive them to a shared view of reality. Disagreement surfaced here is cheaper than disagreement surfaced in production.
 - **Name the priority domains.** Identify the two to four areas where AI changes this company's economics — cost structure, growth, or risk — not where the technology is most interesting. Define "where it matters" against [the eight-track model](/enterprise-ai-transformation/framework-architecture.md) so the choice is grounded in your actual operating system.
 - **Capture the value-thesis inputs.** Record the assumptions, constraints, and economic logic behind each priority domain to feed the next phase.

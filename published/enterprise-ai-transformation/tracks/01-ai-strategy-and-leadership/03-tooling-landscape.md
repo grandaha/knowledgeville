@@ -8,7 +8,7 @@ timestamp: "2026-06-15"
 
 ## How to Use This Landscape
 
-This is a survey of the frameworks and tools that support the work of this track — setting an AI strategy, prioritizing a portfolio, building a roadmap, communicating it to the board, and making the investment case. Pair it with the three working pages it supports: [the core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/core-framework.md) (what a good strategy contains), [the practitioner guide](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/practitioner-guide-running-an-ai-strategy-process.md) (how to run the strategy process), and [the strategic readiness assessment](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/assessment-strategic-readiness-scoring.md) (how to score where you stand).
+This is a survey of the frameworks and tools that support the work of this track — setting an AI strategy, prioritizing a portfolio, building a roadmap, communicating it to the board, and making the investment case. Pair it with the three working pages it supports: [the core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md) (what a good strategy contains), [the practitioner guide](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process.md) (how to run the strategy process), and [the strategic readiness assessment](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/05-assessment-strategic-readiness-scoring.md) (how to score where you stand).
 
 One honest caveat up front: there is very little AI-*strategy*-specific tooling. The frameworks below are general strategy and maturity models applied to AI, and the tools are general product-management, business-intelligence, and cloud-finance platforms used for AI portfolios and spend. Choose for fit and for what you already run — not for an "AI" label on the box.
 
@@ -43,7 +43,7 @@ There is no dominant AI-strategy-specific roadmapping product. In practice, lead
 | **Monday.com** | Configurable work/portfolio management platform with boards, dashboards, and status tracking. | Tracking the status, owners, and progress of active AI projects. |
 | **Asana** | Work management platform with portfolios, goals, and custom fields for cross-initiative reporting. | Operational tracking and reporting across concurrent AI initiatives. |
 
-Most of these support custom scoring fields, so the value-vs-feasibility and weighted-scoring methods from [the practitioner guide](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/practitioner-guide-running-an-ai-strategy-process.md) can be implemented directly — score each initiative on business value and feasibility, then plot it to surface quick wins versus longer-term bets.
+Most of these support custom scoring fields, so the value-vs-feasibility and weighted-scoring methods from [the practitioner guide](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process.md) can be implemented directly — score each initiative on business value and feasibility, then plot it to surface quick wins versus longer-term bets.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 type: Concept
-title: Core Framework
+title: AI Strategy Framework
 description: What a good AI strategy actually contains, the decisions only leadership can make, how to tie AI investment to business outcomes, the governance layer above all eight tracks, and the failure modes that stall strategy.
 tags: [ai-strategy, leadership, governance, decision-rights, operating-model]
 timestamp: "2026-06-15"
@@ -47,7 +47,7 @@ The lesson: fund a few bets to depth rather than many to nowhere.
 
 **A funding and operating model.** The strategy states how AI work is paid for (central fund, business-unit budgets, or a blend), who decides reallocation, and how initiatives move from pilot to production. Absent this, even good ideas stall at the handoff between experiment and operations.
 
-The [practitioner guide to running an AI strategy process](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/practitioner-guide-running-an-ai-strategy-process.md) is the companion that walks through producing this artifact step by step.
+The [practitioner guide to running an AI strategy process](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process.md) is the companion that walks through producing this artifact step by step.
 
 ---
 
@@ -156,7 +156,7 @@ The root cause is rarely the pilot. It is the missing funding and operating mode
 - [ ] A named C-suite owner and a board or steering body oversee AI, with intent (Track 01) and guardrails (Track 02) clearly separated
 - [ ] A standing re-direction cadence reviews measurement evidence and reallocates the portfolio
 
-Score this readiness with the companion [strategic readiness scoring diagnostic](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/assessment-strategic-readiness-scoring.md).
+Score this readiness with the companion [strategic readiness scoring diagnostic](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/05-assessment-strategic-readiness-scoring.md).
 
 ## Sources
 

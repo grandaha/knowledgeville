@@ -89,7 +89,7 @@ Almost every troubled transformation has tipped into one of these:
 
 ## Maturity matrix across all eight tracks
 
-Maturity is assessed per track on the same five-level ladder defined in the [AI Readiness Assessment Framework](/enterprise-ai-transformation/tracks/03-data-readiness/assessment-and-measurement/ai-readiness-assessment-framework.md), so scores are comparable across the whole program:
+Maturity is assessed per track on the same five-level ladder defined in the [AI Readiness Assessment Framework](/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/ai-readiness-assessment-framework.md), so scores are comparable across the whole program:
 
 **1 Nascent · 2 Developing · 3 Emerging · 4 Scaling · 5 Transformational**
 

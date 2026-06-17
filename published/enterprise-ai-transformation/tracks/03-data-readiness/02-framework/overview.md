@@ -1,8 +1,8 @@
 ---
 type: Concept
-title: Core Framework
+title: Data Readiness Framework
 description: The six foundational components of AI data readiness, each covering the full framework, AI-specific failure modes, tooling landscape, and a practical readiness checklist.
-tags: [data-readiness, core-framework, ai-data, six-components]
+tags: [data-readiness, framework, ai-data, six-components]
 timestamp: "2026-06-16"
 ---
 
@@ -16,9 +16,9 @@ Read in order if you are new to the topic. Jump to a specific component if you a
 
 | # | Component | What it covers |
 | --- | --- | --- |
-| 01 | [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/core-framework/01-data-quality.md) | Six quality dimensions, four AI failure modes, weighted scoring, tooling, checklist |
-| 02 | [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/core-framework/02-data-governance.md) | Ownership structures, bias monitoring, explainability, NIST / EU AI Act / ISO 42001 crosswalk |
-| 03 | [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/core-framework/03-access-and-integration.md) | Four integration patterns, lakehouse / fabric / mesh architectures, agentic access requirements |
-| 04 | [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/core-framework/04-lineage-and-metadata.md) | Four lineage types, active metadata, business glossary for AI, model lineage |
-| 05 | [Infrastructure Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/core-framework/05-infrastructure-readiness.md) | MLOps, LLMOps, AgentOps, seven infrastructure layers, six-level maturity ladder |
-| 06 | [Security & Compliance](/enterprise-ai-transformation/tracks/03-data-readiness/core-framework/06-security-and-compliance.md) | Six AI threat categories, global privacy law, access control architecture, audit trails |
+| 01 | [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md) | Six quality dimensions, four AI failure modes, weighted scoring, tooling, checklist |
+| 02 | [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-data-governance.md) | Ownership structures, bias monitoring, explainability, NIST / EU AI Act / ISO 42001 crosswalk |
+| 03 | [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-access-and-integration.md) | Four integration patterns, lakehouse / fabric / mesh architectures, agentic access requirements |
+| 04 | [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-lineage-and-metadata.md) | Four lineage types, active metadata, business glossary for AI, model lineage |
+| 05 | [Infrastructure Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/05-infrastructure-readiness.md) | MLOps, LLMOps, AgentOps, seven infrastructure layers, six-level maturity ladder |
+| 06 | [Security & Compliance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/06-security-and-compliance.md) | Six AI threat categories, global privacy law, access control architecture, audit trails |

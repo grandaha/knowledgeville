@@ -8,7 +8,7 @@ timestamp: "2026-06-17"
 
 ## What this guide is for
 
-This guide is written for the practitioner — or small team — handed the mandate to build an AI governance function, either from scratch or by rationalizing a scattered collection of existing policies, committees, and informal review processes into something coherent and defensible. You will find the conceptual framework for why governance matters and how it fits into a broader transformation effort in the [core framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/core-framework.md). This guide is about the operational work: what structure to adopt, who needs to own what, and what to do in the first ninety days. Policy writing (acceptable use, model cards, third-party vendor terms) and incident response design are each covered in their own guides; this one focuses on the governance function itself.
+This guide is written for the practitioner — or small team — handed the mandate to build an AI governance function, either from scratch or by rationalizing a scattered collection of existing policies, committees, and informal review processes into something coherent and defensible. You will find the conceptual framework for why governance matters and how it fits into a broader transformation effort in the [core framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md). This guide is about the operational work: what structure to adopt, who needs to own what, and what to do in the first ninety days. Policy writing (acceptable use, model cards, third-party vendor terms) and incident response design are each covered in their own guides; this one focuses on the governance function itself.
 
 ---
 
@@ -128,7 +128,7 @@ Deliverables: signed governance charter, documented intake process, priority rev
 
 ### Days 61–90: Operationalize
 
-Run the first formal governance reviews on your priority systems. These reviews serve two purposes: they surface actual risk in the highest-stakes deployments, and they demonstrate that the governance process works — which matters for organizational credibility. Publish an acceptable use policy (see the [policy guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/practitioner-guide-ai-policy-and-acceptable-use.md) for specifics). Train business unit AI champions on the intake process, risk tiers, and escalation paths. Schedule the first quarterly governance review.
+Run the first formal governance reviews on your priority systems. These reviews serve two purposes: they surface actual risk in the highest-stakes deployments, and they demonstrate that the governance process works — which matters for organizational credibility. Publish an acceptable use policy (see the [policy guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md) for specifics). Train business unit AI champions on the intake process, risk tiers, and escalation paths. Schedule the first quarterly governance review.
 
 Deliverables: completed reviews of priority systems, published acceptable use policy, trained champions, first quarterly review on the calendar.
 

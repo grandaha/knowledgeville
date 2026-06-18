@@ -1,16 +1,16 @@
 ---
 type: Playbook
 title: "Practitioner Guide: Designing an AI Platform Function"
-description: How to design an AI platform function, including vendor evaluation, API cost governance, developer enablement, and integration patterns.
+description: "How to design an AI platform function, including vendor evaluation, API cost governance, developer enablement, and integration patterns."
 tags: [ai-platform, vendor-evaluation, integration, practitioner-guide, mlops]
-timestamp: "2026-06-17"
+timestamp: "2026-06-18"
 ---
 
 ## What this guide is for
 
 This guide is written for the platform engineer, AI lead, or CTO/VP Engineering handed a mandate that sounds like "build the AI platform." That mandate shows up in different forms: standardize the chaos of team-by-team API integrations, give developers a better way to work with models, establish cost control over AI spend that nobody currently has visibility into, or simply "make sure we're doing AI right." All of those mandates converge on the same underlying work: turning a collection of independent experiments and ad hoc integrations into shared, governed infrastructure.
 
-This guide assumes some AI is already in production or actively being built. The question is not whether your organization should use AI — that decision has already been made, often by teams who didn't wait for infrastructure to be ready. The question is how to build a platform function that makes AI use safer, cheaper, and more productive, without creating a bottleneck that slows down every team that wants to do something new.
+This guide assumes some AI is already in production or actively being built. That is a safe assumption — by late 2025, 88% of organizations reported using AI in at least one business function (McKinsey, *The State of AI*, 2025). The question is not whether your organization should use AI; that decision has already been made, often by teams who didn't wait for infrastructure to be ready. The question is how to build a platform function that makes AI use safer, cheaper, and more productive, without creating a bottleneck that slows down every team that wants to do something new. The stakes are real: roughly 42% of companies abandoned most of their AI initiatives in 2025, up from 17% the year before (S&P Global Market Intelligence, *Voice of the Enterprise: AI & Machine Learning*, 2025), and the difference between the projects that stick and the ones that get scrapped is usually infrastructure and integration, not model quality.
 
 What this guide produces is a platform function with real capability in 90 to 120 days: centralized API access with cost attribution, shared infrastructure that teams actually use, developer documentation that answers the questions people are already asking, and a model evaluation process that makes "which model should we use?" a solvable problem rather than a recurring debate. Maturity beyond that 90-day baseline is ongoing. This guide covers the first phase of it.
 
@@ -24,13 +24,13 @@ The antidote is a two-week audit conducted before any platform architecture deci
 
 ### The shadow AI audit
 
-Most organizations have significantly more AI use in production than their official inventories reflect. Teams build prototypes that quietly become production systems. Individual contributors sign up for API keys on personal credit cards. Vendor SaaS products ship AI features enabled by default. Before you can govern or support AI use, you need to find it all.
+Most organizations have significantly more AI use in production than their official inventories reflect. Teams build prototypes that quietly become production systems. Individual contributors sign up for API keys on personal credit cards. Vendor SaaS products ship AI features enabled by default. The scale is well documented: 78% of AI users report bringing their own AI tools to work (Microsoft & LinkedIn, *2024 Work Trend Index*), and shadow AI is now a measurable security exposure — one in five breached organizations attributed the breach in part to shadow AI, which added roughly $670,000 to the average breach cost (IBM, *Cost of a Data Breach Report 2025*). Before you can govern or support AI use, you need to find it all.
 
 Conduct the audit through three channels: an engineering survey (low barrier; ask people to self-report — most will cooperate if you frame it as gathering information to help them, not to restrict them), a network-level review of DNS queries and egress traffic patterns (catches external AI API calls that weren't disclosed), and a vendor contract review (identify which SaaS products include AI capabilities, and whether those capabilities are enabled). The goal is a complete picture of AI use, not a punitive exercise. Make that framing explicit.
 
 ### Mapping API spend by team
 
-Once you have a list of AI systems and teams, map the spend. This is often the first time anyone has a consolidated view of what AI is actually costing the organization. Common findings: one or two teams account for a disproportionate share of spend with no awareness of the cost, duplicate API subscriptions to the same providers under different payment methods, and significant spend on high-cost models for use cases that would be adequately served by lower-cost alternatives.
+Once you have a list of AI systems and teams, map the spend. This is often the first time anyone has a consolidated view of what AI is actually costing the organization — and that gap is the norm, not the exception: as of 2025, only 63% of organizations were tracking or managing AI spend at all, up from 31% a year earlier (FinOps Foundation, *The State of FinOps 2025*). Common findings: one or two teams account for a disproportionate share of spend with no awareness of the cost, duplicate API subscriptions to the same providers under different payment methods, and significant spend on high-cost models for use cases that would be adequately served by lower-cost alternatives.
 
 Collect invoices, expense reports, and any corporate card charges from AI vendors. Build a simple spreadsheet: team, provider, monthly spend, use case, model used. This artifact drives the cost governance design in Phase 1.
 
@@ -52,7 +52,7 @@ The goal of Phase 1 is a minimum viable platform that delivers immediate value a
 
 ### Set up a centralized API gateway
 
-The single highest-leverage action in early platform work is routing all AI API calls through a centralized gateway. LiteLLM is the most common open-source choice; it provides a unified API surface across providers (OpenAI, Anthropic, Google, and others), built-in request logging, cost attribution by team or project, and retry handling. Managed alternatives exist from major cloud providers and AI-native vendors if operational overhead is a constraint.
+The single highest-leverage action in early platform work is routing all AI API calls through a centralized gateway. LiteLLM is the most common open-source choice; it provides a unified API surface across providers (OpenAI, Anthropic, Google, and others), built-in request logging, cost attribution by team or project, and retry handling. Managed alternatives exist from cloud providers (Azure API Management's AI gateway capabilities, AWS Bedrock with reference gateway patterns) and AI-native vendors (Portkey, Helicone) if operational overhead is a constraint.
 
 Turn on logging and cost attribution on day one. Do not wait until the gateway is fully hardened or until every team is using it before turning on logging — the data from early usage is what reveals the next set of requirements. Every API call through the gateway should emit: timestamp, requesting team or application, model name, token counts (input and output), latency, and success or failure status. This logging infrastructure is what makes every subsequent governance and cost management conversation possible.
 
@@ -60,7 +60,7 @@ Migration of existing teams onto the gateway should be a Phase 1 deliverable, no
 
 ### Define an approved model list
 
-Publish a starting list of approved models and the recommended use case for each. The list does not need to be comprehensive — it needs to be clear and opinionated. Something like: one recommended model for general text generation tasks, one for code generation, one for embeddings, one for tasks requiring long context, and one low-cost option for high-volume classification or routing tasks. Include the rationale for each recommendation so teams can make informed decisions about when to deviate.
+Publish a starting list of approved models and the recommended use case for each. The list does not need to be comprehensive — it needs to be clear and opinionated. Something like: one recommended model for general text generation tasks, one for code generation, one for embeddings, one for tasks requiring long context, and one low-cost option for high-volume classification or routing tasks. Include the rationale for each recommendation so teams can make informed decisions about when to deviate. Plan for the list to span providers — enterprise LLM spend is now split across Anthropic, OpenAI, and Google rather than concentrated in one vendor (Menlo Ventures, *State of Generative AI in the Enterprise*, 2025), and a single-provider approved list ages quickly.
 
 The approved model list serves two purposes. It reduces the decision overhead for teams (most teams want guidance, not unlimited choice), and it creates a foundation for cost governance (teams using models not on the list need a reason). The list will evolve; the process for updating it is covered in Phase 3.
 
@@ -80,7 +80,7 @@ The minimum documentation set for Phase 1: how to get access (authentication, cr
 
 A model registry is a maintained inventory of models approved for use in the organization, with metadata about each: provider, version, capabilities, cost per token, context window size, data handling terms relevant to your compliance posture, and any restrictions on use cases. The model registry feeds the governance model inventory and is the authoritative source for the approved model list.
 
-In Phase 1, the registry can be as simple as a maintained table in your internal documentation. The discipline is in keeping it current — when a model version is deprecated, when a new model is approved, when pricing changes. Assign explicit ownership for registry maintenance.
+In Phase 1, the registry can be as simple as a maintained table in your internal documentation. The discipline is in keeping it current — when a model version is deprecated, when a new model is approved, when pricing changes. Assign explicit ownership for registry maintenance. This matters more than it sounds: provider model deprecations are routine and can be abrupt (OpenAI, for example, gave preview-model deprecations as little as two weeks' notice and hard-sunset its first-generation GPT-3 models on a fixed date), so a registry that nobody owns becomes dangerously stale.
 
 **Phase 1 deliverable:** The API gateway is live. Every team's AI API calls are routed through it. Cost attribution by team is operational. An approved model list is published. Basic developer documentation exists. The model registry has initial entries for each approved model.
 
@@ -100,7 +100,7 @@ Stand up a shared embedding service: a single endpoint that accepts text and ret
 
 Most early-stage RAG use cases do not require a dedicated vector database. If your organization already runs PostgreSQL at reasonable scale, pgvector (an open-source extension) covers a wide range of retrieval use cases and eliminates the operational overhead of a separate vector database system. Evaluate this option honestly before provisioning a dedicated vector store — the operational cost of pgvector is near zero if Postgres is already managed, while a dedicated vector database adds a new system to operate, monitor, and pay for.
 
-Dedicated vector databases (Pinecone, Weaviate, Qdrant, and others) are appropriate when: retrieval performance at scale is a hard requirement, multi-tenancy or isolation between use cases is needed, or the use case requires capabilities — approximate nearest neighbor at very high query-per-second rates, built-in filtering — that pgvector does not efficiently support. Make this an architecture decision based on actual requirements, not on the assumption that "serious" RAG requires a "serious" vector database.
+Dedicated vector databases (Pinecone, Weaviate, Qdrant, Milvus, and others) are appropriate when: retrieval performance at scale is a hard requirement, multi-tenancy or isolation between use cases is needed, or the use case requires capabilities — approximate nearest neighbor at very high query-per-second rates, built-in hybrid search and filtering — that pgvector does not efficiently support. Make this an architecture decision based on actual requirements, not on the assumption that "serious" RAG requires a "serious" vector database.
 
 ### Reference architecture for common patterns
 
@@ -118,13 +118,13 @@ Reference architectures are not mandates. Teams can deviate when their use case 
 
 Observability for AI systems is not the same as observability for conventional software. The standard metrics — CPU, memory, request latency, error rate — are necessary but insufficient. AI-specific observability includes: token counts per request (input and output separately, since they price differently and have different implications for cost optimization), model version in use (important when a provider updates a model without changing the name), prompt and completion logging for debugging, and per-use-case quality metrics (which are use case specific and require explicit design — there is no universal AI quality metric).
 
-Stand up an LLM observability stack in Phase 2. Options range from open-source (LangFuse, Helicone, and similar) to commercial. The minimum requirements: every request through the gateway produces a structured log entry with the metrics above, dashboards exist for cost and latency by team and model, and alerting is configured on error rate spikes and latency degradations.
+Stand up an LLM observability stack in Phase 2. Options range from open-source (Langfuse, Helicone, and similar) to commercial (Braintrust, LangSmith). The minimum requirements: every request through the gateway produces a structured log entry with the metrics above, dashboards exist for cost and latency by team and model, and alerting is configured on error rate spikes and latency degradations.
 
 ### First model evaluation
 
 By the end of Phase 2, run the organization's first formal model evaluation exercise. The purpose is twofold: to produce an evidence-based recommendation for one or two real use cases (updating or confirming the approved model list), and to establish the evaluation methodology as a repeatable process.
 
-Select two to three models that are plausible candidates for a use case where teams have expressed uncertainty. Collect real prompt-completion pairs from that use case — not synthetic benchmarks, but actual examples of the task. Evaluate each model on the same examples using a consistent rubric: output quality (rated by domain experts, not just engineers), latency, cost per task, and any use case-specific constraints (safety, format compliance, language coverage). Document the methodology and findings. This is the first entry in what becomes the organization's model evaluation record.
+Select two to three models that are plausible candidates for a use case where teams have expressed uncertainty. Collect real prompt-completion pairs from that use case — not synthetic benchmarks, but actual examples of the task. (Public benchmarks like MMLU are useful for a first-pass narrowing but are increasingly saturated and do not reflect your data.) Evaluate each model on the same examples using a consistent rubric: output quality (rated by domain experts, not just engineers), latency, cost per task, and any use case-specific constraints (safety, format compliance, language coverage). Document the methodology and findings. This is the first entry in what becomes the organization's model evaluation record.
 
 **Phase 2 deliverable:** A shared embedding service is in production. Vector store infrastructure is provisioned and documented. Reference architectures for RAG, agent orchestration, and structured output exist and are linked from developer documentation. LLM observability dashboards are live. The first formal model evaluation is complete and documented.
 
@@ -170,7 +170,7 @@ Maintain a practitioner FAQ that captures the most common questions and their an
 
 ## Vendor evaluation
 
-Vendor selection for AI platform components — model providers, orchestration frameworks, vector databases, observability tools — is a source of disproportionate long-term cost if handled poorly. The core discipline: define your evaluation criteria before talking to vendors. Conversations with vendors will reshape your criteria in the direction of their strengths if you enter those conversations without anchoring criteria.
+Vendor selection for AI platform components — model providers, orchestration frameworks, vector databases, observability tools — is a source of disproportionate long-term cost if handled poorly. It also has to be done against a moving target: in the eighteen months to mid-2026, major orchestration frameworks shipped breaking 1.0 releases, two MLOps tools changed owners, and OpenAI deprecated a flagship API. The core discipline: define your evaluation criteria before talking to vendors. Conversations with vendors will reshape your criteria in the direction of their strengths if you enter those conversations without anchoring criteria.
 
 ### Evaluation criteria
 
@@ -182,7 +182,7 @@ Vendor selection for AI platform components — model providers, orchestration f
 
 **Vendor stability and contract terms** matter more for infrastructure than for application-level tools. A model provider that changes pricing, deprecates models without adequate notice, or updates model behavior without version locking creates downstream operational risk. Evaluate contract terms for: notice periods for model changes, data processing agreements that cover your data obligations, audit rights, and SLA definitions that address output quality, not just uptime.
 
-**Compliance posture** is non-negotiable for regulated industries. Data residency, certifications (SOC 2, ISO 27001), HIPAA eligibility, and the specifics of how training and fine-tuning use customer data are all evaluation criteria, not afterthoughts.
+**Compliance posture** is non-negotiable for regulated industries. Data residency, certifications (SOC 2, ISO 27001), HIPAA eligibility (a signed Business Associate Agreement is legally required before protected health information can flow to a vendor), and the specifics of how training and fine-tuning use customer data are all evaluation criteria, not afterthoughts. SOC 2 and ISO 27001 are the de facto security-attestation baseline for enterprise AI procurement; treat their absence as a finding, not a footnote.
 
 ### Structured POCs
 
@@ -255,3 +255,15 @@ This is not a complete platform. Significant maturity work lies ahead — advanc
 ---
 
 For framework context on the technology architecture decisions underlying the platform, see the [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md). For a survey of tool options at each layer of the stack, see [The AI Tooling Landscape](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/03-tooling-landscape.md). To score your platform against a maturity model, work through the [Platform Maturity Scoring assessment](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/05-assessment-platform-maturity-scoring.md).
+
+---
+
+## Sources
+
+- McKinsey & Company — *The State of AI in 2025: Agents, Innovation, and Transformation* — 2025
+- S&P Global Market Intelligence (451 Research) — *Voice of the Enterprise: AI & Machine Learning* — 2025
+- Microsoft & LinkedIn — *2024 Work Trend Index Annual Report* — 2024
+- IBM — *Cost of a Data Breach Report 2025* — 2025
+- FinOps Foundation — *The State of FinOps 2025* — 2025
+- Menlo Ventures — *The State of Generative AI in the Enterprise* — 2025
+- OpenAI — *Deprecations* documentation — 2026 (developers.openai.com)

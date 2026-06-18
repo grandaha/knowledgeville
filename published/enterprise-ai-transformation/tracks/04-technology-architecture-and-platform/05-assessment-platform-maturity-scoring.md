@@ -1,9 +1,9 @@
 ---
 type: Playbook
 title: "Assessment: Platform Maturity Scoring"
-description: A five-dimension diagnostic for scoring AI platform maturity — API governance, tooling consolidation, developer enablement, observability, and build vs. buy discipline.
+description: "A five-dimension diagnostic for scoring AI platform maturity — API governance, tooling consolidation, developer enablement, observability, and build vs. buy discipline."
 tags: [ai-platform, assessment, maturity, api-governance, mlops]
-timestamp: "2026-06-17"
+timestamp: "2026-06-18"
 ---
 
 ## What This Is For
@@ -12,9 +12,9 @@ This assessment scores one thing: whether the **AI platform function** is mature
 
 It is the diagnostic companion to the [AI technology architecture framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md) and the [practitioner guide for designing an AI platform function](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function.md). Run it before investing in net-new AI capabilities, when platform costs are growing without explanation, or when the number of teams building AI independently has outpaced any shared infrastructure serving them.
 
-> Only **17% of enterprises report having centralized visibility into AI API spending across teams** — the majority cannot tell you what they spent on model APIs last month or which business unit spent it *(McKinsey & Company, 2025)*
+> As of 2025, only **63% of organizations were tracking or managing their AI spend at all** — up from 31% a year earlier, which still leaves more than a third unable to say what they spent on model APIs last month or which business unit spent it *(FinOps Foundation, The State of FinOps, 2025)*
 >
-> The average large enterprise runs **more than 40 distinct AI or ML tools** across business units, most of them procured independently with no shared infrastructure layer connecting them *(Databricks, 2024)*
+> The average enterprise runs **more than 100 applications** federated through its identity provider alone *(Okta, Businesses at Work 2025)*, and enterprises that have adopted generative AI typically deploy **three or more foundation models** in their stack *(Menlo Ventures, State of Generative AI in the Enterprise, 2024)* — most of them procured independently, with no shared infrastructure layer connecting them
 
 This framework produces a prioritized gap list, not a score to report upward. If the result doesn't change what gets funded, what gets consolidated, or what gets enforced in the next 90 days, the assessment wasn't worth running.
 
@@ -42,7 +42,7 @@ Evidence to collect: gateway configuration showing centralized routing, cost das
 
 ### Dimension 2: Model Registry and Selection Discipline
 
-This dimension assesses whether the organization knows which AI models it is using, why it chose them, and what it would take to replace or retire them. Ungoverned model selection produces three predictable problems: redundant spend on overlapping model capabilities, compliance exposure when models with different data-use terms are used interchangeably, and operational fragility when a vendor changes a model and no one knew which systems depended on it. A model registry is the foundational artifact that makes model decisions traceable.
+This dimension assesses whether the organization knows which AI models it is using, why it chose them, and what it would take to replace or retire them. Ungoverned model selection produces three predictable problems: redundant spend on overlapping model capabilities, compliance exposure when models with different data-use terms are used interchangeably, and operational fragility when a vendor changes a model and no one knew which systems depended on it. That last risk is not hypothetical — providers deprecate models on fixed timelines (OpenAI set a hard sunset for its first-generation GPT-3 models and deprecated its Assistants API with about a year's notice), so a registry is the foundational artifact that makes model decisions traceable and migrations survivable.
 
 | Level | What it looks like |
 | --- | --- |
@@ -90,14 +90,14 @@ Evidence to collect: observability dashboard screenshots, alert configuration fo
 
 ### Dimension 5: Build vs. Buy Discipline and Vendor Risk
 
-This dimension assesses whether the organization makes platform decisions deliberately — with documented criteria, recorded rationale, and appropriate vendor contracts — or reactively, based on what individual engineers prefer or what vendors sold. AI vendor risk is distinct from general SaaS vendor risk: model behavior can change without notice, training data provenance affects compliance, and lock-in is harder to reverse than with conventional software. Contracts that do not reflect these realities leave the organization exposed.
+This dimension assesses whether the organization makes platform decisions deliberately — with documented criteria, recorded rationale, and appropriate vendor contracts — or reactively, based on what individual engineers prefer or what vendors sold. The market makes this discipline harder than it sounds: the build-vs-buy balance itself shifts year to year (enterprises moved from a near-even split in 2024 to roughly 76% buying in 2025, per Menlo Ventures), and AI vendor risk is distinct from general SaaS vendor risk — model behavior can change without notice, training data provenance affects compliance, and lock-in is harder to reverse than with conventional software. Contracts that do not reflect these realities leave the organization exposed.
 
 | Level | What it looks like |
 | --- | --- |
 | 1 | No build vs. buy framework. Platform decisions are made based on individual engineers' preferences or vendor sales cycles; no vendor risk program exists for AI tools. |
 | 2 | Build vs. buy is considered informally for major decisions, but there is no documented criteria and decisions are not recorded; AI vendor contracts are standard MSAs with no AI-specific terms. |
 | 3 | A build vs. buy framework exists with documented criteria; major decisions are recorded with rationale; at least some AI vendor contracts include data processing terms; but model change notification and audit rights are absent from most contracts. |
-| 4 | Build vs. buy criteria are applied consistently; decisions are documented with a named approver; AI vendor contracts include model change notification, audit rights (or third-party attestation), data use restrictions, and defined SLAs for model behavior; a vendor risk reassessment cadence is in place. |
+| 4 | Build vs. buy criteria are applied consistently; decisions are documented with a named approver; AI vendor contracts include model change notification, audit rights (or third-party attestation such as SOC 2 / ISO 27001), data use restrictions, and defined SLAs for model behavior; a vendor risk reassessment cadence is in place. |
 | 5 | Vendor selection is driven by TCO analysis that includes lock-in risk and platform portability; contracts are reviewed against a standard AI vendor risk template by legal; vendor risk reassessment is automated as contract renewal triggers; dependency analysis identifies single points of failure in the vendor stack. |
 
 Evidence to collect: build vs. buy framework document, a decision record for a recent platform decision, vendor contract with AI-specific terms highlighted, vendor risk assessment for a critical AI vendor, TCO analysis for a build vs. buy decision.
@@ -168,9 +168,8 @@ The most common failure mode: the assessment produces a score, someone presents 
 
 ## Sources
 
-- McKinsey & Company — *The State of AI* — 2025
-- Gartner — *Hype Cycle for Artificial Intelligence* — 2024/2025
-- Anthropic — *Prompt Caching Documentation* — 2024
-- Databricks — *State of Data + AI Report* — 2024
-- IDC — *Worldwide AI and GenAI Spending Guide* — 2025
-- CNCF — *Cloud Native AI White Paper* — 2024
+- FinOps Foundation — *The State of FinOps 2025* — 2025
+- Okta — *Businesses at Work 2025* — 2025
+- Menlo Ventures — *The State of Generative AI in the Enterprise* — 2024 and 2025
+- OpenAI — *Deprecations* and *Assistants API deprecation* documentation — 2026 (developers.openai.com)
+- AICPA — *SOC 2 Trust Services Criteria* — 2017 (rev. 2022); ISO/IEC — *ISO/IEC 27001:2022* — 2022

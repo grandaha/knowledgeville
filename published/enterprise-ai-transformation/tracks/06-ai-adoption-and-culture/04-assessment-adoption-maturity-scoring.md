@@ -1,17 +1,167 @@
 ---
 type: Playbook
 title: "Assessment: Adoption Maturity Scoring"
-description: A scoring assessment for AI adoption maturity — utilization, cultural readiness, and resistance mapping.
+description: "A scoring assessment for AI adoption maturity — utilization and engagement, cultural readiness, leadership modeling, and resistance mapping."
 tags: [ai-adoption, assessment, maturity-scoring, playbook]
-timestamp: "2026-06-12"
-status: planned
+timestamp: "2026-06-18"
 ---
 
-> **Status:** Planned — not yet written.
+## What This Is For
 
-## Planned contents
+This assessment tells you where your organization actually stands on AI adoption — not how many licenses you bought, but how deeply and safely AI is used. It is the measurement companion to the [AI Adoption Framework](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md) (the argument) and the [Designing an Adoption Program](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md) guide (the how-to). Score yourself before designing a program, to find the binding constraint; score again on a cadence, to see whether it is moving.
 
-- Adoption maturity dimensions and scoring
-- Tool utilization and engagement metrics
-- Cultural readiness indicators
-- Resistance mapping and mitigation scoring
+The reason a dedicated assessment is needed is the gap the framework documents: access is not adoption. As of early 2024 **only 32% of desk workers had tried AI for work — two-thirds had not — and just 15% strongly agreed they had the training to use it effectively** *(Slack Workforce Lab, Workforce Index, 2024)*. Even where AI is used, regular use trails far behind trial: in 2025 about **60% of desk workers used AI at least occasionally, but only around 40% weekly and 20% daily** *(Slack Workforce Lab, The New AI Advantage, 2025)*. A maturity score that counts seats would call this success; a score that counts habitual, safe, workflow-integrated use tells the truth.
+
+This page gives you six scoring dimensions, a 1–5 maturity ladder for each, the metrics that feed them, a resistance-mapping overlay, and a method for interpreting the result.
+
+---
+
+## How to Use It
+
+1. **Score each of the six dimensions 1–5** using the ladders below, evidenced by the metrics in the next section — not by impression.
+2. **Plot a profile, not an average.** A single low dimension is a bottleneck even when the mean looks healthy. Use the radar/profile to find it.
+3. **Overlay the resistance map** to see *where* in the workforce adoption is stuck.
+4. **Interpret the pattern** (final section) to choose the next intervention, then point fixes at the relevant phase of the [adoption program guide](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md).
+
+The five-level structure follows established maturity-model convention — the same Initial → Managed → Defined → Quantitatively Managed → Optimizing progression as CMMI *(CMMI Institute / ISACA, Capability Maturity Model Integration)* — so a score is comparable to how the organization already thinks about other capabilities.
+
+---
+
+## The Six Dimensions
+
+| # | Dimension | The question it answers |
+|---|---|---|
+| D1 | Tool Utilization & Engagement | Are people actually using it — deeply, broadly, and habitually? |
+| D2 | Cultural Readiness | Is it safe to experiment, and is trust in AI calibrated? |
+| D3 | Leadership Modeling & Sponsorship | Do leaders visibly use AI and actively sponsor adoption? |
+| D4 | Enablement & Skills | Are people trained and supported to use AI well? |
+| D5 | Governance & Acceptable-Use Clarity | Do people know what is allowed, with sanctioned tools that suffice? |
+| D6 | Trust & Verification Practices | Are AI outputs verified appropriately — neither blindly trusted nor reflexively dismissed? |
+
+---
+
+## The 1–5 Maturity Ladder
+
+### D1 — Tool Utilization & Engagement
+
+| Level | What it looks like |
+| --- | --- |
+| 1 | Licenses provisioned but little real use; no usage tracking; activation well below ~30%. |
+| 2 | Activation rising but engagement shallow; daily-active/monthly-active (DAU/MAU) stickiness in the low single digits; use concentrated in a few enthusiasts. |
+| 3 | Majority of target users activated; weekly use common in target roles; DAU/MAU approaching ~20%. |
+| 4 | Habitual daily use across most target roles; DAU/MAU around the ~31% B2B-SaaS benchmark; breadth across functions. |
+| 5 | AI embedded in core workflows; usage tracked and tied to outcomes; sustained retention rather than novelty spikes. |
+
+### D2 — Cultural Readiness (psychological safety, experimentation, trust)
+
+| Level | What it looks like |
+| --- | --- |
+| 1 | Fear dominates; AI errors are punished; experimentation absent; deep distrust of outputs. |
+| 2 | Pockets of curiosity; experimentation tolerated informally but unsafe to admit failure. |
+| 3 | Teams openly discuss AI use; failures treated as learning; calibrated trust beginning to form. |
+| 4 | Psychological safety high; experimentation is normal and expected; trust calibrated to task risk. |
+| 5 | Continuous, open experimentation is the norm; sharing wins *and* failures is routine across teams. |
+
+### D3 — Leadership Modeling & Sponsorship
+
+| Level | What it looks like |
+| --- | --- |
+| 1 | No visible sponsor; leaders do not use AI themselves. |
+| 2 | Verbal support only; no modeling, no resourcing. |
+| 3 | A named sponsor exists; some leaders visibly use AI. |
+| 4 | Active, visible, reachable sponsorship; leaders model use and remove barriers. |
+| 5 | Sponsorship sustained and cascaded through management; leaders coach adoption and disclose their own AI mistakes. |
+
+### D4 — Enablement & Skills
+
+| Level | What it looks like |
+| --- | --- |
+| 1 | No training; entirely self-taught. |
+| 2 | Ad hoc resources; a minority trained; under five hours of learning is typical. |
+| 3 | Formal, role-based onboarding for target roles; prompt-and-judgment skills taught. |
+| 4 | Continuous enablement: champions network, office hours, just-in-time support, communities of practice. |
+| 5 | Skills measured, refreshed, and adapted as capabilities change; enablement keeps pace with the tools. |
+
+### D5 — Governance & Acceptable-Use Clarity
+
+| Level | What it looks like |
+| --- | --- |
+| 1 | No policy; high shadow-AI exposure; people guess at what is allowed. |
+| 2 | A blanket ban or silence — which drives covert use rather than preventing it. |
+| 3 | A published acceptable-use policy exists; sanctioned tools are available. |
+| 4 | Clear data-handling rules; sanctioned tools cover real needs; shadow AI is low. |
+| 5 | Governance enables rather than blocks; monitored and reviewed; demand is met by sanctioned tools. |
+
+### D6 — Trust & Verification Practices
+
+| Level | What it looks like |
+| --- | --- |
+| 1 | Outputs either blindly accepted or reflexively dismissed; no shared norms. |
+| 2 | Verification is ad hoc and personal; over- and under-trust both common. |
+| 3 | Basic human-in-the-loop expectations exist for higher-risk uses. |
+| 4 | Verification habits are explicit and matched to task risk; people know when to check. |
+| 5 | Calibrated trust is cultural: AI relied on where reliable, verified where weak, and the difference is taught. |
+
+---
+
+## Tool Utilization & Engagement Metrics (D1)
+
+Score D1 on evidence, using product-analytics measures rather than seat counts:
+
+- **Activation rate** — share of provisioned users who have completed a meaningful first action, not merely logged in *(Amplitude, Top Digital Product Adoption Metrics)*.
+- **DAU/MAU stickiness** — daily-active over monthly-active users, the standard embeddedness proxy. Useful reference points: B2B SaaS sits around **31%**, with **25–35% considered broadly healthy** *(Mixpanel, MAU: Definition, Formula, and Benchmarks, 2026)*.
+- **Breadth** — percentage of *target* roles with any regular use, to catch adoption that is real but confined to one team.
+- **Retention** — 30- and 90-day sustained use, which separates habit from a novelty spike. (Daily use grew rapidly through this period — Slack measured daily AI use up 233% in the six months to mid-2025, versus November 2024 — so trend matters as much as level *(Slack Workforce Lab, The New AI Advantage, 2025)*.)
+- **License waste** — provisioned-but-inactive seats. Across SaaS generally, organizations actively use only about **49% of provisioned licenses** *(Zylo, SaaS Management Index, 2024)*; AI rollouts are not exempt, and the unused half is both wasted spend and a false adoption signal.
+
+A useful framing: the daily users are where value concentrates. Slack found **daily AI users were markedly more likely to report "very good" productivity, focus, and job satisfaction** than occasional users *(Slack Workforce Lab, The New AI Advantage, 2025)* — which is why D1 rewards depth and habit, not breadth of access alone.
+
+---
+
+## Cultural Readiness Indicators (D2)
+
+Culture is scored from signals, not vibes:
+
+- **Psychological-safety survey** — adapt Edmondson's validated items; psychological safety is the strongest enabler of the team learning behavior that experimentation requires *(Edmondson, Administrative Science Quarterly, 1999)*, and was the top dynamic of effective teams in Google's large internal study *(Google re:Work, Project Aristotle, 2015)*.
+- **Disclosure comfort** — whether people will admit AI use to a manager. This is a leading indicator of real use: those comfortable disclosing are **67% more likely to have used AI for work** *(Slack Workforce Lab, Fall 2024 Workforce Index, 2024)*.
+- **Experimentation throughput** — count of shared experiments, prompts contributed, wins and failures posted. Low throughput with high usage signals adoption being driven underground.
+- **Trust disposition** — calibrated against a wary baseline: only **46% of people globally are willing to trust AI** *(KPMG & University of Melbourne, Trust in AI 2025, 2025)*, so neither blanket enthusiasm nor blanket suspicion is the target.
+
+---
+
+## Resistance Mapping
+
+Adoption maturity is not uniform across a workforce, so a single score hides the real problem. Overlay the population onto Rogers' adopter segments — **innovators 2.5%, early adopters 13.5%, early majority 34%, late majority 34%, laggards 16%** *(Rogers, Diffusion of Innovations, 5th ed., 2003)* — and locate where adoption has stalled.
+
+The decisive boundary is between the early adopters and the early majority. The enthusiasts (the first ~16%) adopt on novelty; the majority adopt only on proof, and the transition between them is where most programs stall — the "chasm" *(Moore, Crossing the Chasm, 1991)*. Practical use of the map:
+
+- **Stuck before ~16% penetration** → you have reached the enthusiasts and no further. The constraint is usually proof and relevance, not access — invest in role-based use cases and visible peer wins (D4).
+- **Stuck at the majority** → the constraint is usually safety and manager engagement (D2, D3) — pragmatists adopt when their manager and peers visibly do.
+- **High usage but concentrated** → breadth problem; check D1 breadth and the champion coverage feeding it.
+
+Segment the resistance, too: fear of job loss, fear of looking incompetent, distrust of outputs, and loss of autonomy call for different responses (see the [framework](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md)). Mapping *which* fear dominates *which* segment tells the program where to aim.
+
+---
+
+## Scoring and Interpretation
+
+Record a 1–5 for each dimension and read the **profile**, not just the mean. The shape is diagnostic:
+
+| Pattern | What it means | Where to act |
+|---|---|---|
+| High D1, low D2/D5 | Usage is real but unsafe and ungoverned — the shadow-AI pattern: people are using AI, often unsanctioned, and hiding it | Build safety and channel demand into sanctioned tools ([program guide](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md), Phases 4–5) |
+| High D3/D4, low D1 | Investment is not converting — the access-vs-use gap: leadership and training are in place but habitual use is missing | Check relevance and friction; role-based use cases, remove workflow blockers |
+| High everything except D6 | Adoption is broad but trust is uncalibrated — over- or under-trust risk | Teach verification habits matched to task risk (D6) |
+| Uniformly low | Early stage | Start at Phase 0 — sponsorship and governance — before anything else |
+
+Two interpretation rules hold across patterns. First, **a high mean does not redeem a low bottleneck dimension** — adoption is gated by its weakest link, much as the [framework](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md) argues culture gates the whole transformation. Second, **trend beats level**: re-score on a regular cadence, because a rising score that plateaus at the majority is the signal to change tactics, not to keep doing more of what reached the enthusiasts.
+
+---
+
+## Key Takeaways
+
+- **Score use, not access.** Trial and licenses overstate adoption; habitual, deep, workflow-integrated use is the real measure *(Slack Workforce Lab, 2024–2025)*.
+- **Six dimensions, scored as a profile.** Utilization, culture, leadership, enablement, governance, and verification — read the shape, because the weakest dimension is the bottleneck.
+- **Engagement is measurable.** Activation, DAU/MAU (~31% B2B-SaaS benchmark), retention, breadth, and license waste give D1 an evidence base *(Mixpanel, 2026; Zylo, 2024)*.
+- **Map the resistance.** Use Rogers' segments to find where adoption stalls — most often at the chasm between enthusiasts and the pragmatic majority *(Rogers, 2003; Moore, 1991)*.
+- **Re-score on a cadence.** Maturity is a trend, not a one-time grade; the profile tells you which [program](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md) phase to invest in next.

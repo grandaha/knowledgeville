@@ -2,7 +2,9 @@ site_name: Knowledgeville
 site_description: Open research from One Step Labs on the things we find important, shared as a public OKF knowledge base.
 site_url: https://knowledge.onesteplabs.com/
 docs_dir: published
-copyright: Open research from One Step Labs — onesteplabs.com
+copyright: >-
+  Open research from One Step Labs — onesteplabs.com –
+  <a href="#__consent">Change cookie settings</a>
 
 theme:
   name: material
@@ -35,6 +37,20 @@ theme:
 
 extra_css:
   - assets/onesteplabs.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-TG5RFLTYFT
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to measure the reach of our content and whether
+      readers find it useful. With your consent, you help us improve it.
+    actions:
+      - accept
+      - reject
+      - manage
 
 plugins:
   - search

@@ -1,18 +1,147 @@
 ---
 type: Concept
 title: The Four Levels of Workflow AI Integration
-description: Definitions and examples for each level of workflow AI integration, from AI-assisted tasks to autonomous agentic workflows.
+description: "A four-level taxonomy of workflow AI integration — from AI-assisted tasks to autonomous agentic workflows — with cited examples, oversight models, and guidance on where each level fits."
 tags: [workflow-optimization, automation, agentic-ai]
-timestamp: "2026-06-12"
-status: planned
+timestamp: "2026-06-17"
 ---
 
-> **Status:** Planned — not yet written.
+## Why a Leveled Model Matters
 
-## Planned contents
+The single most expensive mistake in workflow automation is treating "putting AI into a workflow" as one undifferentiated thing. It is not. Handing a writer a drafting copilot, scripting a deterministic data-entry bot, embedding generative AI across a multi-step claims process, and turning a fleet of autonomous agents loose on your operations are four different commitments. They demand different tools, different governance, different skills, and — most importantly — different amounts of human oversight. Conflate them and you get one of two failure modes: you under-automate, leaving obvious gains on the table because "AI is risky," or you over-automate, granting autonomy to a system that cannot reliably carry it and discovering the gap only after it has acted on something that mattered.
 
-- Definitions and examples for each level
-- Level 1: AI-assisted tasks (copilot, suggestions, drafts)
-- Level 2: Automated tasks (rule-based, no human in loop)
-- Level 3: AI-augmented workflows (human + AI collaboration)
-- Level 4: Agentic workflows (multi-step, autonomous)
+A leveled model fixes this by making the central trade-off explicit. As you move up the levels, the AI does more of the work and the human does less — but the cost of an unsupervised error rises, and the reliability you can count on falls. The right level for a given workflow is not the highest one available; it is the one where the value of additional autonomy still exceeds the risk it introduces, given how reliable the technology actually is for that task today. The industry consensus, even among the most aggressive vendors, is that this frontier is much lower than the marketing suggests: Gartner predicts that over 40% of agentic AI projects will be canceled by the end of 2027, citing escalating costs, unclear business value, and inadequate risk controls (Gartner, 2025). The point of this taxonomy is to help you place each workflow deliberately rather than chase the top of the stack.
+
+The four levels are:
+
+1. **AI-assisted tasks** — a human does the work; AI suggests, drafts, and accelerates.
+2. **Automated tasks** — deterministic, rule-based automation runs a discrete task with no human in the loop.
+3. **AI-augmented workflows** — AI does substantial work across a multi-step process while a human directs and reviews.
+4. **Agentic workflows** — autonomous agents plan and act across multiple steps with tools, under human-on-the-loop oversight.
+
+The levels are not a maturity ladder you are obliged to climb. Most enterprises will run all four simultaneously across different workflows, and a well-run program deliberately keeps high-stakes work at lower levels. This page defines each level, shows what it looks like with cited evidence, and specifies the oversight model each one requires. It pairs with the [workflow optimization framework](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/02-workflow-optimization-framework.md), which tells you *what* to optimize and in what order, and the [tooling landscape](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/04-tooling-landscape.md), which surveys the tools at each level.
+
+### A note on oversight: in-the-loop, on-the-loop, out-of-the-loop
+
+Before the levels, the vocabulary that runs through all of them. The distinction comes from the autonomous-systems literature — its clearest origin is Human Rights Watch's 2012 taxonomy for autonomous weapons (Human Rights Watch, 2012):
+
+- **Human-in-the-loop (HITL):** a human must instigate or approve each consequential action. The system cannot act on its own.
+- **Human-on-the-loop (HOTL):** the system acts autonomously, but a human monitors it and can abort or override.
+- **Human-out-of-the-loop (HOOTL):** no human action is involved in the moment; the system selects and executes on its own.
+
+This is not just defense jargon — it is now binding regulatory language. The EU AI Act requires that high-risk AI systems "can be effectively overseen by natural persons," and, critically, that those oversight measures be "commensurate with the risks, level of autonomy and context of use" of the system (EU AI Act, Article 14, Regulation (EU) 2024/1689). That single clause encodes the entire thesis of this page: the more autonomy a system has and the higher the stakes, the more oversight the law — and good sense — demands. Map this vocabulary onto the levels and the pattern is clean. Level 1 is human-in-the-loop by construction (the human is doing the work). Level 2 is human-out-of-the-loop within its narrow, deterministic lane. Level 3 puts the human firmly in the loop as director and reviewer. Level 4 is the hard case — genuinely human-on-the-loop — and it is hard precisely because effective on-the-loop oversight of an autonomous multi-step agent is far more difficult than it sounds.
+
+---
+
+## Level 1: AI-Assisted Tasks
+
+**Definition.** A human performs the task and remains accountable for the output; AI assists by suggesting, drafting, completing, or explaining. The AI's output is always a proposal the human accepts, edits, or rejects. This is the copilot pattern, and it is where most enterprise AI value is being realized today.
+
+**What it looks like.** A developer accepts inline code completions. A marketer asks a chat assistant for three subject-line variants and rewrites the best one. A support agent gets a suggested reply drafted from the knowledge base and the customer's history, then edits it before sending. A lawyer asks for a first-pass summary of a contract and checks every clause. In every case the workflow itself is unchanged — the human still owns each step — but each step gets faster and, often, better.
+
+**Cited outcomes.** The evidence here is unusually strong because Level 1 is the most-studied. In a controlled experiment, GitHub developers using Copilot completed a programming task 55% faster than those without it — 1 hour 11 minutes versus 2 hours 41 minutes, statistically significant at P = .0017 (GitHub, 2022). In a real enterprise randomized trial at Accenture, developers accepted roughly 30% of Copilot's suggestions and retained 88% of the characters it generated (GitHub, 2024). Beyond code, the gains are broad: in an MIT study published in *Science*, professionals given ChatGPT for mid-level writing tasks finished 40% faster and produced 18% higher-quality output, with the weakest writers improving the most (Noy and Zhang, 2023). The same skill-leveling pattern showed up in a Stanford-NBER study of 5,179 customer-support agents, where access to a generative-AI assistant raised productivity by 14% on average but 34% for novices, while also improving customer sentiment and employee retention (Brynjolfsson, Li, and Raymond, 2023).
+
+> Across rigorous studies the signature of Level 1 is consistent: large, real productivity gains, concentrated among less-experienced workers. The Stanford-NBER call-center study found a 14% average uplift but a 34% uplift for novices — AI assistance works partly by diffusing the tacit know-how of expert workers to everyone else (Brynjolfsson, Li, and Raymond, 2023).
+
+**When to use it.** Level 1 is the right starting point for almost any knowledge-work task and the correct ceiling for high-judgment, high-stakes work where a human must own the decision — diagnosis, legal advice, hiring, anything irreversible. It is also the fastest level to deploy and the easiest to govern, because the human is the control.
+
+**Risks and limits.** The dominant risk is automation bias — over-relying on plausible-looking output and rubber-stamping it. The EU AI Act explicitly names this, requiring that human overseers remain "aware of the possible tendency of automatically relying or over-relying" on AI output (EU AI Act, Article 14). The gains evaporate if the human stops genuinely reviewing. There is also a quality ceiling: Level 1 accelerates the human but does not exceed the human's own judgment, and a careless reviewer can ship the assistant's hallucinations as their own.
+
+**Oversight model.** Human-in-the-loop, by definition. The human is the loop. Governance is mostly about training reviewers to stay skeptical and about not letting "assisted" quietly slide into "unread."
+
+---
+
+## Level 2: Automated Tasks
+
+**Definition.** A deterministic, rule-based system executes a discrete, well-defined task with no human in the loop and, typically, no AI judgment at all. This is classic robotic process automation (RPA) and scripted automation: if-this-then-that logic, screen scraping, form filling, file transfers, reconciliations. The defining property is determinism — given the same input, it always does the same thing.
+
+**What it looks like.** A bot logs into three systems every night, pulls invoice data, matches it against purchase orders, and posts the matched records. A script moves files from an SFTP server into a data warehouse on a schedule. A workflow rule auto-routes a ticket to the right queue based on keywords. None of this is "intelligent" in the modern sense — and that is the point. Within its narrow lane it is fast, cheap, auditable, and perfectly consistent.
+
+**Cited outcomes.** Where the process is stable and high-volume, the returns are real. In Deloitte's global RPA survey, organizations that scaled beyond piloting reported RPA met or exceeded expectations for improved compliance (92%), quality and accuracy (90%), and productivity (86%) (Deloitte, 2018). A later Deloitte survey found organizations that moved past piloting achieved an average cost reduction of 32%, up from 24% in 2020 (Deloitte, 2022). Concrete cases exist: Telkomsel scaled to roughly 100 automated processes and reported savings of over 110,000 hours per month in 2021 (Deloitte, 2022).
+
+**Risks and limits.** Level 2's strengths are also its trap. Rule-based bots are brittle: they break when the underlying systems they drive change, because they encode no understanding, only steps. The scaling record is sobering — EY observed that 30% to 50% of initial RPA projects fail (EY, *Get ready for robots*), and in Deloitte's survey only 3% of organizations had scaled their digital workforce to 50 or more robots, with scaling "proving more difficult than anticipated" (Deloitte, 2018). The hidden cost is maintenance: Forrester found that in 2019, for every $1 spent on RPA software, $3.41 was spent on the services needed to make it work (Forrester, via CIO, 2019). Deterministic automation only pays off where the process is genuinely stable; point it at a moving target and you sign up for perpetual repair.
+
+> The brittleness is structural, not incidental. Only 3% of organizations in Deloitte's RPA survey had scaled to 50+ robots, and scaling was "proving more difficult than anticipated" (Deloitte, 2018) — because a system that encodes steps without understanding breaks every time the steps change.
+
+**When to use it.** High-volume, rule-clear, stable processes where the inputs are structured and the logic does not require judgment: reconciliations, data migration between fixed schemas, scheduled extracts, deterministic routing. If you can write the rules exhaustively and they will not change often, Level 2 is the cheapest and most auditable option — and it remains the right answer for a large share of back-office work. Where a process is *mostly* deterministic but has a messy, judgment-heavy step, that step is a candidate for Level 1 or 3, not a reason to abandon automation of the rest.
+
+**Oversight model.** Human-out-of-the-loop within the lane, but with strict guardrails at the boundary: input validation, exception queues that kick anomalies to a human, monitoring for silent failure, and change management so that upstream system changes trigger a review of the bots that depend on them. The autonomy is safe only because the scope is narrow and deterministic.
+
+---
+
+## Level 3: AI-Augmented Workflows
+
+**Definition.** Generative AI does substantial work across a multi-step workflow while a human directs the process and reviews the output. This is more than a single-task copilot (Level 1) but stops short of autonomy (Level 4): the AI drafts the report, triages the queue, summarizes the case, proposes the resolution — across several steps — and a human sets the direction, handles exceptions, and signs off. The human is firmly in the loop, but the division of labor has shifted: the AI is now doing the bulk of the production work.
+
+**What it looks like.** A support organization deploys an AI assistant that handles the front line of customer conversations end to end, escalating the hard cases to humans. A claims team uses GenAI to read each claim, pull the relevant policy, draft an adjudication, and flag the ambiguous ones for a human adjudicator. A consulting team runs analysis and first drafts through AI and spends its human hours on judgment, client context, and the parts the model gets wrong.
+
+**Cited outcomes.** Adoption is now mainstream — 78% of organizations report using AI in at least one business function, up from 55% in 2023 (McKinsey, 2025). The marquee augmentation case is Klarna's AI assistant, which in its first month handled 2.3 million conversations — two-thirds of the company's customer-service chats — doing work equivalent to 700 full-time agents, cutting resolution time from 11 minutes to under 2, with customer-satisfaction scores on par with human agents and an estimated $40 million profit improvement in 2024 (Klarna, 2024). But Klarna's later course-correction is just as instructive: it publicly walked back the AI-only stance and reintroduced human agents for complex cases — a real-world illustration of why this is Level 3 (human in the loop) and not Level 4.
+
+The rigorous evidence on human-plus-AI teaming carries the same nuance. In the BCG/Harvard "jagged frontier" field experiment, 758 consultants using GPT-4 completed 12.2% more tasks, 25.1% faster, with more than 40% higher quality — but *only on tasks inside the model's frontier of competence*. On a task deliberately chosen to fall outside that frontier, AI users were 19 percentage points *less* likely to reach the correct answer than the control group (Dell'Acqua et al., 2023). Augmentation is not free uplift; it is uplift conditional on the human knowing where the AI is reliable and staying in the loop where it is not.
+
+> The "jagged frontier" is the core lesson of Level 3: with AI, BCG consultants did 12.2% more work, 25.1% faster, at 40%+ higher quality on tasks inside the AI's competence — but were 19 percentage points *more likely to be wrong* on a task just outside it (Dell'Acqua et al., 2023). The value of the human is knowing which side of the line a given task is on.
+
+**When to use it.** Level 3 fits high-volume work that is too varied for deterministic rules but where a human can still review at the pace the work arrives, or sample-review with exception handling: customer support, document-heavy operations, content production, analysis and research, first-pass triage of almost anything. It is the level where most of the *transformational* (rather than incremental) workflow gains currently live.
+
+**Risks and limits.** The two failure modes are over-trust and reviewer overload. The jagged frontier means the AI will be confidently wrong on the tasks just beyond its competence, and a reviewer who cannot tell inside from outside will pass those errors through. And there is a real tension between the volume Level 3 enables and the review it requires: push the throughput high enough and meaningful human review degrades into rubber-stamping, quietly converting Level 3 into an unsupervised — and unaccountable — Level 4. The macro data underlines that value is not automatic: despite 78% adoption, more than 80% of organizations report no tangible enterprise-level EBIT impact yet from generative AI (McKinsey, 2025) — usually a workflow-redesign and review-discipline problem, not a model problem.
+
+**Oversight model.** Human-in-the-loop as director and reviewer, with the review intensity tuned to the stakes — full review for high-consequence outputs, statistical sampling plus exception escalation for high-volume, lower-stakes ones. The governance question is honest review capacity: if you cannot staff the review the volume demands, you do not have a Level 3 system, you have an unmonitored one.
+
+---
+
+## Level 4: Agentic Workflows
+
+**Definition.** Autonomous AI agents plan and execute a multi-step workflow, calling tools, making intermediate decisions, and adapting their approach with minimal human intervention in the moment. The human sets the goal and the guardrails and supervises from above — human-on-the-loop — rather than approving each step. This is the frontier, and it is the level where ambition most outruns reliability.
+
+**What it looks like.** In the pitch: an agent that, given a goal, books the travel, files the expense, opens the tickets, writes the code, runs the tests, and resolves the incident — chaining many steps and tools on its own. In practice today: narrower, bounded agents handling constrained slices of this, under close watch, in domains where mistakes are cheap and reversible.
+
+**The reliability problem.** The reason Level 4 is hard is structural, and it is the single most important thing to understand on this page: errors compound across steps. If each step in an autonomous chain succeeds 95% of the time, a 20-step task succeeds only 0.95^20 ≈ 36% of the time — and that is a mathematical illustration, not a worst case. The benchmarks bear this out. On Carnegie Mellon's TheAgentCompany, a simulated software firm with 175 real, professional multi-step tasks, the best agent completed only about 24% of tasks fully autonomously in the original 2024 evaluation (rising to roughly 30% in a later revision) (Xu, Neubig, et al., 2024). In other words, on realistic end-to-end office work, the best agents fail outright the large majority of the time. This is why the most common production pattern is not autonomy but bounded autonomy with frequent human checkpoints — which is really Level 3 wearing a Level 4 label.
+
+**Adoption reality versus hype.** The gap between the narrative and the deployed reality is wide, and the research firms selling the future are the ones documenting it. Gartner estimates that of the thousands of vendors claiming agentic AI, only about 130 are real — the rest is "agent washing," rebranded chatbots and RPA (Gartner, 2025). Gartner projects that over 40% of agentic AI projects will be canceled by the end of 2027 (Gartner, 2025), even while forecasting that by 2028 at least 15% of day-to-day work decisions will be made autonomously through agentic AI, up from 0% in 2024 (Gartner, 2025). Enterprises are deploying — KPMG found 54% of organizations had integrated AI agents into operations in its early-2026 pulse (KPMG, 2026) — but governance is lagging dangerously: Deloitte's 2026 survey of 3,235 leaders found only 21% report having a mature governance model for agentic AI (Deloitte, 2026).
+
+> The autonomy gap, in one line: Gartner reckons only about 130 of the thousands of self-described agentic AI vendors are real (Gartner, 2025), and Carnegie Mellon's benchmark found the best agent completing only ~24% of realistic multi-step office tasks autonomously (Xu, Neubig, et al., 2024). Treat Level 4 as a frontier to approach carefully, not a destination to rush.
+
+**When to use it.** Reserve genuine Level 4 for workflows where the steps are reversible or cheap to retry, the cost of an unsupervised error is low, the task is bounded, and you have built real human-on-the-loop oversight with the ability to monitor, interrupt, and roll back. Software experimentation, research gathering, low-stakes internal operations, and constrained data tasks are reasonable proving grounds. The further a workflow is from those conditions — anything irreversible, customer-facing at scale, financially or legally consequential — the more the burden of proof shifts toward keeping it at Level 3.
+
+**Risks and limits.** Compounding errors, brittle long-horizon planning, opaque failure modes, and the difficulty of meaningful human-on-the-loop oversight when an agent acts faster than a human can follow. There is also a governance dimension the law now reaches: the EU AI Act ties required oversight explicitly to "the level of autonomy" of the system (EU AI Act, Article 14), so a more autonomous agent operating in a high-risk domain carries a heavier, legally enforceable oversight obligation. The hardest problem is not building an agent that can do the task — it is building one whose failures are detectable and recoverable before they matter.
+
+**Oversight model.** Human-on-the-loop in principle, but only credible when backed by engineering: bounded scope and permissions, tool-call allow-lists, checkpoints and approval gates on consequential actions, full observability of the agent's reasoning and actions, hard stop buttons, and rollback. Without these, "human-on-the-loop" is human-out-of-the-loop with a comforting label. Agentic workflows that touch decisions of consequence fall squarely under [Track 02 governance and risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md), and their reliability rests on the platform foundations in [Track 04 technology architecture and platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md).
+
+---
+
+## The Four Levels at a Glance
+
+| Dimension | Level 1: AI-Assisted | Level 2: Automated | Level 3: AI-Augmented | Level 4: Agentic |
+|-----------|----------------------|--------------------|-----------------------|------------------|
+| **Who does the work** | Human, AI assists | Deterministic system | AI does the bulk, human directs | Autonomous agent |
+| **Human role** | Performs and owns the task | Sets rules, handles exceptions | Director and reviewer | Goal-setter and supervisor |
+| **Autonomy** | None (suggestion only) | Full, within a narrow rule set | Substantial, under review | High, end-to-end |
+| **Oversight** | Human-in-the-loop | Human-out-of-the-loop (guardrailed) | Human-in-the-loop | Human-on-the-loop |
+| **Typical tools** | Copilots, chat assistants, inline completion | RPA, scripts, workflow rules | Embedded GenAI across a process | Agent frameworks, tool-using agents |
+| **Reliability posture** | High (human is the check) | High but brittle to change | Conditional on the "jagged frontier" | Low for long horizons; errors compound |
+| **Risk profile** | Low; main risk is automation bias | Low in lane, breaks on change | Moderate; over-trust and review overload | High; opaque, compounding failures |
+| **Where it fits** | Almost any knowledge task; ceiling for high-judgment work | Stable, high-volume, rule-clear tasks | Varied high-volume work too complex for rules | Bounded, reversible, low-stakes work |
+
+The discipline this table is meant to instill: choose the level deliberately, per workflow, against the value-versus-risk frontier — and remember that for high-consequence work, the right answer is very often a lower level than the technology nominally allows. Use the [assessment](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/06-assessment-workflow-maturity-and-opportunity-scoring.md) to score where each of your workflows belongs, and the [practitioner guide](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md) to run the program that moves them there safely.
+
+---
+
+## Sources
+
+- GitHub — *Research: quantifying GitHub Copilot's impact on developer productivity and happiness* — 2022 (https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+- GitHub — *Research: Quantifying GitHub Copilot's impact in the enterprise with Accenture* — 2024 (https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/)
+- Noy, S. and Zhang, W. (MIT) — *Experimental evidence on the productivity effects of generative artificial intelligence* (Science); MIT News summary — 2023 (https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714)
+- Brynjolfsson, E., Li, D., and Raymond, L. — *Generative AI at Work* (NBER Working Paper No. 31161) — 2023 (https://www.nber.org/papers/w31161)
+- Deloitte — *The robots are ready. Are you? Untapped advantage in your digital workforce* (Global RPA Survey) — 2018 (https://werkflo.com.au/assets/files/Deloitte-us-cons-global-rpa-survey-2018S.pdf)
+- Deloitte — *Automation with intelligence: intelligent automation survey results* — 2022 (https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html)
+- EY (Ernst & Young) — *Get ready for robots: Why planning makes the difference between success and disappointment* — n.d. (https://www.xenith.co.uk/blog/top-4-reasons-for-the-failure-of-robotic-process-automation)
+- Forrester / CIO — *4 surprising RPA research findings from Forrester* — 2019 (https://www.cio.com/article/215856/4-surprising-rpa-research-findings-from-forrester.html)
+- McKinsey & Company — *The state of AI: How organizations are rewiring to capture value* — 2025 (https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value)
+- Klarna — *Klarna AI assistant handles two-thirds of customer service chats in its first month* — 2024 (https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/)
+- Dell'Acqua, F., McFowland, E., Mollick, E., et al. (Harvard Business School / BCG) — *Navigating the Jagged Technological Frontier* (HBS Working Paper 24-013) — 2023 (https://www.hbs.edu/ris/Publication%20Files/24-013_d9b45b68-9e74-42d6-a1c6-c72fb70c7282.pdf)
+- Gartner — *Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027* — 2025 (https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027)
+- Xu, F. F., Neubig, G., et al. (Carnegie Mellon University) — *TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks* (arXiv:2412.14161) — 2024 (https://arxiv.org/abs/2412.14161)
+- KPMG — *AI Quarterly Pulse Survey, Q1 2026* — 2026 (https://kpmg.com/us/en/media/news/q1-ai-pulse2026.html)
+- Deloitte — *State of AI in the Enterprise 2026 (agentic AI governance findings)* — 2026 (https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html)
+- European Union — *Regulation (EU) 2024/1689 (AI Act), Article 14: Human Oversight* — 2024 (https://artificialintelligenceact.eu/article/14/)
+- Human Rights Watch — *Losing Humanity: The Case Against Killer Robots* — 2012 (https://www.hrw.org/report/2012/11/19/losing-humanity/case-against-killer-robots)

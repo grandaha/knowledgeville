@@ -15,7 +15,7 @@ AI governance must ask a different set of questions. A model behaves as specifie
 This is not a marginal difference. It is a structural one. AI systems have emergent behaviors that are not derivable from their training procedures. They degrade silently as the world changes around them. They inherit the biases and limitations of the data they learned from. And they are increasingly assembled from third-party components whose behavior the deploying enterprise does not control and may not fully understand.
 
 > **Only 25%** of organizations have fully operational AI governance, despite widespread awareness of regulatory obligations *(AuditBoard, 2025)*
-> The average cost of a data and AI incident reached **$4.88 million** in 2024, with losses from AI hallucinations alone estimated at **$67.4 billion** globally *(IBM Cost of a Data Breach Report, 2024; industry estimates, 2024)*
+> The average cost of a data breach reached **$4.88 million** in 2024 — the highest on record *(IBM Cost of a Data Breach Report, 2024)*
 
 The governance gap is the management problem of the moment. AI adoption is accelerating — McKinsey's 2025 State of AI found that 88% of organizations are using AI in at least one business function, up from 78% the prior year. But governance maturity has not kept pace: only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance *(McKinsey AI Trust Maturity Survey, 2026)*.
 
@@ -127,7 +127,7 @@ The [AI policy and acceptable use practitioner guide](/enterprise-ai-transformat
 
 AI governance is not self-executing. Someone owns it, someone funds it, and someone is accountable when it fails. The organizational design question — who, where, and how — is among the most consequential decisions in standing up an AI governance function.
 
-> **26%** of large enterprises now have a dedicated Chief AI Officer (CAIO), up from **11%** two years ago *(industry survey data, 2025)*. Gartner projected **35%** of large enterprises would have a CAIO by 2025.
+> **26%** of large enterprises now have a dedicated Chief AI Officer (CAIO), up from **11%** two years ago *(IBM Institute for Business Value, 2025)*. Gartner projected **35%** of large enterprises would have a CAIO by 2025.
 > Only **28%** of organizations report that their CEO takes direct responsibility for AI governance; only **17%** say their board of directors does *(McKinsey, State of AI, 2025)*
 
 Four organizational models dominate in practice:
@@ -192,6 +192,7 @@ Assess governance maturity against the companion [governance maturity scoring as
 - McKinsey & Company — *State of AI Trust in 2026: Shifting to the Agentic Era* — 2026
 - AuditBoard — *2025 AI Governance Research* — 2025
 - IBM Security — *Cost of a Data Breach Report* — 2024
+- IBM Institute for Business Value — *CEO Study* (Chief AI Officer adoption) — 2025
 - Deloitte — *State of Generative AI in the Enterprise* — 2025
 - Federal Reserve / OCC — *SR 11-7: Guidance on Model Risk Management* — 2011 (superseded April 2026 by SR 26-2)
 - Federal Reserve — *SR 26-2: Interagency Guidance on Model Risk Management* — April 2026

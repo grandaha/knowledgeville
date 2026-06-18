@@ -12,9 +12,9 @@ This assessment scores one thing: whether the **governance function** is mature 
 
 It is the diagnostic companion to [standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md) and [AI policy and acceptable use](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md). Run it to identify the weakest link before deploying AI in consequential domains.
 
-> While **80% of large organizations claim active AI governance initiatives**, fewer than half can demonstrate measurable governance maturity *(Gartner, 2024)*
+> Only about **one quarter of organizations report comprehensive AI security governance** in place; the rest rely on partial guidelines or policies still in development *(CSA and Google Cloud, 2025)*
 >
-> Only **25% of organizations have fully implemented AI governance programs** despite **93% using AI in some capacity** — a deployment-to-oversight gap of nearly 70 percentage points *(AuditBoard, 2025)*
+> Only **25% of organizations report a fully implemented AI governance program** despite **82% using AI across functions** — a deployment-to-oversight gap of roughly 57 percentage points *(AuditBoard, 2025)*
 
 This framework produces a prioritized gap list, not a score to report upward. If the result doesn't change what gets funded, what gets enforced, or what gets escalated in the next 90 days, the assessment wasn't worth running.
 
@@ -196,8 +196,5 @@ The most common failure mode: the assessment produces a score, someone presents 
 
 ## Sources
 
-- AuditBoard — *State of Audit, Risk, and Compliance: AI Edition* — 2025
-- Gartner — *AI Governance Survey: Measuring Maturity Across Large Organizations* — 2024
-- IAPP — *AI Governance Profession Report* — 2025
-- CSA and Google Cloud — *Cloud AI Governance and Security Study: Governance Maturity Is the Strongest Predictor of AI Readiness* — 2025
-- Ncontracts — *State of Third-Party Risk Management Survey* — 2025
+- AuditBoard — *From Blueprint to Reality: Execute Effective AI Governance in a Volatile Landscape* — 2025
+- CSA and Google Cloud — *The State of AI Security and Governance* — 2025

@@ -12,20 +12,20 @@ timestamp: "2026-06-16"
 
 AI governance is no longer an IT control. It is a board-level risk management function — and most enterprises are running it three to four years behind where their AI deployments already are.
 
-> **Only 43%** of organizations have a formal AI governance policy in place *(IAPP AI Governance Survey, 2025)*
+> **Only 43%** of organizations have a formal AI governance policy in place *(PEX Report, 2025/26)*
 > **66%** of directors report having "limited to no knowledge or experience" with AI *(Corporate Compliance Insights, 2025)*
-> **42%** of companies abandoned most of their AI initiatives in 2025 — up from 17% in 2024 *(McKinsey)*
+> **42%** of companies abandoned most of their AI initiatives in 2025 — up from 17% in 2024 *(S&P Global Market Intelligence, Voice of the Enterprise, 2025)*
 > **13%** of organizations have already reported an AI model breach; 97% lack proper AI access controls *(IBM, 2025)*
 
 The gap between deployment pace and governance infrastructure is where risk accumulates. Every week an organization deploys AI without standing policy, defined accountability, and a monitoring function, it adds to a liability balance that will eventually be paid — through regulatory fines, reputational damage, litigation, or forced remediation of systems already in production.
 
 ## The regulatory floor has arrived
 
-The EU AI Act entered into force in August 2024. Prohibited AI practices became enforceable in February 2025, with fines up to €35 million or 7% of global annual revenue. Full obligations for high-risk AI systems apply from August 2, 2026. In financial services, AI-related regulatory fines surged over 150% in 2024, with U.S. regulators issuing more than $4.3 billion in total financial penalties that year. Regulators in the US, UK, and EU are converging on a common expectation: organizations must demonstrate that they know what AI systems they are running, what risks those systems carry, and who is accountable when something goes wrong. "We are still figuring out our governance" is not a defense that mitigates a fine.
+The EU AI Act entered into force in August 2024. Prohibited AI practices became enforceable in February 2025, with fines up to €35 million or 7% of global annual revenue. Full obligations for high-risk AI systems apply from August 2, 2026. Financial regulators are already enforcing aggressively in adjacent compliance domains — U.S. regulators issued more than $4.3 billion in financial penalties in 2024 *(Fenergo, 2024)* — signaling the enforcement posture AI deployments will face. Regulators in the US, UK, and EU are converging on a common expectation: organizations must demonstrate that they know what AI systems they are running, what risks those systems carry, and who is accountable when something goes wrong. "We are still figuring out our governance" is not a defense that mitigates a fine.
 
 ## Four governance imperatives every enterprise needs
 
-**Model risk management.** AI systems produce outputs at scale. When those outputs are wrong — biased, hallucinated, inconsistently calibrated — the damage is proportional to deployment breadth, not bounded by a single bad decision. LLM hallucinations alone cost businesses an estimated $67 billion in degraded performance in 2024 *(IBM)*. Model risk management means inventorying deployed models, defining acceptable performance thresholds, monitoring for drift, and establishing processes for intervention or shutdown.
+**Model risk management.** AI systems produce outputs at scale. When those outputs are wrong — biased, hallucinated, inconsistently calibrated — the damage is proportional to deployment breadth, not bounded by a single bad decision. Model risk management means inventorying deployed models, defining acceptable performance thresholds, monitoring for drift, and establishing processes for intervention or shutdown.
 
 **Vendor and third-party AI risk.** Most enterprise AI runs on components the organization did not build: foundation models, APIs, embedded AI in SaaS products, and AI-enabled services from supply chain partners. Terms around training data, data retention, model updates, and output licensing change without announcement. Third-party AI risk management is the extension of existing vendor risk processes to cover these AI-specific exposures — and it is materially different from standard vendor due diligence.
 
@@ -45,12 +45,12 @@ The difference is not primarily one of resources. Organizations that established
 - Conduct an AI system inventory now. You cannot govern, monitor, or report on systems you do not know exist.
 - Extend vendor due diligence to cover AI-specific terms: training data provenance, data retention, model update notification, output liability, and right to audit.
 - Publish an acceptable use policy. It is the single highest-leverage low-cost governance action available, and most organizations do not have one.
-- Put AI governance on the board agenda with a reporting cadence. The 40% of companies that have done this outperform peers by nearly 11 percentage points in return on equity *(MIT, 2025)*.
+- Put AI governance on the board agenda with a reporting cadence. Companies with AI-savvy boards — about a quarter of firms — averaged roughly 11 percentage points higher return on equity than their industry peers *(MIT Sloan Management Review, 2025)*.
 
 The rest of this track operationalizes each point: the [Core Framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md) establishes the risk taxonomy and accountability model, the [Assessment](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/05-assessment-governance-maturity-scoring.md) turns that into a scored maturity diagnostic, and three practitioner guides cover standing up the governance function, acceptable use policy, and incident response. Leaders building the AI strategy that this governance layer must support should also see [Track 01](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md).
 
 ---
 
-**Sources:** IAPP AI Governance Profession Report 2025; Corporate Compliance Insights / Deloitte Board AI Survey 2025; McKinsey State of AI 2025; IBM Security 2025; EU AI Act (Regulation (EU) 2024/1689); Fenergo Global Financial Penalties Report 2025; MIT Sloan Management Review AI-Savvy Boards Study 2025.
+**Sources:** PEX Report 2025/26; Corporate Compliance Insights / Deloitte Board AI Survey 2025; S&P Global Market Intelligence, Voice of the Enterprise: AI & Machine Learning 2025; IBM Security 2025; EU AI Act (Regulation (EU) 2024/1689); Fenergo Global Financial Penalties Report (2024 data); MIT Sloan Management Review AI-Savvy Boards Study 2025.
 
 *Last updated: June 2026 · One Step Labs*

@@ -158,7 +158,7 @@ Neither SR 11-7 nor SR 26-2 explicitly addresses agentic systems. Organizations 
 
 ## The most common failure modes
 
-**Governance has authority to review but not to block.** A function that can raise concerns but cannot halt a deployment is an advisory body, not a governance function. Business units will treat it accordingly.
+**Governance has authority to review but not to block.** A function that can raise concerns but cannot halt a deployment is an advisory body, not a governance function. Business units will treat it accordingly. Only 18% of organizations have an enterprise-wide council or board with the authority to make decisions on responsible AI governance *(McKinsey, 2024)* — the scarce ingredient is rarely the committee; it is the committee's teeth.
 
 **Policy exists but the people making day-to-day AI decisions don't know about it.** A governance framework that lives on an intranet page but was never operationalized through training, intake processes, or champion networks provides no actual governance.
 
@@ -194,7 +194,7 @@ Use this to assess readiness — or to identify the gaps that need closing.
 
 ## Sources
 
-1. **OMB M-25-21** — *Accelerating Federal Use of AI through Streamlined Governance* (April 2025). Retains the CAIO requirement established in M-24-10, removes some reporting mandates, and maintains requirements for AI use case inventories and high-impact AI oversight. [https://www.whitehouse.gov/wp-content/uploads/2025/04/M-25-21.pdf](https://www.whitehouse.gov/wp-content/uploads/2025/04/M-25-21.pdf)
+1. **OMB M-25-21** — *Accelerating Federal Use of AI through Innovation, Governance, and Public Trust* (April 3, 2025). Retains the CAIO requirement established in M-24-10, removes some reporting mandates, and maintains requirements for AI use case inventories and high-impact AI oversight. [https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf)
 
 2. **EU AI Act** — Regulation (EU) 2024/1689. Prohibited AI practices enforceable as of February 2, 2025. High-risk AI system obligations under Annex III enforceable August 2, 2026. [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
 
@@ -202,6 +202,4 @@ Use this to assess readiness — or to identify the gaps that need closing.
 
 4. **Federal Reserve SR 26-2** — *Interagency Guidance on Model Risk Management* (April 2026). Extends SR 11-7 principles to AI and machine learning models, with additional guidance on explainability, fairness testing, and monitoring. Does not explicitly address agentic AI systems. [https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm)
 
-5. **Gartner** — *AI Governance Hype Cycle* (2024). Reports that through 2026, more than 80% of enterprises that deploy AI will lack adequate governance frameworks, exposing them to regulatory, reputational, and operational risk. Recommends federated governance models for large enterprises. [https://www.gartner.com/en/documents/ai-governance-hype-cycle](https://www.gartner.com/en/documents/ai-governance-hype-cycle)
-
-6. **McKinsey Global Institute** — *The State of AI in 2024* (May 2024). Finds that only 21% of organizations report having comprehensive AI governance policies in place, with governance lagging deployment by an average of 18 months. [https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+5. **McKinsey** — *The state of AI in early 2024* (May 2024). Finds that only 18% of organizations have an enterprise-wide council or board with the authority to make decisions involving responsible AI governance. [https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024)

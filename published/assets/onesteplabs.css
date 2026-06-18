@@ -26,11 +26,14 @@
   --md-default-fg-color--light: #374151;    /* neutral-700 */
 }
 
-/* Headings: DM Sans, tighter tracking per the OSL type scale. */
+/* Headings: DM Sans, tighter tracking per the OSL type scale.
+   Color follows --md-typeset-color so it adapts per scheme: #111827 in the
+   light (default) scheme, slate's near-white in dark mode. Never hardcode a
+   fixed color here or headings go invisible in dark mode. */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3 {
-  color: #111827;
+  color: var(--md-typeset-color);
   letter-spacing: -0.015em;
   font-weight: 600;
 }

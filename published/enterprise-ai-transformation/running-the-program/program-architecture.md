@@ -1,18 +1,85 @@
 ---
 type: Playbook
 title: Program Architecture
-description: How to staff and fund an eight-track AI transformation program, including governance structure and roles.
+description: "How to staff and fund an eight-track AI transformation program, including governance structure and roles."
 tags: [program-management, operating-model, governance, playbook]
-timestamp: "2026-06-12"
-status: planned
+timestamp: "2026-06-19"
 ---
 
-> **Status:** Planned — not yet written.
+The [eight-track model](/enterprise-ai-transformation/framework-architecture.md) tells you *what* an AI transformation has to get right. It does not tell you who owns each track, who decides between them when they compete for budget, or how the whole program is staffed and funded. That is the job of the **program architecture** — the operating model that runs all eight tracks as one coordinated effort rather than eight feuding initiatives.
 
-## Planned contents
+Getting this layer right is not optional overhead. IBM's study of Chief AI Officers found that organizations running a **centralized or hub-and-spoke AI operating model can realize up to 36% higher ROI on AI initiatives** than those that leave AI fully decentralized *(IBM, The CAIO Study, 2025)*. The structure you choose to coordinate the work is itself a determinant of whether the work pays off. This page covers the three operating-model patterns and when each fits, the program-level governance that sits above them, the roles that staff the program, and how to allocate budget across the eight tracks as you mature — all anchored to the [binding-constraint principle](/enterprise-ai-transformation/framework-architecture.md).
 
-- How to staff and fund an eight-track AI transformation program
-- Governance structure for the program overall
-- The AI Center of Excellence model vs. federated model
-- Roles: CDAO, AI Program Lead, Track Owners
-- Budget allocation across tracks by maturity stage
+> **A program architecture is not an org chart — it is a decision-rights map.** Its real output is clarity on *who decides what, on what cadence, against what evidence.* The boxes and reporting lines are downstream of that.
+
+## Three Operating Models: CoE, Federated, and Hub-and-Spoke
+
+There are three canonical ways to organize an AI program, and the right one depends almost entirely on your maturity and the binding constraint you are trying to relieve.
+
+**The Center of Excellence (CoE) — fully centralized.** A single dedicated team owns AI strategy, standards, platform, governance, and the scarce specialist talent, and the rest of the organization draws on it. The CoE concentrates expertise where it is scarce and enforces consistency — which is exactly what an early-stage organization needs and exactly what relieves the most common early constraints (no platform, no controls, no specialist talent). The data backs the concentration: only **31% of CFOs report having even a data-science center of excellence** *(IBM, 2024 CFO Study, 2024)*, so for most organizations a CoE is still a step up in coordination, not a legacy structure to dismantle.
+
+**The federated/embedded model — fully distributed.** AI capability lives inside each business unit, which owns its own use cases, talent, and roadmap. This maximizes domain relevance and speed-to-business-context, but at the cost of duplicated effort, inconsistent governance, and platform sprawl — the [too-parallel "boil the ocean" failure mode](/enterprise-ai-transformation/framework-architecture.md) made structural. It only works when the foundation (governance, platform, data) is already mature enough that distributed teams can be trusted to build on it safely.
+
+**The hybrid hub-and-spoke — centralized core, distributed delivery.** A central hub owns the things that *must* be consistent — governance, risk, platform, data standards, and the specialist core — while spokes embedded in each business unit own the things that *must* be local — use-case selection, workflow redesign, and adoption. This is where mature organizations converge, and the survey evidence shows it directly. McKinsey's *State of AI* found that organizations centralize the elements where consistency is non-negotiable and distribute the rest: **risk and compliance is centralized by 57% of organizations and data governance by 46%, while technology talent (49%) and adoption of AI solutions (44%) are most often run on a hybrid basis** *(McKinsey, 2025)*. The pattern is not "centralize or decentralize" — it is centralize the guardrails, federate the delivery.
+
+| Model | Best when | Owns centrally | Owns locally | Risk |
+| --- | --- | --- | --- | --- |
+| **CoE (centralized)** | Early maturity (Nascent–Developing); foundation is the constraint | Everything | Little | Bottleneck; distance from the business |
+| **Federated (distributed)** | Rare; only with a mature, trusted foundation | Little | Everything | Sprawl; inconsistent governance; duplication |
+| **Hub-and-spoke (hybrid)** | Scaling maturity; foundation is solid, value is the constraint | Guardrails: governance, risk, platform, data standards, specialist core | Delivery: use cases, workflow redesign, adoption | Hub/spoke boundary disputes |
+
+The progression maps onto the [maturity ladder](/enterprise-ai-transformation/framework-architecture.md): most organizations should **start as a CoE** to relieve foundation constraints (tracks 02, 03, 04), then **graduate to hub-and-spoke** as Execution (tracks 05, 06, 07) scales out into the business and the CoE risks becoming a bottleneck. Pure federation is rarely a deliberate destination — it is usually what bottom-up tool sprawl looks like before anyone imposes a hub.
+
+## Program Governance: Steering, Decision Rights, and Cadence
+
+Above whichever operating model you choose sits the program's governance — the standing structure that keeps eight interdependent tracks pointed at the same outcomes. This is distinct from the [AI governance track](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md), which governs AI *systems* (model risk, acceptable use, compliance); program governance governs the *transformation* (priorities, funding, sequencing).
+
+Senior ownership of this layer is the single strongest predictor of results. McKinsey's survey found that **CEO oversight of AI governance is the factor most correlated with higher bottom-line impact from generative AI** — yet only **28% report that their CEO actually oversees it** *(McKinsey, 2025)*. The market has noticed the gap: organizations reporting a Chief AI Officer rose from **26% in 2025 to 76% in 2026** by one CEO survey *(IBM, 2026 CEO Study, 2026)*, and **55% of organizations now report having an AI board** *(Gartner, 2024)*. Putting a senior, accountable owner on the program is not ceremony — it is the move the evidence rewards.
+
+Three components make the governance real:
+
+- **A steering committee** — chaired by the CDAO/CAIO, with the eight track owners and the business-unit leaders whose P&Ls the program touches. It owns the cross-track trade-offs no single track owner can make: which track gets the next dollar, which dependency is currently the binding constraint, and when to slow one track because its upstream is not ready.
+- **Explicit decision rights.** Write down who *decides*, who is *consulted*, and who is merely *informed* for each class of decision — use-case funding, platform standards, risk exceptions, hiring the specialist core. Ambiguity here is what turns the hub/spoke boundary into a turf war. The general rule mirrors the operating model: the hub decides guardrails (standards, risk appetite, platform), the spokes decide delivery (which use cases, in what order, for their business).
+- **A cadence tied to evidence, not the calendar.** A monthly steering review of the [integrated assessment](/enterprise-ai-transformation/running-the-program/integrated-assessment.md) and a quarterly re-allocation of budget against measured value — fed by the [measurement track](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). The cadence exists to let evidence pull the next investment, which is exactly how the framework says to [pace staggered intensity across the tracks](/enterprise-ai-transformation/framework-architecture.md).
+
+> **Decision rights beat reporting lines.** A program with a clear RACI and a fuzzy org chart will outperform one with a beautiful org chart and ambiguous decision rights every time. Spend the design effort on *who decides*, not on who reports to whom.
+
+## Roles: From the CDAO to the Working Teams
+
+A staffed program has four tiers, each accountable to the one above.
+
+**CDAO / Chief AI Officer — the accountable executive.** Owns the program's outcomes, chairs the steering committee, sets risk appetite, and makes the build/buy/partner bets. The role is consolidating fast: the established CDO/CDAO function is now present in roughly **83% of large organizations, up from 12% in 2012** *(MIT Sloan Management Review / Wavestone, 2024)*, and **70% of CDAOs now have primary responsibility for building the AI strategy and operating model** *(Gartner, 2025)*. Whether titled CAIO or CDAO, what matters is that one named executive owns AI end-to-end and reports high enough to reallocate capital — the McKinsey CEO-oversight finding is really about accountability living near the top.
+
+**AI Program Lead — the operator.** Runs the program day-to-day: drives the cadence, maintains the integrated assessment, manages cross-track dependencies, and escalates the binding constraint to the steering committee. Where the CDAO sets direction and owns outcomes, the Program Lead owns *execution of the operating model* — the orchestration that keeps eight tracks from colliding. In a hub-and-spoke model this person typically runs the hub.
+
+**Track Owners — eight accountable leads.** One owner per track, each accountable for that track's key output and its maturity score on the [readiness assessment](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/05-assessment-strategic-readiness-scoring.md). Track owners are not necessarily full-time — early on, one person may own several adjacent tracks (e.g., Data and Platform). What is non-negotiable is that every track has a *named* owner; an unowned track is a guaranteed binding constraint waiting to happen.
+
+**Working teams — the delivery layer.** Beneath the track owners sit the people who do the work, drawn from the [capability stack](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/index.md): the specialist core (ML engineers, data scientists, MLOps, platform owners) that the hub concentrates, the builders embedded in spokes who compose AI into workflows, the workflow and change leads who run redesign and adoption, and the network of internal champions that carries fluency into each function. In a CoE these sit centrally; in hub-and-spoke the specialist core stays in the hub while builders, workflow, and adoption roles distribute into the spokes.
+
+## Budgeting Across the Eight Tracks by Maturity Stage
+
+AI budgets are growing fast — **84% of leaders intend to increase AI investment in the coming year** *(Deloitte, State of AI in the Enterprise, 2026)* — but growth is not a plan. The binding-constraint principle is also a budgeting principle: **fund the track that is actually limiting outcomes, not the most visible or fashionable layer.** That means the allocation should shift as the binding constraint moves down the dependency chain.
+
+A recurring and dangerous error is to spend almost entirely on technology while starving the people-and-process layer where value actually compounds. The corrective is BCG's well-known framing that successful AI transformation is roughly **10% algorithms, 20% technology and data, and 70% people and process** *(BCG, 2024)* — a statement about where the *effort* goes, not a literal line-item split, but a useful counterweight to platform-heavy budgets. The independent budget benchmarks show how far most organizations still are from that balance: in the Wharton survey of enterprise GenAI budgets, technology tools and systems take the largest share and roughly **31% goes to internal R&D**, while **employee training ranks far lower** *(Wharton / GBK Collective, 2025)*. Real budgets skew toward technology and away from the people-and-process layer — which is exactly the gap the 10-20-70 framing warns against, and exactly what should shift as you scale.
+
+**Early stage (Nascent–Developing).** The binding constraint is almost always in the Foundation and Direction layers. Concentrate spend in a CoE on **Governance (02), Data (03), and Platform (04)** — the guardrails and substrate everything else runs on — plus a light, fast **Strategy (01)** exercise to set intent. Underweight broad Adoption (06) and large-scale Workflow (05) spend here: rolling tools out before the foundation is ready produces [logins without usage](/enterprise-ai-transformation/framework-architecture.md). Talent (07) spend at this stage targets the specialist core, hired in to stand up the foundation.
+
+**Scaling stage (Emerging–Scaling).** The foundation is solid; the binding constraint moves into Execution. Shift spend toward **Workflow (05), Adoption (06), and broad Talent (07)** — the people-and-process layer — and toward **Measurement (08)** so evidence can pace the next allocation. This is also where the operating model graduates to hub-and-spoke and budget follows: the hub holds a shrinking platform/governance line while the spokes carry a growing share of delivery and adoption spend. The danger here is the reverse of early stage — continuing to pour money into platform when the constraint has already moved to whether anyone is changing how they work.
+
+| Layer / tracks | Early (Nascent–Developing) | Scaling (Emerging–Scaling) |
+| --- | --- | --- |
+| Direction (01 Strategy, 02 Governance) | Moderate — set intent + guardrails | Lower — established, maintain |
+| Foundation (03 Data, 04 Platform) | **Heavy** — relieve the constraint | Moderate — maintain + extend |
+| Execution (05 Workflow, 06 Adoption, 07 Talent) | Low–moderate — specialist core only | **Heavy** — the value layer at scale |
+| Feedback (08 Measurement) | Light but present from day one | Moderate — paces re-allocation |
+
+The mechanism that keeps this honest is the quarterly evidence-based re-allocation in the governance cadence: the [measurement track](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md) shows which investments moved value, and the steering committee moves the next dollar to the current binding constraint. For the stage-by-stage detail of *what* to fund when, see the [sequencing playbooks](/enterprise-ai-transformation/running-the-program/sequencing-playbooks.md); for standing the program up, the [90-day launch](/enterprise-ai-transformation/running-the-program/the-90-day-launch.md); and for keeping stakeholders aligned through the shifts, the [communication templates](/enterprise-ai-transformation/running-the-program/stakeholder-communication-templates.md).
+
+## Key Takeaways
+
+- **The operating model is a performance lever, not overhead.** A centralized or hub-and-spoke model can deliver up to 36% higher AI ROI than full decentralization *(IBM, The CAIO Study, 2025)*. Design it deliberately.
+- **Match the model to your maturity.** Start as a CoE to relieve foundation constraints, then graduate to hub-and-spoke as Execution scales — centralize the guardrails (risk 57%, data governance 46%), federate the delivery (talent and adoption run hybrid) *(McKinsey, 2025)*.
+- **Senior, named ownership is the strongest predictor of impact.** CEO oversight of AI governance correlates most with bottom-line impact, yet only 28% have it *(McKinsey, 2025)*; the CDAO/CAIO role is consolidating fast *(IBM, 2026 CEO Study, 2026; Gartner, 2025)*. Put one accountable executive over the whole program.
+- **Decision rights beat org charts.** Govern the *transformation* (priorities, funding, sequencing) with a steering committee, an explicit RACI, and an evidence-paced cadence — distinct from governing AI systems.
+- **Staff four tiers:** CDAO/CAIO (accountable), Program Lead (operator), eight named Track Owners, and working teams. Every track needs a named owner; an unowned track is a binding constraint waiting to happen.
+- **Budget the binding constraint, and let it move.** Fund Foundation heavily when early, shift to the people-and-process Execution layer as you scale — people and process is the ~70% of the *effort* where value compounds *(BCG, 2024)*, yet real budgets still skew to technology with training ranking far lower *(Wharton / GBK Collective, 2025)*. Re-allocate quarterly on measured evidence.

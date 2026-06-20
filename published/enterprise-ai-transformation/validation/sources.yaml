@@ -1,0 +1,109 @@
+# sources.yaml — recurring-source registry for the Enterprise AI Transformation framework
+#
+# The companion to evidence.yaml. Where evidence.yaml records per-CLAIM provenance, this
+# records per-SOURCE freshness: the recurring research franchises (annual/quarterly surveys,
+# readiness indexes, prediction series) that supply most of the bundle's statistics, and the
+# latest edition WE have verified and cite. When a franchise ships a newer edition, every page
+# citing the prior one is a refresh candidate.
+#
+# HONESTY RULE: `latest_edition` is the newest edition *we have verified and cite* — NOT a claim
+# about the newest edition that exists in the world. A franchise whose `stale_after` has passed
+# is flagged "go check for a newer edition" — it does not assert one exists. Detecting that a
+# newer edition actually exists is the (semi-manual, private) sentinel's job: recency-filtered
+# search surfaces a candidate, the operator confirms it (these publishers block fetchers), then
+# bumps this file + the citing evidence entries.
+#
+# First-class infrastructure (no OKF frontmatter, not indexed). Read by scripts/evidence.py and
+# scripts/build_tracked_sources.py (which generates the public validation/tracked-sources.md).
+# Same stdlib parser as evidence.yaml — NO inline `#` comments on data lines.
+#
+# ── Schema (one entry per recurring franchise) ──────────────────────────────────────────────
+#   - id:             kebab-case, `src-`-prefixed, globally unique.
+#     org:            publisher.
+#     franchise:      the recurring report/series name.
+#     cadence:        annual | quarterly | biennial | irregular.
+#     latest_edition: the newest edition WE have verified/cite (e.g. "2025").
+#     edition_date:   approximate YYYY-MM of that edition.
+#     verified:       ISO date the operator last confirmed this is the edition we track.
+#     stale_after:    YYYY-MM after which to actively check for a newer edition
+#                     (rule of thumb from edition_date: quarterly +9mo, annual +18mo,
+#                     biennial +36mo, irregular +18mo). Static — operator bumps on a new edition.
+#     homepage:       the franchise's canonical landing page.
+#     search_hint:    the query the sentinel/operator runs to look for a newer edition.
+#     notes:          caveats (fetcher-blocked, multiple waves per year, supersede chains).
+#
+# Run `python3 scripts/evidence.py sources` for LIVE freshness status + which ledger entries
+# cite an edition older than a franchise's latest (supersede candidates).
+# ──────────────────────────────────────────────────────────────────────────────────────────
+
+- id: src-mckinsey-state-of-ai
+  org: McKinsey
+  franchise: "The State of AI (QuantumBlack)"
+  cadence: annual
+  latest_edition: "2025"
+  edition_date: "2025-11"
+  verified: 2026-06-20
+  stale_after: "2027-05"
+  homepage: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+  search_hint: "McKinsey State of AI 2026"
+  notes: "Two 2025 waves: March (rewiring to capture value) and November (agents, innovation, transformation). Domain blocks fetchers."
+
+- id: src-mckinsey-superagency
+  org: McKinsey
+  franchise: "Superagency in the Workplace"
+  cadence: irregular
+  latest_edition: "2025"
+  edition_date: "2025-01"
+  verified: 2026-06-20
+  stale_after: "2026-07"
+  homepage: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work
+  search_hint: "McKinsey Superagency workplace AI 2026"
+  notes: "Cadence not yet established; treat as ~annual. Domain blocks fetchers."
+
+- id: src-gartner-genai-predictions
+  org: Gartner
+  franchise: "Generative AI predictions"
+  cadence: annual
+  latest_edition: "2024"
+  edition_date: "2024-07"
+  verified: 2026-06-20
+  stale_after: "2026-01"
+  homepage: https://www.gartner.com/en/topics/generative-ai
+  search_hint: "Gartner generative AI prediction abandoned proof of concept 2026"
+  notes: "We cite the 2024 '30% abandoned after PoC by end of 2025' press release. Past horizon — check for a newer prediction. Domain blocks fetchers."
+
+- id: src-cisco-ai-readiness-index
+  org: Cisco
+  franchise: "AI Readiness Index"
+  cadence: annual
+  latest_edition: "2024"
+  edition_date: "2024-11"
+  verified: 2026-06-20
+  stale_after: "2026-05"
+  homepage: https://www.cisco.com/c/en/us/solutions/artificial-intelligence/ai-readiness.html
+  search_hint: "Cisco AI Readiness Index 2025"
+  notes: "We cite the 2024 index (13% fully ready). Past horizon — check whether a newer edition exists, then confirm and supersede."
+
+- id: src-bcg-ai-value
+  org: BCG
+  franchise: "AI value series (Where's the Value → Widening Value Gap)"
+  cadence: annual
+  latest_edition: "2025"
+  edition_date: "2025-09"
+  verified: 2026-06-20
+  stale_after: "2027-03"
+  homepage: https://www.bcg.com/capabilities/artificial-intelligence
+  search_hint: "BCG AI value gap report 2026"
+  notes: "2024 'Where's the Value in AI?' superseded by 2025 'The Widening AI Value Gap'. Domain blocks fetchers; verified via BCG's own PDF/press releases."
+
+- id: src-mit-nanda-genai-divide
+  org: MIT Project NANDA
+  franchise: "The GenAI Divide: State of AI in Business"
+  cadence: irregular
+  latest_edition: "2025"
+  edition_date: "2025-08"
+  verified: 2026-06-20
+  stale_after: "2027-02"
+  homepage: https://nanda.media.mit.edu/
+  search_hint: "MIT NANDA GenAI Divide State of AI in Business 2026"
+  notes: "No stable MIT-owned URL for the report PDF found; the cited stat is verified against a hosted mirror (secondary-mirror in the ledger)."

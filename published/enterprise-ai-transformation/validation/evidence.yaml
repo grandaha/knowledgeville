@@ -1,0 +1,60 @@
+# evidence.yaml — public provenance record for the Enterprise AI Transformation framework
+#
+# This is the CANONICAL store of verified, sourced claims for this framework. It is the
+# single source of truth for provenance; per-page `## Sources` lists are GENERATED from it,
+# never hand-maintained. Carrying structured provenance inside the OKF bundle is itself the
+# OKF-for-research-distribution experiment (see docs/research-workflow.md).
+#
+# This file is first-class infrastructure, NOT a rendered concept: it has no OKF frontmatter,
+# is not indexed by build_index.py, and is read directly by scripts/validate_okf.py.
+#
+# ── Schema (one list entry per DISCRETE claim) ────────────────────────────────────────────
+#   - id:        kebab-case, GLOBALLY UNIQUE within this framework. This is the citation
+#                anchor: an inline citation links to it as `[(Org, Year)](#<id>)`, and the
+#                CI gate matches every such anchor against an entry id here.
+#                Convention: <org>-<report-slug>-<edition>-<claim-slug>
+#     claim:     short human label for what the number measures
+#     value:     the figure as cited (e.g. "88%")
+#     wording:   the source's own phrasing, for faithful quotation
+#     source:    nested block (org / report / edition / url / pdf_hash)
+#                pdf_hash is the sha256 of the cached primary, IF downloaded. The cached PDF
+#                itself is PRIVATE (copyrighted third-party report) — never mirrored; only this
+#                metadata is public.
+#                pdf_hash may be empty: an empty value means the primary was not downloaded
+#                (e.g. the source domain blocks automated fetchers). That is permitted — the
+#                citation still publishes; only the local cached copy is absent.
+#     verified:  ISO date the claim was last checked against its primary source
+#     status:    primary | secondary-mirror | blocked
+#                secondary-mirror / blocked = published with a visible caveat, flagged to
+#                upgrade to primary when the source becomes reachable.
+#     expires:   OPTIONAL ISO staleness horizon. Past this date the CI gate emits a WARNING
+#                (never a hard fail) and citing pages are surfaced for refresh. Set it sooner
+#                for annual franchises (e.g. the State of AI series → end of the next survey
+#                cycle). An absent/blank `expires` means "never auto-flag as stale" — no
+#                warning is emitted. Most sourced stats SHOULD carry one.
+#     supersedes: OPTIONAL id of the prior edition's entry this one replaces. It MAY reference
+#                an entry that is not present in this store (e.g. a prior edition that was
+#                never seeded) — that is informational and is NOT validated, so it never errors.
+#
+#   Do NOT store `cited_by` — back-references are computed on demand by a query script.
+#   Do NOT put inline `#` comments on the `id:`, `expires:`, or any data line: PyYAML is not
+#   available in CI, so the gate reads this file with a line-based parser (like the one in
+#   scripts/okf_common.py, which does not strip trailing `# ...`). An inline comment would be
+#   folded into the field value and corrupt the id / break the date parse. Full-line comments
+#   (a `#` in column 0, like these) are always fine.
+# ──────────────────────────────────────────────────────────────────────────────────────────
+
+- id: mckinsey-state-of-ai-2025-adoption
+  claim: "Organizations reporting regular AI use in at least one business function"
+  value: "88%"
+  wording: "88% of respondents report regular AI use in at least one business function, compared with 78% a year ago"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+  supersedes: mckinsey-state-of-ai-2024-adoption

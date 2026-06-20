@@ -18,7 +18,9 @@ Data Labeling, Data Mesh Governance) and the home page.
 **Current verdict:** broadly well-sourced and accurate — no fabricated statistics found; a
 few dated claims and Gartner/regulatory nuances were corrected.
 
-How sourcing works on each page: claims are cited inline as `(Source, Year)` with a
-`## Sources` list at the foot of the page. The audits below re-check those sources.
+How sourcing works on each page: every verified claim is recorded in a structured provenance
+store (`evidence.yaml`), cited inline as a followable `(Source, Year)` link, and listed in a
+generated `## Sources` section at the foot of the page — so any statistic reaches its primary
+source in two clicks or fewer. The audits below re-check those sources.
 
 See the dated records under **Audits**.

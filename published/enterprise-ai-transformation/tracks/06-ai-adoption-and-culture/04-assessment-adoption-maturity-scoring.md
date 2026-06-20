@@ -10,7 +10,7 @@ timestamp: "2026-06-18"
 
 This assessment tells you where your organization actually stands on AI adoption — not how many licenses you bought, but how deeply and safely AI is used. It is the measurement companion to the [AI Adoption Framework](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md) (the argument) and the [Designing an Adoption Program](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md) guide (the how-to). Score yourself before designing a program, to find the binding constraint; score again on a cadence, to see whether it is moving.
 
-The reason a dedicated assessment is needed is the gap the framework documents: access is not adoption. As of early 2024 **only 32% of desk workers had tried AI for work — two-thirds had not — and just 15% strongly agreed they had the training to use it effectively** *(Slack Workforce Lab, Workforce Index, 2024)*. Even where AI is used, regular use trails far behind trial: in 2025 about **60% of desk workers used AI at least occasionally, but only around 40% weekly and 20% daily** *(Slack Workforce Lab, The New AI Advantage, 2025)*. A maturity score that counts seats would call this success; a score that counts habitual, safe, workflow-integrated use tells the truth.
+The reason a dedicated assessment is needed is the gap the framework documents: access is not adoption. As of early 2024 **only 32% of desk workers had tried AI for work — two-thirds had not — and just 15% strongly agreed they had the training to use it effectively** ([Slack, 2024](#ev-slack-workforce-index-2024-tried-ai)). Even where AI is used, regular use trails far behind trial: in 2025 about **60% of desk workers used AI at least occasionally, but only around 40% weekly and 20% daily** ([Slack, 2025](#ev-slack-new-ai-advantage-2025-usage-frequency)). A maturity score that counts seats would call this success; a score that counts habitual, safe, workflow-integrated use tells the truth.
 
 This page gives you six scoring dimensions, a 1–5 maturity ladder for each, the metrics that feed them, a resistance-mapping overlay, and a method for interpreting the result.
 
@@ -23,7 +23,7 @@ This page gives you six scoring dimensions, a 1–5 maturity ladder for each, th
 3. **Overlay the resistance map** to see *where* in the workforce adoption is stuck.
 4. **Interpret the pattern** (final section) to choose the next intervention, then point fixes at the relevant phase of the [adoption program guide](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md).
 
-The five-level structure follows established maturity-model convention — the same Initial → Managed → Defined → Quantitatively Managed → Optimizing progression as CMMI *(CMMI Institute / ISACA, Capability Maturity Model Integration)* — so a score is comparable to how the organization already thinks about other capabilities.
+The five-level structure follows established maturity-model convention — the same Initial → Managed → Defined → Quantitatively Managed → Optimizing progression as CMMI ([CMMI Institute, ISACA](#ev-cmmi-maturity-levels-five-stage)) — so a score is comparable to how the organization already thinks about other capabilities.
 
 ---
 
@@ -108,13 +108,13 @@ The five-level structure follows established maturity-model convention — the s
 
 Score D1 on evidence, using product-analytics measures rather than seat counts:
 
-- **Activation rate** — share of provisioned users who have completed a meaningful first action, not merely logged in *(Amplitude, Top Digital Product Adoption Metrics)*.
-- **DAU/MAU stickiness** — daily-active over monthly-active users, the standard embeddedness proxy. Useful reference points: B2B SaaS sits around **31%**, with **25–35% considered broadly healthy** *(Mixpanel, MAU: Definition, Formula, and Benchmarks, 2026)*.
+- **Activation rate** — share of provisioned users who have completed a meaningful first action, not merely logged in ([Amplitude, 2025](#ev-amplitude-product-adoption-metrics-activation)).
+- **DAU/MAU stickiness** — daily-active over monthly-active users, the standard embeddedness proxy. Useful reference points: B2B SaaS sits around **31%**, with **25–35% considered broadly healthy** ([Mixpanel, 2026](#ev-mixpanel-mau-benchmarks-2026-b2b-stickiness)).
 - **Breadth** — percentage of *target* roles with any regular use, to catch adoption that is real but confined to one team.
-- **Retention** — 30- and 90-day sustained use, which separates habit from a novelty spike. (Daily use grew rapidly through this period — Slack measured daily AI use up 233% in the six months to mid-2025, versus November 2024 — so trend matters as much as level *(Slack Workforce Lab, The New AI Advantage, 2025)*.)
-- **License waste** — provisioned-but-inactive seats. Across SaaS generally, organizations actively use only about **49% of provisioned licenses** *(Zylo, SaaS Management Index, 2024)*; AI rollouts are not exempt, and the unused half is both wasted spend and a false adoption signal.
+- **Retention** — 30- and 90-day sustained use, which separates habit from a novelty spike. (Daily use grew rapidly through this period — Slack measured daily AI use up 233% in the six months to mid-2025, versus November 2024 — so trend matters as much as level ([Slack, 2025](#ev-slack-new-ai-advantage-2025-daily-use-growth)).)
+- **License waste** — provisioned-but-inactive seats. Across SaaS generally, organizations actively use only about **49% of provisioned licenses** ([Zylo, 2024](#ev-zylo-saas-management-index-2024-license-utilization)); AI rollouts are not exempt, and the unused half is both wasted spend and a false adoption signal.
 
-A useful framing: the daily users are where value concentrates. Slack found **daily AI users were markedly more likely to report "very good" productivity, focus, and job satisfaction** than occasional users *(Slack Workforce Lab, The New AI Advantage, 2025)* — which is why D1 rewards depth and habit, not breadth of access alone.
+A useful framing: the daily users are where value concentrates. Slack found **daily AI users were markedly more likely to report "very good" productivity, focus, and job satisfaction** than occasional users ([Slack, 2025](#ev-slack-new-ai-advantage-2025-daily-user-outcomes)) — which is why D1 rewards depth and habit, not breadth of access alone.
 
 ---
 
@@ -122,18 +122,18 @@ A useful framing: the daily users are where value concentrates. Slack found **da
 
 Culture is scored from signals, not vibes:
 
-- **Psychological-safety survey** — adapt Edmondson's validated items; psychological safety is the strongest enabler of the team learning behavior that experimentation requires *(Edmondson, Administrative Science Quarterly, 1999)*, and was the top dynamic of effective teams in Google's large internal study *(Google re:Work, Project Aristotle, 2015)*.
-- **Disclosure comfort** — whether people will admit AI use to a manager. This is a leading indicator of real use: those comfortable disclosing are **67% more likely to have used AI for work** *(Slack Workforce Lab, Fall 2024 Workforce Index, 2024)*.
+- **Psychological-safety survey** — adapt Edmondson's validated items; psychological safety is the strongest enabler of the team learning behavior that experimentation requires ([Edmondson, 1999](#ev-edmondson-1999-psychological-safety)), and was the top dynamic of effective teams in Google's large internal study ([Google, 2015](#ev-google-project-aristotle-2015-psych-safety)).
+- **Disclosure comfort** — whether people will admit AI use to a manager. This is a leading indicator of real use: those comfortable disclosing are **67% more likely to have used AI for work** ([Slack, 2024](#ev-slack-workforce-index-2024-disclosure-comfort)).
 - **Experimentation throughput** — count of shared experiments, prompts contributed, wins and failures posted. Low throughput with high usage signals adoption being driven underground.
-- **Trust disposition** — calibrated against a wary baseline: only **46% of people globally are willing to trust AI** *(KPMG & University of Melbourne, Trust in AI 2025, 2025)*, so neither blanket enthusiasm nor blanket suspicion is the target.
+- **Trust disposition** — calibrated against a wary baseline: only **46% of people globally are willing to trust AI** ([KPMG, 2025](#ev-kpmg-trust-ai-2025-willing-to-trust)), so neither blanket enthusiasm nor blanket suspicion is the target.
 
 ---
 
 ## Resistance Mapping
 
-Adoption maturity is not uniform across a workforce, so a single score hides the real problem. Overlay the population onto Rogers' adopter segments — **innovators 2.5%, early adopters 13.5%, early majority 34%, late majority 34%, laggards 16%** *(Rogers, Diffusion of Innovations, 5th ed., 2003)* — and locate where adoption has stalled.
+Adoption maturity is not uniform across a workforce, so a single score hides the real problem. Overlay the population onto Rogers' adopter segments — **innovators 2.5%, early adopters 13.5%, early majority 34%, late majority 34%, laggards 16%** ([Rogers, 2003](#ev-rogers-diffusion-2003-adopter-categories)) — and locate where adoption has stalled.
 
-The decisive boundary is between the early adopters and the early majority. The enthusiasts (the first ~16%) adopt on novelty; the majority adopt only on proof, and the transition between them is where most programs stall — the "chasm" *(Moore, Crossing the Chasm, 1991)*. Practical use of the map:
+The decisive boundary is between the early adopters and the early majority. The enthusiasts (the first ~16%) adopt on novelty; the majority adopt only on proof, and the transition between them is where most programs stall — the "chasm" ([Moore, 1991](#ev-moore-crossing-the-chasm-1991-chasm)). Practical use of the map:
 
 - **Stuck before ~16% penetration** → you have reached the enthusiasts and no further. The constraint is usually proof and relevance, not access — invest in role-based use cases and visible peer wins (D4).
 - **Stuck at the majority** → the constraint is usually safety and manager engagement (D2, D3) — pragmatists adopt when their manager and peers visibly do.
@@ -160,8 +160,27 @@ Two interpretation rules hold across patterns. First, **a high mean does not red
 
 ## Key Takeaways
 
-- **Score use, not access.** Trial and licenses overstate adoption; habitual, deep, workflow-integrated use is the real measure *(Slack Workforce Lab, 2024–2025)*.
+- **Score use, not access.** Trial and licenses overstate adoption; habitual, deep, workflow-integrated use is the real measure ([Slack, 2024](#ev-slack-workforce-index-2024-tried-ai); [Slack, 2025](#ev-slack-new-ai-advantage-2025-usage-frequency)).
 - **Six dimensions, scored as a profile.** Utilization, culture, leadership, enablement, governance, and verification — read the shape, because the weakest dimension is the bottleneck.
-- **Engagement is measurable.** Activation, DAU/MAU (~31% B2B-SaaS benchmark), retention, breadth, and license waste give D1 an evidence base *(Mixpanel, 2026; Zylo, 2024)*.
-- **Map the resistance.** Use Rogers' segments to find where adoption stalls — most often at the chasm between enthusiasts and the pragmatic majority *(Rogers, 2003; Moore, 1991)*.
+- **Engagement is measurable.** Activation, DAU/MAU (~31% B2B-SaaS benchmark), retention, breadth, and license waste give D1 an evidence base ([Mixpanel, 2026](#ev-mixpanel-mau-benchmarks-2026-b2b-stickiness); [Zylo, 2024](#ev-zylo-saas-management-index-2024-license-utilization)).
+- **Map the resistance.** Use Rogers' segments to find where adoption stalls — most often at the chasm between enthusiasts and the pragmatic majority ([Rogers, 2003](#ev-rogers-diffusion-2003-adopter-categories); [Moore, 1991](#ev-moore-crossing-the-chasm-1991-chasm)).
 - **Re-score on a cadence.** Maturity is a trend, not a one-time grade; the profile tells you which [program](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md) phase to invest in next.
+
+## Sources
+
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Slack Workforce Lab — *Workforce Index (June 2024)*, 2024.** 32% of desk workers have experimented with AI tools; only 15% of global desk workers strongly agree that they have the education and training necessary to use AI effectively. [View source](https://slack.com/blog/news/the-workforce-index-june-2024){#ev-slack-workforce-index-2024-tried-ai} · verified 2026-06-20 · primary
+- **Slack Workforce Lab — *The New AI Advantage*, 2025.** Three in five desk workers use AI at least occasionally, two in five use it weekly, and one in five use it daily. [View source](https://slack.com/blog/news/the-new-ai-advantage){#ev-slack-new-ai-advantage-2025-usage-frequency} · verified 2026-06-20 · primary
+- **CMMI Institute (ISACA) — *Capability Maturity Model Integration*, 2018.** CMMI defines five maturity levels: Initial, Managed, Defined, Quantitatively Managed, and Optimizing. [View source](https://cmmiinstitute.com/learning/appraisals/levels){#ev-cmmi-maturity-levels-five-stage} · verified 2026-06-20 · primary
+- **Amplitude — *Top Digital Product Adoption Metrics*, 2025.** The activation rate gauges the percentage of users who complete a predefined action that signifies meaningful engagement with the product. [View source](https://amplitude.com/blog/top-digital-product-adoption-metrics){#ev-amplitude-product-adoption-metrics-activation} · verified 2026-06-20 · primary
+- **Mixpanel — *MAU: Definition, Formula, and Benchmarks*, 2026.** B2B SaaS stickiness averages about 31% across North America and EMEA; a product sitting between 25% and 35% is broadly in line with the market. [View source](https://mixpanel.com/blog/mau/){#ev-mixpanel-mau-benchmarks-2026-b2b-stickiness} · verified 2026-06-20 · primary
+- **Slack Workforce Lab — *The New AI Advantage*, 2025.** The share of workers using AI every day has more than doubled in six months and is now 233% higher than it was in November 2024. [View source](https://slack.com/blog/news/the-new-ai-advantage){#ev-slack-new-ai-advantage-2025-daily-use-growth} · verified 2026-06-20 · primary
+- **Zylo — *SaaS Management Index*, 2024.** Companies are only using half (49%) of their provisioned SaaS licenses. [View source](https://zylo.com/news/2024-saas-management-index/){#ev-zylo-saas-management-index-2024-license-utilization} · verified 2026-06-20 · primary
+- **Slack Workforce Lab — *The New AI Advantage*, 2025.** Casual users (less than once a week) show little to no difference in outcomes from non-users; weekly users see gains, but the biggest impact comes from integrating AI into the daily workflow. [View source](https://slack.com/blog/news/the-new-ai-advantage){#ev-slack-new-ai-advantage-2025-daily-user-outcomes} · verified 2026-06-20 · primary
+- **Amy C. Edmondson — *Psychological Safety and Learning Behavior in Work Teams (Administrative Science Quarterly, 44(2), 350-383)*, 1999.** A shared belief held by members of a team that the team is safe for interpersonal risk taking; team psychological safety is associated with learning behavior, which mediates between psychological safety and team performance. [View source](https://doi.org/10.2307/2666999){#ev-edmondson-1999-psychological-safety} · verified 2026-06-20 · primary
+- **Google re:Work — *Project Aristotle: Understand Team Effectiveness*, 2015.** Psychological safety was far and away the most important of the five dynamics we found; it is the underpinning of the other four. [View source](https://rework.withgoogle.com/guides/understanding-team-effectiveness/){#ev-google-project-aristotle-2015-psych-safety} · verified 2026-06-20 · primary
+- **Slack Workforce Lab — *Fall 2024 Workforce Index*, 2024.** Those who are comfortable sharing that they used AI for work tasks are 67% more likely to have used AI for work than those who would not be comfortable admitting AI use. [View source](https://slack.com/blog/news/the-fall-2024-workforce-index-shows-executives-and-employees-investing-in-ai-but-uncertainty-holding-back-adoption){#ev-slack-workforce-index-2024-disclosure-comfort} · verified 2026-06-20 · primary
+- **KPMG & University of Melbourne — *Trust, Attitudes and Use of AI: A Global Study 2025*, 2025.** Only 46% of people globally are willing to trust AI systems. [View source](https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html){#ev-kpmg-trust-ai-2025-willing-to-trust} · verified 2026-06-20 · primary
+- **Everett M. Rogers — *Diffusion of Innovations (5th ed.; ISBN 978-0743222099)*, 2003.** Adopter categories: innovators 2.5%, early adopters 13.5%, early majority 34%, late majority 34%, laggards 16%, obtained by partitioning the normal adoption distribution at the mean plus or minus one and two standard deviations. [View source](https://www.simonandschuster.com/books/Diffusion-of-Innovations-5th-Edition/Everett-M-Rogers/9780743222099){#ev-rogers-diffusion-2003-adopter-categories} · verified 2026-06-20 · ⚠ secondary mirror
+- **Geoffrey A. Moore — *Crossing the Chasm*, 1991.** Moore identifies a chasm between the early adopters (visionaries) and the early majority (pragmatists): the gap where most high-tech adoption efforts stall. [View source](https://www.harpercollins.com/products/crossing-the-chasm-3rd-edition-geoffrey-a-moore){#ev-moore-crossing-the-chasm-1991-chasm} · verified 2026-06-20 · primary

@@ -228,3 +228,552 @@
   verified: 2026-06-20
   status: secondary-mirror
   expires: 2026-12-31
+- id: ev-mckinsey-state-of-ai-2024-adoption
+  claim: "Organizations using AI in at least one business function (prior edition; the page cites this earlier 78% figure, since superseded by the 88% current edition)"
+  value: "78%"
+  wording: "78% of organizations now use AI in at least one business function"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2024
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-state-of-ai-2025-workflow-redesign
+  claim: "Organizations using gen AI that have fundamentally redesigned at least one workflow; redesign has the strongest correlation with EBIT impact"
+  value: "21%"
+  wording: "21% of respondents reporting gen AI use say their organizations have fundamentally redesigned at least one workflow; redesigning workflows has the biggest effect on an organization's ability to see EBIT impact from gen AI"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-dietvorst-algorithm-aversion-2015-confidence-loss
+  claim: "People lose confidence in algorithmic forecasters faster than in human forecasters after seeing each err, even when the algorithm outperforms"
+  value: "experimental finding"
+  wording: "People more quickly lose confidence in algorithmic than human forecasters after seeing them make the same mistake; giving people even a slight ability to modify an imperfect algorithm substantially increases their willingness to use it"
+  source:
+    org: Dietvorst, Simmons & Massey
+    report: "Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err (Journal of Experimental Psychology: General, 144(1), 114-126)"
+    edition: 2015
+    url: https://doi.org/10.1037/xge0000033
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-parasuraman-manzey-2010-automation-bias
+  claim: "Automation bias and complacency produce both omission errors and commission errors when decision aids are imperfect"
+  value: "human-factors finding"
+  wording: "Automation-induced complacency and automation bias produce errors of omission (missing events the automation does not flag) and commission (following an automated recommendation despite contrary evidence)"
+  source:
+    org: Parasuraman & Manzey
+    report: "Complacency and Bias in Human Use of Automation: An Attentional Integration (Human Factors, 52(3), 381-410)"
+    edition: 2010
+    url: https://doi.org/10.1177/0018720810376055
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-kpmg-trust-ai-2025-relied-uncritically
+  claim: "Employees who have relied on AI output at work without critically evaluating it"
+  value: "66%"
+  wording: "Two-thirds of employees (66%) report having relied on AI output at work without critically evaluating the information it provides"
+  source:
+    org: KPMG & University of Melbourne
+    report: "Trust, Attitudes and Use of AI: A Global Study 2025"
+    edition: 2025
+    url: https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-kpmg-trust-ai-2025-made-mistakes
+  claim: "Employees who say they have made mistakes in their work because of AI"
+  value: "56%"
+  wording: "Over half (56%) report they have made mistakes in their work because of AI use"
+  source:
+    org: KPMG & University of Melbourne
+    report: "Trust, Attitudes and Use of AI: A Global Study 2025"
+    edition: 2025
+    url: https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-kpmg-trust-ai-2025-willing-to-trust
+  claim: "People globally who are willing to trust AI systems"
+  value: "46%"
+  wording: "Only 46% of people globally are willing to trust AI systems"
+  source:
+    org: KPMG & University of Melbourne
+    report: "Trust, Attitudes and Use of AI: A Global Study 2025"
+    edition: 2025
+    url: https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-kpmg-trust-ai-2025-ban-vs-noban-misuse
+  claim: "Policy-contravening AI use (e.g. putting sensitive data into public tools) is more common where gen AI is banned than where there is no policy"
+  value: "67% (banned) vs 33% (no policy)"
+  wording: "Using AI in ways that contravene organizational policies is most common among employees who report their organization has banned generative AI (67%), compared with those in organizations without such policies (33%)"
+  source:
+    org: KPMG & University of Melbourne
+    report: "Trust, Attitudes and Use of AI: A Global Study 2025"
+    edition: 2025
+    url: https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-pew-workers-ai-2025-worried-vs-hopeful
+  claim: "US workers worried versus hopeful about future AI use in the workplace (and expecting fewer opportunities)"
+  value: "52% worried; 36% hopeful; 32% expect fewer opportunities"
+  wording: "About half of workers (52%) say they are worried about the future impact of AI use in the workplace; 36% say they feel hopeful; about a third (32%) say it will lead to fewer opportunities for them"
+  source:
+    org: Pew Research Center
+    report: "U.S. Workers Are More Worried Than Hopeful About Future AI Use in the Workplace"
+    edition: 2025
+    url: https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-gallup-rising-ai-adoption-2026-job-elimination
+  claim: "US employees who think it likely their job will be eliminated within five years due to AI/automation (all vs at AI-adopting orgs)"
+  value: "18% all; 23% at AI-adopting orgs"
+  wording: "18% of all U.S. employees say it is very or somewhat likely their job will be eliminated within the next five years due to AI or automation; among employees in organizations that have adopted AI, that share rises to 23%"
+  source:
+    org: Gallup
+    report: "Rising AI Adoption Spurs Workforce Changes"
+    edition: 2026
+    url: https://www.gallup.com/workplace/704225/rising-adoption-spurs-workforce-changes.aspx
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-workforce-index-2024-admission-discomfort
+  claim: "Desk workers uncomfortable admitting AI use to their manager, and the reasons given"
+  value: "48% uncomfortable; cheating 47%, less competent 46%, lazy 46%"
+  wording: "Nearly half (48%) of all desk workers would be uncomfortable admitting to their manager that they used AI for common workplace tasks; reasons include feeling like using AI is cheating (47%), fear of being seen as less competent (46%), and fear of being seen as lazy (46%)"
+  source:
+    org: Slack Workforce Lab
+    report: "Fall 2024 Workforce Index"
+    edition: 2024
+    url: https://slack.com/blog/news/the-fall-2024-workforce-index-shows-executives-and-employees-investing-in-ai-but-uncertainty-holding-back-adoption
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-workforce-index-2024-disclosure-comfort
+  claim: "Workers comfortable disclosing AI use are more likely to have actually used AI for work"
+  value: "67% more likely"
+  wording: "Those who are comfortable sharing that they used AI for work tasks are 67% more likely to have used AI for work than those who would not be comfortable admitting AI use"
+  source:
+    org: Slack Workforce Lab
+    report: "Fall 2024 Workforce Index"
+    edition: 2024
+    url: https://slack.com/blog/news/the-fall-2024-workforce-index-shows-executives-and-employees-investing-in-ai-but-uncertainty-holding-back-adoption
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-workforce-index-2024-permission-gap
+  claim: "Desk workers who lack explicit permission to use AI, and those who have had no AI training at all"
+  value: "45% lack permission; 30% no training"
+  wording: "Close to half of workers (45%) do not have explicit permission to use AI; 30% say they have had no AI training at all, including no self-directed learning or experimentation"
+  source:
+    org: Slack Workforce Lab
+    report: "Fall 2024 Workforce Index"
+    edition: 2024
+    url: https://slack.com/blog/news/the-fall-2024-workforce-index-shows-executives-and-employees-investing-in-ai-but-uncertainty-holding-back-adoption
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-workforce-index-2024-training-hours
+  claim: "Desk workers who have spent fewer than five hours learning to use AI"
+  value: "61% under five hours"
+  wording: "The majority of desk workers (61%) have spent less than five hours learning how to use AI"
+  source:
+    org: Slack Workforce Lab
+    report: "Fall 2024 Workforce Index"
+    edition: 2024
+    url: https://slack.com/blog/news/the-fall-2024-workforce-index-shows-executives-and-employees-investing-in-ai-but-uncertainty-holding-back-adoption
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-workforce-index-2024-tried-ai
+  claim: "Desk workers who had tried AI for work as of early 2024, and share who strongly agree they are trained"
+  value: "32% tried; 15% strongly agree trained"
+  wording: "32% of desk workers have experimented with AI tools; only 15% of global desk workers strongly agree that they have the education and training necessary to use AI effectively"
+  source:
+    org: Slack Workforce Lab
+    report: "Workforce Index (June 2024)"
+    edition: 2024
+    url: https://slack.com/blog/news/the-workforce-index-june-2024
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-workforce-index-2024-training-payoff
+  claim: "Productivity and trust payoff for AI-trained workers"
+  value: "up to 19x more likely to report productivity gains; 7x more likely to trust AI"
+  wording: "Workers trained to use AI are up to 19x as likely to report that AI improves their productivity; desk workers well trained in AI are 7x as likely to trust AI tools to assist with work tasks as those lacking AI training"
+  source:
+    org: Slack Workforce Lab
+    report: "Workforce Index (June 2024)"
+    edition: 2024
+    url: https://slack.com/blog/news/the-workforce-index-june-2024
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-new-ai-advantage-2025-usage-frequency
+  claim: "AI usage frequency among desk workers in 2025 (occasional / weekly / daily)"
+  value: "~60% occasional, ~40% weekly, ~20% daily"
+  wording: "Three in five desk workers use AI at least occasionally, two in five use it weekly, and one in five use it daily"
+  source:
+    org: Slack Workforce Lab
+    report: "The New AI Advantage"
+    edition: 2025
+    url: https://slack.com/blog/news/the-new-ai-advantage
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-new-ai-advantage-2025-daily-use-growth
+  claim: "Growth in daily AI use over the six months to mid-2025"
+  value: "233%"
+  wording: "The share of workers using AI every day has more than doubled in six months and is now 233% higher than it was in November 2024"
+  source:
+    org: Slack Workforce Lab
+    report: "The New AI Advantage"
+    edition: 2025
+    url: https://slack.com/blog/news/the-new-ai-advantage
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-slack-new-ai-advantage-2025-daily-user-outcomes
+  claim: "Daily AI users report markedly better outcomes than occasional users"
+  value: "daily users outperform occasional users"
+  wording: "Casual users (less than once a week) show little to no difference in outcomes from non-users; weekly users see gains, but the biggest impact comes from integrating AI into the daily workflow"
+  source:
+    org: Slack Workforce Lab
+    report: "The New AI Advantage"
+    edition: 2025
+    url: https://slack.com/blog/news/the-new-ai-advantage
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-byoai
+  claim: "AI users who bring their own AI tools to work (BYOAI)"
+  value: "78%"
+  wording: "78% of AI users are bringing their own AI tools to work (BYOAI)"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-reluctant-replaceable
+  claim: "Workplace AI users reluctant to admit using AI for important tasks, and who worry it makes them look replaceable"
+  value: "52% reluctant; 53% worry replaceable"
+  wording: "52% of people who use AI at work are reluctant to admit using it for their most important tasks; 53% worry that using AI on important work tasks makes them look replaceable"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-leaders-plan-gap
+  claim: "Leaders who agree their company must adopt AI to stay competitive versus those who worry it lacks a plan"
+  value: "79% must adopt; 60% lack plan"
+  wording: "79% of leaders agree their company needs to adopt AI to stay competitive, but 60% worry their organization's leadership lacks a plan and vision to implement it"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-training-hiring
+  claim: "AI users who received employer AI training, vs leaders who would not hire without AI skills"
+  value: "39% received training; 66% would not hire without AI skills"
+  wording: "Only 39% of people who use AI at work have received AI training from their company; 66% of leaders say they would not hire someone without AI skills"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-software-ag-shadow-ai-2024-half
+  claim: "Employees who use unsanctioned 'shadow AI' tools their company did not provide (publisher domain blocks automated fetch; confirmed via reputable mirror)"
+  value: "~half (50%)"
+  wording: "Half of all employees are shadow-AI users, relying on unsanctioned or ad-hoc AI tools their company did not provide"
+  source:
+    org: Software AG
+    report: "Shadow AI study"
+    edition: 2024
+    url: https://newscenter.softwareag.com/en/news-stories/press-releases/2024/1022-half-of-all-employees-use-shadow-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-rogers-diffusion-2003-adopter-categories
+  claim: "Adopter-category percentages in Rogers' diffusion-of-innovations model (book; figures are the canonical taxonomy, not fetched from the printed page)"
+  value: "2.5% / 13.5% / 34% / 34% / 16%"
+  wording: "Adopter categories: innovators 2.5%, early adopters 13.5%, early majority 34%, late majority 34%, laggards 16%, obtained by partitioning the normal adoption distribution at the mean plus or minus one and two standard deviations"
+  source:
+    org: Everett M. Rogers
+    report: "Diffusion of Innovations (5th ed.; ISBN 978-0743222099)"
+    edition: 2003
+    url: https://www.simonandschuster.com/books/Diffusion-of-Innovations-5th-Edition/Everett-M-Rogers/9780743222099
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+
+- id: ev-edmondson-1999-psychological-safety
+  claim: "Definition of team psychological safety and its role in enabling team learning behavior"
+  value: "shared belief the team is safe for interpersonal risk taking"
+  wording: "A shared belief held by members of a team that the team is safe for interpersonal risk taking; team psychological safety is associated with learning behavior, which mediates between psychological safety and team performance"
+  source:
+    org: Amy C. Edmondson
+    report: "Psychological Safety and Learning Behavior in Work Teams (Administrative Science Quarterly, 44(2), 350-383)"
+    edition: 1999
+    url: https://doi.org/10.2307/2666999
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-google-project-aristotle-2015-psych-safety
+  claim: "Psychological safety identified as the most important dynamic of effective teams in Google's Project Aristotle"
+  value: "ranked #1 of five dynamics"
+  wording: "Psychological safety was far and away the most important of the five dynamics we found; it is the underpinning of the other four"
+  source:
+    org: Google re:Work
+    report: "Project Aristotle: Understand Team Effectiveness"
+    edition: 2015
+    url: https://rework.withgoogle.com/guides/understanding-team-effectiveness/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-ey-ai-anxiety-2023-job-replacement
+  claim: "US employees anxious about AI replacing their jobs (among those at least somewhat familiar with AI)"
+  value: "65%"
+  wording: "About two-thirds (65%) say they are anxious about AI replacing their job"
+  source:
+    org: EY
+    report: "EY research shows most US employees feel AI anxiety"
+    edition: 2023
+    url: https://www.ey.com/en_us/newsroom/2023/12/ey-research-shows-most-us-employees-feel-ai-anxiety
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-gallup-state-american-manager-2015-engagement-variance
+  claim: "The manager's share of the variance in team engagement"
+  value: "at least 70%"
+  wording: "Managers account for at least 70% of the variance in employee engagement scores across business units"
+  source:
+    org: Gallup
+    report: "State of the American Manager"
+    edition: 2015
+    url: https://www.gallup.com/services/182138/state-american-manager.aspx
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-hughes-change-failure-myth-2011-no-evidence
+  claim: "The '70% of change initiatives fail' claim has no sound empirical basis"
+  value: "no valid/reliable empirical evidence"
+  wording: "Although a popular narrative of 70% organizational-change failure exists, there is no valid and reliable empirical evidence to support such a narrative"
+  source:
+    org: Mark Hughes
+    report: "Do 70 Per Cent of All Organizational Change Initiatives Really Fail? (Journal of Change Management, 11(4))"
+    edition: 2011
+    url: https://doi.org/10.1080/14697017.2011.630506
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-prosci-best-practices-2023-sponsorship-top-contributor
+  claim: "Active and visible executive sponsorship as the #1 contributor to change success"
+  value: "#1 contributor in every study since 1998"
+  wording: "Active and visible sponsorship has been identified as the greatest contributor to change-management success in every Prosci benchmarking study since 1998"
+  source:
+    org: Prosci
+    report: "Best Practices in Change Management"
+    edition: 2023
+    url: https://www.prosci.com/resources/articles/change-management-best-practices
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-prosci-correlation-2023-cm-quality-objectives
+  claim: "Share of projects meeting or exceeding objectives by change-management quality"
+  value: "88% excellent vs 13% poor (~7x)"
+  wording: "Percent meeting or exceeding project objectives: excellent change management 88%, good 73%, fair 39%, poor 13% (roughly seven times more likely with excellent vs poor change management)"
+  source:
+    org: Prosci
+    report: "The Correlation Between Change Management and Project Success"
+    edition: 2023
+    url: https://www.prosci.com/resources/articles/change-management-correlation-to-project-success
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-prosci-best-practices-2023-sponsor-access
+  claim: "Share meeting or exceeding objectives by level of sponsor access"
+  value: "71% with adequate access; 21% with little/none"
+  wording: "71% of participants with adequate or more than adequate sponsor access met or exceeded project objectives, compared with only 21% of those with little or no access"
+  source:
+    org: Prosci
+    report: "Best Practices in Change Management"
+    edition: 2023
+    url: https://www.prosci.com/resources/articles/change-management-best-practices
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-prosci-five-steps-2023-repeat-five-to-seven
+  claim: "How many times to repeat key change messages across channels"
+  value: "five to seven times, multiple channels"
+  wording: "The Prosci methodology recommends communicating key messages five to seven times, through multiple channels, to be effective"
+  source:
+    org: Prosci
+    report: "Five Steps to Better Change Management Communication"
+    edition: 2023
+    url: https://www.prosci.com/resources/articles/change-management-communication
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-prosci-five-steps-2023-preferred-senders
+  claim: "Preferred senders: business 'why' from senior leaders, personal impact from the direct manager"
+  value: "leaders for organizational messages; managers for personal-impact messages"
+  wording: "Business leaders are the preferred senders of organizational/business messages; an employee's immediate supervisor is the preferred sender of personal-impact messages"
+  source:
+    org: Prosci
+    report: "Five Steps to Better Change Management Communication"
+    edition: 2023
+    url: https://www.prosci.com/resources/articles/change-management-communication
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mixpanel-mau-benchmarks-2026-b2b-stickiness
+  claim: "B2B SaaS DAU/MAU stickiness benchmark and healthy range"
+  value: "~31%; 25-35% healthy"
+  wording: "B2B SaaS stickiness averages about 31% across North America and EMEA; a product sitting between 25% and 35% is broadly in line with the market"
+  source:
+    org: Mixpanel
+    report: "MAU: Definition, Formula, and Benchmarks"
+    edition: 2026
+    url: https://mixpanel.com/blog/mau/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-zylo-saas-management-index-2024-license-utilization
+  claim: "Share of provisioned SaaS licenses actively used"
+  value: "49%"
+  wording: "Companies are only using half (49%) of their provisioned SaaS licenses"
+  source:
+    org: Zylo
+    report: "SaaS Management Index"
+    edition: 2024
+    url: https://zylo.com/news/2024-saas-management-index/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-moore-crossing-the-chasm-1991-chasm
+  claim: "The adoption gap (the 'chasm') between early adopters and the early majority"
+  value: "the chasm"
+  wording: "Moore identifies a chasm between the early adopters (visionaries) and the early majority (pragmatists): the gap where most high-tech adoption efforts stall"
+  source:
+    org: Geoffrey A. Moore
+    report: "Crossing the Chasm"
+    edition: 1991
+    url: https://www.harpercollins.com/products/crossing-the-chasm-3rd-edition-geoffrey-a-moore
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-cmmi-maturity-levels-five-stage
+  claim: "The five-stage CMMI maturity-level progression"
+  value: "Initial, Managed, Defined, Quantitatively Managed, Optimizing"
+  wording: "CMMI defines five maturity levels: Initial, Managed, Defined, Quantitatively Managed, and Optimizing"
+  source:
+    org: CMMI Institute (ISACA)
+    report: "Capability Maturity Model Integration"
+    edition: 2018
+    url: https://cmmiinstitute.com/learning/appraisals/levels
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-amplitude-product-adoption-metrics-activation
+  claim: "Activation rate as a product-adoption metric (a meaningful first action, not a login)"
+  value: "activation rate"
+  wording: "The activation rate gauges the percentage of users who complete a predefined action that signifies meaningful engagement with the product"
+  source:
+    org: Amplitude
+    report: "Top Digital Product Adoption Metrics"
+    edition: 2025
+    url: https://amplitude.com/blog/top-digital-product-adoption-metrics
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31

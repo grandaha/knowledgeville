@@ -1025,3 +1025,399 @@
   verified: 2026-06-20
   status: primary
   expires: 2026-12-31
+- id: ev-mckinsey-resource-reallocation-2012-budget-inertia
+  claim: "Year-over-year correlation of a business unit's resource allocation (budget inertia)"
+  value: "0.92"
+  wording: "For our entire sample, the mean correlation between how much capital a business received in one year and how much it got the next was 0.92; for one-third of companies that correlation was higher than 0.99"
+  source:
+    org: McKinsey
+    report: "How to put your money where your strategy is"
+    edition: 2012
+    url: https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-to-put-your-money-where-your-strategy-is
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-resource-reallocation-2012-tsr-premium
+  claim: "Total-shareholder-return premium for top-third capital reallocators vs bottom third"
+  value: "~30% higher TRS annually"
+  wording: "Companies that reallocated more (the top third) yielded on average 30 percent higher total returns to shareholders annually than those that reallocated the least (the bottom third)"
+  source:
+    org: McKinsey
+    report: "How to put your money where your strategy is"
+    edition: 2012
+    url: https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-to-put-your-money-where-your-strategy-is
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-rand-ai-projects-fail-2024-failure-rate
+  claim: "AI project failure rate vs non-AI IT projects; root causes organizational not technical"
+  value: ">80% fail (~twice the non-AI IT rate)"
+  wording: "By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI"
+  source:
+    org: RAND
+    report: "The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed"
+    edition: 2024
+    url: https://www.rand.org/pubs/research_reports/RRA2680-1.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-leaders-quantify-productivity
+  claim: "Leaders who worry about quantifying the productivity gains of AI"
+  value: "59%"
+  wording: "59% of leaders worry about quantifying the productivity gains of AI"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-started-six-months
+  claim: "Share of workplace AI users who started within the last six months"
+  value: "46%"
+  wording: "46% of users started using AI at work less than six months ago"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mit-nanda-genai-divide-2025-pilot-funnel
+  claim: "GenAI tool funnel: evaluated vs reached pilot vs reached production"
+  value: "60% evaluated, 20% pilot, 5% production"
+  wording: "60% of organizations evaluated enterprise-grade systems, but only 20% reached pilot stage and just 5% reached production"
+  source:
+    org: MIT Project NANDA
+    report: "The GenAI Divide: State of AI in Business 2025"
+    edition: 2025
+    url: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-mitsmr-bcg-ai-strategy-2024-kpi-revision-benefit
+  claim: "Companies that revise KPIs with AI vs those that do not, likelihood of greater financial benefit"
+  value: "3x more likely"
+  wording: "Companies that revise their KPIs with AI are three times more likely to see greater financial benefit than those that do not"
+  source:
+    org: MIT SMR & BCG
+    report: "The Future of Strategic Measurement: Enhancing KPIs With AI"
+    edition: 2024
+    url: https://bcghendersoninstitute.com/the-future-of-strategic-measurement-enhancing-kpis-with-ai/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-bcg-value-gap-2025-track-value-leaders-laggards
+  claim: "Future-built leaders that systematically measure/report AI value vs stagnating firms"
+  value: ">60% vs 17% (~3.5x)"
+  wording: "More than 60% of future-built firms systematically measure and report AI value, compared with only 17% of stagnating companies"
+  source:
+    org: BCG
+    report: "The Widening AI Value Gap"
+    edition: 2025
+    url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-09-30
+
+- id: ev-gartner-ai-maturity-2025-roi-analysis
+  claim: "Among high-AI-maturity orgs, share running financial/ROI analysis and measuring customer impact"
+  value: "63%"
+  wording: "Almost two thirds (63 percent) of leaders from high-maturity organizations run financial analysis on risk factors, conduct ROI analysis and concretely measure customer impact"
+  source:
+    org: Gartner
+    report: "Gartner Survey on Organizations With High AI Maturity"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-state-genai-2024-measure-impacts-struggle
+  claim: "Organizations that have struggled to define and measure the exact impacts of gen-AI"
+  value: "41%"
+  wording: "41% have struggled to define and measure the exact impacts of their GenAI efforts"
+  source:
+    org: Deloitte
+    report: "The State of Generative AI in the Enterprise: Now decides Next (Q3)"
+    edition: 2024
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-state-genai-2024-cfo-reports
+  claim: "Organizations producing regular CFO reports on the value created by gen AI"
+  value: "16%"
+  wording: "Only 16% have produced regular reports for the CFO about the value being created with GenAI"
+  source:
+    org: Deloitte
+    report: "The State of Generative AI in the Enterprise: Now decides Next (Q3)"
+    edition: 2024
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-state-genai-2024-specific-kpis
+  claim: "Organizations using specific KPIs to evaluate gen-AI performance"
+  value: "48%"
+  wording: "Organizations are using specific KPIs for evaluating GenAI performance (48%)"
+  source:
+    org: Deloitte
+    report: "The State of Generative AI in the Enterprise: Now decides Next (Q3)"
+    edition: 2024
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-state-genai-2025-scale-expectations
+  claim: "Organizations expecting only a small share of gen-AI experiments to be fully scaled near-term"
+  value: "two-thirds expect <=30% scaled in 3-6 months"
+  wording: "More than two-thirds of respondents say that 30% or fewer of their experiments will be fully scaled in the next three to six months"
+  source:
+    org: Deloitte
+    report: "The State of Generative AI in the Enterprise: Generating a new future (Q4)"
+    edition: 2025
+    url: https://www.prnewswire.com/news-releases/the-path-to-sustainable-generative-ai-value-balances-passion-pragmatism-and-patience-finds-new-deloitte-survey-302355026.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-idc-business-value-genai-2024-roi-per-dollar
+  claim: "Average return per $1 invested in generative AI"
+  value: "$3.70 per $1"
+  wording: "For every $1 a company invests in generative AI, the average ROI is 3.7x"
+  source:
+    org: IDC
+    report: "The Business Opportunity of AI (IDC InfoBrief, sponsored by Microsoft)"
+    edition: 2024
+    url: https://blogs.microsoft.com/blog/2024/11/12/idcs-2024-ai-opportunity-study-top-five-ai-trends-to-watch/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-ibm-ai-roi-2024-positive-roi
+  claim: "IT decision-makers whose company is currently achieving positive ROI from AI projects"
+  value: "47%"
+  wording: "Nearly half (47%) of surveyed companies say they are achieving positive ROI from their AI projects"
+  source:
+    org: IBM
+    report: "IBM Study: More Companies Turning to Open-Source AI Tools to Unlock ROI"
+    edition: 2024
+    url: https://newsroom.ibm.com/2024-12-19-IBM-Study-More-Companies-Turning-to-Open-Source-AI-Tools-to-Unlock-ROI
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-peng-copilot-rct-2023-speedup
+  claim: "RCT task-completion speedup for developers using GitHub Copilot"
+  value: "55.8% faster (1h11m vs 2h41m), n=95"
+  wording: "The treatment group with access to the AI pair programmer completed the task 55.8% faster than the control group; developers with GitHub Copilot took on average 1 hour 11 minutes versus 2 hours 41 minutes, across 95 professional programmers"
+  source:
+    org: Peng et al.
+    report: "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
+    edition: 2023
+    url: https://arxiv.org/abs/2302.06590
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-brynjolfsson-generative-ai-at-work-2025-did-productivity
+  claim: "Difference-in-differences productivity effect of a gen-AI support assistant, by experience"
+  value: "+15% issues/hour avg; +30% for least-experienced; ~5,172 agents"
+  wording: "Access to AI assistance increases issues resolved per hour by 15% on average, with a 30% increase for less-skilled and less-experienced workers, using data from 5,172 customer-support agents"
+  source:
+    org: Brynjolfsson, Li & Raymond
+    report: "Generative AI at Work (Quarterly Journal of Economics)"
+    edition: 2025
+    url: https://academic.oup.com/qje/article/140/2/889/7990658
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  supersedes: ev-brynjolfsson-generative-ai-at-work-2023-productivity
+
+- id: ev-dellacqua-jagged-frontier-2023-bcg-rct
+  claim: "GPT-4 effect on BCG consultants inside vs outside the AI jagged frontier"
+  value: "inside: +12.2% tasks, 25.1% faster, +40% quality; outside: -19pp correct; n=758"
+  wording: "In a pre-registered experiment with 758 consultants, those using AI inside the frontier completed 12.2% more tasks, 25.1% more quickly, with more than 40% higher quality; on a task outside the frontier AI users were 19 percentage points less likely to be correct"
+  source:
+    org: Dell'Acqua et al.
+    report: "Navigating the Jagged Technological Frontier (HBS Working Paper 24-013)"
+    edition: 2023
+    url: https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-github-accenture-copilot-2024-acceptance-retention
+  claim: "GitHub Copilot suggestion acceptance and retained-character rate in an enterprise study"
+  value: "~30% accepted; ~88% of characters retained"
+  wording: "In our study developers accepted around 30% of GitHub Copilot's suggestions, and retained 88% of GitHub Copilot-generated characters in their editor"
+  source:
+    org: GitHub & Accenture
+    report: "Research: Quantifying GitHub Copilot's impact in the enterprise with Accenture"
+    edition: 2024
+    url: https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-google-gsm-heart-2010-framework
+  claim: "Google's Goals-Signals-Metrics process and HEART UX-metrics framework"
+  value: "HEART = Happiness, Engagement, Adoption, Retention, Task success"
+  wording: "The HEART framework (Happiness, Engagement, Adoption, Retention, Task success) with the companion Goals-Signals-Metrics process, from Measuring the User Experience on a Large Scale (CHI 2010)"
+  source:
+    org: Google (Rodden, Hutchinson, Fu)
+    report: "Measuring the User Experience on a Large Scale (CHI 2010)"
+    edition: 2010
+    url: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-amplitude-north-star-metric-framework
+  claim: "Amplitude's North Star framework: one north-star metric driven by a few input metrics"
+  value: "1 north-star metric + ~3-5 input metrics"
+  wording: "The North Star Framework connects a single North Star Metric to a set of typically three to five input metrics that teams can directly influence"
+  source:
+    org: Amplitude
+    report: "The North Star Playbook"
+    edition: 2024
+    url: https://amplitude.com/books/north-star/about-north-star-framework
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mcclure-aarrr-pirate-metrics-2007-framework
+  claim: "Dave McClure's AARRR (Pirate Metrics) startup-lifecycle metric categories"
+  value: "Acquisition, Activation, Retention, Referral, Revenue"
+  wording: "Startup Metrics for Pirates frames the five metrics that matter as Acquisition, Activation, Retention, Referral, and Revenue (AARRR)"
+  source:
+    org: Dave McClure (500 Startups)
+    report: "Startup Metrics for Pirates: AARRR!"
+    edition: 2007
+    url: https://500hats.typepad.com/500blogs/2007/09/startup-metrics.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-dora-four-keys-framework
+  claim: "DORA's four key software-delivery performance metrics"
+  value: "Deployment Frequency, Lead Time for Changes, Change Failure Rate, Time to Restore"
+  wording: "DORA identifies four key metrics of software delivery performance: Deployment Frequency and Lead Time for Changes (throughput), and Change Failure Rate and Time to Restore Service (stability)"
+  source:
+    org: DORA / Google Cloud
+    report: "DORA software delivery performance metrics (Four Keys)"
+    edition: 2024
+    url: https://dora.dev/guides/dora-metrics-four-keys/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-forsgren-space-2021-framework
+  claim: "The SPACE framework for measuring developer productivity"
+  value: "Satisfaction, Performance, Activity, Communication, Efficiency"
+  wording: "The SPACE of Developer Productivity defines five dimensions: Satisfaction and well-being, Performance, Activity, Communication and collaboration, and Efficiency and flow"
+  source:
+    org: Forsgren et al.
+    report: "The SPACE of Developer Productivity (ACM Queue 19(1))"
+    edition: 2021
+    url: https://queue.acm.org/detail.cfm?id=3454124
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-dx-core-4-2024-framework
+  claim: "DX Core 4 unified developer-productivity framework"
+  value: "Speed, Effectiveness, Quality, Impact"
+  wording: "The DX Core 4 organizes developer productivity into four dimensions (Speed, Effectiveness, Quality, Impact), encapsulating the DORA, SPACE, and DevEx frameworks"
+  source:
+    org: DX
+    report: "Introducing the DX Core 4"
+    edition: 2024
+    url: https://newsletter.getdx.com/p/introducing-the-dx-core-4
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-cooper-stage-gate-framework
+  claim: "Robert G. Cooper's Stage-Gate idea-to-launch process and gate decisions"
+  value: "gates force Go / Kill / Hold / Recycle"
+  wording: "The Stage-Gate system separates stages by gates, where each gate yields one of four decisions: Go, Kill, Hold, or Recycle"
+  source:
+    org: Robert G. Cooper / Stage-Gate International
+    report: "The Stage-Gate Idea-to-Launch System"
+    edition:
+    url: https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-ries-lean-startup-2011-build-measure-learn
+  claim: "Eric Ries's Build-Measure-Learn loop, innovation accounting, and pivot-or-persevere"
+  value: "Build-Measure-Learn; pivot or persevere"
+  wording: "The Lean Startup names Build-Measure-Learn as the core feedback loop, with innovation accounting to measure progress and a pivot-or-persevere decision"
+  source:
+    org: Eric Ries
+    report: "The Lean Startup"
+    edition: 2011
+    url: https://theleanstartup.com/book
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-teller-google-x-2016-celebrate-killing
+  claim: "Google X norm of rewarding teams for ending projects that should end"
+  value: "teams bonused for killing projects"
+  wording: "At X, teams kill their own ideas once the evidence is in because they are rewarded for it with applause, promotions, and bonuses for every member of teams that ended their projects"
+  source:
+    org: Astro Teller (X / Google X), TED
+    report: "The unexpected benefit of celebrating failure (TED)"
+    edition: 2016
+    url: https://www.ted.com/talks/astro_teller_the_unexpected_benefit_of_celebrating_failure
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-forrester-tei-methodology-framework
+  claim: "Forrester's Total Economic Impact (TEI) methodology components and risk adjustment"
+  value: "four components: Benefits, Costs, Flexibility, Risk; risk-adjusted and discounted"
+  wording: "Forrester's Total Economic Impact methodology evaluates investment value across four components (Benefits, Costs, Flexibility, Risk), risk-adjusts the model (reducing benefits and increasing costs for uncertainty), and discounts future cash flows"
+  source:
+    org: Forrester
+    report: "Total Economic Impact (TEI) Methodology"
+    edition:
+    url: https://www.forrester.com/policies/tei/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31

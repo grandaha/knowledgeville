@@ -60,3 +60,171 @@
   status: primary
   expires: 2026-12-31
   supersedes: ev-mckinsey-state-of-ai-2024-adoption
+
+- id: ev-mckinsey-state-of-ai-2025-ebit-any
+  claim: "Organizations reporting any enterprise-level EBIT impact from AI"
+  value: "39%"
+  wording: "About 39% of organizations report any enterprise-level EBIT impact from AI; most of those say less than 5% of EBIT is attributable to AI use"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-state-of-ai-2025-high-performers
+  claim: "AI high performers (attribute 5%+ of EBIT to AI and report significant value)"
+  value: "~6%"
+  wording: "Respondents who attribute EBIT impact of 5 percent or more to AI use and say their organization has seen significant value from AI — about 6 percent of respondents — are defined as AI high performers"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-rewiring-2025-kpi-tracking
+  claim: "Organizations tracking well-defined KPIs for gen-AI solutions"
+  value: "fewer than 1 in 5"
+  wording: "Less than one in five organizations are tracking KPIs for gen AI solutions — and tracking well-defined KPIs is the practice with the most impact on the bottom line"
+  source:
+    org: McKinsey
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-rewiring-2025-ceo-oversight
+  claim: "Organizations where the CEO directly oversees AI governance"
+  value: "28%"
+  wording: "Only 28% of companies report that their CEO directly oversees AI governance (and just 17% report that their board does)"
+  source:
+    org: McKinsey
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-superagency-2025-maturity
+  claim: "Leaders who call their company 'mature' on AI deployment"
+  value: "1%"
+  wording: "Only 1 percent of leaders call their companies mature on the deployment spectrum, meaning AI is fully integrated into workflows and drives substantial business outcomes"
+  source:
+    org: McKinsey
+    report: "Superagency in the Workplace"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-gartner-genai-poc-2024-abandonment
+  claim: "Generative-AI projects abandoned after proof of concept by end of 2025"
+  value: "at least 30%"
+  wording: "At least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, due to poor data quality, inadequate risk controls, escalating costs or unclear business value"
+  source:
+    org: Gartner
+    report: "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025"
+    edition: 2024
+    url: https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-cisco-ai-readiness-2024-fully-ready
+  claim: "Organizations 'fully ready' to deploy and leverage AI"
+  value: "13%"
+  wording: "Only 13% of companies today are fully ready to capture AI's potential — down from 14% a year ago"
+  source:
+    org: Cisco
+    report: "Cisco 2024 AI Readiness Index"
+    edition: 2024
+    url: https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m11/cisco-2024-ai-readiness-index-urgency-rises-readiness-falls.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-bcg-value-gap-2025-distribution
+  claim: "Share of companies achieving AI value at scale vs capturing little or no value"
+  value: "~5% at scale; ~60% little or no value"
+  wording: "Only about 5% of companies (the 'future-built') are generating value at scale, while 60% of companies are laggards with little or no value; 35% are in between"
+  source:
+    org: BCG
+    report: "The Widening AI Value Gap"
+    edition: 2025
+    url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-09-30
+
+- id: ev-bcg-value-gap-2025-leader-premium
+  claim: "Performance premium of AI 'future-built' leaders over laggards"
+  value: "1.7x revenue growth, 1.6x EBIT margin, ~40% greater cost savings"
+  wording: "Future-built companies already generate 1.7 times more revenue growth and 1.6 times higher EBIT margins than laggards, with about 40% more cost savings"
+  source:
+    org: BCG
+    report: "The Widening AI Value Gap"
+    edition: 2025
+    url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-09-30
+
+- id: ev-bcg-value-2024-beyond-poc
+  claim: "Companies with capabilities to move beyond proofs of concept to tangible value"
+  value: "~26%"
+  wording: "Only 26% of companies have developed the necessary set of capabilities to move beyond proofs of concept and generate tangible value (4% cutting-edge plus 22% advanced)"
+  source:
+    org: BCG
+    report: "Where's the Value in AI?"
+    edition: 2024
+    url: https://www.bcg.com/publications/2024/wheres-value-in-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-bcg-2024-ten-twenty-seventy
+  claim: "The 10-20-70 rule for where AI value comes from"
+  value: "10% algorithms, 20% technology & data, 70% people & process"
+  wording: "AI leaders follow the rule of putting 10% of their resources into algorithms, 20% into technology and data, and 70% into people and processes"
+  source:
+    org: BCG
+    report: "Where's the Value in AI?"
+    edition: 2024
+    url: https://www.bcg.com/publications/2024/wheres-value-in-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mit-nanda-genai-divide-2025-no-pl-impact
+  claim: "Enterprise gen-AI pilots delivering no measurable P&L impact"
+  value: "~95%"
+  wording: "Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact"
+  source:
+    org: MIT Project NANDA
+    report: "The GenAI Divide: State of AI in Business 2025"
+    edition: 2025
+    url: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31

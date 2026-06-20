@@ -9,10 +9,12 @@
 # is not indexed by build_index.py, and is read directly by scripts/validate_okf.py.
 #
 # ── Schema (one list entry per DISCRETE claim) ────────────────────────────────────────────
-#   - id:        kebab-case, GLOBALLY UNIQUE within this framework. This is the citation
-#                anchor: an inline citation links to it as `[(Org, Year)](#<id>)`, and the
-#                CI gate matches every such anchor against an entry id here.
-#                Convention: <org>-<report-slug>-<edition>-<claim-slug>
+#   - id:        kebab-case, GLOBALLY UNIQUE within this framework, and PREFIXED `ev-`. The
+#                `ev-` prefix is the citation-anchor namespace: an inline citation links to it
+#                as `([Org, Year](#<id>))` (e.g. `(#ev-mckinsey-...)`), and both the CI gate
+#                and the ## Sources generator recognize a citation by that `ev-` prefix — which
+#                is what cleanly separates citations from in-page navigation anchors.
+#                Convention: ev-<org>-<report-slug>-<edition>-<claim-slug>
 #     claim:     short human label for what the number measures
 #     value:     the figure as cited (e.g. "88%")
 #     wording:   the source's own phrasing, for faithful quotation
@@ -44,7 +46,7 @@
 #   (a `#` in column 0, like these) are always fine.
 # ──────────────────────────────────────────────────────────────────────────────────────────
 
-- id: mckinsey-state-of-ai-2025-adoption
+- id: ev-mckinsey-state-of-ai-2025-adoption
   claim: "Organizations reporting regular AI use in at least one business function"
   value: "88%"
   wording: "88% of respondents report regular AI use in at least one business function, compared with 78% a year ago"
@@ -57,4 +59,4 @@
   verified: 2026-06-20
   status: primary
   expires: 2026-12-31
-  supersedes: mckinsey-state-of-ai-2024-adoption
+  supersedes: ev-mckinsey-state-of-ai-2024-adoption

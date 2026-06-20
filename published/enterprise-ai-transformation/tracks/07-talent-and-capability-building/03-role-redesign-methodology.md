@@ -8,9 +8,9 @@ timestamp: "2026-06-18"
 
 ## The Unit of Change Is the Task, Not the Job
 
-The single most important idea in role redesign is that **AI acts on tasks, not on jobs**. Whole occupations rarely vanish; instead, the bundle of tasks that makes up a role gets rearranged — some tasks are automated away, some are augmented and done faster or better, some are untouched, and entirely new tasks appear. The foundational labor-market study of large language models found that **about 80% of the U.S. workforce could have at least 10% of their work tasks affected by LLMs, and around 19% could see at least half of their tasks affected** — an effect that spans every wage level *(Eloundou et al., "GPTs are GPTs," Science, 2024)*. The story is pervasive task-level change, not wholesale job elimination.
+The single most important idea in role redesign is that **AI acts on tasks, not on jobs**. Whole occupations rarely vanish; instead, the bundle of tasks that makes up a role gets rearranged — some tasks are automated away, some are augmented and done faster or better, some are untouched, and entirely new tasks appear. The foundational labor-market study of large language models found that **about 80% of the U.S. workforce could have at least 10% of their work tasks affected by LLMs, and around 19% could see at least half of their tasks affected** — an effect that spans every wage level ([Eloundou et al., 2024](#ev-eloundou-gpts-are-gpts-2024-workforce-exposure)). The story is pervasive task-level change, not wholesale job elimination.
 
-The WEF data shows the same shift in aggregate. Employers report that today **47% of work tasks are performed mainly by humans, 22% mainly by technology, and 30% by a human-machine combination — and expect those shares to move toward a roughly even split by 2030** *(WEF, Future of Jobs Report 2025, 2025)*. Redesign is the deliberate act of deciding, task by task, which side of that line each piece of work should fall on — rather than letting it drift, which is how [shadow AI use](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md) and uneven results take hold.
+The WEF data shows the same shift in aggregate. Employers report that today **47% of work tasks are performed mainly by humans, 22% mainly by technology, and 30% by a human-machine combination — and expect those shares to move toward a roughly even split by 2030** ([WEF, 2025](#ev-wef-future-of-jobs-2025-task-human-machine-split)). Redesign is the deliberate act of deciding, task by task, which side of that line each piece of work should fall on — rather than letting it drift, which is how [shadow AI use](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md) and uneven results take hold.
 
 > Designing for the job leads to fear ("will AI take my role?"). Designing for the task leads to action ("which of my tasks should AI do, so I can spend my time on the rest?").
 
@@ -23,11 +23,11 @@ This playbook gives you a repeatable method to do that decomposition and reassem
 Not all AI impact is the same, and conflating its forms is the root of both over-fear and over-automation. Every task sits somewhere on a spectrum:
 
 - **Automated** — AI performs the task end-to-end with minimal human involvement (e.g. first-draft data entry, routine categorization, boilerplate generation).
-- **Augmented** — AI does part of the task or assists throughout; a human still directs, judges, and owns the outcome. This is where most current value sits, and where the evidence is strongest: a field study of customer-support agents found that access to a generative-AI assistant **raised productivity by about 14% on average, with the largest gains — roughly 34% — for novice and lower-skilled workers** while having little effect on the most experienced *(Brynjolfsson, Li & Raymond, "Generative AI at Work," NBER 2023 / QJE 2025)*. Augmentation compresses the experience curve.
+- **Augmented** — AI does part of the task or assists throughout; a human still directs, judges, and owns the outcome. This is where most current value sits, and where the evidence is strongest: a field study of customer-support agents found that access to a generative-AI assistant **raised productivity by about 14% on average, with the largest gains — roughly 34% — for novice and lower-skilled workers** while having little effect on the most experienced ([Brynjolfsson et al., 2023](#ev-brynjolfsson-generative-ai-at-work-2023-productivity)). Augmentation compresses the experience curve.
 - **Unchanged** — tasks requiring physical presence, legal accountability, deep relationship, or judgment AI cannot yet shoulder. These often *grow* in relative importance as routine tasks are stripped away.
 - **New** — tasks created by AI itself: prompting and directing systems, reviewing and verifying AI output, curating data, and governing model behavior.
 
-The WEF frames the design goal explicitly as **augmentation — technology that complements and enhances human work rather than displacing it** *(WEF, Future of Jobs Report 2025, 2025)*. The redesign objective is to push routine tasks toward *automated*, lift skilled tasks into *augmented*, protect and expand the *unchanged* human core, and staff the *new* tasks deliberately.
+The WEF frames the design goal explicitly as **augmentation — technology that complements and enhances human work rather than displacing it** ([WEF, 2025](#ev-wef-future-of-jobs-2025-augmentation-goal)). The redesign objective is to push routine tasks toward *automated*, lift skilled tasks into *augmented*, protect and expand the *unchanged* human core, and staff the *new* tasks deliberately.
 
 ---
 
@@ -35,7 +35,7 @@ The WEF frames the design goal explicitly as **augmentation — technology that 
 
 ### Step 1 — Inventory the role as a task list
 
-Decompose the target role into 10–30 discrete tasks, expressed as verbs with objects ("reconcile invoices," "draft client update," "triage support ticket"). Work from how the job is actually done, not the formal job description — Deloitte's research found that **63% of the work people perform already falls outside their core job description**, so the official document will mislead you *(Deloitte, The Skills-Based Organization, 2024)*. Capture rough time-share per task.
+Decompose the target role into 10–30 discrete tasks, expressed as verbs with objects ("reconcile invoices," "draft client update," "triage support ticket"). Work from how the job is actually done, not the formal job description — Deloitte's research found that **63% of the work people perform already falls outside their core job description**, so the official document will mislead you ([Deloitte, 2022](#ev-deloitte-skills-based-organization-2022-work-outside-jd)). Capture rough time-share per task.
 
 ### Step 2 — Classify each task on the spectrum
 
@@ -43,7 +43,7 @@ For each task, assign one of the four labels — **automate, augment, unchanged,
 
 ### Step 3 — Quantify the shift
 
-Sum the time freed by automation and augmentation. This is the redesign's raw material: the hours that, reinvested, define what the role *becomes*. Be honest that augmentation frees partial time, not whole headcount — the productivity gains are real but bounded (the ~14% support-desk figure is a useful reality check, not a promise of 14% headcount savings) *(Brynjolfsson, Li & Raymond, 2023)*.
+Sum the time freed by automation and augmentation. This is the redesign's raw material: the hours that, reinvested, define what the role *becomes*. Be honest that augmentation frees partial time, not whole headcount — the productivity gains are real but bounded (the ~14% support-desk figure is a useful reality check, not a promise of 14% headcount savings) ([Brynjolfsson et al., 2023](#ev-brynjolfsson-generative-ai-at-work-2023-productivity)).
 
 ### Step 4 — Redesign the role around the freed time
 
@@ -61,7 +61,7 @@ Do not redesign every role at once. Start with one role in one team, run it as a
 
 ## New Roles — and a Cautionary Tale
 
-AI creates new roles, but they are less stable and less standalone than early hype suggested. The clearest lesson is **the prompt engineer**: touted as the breakout job of 2024 with six-figure salaries, the standalone role had largely faded by 2026 as models began to self-prompt and prompting became an expected baseline skill rather than a separate occupation *(TechRepublic, 2025)*. The skill did not disappear — it was *absorbed* into broader roles.
+AI creates new roles, but they are less stable and less standalone than early hype suggested. The clearest lesson is **the prompt engineer**: touted as the breakout job of 2024 with six-figure salaries, the standalone role had largely faded by 2026 as models began to self-prompt and prompting became an expected baseline skill rather than a separate occupation ([TechRepublic, 2025](#ev-techrepublic-prompt-engineer-2025-role-faded)). The skill did not disappear — it was *absorbed* into broader roles.
 
 The design implication: **prefer absorbing new AI tasks into existing roles over creating fragile new job titles.** Durable new roles tend to cluster where AI needs human governance and orchestration — AI product managers, AI governance and risk specialists, ML and data engineers, and the **builder** layer who compose AI into workflows. Create a new title only when the task bundle is large, persistent, and genuinely distinct; otherwise, redesign an existing role to carry it.
 
@@ -71,8 +71,8 @@ The design implication: **prefer absorbing new AI tasks into existing roles over
 
 Role redesign is an HR and trust exercise as much as an analytical one. Three considerations decide whether it lands:
 
-- **Frame it as augmentation, transparently.** People who fear displacement disengage or hide their AI use. Anchor the conversation on tasks ("AI takes the routine parts so you do more of the work that matters"), and back the framing with the reskilling commitment — reskilling at-risk workers is generally more cost-effective than replacing them, and the large majority can transition into adjacent roles *(WEF, Future of Jobs Report 2025, 2025)*.
-- **Move toward skills-based job architecture.** Static job descriptions cannot keep pace with 39% of skills changing by 2030 *(WEF, Future of Jobs Report 2025, 2025)*. Defining roles as fluid bundles of skills and tasks — the skills-based-organization model — makes redesign a routine update rather than a renegotiation *(Deloitte, The Skills-Based Organization, 2024)*.
+- **Frame it as augmentation, transparently.** People who fear displacement disengage or hide their AI use. Anchor the conversation on tasks ("AI takes the routine parts so you do more of the work that matters"), and back the framing with the reskilling commitment — reskilling at-risk workers is generally more cost-effective than replacing them, and the large majority can transition into adjacent roles ([WEF, 2025](#ev-wef-future-of-jobs-2025-upskilling-priority)).
+- **Move toward skills-based job architecture.** Static job descriptions cannot keep pace with 39% of skills changing by 2030 ([WEF, 2025](#ev-wef-future-of-jobs-2025-skill-disruption)). Defining roles as fluid bundles of skills and tasks — the skills-based-organization model — makes redesign a routine update rather than a renegotiation ([Deloitte, 2022](#ev-deloitte-skills-based-organization-2022-model)).
 - **Involve incumbents in their own redesign.** The people doing the work classify tasks more accurately than managers do, and co-design converts the threat narrative into ownership. This is the same psychological-safety dynamic that governs [adoption](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md).
 
 ---
@@ -92,9 +92,23 @@ Role redesign is an HR and trust exercise as much as an analytical one. Three co
 
 ## Key Takeaways
 
-- **Redesign tasks, not jobs.** ~80% of workers could see ≥10% of their tasks affected by AI, but whole-job elimination is rare *(Eloundou et al., Science, 2024)*.
+- **Redesign tasks, not jobs.** ~80% of workers could see ≥10% of their tasks affected by AI, but whole-job elimination is rare ([Eloundou et al., 2024](#ev-eloundou-gpts-are-gpts-2024-workforce-exposure)).
 - **Place every task on the augmentation–displacement spectrum** — automate, augment, unchanged, new — using both feasibility and advisability.
-- **Augmentation is where today's value sits**, and it disproportionately lifts less-experienced workers (~14% average, ~34% for novices) *(Brynjolfsson, Li & Raymond, 2023)*.
+- **Augmentation is where today's value sits**, and it disproportionately lifts less-experienced workers (~14% average, ~34% for novices) ([Brynjolfsson et al., 2023](#ev-brynjolfsson-generative-ai-at-work-2023-productivity)).
 - **Reinvest freed time deliberately** — deepen, broaden, or elevate — and staff the genuinely new AI-direction and verification tasks.
-- **Absorb new AI work into existing roles**; the collapse of the standalone "prompt engineer" role is the cautionary tale *(TechRepublic, 2025)*.
-- **Make it a skills-based, co-designed, augmentation-framed change** — static job descriptions already miss 63% of real work *(Deloitte, 2024)* and cannot track 39% skill change by 2030 *(WEF, 2025)*.
+- **Absorb new AI work into existing roles**; the collapse of the standalone "prompt engineer" role is the cautionary tale ([TechRepublic, 2025](#ev-techrepublic-prompt-engineer-2025-role-faded)).
+- **Make it a skills-based, co-designed, augmentation-framed change** — static job descriptions already miss 63% of real work ([Deloitte, 2022](#ev-deloitte-skills-based-organization-2022-work-outside-jd)) and cannot track 39% skill change by 2030 ([WEF, 2025](#ev-wef-future-of-jobs-2025-skill-disruption)).
+
+## Sources
+
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Eloundou, Manning, Mishkin & Rock — *GPTs are GPTs: Labor Market Impact Potential of LLMs (Science 384)*, 2024.** Around 80% of the U.S. workforce could have at least 10% of their work tasks affected by the introduction of LLMs, while approximately 19% of workers may see at least 50% of their tasks impacted; the effects span all wage levels. [View source](https://arxiv.org/abs/2303.10130){#ev-eloundou-gpts-are-gpts-2024-workforce-exposure} · verified 2026-06-20 · primary
+- **World Economic Forum — *Future of Jobs Report 2025*, 2025.** Today 47% of tasks are performed mainly by humans, 22% mainly by technology, and 30% by a combination of both; by 2030 employers expect these proportions to be nearly evenly split across the three categories. [View source](https://www.weforum.org/publications/the-future-of-jobs-report-2025/){#ev-wef-future-of-jobs-2025-task-human-machine-split} · verified 2026-06-20 · primary
+- **Brynjolfsson, Li & Raymond — *Generative AI at Work (NBER Working Paper 31161)*, 2023.** Access to the tool increases productivity, measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers. [View source](https://www.nber.org/papers/w31161){#ev-brynjolfsson-generative-ai-at-work-2023-productivity} · verified 2026-06-20 · primary
+- **World Economic Forum — *Future of Jobs Report 2025*, 2025.** The primary impact of technologies such as GenAI on skills may lie in their potential for augmenting human skills through human-machine collaboration, rather than in outright replacement, given the continued importance of human-centred skills. [View source](https://www.weforum.org/publications/the-future-of-jobs-report-2025/){#ev-wef-future-of-jobs-2025-augmentation-goal} · verified 2026-06-20 · primary
+- **Deloitte — *The Skills-Based Organization: A new operating model for work and the workforce*, 2022.** We found that 63% of current work being performed falls outside of people's core job descriptions. [View source](https://www.deloitte.com/global/en/issues/work/skills-based-organizations.html){#ev-deloitte-skills-based-organization-2022-work-outside-jd} · verified 2026-06-20 · primary
+- **TechRepublic — *Forget Prompt Engineering: Companies Are Now Hiring These AI Specialists*, 2025.** Prompt engineering is now basically obsolete; the career path, once predicted to be highly lucrative, has faded because generative AI can essentially prompt itself, and companies are hiring AI trainers, data specialists, and AI engineers instead. [View source](https://www.techrepublic.com/article/news-prompt-engineering-ai-jobs-obsolete/){#ev-techrepublic-prompt-engineer-2025-role-faded} · verified 2026-06-20 · primary
+- **World Economic Forum — *Future of Jobs Report 2025*, 2025.** Upskilling is the most common workforce strategy for 2025-2030, with 85% of surveyed employers anticipating it; of a representative 100 workers, employers foresee 29 upskilled in their current roles and 19 upskilled and redeployed elsewhere, while 11 are unlikely to receive the reskilling needed. [View source](https://www.weforum.org/publications/the-future-of-jobs-report-2025/){#ev-wef-future-of-jobs-2025-upskilling-priority} · verified 2026-06-20 · primary
+- **World Economic Forum — *Future of Jobs Report 2025*, 2025.** On average, workers can expect that two-fifths (39%) of their existing skill sets will be transformed or become outdated over the 2025-2030 period; down from 44% in the 2023 edition. [View source](https://www.weforum.org/publications/the-future-of-jobs-report-2025/){#ev-wef-future-of-jobs-2025-skill-disruption} · verified 2026-06-20 · primary
+- **Deloitte — *The Skills-Based Organization: A new operating model for work and the workforce*, 2022.** Decoupling work from the job by atomizing it into projects, tasks, problems, or outcomes, so people can be deployed fluidly by their skills and capabilities rather than being defined by static jobs. [View source](https://www.deloitte.com/global/en/issues/work/skills-based-organizations.html){#ev-deloitte-skills-based-organization-2022-model} · verified 2026-06-20 · primary

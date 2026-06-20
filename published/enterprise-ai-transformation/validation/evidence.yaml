@@ -777,3 +777,251 @@
   verified: 2026-06-20
   status: primary
   expires: 2026-12-31
+- id: ev-wef-future-of-jobs-2025-skills-gap-barrier
+  claim: "Employers naming skills gaps the biggest barrier to business transformation"
+  value: "63%"
+  wording: "The skills gap continues to be the most significant barrier to business transformation today, with 63% of employers already citing it as the key barrier they face"
+  source:
+    org: World Economic Forum
+    report: "Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-wef-future-of-jobs-2025-skill-disruption
+  claim: "Share of core skills expected to change by 2030"
+  value: "39% (down from 44% in 2023)"
+  wording: "On average, workers can expect that two-fifths (39%) of their existing skill sets will be transformed or become outdated over the 2025-2030 period; down from 44% in the 2023 edition"
+  source:
+    org: World Economic Forum
+    report: "Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-wef-future-of-jobs-2025-jobs-churn
+  claim: "Jobs created, displaced, net change, and total structural churn by 2030"
+  value: "170M created, 92M displaced, net +78M, churn 22% of total jobs"
+  wording: "Current trends are expected to create 170 million new jobs by 2030 while displacing 92 million existing jobs, resulting in net growth of 78 million jobs; this structural churn amounts to 22% of today's total jobs"
+  source:
+    org: World Economic Forum
+    report: "Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-wef-future-of-jobs-2025-upskilling-priority
+  claim: "Employers planning to prioritize upskilling, plus the reskill-and-redeploy framing for at-risk workers"
+  value: "85% plan to prioritize upskilling through 2030"
+  wording: "Upskilling is the most common workforce strategy for 2025-2030, with 85% of surveyed employers anticipating it; of a representative 100 workers, employers foresee 29 upskilled in their current roles and 19 upskilled and redeployed elsewhere, while 11 are unlikely to receive the reskilling needed"
+  source:
+    org: World Economic Forum
+    report: "Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-wef-future-of-jobs-2025-task-human-machine-split
+  claim: "Current split of work tasks across humans, technology, and human-machine combination, evening out by 2030"
+  value: "47% mainly humans, 22% mainly technology, 30% human-machine combination"
+  wording: "Today 47% of tasks are performed mainly by humans, 22% mainly by technology, and 30% by a combination of both; by 2030 employers expect these proportions to be nearly evenly split across the three categories"
+  source:
+    org: World Economic Forum
+    report: "Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-wef-future-of-jobs-2025-augmentation-goal
+  claim: "WEF framing of augmentation: technology complementing rather than displacing human work"
+  value: "qualitative: augmentation through human-machine collaboration rather than replacement"
+  wording: "The primary impact of technologies such as GenAI on skills may lie in their potential for augmenting human skills through human-machine collaboration, rather than in outright replacement, given the continued importance of human-centred skills"
+  source:
+    org: World Economic Forum
+    report: "Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-superagency-2025-too-slow-skill-gaps
+  claim: "C-suite leaders who say gen-AI deployment is too slow, and the most-cited reason among them (skill gaps vs resourcing)"
+  value: "47% say too slow; among them skill gaps 46% vs resourcing 38%"
+  wording: "47% of US C-suite executives said their organizations are moving too slow on AI; among them the biggest reason was talent skill gaps (46%), ahead of resourcing constraints (38%)"
+  source:
+    org: McKinsey
+    report: "Superagency in the Workplace"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-use-at-work
+  claim: "Knowledge workers who use AI at work"
+  value: "75%"
+  wording: "75% of knowledge workers now use AI at work"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-microsoft-work-trend-2024-companies-planned-training
+  claim: "Companies that expect to offer generative-AI training this year (distinct from the 39% of users already trained)"
+  value: "25%"
+  wording: "Only 39% of users have received AI training from their company and only 25% of companies expect to offer it this year"
+  source:
+    org: Microsoft & LinkedIn
+    report: "2024 Work Trend Index Annual Report"
+    edition: 2024
+    url: https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-pwc-ai-jobs-barometer-2025-wage-premium
+  claim: "Wage premium for jobs requiring AI skills, and the prior-year level"
+  value: "56% premium, up from 25% a year earlier"
+  wording: "Jobs requiring AI skills offer a wage premium in every industry analysed, with the average premium hitting 56%, up from 25% the previous year"
+  source:
+    org: PwC
+    report: "Global AI Jobs Barometer"
+    edition: 2025
+    url: https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-amazon-upskilling-2025-pledge
+  claim: "Amazon's Upskilling 2025 commitment in dollars and employees, vs the original 2019 pledge"
+  value: "over $1.2 billion to train 300,000 employees (up from $700M for 100,000 in 2019)"
+  wording: "Starting in 2019 and through 2025 we are dedicating over $1.2 billion to provide 300,000 employees with access to free training programs"
+  source:
+    org: Amazon
+    report: "Upskilling 2025"
+    edition: 2021
+    url: https://www.aboutamazon.com/news/workplace/upskilling-2025
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-eloundou-gpts-are-gpts-2024-workforce-exposure
+  claim: "LLM task-exposure of the US workforce, spanning all wage levels"
+  value: "~80% could have >=10% of tasks affected; ~19% could see >=50% of tasks affected"
+  wording: "Around 80% of the U.S. workforce could have at least 10% of their work tasks affected by the introduction of LLMs, while approximately 19% of workers may see at least 50% of their tasks impacted; the effects span all wage levels"
+  source:
+    org: Eloundou, Manning, Mishkin & Rock
+    report: "GPTs are GPTs: Labor Market Impact Potential of LLMs (Science 384)"
+    edition: 2024
+    url: https://arxiv.org/abs/2303.10130
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-brynjolfsson-generative-ai-at-work-2023-productivity
+  claim: "Productivity effect of a generative-AI assistant for customer-support agents, by experience level"
+  value: "+14% on average; +34% for novice/low-skilled; minimal for the most experienced"
+  wording: "Access to the tool increases productivity, measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers"
+  source:
+    org: Brynjolfsson, Li & Raymond
+    report: "Generative AI at Work (NBER Working Paper 31161)"
+    edition: 2023
+    url: https://www.nber.org/papers/w31161
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-european-commission-eu-ai-act-2024-article-4-literacy
+  claim: "EU AI Act Article 4 AI-literacy obligation on providers and deployers; applies from 2 February 2025"
+  value: "Article 4 literacy obligation; applicable from 2 February 2025 (Chapters I and II per Article 113)"
+  wording: "Providers and deployers of AI systems shall take measures to ensure, to their best extent, a sufficient level of AI literacy of their staff and other persons dealing with the operation and use of AI systems on their behalf; per Article 113, Chapters I and II (which include Article 4) shall apply from 2 February 2025"
+  source:
+    org: European Commission
+    report: "EU AI Act (Regulation (EU) 2024/1689), Article 4 - AI literacy"
+    edition: 2024
+    url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mit-cisr-2024-maturity-stages
+  claim: "Distribution of enterprises across MIT CISR's four-stage AI maturity model"
+  value: "~62% in the first two stages (Stage 1 28%, Stage 2 34%; Stage 3 31%, Stage 4 7%)"
+  wording: "Most enterprises were in the first two of four AI maturity stages and had below-average financial performance (Stage 1 Experiment and Prepare 28%, Stage 2 Build Pilots and Capabilities 34%, Stage 3 Develop AI Ways of Working 31%, Stage 4 Become AI Future Ready 7%), based on a survey of 721 companies"
+  source:
+    org: MIT CISR
+    report: "Building Enterprise AI Maturity (Weill, Woerner & Sebastian)"
+    edition: 2024
+    url: https://cisr.mit.edu/publication/2024_1201_EnterpriseAIMaturityModel_WeillWoernerSebastian
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-skills-based-organization-2022-work-outside-jd
+  claim: "Share of work people perform that falls outside their core job description"
+  value: "63%"
+  wording: "We found that 63% of current work being performed falls outside of people's core job descriptions"
+  source:
+    org: Deloitte
+    report: "The Skills-Based Organization: A new operating model for work and the workforce"
+    edition: 2022
+    url: https://www.deloitte.com/global/en/issues/work/skills-based-organizations.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-skills-based-organization-2022-model
+  claim: "The skills-based-organization model: roles as fluid bundles of skills and tasks rather than static jobs"
+  value: "qualitative: decouple work from the job and deploy people fluidly by skill"
+  wording: "Decoupling work from the job by atomizing it into projects, tasks, problems, or outcomes, so people can be deployed fluidly by their skills and capabilities rather than being defined by static jobs"
+  source:
+    org: Deloitte
+    report: "The Skills-Based Organization: A new operating model for work and the workforce"
+    edition: 2022
+    url: https://www.deloitte.com/global/en/issues/work/skills-based-organizations.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-techrepublic-prompt-engineer-2025-role-faded
+  claim: "The standalone prompt-engineer role, hyped in 2024, has largely faded as prompting became a baseline skill"
+  value: "qualitative: standalone prompt-engineering role basically obsolete"
+  wording: "Prompt engineering is now basically obsolete; the career path, once predicted to be highly lucrative, has faded because generative AI can essentially prompt itself, and companies are hiring AI trainers, data specialists, and AI engineers instead"
+  source:
+    org: TechRepublic
+    report: "Forget Prompt Engineering: Companies Are Now Hiring These AI Specialists"
+    edition: 2025
+    url: https://www.techrepublic.com/article/news-prompt-engineering-ai-jobs-obsolete/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31

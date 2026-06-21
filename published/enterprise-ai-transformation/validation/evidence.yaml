@@ -2365,3 +2365,255 @@
     pdf_hash:
   verified: 2026-06-20
   status: primary
+- id: ev-gartner-genai-for-business-2024-synthetic-customer-data
+  claim: "Businesses using generative AI to create synthetic customer data, 2026 vs 2023"
+  value: "75% by 2026, up from less than 5% in 2023"
+  wording: "By 2026, 75% of businesses will use generative AI to create synthetic customer data, up from less than 5% in 2023"
+  source:
+    org: Gartner
+    report: "What Generative AI Means for Business"
+    edition: 2024
+    url: https://www.gartner.com/en/insights/generative-ai-for-business
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-maverick-2021-synthetic-overshadow
+  claim: "Gartner prediction that synthetic data will overshadow real data in AI models by 2030"
+  value: "synthetic overshadows real by 2030 (qualitative)"
+  wording: "By 2030, synthetic data will overshadow real data in AI models"
+  source:
+    org: Gartner
+    report: "Maverick Research: Forget About Your Real Data - Synthetic Data Is the Future of AI (Ramos & Subramanyam)"
+    edition: 2021
+    url: https://www.gartner.com/en/documents/4002912
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-k2view-2026-state-enterprise-data-compliance-nonprod-incidents
+  claim: "Organizations that experienced a sensitive-data incident in non-production environments in the past three years"
+  value: "76%"
+  wording: "76% of organizations experienced a sensitive-data incident in non-production environments over the past three years"
+  source:
+    org: K2view
+    report: "2026 State of Enterprise Data Compliance Survey"
+    edition: 2026
+    url: https://www.k2view.com/news-blog/2026-state-of-enterprise-data-compliance-survey/
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-hype-cycle-ai-2025-data-not-ai-ready
+  claim: "Organizations that estimate their data is not AI-ready"
+  value: "57%"
+  wording: "57% of organizations estimate their data is not AI-ready"
+  source:
+    org: Gartner
+    report: "Hype Cycle for Artificial Intelligence, 2025"
+    edition: 2025
+    url: https://www.gartner.com/en/articles/hype-cycle-for-artificial-intelligence
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-fortunebusinessinsights-2026-data-mesh-market-size
+  claim: "Global data mesh market size and forecast CAGR"
+  value: "$1.66B (2025); 17.56% CAGR (2025-2034)"
+  wording: "The global data mesh market size was valued at USD 1.66 billion in 2025 and is projected to grow to USD 7.11 billion by 2034, a CAGR of 17.56% during the forecast period"
+  source:
+    org: Fortune Business Insights
+    report: "Data Mesh Market Size, Share, Growth, & Forecast to 2034"
+    edition: 2026
+    url: https://www.fortunebusinessinsights.com/data-mesh-market-112343
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-dehghani-2019-data-monolith-to-mesh-centralized-pipeline-burden
+  claim: "Centralized data pipeline teams' effort is dominated by ingesting/cleansing data rather than enablement (qualitative)"
+  value: "qualitative"
+  wording: "the majority of the efforts of centralized data pipelines are concentrated on cleansing data after ingestion, with an over-stretched platform team in the middle"
+  source:
+    org: Thoughtworks (Zhamak Dehghani)
+    report: "How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh"
+    edition: 2019
+    url: https://martinfowler.com/articles/data-monolith-to-mesh.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-eu-ai-act-2024-article-12-record-keeping
+  claim: "EU AI Act traceability/record-keeping obligation for high-risk AI systems"
+  value: "Article 12 - automatic logging, logs retained at least 6 months"
+  wording: "High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system, kept for a period appropriate to the intended purpose, of at least six months"
+  source:
+    org: European Union
+    report: "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 12"
+    edition: 2024
+    url: https://artificialintelligenceact.eu/article/12/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-northcutt-pervasive-label-errors-2021-imagenet
+  claim: "Estimated label error rate in the ImageNet validation set (and average across 10 benchmark datasets)"
+  value: "at least 6% (ImageNet val); ~3.3% average across 10 datasets"
+  wording: "label errors comprise at least 6% of the ImageNet validation set; we find an average of at least 3.3% errors across the 10 datasets"
+  source:
+    org: Northcutt, Athalye & Mueller
+    report: "Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks (NeurIPS Datasets and Benchmarks)"
+    edition: 2021
+    url: https://arxiv.org/abs/2103.14749
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-dataversity-tdm-2025-mature-governance
+  claim: "Organizations reporting mature data governance"
+  value: "15%"
+  wording: "Only 15% of survey participants report having mature data governance"
+  source:
+    org: DATAVERSITY
+    report: "Trends in Data Management 2025 (Survey Results)"
+    edition: 2025
+    url: https://www.dataversity.net/thank-you/white-paper-dataversity-trends-in-data-management-2025-survey-results/
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-idc-netapp-ai-maturity-2025-masters-outcomes
+  claim: "Revenue and cost-savings gains for the most data-ready 'AI Master' organizations vs less-mature peers"
+  value: "24.1% revenue improvement; 25.4% cost savings"
+  wording: "AI Masters achieved 24.1% revenue improvement and 25.4% improvement in cost savings, far outpacing less mature peers who prioritize data readiness, protection and security alongside infrastructure"
+  source:
+    org: IDC (sponsored by NetApp)
+    report: "Scaling Enterprise AI Responsibly: The Critical Role of Data Readiness and an Intelligent Data Infrastructure (IDC InfoBrief)"
+    edition: 2025
+    url: https://www.netapp.com/media/142474-idc-2025-ai-maturity-findings.pdf
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-ai-spending-2026-worldwide-total
+  claim: "Gartner worldwide AI spending forecast for 2026"
+  value: "$2.5 trillion (Jan 2026 forecast)"
+  wording: "Worldwide AI spending will total $2.5 trillion in 2026 (later revised upward to $2.59 trillion, a 47% increase year over year)"
+  source:
+    org: Gartner
+    report: "Gartner Says Worldwide AI Spending Will Total $2.5 Trillion in 2026"
+    edition: 2026
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-cio-2026-pippadipally-ai-exposes-data-problems
+  claim: "Attributed expert quote on AI exposing existing data problems"
+  value: "qualitative quote"
+  wording: "AI doesn't create data problems; it exposes and accelerates them"
+  source:
+    org: CIO.com (Foundry)
+    report: "Data debt: AI's value killer hidden in plain sight (quoting Hrishikesh Pippadipally, CIO, Wiss)"
+    edition: 2026
+    url: https://www.cio.com/article/4162306/data-debt-ai-value-killer.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-idc-futurescape-2026-data-debt-failure
+  claim: "Higher AI failure rate for organizations that delay remediating data debt"
+  value: "up to 50% higher by 2027"
+  wording: "Organizations that delay addressing data debt - including siloed, redundant, and outdated data - could face up to 50 percent higher AI failure rates by 2027"
+  source:
+    org: IDC
+    report: "IDC FutureScape 2026 Predictions (CIO Agenda)"
+    edition: 2026
+    url: https://my.idc.com/getdoc.jsp?containerId=prUS53883425
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mitsmr-2017-seizing-opportunity-data-quality-revenue-loss
+  claim: "Share of revenue companies lose annually due to poor data quality"
+  value: "15%-25%"
+  wording: "companies lose 15% to 25% of revenue due to poor data quality"
+  source:
+    org: MIT Sloan Management Review
+    report: "Seizing Opportunity in Data Quality (Thomas C. Redman)"
+    edition: 2017
+    url: https://sloanreview.mit.edu/article/seizing-opportunity-in-data-quality/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-qlik-data-quality-ai-2025-leadership-attention
+  claim: "Directors/managers who say leadership isn't paying adequate attention to bad data"
+  value: "90%"
+  wording: "90% of data professionals at the director or manager level agree that company leaders are not paying adequate attention to bad or inaccurate data"
+  source:
+    org: Qlik
+    report: "Data Quality is Not Being Prioritized on AI Projects (survey of 500 U.S. AI professionals, fielded Feb 2025)"
+    edition: 2025
+    url: https://www.qlik.com/us/news/company/press-room/press-releases/data-quality-is-not-being-prioritized-on-ai-projects
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-qlik-data-quality-ai-2025-not-addressed
+  claim: "AI professionals who believe leadership isn't addressing data quality issues"
+  value: "85%"
+  wording: "85% believe leadership isn't addressing these data quality issues"
+  source:
+    org: Qlik
+    report: "Data Quality is Not Being Prioritized on AI Projects"
+    edition: 2025
+    url: https://www.qlik.com/us/news/company/press-room/press-releases/data-quality-is-not-being-prioritized-on-ai-projects
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-qlik-data-quality-ai-2025-significant-issues
+  claim: "Companies that still have significant data quality issues"
+  value: "81%"
+  wording: "81% of AI professionals say their company still has significant data quality issues"
+  source:
+    org: Qlik
+    report: "Data Quality is Not Being Prioritized on AI Projects"
+    edition: 2025
+    url: https://www.qlik.com/us/news/company/press-room/press-releases/data-quality-is-not-being-prioritized-on-ai-projects
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-stanford-hai-ai-index-2025-state-ai-laws
+  claim: "AI-related laws passed by US state legislatures in 2024"
+  value: "131 passed (of 629 proposed); up from 49 in 2023"
+  wording: "State legislatures proposed 629 AI-related laws in 2024, and passed 131 of them; in 2016 only one state-level AI-related law was passed, increasing to 49 by 2023"
+  source:
+    org: Stanford HAI (Institute for Human-Centered AI)
+    report: "2025 AI Index Report, Chapter 6: Policy and Governance"
+    edition: 2025
+    url: https://hai.stanford.edu/ai-index/2025-ai-index-report/policy-and-governance
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-ec-ai-act-2024-application-timeline
+  claim: "EU AI Act phased application dates (GPAI vs high-risk obligations)"
+  value: "In force 1 Aug 2024; GPAI obligations apply 2 Aug 2025; most high-risk obligations apply 2 Aug 2026"
+  wording: "the governance rules and the obligations for general-purpose AI models became applicable on 2 August 2025; the majority of remaining obligations, including rules for high-risk AI systems, apply from 2 August 2026"
+  source:
+    org: European Commission
+    report: "Regulatory framework on AI (Regulation (EU) 2024/1689)"
+    edition: 2024
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-dlapiper-gdpr-fines-2026-cumulative-total
+  claim: "Cumulative GDPR fines since 25 May 2018"
+  value: "EUR 7.1 billion (through 10 January 2026); ~EUR 1.2bn in 2025"
+  wording: "The aggregate total fines reported since the application of GDPR on 25 May 2018 to 10 January 2026 across all the jurisdictions surveyed now stands at EUR7.1 billion"
+  source:
+    org: DLA Piper
+    report: "GDPR Fines and Data Breach Survey: January 2026"
+    edition: 2026
+    url: https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-idc-datasphere-2025-growth-cagr
+  claim: "Global data volume growth rate (IDC Global DataSphere)"
+  value: "~23% CAGR 2020-2025 (~180 ZB created in 2025); implies ~3-year doubling"
+  wording: "Global data creation and replication will experience a compound annual growth rate of 23% over the 2020-2025 forecast period, with more than 180 zettabytes created in 2025"
+  source:
+    org: IDC
+    report: "Worldwide IDC Global DataSphere Forecast"
+    edition: 2025
+    url: https://my.idc.com/getdoc.jsp?containerId=US53363625
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror

@@ -14,13 +14,13 @@ The practical value is straightforward: organizations that can't use real data f
 
 But synthetic data is not a universal solution or a free pass. It solves specific problems. Used outside those problems, it introduces risks that are often harder to detect than the original issue.
 
-> Gartner predicted that **75%** of businesses would use GenAI to create synthetic customer data by 2026, up from less than 5% in 2023 — a forecast that has now reached its target date and is consistent with adoption trends observed across 2025–2026 *(Gartner, 2024)*
+> Gartner predicted **75%** of businesses would use generative AI to create synthetic customer data by 2026, up from less than 5% in 2023 ([Gartner, 2024](#ev-gartner-genai-for-business-2024-synthetic-customer-data))
 
-> By 2030, synthetic structured data will grow at least **3x faster** than real structured data for AI model training *(Gartner)*
+> By 2030, **synthetic data will overshadow real data** in AI models, Gartner predicts ([Gartner, 2021](#ev-gartner-maverick-2021-synthetic-overshadow))
 
-> **76%** of organizations have experienced a sensitive-data incident in lower environments — the environment where synthetic data would have been the safe alternative *(K2view, 2026)*
+> **76%** of organizations experienced a sensitive-data incident in non-production environments over the past three years — the environment where synthetic data would have been the safe alternative ([K2view, 2026](#ev-k2view-2026-state-enterprise-data-compliance-nonprod-incidents))
 
-> Models trained on low-fidelity synthetic data can perform well in evaluation and **fail silently in production** — because the synthetic data passed all the obvious checks while missing the patterns that mattered *(Ranktracker, 2026)*
+> Models trained on low-fidelity synthetic data can perform well in evaluation and **fail silently in production** — because the synthetic data passed all the obvious checks while missing the patterns that mattered
 
 ---
 
@@ -150,9 +150,8 @@ Website: [https://synthetichealth.github.io/synthea](https://synthetichealth.git
 
 ## Sources
 
-- K2view — Best Synthetic Data Generation Tools for 2026 (April 2026)
-- [Tonic.ai](http://Tonic.ai) — Best Synthetic Data Generation Tools Compared for 2026 (April 2026)
-- NVIDIA — Synthetic Data Generation for Agentic AI
-- Ranktracker — Synthetic Data Generation Validation for Enterprise AI Deployment (April 2026)
-- Humans in the Loop — Synthetic Data in AI: 3 Ways It Breaks Models (March 2026)
-- Gartner — Over 100 Data, Analytics and AI Predictions Through 2030 (May 2025)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Gartner — *What Generative AI Means for Business*, 2024.** By 2026, 75% of businesses will use generative AI to create synthetic customer data, up from less than 5% in 2023. [View source](https://www.gartner.com/en/insights/generative-ai-for-business){#ev-gartner-genai-for-business-2024-synthetic-customer-data} · verified 2026-06-21 · ⚠ secondary mirror
+- **Gartner — *Maverick Research: Forget About Your Real Data - Synthetic Data Is the Future of AI (Ramos & Subramanyam)*, 2021.** By 2030, synthetic data will overshadow real data in AI models. [View source](https://www.gartner.com/en/documents/4002912){#ev-gartner-maverick-2021-synthetic-overshadow} · verified 2026-06-21 · ⚠ secondary mirror
+- **K2view — *2026 State of Enterprise Data Compliance Survey*, 2026.** 76% of organizations experienced a sensitive-data incident in non-production environments over the past three years. [View source](https://www.k2view.com/news-blog/2026-state-of-enterprise-data-compliance-survey/){#ev-k2view-2026-state-enterprise-data-compliance-nonprod-incidents} · verified 2026-06-21 · ⚠ secondary mirror

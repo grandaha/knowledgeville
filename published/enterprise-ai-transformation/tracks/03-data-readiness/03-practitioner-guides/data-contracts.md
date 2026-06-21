@@ -14,12 +14,6 @@ This is the core failure mode that data contracts solve. Not bad intentions, not
 
 A data contract is that agreement, expressed as code. It specifies what data will be delivered, in what shape, at what quality, and with what reliability guarantees. When a producer makes a change that would break the contract, the CI/CD pipeline catches it and blocks the change before it merges. The consumer never sees it. The incident never happens.
 
-> **68%** of data leaders cite schema drift and undocumented changes as a top operational risk *(DATAVERSITY, 2025)*
-
-> Most enterprises see meaningful results within **3–6 months** of a pilot contract program *(Airbyte, 2025)*
-
-> **Full enterprise rollout** typically requires 12–24 months depending on the number of data sources *(Airbyte, 2025)*
-
 The concept borrows directly from software engineering, where API contracts have been standard practice for years. An API contract defines what endpoints exist, what inputs they accept, and what outputs they guarantee. Data contracts apply the same discipline to datasets. As [datacontract.com](http://datacontract.com) puts it: bringing software engineering best practices into the world of data, making data products as reliable and well-defined as APIs.
 
 ---

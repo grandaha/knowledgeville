@@ -14,13 +14,11 @@ This is the master data problem. And it is the single most common reason that AI
 
 Master Data Management (MDM) is the discipline of creating and maintaining a single, trusted, authoritative version of core business entities — customers, products, suppliers, locations, employees — and ensuring that version is shared consistently across every system that uses it.
 
-> **61%** of organizations say data inconsistency issues directly affect their decision-making *(Gitnux)*
+> Only **15%** of organizations report having mature data governance in place ([DATAVERSITY, 2025](#ev-dataversity-tdm-2025-mature-governance))
 
-> **15%** of organizations report having mature data governance in place, despite 61% citing data quality as a top challenge *(DATAVERSITY, 2025)*
+> **24.1%** revenue improvement and **25.4%** cost savings from AI initiatives among the most data-ready "AI Master" organizations ([IDC, 2025](#ev-idc-netapp-ai-maturity-2025-masters-outcomes))
 
-> **24.1%** revenue improvement and **25.4%** cost savings from AI initiatives reported by organizations with mature data governance *(IDC)*
-
-> **\$2 trillion** in global AI spending forecast for 2026 — all of it dependent on data that MDM makes trustworthy *(Gartner)*
+> **\$2.5 trillion** in worldwide AI spending forecast for 2026 — all of it dependent on data that MDM makes trustworthy ([Gartner, 2026](#ev-gartner-ai-spending-2026-worldwide-total))
 
 In 2026, MDM programs that don't account for AI consumption are already behind. AI agents are now the primary consumers of master data at scale. Even small data deviations that human analysts would catch and correct can propagate silently through thousands of agent decisions before anyone notices.
 
@@ -191,7 +189,7 @@ The relationship between MDM and AI quality is direct and consequential. Every A
 
 **RAG and knowledge retrieval:** retrieval-augmented systems that ground responses in enterprise knowledge need to retrieve the right entity. If "Acme Corp" and "Acme Corporation" and "ACME" are three separate records in the knowledge base, retrieval returns three partial answers instead of one complete one.
 
-> MDM works best when paired with metadata management and data quality capabilities. Metadata provides the context and lineage necessary to understand and trust master data. Data quality ensures the golden record stays accurate over time. These aren't add-ons — they're core components of a mature MDM solution. *(First San Francisco Partners, 2026)*
+> MDM works best when paired with metadata management and data quality capabilities. Metadata provides the context and lineage necessary to understand and trust master data. Data quality ensures the golden record stays accurate over time. These aren't add-ons — they're core components of a mature MDM solution.
 
 ---
 
@@ -309,19 +307,8 @@ Deploy to production. Monitor golden record quality continuously. Track match ra
 
 ## Sources
 
-- Profisee — What Is a Golden Record in MDM (December 2025)
-- Profisee — MDM Survivorship Rules (December 2025)
-- Profisee — MDM Implementation Styles Explained (March 2026)
-- Profisee — The State of MDM 2026: Key Takeaways for Data Leaders (February 2026)
-- Informatica — MDM Implementation: Styles, Steps & Best Practices
-- Reltio — What Are MDM Implementation Styles? (April 2025)
-- Stibo Systems — 4 Common Master Data Management Implementation Styles (May 2026)
-- First San Francisco Partners — Why Master Data Management Is Important to Your AI Strategy (April 2026)
-- Alation — 2026 Data Management Trends (December 2025)
-- Semarchy — AI-Driven MDM vs. Traditional MDM (February 2026)
-- Apptad — AI-Driven Master Data Management: Trends Shaping 2025 (November 2025)
-- Parseur — Master Data Management: The Complete 2026 Guide (December 2025)
-- LatentView — MDM Golden Record (March 2026)
-- Infomineo — Master Data Management: Strategy, Benefits, and Implementation Styles (May 2026)
-- DynaTech — AI-Enabled MDM for Modern Data Governance (February 2026)
-- Gartner — Magic Quadrant for Master Data Management Solutions (2026)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **DATAVERSITY — *Trends in Data Management 2025 (Survey Results)*, 2025.** Only 15% of survey participants report having mature data governance. [View source](https://www.dataversity.net/thank-you/white-paper-dataversity-trends-in-data-management-2025-survey-results/){#ev-dataversity-tdm-2025-mature-governance} · verified 2026-06-21 · ⚠ secondary mirror
+- **IDC (sponsored by NetApp) — *Scaling Enterprise AI Responsibly: The Critical Role of Data Readiness and an Intelligent Data Infrastructure (IDC InfoBrief)*, 2025.** AI Masters achieved 24.1% revenue improvement and 25.4% improvement in cost savings, far outpacing less mature peers who prioritize data readiness, protection and security alongside infrastructure. [View source](https://www.netapp.com/media/142474-idc-2025-ai-maturity-findings.pdf){#ev-idc-netapp-ai-maturity-2025-masters-outcomes} · verified 2026-06-21 · ⚠ secondary mirror
+- **Gartner — *Gartner Says Worldwide AI Spending Will Total $2.5 Trillion in 2026*, 2026.** Worldwide AI spending will total $2.5 trillion in 2026 (later revised upward to $2.59 trillion, a 47% increase year over year). [View source](https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026){#ev-gartner-ai-spending-2026-worldwide-total} · verified 2026-06-21 · ⚠ secondary mirror

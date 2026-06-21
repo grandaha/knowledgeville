@@ -14,15 +14,13 @@ They fail because people didn't use it, didn't trust it, didn't own it, or worke
 
 Data culture is the organizational environment where decisions are routinely backed by data, where data quality is everyone's accountability rather than one team's burden, and where problems are surfaced and fixed rather than hidden. Without it, even the most sophisticated data infrastructure becomes shelfware.
 
-> **90%** of directors and managers — those closest to AI implementation — believe leadership is failing to focus on data quality issues *(Qlik, 2025)*
+> **90%** of directors and managers say company leaders are not paying adequate attention to bad or inaccurate data ([Qlik, 2025](#ev-qlik-data-quality-ai-2025-leadership-attention))
 
-> **85%** of employees believe leadership isn't adequately addressing data quality problems, despite 81% of organizations having significant quality issues *(Qlik, 2025)*
+> **85%** believe leadership isn't addressing data quality issues ([Qlik, 2025](#ev-qlik-data-quality-ai-2025-not-addressed)), despite **81%** of companies still having significant data quality problems ([Qlik, 2025](#ev-qlik-data-quality-ai-2025-significant-issues))
 
-> Organizations investing at least **10%** of their AI budget in change management and training are **1.5x more likely** to succeed *(BCG)*
+> BCG's **10-20-70** rule: AI success comes 10% from algorithms, 20% from technology and data, and **70% from people and process** ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy))
 
-> **90%** of leadership agrees data product investments deliver value — yet most quality problems persist because the culture to act on them doesn't exist *(KPMG, 2024)*
-
-The gap in every one of these stats is the same: leadership believes the right things but hasn't created the conditions for those beliefs to change how people work.
+The pattern in every one of these stats is the same: the people closest to the work can see the data-quality gap, and closing it depends on leadership creating the conditions to act on it — not on more technology.
 
 ---
 
@@ -152,7 +150,7 @@ These six steps are not a one-time program. They are a feedback loop. Culture ch
 - [ ] Governance policies audited for enablement vs. restriction — unnecessary friction being eliminated
 - [ ] Early wins identified, documented, and communicated broadly
 - [ ] Behavioral culture metrics defined — not just training completion rates
-- [ ] Change management budget allocated — minimum 10% of AI initiative budget per BCG benchmark
+- [ ] Change management resourced as a first-class workstream — most AI value comes from people and process, not algorithms ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy))
 - [ ] Domain team KPIs updated to include data product quality accountability
 - [ ] Culture maturity level assessed and target level defined with a realistic timeline
 - [ ] CDAO or equivalent has organizational change mandate, not just a technical one
@@ -161,11 +159,9 @@ These six steps are not a one-time program. They are a feedback loop. Culture ch
 
 ## Sources
 
-- MIT Sloan Management Review — Building a Data-Driven Culture: Four Key Elements
-- KPMG — Build a Data-Driven Culture in 8 Steps (August 2025)
-- Secoda — Building a Data-Driven Culture (January 2025)
-- GP Strategies — 5 Strategies to Build a Data-Driven Culture Through Governance (August 2025)
-- DataDrivenDaily — Data Trends 2026: What Leaders Need to Know (February 2026)
-- Qlik — Data Quality is Not Being Prioritized on AI Projects (March 2025)
-- BCG — Winning with AI (2023)
-- Harvard Business Review — Davenport & Mittal on data-driven leadership
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Qlik — *Data Quality is Not Being Prioritized on AI Projects (survey of 500 U.S. AI professionals, fielded Feb 2025)*, 2025.** 90% of data professionals at the director or manager level agree that company leaders are not paying adequate attention to bad or inaccurate data. [View source](https://www.qlik.com/us/news/company/press-room/press-releases/data-quality-is-not-being-prioritized-on-ai-projects){#ev-qlik-data-quality-ai-2025-leadership-attention} · verified 2026-06-21 · primary
+- **Qlik — *Data Quality is Not Being Prioritized on AI Projects*, 2025.** 85% believe leadership isn't addressing these data quality issues. [View source](https://www.qlik.com/us/news/company/press-room/press-releases/data-quality-is-not-being-prioritized-on-ai-projects){#ev-qlik-data-quality-ai-2025-not-addressed} · verified 2026-06-21 · primary
+- **Qlik — *Data Quality is Not Being Prioritized on AI Projects*, 2025.** 81% of AI professionals say their company still has significant data quality issues. [View source](https://www.qlik.com/us/news/company/press-room/press-releases/data-quality-is-not-being-prioritized-on-ai-projects){#ev-qlik-data-quality-ai-2025-significant-issues} · verified 2026-06-21 · primary
+- **BCG — *Where's the Value in AI?*, 2024.** AI leaders follow the rule of putting 10% of their resources into algorithms, 20% into technology and data, and 70% into people and processes. [View source](https://www.bcg.com/publications/2024/wheres-value-in-ai){#ev-bcg-2024-ten-twenty-seventy} · verified 2026-06-20 · primary

@@ -14,11 +14,11 @@ Most organizations skip the assessment. They announce an AI initiative, fund a m
 
 This framework produces a prioritized gap list, not a score to report upward. A score that doesn't change what gets funded next quarter is a waste of everyone's time.
 
-> Organizations scoring above **70%** on readiness assessments are **3x more likely** to implement AI successfully within 12 months *(Deloitte, 2025)*
+> Only **13%** of organizations are fully ready to deploy and leverage AI — readiness, not ambition, is the constraint ([Cisco, 2024](#ev-cisco-ai-readiness-2024-fully-ready))
 
-> Approximately **one-third** of large enterprises have begun scaling AI programs — while nearly two-thirds remain in the experimentation or piloting phase *(McKinsey State of AI, 2025)*
+> Approximately **one-third** of organizations have begun scaling AI across the enterprise — larger companies most of all; the rest have not yet reached the scaling phase ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-scaling-by-size))
 
-> Organizations investing at least **10%** of their AI budget in change management and training are **1.5x more likely** to succeed *(BCG)*
+> BCG's **10-20-70** rule: AI success comes 10% from algorithms, 20% from technology and data, and **70% from people and process** ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy))
 
 ---
 
@@ -196,10 +196,8 @@ Results should drive four specific decisions:
 
 ## Sources
 
-- Intuz — AI Readiness Assessment 2026: 5-Dimension Enterprise Scorecard (April 2026)
-- Infomineo — AI Readiness Assessment: A Practical Framework (May 2026)
-- [Best-AI.org](http://Best-AI.org) — AI Readiness Framework: 7 Dimensions (February 2026)
-- The Thinking Company — AI Readiness Assessment: 8-Dimension Framework (March 2026)
-- McKinsey — State of AI (2025)
-- Deloitte — Trusted AI Survey (2025)
-- BCG — Winning with AI (2023)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Cisco — *Cisco 2024 AI Readiness Index*, 2024.** Only 13% of companies today are fully ready to capture AI's potential — down from 14% a year ago. [View source](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m11/cisco-2024-ai-readiness-index-urgency-rises-readiness-falls.html){#ev-cisco-ai-readiness-2024-fully-ready} · verified 2026-06-20 · primary
+- **McKinsey — *The State of AI in 2025*, 2025.** About one-third of organizations have begun to scale AI across the enterprise; larger companies are the most likely to have reached the scaling phase. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-scaling-by-size} · verified 2026-06-20 · primary
+- **BCG — *Where's the Value in AI?*, 2024.** AI leaders follow the rule of putting 10% of their resources into algorithms, 20% into technology and data, and 70% into people and processes. [View source](https://www.bcg.com/publications/2024/wheres-value-in-ai){#ev-bcg-2024-ten-twenty-seventy} · verified 2026-06-20 · primary

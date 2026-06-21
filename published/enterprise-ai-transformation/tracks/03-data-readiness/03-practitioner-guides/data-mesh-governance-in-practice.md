@@ -14,11 +14,11 @@ In the centralized model, every data request — a new dataset, a quality fix, a
 
 Data mesh addresses this by redistributing both ownership and accountability. If the sales team generates customer interaction data, the sales team owns that data. They maintain its quality, publish it as a product that other teams can consume, and are accountable for its SLAs. The central team stops being a bottleneck and starts being a platform provider.
 
-> **57%** of organizations believe their data is not AI-ready, with Gartner specifically noting leaders must evolve their data management practices to get there *(Gartner AI Hype Cycle, 2025 — consistent with IBM IBV research showing 71% of tech leaders say their enterprise data does not meet AI-ready standards)*
+> **57%** of organizations estimate their data is not AI-ready ([Gartner, 2025](#ev-gartner-hype-cycle-ai-2025-data-not-ai-ready)) — corroborated by IBM research finding only a minority of tech leaders say their enterprise data meets AI-ready standards ([IBM, 2024](#ev-ibm-ibv-2024-data-readiness-bar))
 
-> The global data mesh market, valued at approximately **\$1.7B** in 2025, is projected to grow at 15–17% CAGR through the end of the decade *(multiple market research firms, 2026)*
+> The global data mesh market, valued at **\$1.66B** in 2025, is projected to grow at a ~17.6% CAGR through 2034 ([Fortune Business Insights, 2026](#ev-fortunebusinessinsights-2026-data-mesh-market-size))
 
-> In the centralized model, data teams spend the majority of their time on **intake, routing, and pipeline maintenance** rather than on data quality and strategic enablement — the bottleneck is structural, not a staffing problem *(Thoughtworks, 2023)*
+> In the centralized model, data teams' effort is dominated by **ingesting and cleansing data** rather than improving quality or enabling consumers — the bottleneck is structural, not a staffing problem ([Thoughtworks, 2019](#ev-dehghani-2019-data-monolith-to-mesh-centralized-pipeline-burden))
 
 ---
 
@@ -104,7 +104,7 @@ Data mesh was designed primarily for human analytics consumers. AI changes the r
 
 **Why mesh enables AI:** domain-owned data products have documented quality, lineage, and contracts — exactly the prerequisites that AI training data governance requires. Federated governance embedded in the platform means AI teams can consume products with confidence that PII is classified, quality is checked, and access is controlled. The product model — programmatic API, documented schema, quality guarantees — aligns with how AI agents need to consume data.
 
-**The EU AI Act alignment:** because every data product has a named domain owner, there is always an accountable party for every data input to a high-risk AI system. Quality and lineage documentation is built into the publishing workflow. This structural alignment with the EU AI Act's requirements for traceability and accountability is one reason data mesh adoption is accelerating in regulated industries. *(TechTarget, 2026)*
+**The EU AI Act alignment:** because every data product has a named domain owner, there is always an accountable party for every data input to a high-risk AI system. Quality and lineage documentation is built into the publishing workflow. This structural alignment maps directly onto the EU AI Act's record-keeping and traceability obligations for high-risk AI systems ([European Union, 2024](#ev-eu-ai-act-2024-article-12-record-keeping)).
 
 **The remaining gap:** agents need machine-readable catalog APIs to discover data programmatically. They need real-time freshness guarantees that mesh architectures often can't provide natively. They need semantic context — field definitions — at query time without human intermediation. Most current data mesh implementations weren't built with agents as primary consumers and require additional platform investment to close this gap.
 
@@ -154,10 +154,10 @@ None of these challenges are reasons to avoid data mesh. They are the known cost
 
 ## Sources
 
-- TechTarget — Data Domain Ownership, Data Mesh Chart Path to AI-Ready Data (March 2026)
-- Atlan — Data Mesh Principles: Four Pillars of Modern Data Architecture (2025)
-- dbt Labs — The 4 Principles of Data Mesh (April 2025)
-- OvalEdge — Data Mesh Explained: Principles, Architecture & 4 Core Concepts (February 2026)
-- Domo — Federated Data Governance: A 2025 Guide
-- Gartner — 2025 AI Hype Cycle
-- Market Research Future — Data Mesh Market Report 2026
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Gartner — *Hype Cycle for Artificial Intelligence, 2025*, 2025.** 57% of organizations estimate their data is not AI-ready. [View source](https://www.gartner.com/en/articles/hype-cycle-for-artificial-intelligence){#ev-gartner-hype-cycle-ai-2025-data-not-ai-ready} · verified 2026-06-21 · ⚠ secondary mirror
+- **IBM Institute for Business Value — *What Is AI-Ready Data? (citing a 2024 IBV survey)*, 2024.** only 29% of technology leaders strongly agree that their enterprise data meets the quality, accessibility and security standards needed to efficiently scale generative AI. [View source](https://www.ibm.com/think/topics/ai-ready-data){#ev-ibm-ibv-2024-data-readiness-bar} · verified 2026-06-20 · primary
+- **Fortune Business Insights — *Data Mesh Market Size, Share, Growth, & Forecast to 2034*, 2026.** The global data mesh market size was valued at USD 1.66 billion in 2025 and is projected to grow to USD 7.11 billion by 2034, a CAGR of 17.56% during the forecast period. [View source](https://www.fortunebusinessinsights.com/data-mesh-market-112343){#ev-fortunebusinessinsights-2026-data-mesh-market-size} · verified 2026-06-21 · ⚠ secondary mirror
+- **Thoughtworks (Zhamak Dehghani) — *How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh*, 2019.** the majority of the efforts of centralized data pipelines are concentrated on cleansing data after ingestion, with an over-stretched platform team in the middle. [View source](https://martinfowler.com/articles/data-monolith-to-mesh.html){#ev-dehghani-2019-data-monolith-to-mesh-centralized-pipeline-burden} · verified 2026-06-21 · primary
+- **European Union — *Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 12*, 2024.** High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system, kept for a period appropriate to the intended purpose, of at least six months. [View source](https://artificialintelligenceact.eu/article/12/){#ev-eu-ai-act-2024-article-12-record-keeping} · verified 2026-06-21 · primary

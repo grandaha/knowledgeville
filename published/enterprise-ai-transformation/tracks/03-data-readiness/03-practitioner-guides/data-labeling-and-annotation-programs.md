@@ -14,11 +14,11 @@ This makes labeling the highest-leverage investment in most ML projects — and 
 
 The specific failure mode is label noise: inconsistent or incorrect annotations that teach the model wrong patterns. Label noise is invisible in the raw data. Everything looks complete. Training runs successfully. The model performs badly — and the cause is nearly impossible to diagnose without going back to the labels.
 
-> **80%** of ML project time is consumed by data preparation, the majority by labeling *(IBM, 2025)*
+> **80%** of ML project time is consumed by data preparation, the majority by labeling ([Cognilytica, 2020](#ev-cognilytica-2020-ml-effort-data-prep))
 
-> Model performance degrades substantially when more than **20%** of training data is mislabeled *(Budach et al., 2022)*
+> Model performance degrades substantially when more than **20%** of training data is mislabeled ([Budach et al., 2022](#ev-budach-2022-label-noise-degradation))
 
-> Even **ImageNet** — one of the most widely used ML benchmarks — contains significant numbers of mislabeled samples *(Northcutt et al., 2021)*
+> Even **ImageNet** — one of the most widely used ML benchmarks — has a validation-set label-error rate of at least 6% ([Northcutt et al., 2021](#ev-northcutt-pervasive-label-errors-2021-imagenet))
 
 ---
 
@@ -152,9 +152,8 @@ Website: [https://prodi.gy](https://prodi.gy) \| \~\$490 one-time license per us
 
 ## Sources
 
-- Atlan — Data Labeling for LLMs: Annotation Methods, Quality & Governance (March 2026)
-- FusionCX — AI Data Labeling Services: The Complete 2026 Guide (April 2026)
-- DeployBase — Best Data Labeling Tools 2026 (March 2026)
-- TaskMonk — The Ultimate Data Labeling Guide 2026 (February 2026)
-- Budach et al. — Label-Noise Learning, arXiv (2022)
-- Northcutt et al. — Pervasive Label Errors in Test Sets Destabilize ML Benchmarks (2021)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Cognilytica — *Data Preparation & Labeling for AI*, 2020.** as much as 80% of machine learning project time is spent on aggregating, cleaning, labeling, and augmenting machine learning model data. [View source](https://medium.com/cognilytica/data-preparation-labeling-for-ai-2020-b512a5ed777c){#ev-cognilytica-2020-ml-effort-data-prep} · verified 2026-06-20 · ⚠ secondary mirror
+- **Budach, Feuerpfeil, Ihde, Nathansen, Noack, Patzlaff, Naumann & Harmouch — *The Effects of Data Quality on Machine Learning Performance on Tabular Data*, 2022.** up to 20% of training labels could be flipped without performance losses of no more than 10% in F1-score. [View source](https://arxiv.org/abs/2207.14529){#ev-budach-2022-label-noise-degradation} · verified 2026-06-20 · primary
+- **Northcutt, Athalye & Mueller — *Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks (NeurIPS Datasets and Benchmarks)*, 2021.** label errors comprise at least 6% of the ImageNet validation set; we find an average of at least 3.3% errors across the 10 datasets. [View source](https://arxiv.org/abs/2103.14749){#ev-northcutt-pervasive-label-errors-2021-imagenet} · verified 2026-06-21 · primary

@@ -12,15 +12,15 @@ Data debt is the accumulated cost of deferred data quality work — the shortcut
 
 Like financial debt, it doesn't disappear when you stop thinking about it. It compounds. And in the context of AI, it has a specific acceleration mechanism: every new AI system deployed on debt-ridden data multiplies the impact of that debt. One model producing wrong outputs is bad. Fifty agents acting on inconsistent, ungoverned data continuously is a different category of problem.
 
-> **"AI doesn't create data problems; it exposes and accelerates them."** *(Hrishikesh Pippadipally, CIO, Wiss)*
+> **"AI doesn't create data problems; it exposes and accelerates them."** — Hrishikesh Pippadipally, CIO, Wiss ([CIO.com, 2026](#ev-cio-2026-pippadipally-ai-exposes-data-problems))
 
-> CIOs who delay data debt remediation face **50% higher AI failure rates** by 2027 *(IDC, 2026 CIO Agenda Predictions)*
+> Organizations that delay data debt remediation face **up to 50% higher AI failure rates** by 2027 ([IDC, 2026](#ev-idc-futurescape-2026-data-debt-failure))
 
-> **\$3.1 trillion** annual cost of poor data quality to the US economy *(IBM, 2016 estimate — current costs are likely significantly higher given data volume growth since)*
+> **\$3.1 trillion** annual cost of poor data quality to the US economy ([IBM, 2016](#ev-data-quality-cost-3-1-trillion-us))
 
-> Organizations lose an average of **25% of revenue annually** due to quality-related inefficiencies and poor decisions *(MIT Sloan Management Review / Cork University Business School, via *[*Integrate.io*](http://Integrate.io)*, 2026)*
+> Companies lose an estimated **15–25% of revenue** to the costs of poor data quality ([MIT Sloan Management Review, 2017](#ev-mitsmr-2017-seizing-opportunity-data-quality-revenue-loss))
 
-> IBM research: paying down technical debt from legacy systems can improve AI ROI by up to **29%**
+> Paying down technical debt from legacy systems can improve AI ROI by up to **29%** ([IBM, 2025](#ev-ibm-technical-debt-2025-ai-roi))
 
 This document covers how to quantify data debt in financial terms that leadership can act on — and how to frame the investment case for fixing it.
 
@@ -36,7 +36,7 @@ Inaccurate, incomplete, inconsistent, or stale data that downstream systems cons
 
 How it accumulates: no quality checks at ingestion, manual processes that run quarterly rather than continuously, schema changes that break downstream assumptions without detection, missing data handled with defaults rather than sourcing it correctly.
 
-What it costs in AI specifically: engineers spending 60–80% of project time cleaning rather than building; models retrained repeatedly as production performance degrades; regulatory penalties for non-compliant data in AI pipelines; business decisions made on wrong model outputs.
+What it costs in AI specifically: engineers spending the bulk of project time cleaning rather than building; models retrained repeatedly as production performance degrades; regulatory penalties for non-compliant data in AI pipelines; business decisions made on wrong model outputs.
 
 ### Governance Debt
 
@@ -44,7 +44,7 @@ Operating without clear ownership, policy, and accountability for data assets.
 
 How it accumulates: data assets with no named owner (quality degrades because no one is accountable for fixing it), compliance obligations known but not operationalized, AI systems deployed without governance review.
 
-What it costs in AI specifically: GDPR enforcement reached €7.1B cumulative through 2025; incident response costs when ungoverned data causes a breach or AI failure; model remediation costs when bias is discovered after deployment rather than before.
+What it costs in AI specifically: cumulative GDPR fines reached €7.1 billion through early 2026 ([DLA Piper, 2026](#ev-dlapiper-gdpr-fines-2026-cumulative-total)); incident response costs when ungoverned data causes a breach or AI failure; model remediation costs when bias is discovered after deployment rather than before.
 
 ### Integration Debt
 
@@ -60,7 +60,7 @@ Not knowing where data came from, what it means, or how it has been transformed.
 
 How it accumulates: no data catalog (data scientists spend weeks finding the right dataset), no lineage (when a model fails, root cause analysis is guesswork), no business glossary (the same concept defined differently across teams).
 
-What it costs in AI specifically: data discovery consuming 30–50% of a data scientist's project time; inability to satisfy regulatory explainability requirements for AI decisions; audit failures when lineage evidence can't be produced.
+What it costs in AI specifically: data discovery consuming a large share of a data scientist's project time; inability to satisfy regulatory explainability requirements for AI decisions; audit failures when lineage evidence can't be produced.
 
 ---
 
@@ -120,10 +120,9 @@ ROI = (Annual debt tax reduction + New AI value enabled) / Cost of readiness inv
 
 Reference benchmarks for the "new value enabled" component:
 
-- IBM: paying down technical debt improves AI ROI by up to 29%
-- IDC: mature data governance organizations achieve 24.1% revenue improvement and 25.4% cost savings from AI
-- Atlan: organizations with active metadata see 70% faster data asset delivery and 30–50% decrease in data discovery requests to engineering
-- Azumo: proper MLOps reduces ML lifecycle management cost by 40%
+- IBM: paying down technical debt improves AI ROI by up to 29% ([IBM, 2025](#ev-ibm-technical-debt-2025-ai-roi))
+- IDC: organizations in the top "AI Master" data-readiness tier achieve 24.1% revenue improvement and 25.4% cost savings from AI ([IDC, 2025](#ev-idc-netapp-ai-maturity-2025-masters-outcomes))
+- Gartner: active metadata management can cut time-to-delivery of new data assets by up to 70% ([Gartner, 2022](#ev-gartner-active-metadata-2025-delivery))
 
 ---
 
@@ -131,13 +130,13 @@ Reference benchmarks for the "new value enabled" component:
 
 Data debt follows a compounding model. Each year of deferral increases the cost in three ways:
 
-**Volume growth** — data volumes doubling every two years means the surface area of ungoverned data grows continuously. More ungoverned data means more risk, more cleanup cost, and more AI surface area for errors to propagate.
+**Volume growth** — global data volumes are growing at roughly a 23% annual rate, more than doubling every three years ([IDC, 2025](#ev-idc-datasphere-2025-growth-cagr)), so the surface area of ungoverned data grows continuously. More ungoverned data means more risk, more cleanup cost, and more AI surface area for errors to propagate.
 
 **AI deployment growth** — each new AI system deployed on debt-ridden data multiplies the impact. One model producing wrong outputs is bounded. Dozens of agents acting on inconsistent data before any human reviews the results is not.
 
-**Regulatory tightening** — 131 AI-related laws passed by US states in 2024. EU AI Act enforcement began August 2026. Each new regulation applied to ungoverned data infrastructure is a new cost and a new risk. Organizations that deferred governance are retroactively compliant-by-accident or actively non-compliant.
+**Regulatory tightening** — US state legislatures passed 131 AI-related laws in 2024, up from 49 in 2023 ([Stanford HAI, 2025](#ev-stanford-hai-ai-index-2025-state-ai-laws)). The EU AI Act's general-purpose-AI obligations have applied since August 2025, with most high-risk-system obligations applying from August 2026 ([European Commission, 2024](#ev-ec-ai-act-2024-application-timeline)). Each new regulation applied to ungoverned data infrastructure is a new cost and a new risk. Organizations that deferred governance are retroactively compliant-by-accident or actively non-compliant.
 
-IDC's 2026 forecast is direct: CIOs who delay data debt remediation will face 50% higher AI failure rates and rising costs. "Postponing these fundamentals risks turning AI ambition into sustained operational friction."
+IDC's 2026 forecast is direct: organizations that delay data debt remediation face up to 50% higher AI failure rates by 2027 ([IDC, 2026](#ev-idc-futurescape-2026-data-debt-failure)) — postponing the fundamentals turns AI ambition into sustained operational friction.
 
 This compounding dynamic is the core of the business case. The debt tax is not fixed — it grows with every new AI deployment, every new data volume doubling, and every new regulation. The cost of fixing the foundation today is the lowest it will ever be.
 
@@ -174,13 +173,16 @@ Data readiness investment gets funded when it is presented correctly. It fails w
 
 ## Sources
 
-- [CIO.com](http://CIO.com) — Data Debt: AI's Value Killer Hidden in Plain Sight (April 2026)
-- IBM — The True Cost of Poor Data Quality (January 2026)
-- IBM — How to Maximize AI ROI in 2026 (June 2026)
-- IDC — 2026 CIO Agenda Predictions
-- MIT Sloan Management Review / Cork University Business School — revenue loss from poor data quality, cited via [Integrate.io](http://Integrate.io) — Data Transformation Challenge Statistics 2026 (January 2026)
-- Zylos Research — Technical Debt Management 2026 (February 2026)
-- AgamiSoft — The Hidden Cost of Technical Debt in 2026 (May 2026)
-- Qlik — Data Quality is Not Being Prioritized on AI Projects (March 2025)
-- Atlan — Active Metadata: The Complete 2026 Guide
-- Azumo — Top 10 MLOps Platforms for Scalable AI (April 2026)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **CIO.com (Foundry) — *Data debt: AI's value killer hidden in plain sight (quoting Hrishikesh Pippadipally, CIO, Wiss)*, 2026.** AI doesn't create data problems; it exposes and accelerates them. [View source](https://www.cio.com/article/4162306/data-debt-ai-value-killer.html){#ev-cio-2026-pippadipally-ai-exposes-data-problems} · verified 2026-06-21 · primary
+- **IDC — *IDC FutureScape 2026 Predictions (CIO Agenda)*, 2026.** Organizations that delay addressing data debt - including siloed, redundant, and outdated data - could face up to 50 percent higher AI failure rates by 2027. [View source](https://my.idc.com/getdoc.jsp?containerId=prUS53883425){#ev-idc-futurescape-2026-data-debt-failure} · verified 2026-06-21 · ⚠ secondary mirror
+- **IBM — *Bad Data Costs the U.S. $3 Trillion Per Year (Harvard Business Review)*, 2016.** IBM estimates that poor data quality costs the US economy around $3.1 trillion per year (popularized via Thomas C. Redman, Bad Data Costs the U.S. $3 Trillion Per Year, Harvard Business Review). [View source](https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year){#ev-data-quality-cost-3-1-trillion-us} · verified 2026-06-20 · ⚠ secondary mirror
+- **MIT Sloan Management Review — *Seizing Opportunity in Data Quality (Thomas C. Redman)*, 2017.** companies lose 15% to 25% of revenue due to poor data quality. [View source](https://sloanreview.mit.edu/article/seizing-opportunity-in-data-quality/){#ev-mitsmr-2017-seizing-opportunity-data-quality-revenue-loss} · verified 2026-06-21 · primary
+- **IBM Institute for Business Value — *A practical approach to boosting your AI ROI*, 2025.** organizations factoring technical debt into AI planning achieve up to 29% higher ROI. [View source](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/technical-debt-ai-roi){#ev-ibm-technical-debt-2025-ai-roi} · verified 2026-06-20 · primary
+- **DLA Piper — *GDPR Fines and Data Breach Survey: January 2026*, 2026.** The aggregate total fines reported since the application of GDPR on 25 May 2018 to 10 January 2026 across all the jurisdictions surveyed now stands at EUR7.1 billion. [View source](https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026){#ev-dlapiper-gdpr-fines-2026-cumulative-total} · verified 2026-06-21 · primary
+- **IDC (sponsored by NetApp) — *Scaling Enterprise AI Responsibly: The Critical Role of Data Readiness and an Intelligent Data Infrastructure (IDC InfoBrief)*, 2025.** AI Masters achieved 24.1% revenue improvement and 25.4% improvement in cost savings, far outpacing less mature peers who prioritize data readiness, protection and security alongside infrastructure. [View source](https://www.netapp.com/media/142474-idc-2025-ai-maturity-findings.pdf){#ev-idc-netapp-ai-maturity-2025-masters-outcomes} · verified 2026-06-21 · ⚠ secondary mirror
+- **Gartner — *Market Guide for Active Metadata Management (doc ID 4004082; figure restated in later Gartner D&A research)*, 2022.** organizations that adopt active metadata across their data management environment will decrease the time to delivery of new data assets to users by as much as 70%. [View source](https://www.alation.com/blog/active-metadata/){#ev-gartner-active-metadata-2025-delivery} · verified 2026-06-20 · ⚠ secondary mirror
+- **IDC — *Worldwide IDC Global DataSphere Forecast*, 2025.** Global data creation and replication will experience a compound annual growth rate of 23% over the 2020-2025 forecast period, with more than 180 zettabytes created in 2025. [View source](https://my.idc.com/getdoc.jsp?containerId=US53363625){#ev-idc-datasphere-2025-growth-cagr} · verified 2026-06-21 · ⚠ secondary mirror
+- **Stanford HAI (Institute for Human-Centered AI) — *2025 AI Index Report, Chapter 6: Policy and Governance*, 2025.** State legislatures proposed 629 AI-related laws in 2024, and passed 131 of them; in 2016 only one state-level AI-related law was passed, increasing to 49 by 2023. [View source](https://hai.stanford.edu/ai-index/2025-ai-index-report/policy-and-governance){#ev-stanford-hai-ai-index-2025-state-ai-laws} · verified 2026-06-21 · ⚠ secondary mirror
+- **European Commission — *Regulatory framework on AI (Regulation (EU) 2024/1689)*, 2024.** the governance rules and the obligations for general-purpose AI models became applicable on 2 August 2025; the majority of remaining obligations, including rules for high-risk AI systems, apply from 2 August 2026. [View source](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai){#ev-ec-ai-act-2024-application-timeline} · verified 2026-06-21 · primary

@@ -18,11 +18,9 @@ This is historical data debt. And it creates a fundamentally different problem f
 
 Most organizations are in Situation A for most of their data — and don't realize they're in the better position. They feel behind because they haven't launched AI yet. In fact, they have something the second group has already lost: the ability to assess and remediate before any model learns from the bad history.
 
-> **70–85%** of AI project failures trace back to data issues, not model failures *(industry composite)*
+> **More than 80%** of AI projects fail — and data readiness, not model quality, is the leading root cause ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
 
-> **80%** of ML project time is consumed by data preparation — the majority of which is remediating historical quality issues discovered after the project started *(IBM, 2025)*
-
-> Organizations that audit historical data **before** training report significantly fewer mid-project pivots and faster time to production than those that discover issues during model development *(Atlan, 2025)*
+> **80%** of ML project time is consumed by data preparation — much of it remediating historical quality issues discovered after the project started ([Cognilytica, 2020](#ev-cognilytica-2020-ml-effort-data-prep))
 
 ---
 
@@ -184,10 +182,7 @@ Specifically:
 
 ## Sources
 
-- IBM — AI Training Data Sources and Challenges (2025)
-- Atlan — AI-Ready Data: What It Actually Takes (2025)
-- Ranktracker — Synthetic Data Generation Validation for Enterprise AI (April 2026)
-- Budach et al. — Label-Noise Learning, arXiv (2022)
-- AgamiSoft — The Hidden Cost of Technical Debt in 2026 (May 2026)
-- IDC — 2026 CIO Agenda Predictions
-- Profisee — The State of MDM 2026 (February 2026)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
+- **Cognilytica — *Data Preparation & Labeling for AI*, 2020.** as much as 80% of machine learning project time is spent on aggregating, cleaning, labeling, and augmenting machine learning model data. [View source](https://medium.com/cognilytica/data-preparation-labeling-for-ai-2020-b512a5ed777c){#ev-cognilytica-2020-ml-effort-data-prep} · verified 2026-06-20 · ⚠ secondary mirror

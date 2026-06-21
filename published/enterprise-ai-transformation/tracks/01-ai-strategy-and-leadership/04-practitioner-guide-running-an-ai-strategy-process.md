@@ -10,7 +10,7 @@ timestamp: "2026-06-15"
 
 Most organizations do not lack AI ambition. They lack a *process* for turning ambition into a funded, sequenced, governed plan — so the ambition scatters into disconnected pilots that never compound into value.
 
-> Only **25%** of AI initiatives have delivered the ROI organizations expected over the last few years, and only **16%** have scaled enterprise-wide *(IBM Institute for Business Value, CEO Study, 2025)*
+> Only **25%** of AI initiatives have delivered the ROI organizations expected over the last few years, and only **16%** have scaled enterprise-wide ([IBM Institute for Business Value, 2025](#ev-ibm-ibv-ceo-2025-enterprise-scale))
 
 [The core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md) defines *what* a good AI strategy contains — a value thesis, a funded portfolio, the decisions only leadership can make, and the governance above the program. This guide is the *how*: the repeatable process that produces that strategy, run as five sequential phases over roughly a quarter.
 
@@ -39,13 +39,13 @@ Run four activities, in order:
 
 The sponsor is the load-bearing element here — an active, visible owner who shows up through the engagement, not a kickoff cameo who delegates and disappears.
 
-> Active and visible executive sponsorship ranks as the **#1 contributor** to change-program success, and projects with it are **~6x** more likely to meet or exceed objectives *(Prosci, 2024)*
+> Active and visible executive sponsorship ranks as the **#1 contributor** to change-program success ([Prosci, 2023](#ev-prosci-best-practices-2023-sponsorship-top-contributor)); projects with extremely effective sponsorship are nearly **3.5x** more likely to meet or exceed objectives than those with very ineffective sponsorship ([Prosci, 2023](#ev-prosci-top-contributors-2023-sponsorship-multiplier))
 
 Who's involved: the CEO or a C-suite executive as accountable sponsor, the strategy lead who will run the process, and the budget owner. Keep the circle small. The sponsor's authority — what they can decide, fund, and override — should be explicit; the core framework defines the decision rights they hold.
 
 Pin down the business question hard enough to resist FOMO. Pressure to move fast pushes organizations to commit capital before they understand the value, and the result is fragmented investment.
 
-> **64%** of CEOs say the risk of falling behind drives investment in AI before they have a clear understanding of the value it brings; **50%** say the pace of investment has left their organization with disconnected, piecemeal technology *(IBM Institute for Business Value, CEO Study, 2025)*
+> **64%** of CEOs say the risk of falling behind drives investment in AI before they have a clear understanding of the value it brings; **50%** say the pace of investment has left their organization with disconnected, piecemeal technology ([IBM Institute for Business Value, 2025](#ev-ibm-ibv-ceo-2025-invest-before-value))
 
 **What the chartered mandate contains:**
 - **Named executive sponsor and decision rights** — the specific person accountable, and what they can fund, approve, override, or veto without escalation.
@@ -70,7 +70,7 @@ The purpose of this phase is to establish one honest, shared read of where you s
 
 Treat this as an organizational exercise, not a technical one. The economics bear it out:
 
-> Across leading AI programs, roughly **70%** of the effort and impact comes from people and process change, **20%** from technology and data, and **10%** from algorithms *(BCG, "Where's the Value in AI?", 2024)*
+> Across leading AI programs, roughly **70%** of the effort and impact comes from people and process change, **20%** from technology and data, and **10%** from algorithms ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy))
 
 Key activities:
 
@@ -81,7 +81,7 @@ Key activities:
 
 Who's involved: the executive sponsor chairs; business-unit leaders own the value call; IT, data, and risk validate feasibility and exposure. The sponsor's job is to force genuine cross-functional agreement, not to ratify a slide.
 
-> In a study drawing on interviews with experienced AI practitioners, misunderstood or miscommunicated intent and purpose — a stakeholder-alignment gap — was the single most common cause of AI project failure *(RAND, 2024)*
+> In a study drawing on interviews with experienced AI practitioners, misunderstood or miscommunicated intent and purpose — a stakeholder-alignment gap — was the single most common cause of AI project failure ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
 
 **Running the alignment session:** Convene a half-day facilitated workshop with business, IT, data, and risk owners in one room; each function pre-reads the maturity baseline so the session starts from shared facts, not introductions. Working from a candidate list, the group ranks domains live on a value-vs-readiness wall, placing each one by hand and arguing the placement. Force a cut to 2–4 priorities before anyone leaves. Log disagreements verbatim rather than smoothing them over — unresolved tension is a finding, not a failure.
 
@@ -124,8 +124,8 @@ Who's involved: business-unit leaders own value scores and outcomes; a central A
 
 Focus is the differentiator, not breadth.
 
-> AI leaders prioritize on average **3.5** use cases versus **6.1** for other companies, and anticipate **2.1x** greater ROI on their AI initiatives *(BCG, AI Radar, 2025)*
-> Fewer than **5%** of S&P 500 companies pursue a focused ("bimodal") AI strategy, but those that do see **2x** the revenue of their peers and outpace them on total shareholder return by **5.4 percentage points** *(PwC, 2026)*
+> AI leaders prioritize on average **3.5** use cases versus **6.1** for other companies, and anticipate **2.1x** greater ROI on their AI initiatives ([BCG, 2025](#ev-bcg-ai-radar-2025-focus-and-roi))
+> Fewer than **5%** of S&P 500 companies pursue a focused ("bimodal") AI strategy, but those that do see **2x** the revenue of their peers and outpace them on total shareholder return by **5.4 percentage points** ([PwC, 2026](#ev-pwc-concentrated-bets-2026-bimodal-premium))
 
 **Worked example.** Score two candidates, normalize each to a 0–100 scale (a perfect 5 on every criterion = 100), and apply a fund-if-≥70 cutoff.
 
@@ -154,8 +154,8 @@ Second, **commit real funding and a named owner.** Not a placeholder budget and 
 
 Third — and this is where the value actually lives — **plan the workflow redesign around each bet.** Map how the work gets done today, then redesign it around the new capability. The tool is the easy part; the returns come from reshaping roles, handoffs, and decision points.
 
-> Only about **21%** of organizations using generative AI have fundamentally redesigned at least some workflows — and workflow redesign is the factor most correlated with bottom-line (EBIT) impact *(McKinsey, "The State of AI," 2025)*
-> Companies that have fully modernized to AI-led processes (**16%** in 2024, up from **9%** in 2023) achieve **2.5x** higher revenue growth, **2.4x** greater productivity, and **3.3x** greater success scaling generative AI *(Accenture, 2024)*
+> Only about **21%** of organizations using generative AI have fundamentally redesigned at least some workflows — and workflow redesign is the factor most correlated with bottom-line (EBIT) impact ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-workflow-redesign))
+> Companies that have fully modernized to AI-led processes (**16%** in 2024, up from **9%** in 2023) achieve **2.5x** higher revenue growth, **2.4x** greater productivity, and **3.3x** greater success scaling generative AI ([Accenture, 2024](#ev-accenture-ai-led-processes-2024-adoption-and-multipliers))
 
 Who's involved: the executive sponsor and initiative owners make the calls; finance commits the funding; process owners and frontline operators co-design the redesign; technology leadership validates the posture.
 
@@ -201,8 +201,8 @@ A sample 12-month shape:
 
 Default to centralized early, then federate as demand and capability grow. The evidence favors holding the center.
 
-> About **70%** of institutions with highly centralized AI operating models have put use cases into production, compared with only about **30%** of those with a fully decentralized approach *(McKinsey, "Scaling gen AI in banking," 2024)*
-> In high-maturity organizations, almost **60%** of leaders have centralized their AI strategy, governance, data, and infrastructure *(Gartner, 2025)*
+> About **70%** of institutions with highly centralized AI operating models have put use cases into production, compared with only about **30%** of those with a fully decentralized approach ([McKinsey, 2024](#ev-mckinsey-banking-operating-model-2024-centralized-production))
+> In high-maturity organizations, almost **60%** of leaders have centralized their AI strategy, governance, data, and infrastructure ([Gartner, 2025](#ev-gartner-ai-maturity-2025-centralized-strategy))
 
 Finally, set success metrics and a standing re-direction cadence. Define a small set of value, adoption, and risk metrics per initiative; the metrics and the feedback loop that feeds re-direction live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Then schedule a quarterly leadership review that inspects evidence, kills or doubles down, and reallocates the portfolio.
 
@@ -213,7 +213,7 @@ Finally, set success metrics and a standing re-direction cadence. Define a small
 - New candidates promoted in from the backlog
 - Foundational gaps blocking next quarter's moves
 
-> **45%** of leaders in high-maturity organizations keep AI initiatives in production for three years or more, versus only **20%** in low-maturity organizations *(Gartner, 2025)*
+> **45%** of leaders in high-maturity organizations keep AI initiatives in production for three years or more ([Gartner, 2025](#ev-gartner-ai-maturity-2025-three-year-longevity))
 
 Who's involved: the chief AI officer or transformation lead owns the roadmap; business-unit leaders commit delivery capacity; the data, platform, and risk leads own the enabling tracks; the sponsor chairs the cadence.
 
@@ -227,7 +227,7 @@ Who's involved: the chief AI officer or transformation lead owns the roadmap; bu
 
 The failure modes of each phase share a family resemblance: they substitute activity for the disciplined decisions the process exists to force.
 
-> **Over 40%** of agentic AI projects will be canceled by the end of 2027, due to escalating costs, unclear business value, or inadequate risk controls *(Gartner, 2025)*
+> **Over 40%** of agentic AI projects will be canceled by the end of 2027, due to escalating costs, unclear business value, or inadequate risk controls ([Gartner, 2025](#ev-gartner-agentic-ai-2025-project-cancellations))
 
 - **Skipping the mandate.** Running the process without a single accountable sponsor — the strongest predictor of failure.
 - **Aligning on technology, not value.** Letting the interesting tech, or the loudest function, set the agenda instead of the business economics.
@@ -258,13 +258,19 @@ The failure modes of each phase share a family resemblance: they substitute acti
 
 ## Sources
 
-- Prosci — *Best Practices in Change Management* (sponsorship research) — 2024
-- IBM Institute for Business Value — *CEO Study: CEOs Double Down on AI While Navigating Enterprise Hurdles* — 2025
-- BCG — *Where's the Value in AI?* — 2024
-- RAND Corporation — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed* — 2024
-- BCG — *From Potential to Profit: Closing the AI Impact Gap* (AI Radar) — 2025
-- PwC — *AI Transformation: Why Focused Bets Outperform* — 2026
-- McKinsey & Company — *The State of AI: How Organizations Are Rewiring to Capture Value* — 2025
-- Accenture — *Companies with AI-Led Processes Outperform Peers* — 2024
-- McKinsey & Company — *Scaling Gen AI in Banking: Choosing the Best Operating Model* — 2024
-- Gartner — *Survey: AI Maturity, Centralization, and Time in Production* (press release) — 2025
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **IBM Institute for Business Value — *2025 CEO Study (CEOs Double Down on AI While Navigating Enterprise Hurdles)*, 2025.** only 25% of AI initiatives have delivered expected ROI over the last few years, and only 16% have scaled enterprise wide. [View source](https://newsroom.ibm.com/2025-05-06-ibm-study-ceos-double-down-on-ai-while-navigating-enterprise-hurdles){#ev-ibm-ibv-ceo-2025-enterprise-scale} · verified 2026-06-20 · primary
+- **Prosci — *Best Practices in Change Management*, 2023.** Active and visible sponsorship has been identified as the greatest contributor to change-management success in every Prosci benchmarking study since 1998. [View source](https://www.prosci.com/resources/articles/change-management-best-practices){#ev-prosci-best-practices-2023-sponsorship-top-contributor} · verified 2026-06-20 · ⚠ secondary mirror
+- **Prosci — *Top Contributors to Success*, 2023.** with extremely effective sponsorship, projects were almost 3.5 times more likely to meet or exceed project objectives than projects with very ineffective sponsorship. [View source](https://www.prosci.com/resources/articles/change-management-best-practices){#ev-prosci-top-contributors-2023-sponsorship-multiplier} · verified 2026-06-21 · ⚠ secondary mirror
+- **IBM Institute for Business Value — *2025 CEO Study (CEOs Double Down on AI While Navigating Enterprise Hurdles)*, 2025.** 64% of CEOs surveyed acknowledge that the risk of falling behind drives investment in some technologies before they have a clear understanding of the value they bring; half (50%) acknowledge that the pace of recent investments has left their organization with disconnected, piecemeal technology. [View source](https://newsroom.ibm.com/2025-05-06-ibm-study-ceos-double-down-on-ai-while-navigating-enterprise-hurdles){#ev-ibm-ibv-ceo-2025-invest-before-value} · verified 2026-06-21 · primary
+- **BCG — *Where's the Value in AI?*, 2024.** AI leaders follow the rule of putting 10% of their resources into algorithms, 20% into technology and data, and 70% into people and processes. [View source](https://www.bcg.com/publications/2024/wheres-value-in-ai){#ev-bcg-2024-ten-twenty-seventy} · verified 2026-06-20 · primary
+- **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
+- **BCG — *AI Radar 2025: From Potential to Profit - Closing the AI Impact Gap*, 2025.** Leading companies focus on depth over breadth, prioritizing an average of 3.5 use cases, compared with 6.1 use cases for other companies; these companies anticipate generating 2.1 times greater ROI on their AI initiatives than their peers. [View source](https://www.bcg.com/publications/2025/closing-the-ai-impact-gap){#ev-bcg-ai-radar-2025-focus-and-roi} · verified 2026-06-21 · ⚠ secondary mirror
+- **PwC — *AI transformation: Why focused (concentrated) bets outperform*, 2026.** fewer than 5% of S&P 500 companies are adopting a bimodal AI transformation strategy; those that do see twice the revenue of their peers, and their total shareholder returns are outpacing their peers by 5.4 percentage points. [View source](https://www.pwc.com/us/en/services/ai/ai-transformation-concentrated-bets.html){#ev-pwc-concentrated-bets-2026-bimodal-premium} · verified 2026-06-21 · ⚠ secondary mirror
+- **McKinsey — *The State of AI*, 2025.** 21% of respondents reporting gen AI use say their organizations have fundamentally redesigned at least one workflow; redesigning workflows has the biggest effect on an organization's ability to see EBIT impact from gen AI. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-workflow-redesign} · verified 2026-06-20 · primary
+- **Accenture — *Reinventing Enterprise Operations with Gen AI*, 2024.** the number of companies that have fully modernized, AI-led processes has nearly doubled from 9% in 2023 to 16% in 2024; these organizations achieve 2.5x higher revenue growth, 2.4x greater productivity and 3.3x greater success at scaling generative AI use cases. [View source](https://newsroom.accenture.com/news/2024/new-accenture-research-finds-that-companies-with-ai-led-processes-outperform-peers){#ev-accenture-ai-led-processes-2024-adoption-and-multipliers} · verified 2026-06-21 · primary
+- **McKinsey — *Scaling gen AI in banking: Choosing the best operating model*, 2024.** About 70 percent of banks and other institutions with highly centralized gen AI operating models have progressed to putting gen AI use cases into production, compared with only about 30 percent of those with a fully decentralized approach. [View source](https://www.mckinsey.com/industries/financial-services/our-insights/scaling-gen-ai-in-banking-choosing-the-best-operating-model){#ev-mckinsey-banking-operating-model-2024-centralized-production} · verified 2026-06-21 · ⚠ secondary mirror
+- **Gartner — *Gartner Survey on Organizations With High AI Maturity*, 2025.** In high-maturity organizations, almost 60% of leaders said they have centralized their AI strategy, governance, data and infrastructure capabilities to increase consistency and efficiency. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years){#ev-gartner-ai-maturity-2025-centralized-strategy} · verified 2026-06-21 · ⚠ secondary mirror
+- **Gartner — *Gartner Survey on Organizations With High AI Maturity*, 2025.** 45% of organizations with high AI maturity keep their AI projects operational for at least three years. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years){#ev-gartner-ai-maturity-2025-three-year-longevity} · verified 2026-06-21 · ⚠ secondary mirror
+- **Gartner — *Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027*, 2025.** Over 40% of agentic AI projects will be canceled by the end of 2027, due to escalating costs, unclear business value or inadequate risk controls. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027){#ev-gartner-agentic-ai-2025-project-cancellations} · verified 2026-06-21 · ⚠ secondary mirror

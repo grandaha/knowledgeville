@@ -2821,3 +2821,279 @@
     pdf_hash:
   verified: 2026-06-21
   status: secondary-mirror
+- id: ev-gartner-genai-spending-2025-worldwide-forecast
+  claim: "Gartner worldwide generative-AI spending forecast for 2025 and YoY increase"
+  value: "$644 billion in 2025, up 76.4% from 2024"
+  wording: "Worldwide generative AI (GenAI) spending is expected to total $644 billion in 2025, an increase of 76.4% from 2024"
+  source:
+    org: Gartner
+    report: "Gartner Forecasts Worldwide GenAI Spending to Reach $644 Billion in 2025"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-03-31-gartner-forecasts-worldwide-genai-spending-to-reach-644-billion-in-2025
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-ai-spending-2025-worldwide-total
+  claim: "Gartner total worldwide AI spending forecast for 2025"
+  value: "nearly $1.5 trillion in 2025 (~50% YoY growth)"
+  wording: "Worldwide spending on AI is forecast to total nearly $1.5 trillion in 2025, with the AI market growing almost 50% year over year"
+  source:
+    org: Gartner
+    report: "Gartner Says Worldwide AI Spending Will Total $1.5 Trillion in 2025"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-ai-maturity-2025-centralized-strategy
+  claim: "Share of high-AI-maturity org leaders who centralized AI strategy, governance, data and infrastructure"
+  value: "almost 60%"
+  wording: "In high-maturity organizations, almost 60% of leaders said they have centralized their AI strategy, governance, data and infrastructure capabilities to increase consistency and efficiency"
+  source:
+    org: Gartner
+    report: "Gartner Survey on Organizations With High AI Maturity"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-ai-maturity-2025-three-year-longevity
+  claim: "Share of high-AI-maturity orgs that keep AI projects in production three or more years"
+  value: "45%"
+  wording: "45% of organizations with high AI maturity keep their AI projects operational for at least three years"
+  source:
+    org: Gartner
+    report: "Gartner Survey on Organizations With High AI Maturity"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-agentic-ai-2025-project-cancellations
+  claim: "Share of agentic AI projects Gartner predicts will be canceled by end of 2027"
+  value: "over 40% (by end of 2027)"
+  wording: "Over 40% of agentic AI projects will be canceled by the end of 2027, due to escalating costs, unclear business value or inadequate risk controls"
+  source:
+    org: Gartner
+    report: "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-accenture-front-runners-2025-eight-percent
+  claim: "Share of companies that are 'front-runners' scaling AI at enterprise level and embedding it in core strategy"
+  value: "8%"
+  wording: "Only 8% of companies are front-runners, scaling AI at an enterprise level and embedding it into core business strategy"
+  source:
+    org: Accenture
+    report: "The Front-Runners' Guide to Scaling AI: Lessons from industry leaders"
+    edition: 2025
+    url: https://www.accenture.com/us-en/insights/ai-data/front-runners-guide-scaling-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-accenture-front-runners-2025-roi-3x
+  claim: "Likelihood of exceeding ROI forecasts for companies that scaled at least one strategic AI bet"
+  value: "~3x (nearly three times)"
+  wording: "companies that have scaled at least one strategic bet are nearly three times more likely to have their return on investment (ROI) from gen AI surpass their forecasts"
+  source:
+    org: Accenture
+    report: "The Front-Runners' Guide to Scaling AI: Lessons from industry leaders"
+    edition: 2025
+    url: https://www.accenture.com/us-en/insights/ai-data/front-runners-guide-scaling-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-accenture-ai-led-processes-2024-adoption-and-multipliers
+  claim: "Share of companies with fully modernized AI-led processes and their performance premium over peers"
+  value: "16% in 2024 (up from 9% in 2023); 2.5x revenue growth, 2.4x productivity, 3.3x gen AI scaling success"
+  wording: "the number of companies that have fully modernized, AI-led processes has nearly doubled from 9% in 2023 to 16% in 2024; these organizations achieve 2.5x higher revenue growth, 2.4x greater productivity and 3.3x greater success at scaling generative AI use cases"
+  source:
+    org: Accenture
+    report: "Reinventing Enterprise Operations with Gen AI"
+    edition: 2024
+    url: https://newsroom.accenture.com/news/2024/new-accenture-research-finds-that-companies-with-ai-led-processes-outperform-peers
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-bcg-ai-radar-2025-focus-and-roi
+  claim: "Use-case focus and anticipated ROI of AI leaders vs other companies"
+  value: "3.5 use cases (leaders) vs 6.1 (others); 2.1x greater anticipated ROI"
+  wording: "Leading companies focus on depth over breadth, prioritizing an average of 3.5 use cases, compared with 6.1 use cases for other companies; these companies anticipate generating 2.1 times greater ROI on their AI initiatives than their peers"
+  source:
+    org: BCG
+    report: "AI Radar 2025: From Potential to Profit - Closing the AI Impact Gap"
+    edition: 2025
+    url: https://www.bcg.com/publications/2025/closing-the-ai-impact-gap
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-bcg-racing-away-2024-maturity-decline-and-premium
+  claim: "Decline in share of most-mature data-and-AI companies and their use-case/financial premium over laggards"
+  value: "most-mature share fell 13% (2021) to 8% (2024); 4x more use cases scaled; 5x greater average financial impact per use case"
+  wording: "The proportion of companies qualifying as the most mature declined from 13% in the 2021 survey to 8% today; leading companies have four times more use cases scaled and adopted across their business than laggards, and for each use case they implement, the average financial impact is five times greater"
+  source:
+    org: BCG
+    report: "Leaders in Data and AI Are Racing Away from the Pack"
+    edition: 2024
+    url: https://www.bcg.com/publications/2024/leaders-in-data-ai-racing-away-from-pack
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-pwc-concentrated-bets-2026-bimodal-premium
+  claim: "Share of S&P 500 pursuing a focused ('concentrated/bimodal') AI strategy and their revenue/TSR premium"
+  value: "fewer than 5% of S&P 500; 2x revenue of peers; +5.4 percentage points total shareholder return"
+  wording: "fewer than 5% of S&P 500 companies are adopting a bimodal AI transformation strategy; those that do see twice the revenue of their peers, and their total shareholder returns are outpacing their peers by 5.4 percentage points"
+  source:
+    org: PwC
+    report: "AI transformation: Why focused (concentrated) bets outperform"
+    edition: 2026
+    url: https://www.pwc.com/us/en/services/ai/ai-transformation-concentrated-bets.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-banking-operating-model-2024-centralized-production
+  claim: "Share of banks reaching gen AI production by operating-model centralization"
+  value: "~70% (highly centralized) vs ~30% (fully decentralized) in production"
+  wording: "About 70 percent of banks and other institutions with highly centralized gen AI operating models have progressed to putting gen AI use cases into production, compared with only about 30 percent of those with a fully decentralized approach"
+  source:
+    org: McKinsey
+    report: "Scaling gen AI in banking: Choosing the best operating model"
+    edition: 2024
+    url: https://www.mckinsey.com/industries/financial-services/our-insights/scaling-gen-ai-in-banking-choosing-the-best-operating-model
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-cisco-ai-readiness-2025-pacesetters
+  claim: "Share of organizations qualifying as 'Pacesetters' and their advantage in moving pilots to production"
+  value: "~13% are Pacesetters; 4x more likely to move pilots into production"
+  wording: "about 13% of organizations qualify as Pacesetters (fully AI-ready); Pacesetters are 4x more likely to move AI pilots into production than their peers"
+  source:
+    org: Cisco
+    report: "2025 Cisco AI Readiness Index: Realizing the Value of AI"
+    edition: 2025
+    url: https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m10/cisco-ai-research-the-most-ai-ready-companies-outpace-peers-in-the-race-to-value.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-ibm-ai-adoption-index-2023-strategy-split
+  claim: "Share of AI-engaged enterprises with a holistic vs limited-use-case vs in-development AI strategy"
+  value: "32% holistic; 27% limited/specific use cases; 32% developing"
+  wording: "27% reporting that their company has an AI strategy for limited/specific use cases and about a third (32%) stating that their organization already has a holistic strategy in place; 32% are in the process of developing an AI strategy"
+  source:
+    org: IBM
+    report: "IBM Global AI Adoption Index - Enterprise Report"
+    edition: 2023
+    url: https://filecache.mediaroom.com/mr5mr_ibmspgi/179414/download/IBM%20Global%20AI%20Adoption%20Index%20Report%20Dec.%202023.pdf
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-ibm-ibv-ceo-2025-invest-before-value
+  claim: "CEOs investing in tech ahead of clear value, and ending up with disconnected technology"
+  value: "64% invest before understanding value; 50% left with disconnected, piecemeal tech"
+  wording: "64% of CEOs surveyed acknowledge that the risk of falling behind drives investment in some technologies before they have a clear understanding of the value they bring; half (50%) acknowledge that the pace of recent investments has left their organization with disconnected, piecemeal technology"
+  source:
+    org: IBM Institute for Business Value
+    report: "2025 CEO Study (CEOs Double Down on AI While Navigating Enterprise Hurdles)"
+    edition: 2025
+    url: https://newsroom.ibm.com/2025-05-06-ibm-study-ceos-double-down-on-ai-while-navigating-enterprise-hurdles
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-deloitte-governance-ai-2025-not-ready-to-deploy
+  claim: "Share of organizations that say they are not ready to deploy AI, year over year"
+  value: "31% (down from 41% prior survey)"
+  wording: "almost one-third of respondents (31%) say their organizations are not ready to deploy AI; in the previous survey, that figure was 41 percent"
+  source:
+    org: Deloitte Global
+    report: "Governance of AI: A critical imperative for today's boards (2nd edition)"
+    edition: 2025
+    url: https://www.deloitte.com/global/en/issues/trust/progress-on-ai-in-the-boardroom-but-room-to-accelerate.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-deloitte-ai-roi-paradox-2025-measurable-roi
+  claim: "Share achieving significant, measurable ROI from generative vs agentic AI"
+  value: "15% generative AI; 10% agentic AI"
+  wording: "Fifteen percent of respondents using generative AI report their organizations already achieve significant, measurable ROI; only ten percent currently see significant, measurable ROI from agentic AI"
+  source:
+    org: Deloitte
+    report: "AI ROI: The paradox of rising investment and elusive returns (EMEA; 1,854 executives)"
+    edition: 2025
+    url: https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-deloitte-ai-roi-paradox-2025-investment-and-payback
+  claim: "AI investment momentum and typical payback period vs other technology"
+  value: "85% increased AI investment in past year; 91% plan to increase again; payback 2-4 years vs typical 7-12 months"
+  wording: "85 percent of organizations increased their investment in the past 12 months and 91 percent plan to increase it again this year; most achieved satisfactory ROI within two to four years, significantly longer than the typical payback period of seven to 12 months expected for technology investments"
+  source:
+    org: Deloitte
+    report: "AI ROI: The paradox of rising investment and elusive returns (EMEA; 1,854 executives)"
+    edition: 2025
+    url: https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-stanford-hai-ai-index-2025-rai-risk-gap
+  claim: "AI risks organizations consider relevant vs actively mitigate"
+  value: "Cybersecurity 66%, regulatory compliance 63%, privacy 60% relevant; IP infringement 57% relevant vs 38% mitigated"
+  wording: "Cybersecurity (66%), regulatory compliance (63%), and personal privacy (60%) rank as the top concerns, yet mitigation efforts consistently fall short; the gap is particularly pronounced for intellectual property infringement (57% relevant, 38% mitigated)"
+  source:
+    org: Stanford HAI (Institute for Human-Centered AI)
+    report: "2025 AI Index Report, Chapter 3: Responsible AI (data: McKinsey 2024 RAI survey)"
+    edition: 2025
+    url: https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-stanford-hai-ai-index-2025-governance-roles
+  claim: "Share of organizations with dedicated AI governance roles"
+  value: "14%"
+  wording: "14% of respondents reported having dedicated AI governance roles, signaling growing recognition of AI governance as a distinct and essential function"
+  source:
+    org: Stanford HAI (Institute for Human-Centered AI)
+    report: "2025 AI Index Report, Chapter 3: Responsible AI (data: McKinsey 2024 RAI survey)"
+    edition: 2025
+    url: https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-prosci-top-contributors-2023-sponsorship-multiplier
+  claim: "How much more likely projects meet/exceed objectives with effective vs ineffective sponsorship"
+  value: "almost 3.5x (extremely effective vs very ineffective sponsorship)"
+  wording: "with extremely effective sponsorship, projects were almost 3.5 times more likely to meet or exceed project objectives than projects with very ineffective sponsorship"
+  source:
+    org: Prosci
+    report: "Top Contributors to Success"
+    edition: 2023
+    url: https://www.prosci.com/resources/articles/change-management-best-practices
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mit-nanda-genai-divide-2025-enterprise-investment
+  claim: "Total enterprise investment in generative AI against which the 95% no-return finding is measured"
+  value: "$30-40 billion"
+  wording: "Despite $30-40 billion in enterprise investment into GenAI, 95% of organizations are getting zero return"
+  source:
+    org: MIT Project NANDA
+    report: "The GenAI Divide: State of AI in Business 2025"
+    edition: 2025
+    url: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-state-of-ai-2025-leader-ownership-3x
+  claim: "AI high performers vs peers on senior-leader ownership and commitment to AI initiatives"
+  value: "3x more likely"
+  wording: "High performers are three times more likely than their peers to strongly agree that senior leaders at their organizations demonstrate ownership of and commitment to their AI initiatives"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror

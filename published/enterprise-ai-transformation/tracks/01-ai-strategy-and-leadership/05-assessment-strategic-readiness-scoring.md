@@ -12,9 +12,9 @@ This assessment scores one thing: whether the **strategy-and-leadership function
 
 It is the diagnostic companion to [the core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md) (the *what*) and [the practitioner guide](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process.md) (the *how*). Run it to find the weakest link in your strategy before you commit budget downstream.
 
-> Only about **13%** of companies qualify as fully ready "Pacesetters" — and value follows readiness: Pacesetters are **4x** more likely to move AI pilots into production than their peers *(Cisco AI Readiness Index, 2025)*
-> AI high performers are **3x more likely** than their peers to strongly agree that senior leaders demonstrate ownership of and commitment to their AI initiatives *(McKinsey, "The State of AI," 2025)*
-> The share of companies at the most-mature data-and-AI level fell from **13%** in 2021 to **8%** in 2024; the most mature have **4x** more use cases scaled and **5x** greater average financial impact than laggards *(BCG, "Leaders in Data and AI Are Racing Away from the Pack," 2024)*
+> Only about **13%** of companies qualify as fully ready "Pacesetters" — and value follows readiness: Pacesetters are **4x** more likely to move AI pilots into production than their peers ([Cisco, 2025](#ev-cisco-ai-readiness-2025-pacesetters))
+> AI high performers are **3x more likely** than their peers to strongly agree that senior leaders demonstrate ownership of and commitment to their AI initiatives ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-leader-ownership-3x))
+> The share of companies at the most-mature data-and-AI level fell from **13%** in 2021 to **8%** in 2024; the most mature have **4x** more use cases scaled and, per use case, **5x** greater average financial impact than laggards ([BCG, 2024](#ev-bcg-racing-away-2024-maturity-decline-and-premium))
 
 This framework produces a prioritized gap list, not a score to report upward. If the result doesn't change what gets funded and sequenced next quarter, the assessment wasn't worth running.
 
@@ -208,6 +208,8 @@ The most common failure mode: the assessment produces a slide that gets presente
 
 ## Sources
 
-- Cisco — *AI Readiness Index 2025: Realizing the Value of AI* — 2025
-- McKinsey & Company — *The State of AI* — 2025
-- BCG — *Leaders in Data and AI Are Racing Away from the Pack* (Data and AI Capability Maturity Assessment) — 2024
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Cisco — *2025 Cisco AI Readiness Index: Realizing the Value of AI*, 2025.** about 13% of organizations qualify as Pacesetters (fully AI-ready); Pacesetters are 4x more likely to move AI pilots into production than their peers. [View source](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m10/cisco-ai-research-the-most-ai-ready-companies-outpace-peers-in-the-race-to-value.html){#ev-cisco-ai-readiness-2025-pacesetters} · verified 2026-06-21 · primary
+- **McKinsey — *The State of AI*, 2025.** High performers are three times more likely than their peers to strongly agree that senior leaders at their organizations demonstrate ownership of and commitment to their AI initiatives. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-leader-ownership-3x} · verified 2026-06-21 · ⚠ secondary mirror
+- **BCG — *Leaders in Data and AI Are Racing Away from the Pack*, 2024.** The proportion of companies qualifying as the most mature declined from 13% in the 2021 survey to 8% today; leading companies have four times more use cases scaled and adopted across their business than laggards, and for each use case they implement, the average financial impact is five times greater. [View source](https://www.bcg.com/publications/2024/leaders-in-data-ai-racing-away-from-pack){#ev-bcg-racing-away-2024-maturity-decline-and-premium} · verified 2026-06-21 · primary

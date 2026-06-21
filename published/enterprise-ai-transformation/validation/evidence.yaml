@@ -1421,3 +1421,391 @@
   verified: 2026-06-20
   status: primary
   expires: 2026-12-31
+- id: ev-ibm-caio-study-2025-operating-model-roi
+  claim: "ROI uplift from a centralized/hub-and-spoke AI operating model vs full decentralization"
+  value: "up to 36% higher ROI"
+  wording: "Organizations where CAIOs drive a centralized or hub-and-spoke AI operating model can realize up to 36% higher ROI on AI initiatives than those that leave AI fully decentralized"
+  source:
+    org: IBM
+    report: "The CAIO Study (IBM Institute for Business Value with Dubai Future Foundation)"
+    edition: 2025
+    url: https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/chief-ai-officer
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-ibm-cfo-study-2024-coe-presence
+  claim: "CFOs whose organization has a data-science center of excellence"
+  value: "31%"
+  wording: "Only 31% of CFOs surveyed have launched a center of excellence for data science"
+  source:
+    org: IBM
+    report: "2024 CFO Study (IBM Institute for Business Value)"
+    edition: 2024
+    url: https://www.ibm.com/thought-leadership/institute-business-value/c-suite-study/cfo
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-ibm-ceo-study-2026-caio-presence
+  claim: "Organizations reporting a Chief AI Officer, year over year"
+  value: "76% in 2026, up from 26% in 2025"
+  wording: "76% of organizations report having a Chief AI Officer in 2026, up from 26% a year earlier"
+  source:
+    org: IBM
+    report: "2026 CEO Study (IBM Institute for Business Value)"
+    edition: 2026
+    url: https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-state-of-ai-2025-centralize-vs-hybrid
+  claim: "Which AI operating-model elements are centralized vs run hybrid"
+  value: "risk & compliance 57% centralized; data governance 46%; talent & adoption mostly hybrid"
+  wording: "Risk and compliance is centralized by 57% of organizations and data governance by 46%, while technology talent and adoption of AI solutions are most often run on a hybrid basis"
+  source:
+    org: McKinsey
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-state-of-ai-2025-scaling-by-size
+  claim: "Share of organizations that have begun scaling AI enterprise-wide; larger firms likeliest"
+  value: "~a third have begun scaling enterprise-wide"
+  wording: "About one-third of organizations have begun to scale AI across the enterprise; larger companies are the most likely to have reached the scaling phase"
+  source:
+    org: McKinsey
+    report: "The State of AI in 2025"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mckinsey-state-of-ai-2024-high-performers-measurement
+  claim: "Gen-AI high performers with clear ways to measure/track AI value vs other orgs (figure not pinned to a public McKinsey 2024 quote)"
+  value: "more than a third vs about one in ten (unconfirmed)"
+  wording: "More than a third of gen-AI high performers have clear ways to measure and track the value of their gen-AI work, versus only about one in ten of other organizations; this specific split could not be confirmed against a public McKinsey 2024 quote and should be re-verified"
+  source:
+    org: McKinsey
+    report: "The State of AI in early 2024"
+    edition: 2024
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024
+    pdf_hash:
+  verified: 2026-06-20
+  status: blocked
+  expires: 2026-12-31
+
+- id: ev-gartner-ai-board-2024-board-presence
+  claim: "Organizations reporting they have an AI board"
+  value: "55%"
+  wording: "A Gartner poll of more than 1,800 executive leaders found 55% of organizations have an AI board"
+  source:
+    org: Gartner
+    report: "Gartner Poll Finds 55% of Organizations Have an AI Board"
+    edition: 2024
+    url: https://www.gartner.com/en/newsroom/press-releases/2024-06-26-gartner-poll-finds-55-percent-of-organizations-have-an-ai-board
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-gartner-cdao-2025-strategy-responsibility
+  claim: "CDAOs with primary responsibility for building the AI strategy and operating model"
+  value: "70%"
+  wording: "70% of chief data and analytics officers have the primary responsibility for building the AI strategy and operating model for the organization"
+  source:
+    org: Gartner
+    report: "Gartner Survey Finds 70% of CDAOs Are Responsible for AI Strategy and Operating Model"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-05-12-gartner-survey-finds-seventy-percent-of-cdaos-are-responsible-for-artificial-intelligence-strategy-and-operating-model
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-gartner-genai-trough-disillusionment-2024
+  claim: "Generative AI entered the trough of disillusionment as excitement outran realized value"
+  value: "trough of disillusionment (2024)"
+  wording: "After spending 2022 and 2023 at the peak of inflated expectations, generative AI entered the trough of disillusionment in 2024 as organizations confronted performance issues and low ROI"
+  source:
+    org: Gartner
+    report: "Hype Cycle for Generative AI, 2024"
+    edition: 2024
+    url: https://www.gartner.com/en/documents/5636791
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-mitsmr-wavestone-2024-cdo-presence
+  claim: "Large organizations with an established CDO/CDAO function, vs 2012"
+  value: "84.3%, up from 12% in 2012"
+  wording: "84.3% of organizations have appointed a chief data officer or chief data and analytics officer, up from just 12% in 2012"
+  source:
+    org: MIT Sloan Management Review / Wavestone
+    report: "Data and AI Leadership Executive Survey 2024"
+    edition: 2024
+    url: https://www.wavestone.com/en/news/2024-data-and-ai-leadership-executive-survey-41/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-state-ai-enterprise-2026-investment-increase
+  claim: "Organizations increasing their AI investment in the coming year"
+  value: "84%"
+  wording: "84% of organizations are increasing their AI investments"
+  source:
+    org: Deloitte
+    report: "State of AI in the Enterprise 2026"
+    edition: 2026
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-governance-ai-2025-board-agenda
+  claim: "Boards saying AI is not on their agenda, year over year"
+  value: "31%, down from 45%"
+  wording: "Nearly a third of respondents (31%) say AI is not on the board agenda, down from 45% in the previous survey"
+  source:
+    org: Deloitte
+    report: "Governance of AI: A critical imperative for today's boards (2nd edition)"
+    edition: 2025
+    url: https://www.deloitte.com/global/en/issues/trust/progress-on-ai-in-the-boardroom-but-room-to-accelerate.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-deloitte-state-genai-2025-compliance-barrier
+  claim: "Regulatory compliance as the top barrier to deploying gen-AI, year over year"
+  value: "38%, up from 28%"
+  wording: "Regulatory compliance emerged as the top barrier to developing and deploying GenAI, increasing from 28% (Wave 1) to 38% (Wave 4)"
+  source:
+    org: Deloitte
+    report: "The State of Generative AI in the Enterprise: Generating a new future (Q4)"
+    edition: 2025
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-wharton-gbk-genai-budget-2025-allocation
+  claim: "Enterprise GenAI budget allocation: tech tools largest, ~31% internal R&D, training low"
+  value: "~31% to internal R&D; training ranks far lower"
+  wording: "Technology tools and systems take the largest share of enterprise GenAI budgets and roughly 31% goes to internal R&D, while employee training ranks far lower"
+  source:
+    org: Wharton / GBK Collective
+    report: "2025 AI Adoption Report (Gen AI Fast-Tracks Into the Enterprise)"
+    edition: 2025
+    url: https://ai.wharton.upenn.edu/wp-content/uploads/2025/10/2025-Wharton-GBK-AI-Adoption-Report_Full-Report.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-oecd-2025-firm-size-adoption-gap
+  claim: "AI adoption gap between large and small firms"
+  value: "40% (large) vs 11.9% (small)"
+  wording: "40% of firms with 250 or more employees used AI in 2024, versus only 11.9% of firms with 10 to 49 employees; large firms are more than three times as likely to use AI as small firms"
+  source:
+    org: OECD
+    report: "AI adoption by small and medium-sized enterprises"
+    edition: 2025
+    url: https://www.oecd.org/en/publications/2025/12/ai-adoption-by-small-and-medium-sized-enterprises_9c48eae6.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-goldman-sachs-2025-smb-resource-gap
+  claim: "Small business owners lacking the resources/expertise to deploy AI"
+  value: "44%"
+  wording: "44% of small business owners said they do not have access to the resources and expertise necessary to successfully deploy AI"
+  source:
+    org: Goldman Sachs
+    report: "10,000 Small Businesses Voices (AI survey)"
+    edition: 2025
+    url: https://www.goldmansachs.com/community-impact/10000-small-businesses-voices/insights/ai-presents-a-major-opportunity-for-small-businesses
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-mit-nanda-genai-divide-2025-buy-vs-build
+  claim: "Externally sourced AI tools reach deployment at roughly twice the rate of internal builds"
+  value: "~2x (≈67% vs ≈33%)"
+  wording: "Tools sourced from external vendors reached deployment about twice as often as internally built tools (roughly 67% vs 33%)"
+  source:
+    org: MIT Project NANDA
+    report: "The GenAI Divide: State of AI in Business 2025"
+    edition: 2025
+    url: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-idc-2024-deployment-and-time-to-value
+  claim: "Time to realized value and AI deployment duration"
+  value: "value within ~13 months; deployment under 8 months"
+  wording: "AI deployments take less than 8 months on average and organizations realize value within 13 months"
+  source:
+    org: IDC
+    report: "The Business Opportunity of AI (IDC InfoBrief, sponsored by Microsoft)"
+    edition: 2024
+    url: https://blogs.microsoft.com/blog/2024/11/12/idcs-2024-ai-opportunity-study-top-five-ai-trends-to-watch/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-protiviti-2026-board-cadence-roi
+  claim: "High-AI-ROI orgs discussing AI at every board meeting vs low-ROI orgs"
+  value: "63% vs 13%"
+  wording: "In 63% of organizations reporting high AI ROI, every board meeting agenda includes a discussion on AI, compared with only 13% of low-ROI organizations"
+  source:
+    org: Protiviti
+    report: "2026 Global Board Governance Survey (with BoardProspects)"
+    edition: 2026
+    url: https://www.protiviti.com/us-en/survey/global-board-governance-survey
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-pex-network-2025-data-quality-barrier
+  claim: "Data quality and availability as the top-cited AI adoption barrier"
+  value: "52%"
+  wording: "More than half of respondents (52%) cite data quality and availability as the biggest AI adoption barrier"
+  source:
+    org: PEX Network
+    report: "PEX Report 2025/26"
+    edition: 2025
+    url: https://www.aidataanalytics.network/data-science-ai/news-trends/data-quality-availability-top-list-of-ai-adoption-barriers
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-prosci-sponsorship-2016-top-contributor
+  claim: "Active and visible sponsorship as the #1 contributor to change success (durable finding)"
+  value: "#1 contributor in every Prosci study"
+  wording: "Active and visible sponsorship has been identified as the number-one contributor to change-management success in every Prosci study since 1998 (the page attributes this to a 2016 edition / twelve longitudinal studies; the durable finding is confirmed, the specific 2016 edition and study count were not pinned)"
+  source:
+    org: Prosci
+    report: "Best Practices in Change Management"
+    edition: 2016
+    url: https://www.prosci.com/blog/change-management-best-practices
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+
+- id: ev-pmi-pulse-2016-sponsor-success
+  claim: "Project success uplift when most projects have active executive-sponsor support"
+  value: "76% vs 46% (65% more succeed)"
+  wording: "When more than 80% of projects have active executive sponsor support, 65% more of them succeed (76% versus 46%)"
+  source:
+    org: PMI
+    report: "Pulse of the Profession 2016: The High Cost of Low Performance"
+    edition: 2016
+    url: https://www.pmi.org/learning/thought-leadership/pulse/pulse-of-the-profession-2016
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-kotter-leading-change-1996-short-term-wins
+  claim: "Generating short-term wins is essential to sustaining change momentum"
+  value: "generate short-term wins (step 6 of 8)"
+  wording: "Kotter's eight-step model holds that generating short-term wins is essential; running a long change effort with no early, visible wins risks losing momentum before the change takes hold"
+  source:
+    org: John P. Kotter
+    report: "Leading Change"
+    edition: 1996
+    url: https://www.kotterinc.com/methodology/8-steps/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+
+- id: ev-towers-watson-comm-roi-2013-2014-tsr-outperformance
+  claim: "Highest-communication-effectiveness companies vs lowest: shareholder return and outperformance"
+  value: "57% higher TRS over five years; 3.5x more likely to outperform peers"
+  wording: "Companies with the highest communication effectiveness delivered a 57% higher total return to shareholders over a five-year period than those communicating least effectively, and were 3.5 times more likely to significantly outperform their industry peers"
+  source:
+    org: Towers Watson
+    report: "Change and Communication ROI Study (2013-2014)"
+    edition: "2013-2014"
+    url: https://magneto.net.au/wp-content/uploads/2018/07/2013-2014-change-and-communication-roi-study-towers-watson.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+
+- id: ev-pew-ai-detection-2025-importance-of-disclosure
+  claim: "Americans saying it is important to be able to tell whether content was made by AI or people"
+  value: "76%"
+  wording: "76% of Americans say it is extremely or very important to be able to tell whether pictures, videos and text were made by AI or by people"
+  source:
+    org: Pew Research Center
+    report: "How Americans View AI and Its Impact on People and Society"
+    edition: 2025
+    url: https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-meltwater-yougov-2026-disclosure-expectation
+  claim: "Consumers saying AI-generated content should be disclosed"
+  value: "86%"
+  wording: "86% of consumers say AI-generated content should be disclosed"
+  source:
+    org: Meltwater & YouGov
+    report: "Trust in the Age of Generative AI"
+    edition: 2026
+    url: https://www.meltwater.com/en/about/press-releases/consumer-perception-of-generative-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+
+- id: ev-kpmg-trust-ai-2025-assurance-mechanisms-trust
+  claim: "People more willing to trust AI when assurance mechanisms are in place (Australia snapshot; global to confirm)"
+  value: "83%"
+  wording: "83% say they would be more willing to trust an AI system when assurance mechanisms such as human oversight and responsible-AI policies are in place (confirmed in the Australia country snapshot; the global figure should be confirmed)"
+  source:
+    org: KPMG & University of Melbourne
+    report: "Trust, Attitudes and Use of AI: A Global Study 2025"
+    edition: 2025
+    url: https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+  expires: 2026-12-31
+- id: ev-mckinsey-state-of-ai-2025-workflow-redesign-highperf
+  claim: "AI high performers vs other organizations on fundamental workflow redesign"
+  value: "55% vs 20% (2.8x more likely)"
+  wording: "AI high performers are 2.8 times more likely to report fundamental workflow redesign than other organizations (55% versus 20%)"
+  source:
+    org: McKinsey
+    report: "The State of AI in 2025"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31

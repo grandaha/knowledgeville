@@ -1809,3 +1809,258 @@
   verified: 2026-06-20
   status: primary
   expires: 2026-12-31
+- id: ev-mckinsey-mgi-economic-potential-2023-time-automation
+  claim: "Share of employees' work time absorbed by activities current technologies (with generative AI) could automate"
+  value: "60 to 70 percent"
+  wording: "Current generative AI and other technologies have the potential to automate work activities that absorb 60 to 70 percent of employees' time today"
+  source:
+    org: McKinsey (McKinsey Global Institute)
+    report: "The economic potential of generative AI: The next productivity frontier"
+    edition: 2023
+    url: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-mckinsey-mgi-economic-potential-2023-genai-time-share
+  claim: "Share of total work time covered by activities generative AI's natural-language capability newly makes automatable"
+  value: "25 percent of total work time"
+  wording: "the acceleration in the potential for technical automation is largely due to generative AI's increased ability to understand natural language, which is required for work activities that account for 25 percent of total work time"
+  source:
+    org: McKinsey (McKinsey Global Institute)
+    report: "The economic potential of generative AI: The next productivity frontier"
+    edition: 2023
+    url: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-mckinsey-mgi-economic-potential-2023-value-by-function
+  claim: "Annual value generative AI could add across use cases, and productivity uplift in customer operations and software engineering"
+  value: "$2.6-4.4 trillion annually; customer operations 30-45% of function cost; software engineering 20-45% of annual function spend"
+  wording: "the direct impact of AI on the productivity of software engineering could range from 20 to 45 percent of current annual spending on the function; [the analyzed use cases total] $2.6 trillion to $4.4 trillion annually"
+  source:
+    org: McKinsey (McKinsey Global Institute)
+    report: "The economic potential of generative AI: The next productivity frontier"
+    edition: 2023
+    url: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-ey-get-ready-for-robots-2016-rpa-failure-rate
+  claim: "Share of initial RPA projects that fail"
+  value: "30 to 50%"
+  wording: "as many as 30 to 50% of initial RPA projects fail"
+  source:
+    org: EY
+    report: "Get ready for robots: Why planning makes the difference between success and disappointment"
+    edition: 2016
+    url: https://eyfs.ie/wp-content/uploads/2016/11/ey-get-ready-for-robots.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-abbyy-2020-rpa-failure-reasons
+  claim: "Reasons RPA projects fail (too complex; process or tools not understood), ABBYY survey of 400 senior executives"
+  value: "38% too complex; ~30% (three in ten) process or tools not understood"
+  wording: "38% of executives say projects fail because they are too complex; three in 10 projects fail because the intended automation processes are not understood or there's not enough understanding of the underlying automation tools"
+  source:
+    org: ABBYY
+    report: "ABBYY survey of 400 senior executives on RPA (reported via CIO Dive)"
+    edition: 2020
+    url: https://www.ciodive.com/news/rpa-robotic-process-automation-failures/577917/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-deloitte-global-rpa-survey-2018-scaling
+  claim: "Share of organizations that have scaled their digital workforce to 50 or more robots"
+  value: "3%"
+  wording: "only 3% of organizations have managed to scale RPA to a level of 50 or more robots"
+  source:
+    org: Deloitte
+    report: "The robots are ready. Are you? Untapped advantage in your digital workforce (Global RPA Survey)"
+    edition: 2018
+    url: https://www2.deloitte.com/content/dam/Deloitte/us/Documents/process-and-operations/us-global-rpa-survey-infographic.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-apqc-pcf-2018-hierarchy
+  claim: "APQC Process Classification Framework five-level hierarchy and definition of a task"
+  value: "Category > Process Group > Process > Activity > Task (5 levels)"
+  wording: "Level 5-Task: an element of work that goes into executing an activity (within the hierarchy Category, Process group, Process, Activity, Task)"
+  source:
+    org: APQC
+    report: "Understanding the Elements of APQC's Process Classification Framework (PCF)"
+    edition:
+    url: https://www.apqc.org/sites/default/files/files/PCF%20Collateral/Understanding%20the%20PCF%20Elements%20%20-%20FINAL.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-arxiv-rpa-viability-2020-screening-criteria
+  claim: "RPA viability framework: ideal candidate processes are standardized, rule-based, digital/structured input, stable, low exception rate"
+  value: "thirteen criteria across five perspectives"
+  wording: "Ideal candidate processes for automation must be standardized; the process follows a rule-based flow; candidate processes suited for RPA show little or no amount of exceptions; the data needs to be in a structured and digital form"
+  source:
+    org: Wellmann, Stierle, Dunzer & Matzner (arXiv)
+    report: "A framework to evaluate the viability of robotic process automation for business process activities"
+    edition: 2020
+    url: https://arxiv.org/abs/2007.10900
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-gartner-ai-agents-2025-enterprise-apps
+  claim: "Share of enterprise applications featuring task-specific AI agents by end of 2026"
+  value: "40% by end of 2026, up from <5% in 2025"
+  wording: "Forty percent of enterprise applications will be integrated with task-specific AI agents by the end of 2026, up from less than 5% today"
+  source:
+    org: Gartner
+    report: "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+- id: ev-gartner-ai-ready-data-2025-abandonment
+  claim: "Share of AI projects organizations will abandon through 2026 for lack of AI-ready data"
+  value: "60% through 2026"
+  wording: "Through 2026, organizations will abandon 60% of AI projects unsupported by AI-ready data"
+  source:
+    org: Gartner
+    report: "Lack of AI-Ready Data Puts AI Projects at Risk"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31
+- id: ev-ieee-process-mining-manifesto-2012-definition
+  claim: "Definition of process mining and its three operation types (discovery, conformance checking, enhancement)"
+  value: "definitional"
+  wording: "The idea of process mining is to discover, monitor and improve real processes by extracting knowledge from event logs readily available in today's systems; the three main types of process mining: (a) discovery, (b) conformance checking, and (c) enhancement"
+  source:
+    org: IEEE Task Force on Process Mining
+    report: "Process Mining Manifesto"
+    edition: 2012
+    url: https://www.tf-pm.org/upload/1580737614108.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-forrester-celonis-tei-2025-roi
+  claim: "Forrester Total Economic Impact of Celonis: three-year ROI, payback, and no-touch processing increase (composite customer)"
+  value: "383% three-year ROI; payback under six months; no-touch processing 33% to 86%"
+  wording: "an ROI of 383%; [orders processed] without any human intervention increased from 33% to 86%"
+  source:
+    org: Forrester Consulting (commissioned by Celonis)
+    report: "The Total Economic Impact of Celonis"
+    edition: 2025
+    url: https://tei.forrester.com/go/celonis/processIntelligence/docs/TheTEIOfCelonis.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-celonis-customer-stories-named-results
+  claim: "Celonis-published customer results: Deutsche Telekom procure-to-pay savings; GE Healthcare free-cash-flow increase"
+  value: "Deutsche Telekom over EUR 66M (P2P); GE Healthcare $1.3B free cash flow in one year"
+  wording: "Deutsche Telekom saved over EUR 66M by maximizing the execution capacity of their Procure-to-Pay process; GE Healthcare increased free cash flow by $1.3 billion in just one year"
+  source:
+    org: Celonis
+    report: "Customer Stories (Deutsche Telekom procure-to-pay; GE Healthcare cash flow)"
+    edition:
+    url: https://www.celonis.com/solutions/stories/deutsche-telekom-procure-to-pay-process-mining
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-servicenow-process-mining-2024-task-profile
+  claim: "ServiceNow guidance: process mining surfaces automation candidates that take 2-30 minutes"
+  value: "2 to 30 minutes"
+  wording: "look for tasks that take anywhere between 2 and 30 minutes to complete"
+  source:
+    org: ServiceNow
+    report: "How to use Process Mining to identify automation opportunities"
+    edition: 2024
+    url: https://www.servicenow.com/community/process-mining-blog/how-to-use-process-mining-to-identify-automation-opportunities/ba-p/3061642
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-deloitte-process-mining-survey-2025-objectives
+  claim: "Deloitte Global Process Mining Survey 2025: stated objectives/expectations of process mining"
+  value: "automation identification 38%; process transparency 51%; cost savings 59%"
+  wording: "59 percent expect cost savings, up from 46 percent; process transparency (51 percent) and process monitoring (41 percent) are next, followed by automation identification (38 percent)"
+  source:
+    org: Deloitte
+    report: "Global Process Mining Survey"
+    edition: 2025
+    url: https://www.deloitte.com/de/de/services/consulting-financial/research/global-process-mining-survey.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-klarna-2024-assistant-resolution
+  claim: "Klarna AI assistant: customer-service resolution time and FTE-equivalent workload"
+  value: "11 min to under 2 min; equivalent of 700 full-time agents"
+  wording: "It is doing the equivalent work of 700 full-time agents; customers now resolve their errands in less than 2 mins compared to 11 mins previously"
+  source:
+    org: Klarna
+    report: "Klarna AI assistant handles two-thirds of customer service chats in its first month"
+    edition: 2024
+    url: https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-google-cloud-roi-2025-first-year-roi
+  claim: "Executives achieving ROI from generative AI within the first year"
+  value: "74%"
+  wording: "74% of executives report achieving ROI within the first year"
+  source:
+    org: Google Cloud
+    report: "The ROI of AI 2025"
+    edition: 2025
+    url: https://cloud.google.com/transform/roi-of-ai-how-agents-help-business
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-deloitte-automation-intelligence-2022-cost-payback
+  claim: "Cost reduction from scaling intelligent automation beyond pilots; share not calculating payback; lengthening pilot-stage payback"
+  value: "32% cost reduction (up from 24% in 2020); 36% had not calculated payback; payback 22 months (up from 16 in 2020)"
+  wording: "organisations that moved beyond piloting intelligent automation have achieved an average cost reduction of 32 per cent, up from 24 per cent in 2020; over a third (36 percent) have not calculated the payback period; the average payback period increased from 16 months in 2020 to 22 months"
+  source:
+    org: Deloitte
+    report: "Automation with intelligence (Global Intelligent Automation survey)"
+    edition: 2022
+    url: https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-bcg-ai-adoption-2024-struggle-scale
+  claim: "Share of companies yet to show tangible value from AI vs. share generating significant value across functions"
+  value: "74% yet to show tangible value; 4% generate significant value across functions"
+  wording: "Seventy-four percent of companies have yet to show tangible value from their use of AI; just 4% of companies have developed cutting-edge AI capabilities across functions and consistently generate significant value"
+  source:
+    org: Boston Consulting Group (BCG)
+    report: "AI Adoption in 2024: 74% of Companies Struggle to Achieve and Scale Value"
+    edition: 2024
+    url: https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-ibm-ibv-ai-projects-profits-2025-workflow-surge
+  claim: "Executives' expected growth in share of operations run by AI-enabled workflows in one year"
+  value: "3% to 25% (more than eight-fold)"
+  wording: "respondents expect AI-enabled workflows to grow from 3% today to 25% by the end of 2025"
+  source:
+    org: IBM Institute for Business Value
+    report: "From AI Projects to Profits"
+    edition: 2025
+    url: https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/agentic-ai-profits
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-deloitte-state-ai-enterprise-2026-production-redesign
+  claim: "Share of orgs moving 40%+ of AI pilots into production, and share redesigning key processes around AI"
+  value: "25% moved 40%+ to production; 30% redesigning key processes"
+  wording: "only 25% of respondents have moved 40% or more of their AI pilots into production; only 30% of organizations are redesigning key processes around AI"
+  source:
+    org: Deloitte
+    report: "State of AI in the Enterprise 2026"
+    edition: 2026
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2026-12-31

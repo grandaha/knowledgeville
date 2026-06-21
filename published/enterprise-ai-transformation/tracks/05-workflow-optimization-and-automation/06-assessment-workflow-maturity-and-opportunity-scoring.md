@@ -18,9 +18,9 @@ Distinguish it from two adjacent assessments. It is **not** a data readiness aud
 
 Run it when: a function has accumulated more automation ideas than it can fund; leadership is pushing a flashy use case and you need to test it against the alternatives; or a wave of pilots has stalled and you need to understand why before launching the next one.
 
-> Across roughly 300 public deployments, an MIT study found that about **95% of enterprise generative-AI pilots delivered little to no measurable impact on profit and loss** — and the root cause was not model quality but the failure to integrate AI into actual workflows *(MIT NANDA, "The GenAI Divide: State of AI in Business," 2025)*.
+> Across roughly 300 public deployments, an MIT study found that about **95% of enterprise generative-AI pilots delivered little to no measurable impact on profit and loss** — and the root cause was not model quality but the failure to integrate AI into actual workflows ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)).
 >
-> Organizations seeing the greatest impact from AI are **nearly three times as likely** to say they have fundamentally redesigned workflows as part of their AI efforts *(McKinsey & Company, "The State of AI," 2025)*.
+> Organizations seeing the greatest impact from AI are **nearly three times as likely** to say they have fundamentally redesigned workflows as part of their AI efforts ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-workflow-redesign-highperf)).
 
 The lesson behind those two numbers is the entire reason this assessment exists: value comes from picking the *right workflows* and rebuilding them, not from deploying AI on top of whatever process happens to be loudest in the room. The widely cited failure rates of automation programs are, more often than not, prioritization failures — chasing the flashy use case, ignoring data readiness, and underestimating complexity. This assessment is a structured defense against all three.
 
@@ -116,7 +116,7 @@ Average the six dimensions for a single label — but treat the lowest dimension
 | 4 | Optimizing | Processes are standardized, instrumented, data-ready, and supported by a platform and change capability. Opportunities can scale. |
 | 5 | Adaptive | Workflows are continuously instrumented, redesigned, and improved; the function selects and ships opportunities as a routine capability. |
 
-Most functions cluster at Level 2–3 and stall at the Level 3→4 gap — they can build individual automations but lack the standardization, data foundation, and measurement to scale them. The Deloitte process-mining survey found that even among process-aware organizations, **automation identification was a stated objective for only 38% of respondents**, while process transparency (51%) and cost savings (59%) ranked higher *(Deloitte, "Global Process Mining Survey," 2025)* — a sign that many functions are still working on *seeing* their processes, a Level 3 capability, before they can systematically *automate* them.
+Most functions cluster at Level 2–3 and stall at the Level 3→4 gap — they can build individual automations but lack the standardization, data foundation, and measurement to scale them. The Deloitte process-mining survey found that even among process-aware organizations, **automation identification was a stated objective for only 38% of respondents**, while process transparency (51%) and cost savings (59%) ranked higher ([Deloitte, 2025](#ev-deloitte-process-mining-survey-2025-objectives)) — a sign that many functions are still working on *seeing* their processes, a Level 3 capability, before they can systematically *automate* them.
 
 ---
 
@@ -128,7 +128,7 @@ With maturity understood, inventory candidate workflows and size each one. The g
 
 Three reliable sources, in rough order of rigor:
 
-- **Process mining / system logs** — the most objective source. Instrumentation surfaces high-frequency, repetitive, rule-bound steps (routing, approvals, data entry, reconciliation) that are prime candidates. Process mining is well suited to identifying tasks that take roughly two to thirty minutes and recur at volume *(ServiceNow, "How to use Process Mining to identify automation opportunities," 2024)*.
+- **Process mining / system logs** — the most objective source. Instrumentation surfaces high-frequency, repetitive, rule-bound steps (routing, approvals, data entry, reconciliation) that are prime candidates. Process mining is well suited to identifying tasks that take roughly two to thirty minutes and recur at volume ([ServiceNow, 2024](#ev-servicenow-process-mining-2024-task-profile)).
 - **Frontline interviews** — the people doing the work know where the rework, the swivel-chair copying, and the waiting happen. Necessary, but bias toward the loudest pain, so triangulate against data.
 - **Exception and error logs** — high-error, high-cost steps are often the best opportunities because the value is in *quality*, not just time.
 
@@ -178,7 +178,7 @@ Gross annual value ≈ **$1.18M**. Subtract an amortized build cost of, say, $25
 
 ## Part 3: The Prioritization Matrix — Value × Data Readiness × Complexity
 
-Most prioritization frameworks plot value against complexity (or feasibility) on two axes. That two-axis model is where automation programs go wrong, because it hides the variable that actually kills projects: **data**. The evidence is blunt — Gartner predicts that **through 2026, organizations will abandon 60% of AI projects that are not supported by AI-ready data** *(Gartner, "Lack of AI-Ready Data Puts AI Projects at Risk," 2025)*. Data readiness deserves its own axis precisely because it is the most common, least visible cause of failure, and because a high-value, low-complexity opportunity sitting on unusable data is a trap that two-axis scoring rates as a "quick win."
+Most prioritization frameworks plot value against complexity (or feasibility) on two axes. That two-axis model is where automation programs go wrong, because it hides the variable that actually kills projects: **data**. The evidence is blunt — Gartner predicts that **through 2026, organizations will abandon 60% of AI projects that are not supported by AI-ready data** ([Gartner, 2025](#ev-gartner-ai-ready-data-2025-abandonment)). Data readiness deserves its own axis precisely because it is the most common, least visible cause of failure, and because a high-value, low-complexity opportunity sitting on unusable data is a trap that two-axis scoring rates as a "quick win."
 
 So this framework scores every opportunity on **three independent axes, each 1–5**:
 
@@ -217,7 +217,7 @@ The matrix produces four buckets. Sequence them in this order:
 
 4. **Defer or decline the rest.** Low value with high complexity should be killed clearly so the backlog stays honest. The fastest way to lose a program's credibility is to keep a graveyard of "someday" items that quietly consume attention.
 
-Sequencing is also a hedge against the dominant failure mode. The IBM Institute for Business Value found executives expected AI-enabled workflows to jump from **3% to 25% of operations** in a single year — an eight-fold surge in ambition *(IBM Institute for Business Value, "AI projects to profits," 2025)* — while Deloitte found only **25% of organizations had moved 40% or more of their AI pilots into production**, and only **30% were redesigning key processes around AI** *(Deloitte, "State of AI in the Enterprise," 2025)*. The gap between that ambition and that production rate is filled with poorly sequenced programs that started the hard, data-blocked, low-readiness work first. Sequencing on the three-axis profile is how you stay on the right side of that gap.
+Sequencing is also a hedge against the dominant failure mode. The IBM Institute for Business Value found executives expected AI-enabled workflows to jump from **3% to 25% of operations** in a single year — an eight-fold surge in ambition ([IBM, 2025](#ev-ibm-ibv-ai-projects-profits-2025-workflow-surge)) — while Deloitte found only **25% of organizations had moved 40% or more of their AI pilots into production**, and only **30% were redesigning key processes around AI** ([Deloitte, 2026](#ev-deloitte-state-ai-enterprise-2026-production-redesign)). The gap between that ambition and that production rate is filled with poorly sequenced programs that started the hard, data-blocked, low-readiness work first. Sequencing on the three-axis profile is how you stay on the right side of that gap.
 
 ---
 
@@ -280,10 +280,12 @@ The most common failure mode is the same one that afflicts every assessment: a s
 
 ## Sources
 
-- MIT NANDA — *The GenAI Divide: State of AI in Business 2025* — 2025 (https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
-- McKinsey & Company — *The State of AI: How organizations are rewiring to capture value* — 2025 (https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
-- Gartner — *Lack of AI-Ready Data Puts AI Projects at Risk* — 2025 (https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk)
-- Deloitte — *Global Process Mining Survey 2025* — 2025 (https://www.deloitte.com/de/de/services/consulting-financial/research/global-process-mining-survey.html)
-- Deloitte — *State of AI in the Enterprise* — 2025 (https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html)
-- IBM Institute for Business Value — *AI projects to profits* — 2025 (https://newsroom.ibm.com/2025-06-10-IBM-Study-Businesses-View-AI-Agents-as-Essential,-Not-Just-Experimental)
-- ServiceNow — *How to use Process Mining to identify automation opportunities* — 2024 (https://www.servicenow.com/community/process-mining-blog/how-to-use-process-mining-to-identify-automation-opportunities/ba-p/3061642)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **MIT Project NANDA — *The GenAI Divide: State of AI in Business 2025*, 2025.** Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact. [View source](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf){#ev-mit-nanda-genai-divide-2025-no-pl-impact} · verified 2026-06-20 · ⚠ secondary mirror
+- **McKinsey — *The State of AI in 2025*, 2025.** AI high performers are 2.8 times more likely to report fundamental workflow redesign than other organizations (55% versus 20%). [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-workflow-redesign-highperf} · verified 2026-06-20 · primary
+- **Deloitte — *Global Process Mining Survey*, 2025.** 59 percent expect cost savings, up from 46 percent; process transparency (51 percent) and process monitoring (41 percent) are next, followed by automation identification (38 percent). [View source](https://www.deloitte.com/de/de/services/consulting-financial/research/global-process-mining-survey.html){#ev-deloitte-process-mining-survey-2025-objectives} · verified 2026-06-20 · ⚠ secondary mirror
+- **ServiceNow — *How to use Process Mining to identify automation opportunities*, 2024.** look for tasks that take anywhere between 2 and 30 minutes to complete. [View source](https://www.servicenow.com/community/process-mining-blog/how-to-use-process-mining-to-identify-automation-opportunities/ba-p/3061642){#ev-servicenow-process-mining-2024-task-profile} · verified 2026-06-20 · primary
+- **Gartner — *Lack of AI-Ready Data Puts AI Projects at Risk*, 2025.** Through 2026, organizations will abandon 60% of AI projects unsupported by AI-ready data. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk){#ev-gartner-ai-ready-data-2025-abandonment} · verified 2026-06-20 · primary
+- **IBM Institute for Business Value — *From AI Projects to Profits*, 2025.** respondents expect AI-enabled workflows to grow from 3% today to 25% by the end of 2025. [View source](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/agentic-ai-profits){#ev-ibm-ibv-ai-projects-profits-2025-workflow-surge} · verified 2026-06-20 · primary
+- **Deloitte — *State of AI in the Enterprise 2026*, 2026.** only 25% of respondents have moved 40% or more of their AI pilots into production; only 30% of organizations are redesigning key processes around AI. [View source](https://www.deloitte.com/us/en/about/press-room/state-of-ai-report-2026.html){#ev-deloitte-state-ai-enterprise-2026-production-redesign} · verified 2026-06-20 · primary

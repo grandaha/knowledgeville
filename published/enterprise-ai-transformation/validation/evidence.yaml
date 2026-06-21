@@ -2064,3 +2064,39 @@
   verified: 2026-06-20
   status: primary
   expires: 2026-12-31
+- id: ev-finops-foundation-state-of-finops-2025-tracking-spend
+  claim: "Organizations managing their AI spend (2025 vs prior year)"
+  value: "63% (up from 31%)"
+  wording: "AI spending is now managed by the majority of respondents (63% up from 31% last year)"
+  source:
+    org: FinOps Foundation
+    report: "The State of FinOps"
+    edition: 2025
+    url: https://data.finops.org/2025-report/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-okta-businesses-at-work-2025-app-count
+  claim: "Average number of apps each company uses (all customers, aggregate average)"
+  value: "101 apps"
+  wording: "The average number of apps each company uses reached 101 this year, cracking the major milestone of 100 after years of flat growth"
+  source:
+    org: Okta
+    report: "Businesses at Work 2025"
+    edition: 2025
+    url: https://www.okta.com/newsroom/articles/businesses-at-work-2025/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-menlo-ventures-state-genai-2024-model-count
+  claim: "Foundation models enterprises typically deploy in their AI stacks"
+  value: "three or more foundation models"
+  wording: "organizations typically deploy three or more foundation models in their AI stacks, routing to different models depending on the use case or results"
+  source:
+    org: Menlo Ventures
+    report: "State of Generative AI in the Enterprise"
+    edition: 2024
+    url: https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary

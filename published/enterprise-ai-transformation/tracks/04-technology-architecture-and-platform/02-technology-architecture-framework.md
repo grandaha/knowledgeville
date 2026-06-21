@@ -14,7 +14,7 @@ This is not a hypothetical. McKinsey's 2025 *State of AI* survey found that 88% 
 
 The cost of point-solution sprawl is not only financial. It is architectural. An enterprise cannot audit what it cannot see, cannot govern what it did not provision, and cannot optimize what it has no unified view of. When every team routes its prompts through a different API key, there is no way to aggregate cost, enforce policy, or catch a runaway agent before the invoice arrives. When every team selects its own models, there is no shared evaluation, no compliance review, and no mechanism to retire a model that turns out to be unsuitable.
 
-> **88% of organizations** now use AI in at least one business function *(McKinsey, The State of AI, 2025)*, yet as of 2025 only **63% of organizations were tracking or managing their AI spend at all** — up from 31% a year earlier *(FinOps Foundation, The State of FinOps, 2025)*. Centralized cost attribution remains the exception, not the rule.
+> **88% of organizations** now use AI in at least one business function ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-adoption)), yet as of 2025 only **63% of organizations were managing their AI spend** — up from 31% a year earlier ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend)). Centralized cost attribution remains the exception, not the rule.
 
 This consolidation gap shows up in the maturity data as well. Only about 21% of organizations report having a mature model for governing autonomous AI agents (Deloitte, *State of AI in the Enterprise*, 2026), and the organizations that pull ahead tend to be the ones that centralize: "future-built" firms are roughly three times as likely to operate a central, integrated AI platform as their lagging peers (BCG, *The Widening AI Value Gap*, 2025). Centralization is not bureaucratic overhead — it is the pattern that correlates with capturing value.
 
@@ -158,16 +158,7 @@ Assess your organization's current platform maturity against the [platform matur
 
 ## Sources
 
-- McKinsey & Company — *The State of AI in 2025: Agents, Innovation, and Transformation* — 2025
-- FinOps Foundation — *The State of FinOps 2025* — 2025
-- Deloitte — *State of AI in the Enterprise* — 2026
-- Boston Consulting Group — *The Widening AI Value Gap (Build for the Future 2025)* — 2025
-- Menlo Ventures — *The State of Generative AI in the Enterprise* — 2024 and 2025
-- a16z — *Generative AI Enterprise 2024* — 2024
-- Nielsen Norman Group (Jakob Nielsen) — *Response Times: The 3 Important Limits* — 1993 (updated)
-- Google (Think with Google) — *The Need for Mobile Speed* — 2016
-- OpenAI — *Deprecations* and *Prompt caching* documentation — 2026 (developers.openai.com)
-- Anthropic — *Prompt caching* and *Batch processing* documentation — 2026 (platform.claude.com)
-- Lumer, Nizar et al. — *Don't Break the Cache: An Evaluation of Prompt Caching for Long-Horizon Agentic Tasks* — arXiv:2601.06007 — 2026
-- IBM — *Cost of a Data Breach Report 2025* — 2025
-- Microsoft & LinkedIn — *2024 Work Trend Index Annual Report* — 2024
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **McKinsey — *The State of AI*, 2025.** 88% of respondents report regular AI use in at least one business function, compared with 78% a year ago. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-adoption} · verified 2026-06-20 · primary
+- **FinOps Foundation — *The State of FinOps*, 2025.** AI spending is now managed by the majority of respondents (63% up from 31% last year). [View source](https://data.finops.org/2025-report/){#ev-finops-foundation-state-of-finops-2025-tracking-spend} · verified 2026-06-20 · primary

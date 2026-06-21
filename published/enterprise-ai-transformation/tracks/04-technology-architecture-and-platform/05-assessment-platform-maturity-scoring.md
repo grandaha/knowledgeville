@@ -12,9 +12,9 @@ This assessment scores one thing: whether the **AI platform function** is mature
 
 It is the diagnostic companion to the [AI technology architecture framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md) and the [practitioner guide for designing an AI platform function](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function.md). Run it before investing in net-new AI capabilities, when platform costs are growing without explanation, or when the number of teams building AI independently has outpaced any shared infrastructure serving them.
 
-> As of 2025, only **63% of organizations were tracking or managing their AI spend at all** — up from 31% a year earlier, which still leaves more than a third unable to say what they spent on model APIs last month or which business unit spent it *(FinOps Foundation, The State of FinOps, 2025)*
+> As of 2025, only **63% of organizations were managing their AI spend** — up from 31% a year earlier, which still leaves more than a third unable to say what they spent on model APIs last month or which business unit spent it ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend))
 >
-> The average enterprise runs **more than 100 applications** federated through its identity provider alone *(Okta, Businesses at Work 2025)*, and enterprises that have adopted generative AI typically deploy **three or more foundation models** in their stack *(Menlo Ventures, State of Generative AI in the Enterprise, 2024)* — most of them procured independently, with no shared infrastructure layer connecting them
+> The average enterprise runs **more than 100 applications** federated through its identity provider alone ([Okta, 2025](#ev-okta-businesses-at-work-2025-app-count)), and enterprises that have adopted generative AI typically deploy **three or more foundation models** in their stack ([Menlo Ventures, 2024](#ev-menlo-ventures-state-genai-2024-model-count)) — most of them procured independently, with no shared infrastructure layer connecting them
 
 This framework produces a prioritized gap list, not a score to report upward. If the result doesn't change what gets funded, what gets consolidated, or what gets enforced in the next 90 days, the assessment wasn't worth running.
 
@@ -168,8 +168,8 @@ The most common failure mode: the assessment produces a score, someone presents 
 
 ## Sources
 
-- FinOps Foundation — *The State of FinOps 2025* — 2025
-- Okta — *Businesses at Work 2025* — 2025
-- Menlo Ventures — *The State of Generative AI in the Enterprise* — 2024 and 2025
-- OpenAI — *Deprecations* and *Assistants API deprecation* documentation — 2026 (developers.openai.com)
-- AICPA — *SOC 2 Trust Services Criteria* — 2017 (rev. 2022); ISO/IEC — *ISO/IEC 27001:2022* — 2022
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **FinOps Foundation — *The State of FinOps*, 2025.** AI spending is now managed by the majority of respondents (63% up from 31% last year). [View source](https://data.finops.org/2025-report/){#ev-finops-foundation-state-of-finops-2025-tracking-spend} · verified 2026-06-20 · primary
+- **Okta — *Businesses at Work 2025*, 2025.** The average number of apps each company uses reached 101 this year, cracking the major milestone of 100 after years of flat growth. [View source](https://www.okta.com/newsroom/articles/businesses-at-work-2025/){#ev-okta-businesses-at-work-2025-app-count} · verified 2026-06-20 · primary
+- **Menlo Ventures — *State of Generative AI in the Enterprise*, 2024.** organizations typically deploy three or more foundation models in their AI stacks, routing to different models depending on the use case or results. [View source](https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/){#ev-menlo-ventures-state-genai-2024-model-count} · verified 2026-06-20 · primary

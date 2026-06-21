@@ -14,10 +14,10 @@ AI governance must ask a different set of questions. A model behaves as specifie
 
 This is not a marginal difference. It is a structural one. AI systems have emergent behaviors that are not derivable from their training procedures. They degrade silently as the world changes around them. They inherit the biases and limitations of the data they learned from. And they are increasingly assembled from third-party components whose behavior the deploying enterprise does not control and may not fully understand.
 
-> **Only 25%** of organizations have fully operational AI governance, despite widespread awareness of regulatory obligations *(AuditBoard, 2025)*
-> The average cost of a data breach reached **$4.88 million** in 2024 — the highest on record *(IBM Cost of a Data Breach Report, 2024)*
+> **Only 25%** of organizations have a fully implemented AI governance program, despite widespread awareness of regulatory obligations ([AuditBoard, 2025](#ev-auditboard-blueprint-to-reality-2025-governance-gap))
+> The average cost of a data breach reached **$4.88 million** in 2024 — its largest yearly jump since the pandemic ([IBM, 2024](#ev-ibm-cost-of-breach-2024-average-cost))
 
-The governance gap is the management problem of the moment. AI adoption is accelerating — McKinsey's 2025 State of AI found that 88% of organizations are using AI in at least one business function, up from 78% the prior year. But governance maturity has not kept pace: only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance *(McKinsey AI Trust Maturity Survey, 2026)*.
+The governance gap is the management problem of the moment. AI adoption is accelerating — McKinsey's 2025 State of AI found that 88% of organizations are using AI in at least one business function ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-adoption)), up from 78% the prior year ([McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-adoption)). But governance maturity has not kept pace: only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance ([McKinsey, 2026](#ev-mckinsey-trust-2026-maturity-level-three)).
 
 This track builds the coverage that closes that gap. It sits immediately downstream of [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), which sets intent and risk appetite. This track operationalizes both — converting appetite into controls, policy into enforcement, and regulatory obligation into organizational action. The [practitioner guide to standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md) is the companion for organizations building this capability from scratch.
 
@@ -49,8 +49,8 @@ The components of a mature AI model risk program, whether or not your industry i
 
 The majority of enterprise AI is now assembled from third-party components. Enterprises access foundation models from OpenAI, Anthropic, Google, and others via API. They procure AI-enabled SaaS products — HR platforms, underwriting tools, fraud detection systems — without always knowing what models are embedded in them or how those models behave. They run AI in cloud infrastructure managed by hyperscalers under shared-responsibility models that frequently leave governance accountability ambiguous.
 
-> **49%** of financial institutions experienced a vendor-related cyber incident in the past year *(Ncontracts Third-Party Risk Management Survey, 2025)*
-> **73%** of organizations have two or fewer full-time employees managing vendor risk, even though more than half oversee more than 300 vendors *(Ncontracts TPRM Survey, 2025)*
+> **49%** of financial institutions experienced a vendor-related cyber incident in the past year ([Ncontracts, 2025](#ev-ncontracts-tprm-survey-2025-vendor-cyber-incident))
+> **73%** of organizations have two or fewer full-time employees managing vendor risk, even though more than half oversee more than 300 vendors ([Ncontracts, 2025](#ev-ncontracts-tprm-survey-2025-vendor-risk-staffing))
 
 The core problem: standard vendor risk management frameworks were not designed for AI. A standard SaaS vendor risk questionnaire asks about data encryption, access controls, and disaster recovery. It does not ask whether the vendor's model was trained on data that included the customer's confidential information, whether the vendor's model can be updated unilaterally and without notice, what happens to user data submitted in prompts, or what protections exist against model outputs that discriminate against protected classes.
 
@@ -74,7 +74,7 @@ The regulatory environment for enterprise AI is in active construction. The EU A
 
 ### EU AI Act
 
-The EU AI Act entered into force on 1 August 2024. It establishes a risk-tiered framework:
+The EU AI Act entered into force on 1 August 2024 ([European Commission, 2024](#ev-ec-ai-act-2024-application-timeline)). It establishes a risk-tiered framework:
 
 | Risk tier | Definition | Key requirements | Enforcement date |
 |---|---|---|---|
@@ -83,7 +83,7 @@ The EU AI Act entered into force on 1 August 2024. It establishes a risk-tiered 
 | **Limited** | AI interacting with humans (chatbots, deepfakes) | Transparency obligations — users must know they are interacting with AI | 2 August 2026 |
 | **Minimal** | AI-enabled games, spam filters, most recommendation systems | No specific obligations | N/A |
 
-Penalties for non-compliance are substantial: up to **€35 million or 7% of global annual turnover** for prohibited AI practices, up to **€15 million or 3%** for high-risk AI violations. The higher of the fixed amount or the percentage applies.
+Penalties for non-compliance are substantial: up to **€35 million or 7% of global annual turnover** for prohibited AI practices, and up to **€15 million or 3%** for breaches of most other operator obligations — including the core high-risk provider and deployer duties ([EU AI Act, 2024](#ev-eu-ai-act-2024-article-99-penalties)). The higher of the fixed amount or the percentage applies.
 
 The Act covers any organization deploying AI that affects individuals in the EU — not just EU-headquartered organizations. Global enterprises with European customers, employees, or operations are in scope. For organizations with high-risk AI systems (employment screening tools, credit decisioning, healthcare AI), compliance preparation should already be underway.
 
@@ -91,7 +91,7 @@ The Act also introduced General-Purpose AI (GPAI) obligations — transparency r
 
 ### Sector-Specific Rules
 
-**Financial services — NYDFS.** In October 2024, the New York State Department of Financial Services issued guidance on AI-related cybersecurity risks for covered entities. The guidance clarifies that AI risks (including AI-enabled social engineering, adversarial attacks, and third-party AI exposure) fall within existing cybersecurity regulations and expects covered entities to conduct AI risk assessments, address AI in third-party risk programs, and maintain training programs covering AI-specific threats. The NYDFS also issued Circular Letter 2024-7 in July 2024 covering AI use in insurance underwriting and pricing, requiring insurers to demonstrate that AI-driven underwriting decisions are not unfairly discriminatory.
+**Financial services — NYDFS.** In October 2024, the New York State Department of Financial Services issued guidance on AI-related cybersecurity risks for covered entities. The guidance clarifies that AI risks (including AI-enabled social engineering, adversarial attacks, and third-party AI exposure) fall within existing cybersecurity regulations and expects covered entities to conduct AI risk assessments, address AI in third-party risk programs, and maintain training programs covering AI-specific threats. The NYDFS also issued Insurance Circular Letter No. 7 (2024) in July 2024 covering AI use in insurance underwriting and pricing, requiring insurers to demonstrate that AI-driven underwriting decisions are not unfairly discriminatory.
 
 **Healthcare — ONC/CMS.** The Office of the National Coordinator for Health Information Technology and the Centers for Medicare and Medicaid Services have issued guidance and rulemaking requiring transparency and risk management for AI decision support tools used in clinical and administrative healthcare settings. AI tools that meet the definition of a "clinical decision support" software function under the 21st Century Cures Act may require FDA oversight; those that influence coverage or payment decisions face CMS scrutiny.
 
@@ -127,8 +127,8 @@ The [AI policy and acceptable use practitioner guide](/enterprise-ai-transformat
 
 AI governance is not self-executing. Someone owns it, someone funds it, and someone is accountable when it fails. The organizational design question — who, where, and how — is among the most consequential decisions in standing up an AI governance function.
 
-> **26%** of large enterprises now have a dedicated Chief AI Officer (CAIO), up from **11%** two years ago *(IBM Institute for Business Value, 2025)*. Gartner projected **35%** of large enterprises would have a CAIO by 2025.
-> Only **28%** of organizations report that their CEO takes direct responsibility for AI governance; only **17%** say their board of directors does *(McKinsey, State of AI, 2025)*
+> **26%** of large enterprises now have a dedicated Chief AI Officer (CAIO), up from **11%** two years ago ([IBM Institute for Business Value, 2025](#ev-ibm-caio-study-2025-caio-adoption))
+> Only **28%** of organizations report that their CEO takes direct responsibility for AI governance; only **17%** say their board of directors does ([McKinsey, 2025](#ev-mckinsey-rewiring-2025-ceo-oversight))
 
 Four organizational models dominate in practice:
 
@@ -162,7 +162,7 @@ AI governance fails in patterns. These are the four that account for most of it.
 
 **Agentic blind spots.** The governance frameworks most enterprises have built were designed for predictive models and generative AI assistants: systems that produce outputs for human review before action. Agentic AI — autonomous systems that take actions in the world on behalf of the enterprise — requires a fundamentally different governance model. An agent that sends emails, modifies data, executes transactions, or calls APIs is not producing a recommendation for review; it is acting. The governance question is no longer "is this output accurate enough?" but "is this action reversible, authorized, and bounded?" Most governance frameworks in place today do not answer that question.
 
-> **74%** of companies plan agentic AI deployment within two years; only **21%** have a mature governance model in place *(Deloitte, 2025)*
+> **74%** of companies expect to be using AI agents within two years; only **21%** have a mature governance model for agentic AI in place ([Deloitte, 2026](#ev-deloitte-state-ai-enterprise-2026-agentic-governance-gap))
 
 **Vendor pass-through.** An enterprise deploys a third-party AI product that produces discriminatory outputs. When challenged, the enterprise's answer is "we relied on the vendor's compliance attestations." In most legal and regulatory frameworks, this is not a defense. The enterprise deploying the AI system is the deployer of record, and deployer obligations — including EU AI Act deployer obligations under Article 26 — attach to the deployer, not just the developer. Assuming the vendor handles compliance is the most expensive governance assumption an enterprise can make.
 
@@ -188,19 +188,17 @@ Assess governance maturity against the companion [governance maturity scoring as
 
 ## Sources
 
-- McKinsey & Company — *The State of AI* — 2025
-- McKinsey & Company — *State of AI Trust in 2026: Shifting to the Agentic Era* — 2026
-- AuditBoard — *2025 AI Governance Research* — 2025
-- IBM Security — *Cost of a Data Breach Report* — 2024
-- IBM Institute for Business Value — *CEO Study* (Chief AI Officer adoption) — 2025
-- Deloitte — *State of Generative AI in the Enterprise* — 2025
-- Federal Reserve / OCC — *SR 11-7: Guidance on Model Risk Management* — 2011 (superseded April 2026 by SR 26-2)
-- Federal Reserve — *SR 26-2: Interagency Guidance on Model Risk Management* — April 2026
-- EU — *Regulation (EU) 2024/1689 (EU AI Act)* — entered into force 1 August 2024
-- Ncontracts — *2025 Third-Party Risk Management Survey* — 2025
-- New York State Department of Financial Services — *Guidance on AI Cybersecurity Risks* — October 2024
-- New York State Department of Financial Services — *Circular Letter No. 2024-7: AI in Insurance Underwriting and Pricing* — July 2024
-- ISO/IEC 42001:2023 — *Artificial Intelligence Management Systems (AIMS)* — December 2023
-- Gartner — *Predicts 35% of Large Enterprises Will Have a CAIO by 2025* — 2024
-- Stanford HAI — *AI Index Report 2026* — 2026
-- Deloitte — *Governance of AI: A critical imperative for today's boards* — 2025
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **AuditBoard — *From blueprint to reality: Execute effective AI governance in a volatile landscape*, 2025.** 82% say they're using AI across functions, yet only 25% report that they have a fully implemented AI governance program. [View source](https://auditboard.com/resources/ebook/from-blueprint-to-reality-execute-effective-ai-governance-in-a-volatile-landscape){#ev-auditboard-blueprint-to-reality-2025-governance-gap} · verified 2026-06-21 · primary
+- **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2024*, 2024.** The global average cost of a data breach reached USD 4.88 million in 2024, a 10% increase from the prior year and the largest yearly jump since the pandemic. [View source](https://newsroom.ibm.com/2024-07-30-ibm-report-escalating-data-breach-disruption-pushes-costs-to-new-highs){#ev-ibm-cost-of-breach-2024-average-cost} · verified 2026-06-21 · primary
+- **McKinsey — *The State of AI*, 2025.** 88% of respondents report regular AI use in at least one business function, compared with 78% a year ago. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-adoption} · verified 2026-06-20 · primary
+- **McKinsey — *The State of AI*, 2024.** 78% of organizations now use AI in at least one business function. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2024-adoption} · verified 2026-06-20 · primary
+- **McKinsey — *State of AI Trust in 2026: Shifting to the Agentic Era*, 2026.** Only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance; average responsible-AI maturity rose to 2.3 in 2026 from 2.0 in 2025. [View source](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era){#ev-mckinsey-trust-2026-maturity-level-three} · verified 2026-06-21 · ⚠ secondary mirror
+- **Ncontracts — *2025 Third-Party Risk Management Survey*, 2025.** 49% of financial institutions experienced a vendor-related cyber incident in the past year. [View source](https://www.ncontracts.com/nsight-blog/ncontracts-2025-third-party-risk-management-survey){#ev-ncontracts-tprm-survey-2025-vendor-cyber-incident} · verified 2026-06-21 · primary
+- **Ncontracts — *2025 Third-Party Risk Management Survey*, 2025.** Nearly three-quarters of respondents (73%) have two or fewer full-time employees managing vendor risk, even though more than half oversee more than 300 vendors. [View source](https://www.ncontracts.com/nsight-blog/ncontracts-2025-third-party-risk-management-survey){#ev-ncontracts-tprm-survey-2025-vendor-risk-staffing} · verified 2026-06-21 · primary
+- **European Commission — *Regulatory framework on AI (Regulation (EU) 2024/1689)*, 2024.** the governance rules and the obligations for general-purpose AI models became applicable on 2 August 2025; the majority of remaining obligations, including rules for high-risk AI systems, apply from 2 August 2026. [View source](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai){#ev-ec-ai-act-2024-application-timeline} · verified 2026-06-21 · primary
+- **European Union — *Regulation (EU) 2024/1689 (AI Act), Article 99*, 2024.** administrative fines of up to 35 000 000 EUR or up to 7% of total worldwide annual turnover (whichever is higher) for prohibited practices; up to 15 000 000 EUR or 3% for breaches of operator obligations (Articles 16, 26 and others); up to 7 500 000 EUR or 1% for incorrect or misleading information. [View source](https://artificialintelligenceact.eu/article/99/){#ev-eu-ai-act-2024-article-99-penalties} · verified 2026-06-21 · primary
+- **IBM Institute for Business Value — *The CAIO Study: How Chief AI Officers deliver AI ROI (with Dubai Future Foundation and Oxford Economics)*, 2025.** 26% of organizations currently have a Chief AI Officer, up from 11% in 2023. [View source](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/chief-ai-officer){#ev-ibm-caio-study-2025-caio-adoption} · verified 2026-06-21 · ⚠ secondary mirror
+- **McKinsey — *The State of AI: How Organizations Are Rewiring to Capture Value*, 2025.** Only 28% of companies report that their CEO directly oversees AI governance (and just 17% report that their board does). [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value){#ev-mckinsey-rewiring-2025-ceo-oversight} · verified 2026-06-20 · primary
+- **Deloitte — *State of AI in the Enterprise 2026 (Agentic AI is scaling faster than guardrails)*, 2026.** By 2027, 74% of respondents expect their companies to be using AI agents at least moderately, but only 21% say their organizations have a mature governance model in place for agentic AI. [View source](https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html){#ev-deloitte-state-ai-enterprise-2026-agentic-governance-gap} · verified 2026-06-21 · primary

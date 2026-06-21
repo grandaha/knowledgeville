@@ -12,9 +12,9 @@ This assessment scores one thing: whether the **governance function** is mature 
 
 It is the diagnostic companion to [standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md) and [AI policy and acceptable use](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md). Run it to identify the weakest link before deploying AI in consequential domains.
 
-> Only about **one quarter of organizations report comprehensive AI security governance** in place; the rest rely on partial guidelines or policies still in development *(CSA and Google Cloud, 2025)*
+> Only about **a quarter of organizations (26%) report comprehensive AI security governance** in place; another **64%** have only partial guidelines or policies still in development ([Cloud Security Alliance, 2025](#ev-csa-google-state-of-ai-security-governance-2025-comprehensive-governance))
 >
-> Only **25% of organizations report a fully implemented AI governance program** despite **82% using AI across functions** — a deployment-to-oversight gap of roughly 57 percentage points *(AuditBoard, 2025)*
+> Only **25% of organizations report a fully implemented AI governance program** despite **82% using AI across functions** — a deployment-to-oversight gap of roughly 57 percentage points ([AuditBoard, 2025](#ev-auditboard-blueprint-to-reality-2025-governance-gap))
 
 This framework produces a prioritized gap list, not a score to report upward. If the result doesn't change what gets funded, what gets enforced, or what gets escalated in the next 90 days, the assessment wasn't worth running.
 
@@ -196,5 +196,7 @@ The most common failure mode: the assessment produces a score, someone presents 
 
 ## Sources
 
-- AuditBoard — *From Blueprint to Reality: Execute Effective AI Governance in a Volatile Landscape* — 2025
-- CSA and Google Cloud — *The State of AI Security and Governance* — 2025
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Cloud Security Alliance (commissioned by Google Cloud) — *The State of AI Security and Governance*, 2025.** Only 26% of organizations report having comprehensive AI security governance policies in place; another 64% say they have some guidelines or are in the process of developing them. [View source](https://cloudsecurityalliance.org/artifacts/the-state-of-ai-security-and-governance){#ev-csa-google-state-of-ai-security-governance-2025-comprehensive-governance} · verified 2026-06-21 · primary
+- **AuditBoard — *From blueprint to reality: Execute effective AI governance in a volatile landscape*, 2025.** 82% say they're using AI across functions, yet only 25% report that they have a fully implemented AI governance program. [View source](https://auditboard.com/resources/ebook/from-blueprint-to-reality-execute-effective-ai-governance-in-a-volatile-landscape){#ev-auditboard-blueprint-to-reality-2025-governance-gap} · verified 2026-06-21 · primary

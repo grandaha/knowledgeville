@@ -6,9 +6,9 @@ tags: [ai-governance, incident-response, escalation, regulatory, agentic-ai]
 timestamp: "2026-06-17"
 ---
 
-AI incidents increased 56.4% in 2024 — to 233 documented incidents — and then 55% again in 2025, reaching 362, per the Stanford HAI AI Index and the AI Incident Database. That trajectory is not a statistical blip. It reflects the real-world consequences of deploying systems at scale before the operational infrastructure to manage them is in place. Most organizations' existing incident response playbooks don't cover AI-specific failure modes, because most of those playbooks were written for a world of servers, software bugs, and data breaches.
+AI incidents increased 56.4% in 2024 — to 233 documented incidents ([Stanford HAI, 2025](#ev-stanford-hai-ai-index-2025-ai-incidents)) — and then 55% again in 2025, reaching 362 ([Stanford HAI, 2026](#ev-stanford-hai-ai-index-2026-ai-incidents)), per the AI Index and the AI Incident Database. That trajectory is not a statistical blip. It reflects the real-world consequences of deploying systems at scale before the operational infrastructure to manage them is in place. Most organizations' existing incident response playbooks don't cover AI-specific failure modes, because most of those playbooks were written for a world of servers, software bugs, and data breaches.
 
-This guide covers how to build an AI-specific incident response capability. It is meant for practitioners — the people who will actually receive the alert at 2 a.m. — not for executive briefings. See the [AI Governance and Risk core framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md) for the governance structures this playbook sits inside, and the [Acceptable Use Policy Guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md) for the policies that define what constitutes a violation in the first place.
+This guide covers how to build an AI-specific incident response capability. It is meant for practitioners — the people who will actually receive the alert at 2 a.m. — not for executive briefings. See the [AI Governance Framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md) for the governance structures this playbook sits inside, and the [Acceptable Use Policy Guide](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md) for the policies that define what constitutes a violation in the first place.
 
 ---
 
@@ -143,9 +143,7 @@ Regulatory coverage for agentic AI specifically is still developing. SR 11-7 and
 
 ## Sources
 
-- **EU AI Act** (Regulation (EU) 2024/1689), Articles 73–76: serious incident reporting obligations for high-risk AI systems. [EUR-Lex](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689)
-- **AI Incident Database (AIID)** — incident tracking database maintained by the Responsible AI Collaborative; source for incident count trends. [incidentdatabase.ai](https://incidentdatabase.ai)
-- **Stanford HAI AI Index Report 2025** — source for 2024–2025 AI incident growth statistics. [aiindex.stanford.edu](https://aiindex.stanford.edu/report/)
-- **NIST AI Risk Management Framework (AI RMF 1.0)** — GOVERN, MAP, MEASURE, and MANAGE functions provide the governance scaffolding within which incident response operates. [nist.gov/artificial-intelligence](https://www.nist.gov/artificial-intelligence)
-- **Federal Reserve SR 11-7 / SR 26-2** — Supervisory Guidance on Model Risk Management; SR 26-2 (Revised Guidance, Fed/OCC/FDIC, April 2026) modernizes model-risk-management expectations for ML-based quantitative models, while explicitly excluding generative and agentic AI from scope (a separate AI RFI is forthcoming).
-- **GDPR Article 33** — personal data breach notification to supervisory authority (72-hour requirement). [gdpr-info.eu](https://gdpr-info.eu/art-33-gdpr/)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Stanford HAI — *2025 AI Index Report (Responsible AI chapter; data from the AI Incident Database)*, 2025.** The number of AI-related incidents rose to 233 in 2024, a record high and a 56.4% increase over 2023. [View source](https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai){#ev-stanford-hai-ai-index-2025-ai-incidents} · verified 2026-06-21 · ⚠ secondary mirror
+- **Stanford HAI — *2026 AI Index Report (Responsible AI chapter; data from the AI Incident Database)*, 2026.** Documented AI incidents rose to 362 in 2025, up about 55% from 233 in 2024. [View source](https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai){#ev-stanford-hai-ai-index-2026-ai-incidents} · verified 2026-06-21 · ⚠ secondary mirror

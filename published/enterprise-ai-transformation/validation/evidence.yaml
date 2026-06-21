@@ -2617,3 +2617,207 @@
     pdf_hash:
   verified: 2026-06-21
   status: secondary-mirror
+- id: ev-pex-network-2025-ai-governance-policy
+  claim: "Share of organizations with a formal AI governance policy in place"
+  value: "43%"
+  wording: "Just 43 percent of surveyed organizations have an AI governance policy, with 25 percent still implementing one and 29 percent having none"
+  source:
+    org: PEX Network
+    report: "PEX Report 2025/26 (Global State of Process Excellence)"
+    edition: 2025
+    url: https://www.processexcellencenetwork.com/business-transformation/reports/pex-report-global-state-process-excellence
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-deloitte-governance-ai-2025-board-knowledge-gap
+  claim: "Share of boards with 'limited to no knowledge or experience' with AI"
+  value: "66% (improved from 79% prior survey)"
+  wording: "While two-thirds of respondents (66%) say their boards still have 'limited to no knowledge or experience' with AI, this number is an improvement over the 79% in the previous survey"
+  source:
+    org: Deloitte Global
+    report: "Governance of AI: A critical imperative for today's boards (2nd edition)"
+    edition: 2025
+    url: https://www.deloitte.com/global/en/issues/trust/progress-on-ai-in-the-boardroom-but-room-to-accelerate.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-sp-global-vote-2025-abandoned-ai-initiatives
+  claim: "Share of companies abandoning most of their AI initiatives, vs the prior survey wave"
+  value: "42% (up from 17%)"
+  wording: "The proportion of companies that abandon most of their AI initiatives has increased from 17% to 42%, with the average organization scrapping 46% of its proof-of-concept projects prior to production"
+  source:
+    org: S&P Global Market Intelligence
+    report: "Generative AI shows rapid growth but yields mixed results (Voice of the Enterprise: AI & Machine Learning, Use Cases)"
+    edition: 2025
+    url: https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/generative-ai-shows-rapid-growth-but-yields-mixed-results
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-ibm-cost-of-breach-2024-average-cost
+  claim: "Global average cost of a data breach in 2024"
+  value: "$4.88 million"
+  wording: "The global average cost of a data breach reached USD 4.88 million in 2024, a 10% increase from the prior year and the largest yearly jump since the pandemic"
+  source:
+    org: IBM (Ponemon Institute)
+    report: "Cost of a Data Breach Report 2024"
+    edition: 2024
+    url: https://newsroom.ibm.com/2024-07-30-ibm-report-escalating-data-breach-disruption-pushes-costs-to-new-highs
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-mckinsey-trust-2026-maturity-level-three
+  claim: "Organizations reporting maturity levels of 3 or higher in strategy, governance, and agentic AI governance"
+  value: "about one-third"
+  wording: "Only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance; average responsible-AI maturity rose to 2.3 in 2026 from 2.0 in 2025"
+  source:
+    org: McKinsey
+    report: "State of AI Trust in 2026: Shifting to the Agentic Era"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-ncontracts-tprm-survey-2025-vendor-cyber-incident
+  claim: "Share of financial institutions that experienced a vendor-related cyber incident in the prior year"
+  value: "49%"
+  wording: "49% of financial institutions experienced a vendor-related cyber incident in the past year"
+  source:
+    org: Ncontracts
+    report: "2025 Third-Party Risk Management Survey"
+    edition: 2025
+    url: https://www.ncontracts.com/nsight-blog/ncontracts-2025-third-party-risk-management-survey
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-ncontracts-tprm-survey-2025-vendor-risk-staffing
+  claim: "Share of organizations with two or fewer FTEs managing vendor risk, vs share overseeing 300+ vendors"
+  value: "73% have two or fewer FTEs; more than half oversee 300+ vendors"
+  wording: "Nearly three-quarters of respondents (73%) have two or fewer full-time employees managing vendor risk, even though more than half oversee more than 300 vendors"
+  source:
+    org: Ncontracts
+    report: "2025 Third-Party Risk Management Survey"
+    edition: 2025
+    url: https://www.ncontracts.com/nsight-blog/ncontracts-2025-third-party-risk-management-survey
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-csa-google-state-of-ai-security-governance-2025-comprehensive-governance
+  claim: "Share of organizations reporting comprehensive AI security governance policies in place"
+  value: "26% comprehensive; another 64% partial/in-development"
+  wording: "Only 26% of organizations report having comprehensive AI security governance policies in place; another 64% say they have some guidelines or are in the process of developing them"
+  source:
+    org: Cloud Security Alliance (commissioned by Google Cloud)
+    report: "The State of AI Security and Governance"
+    edition: 2025
+    url: https://cloudsecurityalliance.org/artifacts/the-state-of-ai-security-and-governance
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-fenergo-financial-penalties-2024-us-regulators
+  claim: "Total AML/financial-crime penalties issued by U.S. regulators against financial institutions in 2024"
+  value: "more than $4.3 billion (95% of the $4.6B global total)"
+  wording: "In 2024, U.S. regulators issued over $4.3 billion in fines, with North America accounting for 95% of the $4.6 billion in global financial penalties"
+  source:
+    org: Fenergo
+    report: "Financial-crime / AML enforcement penalties study (full-year 2024)"
+    edition: 2024
+    url: https://resources.fenergo.com/newsroom/fenergo-study-regulatory-penalties-in-north-america-account-for-95-of-global-financial-penalties-in-2024
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-eu-ai-act-2024-article-99-penalties
+  claim: "EU AI Act administrative fine tiers under Article 99"
+  value: "EUR 35M / 7% (Art 5 prohibited); EUR 15M / 3% (most operator obligations incl. high-risk Art 16/26); EUR 7.5M / 1% (incorrect info); whichever is higher"
+  wording: "administrative fines of up to 35 000 000 EUR or up to 7% of total worldwide annual turnover (whichever is higher) for prohibited practices; up to 15 000 000 EUR or 3% for breaches of operator obligations (Articles 16, 26 and others); up to 7 500 000 EUR or 1% for incorrect or misleading information"
+  source:
+    org: European Union
+    report: "Regulation (EU) 2024/1689 (AI Act), Article 99"
+    edition: 2024
+    url: https://artificialintelligenceact.eu/article/99/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-mitsmr-cisr-2025-ai-savvy-boards-roe
+  claim: "Return-on-equity advantage of companies with AI-savvy boards, and the share of boards that qualify"
+  value: "+10.9 pp ROE above industry average; 26% of companies qualify"
+  wording: "Companies with digitally and AI-savvy boards averaged 10.9 percentage points above industry average in return on equity; only 26% of companies clear the bar for 'digitally and AI savvy' boards"
+  source:
+    org: MIT Sloan Management Review / MIT CISR
+    report: "AI-Savvy Boards Drive Superior Performance"
+    edition: 2025
+    url: https://sloanreview.mit.edu/article/ai-savvy-boards-drive-superior-performance/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-auditboard-blueprint-to-reality-2025-governance-gap
+  claim: "Organizations using AI across functions vs those with a fully implemented AI governance program"
+  value: "82% use AI across functions; 25% have a fully implemented AI governance program"
+  wording: "82% say they're using AI across functions, yet only 25% report that they have a fully implemented AI governance program"
+  source:
+    org: AuditBoard
+    report: "From blueprint to reality: Execute effective AI governance in a volatile landscape"
+    edition: 2025
+    url: https://auditboard.com/resources/ebook/from-blueprint-to-reality-execute-effective-ai-governance-in-a-volatile-landscape
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-ibm-caio-study-2025-caio-adoption
+  claim: "Organizations that currently have a Chief AI Officer, vs the level two years earlier"
+  value: "26%, up from 11% in 2023"
+  wording: "26% of organizations currently have a Chief AI Officer, up from 11% in 2023"
+  source:
+    org: IBM Institute for Business Value
+    report: "The CAIO Study: How Chief AI Officers deliver AI ROI (with Dubai Future Foundation and Oxford Economics)"
+    edition: 2025
+    url: https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/chief-ai-officer
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-deloitte-state-ai-enterprise-2026-agentic-governance-gap
+  claim: "Agentic AI deployment intent vs share with a mature governance model"
+  value: "~74% expect agent use within two years; only 21% have mature governance"
+  wording: "By 2027, 74% of respondents expect their companies to be using AI agents at least moderately, but only 21% say their organizations have a mature governance model in place for agentic AI"
+  source:
+    org: Deloitte
+    report: "State of AI in the Enterprise 2026 (Agentic AI is scaling faster than guardrails)"
+    edition: 2026
+    url: https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-mckinsey-state-of-ai-early-2024-rai-council
+  claim: "Organizations with an enterprise-wide council or board authorized to make decisions on responsible AI governance"
+  value: "18%"
+  wording: "Just 18 percent of organizations say they have an enterprise-wide council or board with the authority to make decisions involving responsible AI governance"
+  source:
+    org: McKinsey
+    report: "The state of AI in early 2024: Gen AI adoption spikes and starts to generate value"
+    edition: 2024
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-stanford-hai-ai-index-2025-ai-incidents
+  claim: "Documented AI incidents in 2024 and YoY growth (AI Incident Database)"
+  value: "233 incidents in 2024, +56.4% over 2023"
+  wording: "The number of AI-related incidents rose to 233 in 2024, a record high and a 56.4% increase over 2023"
+  source:
+    org: Stanford HAI
+    report: "2025 AI Index Report (Responsible AI chapter; data from the AI Incident Database)"
+    edition: 2025
+    url: https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-stanford-hai-ai-index-2026-ai-incidents
+  claim: "Documented AI incidents in 2025 and YoY growth (AI Incident Database)"
+  value: "362 incidents in 2025, +55% over 2024 (from 233)"
+  wording: "Documented AI incidents rose to 362 in 2025, up about 55% from 233 in 2024"
+  source:
+    org: Stanford HAI
+    report: "2026 AI Index Report (Responsible AI chapter; data from the AI Incident Database)"
+    edition: 2026
+    url: https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror

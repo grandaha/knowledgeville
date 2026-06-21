@@ -12,11 +12,10 @@ Access and integration is the bridge between data that exists and data that AI c
 
 The problem isn't storage. It's fragmentation. CRM data in one system, support tickets in another, transaction records in a third — each owned by a different team, each in a different format, each requiring a separate integration effort. AI that needs a unified view of a customer, product, or process hits a wall at every system boundary.
 
-> **86%** of organizations are prioritizing data unification efforts for AI readiness *(Dremio, 2025)*
-> **68%** of data leaders cite data silos as their top concern — up 7% from the prior year *(DATAVERSITY, 2024)*
-> **\$17.58 billion** — size of the data integration market in 2025; projected \$33.24 billion by 2030 *(Rapidi, 2025)*
-> **40%** of relevant customer interactions missed by a retail AI model because chat and email data lived in isolated systems *(Quinnox, 2026)*
-> **60%** of AI projects abandoned through 2026 due to inadequate data foundations — not model failures *(Gartner)*
+> **86%** of organizations are prioritizing data unification efforts for AI readiness ([Dremio, 2025](#ev-dremio-2025-data-unification))
+> **68%** of data leaders cite data silos as their top concern — up 7% from the prior year ([DATAVERSITY, 2024](#ev-dataversity-2024-data-silos))
+> **\$17.58 billion** — size of the data integration market in 2025; projected \$33.24 billion by 2030 ([MarketsandMarkets, 2025](#ev-marketsandmarkets-2025-data-integration-market))
+> **60%** of AI projects abandoned through 2026 due to inadequate data foundations — not model failures ([Gartner, 2025](#ev-gartner-ai-ready-data-2025-abandonment))
 
 The 2026 consensus from Deloitte's State of AI in the Enterprise: leaders are enabling modular, cloud-native platforms that securely connect, govern, and integrate all data types — breaking down silos with domain-owned data products while enforcing enterprise standards for quality, interoperability, and lineage.
 
@@ -194,13 +193,9 @@ Agents introduce access requirements that traditional integration architectures 
 
 ## Sources
 
-- IBM — AI-Ready Data (March 2026)
-- Dremio — The State of Data Unification and AI Readiness (March 2025)
-- DATAVERSITY — Data Strategy Trends in 2025: From Silos to Unified Enterprise Value (December 2024)
-- Deloitte — State of AI in the Enterprise 2026
-- Quinnox — Data Governance for AI in 2025 (March 2026)
-- Trigyn — Data Engineering Trends 2026 for AI-Driven Enterprises
-- Rapidi / ERP Software Blog — Data Integration in 2026 (December 2025)
-- Tredence — Unified Data Platform for AI (April 2026)
-- Credencys — AI-Ready Data Infrastructure for Scalable Enterprise AI (May 2026)
-- Gartner — 2025 Hype Cycle for Data Management
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Dremio — *The State of Data Unification, AI Readiness, and Governance in 2025*, 2025.** 86% of organizations plan to prioritize data unification efforts in the next year. [View source](https://www.dremio.com/newsroom/new-survey-reveals-86-of-organizations-are-prioritizing-data-unification-for-ai-readiness/){#ev-dremio-2025-data-unification} · verified 2026-06-20 · primary
+- **DATAVERSITY — *Trends in Data Management 2024*, 2024.** 68% of respondents citing data silos as their top concern - up 7% from the previous year. [View source](https://www.dataversity.net/articles/data-strategy-trends-in-2025-from-silos-to-unified-enterprise-value/){#ev-dataversity-2024-data-silos} · verified 2026-06-20 · ⚠ secondary mirror
+- **MarketsandMarkets — *Data Integration Market - Global Forecast to 2030*, 2025.** the data integration market is slated to expand from USD 17.58 billion in 2025 to USD 33.24 billion by 2030, at a CAGR of 13.6%. [View source](https://www.marketsandmarkets.com/PressReleases/data-integration.asp){#ev-marketsandmarkets-2025-data-integration-market} · verified 2026-06-20 · ⚠ secondary mirror
+- **Gartner — *Lack of AI-Ready Data Puts AI Projects at Risk*, 2025.** Through 2026, organizations will abandon 60% of AI projects unsupported by AI-ready data. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk){#ev-gartner-ai-ready-data-2025-abandonment} · verified 2026-06-20 · primary

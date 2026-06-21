@@ -10,10 +10,9 @@ timestamp: "2026-06-12"
 
 In traditional analytics, poor data quality leads to bad reports. In AI, it leads to something worse: models that are *confidently and systematically wrong* — and that scale those errors across every decision they touch. The failure mode isn't a wrong number in a cell; it's a biased hiring algorithm, a fraud model that misses an emerging attack pattern, or a clinical decision tool that underperforms for minority populations.
 
-> **96%** of organizations encounter data quality problems when training AI models *(Dimensional Research, 2019)*
-> **85%** of AI project failures are attributable to poor or unavailable data *(Gartner, 2025)*
-> **70–85%** of AI project failures are traceable to data-related issues *(industry composite)*
-> **80%** of ML project effort is consumed by label noise, inconsistent tagging, and missing context *(Label Your Data / IBM, 2025)*
+> **96%** of organizations encounter data quality problems when training AI models ([Dimensional Research, 2019](#ev-dimensional-research-2019-data-quality-ai))
+> **More than 80%** of AI projects fail — about twice the failure rate of IT projects that don't involve AI ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
+> **80%** of ML project effort is consumed by label noise, inconsistent tagging, and missing context ([Cognilytica, 2020](#ev-cognilytica-2020-ml-effort-data-prep))
 
 The core problem: enterprise data infrastructure was designed for reporting and transactions — not for AI training. Most data lakes were built with volume as the primary goal; quality, organization, and context were afterthoughts. AI requires all three.
 
@@ -104,7 +103,7 @@ Beyond the standard dimensions, AI introduces failure modes that don't have dire
 
 Supervised learning depends on accurately labeled training data, but humans make labeling mistakes. They disagree on subjective categories, miss subtle distinctions, and introduce their own biases. Even benchmark datasets like ImageNet contain a significant number of mislabeled samples.
 
-> Label noise substantially degrades model performance when more than 20% of training data is mislabeled *(Budach et al., 2022)*
+> Label noise substantially degrades model performance when more than 20% of training data is mislabeled ([Budach et al., 2022](#ev-budach-2022-label-noise-degradation))
 
 Sources of label noise:
 
@@ -119,7 +118,6 @@ Mitigation requires inter-annotator agreement scoring, confidence-weighted train
 
 Training datasets often underrepresent certain populations, scenarios, or edge cases. Models perform well on majority groups but fail for minorities or rare events.
 
-> 61% of organizations cite bias detection as a critical gap in their AI governance programs *(DATAVERSITY, 2026, as cited by Atlan)*
 > A Penn State study found that most users cannot identify bias in AI systems, even when told where it originates
 
 Bias manifests through:
@@ -186,7 +184,7 @@ Quality failures must route to named owners for remediation — not to a generic
 | **Databand (IBM)** | Pipeline observability | Airflow/Spark pipeline health; upstream/downstream impact tracking |
 | **Deequ (AWS)** | Open-source (Spark) | Large-scale Spark-based dataset unit testing |
 
-**Key trend:** The convergence of data quality testing and data observability is creating a new expectation: reliable, transparent data pipelines built the same way modern software systems are built — with automated testing, version control, and continuous monitoring. *(DataKitchen, 2026)*
+**Key trend:** The convergence of data quality testing and data observability is creating a new expectation: reliable, transparent data pipelines built the same way modern software systems are built — with automated testing, version control, and continuous monitoring. ([DataKitchen, 2026](#ev-datakitchen-2026-dq-observability-convergence))
 
 ---
 
@@ -231,14 +229,10 @@ A score below 70 on any single dimension should block a dataset from production 
 
 ## Sources
 
-- Atlan — *AI Training Data Quality: Dimensions, Validation & Best Practices* (March 2026)
-- IBM — *Data Quality Issues and Challenges* (March 2026)
-- Monte Carlo — *AI Data Quality: Why Getting It Right Is Non-Negotiable* (December 2025)
-- DataKitchen — *The 2026 Open-Source Data Quality and Data Observability Landscape* (October 2025)
-- DATAVERSITY — *Data Quality Top Challenge in AI Governance* (2026) — cited via Atlan
-- Gartner — *2025 AI research: 85% of AI project failures trace to data quality issues*
-- IDC — *2026 CIO Agenda Predictions*
-- Label Your Data / IBM — *AI Training Data Sources and Challenges* (2025–2026)
-- EWSolutions — *Data Quality Framework: A Step-By-Step Guide* (March 2026)
-- Budach et al. — *Label-Noise Learning with Intrinsically Long-Tailed Data*, arXiv (2022)
-- Northcutt et al. — *Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks* (2021)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Dimensional Research (commissioned by Alegion) — *Artificial Intelligence and Machine Learning Projects Are Obstructed by Data Issues*, 2019.** 96% of enterprises run into problems with data quality, data labeling required to train AI, and building model confidence. [View source](https://3971219.fs1.hubspotusercontent-na2.net/hubfs/3971219/Survey%20Assets%201905/Dimensional%20Research%20Machine%20Learning%20PPT%20Report%20FINAL.pdf){#ev-dimensional-research-2019-data-quality-ai} · verified 2026-06-20 · ⚠ secondary mirror
+- **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
+- **Cognilytica — *Data Preparation & Labeling for AI*, 2020.** as much as 80% of machine learning project time is spent on aggregating, cleaning, labeling, and augmenting machine learning model data. [View source](https://medium.com/cognilytica/data-preparation-labeling-for-ai-2020-b512a5ed777c){#ev-cognilytica-2020-ml-effort-data-prep} · verified 2026-06-20 · ⚠ secondary mirror
+- **Budach, Feuerpfeil, Ihde, Nathansen, Noack, Patzlaff, Naumann & Harmouch — *The Effects of Data Quality on Machine Learning Performance on Tabular Data*, 2022.** up to 20% of training labels could be flipped without performance losses of no more than 10% in F1-score. [View source](https://arxiv.org/abs/2207.14529){#ev-budach-2022-label-noise-degradation} · verified 2026-06-20 · primary
+- **DataKitchen — *The 2026 Open-Source Data Quality and Data Observability Landscape*, 2026.** the convergence of data quality testing and data observability is creating a new expectation: reliable, transparent data pipelines built the same way modern software systems ensure reliability. [View source](https://datakitchen.io/blog/the-2026-open-source-data-quality-and-data-observability-landscape/){#ev-datakitchen-2026-dq-observability-convergence} · verified 2026-06-20 · primary

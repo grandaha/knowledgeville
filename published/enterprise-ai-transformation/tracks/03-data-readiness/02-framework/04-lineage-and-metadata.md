@@ -14,11 +14,8 @@ Without lineage, you can't answer the questions that matter most when AI goes wr
 
 Without metadata, you can't answer the questions that matter most before AI starts: What does this field actually mean? Who owns it? When was it last updated? Is its quality sufficient for this use case?
 
-> **54%** of business leaders aren't totally confident the data they need is even accessible *(Salesforce State of Data & Analytics, 2025)*
-> **70%** faster delivery of new data assets by organizations using active metadata analytics *(Gartner, 2025)*
-> **60%** of large enterprises will deploy data lineage tools by 2026, up from 20% in 2023 *(Gartner)*
-> **90%** reduction in data discovery time with enterprise catalog platforms *(Atlan customer data, 2025)*
-> **30–50%** decrease in data discovery requests to engineering teams with active metadata *(Atlan customer data, 2025)*
+> **54%** of business leaders aren't totally confident the data they need is even accessible ([Salesforce, 2023](#ev-salesforce-state-data-analytics-2023-accessibility))
+> **70%** faster delivery of new data assets by organizations using active metadata analytics ([Gartner, 2022](#ev-gartner-active-metadata-2025-delivery))
 
 The 2026 consensus: organizations getting AI right are not treating lineage as a compliance checkbox. They are treating it as the infrastructure that makes everything else function. By 2026, most enterprises have realized that AI success depends far more on data engineering discipline than on model selection.
 
@@ -240,16 +237,7 @@ See the Glossary page for definitions of: **Technical Lineage, Business Lineage,
 
 ## Sources
 
-- Decube — *Data Lineage: Concepts, Types, and Why It's the Foundation of AI-Ready Data* (April 2026)
-- Atlan — *AI-Ready Data Lineage: Activate Trust & Context* (August 2025)
-- Atlan — *Active Metadata: The Complete 2026 Guide* (April 2026)
-- Atlan — *Data Catalog for AI: Capabilities, Uses & Tooling* (March 2026)
-- Atlan — *9 Best Data Lineage Tools in 2026* (November 2025)
-- Alation — *Best Data Lineage Tools Compared 2026* (September 2025)
-- OvalEdge — *Metadata Management Best Practices: 2026 Enterprise Guide*
-- OvalEdge — *Data Lineage Best Practices 2026: Accuracy and Compliance*
-- Coalesce — *Metadata Management: Guide to Data Governance & AI Readiness* (February 2026)
-- Agility at Scale — *Data Lineage and Metadata Management: A Complete Guide* (March 2026)
-- Gartner — *Magic Quadrant for D&A Governance Platforms* (2026)
-- Gartner — *Critical Capabilities for Metadata Management* (2025)
-- Salesforce — *State of Data & Analytics 2025*
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Salesforce — *State of Data and Analytics (2nd Edition)*, 2023.** 54% of business leaders aren't totally confident the data they need is even accessible. [View source](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/research/salesforce-state-of-data-and-analytics-2nd-edition.pdf){#ev-salesforce-state-data-analytics-2023-accessibility} · verified 2026-06-20 · ⚠ secondary mirror
+- **Gartner — *Market Guide for Active Metadata Management (doc ID 4004082; figure restated in later Gartner D&A research)*, 2022.** organizations that adopt active metadata across their data management environment will decrease the time to delivery of new data assets to users by as much as 70%. [View source](https://www.alation.com/blog/active-metadata/){#ev-gartner-active-metadata-2025-delivery} · verified 2026-06-20 · ⚠ secondary mirror

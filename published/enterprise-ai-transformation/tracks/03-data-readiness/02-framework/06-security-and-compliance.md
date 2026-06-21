@@ -12,12 +12,11 @@ Security and compliance used to be the last layer applied to AI systems — a re
 
 The 2026 reality: organizations that don't build security and compliance into AI infrastructure from day one are not just taking on risk — they are accumulating debt that compounds with every new AI deployment.
 
-> **78%** of CISOs report significant impact from AI-powered cyber threats *(Darktrace, 2025)*
-> **93%** expect daily AI-powered attacks within the next year *(Darktrace, 2025)*
-> **97%** of organizations that experienced AI-related breaches lacked adequate AI security controls *(IBM, 2025)*
+> **78%** of CISOs report significant impact from AI-powered cyber threats ([Darktrace, 2025](#ev-darktrace-2025-ciso-ai-threat-impact))
+> **97%** of organizations that experienced AI-related breaches lacked adequate AI security controls ([IBM, 2025](#ev-ibm-2025-ai-breaches-controls))
 > **€7.1 billion** in cumulative GDPR fines since 2018 — €1.2 billion in 2025 alone
 > **131** AI-related laws passed by US states in 2024, more than double the previous year
-> **50%** of world governments expected to enforce AI laws by 2026 *(Gartner)*
+> **50%** of world governments expected to enforce AI laws by 2026 ([Gartner, 2024](#ev-gartner-ai-laws-2026-enforcement))
 
 Check Point's 2026 Tech Tsunami report identifies prompt injection and data poisoning as the "new zero-day" threats in AI systems — attacks that blur the line between a security vulnerability and misinformation, subverting an organization's AI logic without ever touching traditional IT infrastructure.
 
@@ -240,18 +239,8 @@ See the Glossary page for definitions of: **Data Poisoning, Model Inversion, Mem
 
 ## Sources
 
-- Lakera — *Introduction to Data Poisoning: A 2026 Perspective* (2026)
-- Snowflake — *What Is AI Data Security? Threats, Controls & Best Practices* (April 2026)
-- AccuKnox — *AI Security and Governance Guide 2026* (February 2026)
-- TTMS — *Training Data Poisoning: The Invisible Cyber Threat of 2026* (January 2026)
-- Hyperproof — *Data Protection Strategies for 2026: Zero Trust and AI Security* (January 2026)
-- Kiteworks — *Data Privacy in 2026: What the Regulatory Surge Means for Your Data* (March 2026)
-- Kiteworks — *AI Regulation 2026: 10 Critical Compliance Risks* (January 2026)
-- Secure Privacy — *Privacy Laws 2026: Global Changes, Enforcement & Compliance Guide* (April 2026)
-- SentinelOne — *PII Security in the Age of AI: Best Practices* (January 2026)
-- O'Melveny — *2026 Data Security and Privacy Compliance Checklist* (April 2026)
-- Darktrace — *2025 CISO Survey*
-- NSA/CISA/FBI — *AI Data Security Joint Cybersecurity Information Sheet* (May 2025)
-- OWASP — *GenAI Top 10 (2025)*
-- arXiv — *Security Considerations for Multi-agent Systems* (2026)
-- Check Point — *2026 Tech Tsunami Report*
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Darktrace — *State of AI Cybersecurity 2025*, 2025.** 78% of CISOs say that AI-powered threats are having a significant impact on their organizations, a 5% increase from 2024. [View source](https://www.darktrace.com/news/new-report-finds-that-78-of-chief-information-security-officers-globally-are-seeing-a-significant-impact-from-ai-powered-cyber-threats){#ev-darktrace-2025-ciso-ai-threat-impact} · verified 2026-06-20 · primary
+- **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2025*, 2025.** 13% of organizations reported breaches of AI models or applications, 97% of which reported lacking proper AI access controls. [View source](https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls){#ev-ibm-2025-ai-breaches-controls} · verified 2026-06-20 · primary
+- **Gartner — *AI Regulations to Drive Responsible AI Initiatives*, 2024.** By 2026, 50% of governments worldwide will enforce the use of responsible AI through regulations, policies and the need for data privacy. [View source](https://www.gartner.com/en/newsroom/press-releases/2024-02-29-ai-regulations-to-drive-responsible-ai-initiatives){#ev-gartner-ai-laws-2026-enforcement} · verified 2026-06-20 · primary

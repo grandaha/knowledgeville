@@ -12,10 +12,8 @@ Infrastructure readiness is the most skipped step in enterprise AI adoption — 
 
 The pattern is consistent: pilots succeed in controlled environments. Production fails because infrastructure wasn't built for AI-scale concurrency, real-time data demands, or the operational complexity of monitoring probabilistic systems that can degrade silently.
 
-> **55%** of companies cite lack of adequate MLOps practices as a major obstacle to deploying AI models in production *(2025 systematic literature review, 45 peer-reviewed studies)*
-> **85%** of AI models never reach production — and of those that do, most degrade silently because no operational system is watching them *(Techverx, 2026)*
-> Data infrastructure investments deliver higher ROI than new AI models for most enterprises *(DataArt 2026 Trends Report)*
-> **40%** cost reduction in ML lifecycle management reported by companies implementing proper MLOps *(Azumo, 2026 — vendor-reported; independently corroborated by 30–40% compute savings figures across multiple sources)*
+> **55%** of companies cite lack of adequate MLOps practices as a major obstacle to deploying AI models in production ([Zarour et al., 2025](#ev-mlops-systematic-review-2025-adoption-barrier))
+> Data infrastructure investments deliver higher ROI than new AI models for most enterprises ([DataArt, 2026](#ev-dataart-2026-infra-roi))
 
 The infrastructure gap is not a technology problem. It is a sequencing problem. Organizations that treat infrastructure as a prerequisite — not an afterthought — are the ones that move from pilot to production.
 
@@ -273,15 +271,7 @@ See the Glossary page for definitions of: **MLOps, LLMOps, AgentOps, Experiment 
 
 ## Sources
 
-- Techverx — *What Is LLMOps? Managing Large Language Models in Production* (May 2026)
-- Azumo — *Top 10 MLOps Platforms for Scalable AI in Summer 2026* (April 2026)
-- Dataiku — *Enterprise Machine Learning Platforms: A Buyer's Guide for 2026* (March 2026)
-- Pluralsight — *AIOps vs. MLOps vs. LLMOps: Navigating the Future of AI Operations*
-- MLflow — *What Is LLMOps?*
-- AIMUltiple — *Top LLMOps Tools & Compare Them to MLOps*
-- Sanjeeb Panda / Medium — *The Complete MLOps/LLMOps Roadmap for 2026* (January 2026)
-- NJ Raman / Medium — *The Complete Guide to MLOps, AIOps, LLMOps, and AgentOps* (December 2025)
-- Kellton — *AI Tech Stack 2026: Frameworks, MLOps & IDEs Guide*
-- RTS Labs — *Enterprise AI Roadmap: The Complete 2026 Guide* (February 2026)
-- DataArt — *2026 Data & AI Trends Report* (November 2025)
-- Space-O — *AI Implementation Roadmap: 6-Phase Guide for 2026*
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Zarour, Alzabut & Al-Sarayreh — *MLOps best practices, challenges and maturity models: A systematic literature review (Information and Software Technology, 45 studies)*, 2025.** 55% of companies cite the lack of adequate MLOps practices as a major obstacle to deploying ML models. [View source](https://doi.org/10.1016/j.infsof.2025.107733){#ev-mlops-systematic-review-2025-adoption-barrier} · verified 2026-06-20 · ⚠ secondary mirror
+- **DataArt — *2026 Data & AI Trends Report*, 2026.** The highest-ROI technology investment right now is data infrastructure, not the latest AI model. [View source](https://www.dataart.com/){#ev-dataart-2026-infra-roi} · verified 2026-06-20 · ⚠ secondary mirror

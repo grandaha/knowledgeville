@@ -12,9 +12,9 @@ timestamp: "2026-06-12"
 
 Most organizations treat AI as a modeling problem. It is a data problem. The same finding recurs across every section of this knowledge base: AI initiatives rarely fail because the models are inadequate — they fail because the data underneath them was never ready.
 
-> **70–85%** of AI project failures trace to data issues, not model failures
-> Only **29%** of enterprises have data that meets the quality, access, and security bar for scaling GenAI *(IBM IBV, 2024)*
-> Only **16%** of AI initiatives reach enterprise scale *(IBM IBV CEO Study, 2025)*
+> **More than 80%** of AI projects fail — and the root cause is data readiness, not model quality ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
+> Only **29%** of enterprises have data that meets the quality, access, and security bar for scaling GenAI ([IBM, 2024](#ev-ibm-ibv-2024-data-readiness-bar))
+> Only **16%** of AI initiatives reach enterprise scale ([IBM, 2025](#ev-ibm-ibv-ceo-2025-enterprise-scale))
 
 ## The foundation has six components
 
@@ -30,7 +30,7 @@ Unaddressed *data debt* behaves like financial debt: it accrues interest. Every 
 
 ## The economic case is concrete
 
-Poor data quality already costs an estimated **\$3.1T** annually in the US economy, and roughly **60%** of AI projects are abandoned over data failures *(Gartner)*. Mature foundations pay back the other direction: up to **29%** better AI ROI from paying down technical debt *(IBM)*, **70%** faster data delivery with active metadata *(Gartner)*, and **40%** lower MLOps cost at maturity. Readiness investment gets approved when it is framed as the prerequisite to an already-funded AI initiative — not as standalone infrastructure spend.
+Poor data quality already costs an estimated **\$3.1T** annually in the US economy ([IBM, 2016](#ev-data-quality-cost-3-1-trillion-us)), and roughly **60%** of AI projects are abandoned over data failures ([Gartner, 2025](#ev-gartner-ai-ready-data-2025-abandonment)). Mature foundations pay back the other direction: up to **29%** better AI ROI from paying down technical debt ([IBM, 2025](#ev-ibm-technical-debt-2025-ai-roi)), **70%** faster data delivery with active metadata ([Gartner, 2022](#ev-gartner-active-metadata-2025-delivery)), and **40%** lower MLOps cost at maturity. Readiness investment gets approved when it is framed as the prerequisite to an already-funded AI initiative — not as standalone infrastructure spend.
 
 ## What leadership should take from this
 
@@ -45,3 +45,15 @@ The rest of this knowledge base operationalizes each point: the **Core Framework
 ---
 
 *Last updated: June 2026 · One Step Labs*
+
+## Sources
+
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
+- **IBM Institute for Business Value — *What Is AI-Ready Data? (citing a 2024 IBV survey)*, 2024.** only 29% of technology leaders strongly agree that their enterprise data meets the quality, accessibility and security standards needed to efficiently scale generative AI. [View source](https://www.ibm.com/think/topics/ai-ready-data){#ev-ibm-ibv-2024-data-readiness-bar} · verified 2026-06-20 · primary
+- **IBM Institute for Business Value — *2025 CEO Study (CEOs Double Down on AI While Navigating Enterprise Hurdles)*, 2025.** only 25% of AI initiatives have delivered expected ROI over the last few years, and only 16% have scaled enterprise wide. [View source](https://newsroom.ibm.com/2025-05-06-ibm-study-ceos-double-down-on-ai-while-navigating-enterprise-hurdles){#ev-ibm-ibv-ceo-2025-enterprise-scale} · verified 2026-06-20 · primary
+- **IBM — *Bad Data Costs the U.S. $3 Trillion Per Year (Harvard Business Review)*, 2016.** IBM estimates that poor data quality costs the US economy around $3.1 trillion per year (popularized via Thomas C. Redman, Bad Data Costs the U.S. $3 Trillion Per Year, Harvard Business Review). [View source](https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year){#ev-data-quality-cost-3-1-trillion-us} · verified 2026-06-20 · ⚠ secondary mirror
+- **Gartner — *Lack of AI-Ready Data Puts AI Projects at Risk*, 2025.** Through 2026, organizations will abandon 60% of AI projects unsupported by AI-ready data. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk){#ev-gartner-ai-ready-data-2025-abandonment} · verified 2026-06-20 · primary
+- **IBM Institute for Business Value — *A practical approach to boosting your AI ROI*, 2025.** organizations factoring technical debt into AI planning achieve up to 29% higher ROI. [View source](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/technical-debt-ai-roi){#ev-ibm-technical-debt-2025-ai-roi} · verified 2026-06-20 · primary
+- **Gartner — *Market Guide for Active Metadata Management (doc ID 4004082; figure restated in later Gartner D&A research)*, 2022.** organizations that adopt active metadata across their data management environment will decrease the time to delivery of new data assets to users by as much as 70%. [View source](https://www.alation.com/blog/active-metadata/){#ev-gartner-active-metadata-2025-delivery} · verified 2026-06-20 · ⚠ secondary mirror

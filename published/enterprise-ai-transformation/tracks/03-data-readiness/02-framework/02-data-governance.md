@@ -12,9 +12,9 @@ Traditional data governance was built to manage structured enterprise data for r
 
 AI governance must answer all of those questions *and* a new set that didn't exist before: Where did the training data come from? Was it ethically sourced and legally permissioned? Does the model reproduce or amplify bias present in that data? Can we explain why the model made a specific decision? Who is accountable when an automated decision causes harm?
 
-> **51%** of CDOs ranked data governance as their top priority in 2025 *(Deloitte CDO Survey, 2025)*
-> **50%** of organizations will implement zero-trust data governance postures by 2028, driven by the proliferation of AI-generated data *(Gartner, January 2026)*
-> **77%** of organizations are actively building AI governance programs — but only **36%** have adopted a formal framework *(Knostic / GAICC, 2025)*
+> **51%** of CDOs ranked data governance as their top priority in 2025 ([Deloitte, 2025](#ev-deloitte-cdo-survey-2025-governance-priority))
+> **50%** of organizations will implement zero-trust data governance postures by 2028, driven by the proliferation of AI-generated data ([Gartner, 2026](#ev-gartner-zero-trust-data-governance-2028))
+> **77%** of organizations are actively building or refining AI governance programs ([IAPP, 2025](#ev-iapp-2025-ai-governance-building)) — but only **36%** have adopted a formal governance framework ([Pacific AI, 2025](#ev-pacific-ai-2025-formal-framework))
 
 The gap between intent and implementation is the core governance problem. Organizations that embed governance into their AI strategy now will have a structural advantage as regulation tightens. Those that don't are accumulating AI-shaped technical and legal debt.
 
@@ -215,17 +215,9 @@ See the Glossary page for definitions of: **Data Owner, Data Steward, Data Custo
 
 ## Sources
 
-- OvalEdge — *AI Data Governance: Compliance, Risk & Trust* (April 2026)
-- Quinnox — *Data Governance for AI in 2025: Challenges, Best Practices and Solutions* (March 2026)
-- Knostic — *AI Data Governance Guide for Enterprise Teams* (January 2026)
-- TechTarget — *Data Governance for AI Requires a Cross-Functional Approach* (April 2026)
-- EC Council — *EU AI Act vs NIST AI RMF vs ISO/IEC 42001* (February 2026)
-- GAICC — *Global AI Governance Comparison 2026* (April 2026)
-- Deloitte — *Chief Data Officer Survey 2025* (November 2025)
-- Gartner — *Predicts 2026: AI-Driven, Automated, Zero-Trust Governance* (January 2026)
-- Knostic — *AI Data Governance Guide for Enterprise Teams* (January 2026)
-- GAICC — *Global AI Governance Comparison 2026* (April 2026)
-- Atlan — *Data Governance for AI* (July 2025) and *Data Governance Roles & Responsibilities* (June 2025)
-- RudderStack — *What Is AI Data Governance?* (August 2025)
-- EWSolutions — *AI and Data Governance: The Essential 4-Pillar Framework* (March 2026)
-- Dataiku — *Data & AI Governance: What It Is & How to Do It Right* (February 2025)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **Deloitte — *Chief Data Officer Survey 2025*, 2025.** Data governance was the top priority for the year ahead at 51%. [View source](https://www.deloitte.com/nl/en/services/consulting-risk/research/chief-data-officer-survey-2025.html){#ev-deloitte-cdo-survey-2025-governance-priority} · verified 2026-06-20 · primary
+- **Gartner — *Gartner Predicts by 2028, 50% of Organizations Will Adopt Zero-Trust Data Governance*, 2026.** By 2028, 50% of organizations will adopt zero-trust data governance as unverified AI-generated data grows. [View source](https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-predicts-by-2028-50-percent-of-organizations-will-adopt-zero-trust-data-governance-as-unverified-ai-generated-data-grows){#ev-gartner-zero-trust-data-governance-2028} · verified 2026-06-20 · primary
+- **IAPP — *AI Governance Profession Report 2025*, 2025.** 77% of surveyed organizations say they are actively building or refining AI governance programs. [View source](https://iapp.org/resources/article/ai-governance-profession-report/){#ev-iapp-2025-ai-governance-building} · verified 2026-06-20 · primary
+- **Pacific AI — *2025 AI Governance Survey*, 2025.** 75% of organizations have established AI usage policies, yet only 36% have adopted a formal governance framework. [View source](https://pacific.ai/2025-ai-governance-survey/){#ev-pacific-ai-2025-formal-framework} · verified 2026-06-20 · ⚠ secondary mirror

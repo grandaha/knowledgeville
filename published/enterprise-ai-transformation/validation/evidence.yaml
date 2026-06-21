@@ -2100,3 +2100,268 @@
     pdf_hash:
   verified: 2026-06-20
   status: primary
+- id: ev-ibm-ibv-2024-data-readiness-bar
+  claim: "Technology leaders who strongly agree their enterprise data meets the quality, accessibility and security standards to scale generative AI"
+  value: "29%"
+  wording: "only 29% of technology leaders strongly agree that their enterprise data meets the quality, accessibility and security standards needed to efficiently scale generative AI"
+  source:
+    org: IBM Institute for Business Value
+    report: "What Is AI-Ready Data? (citing a 2024 IBV survey)"
+    edition: 2024
+    url: https://www.ibm.com/think/topics/ai-ready-data
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-ibm-ibv-ceo-2025-enterprise-scale
+  claim: "Share of AI initiatives that have scaled enterprise-wide"
+  value: "16%"
+  wording: "only 25% of AI initiatives have delivered expected ROI over the last few years, and only 16% have scaled enterprise wide"
+  source:
+    org: IBM Institute for Business Value
+    report: "2025 CEO Study (CEOs Double Down on AI While Navigating Enterprise Hurdles)"
+    edition: 2025
+    url: https://newsroom.ibm.com/2025-05-06-ibm-study-ceos-double-down-on-ai-while-navigating-enterprise-hurdles
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-ibm-technical-debt-2025-ai-roi
+  claim: "AI ROI uplift from accounting for technical debt in AI planning"
+  value: "up to 29%"
+  wording: "organizations factoring technical debt into AI planning achieve up to 29% higher ROI"
+  source:
+    org: IBM Institute for Business Value
+    report: "A practical approach to boosting your AI ROI"
+    edition: 2025
+    url: https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/technical-debt-ai-roi
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-ibm-2025-ai-breaches-controls
+  claim: "Share of organizations with AI-model/application breaches that lacked proper AI access controls"
+  value: "97%"
+  wording: "13% of organizations reported breaches of AI models or applications, 97% of which reported lacking proper AI access controls"
+  source:
+    org: IBM (Ponemon Institute)
+    report: "Cost of a Data Breach Report 2025"
+    edition: 2025
+    url: https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-data-quality-cost-3-1-trillion-us
+  claim: "Estimated annual cost of poor data quality to the US economy (originally IBM, not Gartner)"
+  value: "$3.1 trillion per year"
+  wording: "IBM estimates that poor data quality costs the US economy around $3.1 trillion per year (popularized via Thomas C. Redman, Bad Data Costs the U.S. $3 Trillion Per Year, Harvard Business Review)"
+  source:
+    org: IBM
+    report: "Bad Data Costs the U.S. $3 Trillion Per Year (Harvard Business Review)"
+    edition: 2016
+    url: https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-gartner-active-metadata-2025-delivery
+  claim: "Reduction in time to deliver new data assets for organizations using active metadata"
+  value: "up to 70%"
+  wording: "organizations that adopt active metadata across their data management environment will decrease the time to delivery of new data assets to users by as much as 70%"
+  source:
+    org: Gartner
+    report: "Market Guide for Active Metadata Management (doc ID 4004082; figure restated in later Gartner D&A research)"
+    edition: 2022
+    url: https://www.alation.com/blog/active-metadata/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-gartner-zero-trust-data-governance-2028
+  claim: "Organizations adopting zero-trust data governance by 2028 as unverified AI-generated data grows"
+  value: "50% by 2028"
+  wording: "By 2028, 50% of organizations will adopt zero-trust data governance as unverified AI-generated data grows"
+  source:
+    org: Gartner
+    report: "Gartner Predicts by 2028, 50% of Organizations Will Adopt Zero-Trust Data Governance"
+    edition: 2026
+    url: https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-predicts-by-2028-50-percent-of-organizations-will-adopt-zero-trust-data-governance-as-unverified-ai-generated-data-grows
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+  expires: 2028-12-31
+- id: ev-gartner-ai-laws-2026-enforcement
+  claim: "Governments enforcing responsible AI through regulations, policies and data-privacy needs by 2026"
+  value: "50% by 2026"
+  wording: "By 2026, 50% of governments worldwide will enforce the use of responsible AI through regulations, policies and the need for data privacy"
+  source:
+    org: Gartner
+    report: "AI Regulations to Drive Responsible AI Initiatives"
+    edition: 2024
+    url: https://www.gartner.com/en/newsroom/press-releases/2024-02-29-ai-regulations-to-drive-responsible-ai-initiatives
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-deloitte-cdo-survey-2025-governance-priority
+  claim: "CDOs ranking data governance as their top priority for the year ahead"
+  value: "51%"
+  wording: "Data governance was the top priority for the year ahead at 51%"
+  source:
+    org: Deloitte
+    report: "Chief Data Officer Survey 2025"
+    edition: 2025
+    url: https://www.deloitte.com/nl/en/services/consulting-risk/research/chief-data-officer-survey-2025.html
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-salesforce-state-data-analytics-2023-accessibility
+  claim: "Business leaders who are not totally confident the data they need is accessible"
+  value: "54%"
+  wording: "54% of business leaders aren't totally confident the data they need is even accessible"
+  source:
+    org: Salesforce
+    report: "State of Data and Analytics (2nd Edition)"
+    edition: 2023
+    url: https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/research/salesforce-state-of-data-and-analytics-2nd-edition.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-dremio-2025-data-unification
+  claim: "Organizations planning to prioritize data unification efforts for AI readiness in the next year"
+  value: "86%"
+  wording: "86% of organizations plan to prioritize data unification efforts in the next year"
+  source:
+    org: Dremio
+    report: "The State of Data Unification, AI Readiness, and Governance in 2025"
+    edition: 2025
+    url: https://www.dremio.com/newsroom/new-survey-reveals-86-of-organizations-are-prioritizing-data-unification-for-ai-readiness/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-dataversity-2024-data-silos
+  claim: "Data leaders citing data silos as their top concern, vs the prior year"
+  value: "68% (up 7%)"
+  wording: "68% of respondents citing data silos as their top concern - up 7% from the previous year"
+  source:
+    org: DATAVERSITY
+    report: "Trends in Data Management 2024"
+    edition: 2024
+    url: https://www.dataversity.net/articles/data-strategy-trends-in-2025-from-silos-to-unified-enterprise-value/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-iapp-2025-ai-governance-building
+  claim: "Organizations actively building or refining AI governance programs"
+  value: "77%"
+  wording: "77% of surveyed organizations say they are actively building or refining AI governance programs"
+  source:
+    org: IAPP
+    report: "AI Governance Profession Report 2025"
+    edition: 2025
+    url: https://iapp.org/resources/article/ai-governance-profession-report/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-pacific-ai-2025-formal-framework
+  claim: "Organizations that have adopted a formal AI governance framework"
+  value: "36%"
+  wording: "75% of organizations have established AI usage policies, yet only 36% have adopted a formal governance framework"
+  source:
+    org: Pacific AI
+    report: "2025 AI Governance Survey"
+    edition: 2025
+    url: https://pacific.ai/2025-ai-governance-survey/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-dimensional-research-2019-data-quality-ai
+  claim: "Enterprises encountering data quality, labeling and model-confidence problems in ML projects"
+  value: "96%"
+  wording: "96% of enterprises run into problems with data quality, data labeling required to train AI, and building model confidence"
+  source:
+    org: Dimensional Research (commissioned by Alegion)
+    report: "Artificial Intelligence and Machine Learning Projects Are Obstructed by Data Issues"
+    edition: 2019
+    url: https://3971219.fs1.hubspotusercontent-na2.net/hubfs/3971219/Survey%20Assets%201905/Dimensional%20Research%20Machine%20Learning%20PPT%20Report%20FINAL.pdf
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-budach-2022-label-noise-degradation
+  claim: "Robustness threshold of ML models to flipped (mislabeled) training labels on tabular data"
+  value: "robust up to ~20% labels flipped (<10% F1 loss)"
+  wording: "up to 20% of training labels could be flipped without performance losses of no more than 10% in F1-score"
+  source:
+    org: Budach, Feuerpfeil, Ihde, Nathansen, Noack, Patzlaff, Naumann & Harmouch
+    report: "The Effects of Data Quality on Machine Learning Performance on Tabular Data"
+    edition: 2022
+    url: https://arxiv.org/abs/2207.14529
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-mlops-systematic-review-2025-adoption-barrier
+  claim: "Companies citing lack of adequate MLOps practices as a major obstacle to deploying ML models in production"
+  value: "55%"
+  wording: "55% of companies cite the lack of adequate MLOps practices as a major obstacle to deploying ML models"
+  source:
+    org: Zarour, Alzabut & Al-Sarayreh
+    report: "MLOps best practices, challenges and maturity models: A systematic literature review (Information and Software Technology, 45 studies)"
+    edition: 2025
+    url: https://doi.org/10.1016/j.infsof.2025.107733
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-cognilytica-2020-ml-effort-data-prep
+  claim: "Share of ML/AI project effort consumed by data preparation, cleaning and labeling"
+  value: "as much as 80%"
+  wording: "as much as 80% of machine learning project time is spent on aggregating, cleaning, labeling, and augmenting machine learning model data"
+  source:
+    org: Cognilytica
+    report: "Data Preparation & Labeling for AI"
+    edition: 2020
+    url: https://medium.com/cognilytica/data-preparation-labeling-for-ai-2020-b512a5ed777c
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-marketsandmarkets-2025-data-integration-market
+  claim: "Data integration market size, 2025 actual and 2030 projection"
+  value: "$17.58B (2025) -> $33.24B (2030), CAGR 13.6%"
+  wording: "the data integration market is slated to expand from USD 17.58 billion in 2025 to USD 33.24 billion by 2030, at a CAGR of 13.6%"
+  source:
+    org: MarketsandMarkets
+    report: "Data Integration Market - Global Forecast to 2030"
+    edition: 2025
+    url: https://www.marketsandmarkets.com/PressReleases/data-integration.asp
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-dataart-2026-infra-roi
+  claim: "Data infrastructure as the highest-ROI technology investment vs the latest AI model"
+  value: "qualitative"
+  wording: "The highest-ROI technology investment right now is data infrastructure, not the latest AI model"
+  source:
+    org: DataArt
+    report: "2026 Data & AI Trends Report"
+    edition: 2026
+    url: https://www.dataart.com/
+    pdf_hash:
+  verified: 2026-06-20
+  status: secondary-mirror
+- id: ev-datakitchen-2026-dq-observability-convergence
+  claim: "Convergence of data quality testing and data observability toward software-grade reliable pipelines"
+  value: "qualitative"
+  wording: "the convergence of data quality testing and data observability is creating a new expectation: reliable, transparent data pipelines built the same way modern software systems ensure reliability"
+  source:
+    org: DataKitchen
+    report: "The 2026 Open-Source Data Quality and Data Observability Landscape"
+    edition: 2026
+    url: https://datakitchen.io/blog/the-2026-open-source-data-quality-and-data-observability-landscape/
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary
+- id: ev-darktrace-2025-ciso-ai-threat-impact
+  claim: "CISOs reporting significant impact from AI-powered cyber threats"
+  value: "78% (up 5% from 2024)"
+  wording: "78% of CISOs say that AI-powered threats are having a significant impact on their organizations, a 5% increase from 2024"
+  source:
+    org: Darktrace
+    report: "State of AI Cybersecurity 2025"
+    edition: 2025
+    url: https://www.darktrace.com/news/new-report-finds-that-78-of-chief-information-security-officers-globally-are-seeing-a-significant-impact-from-ai-powered-cyber-threats
+    pdf_hash:
+  verified: 2026-06-20
+  status: primary

@@ -48,4 +48,4 @@ It's written for the people accountable for making AI actually work inside an or
 | [Glossary](glossary.md)<br>A practitioner glossary of AI and data terms used across the framework — fundamentals, agents, governance, architecture, lineage, infrastructure, security, and integration. | Updated 2026-06-12 |
 | [Running the Program](running-the-program/)<br>How to operate all eight tracks as a coherent program — staffing, funding, sequencing, and stakeholder communication. | Updated 2026-06-12 |
 | [Tracks](tracks/)<br>The eight workstreams of enterprise AI transformation, each containing a core framework, practitioner guides, and assessment tools. | Updated 2026-06-12 |
-| [Validation](validation/)<br>How this knowledge base is validated — every statistic, source, and claim is checked, and each sweep is recorded here. | Updated 2026-06-16 |
+| [Validation](validation/)<br>How this knowledge base is validated — every statistic, source, and claim is checked, and each sweep is recorded here. | Updated 2026-06-22 |

@@ -13,17 +13,12 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v1.1.0 — 2026-06-22
 
-<!-- Release notes generated using configuration in .github/release.yml at main -->
-
-## What's Changed
 ### New & expanded content
-* feat: interactive Maturity Self-Assessment tool, generated from the assessments (#88) by @grandaha in https://github.com/grandaha/knowledgeville-workspace/pull/95
+* Interactive Maturity Self-Assessment tool, generated from the assessments (#88)
+
 ### Structural & tooling
-* structural: SemVer releases + de-emoji the changelog by @grandaha in https://github.com/grandaha/knowledgeville-workspace/pull/93
-* structural: exclude overview.md from the distributed bundle (OKF alignment) by @grandaha in https://github.com/grandaha/knowledgeville-workspace/pull/94
-
-
-**Full Changelog**: https://github.com/grandaha/knowledgeville-workspace/compare/v1.0.0...v1.1.0
+* SemVer releases + de-emoji the changelog
+* Exclude overview.md from the distributed bundle (OKF alignment)
 
 ## v1.0.0 — 2026-06-22
 

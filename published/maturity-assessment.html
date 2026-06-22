@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" data-scheme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Transformation — Maturity Self-Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ---- OSL design tokens ---- */
+  :root{
+    --blue-500:#1B75BC; --blue-300:#5FA8DC; --blue-700:#0D5A96;
+    --orange-500:#E06030; --orange-soft:rgba(224,96,48,.10);
+    --font:"DM Sans",system-ui,sans-serif; --mono:"DM Mono",ui-monospace,monospace;
+    --r-ctrl:8px; --r-card:16px; --r-pill:999px;
+    --shadow-sm:0 1px 2px rgba(17,24,39,.06),0 1px 3px rgba(17,24,39,.05);
+    --shadow-md:0 4px 12px rgba(17,24,39,.08),0 2px 4px rgba(17,24,39,.05);
+    --shadow-lg:0 12px 32px rgba(17,24,39,.14);
+  }
+  html[data-scheme="light"]{
+    --bg:#ffffff; --surface:#ffffff; --surface-2:#F4F5F7; --text:#111827;
+    --muted:#6B7280; --soft:#374151; --line:#E5E7EB; --rail:#E5E7EB;
+    --radar-fill:rgba(27,117,188,.16); --radar-grid:#E5E7EB; --on-blue:#ffffff;
+  }
+  html[data-scheme="dark"]{
+    --bg:#0f141b; --surface:#161c25; --surface-2:#1b222c; --text:#e9edf2;
+    --muted:#9aa6b2; --soft:#c4ccd6; --line:#2a323d; --rail:#2a323d;
+    --blue-500:#5FA8DC; --blue-700:#7cbbe6; --orange-500:#f08a5d; --orange-soft:rgba(240,138,93,.13);
+    --radar-fill:rgba(95,168,220,.20); --radar-grid:#2a323d; --on-blue:#0f141b;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow-md:0 4px 14px rgba(0,0,0,.45);
+    --shadow-lg:0 16px 40px rgba(0,0,0,.55);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+    -webkit-font-smoothing:antialiased;line-height:1.55;font-size:15px}
+  .wrap{max-width:1180px;margin:0 auto;padding:34px 28px 72px}
+
+  /* ---- header ---- */
+  header.top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:flex-start;gap:14px;min-width:0}
+  .logo{width:40px;height:41px;flex:0 0 auto;margin-top:2px}
+  h1{font-size:25px;line-height:1.18;margin:0;font-weight:700;letter-spacing:-.015em}
+  .sub{color:var(--muted);margin:7px 0 0;font-size:14.5px;max-width:64ch}
+  .sub b{color:var(--soft);font-weight:600}
+  .toggle{border:1px solid var(--line);background:var(--surface);color:var(--text);
+    font-family:var(--font);font-size:13px;font-weight:500;border-radius:var(--r-pill);
+    padding:8px 15px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:7px;
+    transition:all .16s ease;box-shadow:var(--shadow-sm)}
+  .toggle:hover{border-color:var(--blue-500);color:var(--blue-500);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+
+  /* ---- sticky progress header (step label + segmented progress + nav) ---- */
+  .stickybar{position:sticky;top:0;z-index:40;background:var(--bg);
+    border-bottom:1px solid var(--line);margin:18px -28px 0;padding:13px 28px 14px;
+    transition:box-shadow .2s ease, border-color .2s ease}
+  .stickybar.stuck{box-shadow:var(--shadow-md)}
+  .stickybar-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:20px}
+  .pmeta{flex:0 0 auto;min-width:0}
+  .pmeta .step-label{display:block;font-size:14px;font-weight:700;letter-spacing:-.005em;color:var(--text);
+    line-height:1.2;white-space:nowrap}
+  .pmeta .step-label .lp{color:var(--blue-700)}
+  .pmeta .pct{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:2px;display:block;white-space:nowrap}
+
+  /* segmented control */
+  .pips{display:flex;gap:6px;flex:1 1 auto;min-width:0;align-items:center}
+  .pip{flex:1 1 0;min-width:26px;height:30px;border-radius:7px;background:var(--surface-2);cursor:pointer;
+    border:1px solid var(--line);transition:all .18s ease;position:relative;
+    display:grid;place-items:center;font-family:var(--mono);font-size:12.5px;font-weight:500;color:var(--muted);padding:0}
+  .pip .pn{position:relative;z-index:1;line-height:1}
+  .pip:hover{border-color:var(--blue-300);color:var(--blue-500)}
+  .pip:focus-visible{outline:none;box-shadow:0 0 0 3px var(--orange-soft)}
+  .pip.done{background:var(--blue-500);border-color:var(--blue-500);color:var(--on-blue)}
+  .pip.done:hover{background:var(--blue-700);border-color:var(--blue-700);color:var(--on-blue)}
+  .pip.partial{border-color:var(--blue-500);color:var(--blue-500);
+    background:linear-gradient(180deg,var(--surface-2) 0%,var(--orange-soft) 100%)}
+  /* current step: distinguished ONLY by an accent ring + fill — never by size, weight, or transform */
+  .pip.active{border-color:var(--blue-500);color:var(--blue-500);
+    box-shadow:0 0 0 3px var(--orange-soft);background:var(--surface)}
+  .pip.active.done{color:var(--on-blue);background:var(--blue-500)}
+  /* tooltip */
+  .pip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%) translateY(3px);
+    background:var(--text);color:var(--bg);font-family:var(--font);font-size:11px;font-weight:600;letter-spacing:0;
+    padding:5px 9px;border-radius:6px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .14s ease,transform .14s ease;
+    box-shadow:var(--shadow-md);z-index:10}
+  .pip:hover::after{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* compact nav inside sticky bar */
+  .topnav{flex:0 0 auto;display:flex;gap:8px;align-items:center}
+  .topnav .btn{padding:8px 14px;font-size:13px}
+  @media(max-width:760px){
+    .stickybar-inner{flex-wrap:wrap;gap:11px}
+    .pmeta{flex:1 1 100%;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+    .pmeta .step-label,.pmeta .pct{white-space:normal}
+    .pips{order:3;flex:1 1 100%}
+    .topnav{order:2;margin-left:auto}
+  }
+
+  /* ---- layout ---- */
+  .layout{display:grid;grid-template-columns:1fr 372px;gap:30px;margin-top:26px;align-items:start}
+  @media(max-width:920px){.layout{grid-template-columns:1fr}}
+
+  .stage{min-height:480px}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);
+    box-shadow:var(--shadow-sm);overflow:hidden;animation:fade .32s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  /* track step header */
+  .step-head{padding:22px 24px 18px;border-bottom:1px solid var(--line);position:relative}
+  .step-head .stripe{position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue-500)}
+  .step-head.is-constraint .stripe{background:var(--orange-500)}
+  .eyebrow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:8px}
+  .layer-tag{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--blue-700);
+    display:inline-flex;align-items:center;gap:6px}
+  .layer-tag .dot6{width:6px;height:6px;border-radius:50%;background:var(--orange-500)}
+  .track-count{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+  .step-head h2{font-size:21px;margin:0;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+  .step-head .blurb{color:var(--muted);font-size:13.5px;margin:6px 0 0;max-width:60ch}
+  .track-avg{position:absolute;top:18px;right:22px;text-align:right}
+  .track-avg .num{font-family:var(--mono);font-size:30px;font-weight:500;line-height:1;color:var(--blue-500)}
+  .track-avg .num.dim{color:var(--muted);opacity:.5}
+  .track-avg .lab{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+  /* dimensions */
+  .dims{padding:6px 24px 22px}
+  .dim{padding:18px 0}
+  .dim + .dim{border-top:1px dashed var(--rail)}
+  .dim-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:13px}
+  .dim-name{font-weight:600;font-size:15.5px;display:flex;align-items:center;gap:9px}
+  .dim-name .idx{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
+  .dim-pick{font-family:var(--mono);font-size:12.5px;color:var(--muted);white-space:nowrap}
+  .dim-pick b{color:var(--blue-500);font-weight:500}
+
+  /* level selector — the rubric IS the scoring control */
+  .levels{display:flex;flex-direction:column;gap:4px;margin-top:11px}
+  .lvl{display:grid;grid-template-columns:18px auto 1fr;gap:10px;align-items:baseline;
+    border:1px solid var(--line);border-left:3px solid transparent;border-radius:9px;
+    background:var(--surface);padding:9px 13px 9px 11px;cursor:pointer;text-align:left;width:100%;
+    font-family:var(--font);color:var(--soft);transition:background .14s ease,border-color .14s ease,box-shadow .14s ease}
+  .lvl:hover{background:var(--surface-2);border-color:var(--blue-300)}
+  .lvl:focus-visible{outline:none;box-shadow:0 0 0 3px var(--orange-soft)}
+  /* radio dot */
+  .lvl .marker{width:15px;height:15px;border-radius:50%;border:1.5px solid var(--line);background:transparent;
+    position:relative;align-self:center;transition:all .14s ease;flex:0 0 auto}
+  .lvl:hover .marker{border-color:var(--blue-300)}
+  .lvl .lead{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--blue-700);white-space:nowrap;line-height:1.5}
+  .lvl .lead .nm{text-transform:uppercase;letter-spacing:.03em}
+  .lvl .desc{font-size:13px;line-height:1.5;color:var(--soft)}
+  /* selected state — unmistakable OSL-blue treatment */
+  .lvl.sel{border-color:var(--blue-500);border-left-color:var(--blue-500);
+    background:linear-gradient(0deg,var(--orange-soft),var(--orange-soft)),var(--surface);
+    box-shadow:var(--shadow-sm)}
+  html[data-scheme="light"] .lvl.sel{background:rgba(27,117,188,.07)}
+  html[data-scheme="dark"] .lvl.sel{background:rgba(95,168,220,.12)}
+  .lvl.sel .marker{border-color:var(--blue-500);background:var(--blue-500);box-shadow:inset 0 0 0 3px var(--surface)}
+  .lvl.sel .desc{color:var(--text)}
+  .lvl.sel .lead{color:var(--blue-500)}
+
+  /* nav */
+  .stepnav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 24px;
+    border-top:1px solid var(--line);background:var(--surface-2)}
+  .btn{font-family:var(--font);font-size:13.5px;font-weight:500;border-radius:var(--r-ctrl);padding:10px 18px;
+    cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--text);transition:all .16s ease;
+    display:inline-flex;align-items:center;gap:7px}
+  .btn:hover{border-color:var(--blue-500);transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+  .btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+  .btn.primary{background:var(--blue-500);border-color:var(--blue-500);color:var(--on-blue)}
+  .btn.primary:hover{background:var(--blue-700);border-color:var(--blue-700)}
+  .btn.ghost{background:transparent;border-color:transparent;color:var(--muted)}
+  .btn.ghost:hover{background:var(--surface);border-color:var(--line);color:var(--text)}
+  .nav-mid{font-size:12.5px;color:var(--muted);text-align:center;font-family:var(--mono)}
+
+  /* ---- intro / results panels ---- */
+  .pad{padding:30px 30px 34px}
+  .intro h2{font-size:23px;margin:0 0 6px;font-weight:700;letter-spacing:-.01em}
+  .intro p{color:var(--muted);font-size:14.5px;margin:0 0 22px;max-width:60ch}
+  .layer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:26px}
+  .lcard{border:1px solid var(--line);border-radius:12px;padding:15px 16px;background:var(--surface-2)}
+  .lcard h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-700);margin:0 0 6px;
+    display:flex;align-items:center;gap:7px}
+  .lcard h3 .dot6{width:6px;height:6px;border-radius:50%;background:var(--orange-500)}
+  .lcard p{font-size:13px;color:var(--muted);margin:0 0 9px}
+  .lcard ul{margin:0;padding-left:16px;font-size:13px;color:var(--soft)}
+  .lcard li{margin:2px 0}
+  .scale-legend{display:flex;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:8px}
+  .sl{flex:1;padding:13px 12px;text-align:center;border-right:1px solid var(--line)}
+  .sl:last-child{border-right:none}
+  .sl .n{font-family:var(--mono);font-size:18px;font-weight:500;color:var(--blue-500)}
+  .sl .nm{font-size:12px;font-weight:600;margin-top:3px}
+  .sl .ds{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.35}
+  @media(max-width:700px){.scale-legend{flex-wrap:wrap}.sl{flex:1 1 33%;border-bottom:1px solid var(--line)}}
+
+  /* results */
+  .results-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+  .results-head h2{font-size:23px;margin:0;font-weight:700;letter-spacing:-.01em}
+  .results-head p{color:var(--muted);font-size:13.5px;margin:5px 0 0;max-width:54ch}
+  .bc{background:var(--orange-soft);border:1px solid var(--orange-500);border-radius:12px;padding:16px 18px;margin:22px 0 20px}
+  .bc .lab{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange-500);
+    display:flex;align-items:center;gap:7px}
+  .bc .lab .dot6{width:6px;height:6px;border-radius:50%;background:var(--orange-500)}
+  .bc .val{font-size:19px;font-weight:700;margin-top:6px;letter-spacing:-.01em}
+  .bc .why{font-size:13.5px;color:var(--soft);margin-top:7px}
+  .rgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:640px){.rgrid{grid-template-columns:1fr}}
+  .blk .lab{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-700);margin-bottom:11px;
+    display:flex;align-items:center;gap:7px}
+  .blk .lab .dot6{width:6px;height:6px;border-radius:50%;background:var(--orange-500)}
+  .focus{display:flex;flex-direction:column;gap:11px}
+  .focus .item{font-size:13.5px;display:flex;gap:9px;align-items:baseline;line-height:1.45}
+  .focus .item .mk{color:var(--orange-500);font-weight:700;flex:0 0 auto}
+  .focus .item b{color:var(--text)}
+  .seq{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .chip{font-family:var(--mono);font-size:12.5px;background:var(--surface-2);border:1px solid var(--line);
+    border-radius:7px;padding:6px 11px;display:inline-flex;align-items:center;gap:7px}
+  .chip .cn{color:var(--muted);font-size:11px}
+  .arrow{color:var(--muted);font-size:14px}
+  .scoretable{margin-top:24px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .st-row{display:grid;grid-template-columns:24px 1fr 64px 52px;gap:10px;padding:10px 15px;align-items:center;font-size:13.5px}
+  .st-row + .st-row{border-top:1px solid var(--line)}
+  .st-row.head{background:var(--surface-2);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .st-row.con{background:var(--orange-soft)}
+  .st-num{font-family:var(--mono);color:var(--muted);font-size:12px}
+  .st-bar{height:6px;background:var(--surface-2);border-radius:var(--r-pill);overflow:hidden;border:1px solid var(--line)}
+  .st-bar i{display:block;height:100%;background:var(--blue-500);border-radius:var(--r-pill)}
+  .st-row.con .st-bar i{background:var(--orange-500)}
+  .st-avg{font-family:var(--mono);font-weight:500;text-align:right;color:var(--blue-500)}
+  .st-row.con .st-avg{color:var(--orange-500)}
+  .note{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:22px;line-height:1.5}
+
+  /* ---- radar aside ---- */
+  .aside{position:sticky;top:22px;display:flex;flex-direction:column;gap:18px}
+  .radar-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);
+    box-shadow:var(--shadow-sm);padding:18px 18px 14px}
+  .radar-card h3{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0 0 4px;
+    display:flex;align-items:center;justify-content:space-between}
+  .radar-card .rsub{font-size:12px;color:var(--muted);margin:0 0 4px}
+  .radarsvg{width:100%;height:auto;display:block;overflow:visible}
+  .radar-legend{display:flex;justify-content:center;gap:18px;margin-top:6px;font-size:11.5px;color:var(--muted)}
+  .radar-legend .sw{display:inline-flex;align-items:center;gap:6px}
+  .radar-legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .mini-actions{display:flex;gap:9px}
+  .mini-actions .btn{flex:1;justify-content:center;font-size:12.5px;padding:9px 10px}
+
+  .foot{margin-top:30px;font-size:12px;color:var(--muted);text-align:center}
+  .foot a{color:var(--blue-500);text-decoration:none}
+  .foot a:hover{color:var(--blue-700);text-decoration:underline}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 100 102" role="img" aria-label="One Step Labs">
+        <g fill="var(--orange-500)">
+          <circle cx="50" cy="15" r="9"/><circle cx="50" cy="33" r="9"/><circle cx="50" cy="69" r="9"/><circle cx="50" cy="87" r="9"/>
+          <circle cx="34.41" cy="42" r="9"/><circle cx="65.59" cy="42" r="9"/><circle cx="65.59" cy="60" r="9"/>
+          <circle cx="18.82" cy="33" r="9"/><circle cx="81.18" cy="33" r="9"/><circle cx="81.18" cy="69" r="9"/>
+        </g>
+        <g fill="var(--blue-700)"><circle cx="34.41" cy="60" r="9"/><circle cx="18.82" cy="69" r="9"/></g>
+      </svg>
+      <div>
+        <h1>AI Transformation — Maturity Self-Assessment</h1>
+        <p class="sub">Score each track on the 1–5 maturity ladder, on evidence not intent. The tool finds your <b>binding constraint</b> — the lowest track throttling the ones downstream — and tells you where to focus first.</p>
+      </div>
+    </div>
+    <button class="toggle" id="schemeBtn" aria-label="Toggle color scheme"><span id="schemeIcon">◐</span> <span id="schemeTxt">Dark</span></button>
+  </header>
+
+  <div class="stickybar" id="stickybar">
+    <div class="stickybar-inner">
+      <div class="pmeta">
+        <span class="step-label" id="stepLabel">Getting started</span>
+        <span class="pct" id="pctTxt">0 of 8 tracks scored</span>
+      </div>
+      <div class="pips" id="pips" role="tablist" aria-label="Assessment steps"></div>
+      <div class="topnav">
+        <button class="btn" id="topPrev" data-topnav="prev" aria-label="Previous step">←&nbsp;Prev</button>
+        <button class="btn primary" id="topNext" data-topnav="next" aria-label="Next step">Next&nbsp;→</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="stage" id="stage"></div>
+
+    <aside class="aside">
+      <div class="radar-card">
+        <h3>Maturity radar <span class="rsub" style="font-weight:400;text-transform:none;letter-spacing:0" id="radarMeta"></span></h3>
+        <svg class="radarsvg" id="radar" viewBox="0 0 320 300" aria-label="Radar chart of track maturity scores"></svg>
+        <div class="radar-legend">
+          <span class="sw"><i style="background:var(--blue-500)"></i> Your score</span>
+          <span class="sw"><i style="background:var(--radar-grid);border:1px solid var(--line)"></i> Scale 1–5</span>
+        </div>
+      </div>
+      <div class="mini-actions">
+        <button class="btn" id="sampleBtn">Fill sample</button>
+        <button class="btn ghost" id="resetBtn">Reset</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="foot">Built on the <a href="#">Open Knowledge Format v0.1</a> · One Step Labs · Dimensions sourced from the Enterprise AI Transformation framework</div>
+</div>
+
+<script>
+/* ============================================================
+   DATA — 8 tracks, layers, dependency graph, and the real
+   sub-dimensions extracted from the assessment scoring pages.
+   ============================================================ */
+const TRACKS = [{"id":1,"layer":"Direction","short":"Strategy","name":"AI Strategy & Leadership","deps":[],"blurb":"Sets the intent: a thesis tied to economics, an accountable sponsor, and disciplined portfolio funding.","dims":[{"name":"Value Thesis","levels":{"1":"No thesis exists; AI is framed as a technology project or innovation experiment, justified by \"everyone is doing it.\"","2":"A generic ambition exists on paper (\"we will adopt AI\"), but it names no company-specific economic levers and would read identically for any competitor.","3":"A documented thesis ties AI to specific business objectives, cost structure, products, and moat — but it does not yet govern funding decisions.","4":"The thesis is operationalized: it actively scopes and gates which initiatives get funded, and proposals must demonstrate fit to named economic levers.","5":"The thesis is embedded in corporate strategy; AI is core to how the company competes, owned at board level, and revisited as markets and economics shift."}},{"name":"Executive Sponsorship & Ownership","levels":{"1":"No executive sponsor. AI sits inside IT or belongs to no one; direction is set by technologists by default.","2":"A nominal sponsor is named but passive. Ownership is diffuse across a steering committee where accountability dissolves.","3":"A single senior sponsor is formally identified and convenes some cross-functional engagement, though authority is still informal.","4":"An active, visible sponsor holds P&L accountability and explicit decision rights; the CEO is personally engaged and unblocks work.","5":"The CEO and board own AI oversight; sponsorship is sustained, embedded in operating rhythms, and reported routinely at board level."}},{"name":"Prioritization & Portfolio Discipline","levels":{"1":"Scattered, unranked pilots run in parallel; no portfolio view exists; whoever advocates loudest secures funding.","2":"A consolidated list of initiatives exists, but items are neither ranked nor formally funded; everything stays \"in flight.\"","3":"A prioritization method (e.g., value vs. feasibility) is applied, producing a scored, ranked shortlist of candidate bets.","4":"A funded, concentrated portfolio backs a few bets; each has a named owner and success metric, and weak bets are actively cut.","5":"Disciplined portfolio management drives continuous reallocation of capital toward the highest-signal bets as evidence accrues; portfolio health is reviewed at board level."}},{"name":"Funding & Operating Model","levels":{"1":"No funding mechanism; AI runs on one-off project budgets; no operating model and no path to production.","2":"Funding is argued case-by-case; an informal team carries the work; pilots stall at the pilot-to-production handoff.","3":"A defined operating model (e.g., CoE or hub-and-spoke) and a repeatable funding route are documented.","4":"A deliberate funding mechanism (central fund or BU lines) backs an operating model fit to maturity and a funded pilot-to-production path.","5":"Funding flexes with evidence; the operating model evolves with maturity; production is the default destination, not the exception; AI funding is a visible line in board-level planning."}},{"name":"Decision Rights & Risk Appetite","levels":{"1":"No stated risk appetite; build/buy/partner settled by default or by IT; no articulated \"where we won't use AI\" boundary.","2":"Risk appetite debated informally; posture chosen case-by-case with no reference to a guiding thesis or named no-go zones.","3":"Risk appetite documented; build/buy/partner guidelines published; some prohibited uses explicitly named.","4":"Leadership owns each decision per initiative; stated risk appetite is matched by funded mitigation; no-go zones actively enforced.","5":"Decision rights are unambiguous, exercised continuously, and revisited as risk, regulation, and capability evolve; material posture and risk-appetite calls are surfaced to the board."}},{"name":"Governance & Steering Cadence","levels":{"1":"No steering structure. Strategy was set once at launch, if at all, and is never revisited; no body owns intent or reallocation.","2":"Occasional ad hoc reviews triggered by escalation. Strategy and risk decisions are conflated in the same room, or neither is governed.","3":"A steering body exists with defined membership; intent-setting and guardrail roles are named, but reviews are irregular and reallocation is reactive.","4":"A standing cadence (e.g., quarterly) reviews evidence and reallocates capital; strategy and risk governance run as separate, coordinated forums.","5":"Governance is continuous and evidence-driven; the portfolio is actively steered and re-pointed; the cadence is embedded in how leadership runs the business and reported at board level."}},{"name":"Measurement & Value-Realization Linkage","levels":{"1":"No success metrics exist; value is asserted in business cases but never measured after launch.","2":"Only activity metrics are tracked (users, pilots launched, models shipped); none connect to business value or the P&L.","3":"Each funded initiative carries a defined success metric, but measurement is inconsistent, owned by no one, and never fed back into decisions.","4":"Value is attributed to specific P&L lines and measured; results feed a regular strategy review that reallocates funding.","5":"A closed loop runs continuously: measured value informs strategy, bets are doubled down or cut on evidence, and value realization is reported at board level."}}]},{"id":2,"layer":"Direction","short":"Governance","name":"AI Governance & Risk","deps":[1],"blurb":"Sets the guardrails: policy that's enforced, models on a registry, and a tested path for incidents and vendors.","dims":[{"name":"Governance Structure and Mandate","levels":{"1":"No governance structure. AI decisions are made ad hoc by technical teams or business units; no one is named as accountable for AI risk.","2":"A nominal owner is identified (often a title added to an existing role), but the mandate is undefined, the authority is informal, and no cross-functional coordination exists.","3":"A governance body exists (committee, council, or function) with a written charter naming members and scope; it meets on a cadence, but its decisions are advisory and can be ignored without consequence.","4":"A formal governance function has documented decision rights, a budget, and the authority to halt or condition AI deployments; decisions are binding, with an escalation path to the board.","5":"AI governance is fully embedded in enterprise risk governance; the function operates autonomously, reports to the board, integrates with audit, legal, and compliance, and continuously updates its mandate as the risk landscape evolves."}},{"name":"Policy Coverage and Enforcement","levels":{"1":"No AI policy exists. AI use is governed only by general IT acceptable use policy, if that.","2":"A basic AI policy exists on paper but has no named owner, no review date, no employee acknowledgment mechanism, and no enforcement process.","3":"A documented AUP with a named owner, last-reviewed date, and employee acknowledgment log exists; it defines permitted and prohibited uses, but enforcement is complaint-driven and reactive.","4":"The AUP is actively enforced: prohibited uses are technically blocked where feasible, training completion is tracked, violations are documented, and policy review is scheduled on a defined cycle with substantive updates.","5":"Policy coverage extends to all material AI use (internal builds, vendor-supplied tools, embedded AI in SaaS); enforcement is proactive; exceptions require documented approval; the policy is updated when new use cases, tools, or regulations emerge."}},{"name":"Model Risk Management","levels":{"1":"No model inventory exists. The organization cannot enumerate the AI models in production; no monitoring is in place.","2":"An informal list of major models exists but is not maintained; some monitoring is in place for performance, but there is no systematic bias review, no version control on model updates, and no defined review cadence.","3":"A formal model registry catalogs production models with owners, use cases, risk classification, and deployment dates; basic performance and drift monitoring runs, but bias review and adversarial testing are ad hoc.","4":"All production models are registered, version-controlled, and subject to a defined review cycle; performance, drift, and fairness metrics are monitored continuously; model updates require a documented approval before deployment.","5":"Model risk management is fully embedded in the deployment pipeline: automated drift detection triggers reviews, bias audits are scheduled, high-risk models are subject to human-in-the-loop requirements, and model retirement has a governed decommission process."}},{"name":"Regulatory Readiness","levels":{"1":"No regulatory mapping exists. The organization has not assessed which AI regulations apply and has not assigned responsibility for tracking them.","2":"The legal or compliance team has general awareness of applicable regulations (e.g., EU AI Act, sector-specific rules) but has not mapped specific obligations to specific systems; compliance responsibility is unclear.","3":"A regulatory inventory maps known applicable regulations to AI use cases; a named owner tracks regulatory developments, but the gap between current state and compliance is not formally assessed.","4":"A documented regulatory gap assessment covers all material AI systems; each gap has an owner and a remediation timeline; the organization can demonstrate what it would need to show a regulator for its highest-risk systems.","5":"Regulatory readiness is continuous: horizon scanning identifies new obligations before enforcement, systems are classified and updated as regulations evolve, and the organization participates in industry bodies shaping AI regulation."}},{"name":"Incident Detection and Response","levels":{"1":"No AI incident taxonomy or response process exists. AI failures are discovered by users or customers; there is no mechanism to detect, classify, or escalate them.","2":"AI failures are handled ad hoc through general IT or security escalation paths; there is no defined AI incident category, no named AI incident responder, and no documented response procedure.","3":"An AI incident taxonomy is defined (distinguishing, for example, model failure, bias event, security compromise, and misuse); a response procedure document exists; a named owner is assigned; but the procedure has not been tested.","4":"AI incident response procedures are tested (tabletop or live drill); detection mechanisms exist for major incident categories; incidents are logged and reviewed post-resolution; lessons learned feed governance updates.","5":"Continuous monitoring detects AI incidents automatically; classification is automated for common incident types; response SLAs are defined and tracked; the incident log informs model risk reviews, policy updates, and regulatory reporting; external reporting obligations are met on time."}},{"name":"Vendor and Third-Party AI Risk","levels":{"1":"No vendor AI governance exists. Third-party AI tools are procured and deployed with no assessment of model risk, data handling, or contractual accountability.","2":"Procurement reviews exist for major software vendors, but AI-specific questions (model behavior, training data, bias testing, incident notification) are not asked; vendor AI is not inventoried separately.","3":"A vendor AI inventory exists; standard AI-specific due-diligence questions are included in the procurement checklist; high-risk vendors are identified, but contractual protections and ongoing monitoring are inconsistent.","4":"All material vendor AI systems are inventoried and risk-tiered; contracts include AI-specific terms (audit rights, incident notification, model change notification, data-use restrictions); high-risk vendors are subject to periodic reassessment.","5":"Vendor AI governance is fully integrated with enterprise AI governance: vendor models are included in the model registry, third-party incidents trigger internal incident response, and vendor AI use is subject to the same acceptable-use policy as internal AI."}}]},{"id":3,"layer":"Foundation","short":"Data","name":"Data Readiness","deps":[1,2],"blurb":"The technical substrate of data: quality, governance, lineage, and access that AI workloads can actually rely on.","dims":[{"name":"Data","levels":{"1":"Data siloed across systems. No quality standards. No catalog. No governance.","2":"Some consolidation in a warehouse or lake. Basic quality awareness. Catalog absent or stale.","3":"Unified data platform. Quality checks exist but are manual or intermittent. Catalog partially populated.","4":"Active metadata and continuous quality monitoring. Contracts on AI-critical datasets. Catalog current.","5":"Full governance operationalized. All AI training data has contracts, lineage, and continuous quality gates. Real-time pipelines available for agentic use cases."}},{"name":"Data Governance","levels":{"1":"No data ownership. No policies. No governance council.","2":"Informal ownership. Ad hoc policies. No enforcement mechanism.","3":"Named data owners per domain. Policies documented. Limited automated enforcement.","4":"Governance council active. Policy-as-code in CI/CD. Bias testing gates before model deployment.","5":"Full AI governance lifecycle. Model cards for all production models. EU AI Act tiers assessed. Compliance monitoring automated."}},{"name":"Infrastructure","levels":{"1":"No ML infrastructure. Models on analyst laptops. No versioning, monitoring, or reproducibility.","2":"Cloud compute available. Some managed ML tooling. No CI/CD for models.","3":"Managed ML platform (SageMaker, Vertex, Databricks). Basic model registry. Experiment tracking in place.","4":"Full MLOps: CI/CD for models, feature store, drift monitoring, automated retraining.","5":"LLMOps and AgentOps for generative and agentic workloads. Semantic logging, prompt versioning, agent trace trees. Token cost monitoring active."}},{"name":"Talent and Skills","levels":{"1":"No AI/ML skills. Fully dependent on external vendors.","2":"One or two data scientists. No ML engineers. No AI literacy in business teams.","3":"ML engineering capability. Some business team AI literacy. Training programs just starting.","4":"Full data science and ML engineering. Applied AI-literate practitioners in business units. Structured literacy training.","5":"AI embedded across business roles. Teams identify opportunities, interpret outputs, and challenge models. Continuous learning culture."}},{"name":"Process Maturity","levels":{"1":"Processes tribal and undocumented. No measurement baseline.","2":"Key processes documented informally. Some KPIs tracked.","3":"Core processes documented with defined inputs, outputs, and owners. Basic AI use cases identified.","4":"Processes actively measured and managed. AI opportunities mapped to specific improvement targets.","5":"Continuous improvement culture. AI integrated into process workflows. Outcomes tracked against AI-driven targets."}},{"name":"AI Risk and Compliance","levels":{"1":"No AI risk management. No awareness of applicable regulations.","2":"Basic GDPR/data privacy awareness. No AI-specific risk framework.","3":"NIST AI RMF or equivalent framework identified. Some bias testing. EU AI Act tiers assessed for deployed systems.","4":"Formal AI risk program. Bias gates before deployment. Model cards for all production models. Incident response plan tested.","5":"Continuous AI risk monitoring. Regulatory change tracking automated. Third-party vendor security assessments complete."}},{"name":"Strategy and Culture","levels":{"1":"No AI strategy. AI treated as an IT project. No executive sponsor.","2":"AI strategy exists on paper. No clear business outcome targets. Minimal executive visibility.","3":"Strategy tied to specific business objectives. Executive sponsor identified. Some cross-functional alignment.","4":"Strategy operationalized with funded roadmap, business outcome KPIs, and cross-functional governance.","5":"AI embedded in corporate strategy. Leadership champions data-driven culture. AI ROI reported at board level. Change management is a funded line item."}}]},{"id":4,"layer":"Foundation","short":"Platform","name":"Technology Architecture & Platform","deps":[1,2],"blurb":"The shared platform layer: governed API access, a model registry, reusable infra, and build-vs-buy discipline.","dims":[{"name":"API Governance and Cost Visibility","levels":{"1":"No centralized API access. Teams call model providers directly with individual API keys; no cost visibility exists anywhere in the organization.","2":"A shared API key or billing account exists, but usage is not attributed to teams or use cases; cost tracking is done manually post-hoc, if at all.","3":"A centralized gateway exists; cost attribution by team is available in dashboards; rate limits are set; but alerts and budget controls are not automated.","4":"A centralized API gateway with automated cost alerts, per-team budgets, rate limiting, and full audit logging is in operation; spend reports are generated on a defined cadence and reviewed.","5":"API governance is fully automated; cost anomalies trigger alerts and auto-suspend; usage reports inform build vs. buy decisions; the gateway enforces data handling policies and approved-model restrictions."}},{"name":"Model Registry and Selection Discipline","levels":{"1":"No model registry. Teams choose models ad hoc; no record of what is in use or why; no compliance classification exists.","2":"An informal list exists (a shared doc or wiki page) but is not maintained; new models are added without formal evaluation; compliance classification is absent.","3":"A formal model registry exists with entries for each approved model, including use-case classification, cost tier, and a named owner; a basic evaluation process exists but is inconsistently applied.","4":"All models in use are registered; each entry includes capability benchmarks on internal test cases, compliance classification, cost comparison, and vendor risk notes; evaluation is required before a new model is added.","5":"The model registry is integrated with governance (feeds the model inventory in AI Governance & Risk), is updated automatically when vendor models change, and drives developer tooling defaults; model sunset and replacement processes are defined."}},{"name":"Shared Infrastructure and Tooling Consolidation","levels":{"1":"No shared infrastructure. Each team builds their own embedding pipelines, vector stores, and orchestration; the organization is paying for the same problems to be solved multiple times in parallel.","2":"Some shared infrastructure exists informally — a shared embedding service used by a few teams — but it is not officially supported, has no SLA, and new teams are not directed to use it.","3":"Core shared infrastructure is in place (API gateway, embedding service, vector store) with defined SLAs; at least some teams are using it; reference architecture exists but is not consistently followed.","4":"All new AI projects use shared infrastructure by default; reference architecture is actively maintained; teams fork from approved patterns rather than starting from scratch; a platform team is accountable for shared infrastructure health.","5":"Shared infrastructure covers the full platform layer (gateway, embeddings, vector store, orchestration templates, prompt caching); platform decisions are driven by use-case portfolio analysis; consolidation is measured and reported."}},{"name":"Observability and Developer Enablement","levels":{"1":"No AI observability. Teams discover model failures via user complaints or downstream data errors; no latency or error rate tracking exists; no developer documentation beyond provider docs.","2":"Basic logging exists (API logs retained), but there are no dashboards; developers query logs manually to debug; no developer documentation specific to the internal platform exists.","3":"Observability dashboards exist for core metrics (latency, error rates, token counts by use case); developer documentation covers how to access the platform; but documentation is incomplete and rarely updated.","4":"Observability is comprehensive — latency, token spend, error rates, and quality metrics (where applicable) are dashboard-visible by team and use case; developer documentation is complete, up to date, and includes code examples; a platform SDK or starter kit reduces onboarding time.","5":"Observability feeds automated alerts and triggers incident response when quality thresholds are breached; developer tooling is maintained with a defined review cycle; platform office hours or support channel exists; feedback from developers improves the platform on a cadence."}},{"name":"Build vs. Buy Discipline and Vendor Risk","levels":{"1":"No build vs. buy framework. Platform decisions are made based on individual engineers' preferences or vendor sales cycles; no vendor risk program exists for AI tools.","2":"Build vs. buy is considered informally for major decisions, but there is no documented criteria and decisions are not recorded; AI vendor contracts are standard MSAs with no AI-specific terms.","3":"A build vs. buy framework exists with documented criteria; major decisions are recorded with rationale; at least some AI vendor contracts include data processing terms; but model change notification and audit rights are absent from most contracts.","4":"Build vs. buy criteria are applied consistently; decisions are documented with a named approver; AI vendor contracts include model change notification, audit rights (or third-party attestation such as SOC 2 / ISO 27001), data use restrictions, and defined SLAs for model behavior; a vendor risk reassessment cadence is in place.","5":"Vendor selection is driven by TCO analysis that includes lock-in risk and platform portability; contracts are reviewed against a standard AI vendor risk template by legal; vendor risk reassessment is automated as contract renewal triggers; dependency analysis identifies single points of failure in the vendor stack."}}]},{"id":5,"layer":"Execution","short":"Workflow","name":"Workflow Optimization & Automation","deps":[3,4],"blurb":"Where value is created: visible, standardized, well-instrumented workflows ready for automation and AI.","dims":[{"name":"Process Visibility","levels":{"1":"No documented processes. How work gets done is tribal knowledge; no one can describe the end-to-end flow or cite volumes.","2":"Some processes are documented in static diagrams or SOPs, but they are out of date and do not reflect how work actually happens.","3":"Key processes are mapped and reasonably current; basic volume and cycle-time data exists but is gathered manually and infrequently.","4":"Core processes are mapped with current volume, cycle-time, and exception data; some processes are observed via system logs or process-mining tooling.","5":"Process visibility is continuous and data-driven; process mining or equivalent instrumentation surfaces bottlenecks, variants, and rework loops in near-real time."}},{"name":"Workflow Standardization","levels":{"1":"Every person runs the process differently; no agreed standard exists.","2":"A nominal standard exists on paper but is widely ignored; high variant count in practice.","3":"A standard exists and is mostly followed for the common path; exception handling is ad hoc.","4":"The process is standardized with defined exception paths; deviations are tracked and managed.","5":"The process is standardized, instrumented, and continuously refined; variants are deliberate design choices, not drift."}},{"name":"Data Readiness for the Workflow","levels":{"1":"The data the workflow needs is scattered, locked in PDFs or email, or does not exist in any retrievable form.","2":"Data exists in systems but is poorly structured, inconsistent, or requires heavy manual cleanup before use.","3":"Core data is accessible via systems or exports; quality is adequate for the common case but has known gaps.","4":"Workflow data is accessible through APIs or a governed store, is structured, and has defined quality and ownership.","5":"Workflow data is real-time, governed, quality-monitored, and already feeding analytics or models reliably."}},{"name":"Automation and AI Capability","levels":{"1":"No automation tooling and no relevant skills; any automation is manual scripting by one person.","2":"Some point tools (macros, basic RPA) used in isolation; no integration layer; bus-factor of one.","3":"A sanctioned automation or AI toolset exists and is used for a few workflows; integration is possible but bespoke each time.","4":"A platform layer (orchestration, APIs, sanctioned AI tooling — see the tooling landscape) supports new builds; reusable patterns exist; skills are spread across a team.","5":"Automation and AI capability is a managed platform with reusable components, observability, and a team accountable for its health."}},{"name":"Change and Adoption Readiness","levels":{"1":"Change is resisted by default; past automation attempts were abandoned or worked around.","2":"Change is tolerated when mandated but not supported; no enablement or communication accompanies rollouts.","3":"Change is managed for major initiatives with some training and communication, applied inconsistently.","4":"A repeatable change approach exists — stakeholder involvement, enablement, feedback loops — and is applied to automation rollouts.","5":"The function actively co-designs workflow changes with the people who run them; adoption is measured and reinforced."}},{"name":"Measurement Discipline","levels":{"1":"No baselines; no one can state current cycle time, cost-per-transaction, or error rate.","2":"Some metrics exist but are inconsistent and not tied to specific workflows.","3":"Key workflows have baseline metrics captured at least periodically; impact is estimated after the fact.","4":"Workflows have defined baselines and target metrics; pre/post impact is measured for changes.","5":"Metrics are instrumented and continuous; impact of every change is tracked against baseline automatically."}}]},{"id":6,"layer":"Execution","short":"Adoption","name":"AI Adoption & Culture","deps":[5,7],"blurb":"Whether people actually use it: real engagement, psychological safety, leadership modeling, and calibrated trust.","dims":[{"name":"Tool Utilization & Engagement","levels":{"1":"Licenses provisioned but little real use; no usage tracking; activation well below ~30%.","2":"Activation rising but engagement shallow; daily-active/monthly-active (DAU/MAU) stickiness in the low single digits; use concentrated in a few enthusiasts.","3":"Majority of target users activated; weekly use common in target roles; DAU/MAU approaching ~20%.","4":"Habitual daily use across most target roles; DAU/MAU around the ~31% B2B-SaaS benchmark; breadth across functions.","5":"AI embedded in core workflows; usage tracked and tied to outcomes; sustained retention rather than novelty spikes."}},{"name":"Cultural Readiness (psychological safety, experimentation, trust)","levels":{"1":"Fear dominates; AI errors are punished; experimentation absent; deep distrust of outputs.","2":"Pockets of curiosity; experimentation tolerated informally but unsafe to admit failure.","3":"Teams openly discuss AI use; failures treated as learning; calibrated trust beginning to form.","4":"Psychological safety high; experimentation is normal and expected; trust calibrated to task risk.","5":"Continuous, open experimentation is the norm; sharing wins and failures is routine across teams."}},{"name":"Leadership Modeling & Sponsorship","levels":{"1":"No visible sponsor; leaders do not use AI themselves.","2":"Verbal support only; no modeling, no resourcing.","3":"A named sponsor exists; some leaders visibly use AI.","4":"Active, visible, reachable sponsorship; leaders model use and remove barriers.","5":"Sponsorship sustained and cascaded through management; leaders coach adoption and disclose their own AI mistakes."}},{"name":"Enablement & Skills","levels":{"1":"No training; entirely self-taught.","2":"Ad hoc resources; a minority trained; under five hours of learning is typical.","3":"Formal, role-based onboarding for target roles; prompt-and-judgment skills taught.","4":"Continuous enablement: champions network, office hours, just-in-time support, communities of practice.","5":"Skills measured, refreshed, and adapted as capabilities change; enablement keeps pace with the tools."}},{"name":"Governance & Acceptable-Use Clarity","levels":{"1":"No policy; high shadow-AI exposure; people guess at what is allowed.","2":"A blanket ban or silence — which drives covert use rather than preventing it.","3":"A published acceptable-use policy exists; sanctioned tools are available.","4":"Clear data-handling rules; sanctioned tools cover real needs; shadow AI is low.","5":"Governance enables rather than blocks; monitored and reviewed; demand is met by sanctioned tools."}},{"name":"Trust & Verification Practices","levels":{"1":"Outputs either blindly accepted or reflexively dismissed; no shared norms.","2":"Verification is ad hoc and personal; over- and under-trust both common.","3":"Basic human-in-the-loop expectations exist for higher-risk uses.","4":"Verification habits are explicit and matched to task risk; people know when to check.","5":"Calibrated trust is cultural: AI relied on where reliable, verified where weak, and the difference is taught."}}]},{"id":7,"layer":"Execution","short":"Talent","name":"Talent & Capability Building","deps":[1,5],"blurb":"The capability engine: literacy at scale, redesigned roles, a specialist core, and skills-based foundations.","dims":[{"name":"AI Literacy Coverage","levels":{"1":"No baseline; literacy unknown and unmeasured; usage is self-taught and ungoverned (BYOAI the norm).","2":"Ad-hoc awareness training exists; coverage uneven; no differentiated targets by role; the EU AI Act Article 4 floor is not reliably met.","3":"Awareness coverage near-universal; a fluency program is running for priority functions; literacy is measured against role targets.","4":"Most of the target workforce has reached Fluency (Level 2); a builder population is growing; coverage tracked by role and population.","5":"Differentiated literacy targets met across all populations and sustained; literacy refreshed as tools change; coverage tied to outcomes."}},{"name":"Role & Work Redesign","levels":{"1":"Jobs unchanged; AI bolted onto existing roles; staff fear displacement; no task-level analysis.","2":"Informal, one-off redesign in a few teams; no shared method; capability deltas not specified.","3":"A repeatable task-level method is applied to priority roles; tasks classified automate/augment/unchanged/new.","4":"Redesign extended across most functions; freed time reinvested deliberately; capability deltas feed the roadmap.","5":"Continuous, skills-based role evolution; redesign is routine and incumbent-led; new AI tasks staffed deliberately."}},{"name":"Capability-Building Infrastructure","levels":{"1":"No programs; people learn alone; no champions; learning is invisible.","2":"Generic off-the-shelf courses with low completion and little behavior change; no champion network.","3":"Function-specific fluency programs running; a champions network forming; a community of practice exists.","4":"Programs span the literacy stack (awareness→fluency→builder); champions resourced with protected time; coverage measured.","5":"Self-sustaining capability engine — champions diffuse, communities curate, programs refresh — tied to adoption and outcome metrics."}},{"name":"Specialist Core & Sourcing Strategy","levels":{"1":"No specialist capability; no build/hire/partner strategy; gaps closed reactively or not at all.","2":"A few specialists hired opportunistically; over-reliance on a single mode (all-hire or all-partner); knowledge concentrated and fragile.","3":"An explicit build/hire/partner strategy exists; a specialist core is in place; partners bridge known gaps.","4":"\"Build the middle, hire the core, partner for spikes\" applied deliberately; specialist depth adequate for the platform; succession reduces key-person risk.","5":"Sourcing strategy is dynamic and reviewed; specialist core retained against the wage-premium market; partners used surgically."}},{"name":"Leadership & Skills-Based Foundations","levels":{"1":"Leaders lack AI literacy; static job descriptions; HR not engaged; change framed as threat.","2":"Some leaders engaged; job architecture still rigid; HR reacting rather than enabling.","3":"Leadership literacy program running; skills (not just jobs) beginning to drive workforce decisions; HR partnered with the program.","4":"Leaders sponsor capability building visibly; a skills-based job architecture is in place; reskilling commitments are explicit and funded.","5":"Skills-based operating model is the norm; leadership models AI use; workforce planning continuously tracks skill change."}}]},{"id":8,"layer":"Feedback","short":"Measurement","name":"Measurement & Value Realization","deps":[5,6],"blurb":"Proves what worked: instrumentation by design, finance-grade attribution, and a loop that reallocates spend.","dims":[{"name":"Instrumentation Coverage","levels":{"1":"No success metrics defined; use cases ship dark; telemetry absent.","2":"Usage/activity logged for some use cases, but metrics bolted on after launch and uneven.","3":"Most priority use cases have defined success metrics and telemetry in place at deployment.","4":"Instrumentation is a launch gate; coverage tracked by use case and business unit.","5":"Full coverage by design; metric and telemetry definitions versioned and refreshed as use cases evolve."}},{"name":"Baseline & KPI Definition","levels":{"1":"No baselines; no KPIs; \"it feels faster\" is the only evidence.","2":"KPIs named after the fact; baselines reconstructed retrospectively, if at all.","3":"KPIs and pre-launch baselines defined for priority use cases, with explicit targets.","4":"Baseline-and-target is a standard pre-launch artifact; targets reviewed against actuals.","5":"Baselines and KPIs are continuous and standardized; targets recalibrated as the business changes."}},{"name":"Attribution Capability","levels":{"1":"No attempt to tie AI to outcomes; impact unknown.","2":"Anecdotes and self-reported time savings; no isolation from confounders.","3":"A repeatable attribution method (controls, holdouts) isolates AI's contribution for priority use cases.","4":"Financial/EBIT impact attributed and reported to finance on a regular cadence.","5":"Attribution is finance-grade and continuous; AI value is a line the CFO trusts and forecasts against."}},{"name":"Feedback-Loop Effectiveness","levels":{"1":"Results never reviewed; nothing scaled or killed on evidence.","2":"Metrics reported but rarely change decisions; losers linger, winners stall.","3":"Measurement informs go/no-go on individual use cases; some winners scaled.","4":"Measurement drives reallocation — winners scaled, losers killed, workflows redesigned on the evidence.","5":"A standing portfolio loop continuously reallocates spend and effort toward measured value."}},{"name":"Governance & Cadence","levels":{"1":"No owner; no reporting rhythm; leadership unaware of AI value.","2":"Ownership ambiguous; ad-hoc reporting; finance not in the loop.","3":"A named owner and a regular reporting cadence exist; results reach leadership.","4":"Measurement governed with CFO/finance involvement and a fixed cadence tied to decisions.","5":"Value realization is a board-level operating rhythm; finance and the business co-own the numbers."}}]}];
+const LAYER_DESC = {
+  Direction:"sets intent + guardrails", Foundation:"the technical substrate",
+  Execution:"where value is created", Feedback:"proves what worked"
+};
+const SCALE = [
+  {n:1,nm:"Nascent",ds:"Absent or ad hoc"},
+  {n:2,nm:"Developing",ds:"On paper, uneven"},
+  {n:3,nm:"Emerging",ds:"Defined, in use"},
+  {n:4,nm:"Scaling",ds:"Managed, consistent"},
+  {n:5,nm:"Transformational",ds:"Continuous, embedded"},
+];
+const LAYER_ORDER = ["Direction","Foundation","Execution","Feedback"];
+
+/* state: scores[trackId][dimIndex] = 1..5 */
+const scores = {};
+TRACKS.forEach(t=> scores[t.id] = new Array(t.dims.length).fill(0));
+let page = 0; // 0 = intro, 1..8 = track, 9 = results
+const LAST = TRACKS.length + 1;
+
+/* ---------- helpers / engine ---------- */
+function trackScored(t){ return scores[t.id].every(v=>v>0); }
+function trackAvg(t){ // null if not fully scored
+  const arr = scores[t.id].filter(v=>v>0);
+  if(!arr.length) return null;
+  return arr.reduce((a,b)=>a+b,0)/arr.length;
+}
+function trackAvgFull(t){ return trackScored(t) ? trackAvg(t) : null; }
+function allScored(){ return TRACKS.every(trackScored); }
+function scoredCount(){ return TRACKS.filter(trackScored).length; }
+
+/* Engine operates on ROUNDED averaged track scores (round half up). */
+function engineScore(t){ const a=trackAvgFull(t); return a==null?null:Math.round(a); }
+
+function computeEngine(){
+  // deps model framework-architecture.md's dependency graph. The T8->T1 "Measurement
+  // feeds Strategy" relationship is intentionally NOT a dep edge: the framework frames
+  // it as a co-evolving loop, not an ordered dependency, so it doesn't gate sequencing.
+  const S = {}; TRACKS.forEach(t=> S[t.id]=engineScore(t));
+  const min = Math.min(...TRACKS.map(t=>S[t.id]));
+  const hasDependents = id => TRACKS.some(t=>t.deps.includes(id));
+  // throttlers: a dependency scoring >=2 below a track that depends on it
+  const throttlers = new Set();
+  TRACKS.forEach(t=> t.deps.forEach(d=>{ if(S[t.id]-S[d] >= 2) throttlers.add(d); }));
+  let constraints = TRACKS.filter(t=>S[t.id]===min && (hasDependents(t.id)||throttlers.has(t.id)));
+  if(!constraints.length) constraints = TRACKS.filter(t=>S[t.id]===min);
+  // suggested sequence: low tracks (<= min+1), Direction->Feedback then id
+  const seq = TRACKS.filter(t=>S[t.id]<=min+1)
+    .sort((a,b)=> LAYER_ORDER.indexOf(a.layer)-LAYER_ORDER.indexOf(b.layer) || a.id-b.id);
+  return {S,min,constraints,seq,throttlers};
+}
+
+/* ============================================================
+   RADAR (hand-drawn inline SVG)
+   ============================================================ */
+function polar(cx,cy,r,angle){ return [cx + r*Math.cos(angle), cy + r*Math.sin(angle)]; }
+function renderRadar(){
+  const svg = document.getElementById('radar');
+  const W=320,H=300, cx=160, cy=150, R=98;
+  const n = TRACKS.length;
+  const ns = 'http://www.w3.org/2000/svg';
+  let out = '';
+  // grid rings 1..5
+  for(let lvl=1; lvl<=5; lvl++){
+    const rr = R*lvl/5;
+    let pts=[];
+    for(let i=0;i<n;i++){
+      const ang = -Math.PI/2 + i*2*Math.PI/n;
+      const [x,y]=polar(cx,cy,rr,ang); pts.push(x.toFixed(1)+','+y.toFixed(1));
+    }
+    out += `<polygon points="${pts.join(' ')}" fill="none" stroke="var(--radar-grid)" stroke-width="1" ${lvl===5?'stroke-width="1.4"':''}/>`;
+  }
+  // spokes + labels
+  for(let i=0;i<n;i++){
+    const ang = -Math.PI/2 + i*2*Math.PI/n;
+    const [ex,ey]=polar(cx,cy,R,ang);
+    out += `<line x1="${cx}" y1="${cy}" x2="${ex.toFixed(1)}" y2="${ey.toFixed(1)}" stroke="var(--radar-grid)" stroke-width="1"/>`;
+    const [lx,ly]=polar(cx,cy,R+19,ang);
+    let anchor='middle';
+    if(lx>cx+6) anchor='start'; else if(lx<cx-6) anchor='end';
+    const t=TRACKS[i];
+    const lit = trackScored(t);
+    out += `<text x="${lx.toFixed(1)}" y="${(ly+3.5).toFixed(1)}" text-anchor="${anchor}" font-size="10.5" font-weight="600" font-family="var(--font)" fill="${lit?'var(--text)':'var(--muted)'}">${t.short}</text>`;
+  }
+  // data polygon (uses live partial averages; unscored dims count as 0 -> partial reach)
+  let dpts=[], dots='';
+  for(let i=0;i<n;i++){
+    const t=TRACKS[i];
+    const arr = scores[t.id];
+    const sum = arr.reduce((a,b)=>a+b,0);
+    const avg = sum / arr.length; // unscored dims weigh as 0 -> grows as you score
+    const ang = -Math.PI/2 + i*2*Math.PI/n;
+    const rr = R*avg/5;
+    const [x,y]=polar(cx,cy,rr,ang);
+    dpts.push(x.toFixed(1)+','+y.toFixed(1));
+    if(trackScored(t)) dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.2" fill="var(--blue-500)" stroke="var(--surface)" stroke-width="1.5"/>`;
+  }
+  const anyScore = TRACKS.some(t=>scores[t.id].some(v=>v>0));
+  if(anyScore){
+    out += `<polygon points="${dpts.join(' ')}" fill="var(--radar-fill)" stroke="var(--blue-500)" stroke-width="2" stroke-linejoin="round"/>`;
+    out += dots;
+  }
+  // center dot
+  out += `<circle cx="${cx}" cy="${cy}" r="1.6" fill="var(--muted)"/>`;
+  svg.innerHTML = out;
+  // meta
+  const done = scoredCount();
+  document.getElementById('radarMeta').textContent = done? `· ${done}/8 tracks` : '';
+}
+
+/* ============================================================
+   RENDER PAGES
+   ============================================================ */
+function render(){
+  renderProgress();
+  renderRadar();
+  const stage = document.getElementById('stage');
+  if(page===0) stage.innerHTML = introHTML();
+  else if(page===LAST) stage.innerHTML = resultsHTML();
+  else stage.innerHTML = trackHTML(TRACKS[page-1]);
+  wireStage();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function renderProgress(){
+  const total = TRACKS.length;
+  const done = scoredCount();
+  document.getElementById('pctTxt').textContent = `${done} of ${total} tracks scored`;
+  // legible step label
+  const lbl = document.getElementById('stepLabel');
+  if(page===0) lbl.innerHTML = '<span class="lp">Getting started</span>';
+  else if(page===LAST) lbl.innerHTML = '<span class="lp">Your results</span>';
+  else lbl.innerHTML = `<span class="lp">Step ${page} of ${total}</span> · ${TRACKS[page-1].name}`;
+  // segmented pips: numbered 1–8, current/done/partial/upcoming, clickable, tooltip
+  const pips = document.getElementById('pips'); pips.innerHTML='';
+  TRACKS.forEach((t,i)=>{
+    const p=document.createElement('button'); p.className='pip'; p.type='button';
+    const anyD = scores[t.id].some(v=>v>0);
+    if(trackScored(t)) p.classList.add('done');
+    else if(anyD) p.classList.add('partial');
+    if(page===i+1) p.classList.add('active');
+    p.setAttribute('data-tip', `${i+1}. ${t.name}`);
+    p.setAttribute('role','tab');
+    p.setAttribute('aria-selected', page===i+1 ? 'true':'false');
+    p.setAttribute('aria-label', `Step ${i+1}: ${t.name}`);
+    p.innerHTML = `<span class="pn">${i+1}</span>`;
+    p.onclick=()=>{ page=i+1; render(); };
+    pips.appendChild(p);
+  });
+  // top nav state mirrors bottom nav
+  const tp=document.getElementById('topPrev'), tn=document.getElementById('topNext');
+  tp.disabled = page===0;
+  // On the last track step, Next becomes the primary path to results — disabled with a hint until every track is scored.
+  const atLastTrack = page===TRACKS.length;
+  const resultsBlocked = atLastTrack && !allScored();
+  tn.disabled = page===LAST || resultsBlocked;
+  tn.innerHTML = page===0 ? 'Start&nbsp;→' : (atLastTrack ? 'See results&nbsp;→' : 'Next&nbsp;→');
+  tn.title = resultsBlocked ? `Score all ${TRACKS.length} tracks to see results (${done}/${TRACKS.length} done)` : '';
+}
+
+function introHTML(){
+  const layers = LAYER_ORDER.map(L=>{
+    const ts = TRACKS.filter(t=>t.layer===L);
+    return `<div class="lcard">
+      <h3><span class="dot6"></span>${L}</h3>
+      <p>${LAYER_DESC[L]}</p>
+      <ul>${ts.map(t=>`<li>${t.name}</li>`).join('')}</ul>
+    </div>`;
+  }).join('');
+  const legend = SCALE.map(s=>`<div class="sl"><div class="n">${s.n}</div><div class="nm">${s.nm}</div><div class="ds">${s.ds}</div></div>`).join('');
+  return `<div class="panel intro"><div class="pad">
+    <h2>How this works</h2>
+    <p>Eight tracks across four layers build on each other. You'll score each track's underlying dimensions on a 1–5 maturity ladder — a track's score is the <b>average of its dimensions</b>. The radar updates live as you go.</p>
+    <div class="layer-grid">${layers}</div>
+    <div class="blk" style="margin-bottom:10px"><div class="lab"><span class="dot6"></span>The maturity ladder</div></div>
+    <div class="scale-legend">${legend}</div>
+    <p style="font-size:12.5px;margin-top:12px">Score on <b>evidence, not intent</b> — what's actually true today, not what's planned. There are 47 dimensions across the 8 tracks.</p>
+  </div>
+  <div class="stepnav">
+    <button class="btn ghost" disabled>← Back</button>
+    <div class="nav-mid">8 tracks · 47 dimensions</div>
+    <button class="btn primary" data-nav="next">Start assessment →</button>
+  </div></div>`;
+}
+
+function trackHTML(t){
+  const eng = allScored()? computeEngine() : null;
+  const isCon = eng && eng.constraints.some(c=>c.id===t.id);
+  const avg = trackAvgFull(t);
+  const avgTxt = avg!=null ? avg.toFixed(1) : '—';
+  const dimsScored = scores[t.id].filter(v=>v>0).length;
+  const dimsHTML = t.dims.map((d,i)=>{
+    const cur = scores[t.id][i];
+    const opts = SCALE.map(s=>{
+      const on = cur===s.n;
+      return `<button type="button" role="radio" class="lvl${on?' sel':''}" data-dim="${i}" data-val="${s.n}"
+          aria-checked="${on?'true':'false'}" tabindex="${(on||(!cur&&s.n===1))?'0':'-1'}"
+          aria-label="Level ${s.n}, ${s.nm}: ${d.levels[s.n]}">
+        <span class="marker" aria-hidden="true"></span>
+        <span class="lead">${s.n} · <span class="nm">${s.nm}</span></span>
+        <span class="desc">${d.levels[s.n]}</span>
+      </button>`;
+    }).join('');
+    return `<div class="dim" data-dim="${i}">
+      <div class="dim-top">
+        <div class="dim-name"><span class="idx">D${i+1}</span>${d.name}</div>
+        <div class="dim-pick">${cur?`scored <b>Level ${cur}</b>`:'unscored'}</div>
+      </div>
+      <div class="levels" role="radiogroup" data-levels="${i}" aria-label="${d.name} — maturity level">${opts}</div>
+    </div>`;
+  }).join('');
+  return `<div class="panel">
+    <div class="step-head${isCon?' is-constraint':''}">
+      <div class="stripe"></div>
+      <div class="eyebrow">
+        <span class="layer-tag"><span class="dot6"></span>${t.layer} · ${LAYER_DESC[t.layer]}</span>
+        <span class="track-count">Track ${t.id} of 8</span>
+      </div>
+      <h2>${t.name}</h2>
+      <p class="blurb">${t.blurb}</p>
+      <div class="track-avg">
+        <div class="num${avg!=null?'':' dim'}">${avgTxt}</div>
+        <div class="lab">${dimsScored}/${t.dims.length} dims</div>
+      </div>
+    </div>
+    <div class="dims">${dimsHTML}</div>
+    ${(()=>{
+      const atLastTrack = page===TRACKS.length;
+      const resultsBlocked = atLastTrack && !allScored();
+      const midText = atLastTrack
+        ? (resultsBlocked ? `Score all ${TRACKS.length} tracks to see results (${scoredCount()}/${TRACKS.length} done)`
+                          : 'All tracks scored — ready for results')
+        : (dimsScored===t.dims.length?'Track complete ✓':`${dimsScored}/${t.dims.length} dimensions scored`);
+      return `<div class="stepnav">
+      <button class="btn" data-nav="prev">← ${page===1?'Intro':'Previous'}</button>
+      <div class="nav-mid">${midText}</div>
+      <button class="btn primary" data-nav="next"${resultsBlocked?' disabled title="Score all tracks first"':''}>${atLastTrack?'See results →':'Next track →'}</button>
+    </div>`;
+    })()}
+  </div>`;
+}
+
+function resultsHTML(){
+  if(!allScored()){
+    const remaining = TRACKS.filter(t=>!trackScored(t));
+    const list = remaining.map(t=>`<span class="chip">${t.short} <span class="cn">${scores[t.id].filter(v=>v>0).length}/${t.dims.length}</span></span>`).join('');
+    return `<div class="panel"><div class="pad">
+      <h2 style="font-size:23px;margin:0 0 6px">Almost there</h2>
+      <p style="color:var(--muted);font-size:14.5px;margin:0 0 18px">Score every dimension in each track to unlock your binding constraint and recommended sequence. Still open:</p>
+      <div class="seq">${list}</div>
+    </div>
+    <div class="stepnav">
+      <button class="btn" data-nav="prev">← Previous</button>
+      <div class="nav-mid">${scoredCount()}/8 tracks complete</div>
+      <button class="btn primary" data-nav="goto-first-open">Finish scoring →</button>
+    </div></div>`;
+  }
+  const eng = computeEngine();
+  const {S,min,constraints,seq} = eng;
+  // focus lines
+  const focus = constraints.map(c=>{
+    const downstream = TRACKS.filter(t=>t.deps.includes(c.id) && S[t.id]>S[c.id]).map(t=>t.short);
+    const line = downstream.length? `is throttling ${downstream.join(', ')} downstream` : `gates the layers built on it`;
+    return `<div class="item"><span class="mk">▸</span><div><b>${c.name}</b> — ${line}.</div></div>`;
+  }).join('');
+  const seqHTML = seq.map((t,i)=>
+    `${i?'<span class="arrow">→</span>':''}<span class="chip">${t.short} <span class="cn">${trackAvgFull(t).toFixed(1)}</span></span>`).join('');
+  // score table, in layer order
+  const rows = TRACKS.slice().sort((a,b)=> LAYER_ORDER.indexOf(a.layer)-LAYER_ORDER.indexOf(b.layer)||a.id-b.id)
+    .map(t=>{
+      const a=trackAvgFull(t); const con=constraints.some(c=>c.id===t.id);
+      return `<div class="st-row${con?' con':''}">
+        <span class="st-num">${t.id}</span>
+        <span>${t.name}${con?' <b style="color:var(--orange-500)">●</b>':''}</span>
+        <span class="st-bar"><i style="width:${a/5*100}%"></i></span>
+        <span class="st-avg">${a.toFixed(1)}</span>
+      </div>`;
+    }).join('');
+  const bcNames = constraints.map(c=>c.name).join(' + ');
+  return `<div class="panel"><div class="pad">
+    <div class="results-head">
+      <div>
+        <h2>Your focus areas</h2>
+        <p>Engine run on your rounded average track scores. A track is only as strong as its weakest upstream dependency.</p>
+      </div>
+    </div>
+    <div class="bc">
+      <div class="lab"><span class="dot6"></span>Binding constraint</div>
+      <div class="val">${bcNames}</div>
+      <div class="why">Lowest maturity (level ${min}) with work stacked on top — relieve this before pouring resources into the layers above it.</div>
+    </div>
+    <div class="rgrid">
+      <div class="blk">
+        <div class="lab"><span class="dot6"></span>Start here</div>
+        <div class="focus">${focus}</div>
+      </div>
+      <div class="blk">
+        <div class="lab"><span class="dot6"></span>Suggested sequence</div>
+        <div class="seq">${seqHTML}</div>
+        <p style="font-size:12px;color:var(--muted);margin:12px 0 0">Low tracks (≤ level ${min+1}), ordered Direction → Foundation → Execution → Feedback.</p>
+      </div>
+    </div>
+    <div class="scoretable">
+      <div class="st-row head"><span class="st-num">#</span><span>Track</span><span>Maturity</span><span class="st-avg">Avg</span></div>
+      ${rows}
+    </div>
+    <div class="note">Track averages are the mean of each track's scored dimensions, shown to one decimal. The dependency engine rounds those averages (half up) to integers 1–5 before finding the binding constraint, flagging throttled tracks (a dependency ≥2 levels below), and ordering the sequence.</div>
+  </div>
+  <div class="stepnav">
+    <button class="btn" data-nav="prev">← Back to scoring</button>
+    <div class="nav-mid">Assessment complete</div>
+    <button class="btn" id="restartBtn">Start over</button>
+  </div></div>`;
+}
+
+/* ============================================================
+   WIRING
+   ============================================================ */
+function wireStage(){
+  // nav buttons
+  document.querySelectorAll('[data-nav]').forEach(b=>{
+    b.onclick=()=>{
+      const a=b.getAttribute('data-nav');
+      if(a==='next' && page<LAST) page++;
+      else if(a==='prev' && page>0) page--;
+      else if(a==='goto-first-open'){ const t=TRACKS.find(x=>!trackScored(x)); page = t? TRACKS.indexOf(t)+1 : LAST; }
+      render();
+    };
+  });
+  const rb=document.getElementById('restartBtn'); if(rb) rb.onclick=doReset;
+  // dimension scoring — the rubric levels ARE the radio control
+  document.querySelectorAll('.lvl[data-dim]').forEach(opt=>{
+    const di=+opt.getAttribute('data-dim'), v=+opt.getAttribute('data-val');
+    opt.onclick=()=>selectLevel(di,v);
+    opt.onkeydown=(e)=>handleLevelKey(e,di,v);
+  });
+}
+/* select a level: sets the dimension's 1–5 value, re-renders everything downstream */
+function selectLevel(di,v){
+  const t=TRACKS[page-1];
+  scores[t.id][di]=v;
+  render();
+}
+/* radio-group keyboard semantics: arrows move + select, space/enter select */
+function handleLevelKey(e,di,v){
+  const k=e.key;
+  if(k===' '||k==='Enter'){ e.preventDefault(); selectLevel(di,v); return; }
+  let nv=null;
+  if(k==='ArrowDown'||k==='ArrowRight') nv = v>=5?1:v+1;
+  else if(k==='ArrowUp'||k==='ArrowLeft') nv = v<=1?5:v-1;
+  if(nv!=null){ e.preventDefault(); selectLevel(di,nv);
+    requestAnimationFrame(()=>{ const el=document.querySelector(`.lvl[data-dim="${di}"][data-val="${nv}"]`); if(el) el.focus(); }); }
+}
+
+function doReset(){
+  TRACKS.forEach(t=> scores[t.id]=new Array(t.dims.length).fill(0));
+  page=0; render();
+}
+function doSample(){
+  // realistic uneven profile: strong strategy, weak data + governance
+  const sample = {
+    1:[5,4,4,4,4,3,3], 2:[2,2,1,2,2,2], 3:[1,2,1,2,2,1,2], 4:[3,3,2,3,3],
+    5:[4,3,3,4,3,4], 6:[3,3,4,3,3,3], 7:[3,3,3,2,3], 8:[2,2,1,2,2]
+  };
+  TRACKS.forEach(t=> scores[t.id] = sample[t.id].slice());
+  page=LAST; render();
+}
+
+document.getElementById('schemeBtn').onclick=()=>{
+  const h=document.documentElement, dark=h.getAttribute('data-scheme')==='dark';
+  h.setAttribute('data-scheme', dark?'light':'dark');
+  document.getElementById('schemeIcon').textContent = dark?'◐':'◑';
+  document.getElementById('schemeTxt').textContent = dark?'Dark':'Light';
+  renderRadar();
+};
+document.getElementById('resetBtn').onclick=doReset;
+document.getElementById('sampleBtn').onclick=doSample;
+
+/* top sticky-bar nav (rendered once, persists across pages) */
+document.querySelectorAll('[data-topnav]').forEach(b=>{
+  b.onclick=()=>{
+    const a=b.getAttribute('data-topnav');
+    if(a==='next' && page<LAST) page++;
+    else if(a==='prev' && page>0) page--;
+    render();
+  };
+});
+/* subtle shadow once the bar sticks */
+const stickybar=document.getElementById('stickybar');
+window.addEventListener('scroll',()=>{
+  stickybar.classList.toggle('stuck', stickybar.getBoundingClientRect().top<=0);
+},{passive:true});
+
+render();
+</script>
+</body>
+</html>

@@ -34,5 +34,6 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
 ## Where to start
 
 - New here? Read the [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
+- **Benchmark your organization** with the [AI Transformation Maturity Self-Assessment](/maturity-assessment.html) — score all eight tracks against the framework's rubrics, see your binding constraint, and get a recommended sequence.
 - Use the search box (top of the page) to jump to any concept.
 

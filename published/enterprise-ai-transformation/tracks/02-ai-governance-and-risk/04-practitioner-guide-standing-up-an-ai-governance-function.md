@@ -24,7 +24,7 @@ A single team owns both strategy and governance for AI across the organization. 
 
 **Cons:** Doesn't scale past a certain point — the CoE becomes a bottleneck as deployment volume grows. Business units often experience it as slow or out of touch with operational realities.
 
-**Best fit:** Organizations under roughly $1B in revenue, or enterprises where AI adoption is still early-stage and centralized visibility is achievable.
+**Best fit:** Organizations under roughly $1B in revenue, or enterprises where AI adoption is still early-stage and centralized visibility is achievable.  <!-- noev: organization-sizing threshold / rhetorical time-allocation figure, not a sourced statistic -->
 
 ### 2. Federated with central standards (most common in large enterprises)
 
@@ -90,7 +90,7 @@ In-house or outside counsel with specific awareness of the EU AI Act (prohibited
 
 The distributed layer of a federated governance model. These are domain experts within each business unit who own day-to-day AI governance: logging new deployments, applying the risk tier framework to their use cases, and escalating edge cases to the central function.
 
-**Common mistake:** Treating AI Champion as an honorary title rather than a role with dedicated time. Champions who spend 2% of their time on governance are not doing governance; they are providing cover for ungoverned AI.
+**Common mistake:** Treating AI Champion as an honorary title rather than a role with dedicated time. Champions who spend 2% of their time on governance are not doing governance; they are providing cover for ungoverned AI.  <!-- noev: organization-sizing threshold / rhetorical time-allocation figure, not a sourced statistic -->
 
 One important note: most organizations begin with one or two people covering the bulk of these responsibilities. That is a reasonable starting point. The discipline is in documenting who owns what — even if the answer is "same person" for multiple roles — so accountability is explicit and gaps are visible.
 

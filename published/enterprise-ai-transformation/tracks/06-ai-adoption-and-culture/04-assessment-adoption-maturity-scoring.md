@@ -135,7 +135,7 @@ Adoption maturity is not uniform across a workforce, so a single score hides the
 
 The decisive boundary is between the early adopters and the early majority. The enthusiasts (the first ~16%) adopt on novelty; the majority adopt only on proof, and the transition between them is where most programs stall — the "chasm" ([Moore, 1991](#ev-moore-crossing-the-chasm-1991-chasm)). Practical use of the map:
 
-- **Stuck before ~16% penetration** → you have reached the enthusiasts and no further. The constraint is usually proof and relevance, not access — invest in role-based use cases and visible peer wins (D4).
+- **Stuck before ~16% penetration** ([Rogers, 2003](#ev-rogers-diffusion-2003-adopter-categories)) → you have reached the enthusiasts and no further. The constraint is usually proof and relevance, not access — invest in role-based use cases and visible peer wins (D4).
 - **Stuck at the majority** → the constraint is usually safety and manager engagement (D2, D3) — pragmatists adopt when their manager and peers visibly do.
 - **High usage but concentrated** → breadth problem; check D1 breadth and the champion coverage feeding it.
 

@@ -132,7 +132,7 @@ Average the six dimensions for a single maturity level — but treat the average
 | 4 | Scaling | Governance is operational and enforced across the material AI portfolio; incidents are detectable; vendor risk is managed; regulatory obligations are mapped and actively closed. |
 | 5 | Transformational | Governance is continuous, automated where appropriate, and embedded in all AI delivery processes — procurement, deployment, monitoring, and retirement. The function proactively shapes how the organization uses AI rather than reviewing it after the fact. |
 
-The gap between Level 3 and Level 4 is where most programs stall. The jump from documented processes to operational enforcement requires dedicated capacity (someone whose job is governance, not governance as a 10% time commitment), technical controls that make compliance the path of least resistance, and an escalation mechanism that is actually used. Without those, a Level 3 organization will keep producing governance artifacts that do not govern.
+The gap between Level 3 and Level 4 is where most programs stall. The jump from documented processes to operational enforcement requires dedicated capacity (someone whose job is governance, not governance as a 10% time commitment), technical controls that make compliance the path of least resistance, and an escalation mechanism that is actually used. Without those, a Level 3 organization will keep producing governance artifacts that do not govern.  <!-- noev: rhetorical time-allocation figure, not a sourced statistic -->
 
 ---
 

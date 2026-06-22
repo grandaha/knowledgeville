@@ -38,7 +38,7 @@ Champions are the multiplier that lets a small program team reach an entire work
 
 **Who to choose.** Select for behavior and credibility, not title. Good champions are already the people others ask for help, are curious, are vocal about a tool's limits as well as its strengths, and are trusted within their team. The principle that matters most: **champions volunteer, they are not "voluntold."** A reluctant nominee carries none of the peer credibility that makes the role work, and some of the best champions sit well outside IT.
 
-**How many, and how to size the network.** There is no single ratio — and notably, the major workplace-AI publishers decline to publish one, because the right density depends on team structure and tool complexity. A workable planning range used in practice is **one champion per roughly 50–100 users, or about 1–3% of the user base**, scaled up where the work is more varied or the tool more complex. Start small and invited — a single cohort that proves the model — rather than appointing hundreds on day one.
+**How many, and how to size the network.** There is no single ratio — and notably, the major workplace-AI publishers decline to publish one, because the right density depends on team structure and tool complexity. A workable planning range used in practice is **one champion per roughly 50–100 users, or about 1–3% of the user base**, scaled up where the work is more varied or the tool more complex. Start small and invited — a single cohort that proves the model — rather than appointing hundreds on day one.  <!-- noev: champion-network sizing rule of thumb, not a sourced statistic -->
 
 **What they do.** Give the role explicit, bounded responsibilities so it does not become an unfunded burden:
 

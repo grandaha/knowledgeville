@@ -85,7 +85,7 @@ Two terms carry most of the rigor:
 
 For external benchmarking, organizations realized an average return of $3.70 for every $1 invested in generative AI ([IDC, 2024](#ev-idc-business-value-genai-2024-roi-per-dollar)) — useful as a sanity check on your own modeled return, not as a substitute for measuring it.
 
-A worked sketch: 100 hours saved per user per year × $75 fully-loaded hourly cost × 400 active users × 70% utilization × 60% realization = $1.26M per year. Drop the 60% haircut, and the same model reads $2.1M; swap "active users" for "licenses sold" and it inflates further still — which is exactly how investment cases lose credibility.
+A worked sketch: 100 hours saved per user per year × $75 fully-loaded hourly cost × 400 active users × 70% utilization × 60% realization = $1.26M per year. Drop the 60% haircut, and the same model reads $2.1M; swap "active users" for "licenses sold" and it inflates further still — which is exactly how investment cases lose credibility.  <!-- noev: worked-example arithmetic, not a sourced statistic -->
 
 ## Common Attribution Errors
 

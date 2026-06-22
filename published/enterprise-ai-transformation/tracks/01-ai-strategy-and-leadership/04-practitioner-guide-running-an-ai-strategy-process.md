@@ -103,7 +103,7 @@ Who's involved: the executive sponsor chairs; business-unit leaders own the valu
 
 This is the methodological heart of the process: convert strategic ambition into a ranked, funded shortlist. Most programs fail here — they generate enthusiasm, then fund everything. Your job is to do the opposite: surface broadly, then cut hard.
 
-Run structured ideation against the priority domains from Phase 2, not against the latest vendor demo. Frame every candidate as a business outcome ("cut claims cycle time 40%"), never a technology ("deploy a chatbot"). Then prioritize in two passes.
+Run structured ideation against the priority domains from Phase 2, not against the latest vendor demo. Frame every candidate as a business outcome ("cut claims cycle time 40%"), never a technology ("deploy a chatbot"). Then prioritize in two passes.  <!-- noev: illustrative outcome-framing example, not a sourced statistic -->
 
 Start with the **value × feasibility 2×2**. Plot each candidate on business value (vertical) against feasibility (horizontal). Four quadrants drive four decisions: **quick wins** (high value, high feasibility) — do now; **big bets** (high value, low feasibility) — sequence later, once enablers mature; **fill-ins** (low value, high feasibility) — defer; **drop** (low value, low feasibility) — kill on sight. The 2×2 is for fast triage and executive alignment, not the final cut.
 

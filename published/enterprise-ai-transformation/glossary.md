@@ -35,7 +35,7 @@ Core terminology for machine learning, generative AI, and production inference �
 
 The process of exposing a model to data so it learns patterns, relationships, or behaviors — rather than being explicitly programmed with rules.
 
-Instead of writing "if the email contains 'Nigerian prince', mark as spam," you show the model 10 million labeled emails and let it figure out the patterns itself. The model adjusts its internal parameters (weights) to minimize prediction error, repeated across millions of examples until the error is acceptably low.
+Instead of writing "if the email contains 'Nigerian prince', mark as spam," you show the model 10 million labeled emails and let it figure out the patterns itself. The model adjusts its internal parameters (weights) to minimize prediction error, repeated across millions of examples until the error is acceptably low.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 
@@ -83,7 +83,7 @@ Labeling is often done by humans and is expensive, slow, and error-prone. Label 
 
 ## Label Noise
 
-Errors or inconsistencies in training labels. Occurs when human annotators disagree, apply guidelines inconsistently, or make mistakes. Model performance degrades substantially when more than \~20% of training data is mislabeled. Even widely-used benchmark datasets like ImageNet contain significant numbers of mislabeled samples.
+Errors or inconsistencies in training labels. Occurs when human annotators disagree, apply guidelines inconsistently, or make mistakes. Model performance degrades substantially when more than \~20% of training data is mislabeled. Even widely-used benchmark datasets like ImageNet contain significant numbers of mislabeled samples.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 
@@ -159,7 +159,7 @@ A multi-step process where one or more AI agents execute a sequence of actions �
 
 Often used interchangeably but meaningfully different:
 
-- **Automation** is deterministic — it follows explicit rules. "If invoice total \> \$10,000, route to CFO for approval." The same input always produces the same output. No learning involved.
+- **Automation** is deterministic — it follows explicit rules. "If invoice total \> \$10,000, route to CFO for approval." The same input always produces the same output. No learning involved.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 - **AI** is probabilistic — it makes predictions or generates outputs based on learned patterns. The same input can produce different outputs depending on context, and the model's behavior can change as it's retrained.
 
 Most real-world AI systems combine both: a deterministic workflow orchestrates steps and routes data, while AI models handle the judgment calls within that workflow.
@@ -326,7 +326,7 @@ The practice of expressing governance policies as machine-executable rules embed
 
 ## NIST AI RMF (AI Risk Management Framework)
 
-A voluntary US framework published by the National Institute of Standards and Technology for managing AI risk. Four core functions: **Govern** (establish accountability), **Map** (identify context and risk), **Measure** (analyze and assess risk), **Manage** (prioritize and treat risk). A GenAI Profile (AI 600-1, July 2024) adds 12 risk categories specific to LLMs and agents. Adoption satisfies an estimated 60–80% of requirements across EU AI Act, US state laws, and international standards simultaneously.
+A voluntary US framework published by the National Institute of Standards and Technology for managing AI risk. Four core functions: **Govern** (establish accountability), **Map** (identify context and risk), **Measure** (analyze and assess risk), **Manage** (prioritize and treat risk). A GenAI Profile (AI 600-1, July 2024) adds 12 risk categories specific to LLMs and agents. Adoption satisfies an estimated 60–80% of requirements across EU AI Act, US state laws, and international standards simultaneously.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 
@@ -729,13 +729,13 @@ New terms and abbreviations identified across all documents in the knowledge bas
 
 ## GDPR (General Data Protection Regulation)
 
-The European Union's primary data privacy law, enacted in 2018. Governs how organizations collect, store, process, and transfer personal data belonging to EU residents — regardless of where the organization is located. Establishes rights for data subjects including the right to access, correct, and erase their data. Fines reach up to €20M or 4% of global annual revenue for serious violations. GDPR enforcement reached €7.1B cumulative through 2025. In AI contexts, GDPR governs the use of personal data for model training, automated decision-making affecting individuals, and the technically complex right to erasure.
+The European Union's primary data privacy law, enacted in 2018. Governs how organizations collect, store, process, and transfer personal data belonging to EU residents — regardless of where the organization is located. Establishes rights for data subjects including the right to access, correct, and erase their data. Fines reach up to €20M or 4% of global annual revenue for serious violations. GDPR enforcement reached €7.1B cumulative through 2025. In AI contexts, GDPR governs the use of personal data for model training, automated decision-making affecting individuals, and the technically complex right to erasure.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 
 ## CCPA (California Consumer Privacy Act)
 
-California's consumer privacy law, enhanced by the CPRA (California Privacy Rights Act) in 2023. Grants California residents rights similar to GDPR — access, deletion, opt-out of sale — and adds Automated Decision-Making Technology (ADMT) requirements effective January 2026. Requires meaningful disclosure of decision-making logic for AI systems. Fines: \$2,663 per negligent violation, \$7,988 per intentional violation.
+California's consumer privacy law, enhanced by the CPRA (California Privacy Rights Act) in 2023. Grants California residents rights similar to GDPR — access, deletion, opt-out of sale — and adds Automated Decision-Making Technology (ADMT) requirements effective January 2026. Requires meaningful disclosure of decision-making logic for AI systems. Fines: \$2,663 per negligent violation, \$7,988 per intentional violation.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 
@@ -860,7 +860,7 @@ Vehicle safety technology that uses sensors, cameras, and AI to assist drivers �
 
 ## MAL (Model-Assisted Labeling)
 
-An annotation workflow where a pre-trained ML model generates initial draft labels for a dataset, which human annotators then review, correct, and approve. Significantly reduces annotation time compared to labeling from scratch — enterprise teams report up to 60% reduction in annotation time for image classification tasks. The quality of the draft labels depends on how closely the pre-trained model's domain matches the annotation task.
+An annotation workflow where a pre-trained ML model generates initial draft labels for a dataset, which human annotators then review, correct, and approve. Significantly reduces annotation time compared to labeling from scratch — enterprise teams report up to 60% reduction in annotation time for image classification tasks. The quality of the draft labels depends on how closely the pre-trained model's domain matches the annotation task.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 
@@ -890,7 +890,7 @@ A method for explaining individual model predictions by approximating the model 
 
 ## CAGR (Compound Annual Growth Rate)
 
-The rate at which a quantity grows from one value to another over a multi-year period, expressed as an annual percentage, assuming compounding. Used throughout this knowledge base to describe market growth rates. Formula: (End Value / Start Value)\^(1/Years) - 1. A CAGR of 17% means a market is growing at a rate that, compounded annually, would take it from its starting size to its ending size over the stated period.
+The rate at which a quantity grows from one value to another over a multi-year period, expressed as an annual percentage, assuming compounding. Used throughout this knowledge base to describe market growth rates. Formula: (End Value / Start Value)\^(1/Years) - 1. A CAGR of 17% means a market is growing at a rate that, compounded annually, would take it from its starting size to its ending size over the stated period.  <!-- noev: definitional/illustrative figure or statutory cap by designation, not a sourced statistic -->
 
 ---
 

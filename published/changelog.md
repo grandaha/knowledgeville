@@ -3,7 +3,7 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-06-21"
+timestamp: "2026-06-22"
 appendix: true
 ---
 

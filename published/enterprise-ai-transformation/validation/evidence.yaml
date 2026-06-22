@@ -3097,3 +3097,279 @@
     pdf_hash:
   verified: 2026-06-21
   status: secondary-mirror
+- id: ev-mckinsey-future-that-works-2017-automatable-activities
+  claim: "Share of work activities technically automatable, and share of occupations with substantial automatable content"
+  value: "~50% of work activities automatable; 60% of occupations have >=30% of activities automatable"
+  wording: "about half the activities people are paid to do globally could theoretically be automated... fewer than 5 percent of occupations can be entirely automated, [but] about 60 percent have at least 30 percent of activities that could be automated"
+  source:
+    org: McKinsey Global Institute
+    report: "A Future That Works: Automation, Employment, and Productivity"
+    edition: 2017
+    url: https://www.mckinsey.com/featured-insights/digital-disruption/harnessing-automation-for-a-future-that-works
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-social-economy-2012-information-search
+  claim: "Share of the workweek interaction/knowledge workers spend searching for and gathering information"
+  value: "19%"
+  wording: "interaction workers... spend an estimated 19 percent of their time searching and gathering information"
+  source:
+    org: McKinsey Global Institute
+    report: "The Social Economy: Unlocking Value and Productivity Through Social Technologies"
+    edition: 2012
+    url: https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-noy-zhang-2023-genai-writing-productivity
+  claim: "Productivity and quality effect of ChatGPT on mid-level professional writing tasks (RCT, n=453)"
+  value: "time -40%, quality +18%"
+  wording: "the average time taken decreased by 40% and output quality rose by 18%"
+  source:
+    org: "Noy, S. and Zhang, W. (MIT)"
+    report: "Experimental evidence on the productivity effects of generative artificial intelligence (Science)"
+    edition: 2023
+    url: https://www.science.org/doi/10.1126/science.adh2586
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-agentcompany-cmu-2024-autonomous-completion
+  claim: "Best LLM agent's autonomous task-completion rate on 175 real multi-step professional tasks"
+  value: "24% fully autonomous (34.4% partial-credit), n=175 tasks"
+  wording: "the best-performing model, Claude 3.5 Sonnet, was able to autonomously complete 24% of the provided tasks... a score of 34.4% on our metric"
+  source:
+    org: "Xu, F. F., Neubig, G., et al. (Carnegie Mellon University)"
+    report: "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks (arXiv:2412.14161)"
+    edition: 2024
+    url: https://arxiv.org/abs/2412.14161
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-deloitte-rpa-survey-2018-met-expectations
+  claim: "Among organizations that scaled RPA, share reporting it met or exceeded expectations across dimensions"
+  value: "compliance 92%, quality/accuracy 90%, productivity 86%"
+  wording: "RPA continues to meet and exceed expectations across multiple dimensions including improved compliance (92%), improved quality / accuracy (90%), improved productivity (86%)"
+  source:
+    org: Deloitte
+    report: "The robots are ready. Are you? (Global RPA Survey)"
+    edition: 2018
+    url: https://www2.deloitte.com/bg/en/pages/technology/articles/deloitte-global-rpa-survey-2018.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-deloitte-automation-intelligence-2022-telkomsel
+  claim: "Telkomsel intelligent-automation scale and savings (named case)"
+  value: "~100 processes; >110,000 hours/month saved in 2021"
+  wording: "it has successfully scaled its intelligent automation programme to around 100 processes... delivering savings of over 110,000 hours per month in 2021"
+  source:
+    org: Deloitte
+    report: "Automation with intelligence (Global Intelligent Automation survey)"
+    edition: 2022
+    url: https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-deloitte-intelligent-automation-2022-process-intelligence-discovery
+  claim: "Share of respondents reporting process intelligence accelerated discovery of automation use cases"
+  value: "63% accelerated, 30% no difference, 7% slowed"
+  wording: "63 per cent of respondents believe that process intelligence accelerated the discovery process... just seven per cent believe that it slowed down or stopped discovery"
+  source:
+    org: Deloitte
+    report: "Automation with intelligence (Global Intelligent Automation survey)"
+    edition: 2022
+    url: https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-deloitte-state-genai-2024-roi-expectations
+  claim: "Share reporting their most advanced gen-AI initiative meets or exceeds ROI expectations (Wave 4, n=2,773)"
+  value: "nearly three-quarters"
+  wording: "nearly three-quarters of respondents reported that their most advanced GenAI initiative is meeting or exceeding ROI expectations"
+  source:
+    org: Deloitte
+    report: "State of Generative AI in the Enterprise (Q4 / Wave 4: Generating a New Future)"
+    edition: 2024
+    url: https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-deloitte-tmt-predictions-2025-agentic-pilots
+  claim: "Share of gen-AI-using companies expected to launch agentic AI pilots"
+  value: "25% in 2025, rising to 50% by 2027"
+  wording: "in 2025, 25% of companies that use gen AI will launch agentic AI pilots or proofs of concept, growing to 50% in 2027"
+  source:
+    org: Deloitte
+    report: "TMT Predictions 2025: autonomous generative AI agents"
+    edition: 2025
+    url: https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/autonomous-generative-ai-agents-still-under-development.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-transformations-2021-success-rate
+  claim: "Share of organizational transformations that succeed at both improving performance and sustaining gains (n=1,034)"
+  value: "fewer than one-third"
+  wording: "Less than one-third of respondents... say their companies' transformations have been successful at both improving organizational performance and sustaining those improvements over time"
+  source:
+    org: McKinsey
+    report: "The science behind successful organizational transformations"
+    edition: 2021
+    url: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/successful-transformations
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-superagency-2025-leader-perception-gap
+  claim: "Employees using gen AI for >=30% of daily work vs C-suite estimate of the same"
+  value: "13% of employees vs 4% estimated by leaders (~3x)"
+  wording: "C-suite leaders estimate that only 4 percent of employees use gen AI for at least 30 percent of their daily work, [but] 13 percent of employees report that they use gen AI at that level"
+  source:
+    org: McKinsey
+    report: "Superagency in the Workplace"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-promising-to-productive-2024-telecom-care
+  claim: "North American telecom customer-care results from pairing gen AI with workflow redesign"
+  value: "call volume -30%, average handle time -25%+, first-call resolution +10-20pp"
+  wording: "Total call volume fell by about 30 percent, and average handle time by more than one-quarter, even as service quality improved: first-call resolution rates rose by ten to 20 percentage points"
+  source:
+    org: McKinsey
+    report: "From promising to productive: Real results from gen AI in services"
+    edition: 2024
+    url: https://www.mckinsey.com/capabilities/operations/our-insights/from-promising-to-productive-real-results-from-gen-ai-in-services
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-mckinsey-state-of-ai-2025-no-tangible-ebit
+  claim: "Share of organizations not yet seeing a tangible enterprise-level EBIT impact from gen AI (distinct from the 39% reporting any impact)"
+  value: "more than 80%"
+  wording: "More than 80 percent of respondents say their organizations aren't seeing a tangible impact on enterprise-level EBIT from their use of gen AI"
+  source:
+    org: McKinsey
+    report: "The State of AI"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-forrester-rpa-services-ratio-2019
+  claim: "Services-to-license spend ratio for RPA"
+  value: "$3.41 services per $1 of software"
+  wording: "for every dollar spent on RPA software, $3.41 was spent on services to make it work"
+  source:
+    org: "Forrester (via CIO.com)"
+    report: "4 surprising RPA research findings from Forrester"
+    edition: 2019
+    url: https://www.cio.com/article/215856/4-surprising-rpa-research-findings-from-forrester.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-wavestone-global-ai-survey-2025-no-roi-framework
+  claim: "Share of organizations without a structured ROI measurement framework for AI (n=500)"
+  value: "46%"
+  wording: "while most organizations see tangible benefits, 46% do not yet have a structured ROI measurement framework"
+  source:
+    org: Wavestone
+    report: "Global AI Survey 2025: The paradox of AI adoption"
+    edition: 2025
+    url: https://www.wavestone.com/en/insight/global-ai-survey-2025-ai-adoption/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-gartner-agentic-ai-2025-agent-washing
+  claim: "Share of self-described agentic-AI vendors Gartner considers genuine (the rest is agent washing)"
+  value: "~130 of thousands are real"
+  wording: "Gartner estimates only about 130 of the thousands of agentic AI vendors are real... many vendors are contributing to the hype by engaging in agent washing"
+  source:
+    org: Gartner
+    report: "Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027 (press release / commentary)"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-gartner-agentic-ai-2025-autonomous-decisions-2028
+  claim: "Projected share of day-to-day work decisions made autonomously through agentic AI by 2028"
+  value: ">=15% by 2028, up from 0% in 2024"
+  wording: "by 2028, at least 15% of day-to-day work decisions will be made autonomously through agentic AI, up from 0% in 2024"
+  source:
+    org: Gartner
+    report: "Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027"
+    edition: 2025
+    url: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-fortunebusinessinsights-2025-bpm-market
+  claim: "Business process management (BPM) software market size and growth"
+  value: "$21.51 billion in 2025, 17.2% CAGR"
+  wording: "The global business process management market size was valued at USD 21.51 billion in 2025... exhibiting a CAGR of 17.2% during the forecast period"
+  source:
+    org: Fortune Business Insights
+    report: "Business Process Management (BPM) Market"
+    edition: 2025
+    url: https://www.fortunebusinessinsights.com/business-process-management-bpm-market-102639
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-fortunebusinessinsights-2025-process-mining-market
+  claim: "Process mining software market size"
+  value: "$3.66 billion in 2025, rising to $5.45 billion in 2026"
+  wording: "The global process mining software market size was valued at $3.66 billion in 2025 and is projected to grow from $5.45 billion in 2026"
+  source:
+    org: Fortune Business Insights
+    report: "Process Mining Software Market"
+    edition: 2025
+    url: https://www.fortunebusinessinsights.com/process-mining-software-market-104792
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-fortunebusinessinsights-2025-rpa-market
+  claim: "Robotic process automation (RPA) market size and growth"
+  value: "$22.58 billion in 2025, 19.1% CAGR"
+  wording: "The global robotic process automation market size was valued at USD 22.58 billion in 2025... at a CAGR of 19.10%"
+  source:
+    org: Fortune Business Insights
+    report: "Robotic Process Automation Market"
+    edition: 2025
+    url: https://www.fortunebusinessinsights.com/robotic-process-automation-rpa-market-102042
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-precedence-research-2025-ipaas-market
+  claim: "Integration platform-as-a-service (iPaaS) market size"
+  value: "$17.64 billion in 2025"
+  wording: "The global integration platform as a service market size was calculated at USD 17.64 billion in 2025"
+  source:
+    org: Precedence Research
+    report: "Integration Platform as a Service (iPaaS) Market"
+    edition: 2025
+    url: https://www.precedenceresearch.com/integration-platform-as-a-service-market
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-kpmg-ai-pulse-2026-agent-integration
+  claim: "Share of organizations that had integrated AI agents into operations (overall, Q1 2026)"
+  value: "54% overall (80% in the technology sector)"
+  wording: "AI agent deployment is at 80% in the tech sector, close to 30 percentage points higher than the overall KPMG US Q1 2026 Quarterly Pulse at 54%"
+  source:
+    org: KPMG
+    report: "AI Quarterly Pulse Survey, Q1 2026"
+    edition: 2026
+    url: https://kpmg.com/us/en/media/news/q1-ai-pulse2026.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: secondary-mirror
+- id: ev-wef-future-of-jobs-2025-training-need
+  claim: "Share of the workforce projected to require reskilling or upskilling by 2030"
+  value: "59%"
+  wording: "59% of the global workforce is projected to require reskilling or upskilling by 2030... 11 of whom are unlikely to receive it"
+  source:
+    org: World Economic Forum
+    report: "The Future of Jobs Report 2025"
+    edition: 2025
+    url: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary

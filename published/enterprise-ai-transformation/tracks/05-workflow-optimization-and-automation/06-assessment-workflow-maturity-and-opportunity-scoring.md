@@ -156,23 +156,23 @@ Take an invoice-exception handling workflow:
 
 - **Volume:** 60,000 exception cases per year
 - **Time per instance:** 12 minutes of analyst handling
-- **Fully-loaded labor cost:** $55 per hour → $11 per case
-- **Error rate today:** 4% of cases mishandled
-- **Cost per error:** $400 (rework + late-payment penalty), so $960,000/yr in error cost on the 2,400 mishandled cases
+- **Fully-loaded labor cost:** $55 per hour → $11 per case  <!-- noev: worked-example / rubric figure, not a sourced claim -->
+- **Error rate today:** 4% of cases mishandled  <!-- noev: worked-example / rubric figure, not a sourced claim -->
+- **Cost per error:** $400 (rework + late-payment penalty), so $960,000/yr in error cost on the 2,400 mishandled cases  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
-Time/cost released (assume automation handles 70% of cases end-to-end):
+Time/cost released (assume automation handles 70% of cases end-to-end):  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 ```
 60,000 × 70% × (12/60 hr) × $55 = 60,000 × 0.70 × 0.2 × $55 = $462,000/yr
 ```
 
-Error cost avoided (assume error rate falls from 4% to 1%):
+Error cost avoided (assume error rate falls from 4% to 1%):  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 ```
 (4% − 1%) × 60,000 × $400 = 0.03 × 60,000 × $400 = $720,000/yr
 ```
 
-Gross annual value ≈ **$1.18M**. Subtract an amortized build cost of, say, $250,000 over two years ($125K/yr) plus $90K/yr run cost → **net ≈ $965K/yr**. This single number is what enters the prioritization matrix below. Crucially, in this illustrative case more than half the value came from *error reduction*, not time savings — which is exactly why sizing on time alone systematically mis-ranks opportunities.
+Gross annual value ≈ **$1.18M**. Subtract an amortized build cost of, say, $250,000 over two years ($125K/yr) plus $90K/yr run cost → **net ≈ $965K/yr**. This single number is what enters the prioritization matrix below. Crucially, in this illustrative case more than half the value came from *error reduction*, not time savings — which is exactly why sizing on time alone systematically mis-ranks opportunities.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 ---
 
@@ -182,7 +182,7 @@ Most prioritization frameworks plot value against complexity (or feasibility) on
 
 So this framework scores every opportunity on **three independent axes, each 1–5**:
 
-**Axis A — Value** (1 = marginal, 5 = transformational). Use the net annual value from Part 2, bucketed into 1–5 bands you define for your context (e.g., 1 = <$50K, 5 = >$1M). Scoring the dollar figure into a band keeps the three axes comparable.
+**Axis A — Value** (1 = marginal, 5 = transformational). Use the net annual value from Part 2, bucketed into 1–5 bands you define for your context (e.g., 1 = <$50K, 5 = >$1M). Scoring the dollar figure into a band keeps the three axes comparable.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 **Axis B — Data Readiness** (1 = data scattered/absent, 5 = real-time, governed, quality-assured). This is the workflow-scoped Dimension 3 score from Part 1, reused here. *Low data readiness is a veto, not a discount* — see sequencing below.
 
@@ -201,7 +201,7 @@ Do not collapse the three into a single weighted average — the averaging hides
 | Low (1–2) | Any | High (4–5) | **Defer / decline** |
 | Any | Any | Any with no named owner | **Not ready** — assign ownership before scoring |
 
-The single most important rule: **a low Data Readiness score overrides a high Value score.** A high-value opportunity on unready data is not a quick win you can muscle through — it is a data project wearing an automation costume. Routing it back to [Track 03](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) as a prerequisite is the correct, money-saving move, and it is exactly the discipline the 60% abandonment figure above demands.
+The single most important rule: **a low Data Readiness score overrides a high Value score.** A high-value opportunity on unready data is not a quick win you can muscle through — it is a data project wearing an automation costume. Routing it back to [Track 03](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) as a prerequisite is the correct, money-saving move, and it is exactly the discipline the 60% abandonment figure above demands.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 ---
 
@@ -270,7 +270,7 @@ The most common failure mode is the same one that afflicts every assessment: a s
 
 **Convert the matrix into a funded sequence within two weeks.** Quick wins get started immediately; the strategic bet gets a scoped charter; data-blocked items get Track 03 workstreams opened against them. If nothing on the list has a named owner and a start date within two weeks of the session, the assessment changed nothing.
 
-**Use the data-readiness axis to stop bad funding decisions before they happen.** The single most valuable thing this assessment does is catch the high-value, low-data opportunity that two-axis scoring would have greenlit — and reroute it to fix the data first. That is the discipline behind the 60% abandonment figure: the projects that fail were mostly fundable-looking ideas sitting on unusable data. Every time this assessment blocks one of those, it pays for itself.
+**Use the data-readiness axis to stop bad funding decisions before they happen.** The single most valuable thing this assessment does is catch the high-value, low-data opportunity that two-axis scoring would have greenlit — and reroute it to fix the data first. That is the discipline behind the 60% abandonment figure: the projects that fail were mostly fundable-looking ideas sitting on unusable data. Every time this assessment blocks one of those, it pays for itself.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 **Feed the strategic bet into a genuine redesign, not a veneer.** The maturity rubric and the sizing both exist to support the one move that the evidence says actually moves EBIT: fundamentally redesigning a workflow rather than bolting AI onto the existing one. Hand the strategic bet to the [practitioner guide for running a workflow optimization program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md) and instrument it with [Track 08](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) baselines from day one.
 

@@ -60,7 +60,7 @@ With the right unit in view, prioritize candidate workflows on two independent a
 - **Standardization and stability** — is the workflow consistent, or does every run differ?
 - **Rule-based vs. judgment** — deterministic, rule-bound steps are far easier than open-ended judgment (though generative AI extends the frontier into language-based judgment, covering activities at roughly 25% of work time per ([McKinsey, 2023](#ev-mckinsey-mgi-economic-potential-2023-genai-time-share))).
 - **Digital, accessible input** — is the data the workflow consumes already digital, structured, and reachable? This is where the data-readiness track becomes a hard dependency.
-- **Exception density** — workflows that are 80% standard and 20% chaotic exceptions are deceptively hard; the exceptions, not the happy path, determine effort.
+- **Exception density** — workflows that are 80% standard and 20% chaotic exceptions are deceptively hard; the exceptions, not the happy path, determine effort. <!-- noev: 80/20 is illustrative, not a sourced statistic -->
 
 Plot candidates on a value-versus-feasibility grid. The sequencing rule is unglamorous but reliable: **high-value, high-feasibility workflows first** — these fund the program and build credibility — followed by high-value, lower-feasibility workflows that justify the harder data and process work. Low-value workflows are deprioritized regardless of how easy they are to automate, which is the single most common prioritization error: automating what is easy rather than what matters.
 
@@ -100,7 +100,7 @@ Prioritization is only as good as the picture of how work actually flows — and
 
 **3. Task mining (the desktop reality).** Where process mining draws on transactional system logs, task mining captures user-interaction data — clicks, keystrokes, copy-paste, application time — to reconstruct how work is performed at the desktop, below the level any system log records *(Celonis, What is Task Mining)*. It is how you find the invisible swivel-chair work between systems that is often the richest automation candidate.
 
-The methodology in practice: **map to align, mine to verify, task-mine to find the hidden work — then prioritize against the value/feasibility grid above using evidence, not anecdote.** Discovery is where the "process not understood" failure mode (the 30% of RPA failures cited earlier) is defeated.
+The methodology in practice: **map to align, mine to verify, task-mine to find the hidden work — then prioritize against the value/feasibility grid above using evidence, not anecdote.** Discovery is where the "process not understood" failure mode (the 30% of RPA failures cited earlier) is defeated. <!-- noev: restates the ABBYY 30% figure anchored in the failure-modes section -->
 
 ---
 
@@ -122,7 +122,7 @@ On the optimistic side, IDC's analysis found organizations realizing **an averag
 
 The sober counterweight matters more for credible planning. Deloitte found that organizations scaling automation beyond piloting achieved an average **32% cost reduction** in the areas targeted (up from 24% in 2020) — but also that **36% had not calculated their payback at all**, and that average payback for pilot-stage intelligent automation had *lengthened* to about **22 months, up from 16 months in 2020**, as the easy wins were exhausted ([Deloitte, 2022](#ev-deloitte-automation-intelligence-2022-cost-payback)). The honest ROI framing, therefore, is a barbell: quick wins can pay back in well under a year, but the strategic, harder workflows carry multi-year paybacks and demand the data and platform investment to be counted in the case.
 
-The discipline that separates the 39% who see EBIT impact from the rest is **instrumenting the baseline before you start** — current cycle time, cost-per-transaction, error rate, and volume — so the delta is measurable. Value that is not measured against a baseline is value that, by Deloitte's evidence, a third of organizations never actually calculate. The measurement methodology itself is the subject of [Track 08, measurement and value realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
+The discipline that separates the 39% ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-ebit-any)) who see EBIT impact from the rest is **instrumenting the baseline before you start** — current cycle time, cost-per-transaction, error rate, and volume — so the delta is measurable. Value that is not measured against a baseline is value that, by Deloitte's evidence, a third of organizations never actually calculate. The measurement methodology itself is the subject of [Track 08, measurement and value realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
 
 ---
 
@@ -131,7 +131,7 @@ The discipline that separates the 39% who see EBIT impact from the rest is **ins
 Workflow optimization is not a standalone effort; it sits on top of two enabling tracks and feeds two governing ones. Treating it as independent is itself a failure mode.
 
 - **Data readiness (Track 03) is a hard dependency.** Every method above — process mining's event logs, an AI step's input data, an agent's context — depends on data that is accessible, structured, and trustworthy. Gartner named poor data quality among the top reasons projects are abandoned after POC ([Gartner, 2024](#ev-gartner-genai-poc-2024-abandonment)). A workflow's *feasibility* score is, in large part, a data-readiness score. See [Track 03, data readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md).
-- **Platform (Track 04) is how it runs at scale.** Moving a workflow from a clever pilot to reliable production — orchestration, integration across systems, monitoring, evaluation — is platform work. The 3–4% RPA scaling rate and the pilot-to-production gap are platform failures as much as anything. See [Track 04, technology architecture and platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md).
+- **Platform (Track 04) is how it runs at scale.** Moving a workflow from a clever pilot to reliable production — orchestration, integration across systems, monitoring, evaluation — is platform work. The 3–4% RPA scaling rate ([Deloitte, 2018](#ev-deloitte-global-rpa-survey-2018-scaling)) and the pilot-to-production gap are platform failures as much as anything. See [Track 04, technology architecture and platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md).
 - **Governance (Track 02) gates the higher levels.** As workflows move up the Assist → Agent spectrum, the AI takes more autonomous action and governance risk rises sharply. Any workflow that automates a decision-bearing or customer-facing step falls under [Track 02, AI governance and risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md).
 - **Measurement (Track 08) closes the loop.** Sizing value up front and proving it after deployment is measurement-track work; without it, ROI claims stay aspirational. See [Track 08, measurement and value realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
 
@@ -144,7 +144,7 @@ For the tools that support each method here — mapping, mining, automation plat
 The research above points to a recurring set of traps. Each maps to a discipline in this framework.
 
 - **Automating the easy, not the valuable.** Chasing high-feasibility, low-value workflows because they are simple. This is why prioritization runs on two axes, not one — feasibility alone is a trap.
-- **Optimizing the task, ignoring the workflow.** Deploying a faster tool inside an unchanged process. Task-level gains do not reach the P&L until the surrounding workflow is redesigned; this is the core of the 39%-EBIT-impact gap.
+- **Optimizing the task, ignoring the workflow.** Deploying a faster tool inside an unchanged process. Task-level gains do not reach the P&L until the surrounding workflow is redesigned; this is the core of the 39%-EBIT-impact gap. <!-- noev: restates the 39% EBIT figure anchored above -->
 - **Automating a process you never understood.** Skipping discovery and automating the documented (and fictional) happy path while exceptions break in production — the 30% of RPA failures attributed to the process not being understood ([ABBYY, 2020](#ev-abbyy-2020-rpa-failure-reasons)).
 - **Pilot purgatory.** Running endless POCs with no path to production. Roughly 95% of generative-AI pilots showed no P&L impact ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)) largely because scaling was never designed in — a platform and ownership failure, not a model one.
 - **Pushing the autonomy level too far, too fast.** Sending a high-judgment workflow straight to Agent without the governance to contain it — turning pilots into incidents.

@@ -18,7 +18,7 @@ The cost of point-solution sprawl is not only financial. It is architectural. An
 
 This consolidation gap shows up in the maturity data as well. Only about 21% of organizations report having a mature model for governing autonomous AI agents ([Deloitte, 2026](#ev-deloitte-state-ai-enterprise-2026-agentic-governance-gap)), and the organizations that pull ahead tend to be the ones that centralize: "future-built" firms are roughly three times as likely to operate a central, integrated AI platform as their lagging peers ([BCG, 2025](#ev-bcg-value-gap-2025-central-platform-3x)). Centralization is not bureaucratic overhead — it is the pattern that correlates with capturing value.
 
-This track defines the platform layer that makes everything else work. [Track 02 (AI Governance & Risk)](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md) sets policy — which models are approved, what data handling is permissible, what human review is required. Track 03 (Data Readiness) manages the inputs — data quality, pipelines, lineage. Track 04 provides the shared engineering layer that makes both operational: the API gateway through which governed models are accessed, the model registry that enforces compliance classifications, the observability infrastructure that gives governance and data teams visibility into what is actually running.
+This track defines the platform layer that makes everything else work. [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md) sets policy — which models are approved, what data handling is permissible, what human review is required. [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) manages the inputs — data quality, pipelines, lineage. The platform layer provides the shared engineering layer that makes both operational: the API gateway through which governed models are accessed, the model registry that enforces compliance classifications, the observability infrastructure that gives governance and data teams visibility into what is actually running.
 
 Without the platform layer, governance is a document and data readiness is a project. With it, both become enforceable, auditable, and improvable over time.
 
@@ -152,7 +152,7 @@ Order matters. Organizations that try to build the full AI platform at once prod
 - [ ] An observability dashboard is active showing API spend, latency distributions, error rates, and cache hit rates across the platform
 - [ ] A platform change management process is defined: advance notice to consuming teams, change log, and rollback procedure
 
-Assess your organization's current platform maturity against the [platform maturity scoring assessment](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/05-assessment-platform-maturity-scoring.md). For the governance framework that defines policy the platform must enforce, see [Track 02, AI Governance Framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md).
+Assess your organization's current platform maturity against the [platform maturity scoring assessment](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/05-assessment-platform-maturity-scoring.md). For the governance framework that defines policy the platform must enforce, see [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md).
 
 ---
 

@@ -204,7 +204,7 @@ Default to centralized early, then federate as demand and capability grow. The e
 > About **70%** of institutions with highly centralized AI operating models have put use cases into production, compared with only about **30%** of those with a fully decentralized approach ([McKinsey, 2024](#ev-mckinsey-banking-operating-model-2024-centralized-production))
 > In high-maturity organizations, almost **60%** of leaders have centralized their AI strategy, governance, data, and infrastructure ([Gartner, 2025](#ev-gartner-ai-maturity-2025-centralized-strategy))
 
-Finally, set success metrics and a standing re-direction cadence. Define a small set of value, adoption, and risk metrics per initiative; the metrics and the feedback loop that feeds re-direction live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Then schedule a quarterly leadership review that inspects evidence, kills or doubles down, and reallocates the portfolio.
+Finally, set success metrics and a standing re-direction cadence. Define a small set of value, adoption, and risk metrics per initiative; the metrics and the feedback loop that feeds re-direction live in [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Then schedule a quarterly leadership review that inspects evidence, kills or doubles down, and reallocates the portfolio.
 
 **The quarterly re-direction review covers:**
 - Value, adoption, and risk metrics versus targets, per initiative

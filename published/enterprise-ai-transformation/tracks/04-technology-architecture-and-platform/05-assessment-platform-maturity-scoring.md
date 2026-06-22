@@ -8,7 +8,7 @@ timestamp: "2026-06-18"
 
 ## What This Is For
 
-This assessment scores one thing: whether the **AI platform function** is mature enough to support the AI the organization has already deployed — or is actively building. It is not a model governance audit (that is [the Track 02 governance maturity scoring](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/05-assessment-governance-maturity-scoring.md)) and it is not a data readiness audit (that is Track 03). This one measures whether the shared infrastructure layer — the API gateway, the shared embedding services, the model registry, the observability tooling, the vendor discipline — is real and operational, versus fragmented and invisible.
+This assessment scores one thing: whether the **AI platform function** is mature enough to support the AI the organization has already deployed — or is actively building. It is not a model governance audit (that is [the AI Governance & Risk maturity scoring](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/05-assessment-governance-maturity-scoring.md)) and it is not a data readiness audit (that is [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md)). This one measures whether the shared infrastructure layer — the API gateway, the shared embedding services, the model registry, the observability tooling, the vendor discipline — is real and operational, versus fragmented and invisible.
 
 It is the diagnostic companion to the [AI technology architecture framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md) and the [practitioner guide for designing an AI platform function](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function.md). Run it before investing in net-new AI capabilities, when platform costs are growing without explanation, or when the number of teams building AI independently has outpaced any shared infrastructure serving them.
 
@@ -50,7 +50,7 @@ This dimension assesses whether the organization knows which AI models it is usi
 | 2 | An informal list exists (a shared doc or wiki page) but is not maintained; new models are added without formal evaluation; compliance classification is absent. |
 | 3 | A formal model registry exists with entries for each approved model, including use-case classification, cost tier, and a named owner; a basic evaluation process exists but is inconsistently applied. |
 | 4 | All models in use are registered; each entry includes capability benchmarks on internal test cases, compliance classification, cost comparison, and vendor risk notes; evaluation is required before a new model is added. |
-| 5 | The model registry is integrated with governance (feeds the model inventory in Track 02), is updated automatically when vendor models change, and drives developer tooling defaults; model sunset and replacement processes are defined. |
+| 5 | The model registry is integrated with governance (feeds the model inventory in [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md)), is updated automatically when vendor models change, and drives developer tooling defaults; model sunset and replacement processes are defined. |
 
 Evidence to collect: model registry document or system with dated entries, evaluation artifacts for at least one approved model, compliance classification record, process document for adding a new model, evidence of a model being removed or replaced with documentation.
 
@@ -122,7 +122,7 @@ The gap between Level 3 and Level 4 is where most platform programs stall. Emerg
 
 ## How to Run the Assessment
 
-**Assemble the right group.** No single function can score all five dimensions honestly. You need the platform or infrastructure lead, representative senior engineers from at least two business-unit AI teams (they know whether the shared infrastructure is actually used), someone from finance with visibility into API spend, and the AI governance owner from Track 02 (vendor risk and model registry overlap with governance). Without engineers from the consuming teams in the room, Dimensions 3 and 4 will be systematically over-scored. The session should run 60–90 minutes.
+**Assemble the right group.** No single function can score all five dimensions honestly. You need the platform or infrastructure lead, representative senior engineers from at least two business-unit AI teams (they know whether the shared infrastructure is actually used), someone from finance with visibility into API spend, and the AI governance owner from [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md) (vendor risk and model registry overlap with governance). Without engineers from the consuming teams in the room, Dimensions 3 and 4 will be systematically over-scored. The session should run 60–90 minutes.
 
 **Score on evidence, not intent.** For each dimension, rate 1–5 and capture the evidence that supports it — the specific artifacts named in each "Evidence to collect" line. Not "we have a model registry" but "here is the registry document, here are three entries with dated evaluations, and here is the process document for adding a new model." A score inflated by optimism produces a roadmap built on fiction.
 
@@ -150,7 +150,7 @@ Use this in your assessment session:
 - **1.0–2.0:** Platform infrastructure is not functional. Do not scale AI deployment — the cost, quality, and vendor risk exposure accumulating across fragmented teams is not visible and cannot be managed.
 - **2.0–3.0:** Platform infrastructure exists but is not operational. Identify the binding constraint (usually API governance or shared infrastructure) and fix it before funding net-new AI capabilities.
 - **3.0–4.0:** Platform is real but inconsistently used. Build systematically toward making the shared path the default path; raise the lowest dimension first.
-- **4.0–5.0:** Platform is operational. Focus on automation, portfolio-driven optimization, and tighter integration with the governance function in Track 02.
+- **4.0–5.0:** Platform is operational. Focus on automation, portfolio-driven optimization, and tighter integration with the governance function in [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md).
 
 ---
 

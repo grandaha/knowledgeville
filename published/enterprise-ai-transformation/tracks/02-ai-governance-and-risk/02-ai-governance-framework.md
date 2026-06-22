@@ -182,7 +182,7 @@ AI governance fails in patterns. These are the four that account for most of it.
 - [ ] EU AI Act applicability has been assessed; high-risk systems have been identified and compliance preparation is underway
 - [ ] AI governance coverage explicitly addresses agentic and autonomous AI systems, not only predictive and generative models
 
-Assess governance maturity against the companion [governance maturity scoring assessment](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/05-assessment-governance-maturity-scoring.md). For the data layer that underpins governance, see [Track 03, Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md).
+Assess governance maturity against the companion [governance maturity scoring assessment](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/05-assessment-governance-maturity-scoring.md). For the data layer that underpins governance, see [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md).
 
 ---
 

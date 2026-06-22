@@ -38,7 +38,7 @@ DECISION REQUESTED: Approve [$amount] for [time horizon] against the
    [process] cycle time [X%], freeing [$Y] of capacity"].
    What [$amount] funds: [the constraint-relieving work].
    How we will know it worked: [the leading + lagging metrics from
-   Measurement track 08], reported to this body every [cadence].
+   Measurement & Value Realization], reported to this body every [cadence].
    What we are NOT funding yet, and why: [the tracks we are
    deliberately staging behind their dependencies].
 
@@ -206,7 +206,7 @@ WHAT SHIPPED (outcomes, not activity)
   - [What changed for users — not "trained 40 people" but "40 people
     now use [tool] in [workflow]"]
 
-WHAT IT'S WORTH (evidence from Measurement track 08)
+WHAT IT'S WORTH (evidence from Measurement & Value Realization)
   | Metric                    | Baseline | Now    | Target |
   | ------------------------- | -------- | ------ | ------ |
   | [Leading: weekly active]  | [ ]      | [ ]    | [ ]    |

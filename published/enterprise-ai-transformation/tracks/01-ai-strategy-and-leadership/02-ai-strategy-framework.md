@@ -102,7 +102,7 @@ Each horizon needs its own success metric and its own patience. Holding a transf
 
 Two implications follow. First, value attribution must tie each initiative back to a specific P&L line, or the portfolio cannot be steered. Second, returns concentrate. As the front-runner evidence shows, companies that drive a single strategic bet to scale are nearly **3x** more likely to beat their ROI expectations ([Accenture, 2025](#ev-accenture-front-runners-2025-roi-3x)) — value pools in a few deep bets, not across a wide, shallow field.
 
-This is where strategy depends on measurement. The attribution discipline, the value-realization tracking, and the signal that tells leadership which bets to double down on and which to cut all live in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Strategy sets the intent; measurement closes the loop back to it. A strategy with no feedback loop is a strategy that cannot learn.
+This is where strategy depends on measurement. The attribution discipline, the value-realization tracking, and the signal that tells leadership which bets to double down on and which to cut all live in [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md). Strategy sets the intent; measurement closes the loop back to it. A strategy with no feedback loop is a strategy that cannot learn.
 
 ---
 
@@ -110,7 +110,7 @@ This is where strategy depends on measurement. The attribution discipline, the v
 
 Above the eight tracks sits a leadership layer. Its job is to hold intent steady, arbitrate trade-offs, and redirect capital as evidence arrives. This is not the same as risk governance — and conflating the two is a common mistake.
 
-The handoff is clean. **Track 01 owns intent**: what the firm is trying to achieve with AI and where it places its bets. [Track 02, AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md) **owns the guardrails**: the policies, controls, and review gates that keep deployment safe and compliant. Strategy decides *what* and *why*; governance decides *within what limits*. One sets direction, the other sets boundaries, and the steering structure connects them.
+The handoff is clean. **AI Strategy & Leadership owns intent**: what the firm is trying to achieve with AI and where it places its bets. [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md) **owns the guardrails**: the policies, controls, and review gates that keep deployment safe and compliant. Strategy decides *what* and *why*; governance decides *within what limits*. One sets direction, the other sets boundaries, and the steering structure connects them.
 
 The weak point in most organizations is ownership at the top. AI oversight too often lives well below the level where strategic trade-offs actually get made.
 
@@ -153,7 +153,7 @@ The root cause is rarely the pilot. It is the missing funding and operating mode
 - [ ] Risk appetite is set by leadership and matched by actual mitigation, not just risk recognition
 - [ ] Build/buy/partner posture is decided per initiative against the value thesis
 - [ ] Boundaries are defined for where AI will *not* be used, and why
-- [ ] A named C-suite owner and a board or steering body oversee AI, with intent (Track 01) and guardrails (Track 02) clearly separated
+- [ ] A named C-suite owner and a board or steering body oversee AI, with intent ([AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md)) and guardrails ([AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md)) clearly separated
 - [ ] A standing re-direction cadence reviews measurement evidence and reallocates the portfolio
 
 Score this readiness with the companion [strategic readiness scoring diagnostic](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/05-assessment-strategic-readiness-scoring.md).

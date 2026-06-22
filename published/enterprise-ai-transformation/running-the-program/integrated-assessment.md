@@ -76,11 +76,11 @@ The constraint you name here is the input to [Sequencing Playbooks](/enterprise-
 
 ## Framing the Investment Case
 
-A prioritized gap list is only useful if it changes where money goes. Convert the profile into a case in three moves, anchored to [Track 08 — Measurement](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md):
+A prioritized gap list is only useful if it changes where money goes. Convert the profile into a case in three moves, anchored to [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md):
 
 1. **Name the constraint and its downstream cost.** "Data Readiness at Level 2 is capping three Level-4 workflow pilots that cannot scale." That sentence — constraint, level, and the higher-scoring work it throttles — is the case. It reframes the ask from "fund Data" to "unlock the value already half-built on top of it."
 2. **Size the prize against the leader–laggard gap.** The reason to relieve the constraint is the value differential it unlocks. BCG's "future-built" leaders — just **5% of organizations** — report roughly **1.7x the revenue growth, 1.6x higher EBIT margins, and 40% greater cost savings than laggards** ([BCG, 2025](#ev-bcg-value-gap-2025-distribution); [BCG, 2025](#ev-bcg-value-gap-2025-leader-premium)), and only about **6% of organizations are AI high performers attributing more than 5% of EBIT to AI** ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-high-performers)). The gap between the profile you have and the one those firms have is the size of the opportunity.
-3. **Commit to measuring the unlock.** Tie the investment to a Track 08 metric and a re-assessment date, so the next session can show the constraint moved. This is what separates leaders: **more than a third of gen-AI high performers have clear ways to measure and track the value of their gen-AI work, versus only about one in ten of other organizations** ([McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-high-performers-measurement)). Without the measurement commitment, the gap list becomes a wish list.
+3. **Commit to measuring the unlock.** Tie the investment to a metric from [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) and a re-assessment date, so the next session can show the constraint moved. This is what separates leaders: **more than a third of gen-AI high performers have clear ways to measure and track the value of their gen-AI work, versus only about one in ten of other organizations** ([McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-high-performers-measurement)). Without the measurement commitment, the gap list becomes a wish list.
 
 ---
 
@@ -94,7 +94,7 @@ One session, one room (or one call), all eight track owners plus the program spo
 | 10–45 min | **Score the eight tracks.** Each owner presents their level and its evidence (~4 min each). The room challenges and calibrates; record one level + a one-line note per track. |
 | 45–60 min | **Plot the profile.** Lay the eight numbers in track order. Mark the layers (Direction / Foundation / Execution / Feedback). Look for spiky, flat-but-low, and foundation-gap patterns. |
 | 60–75 min | **Name the binding constraint.** Agree the single lowest track throttling downstream work. Resist the urge to fix everything — name *one* (at most two). |
-| 75–90 min | **Frame the case + commit.** State constraint → downstream cost → the unlock. Assign an owner, a first move (hand off to [Sequencing Playbooks](/enterprise-ai-transformation/running-the-program/sequencing-playbooks.md)), a Track 08 metric, and the re-assessment date. |
+| 75–90 min | **Frame the case + commit.** State constraint → downstream cost → the unlock. Assign an owner, a first move (hand off to [Sequencing Playbooks](/enterprise-ai-transformation/running-the-program/sequencing-playbooks.md)), a metric from [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md), and the re-assessment date. |
 
 Keep it to 90 minutes by timeboxing ruthlessly: the deep work already happened inside each track's own assessment. This session reconciles and prioritizes — it does not re-derive.
 
@@ -106,7 +106,7 @@ Keep it to 90 minutes by timeboxing ruthlessly: the deep work already happened i
 - **The eight dimensions are the eight tracks, 1:1.** Source each score from the track's own assessment page; the session reconciles and rolls up, it does not re-derive.
 - **Score on evidence, not intent, and never average.** A profile of eight numbers tells the truth; a mean hides the low score that is throttling everything. Only **1% of leaders call their AI deployment mature** ([McKinsey, 2025](#ev-mckinsey-superagency-2025-maturity)) — optimism is the default failure.
 - **Read the shape to find the binding constraint.** Spiky (4-next-to-1), flat-but-low, and foundation-gap patterns each point to the one track to fund next — usually data, talent, or governance, the three most-cited blockers ([PEX Network, 2025](#ev-pex-network-2025-data-quality-barrier); [WEF, 2025](#ev-wef-future-of-jobs-2025-skills-gap-barrier); [Deloitte, 2025](#ev-deloitte-state-genai-2025-compliance-barrier)).
-- **Convert the constraint into an investment case and commit to measuring the unlock.** Tie it to a Track 08 metric and a re-assessment date — high performers are several times more likely than others to have clear ways to measure gen-AI value ([McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-high-performers-measurement)), and they run AI on a recurring cadence ([Protiviti, 2026](#ev-protiviti-2026-board-cadence-roi)).
+- **Convert the constraint into an investment case and commit to measuring the unlock.** Tie it to a metric from [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) and a re-assessment date — high performers are several times more likely than others to have clear ways to measure gen-AI value ([McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-high-performers-measurement)), and they run AI on a recurring cadence ([Protiviti, 2026](#ev-protiviti-2026-board-cadence-roi)).
 
 ## Sources
 

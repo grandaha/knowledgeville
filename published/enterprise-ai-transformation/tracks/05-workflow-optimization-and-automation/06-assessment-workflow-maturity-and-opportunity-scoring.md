@@ -14,7 +14,7 @@ It is deliberately not a vanity scorecard. It does not produce a single "automat
 
 It is the diagnostic companion to the [workflow optimization framework](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/02-workflow-optimization-framework.md) and feeds directly into the [practitioner guide for running a workflow optimization program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md). The maturity rubric below assumes familiarity with [the four levels of workflow–AI integration](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/03-the-four-levels-of-workflow-ai-integration.md), which describe *how deeply* AI is embedded in a workflow; this assessment scores *whether a given workflow is ready* for that integration and *whether it is worth the effort*.
 
-Distinguish it from two adjacent assessments. It is **not** a data readiness audit — that is [Track 03](/enterprise-ai-transformation/tracks/03-data-readiness/index.md), and this assessment treats data readiness as one input to scoring an opportunity, not the whole picture. And it is **not** a value-realization measurement exercise — that is [Track 08](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md), which measures outcomes after you have built something. This assessment runs *before* you build, to decide what to build.
+Distinguish it from two adjacent assessments. It is **not** a data readiness audit — that is [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md), and this assessment treats data readiness as one input to scoring an opportunity, not the whole picture. And it is **not** a value-realization measurement exercise — that is [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md), which measures outcomes after you have built something. This assessment runs *before* you build, to decide what to build.
 
 Run it when: a function has accumulated more automation ideas than it can fund; leadership is pushing a flashy use case and you need to test it against the alternatives; or a wave of pilots has stalled and you need to understand why before launching the next one.
 
@@ -58,7 +58,7 @@ Whether a process runs the same way every time or fragments into dozens of undoc
 
 ### Dimension 3: Data Readiness for the Workflow
 
-Whether the specific data this workflow consumes and produces is accessible, structured, and trustworthy enough to drive automated decisions. This is the workflow-scoped slice of the broader [Track 03 data readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) picture — and it is the single most common reason automation stalls.
+Whether the specific data this workflow consumes and produces is accessible, structured, and trustworthy enough to drive automated decisions. This is the workflow-scoped slice of the broader [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) picture — and it is the single most common reason automation stalls.
 
 | Level | What it looks like |
 | --- | --- |
@@ -94,7 +94,7 @@ Whether the people who run the workflow will actually adopt a redesigned version
 
 ### Dimension 6: Measurement Discipline
 
-Whether the function can establish a baseline and prove (or disprove) the impact of a workflow change. Without it, you cannot size opportunities credibly, and you cannot tell a success from a sunk cost. This dimension is the on-ramp to [Track 08 measurement and value realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
+Whether the function can establish a baseline and prove (or disprove) the impact of a workflow change. Without it, you cannot size opportunities credibly, and you cannot tell a success from a sunk cost. This dimension is the on-ramp to [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
 
 | Level | What it looks like |
 | --- | --- |
@@ -196,12 +196,12 @@ Do not collapse the three into a single weighted average — the averaging hides
 | --- | --- | --- | --- |
 | High (4–5) | High (4–5) | Low (1–2) | **Quick win** — do first |
 | High (4–5) | High (4–5) | High (4–5) | **Strategic bet** — fund deliberately, stage it |
-| High (4–5) | Low (1–2) | Any | **Blocked** — fix data first (a Track 03 project), then revisit |
+| High (4–5) | Low (1–2) | Any | **Blocked** — fix data first (a Data Readiness project), then revisit |
 | Low (1–2) | Any | Low (1–2) | **Filler** — do only with spare capacity |
 | Low (1–2) | Any | High (4–5) | **Defer / decline** |
 | Any | Any | Any with no named owner | **Not ready** — assign ownership before scoring |
 
-The single most important rule: **a low Data Readiness score overrides a high Value score.** A high-value opportunity on unready data is not a quick win you can muscle through — it is a data project wearing an automation costume. Routing it back to [Track 03](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) as a prerequisite is the correct, money-saving move, and it is exactly the discipline the 60% abandonment figure above demands.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
+The single most important rule: **a low Data Readiness score overrides a high Value score.** A high-value opportunity on unready data is not a quick win you can muscle through — it is a data project wearing an automation costume. Routing it back to [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) as a prerequisite is the correct, money-saving move, and it is exactly the discipline the 60% abandonment figure above demands.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
 ---
 
@@ -213,7 +213,7 @@ The matrix produces four buckets. Sequence them in this order:
 
 2. **One strategic bet in parallel (high value, ready data, high complexity).** Pick a single end-to-end workflow worth genuinely redesigning, not just automating. This is where the McKinsey finding lives: the outsized EBIT impact comes from fundamental workflow redesign, not surface-level tool deployment. Resource it properly and stage it into milestones; do not start three at once.
 
-3. **Data-blocked opportunities become Track 03 prerequisites, not automation projects.** For every high-value/low-data candidate, open a scoped data-readiness workstream and re-score the opportunity once the data axis reaches 3+. Track these explicitly so the value is not forgotten — it is deferred, not declined.
+3. **Data-blocked opportunities become Data Readiness prerequisites, not automation projects.** For every high-value/low-data candidate, open a scoped data-readiness workstream and re-score the opportunity once the data axis reaches 3+. Track these explicitly so the value is not forgotten — it is deferred, not declined.
 
 4. **Defer or decline the rest.** Low value with high complexity should be killed clearly so the backlog stays honest. The fastest way to lose a program's credibility is to keep a graveyard of "someday" items that quietly consume attention.
 
@@ -259,7 +259,7 @@ Interpreting the maturity average:
 
 - **1.0–2.0 (Opaque/Aware):** Do not pursue an opportunity backlog yet. Invest in visibility, standardization, and measurement — the foundations that make sizing and redesign possible.
 - **2.0–3.0 (Aware/Capable):** Pursue a small number of quick wins to build capability while raising the lowest dimension; do not attempt a strategic bet yet.
-- **3.0–4.0 (Capable/Optimizing):** Run the full prioritization matrix; pursue quick wins plus one strategic bet; route data-blocked items to Track 03.
+- **3.0–4.0 (Capable/Optimizing):** Run the full prioritization matrix; pursue quick wins plus one strategic bet; route data-blocked items to [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md).
 - **4.0–5.0 (Optimizing/Adaptive):** Scale the portfolio; the constraint is throughput and sequencing discipline, not readiness.
 
 ---
@@ -268,11 +268,11 @@ Interpreting the maturity average:
 
 The most common failure mode is the same one that afflicts every assessment: a score gets produced, presented once, and filed. The score is not the output. The **ranked opportunity list with owners and sequence** is the output.
 
-**Convert the matrix into a funded sequence within two weeks.** Quick wins get started immediately; the strategic bet gets a scoped charter; data-blocked items get Track 03 workstreams opened against them. If nothing on the list has a named owner and a start date within two weeks of the session, the assessment changed nothing.
+**Convert the matrix into a funded sequence within two weeks.** Quick wins get started immediately; the strategic bet gets a scoped charter; data-blocked items get Data Readiness workstreams opened against them. If nothing on the list has a named owner and a start date within two weeks of the session, the assessment changed nothing.
 
 **Use the data-readiness axis to stop bad funding decisions before they happen.** The single most valuable thing this assessment does is catch the high-value, low-data opportunity that two-axis scoring would have greenlit — and reroute it to fix the data first. That is the discipline behind the 60% abandonment figure: the projects that fail were mostly fundable-looking ideas sitting on unusable data. Every time this assessment blocks one of those, it pays for itself.  <!-- noev: worked-example / rubric figure, not a sourced claim -->
 
-**Feed the strategic bet into a genuine redesign, not a veneer.** The maturity rubric and the sizing both exist to support the one move that the evidence says actually moves EBIT: fundamentally redesigning a workflow rather than bolting AI onto the existing one. Hand the strategic bet to the [practitioner guide for running a workflow optimization program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md) and instrument it with [Track 08](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) baselines from day one.
+**Feed the strategic bet into a genuine redesign, not a veneer.** The maturity rubric and the sizing both exist to support the one move that the evidence says actually moves EBIT: fundamentally redesigning a workflow rather than bolting AI onto the existing one. Hand the strategic bet to the [practitioner guide for running a workflow optimization program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md) and instrument it with [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) baselines from day one.
 
 **Put the re-score on the calendar.** Maturity and data readiness change as foundational work completes; a blocked opportunity today may be a quick win next quarter. A program that does not re-score has no mechanism to promote its own backlog.
 

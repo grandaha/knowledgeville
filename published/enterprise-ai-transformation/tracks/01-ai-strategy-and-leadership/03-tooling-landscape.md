@@ -93,7 +93,7 @@ ROI and investment-case work for AI is rarely done in a single dedicated product
 | Apptio Cloudability (now IBM Apptio) | Multi-cloud cost visibility, allocation, and TCO/showback analysis | Enterprises needing cross-cloud cost allocation |
 | FinOps Foundation framework (incl. FOCUS spec) | Vendor-neutral practice and standard for cloud cost accountability, increasingly extended to "FinOps for AI" | Operationalizing ongoing AI cost governance |
 
-Cloud cost tools track and forecast *spend*, not business value. Quantifying benefits and computing ROI still depends on the spreadsheet model plus a value framework above. The measurement and attribution discipline itself lives in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
+Cloud cost tools track and forecast *spend*, not business value. Quantifying benefits and computing ROI still depends on the spreadsheet model plus a value framework above. The measurement and attribution discipline itself lives in [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md).
 
 ---
 

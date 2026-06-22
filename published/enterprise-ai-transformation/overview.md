@@ -18,7 +18,7 @@ It's written for the people accountable for making AI actually work inside an or
 
 **New to the topic** → Start with the Executive Summary, then Framework Architecture.
 
-**Leading an AI program** → Go to Track 01 (Strategy) and the Running the Program section.
+**Leading an AI program** → Go to [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md) and the Running the Program section.
 
 **Solving a specific problem** → Jump directly to the relevant track.
 

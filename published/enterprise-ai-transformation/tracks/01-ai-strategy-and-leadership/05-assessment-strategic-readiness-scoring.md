@@ -8,7 +8,7 @@ timestamp: "2026-06-15"
 
 ## What This Is For
 
-This assessment scores one thing: whether the **strategy-and-leadership function** is ready to direct AI. It is not an organization-wide AI-readiness audit — data, infrastructure, and talent readiness are scored separately in [Track 03's AI readiness assessment](/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/ai-readiness-assessment-framework.md). This one measures the maturity of the upstream decisions every other track is scoped against: the value thesis, the sponsor, the portfolio, the funding, the decision rights, the governance, and the feedback loop.
+This assessment scores one thing: whether the **strategy-and-leadership function** is ready to direct AI. It is not an organization-wide AI-readiness audit — data, infrastructure, and talent readiness are scored separately in the [AI-readiness assessment](/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/ai-readiness-assessment-framework.md) in Data Readiness. This one measures the maturity of the upstream decisions every other track is scoped against: the value thesis, the sponsor, the portfolio, the funding, the decision rights, the governance, and the feedback loop.
 
 It is the diagnostic companion to [the core framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md) (the *what*) and [the practitioner guide](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process.md) (the *how*). Run it to find the weakest link in your strategy before you commit budget downstream.
 
@@ -110,7 +110,7 @@ Evidence to collect: steering-committee charter naming members and decision righ
 
 ### Dimension 7: Measurement & Value-Realization Linkage
 
-This dimension tests whether AI initiatives are tied to measurable business outcomes and whether what is learned flows back into strategy. It is the hinge between deciding what to fund and proving it was worth funding. The measurement machinery itself lives in [Track 08, Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md); this dimension scores whether strategy is wired to it.
+This dimension tests whether AI initiatives are tied to measurable business outcomes and whether what is learned flows back into strategy. It is the hinge between deciding what to fund and proving it was worth funding. The measurement machinery itself lives in [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md); this dimension scores whether strategy is wired to it.
 
 | Level | What it looks like |
 | --- | --- |
@@ -142,13 +142,13 @@ The gap between Level 3 and Level 4 is where most programs stall: the organizati
 
 ## How Strategic Readiness Gates the Other Seven Tracks
 
-Strategy and leadership is the upstream track. It produces the funded set of priorities every other track is scoped against — so its readiness caps what the other seven can deliver. This is the binding-constraint principle from [the eight-track model](/enterprise-ai-transformation/framework-architecture.md): a track is only as effective as its weakest upstream dependency, and Track 01 is the most upstream of all.
+Strategy and leadership is the upstream track. It produces the funded set of priorities every other track is scoped against — so its readiness caps what the other seven can deliver. This is the binding-constraint principle from [the eight-track model](/enterprise-ai-transformation/framework-architecture.md): a track is only as effective as its weakest upstream dependency, and [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md) is the most upstream of all.
 
 The practical consequences of low strategic readiness are specific:
 
-- **Unready data and platform work has nothing to aim at.** Without a prioritized thesis (Dimensions 1, 3), [Track 03 (Data Readiness)](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) and Track 04 (Platform) build general capability instead of the specific foundations the priority bets need — effort without leverage.
-- **Adoption and talent investment scatters.** Without a concentrated portfolio (Dimension 3), Tracks 06 and 07 spread thin across pilots that never reach the scale where behavior change and capability-building pay back.
-- **Value never closes the loop.** Without the measurement linkage (Dimension 7), [Track 08 (Measurement)](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) produces dashboards no one acts on, and the strategy cannot learn.
+- **Unready data and platform work has nothing to aim at.** Without a prioritized thesis (Dimensions 1, 3), [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) and [Technology Architecture & Platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md) build general capability instead of the specific foundations the priority bets need — effort without leverage.
+- **Adoption and talent investment scatters.** Without a concentrated portfolio (Dimension 3), [AI Adoption & Culture](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/index.md) and [Talent & Capability Building](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/index.md) spread thin across pilots that never reach the scale where behavior change and capability-building pay back.
+- **Value never closes the loop.** Without the measurement linkage (Dimension 7), [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) produces dashboards no one acts on, and the strategy cannot learn.
 
 This is why weak foundations cap outcomes regardless of spend elsewhere — and why a low score here should pause downstream investment until it is raised. Fund the binding strategic constraint first; the other tracks compound only on top of it.
 

@@ -3373,3 +3373,170 @@
     pdf_hash:
   verified: 2026-06-21
   status: primary
+- id: ev-anthropic-prompt-caching-2026-multipliers
+  claim: "Anthropic prompt-caching pricing multipliers relative to base input tokens"
+  value: "cache reads 0.1x (90% discount); 5-min cache writes 1.25x; 1-hour cache writes 2x"
+  wording: "5-minute cache write tokens are 1.25 times the base input tokens price; 1-hour cache write tokens are 2 times the base input tokens price; Cache read tokens are 0.1 times the base input tokens price"
+  source:
+    org: Anthropic
+    report: "Prompt caching (Claude Developer Docs)"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/docs/build-with-claude/prompt-caching
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-06-21
+- id: ev-openai-prompt-caching-2026-discount
+  claim: "OpenAI prompt caching trigger length and cached-input discount range"
+  value: "auto-applies at >=1,024 tokens; cached-input discount ~50% (earlier models) up to ~90% (newest)"
+  wording: "API calls to supported models will automatically benefit from Prompt Caching on prompts longer than 1,024 tokens ... reduce ... input token costs by up to 90%"
+  source:
+    org: OpenAI
+    report: "Prompt caching (OpenAI API guide); Prompt Caching in the API (launch announcement)"
+    edition: 2026
+    url: https://openai.com/index/api-prompt-caching/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-06-21
+- id: ev-anthropic-batch-api-2026-discount
+  claim: "Anthropic Message Batches API discount and turnaround"
+  value: "50% cost reduction; most batches finish in under 1 hour"
+  wording: "most batches finishing in less than 1 hour while reducing costs by 50% and increasing throughput"
+  source:
+    org: Anthropic
+    report: "Batch processing (Message Batches API, Claude Developer Docs)"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/docs/build-with-claude/batch-processing
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-06-21
+- id: ev-openai-batch-api-2026-discount
+  claim: "OpenAI Batch API discount and turnaround vs synchronous calls"
+  value: "50% cost discount; completes within 24 hours"
+  wording: "50% cost discount compared to synchronous APIs; Each batch completes within 24 hours (and often more quickly)"
+  source:
+    org: OpenAI
+    report: "Batch API guide (OpenAI API)"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/guides/batch
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-06-21
+- id: ev-google-gemini-batch-2026-discount
+  claim: "Google Gemini Batch API pricing vs standard"
+  value: "50% of standard cost"
+  wording: "The Gemini Batch API is designed to process large volumes of requests asynchronously at 50% of the standard cost"
+  source:
+    org: Google
+    report: "Batch Mode (Gemini API docs)"
+    edition: 2026
+    url: https://ai.google.dev/gemini-api/docs/batch-mode
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-06-21
+- id: ev-lumer-dont-break-the-cache-2026-cost-reduction
+  claim: "Independent benchmark of prompt caching on long-horizon agentic tasks (OpenAI/Anthropic/Google)"
+  value: "41-80% API cost reduction (time-to-first-token improved 13-31%)"
+  wording: "caching reduced API costs 41-80% and improved time-to-first-token 13-31%"
+  source:
+    org: "Lumer et al."
+    report: "Don't Break the Cache: An Evaluation of Prompt Caching for Long-Horizon Agentic Tasks (arXiv:2601.06007)"
+    edition: 2026
+    url: https://arxiv.org/abs/2601.06007
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-menlo-ventures-state-genai-2025-llm-spend-share
+  claim: "Enterprise LLM spend share by vendor (2025 vs 2023)"
+  value: "Anthropic 40%, OpenAI 27%, Google 21%; OpenAI fell from ~50% in 2023"
+  wording: "We estimate Anthropic now earns 40% of enterprise LLM spend ... OpenAI lost nearly half of its enterprise share, falling to 27% from 50% in 2023"
+  source:
+    org: Menlo Ventures
+    report: "State of Generative AI in the Enterprise"
+    edition: 2025
+    url: https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2026-12-31
+- id: ev-menlo-ventures-state-genai-2025-buy-vs-build
+  claim: "Share of enterprise AI use cases purchased from vendors vs built in-house (2025 vs 2024)"
+  value: "76% purchased in 2025; reversing 2024's 47% built / 53% purchased"
+  wording: "Today, 76% of AI use cases are purchased rather than built internally. ... 47% of AI solutions were built internally, 53% purchased."
+  source:
+    org: Menlo Ventures
+    report: "State of Generative AI in the Enterprise"
+    edition: 2025
+    url: https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2026-12-31
+- id: ev-menlo-ventures-state-genai-2024-fine-tuned-share
+  claim: "Share of enterprise production models that are fine-tuned"
+  value: "9%"
+  wording: "only 9% of production models are fine-tuned"
+  source:
+    org: Menlo Ventures
+    report: "State of Generative AI in the Enterprise"
+    edition: 2024
+    url: https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2026-12-31
+- id: ev-a16z-genai-enterprise-2024-api-vs-self-host
+  claim: "Share of enterprises accessing models via API vs self-hosting"
+  value: "72% via API; over a quarter (>25%) self-host at least some models"
+  wording: "72% of enterprises who use an API to access their model ... over a quarter of respondents did self-host, likely in order to run open source models"
+  source:
+    org: Andreessen Horowitz (a16z)
+    report: "16 Changes to the Way Enterprises Are Building and Buying Generative AI"
+    edition: 2024
+    url: https://a16z.com/generative-ai-enterprise-2024/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2026-12-31
+- id: ev-google-mobile-speed-2016-3s-abandon
+  claim: "Share of mobile site visits abandoned when a page takes longer than 3 seconds to load"
+  value: "53%"
+  wording: "53% of mobile site visits are abandoned if pages take longer than 3 seconds to load"
+  source:
+    org: Google
+    report: "The Need for Mobile Speed"
+    edition: 2016
+    url: https://blog.google/products/admanager/the-need-for-mobile-speed/
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+- id: ev-ibm-cost-of-breach-2025-shadow-ai
+  claim: "Share of breaches involving shadow AI and the incremental average cost it added"
+  value: "20% (1 in 5) of breaches; +$670,000 above the global average (which fell to $4.44M in 2025)"
+  wording: "having a high level of shadow AI ... added an extra USD 670,000 to the global average breach cost ... Shadow AI ... was a factor in 20% of breaches (2025 global average breach cost fell 9% to USD 4.44 million)"
+  source:
+    org: IBM
+    report: "Cost of a Data Breach Report"
+    edition: 2025
+    url: https://www.ibm.com/reports/data-breach
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2026-12-31
+- id: ev-bcg-value-gap-2025-central-platform-3x
+  claim: "How much more likely future-built (leading) firms are to operate a central, integrated AI platform"
+  value: "3x"
+  wording: "3x More central AI platforms in operation to enable scale and adoption"
+  source:
+    org: BCG
+    report: "The Widening AI Value Gap (Build for the Future 2025 Global Study, n=1,250)"
+    edition: 2025
+    url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2026-12-31

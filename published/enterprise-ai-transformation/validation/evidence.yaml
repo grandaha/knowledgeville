@@ -1752,8 +1752,8 @@
     edition: "2013-2014"
     url: https://magneto.net.au/wp-content/uploads/2018/07/2013-2014-change-and-communication-roi-study-towers-watson.pdf
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 
 - id: ev-pew-ai-detection-2025-importance-of-disclosure
   claim: "Americans saying it is important to be able to tell whether content was made by AI or people"
@@ -1791,9 +1791,9 @@
     org: KPMG & University of Melbourne
     report: "Trust, Attitudes and Use of AI: A Global Study 2025"
     edition: 2025
-    url: https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html
+    url: https://kpmg.com/au/en/insights/artificial-intelligence-ai/trust-in-ai-global-insights-2025.html
     pdf_hash:
-  verified: 2026-06-20
+  verified: 2026-06-22
   status: secondary-mirror
   expires: 2026-12-31
 - id: ev-mckinsey-state-of-ai-2025-workflow-redesign-highperf
@@ -2001,8 +2001,8 @@
     edition: 2024
     url: https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-google-cloud-roi-2025-first-year-roi
   claim: "Executives achieving ROI from generative AI within the first year"
   value: "74%"
@@ -2158,8 +2158,8 @@
     edition: 2016
     url: https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-gartner-active-metadata-2025-delivery
   claim: "Reduction in time to deliver new data assets for organizations using active metadata"
   value: "up to 70%"
@@ -2243,8 +2243,8 @@
     edition: 2024
     url: https://www.dataversity.net/articles/data-strategy-trends-in-2025-from-silos-to-unified-enterprise-value/
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-iapp-2025-ai-governance-building
   claim: "Organizations actively building or refining AI governance programs"
   value: "77%"
@@ -2279,8 +2279,8 @@
     edition: 2019
     url: https://3971219.fs1.hubspotusercontent-na2.net/hubfs/3971219/Survey%20Assets%201905/Dimensional%20Research%20Machine%20Learning%20PPT%20Report%20FINAL.pdf
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-budach-2022-label-noise-degradation
   claim: "Robustness threshold of ML models to flipped (mislabeled) training labels on tabular data"
   value: "robust up to ~20% labels flipped (<10% F1 loss)"
@@ -2327,8 +2327,8 @@
     edition: 2025
     url: https://www.marketsandmarkets.com/PressReleases/data-integration.asp
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-dataart-2026-infra-roi
   claim: "Data infrastructure as the highest-ROI technology investment vs the latest AI model"
   value: "qualitative"
@@ -2399,8 +2399,8 @@
     edition: 2026
     url: https://www.k2view.com/news-blog/2026-state-of-enterprise-data-compliance-survey/
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-gartner-hype-cycle-ai-2025-data-not-ai-ready
   claim: "Organizations that estimate their data is not AI-ready"
   value: "57%"
@@ -2483,7 +2483,7 @@
     edition: 2025
     url: https://www.netapp.com/media/142474-idc-2025-ai-maturity-findings.pdf
     pdf_hash:
-  verified: 2026-06-21
+  verified: 2026-06-22
   status: secondary-mirror
 - id: ev-gartner-ai-spending-2026-worldwide-total
   claim: "Gartner worldwide AI spending forecast for 2026"
@@ -2579,8 +2579,8 @@
     edition: 2025
     url: https://hai.stanford.edu/ai-index/2025-ai-index-report/policy-and-governance
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-ec-ai-act-2024-application-timeline
   claim: "EU AI Act phased application dates (GPAI vs high-risk obligations)"
   value: "In force 1 Aug 2024; GPAI obligations apply 2 Aug 2025; most high-risk obligations apply 2 Aug 2026"
@@ -2807,8 +2807,8 @@
     edition: 2025
     url: https://hai.stanford.edu/ai-index/2025-ai-index-report/responsible-ai
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-stanford-hai-ai-index-2026-ai-incidents
   claim: "Documented AI incidents in 2025 and YoY growth (AI Incident Database)"
   value: "362 incidents in 2025, +55% over 2024 (from 233)"
@@ -2819,8 +2819,8 @@
     edition: 2026
     url: https://hai.stanford.edu/ai-index/2026-ai-index-report/responsible-ai
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-gartner-genai-spending-2025-worldwide-forecast
   claim: "Gartner worldwide generative-AI spending forecast for 2025 and YoY increase"
   value: "$644 billion in 2025, up 76.4% from 2024"
@@ -3167,8 +3167,8 @@
     edition: 2022
     url: https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-deloitte-intelligent-automation-2022-process-intelligence-discovery
   claim: "Share of respondents reporting process intelligence accelerated discovery of automation use cases"
   value: "63% accelerated, 30% no difference, 7% slowed"
@@ -3179,8 +3179,8 @@
     edition: 2022
     url: https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-deloitte-state-genai-2024-roi-expectations
   claim: "Share reporting their most advanced gen-AI initiative meets or exceeds ROI expectations (Wave 4, n=2,773)"
   value: "nearly three-quarters"
@@ -3191,8 +3191,8 @@
     edition: 2024
     url: https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai.html
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-deloitte-tmt-predictions-2025-agentic-pilots
   claim: "Share of gen-AI-using companies expected to launch agentic AI pilots"
   value: "25% in 2025, rising to 50% by 2027"
@@ -3203,8 +3203,8 @@
     edition: 2025
     url: https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/autonomous-generative-ai-agents-still-under-development.html
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-mckinsey-transformations-2021-success-rate
   claim: "Share of organizational transformations that succeed at both improving performance and sustaining gains (n=1,034)"
   value: "fewer than one-third"
@@ -3347,8 +3347,8 @@
     edition: 2025
     url: https://www.precedenceresearch.com/integration-platform-as-a-service-market
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-kpmg-ai-pulse-2026-agent-integration
   claim: "Share of organizations that had integrated AI agents into operations (overall, Q1 2026)"
   value: "54% overall (80% in the technology sector)"
@@ -3359,8 +3359,8 @@
     edition: 2026
     url: https://kpmg.com/us/en/media/news/q1-ai-pulse2026.html
     pdf_hash:
-  verified: 2026-06-21
-  status: secondary-mirror
+  verified: 2026-06-22
+  status: primary
 - id: ev-wef-future-of-jobs-2025-training-need
   claim: "Share of the workforce projected to require reskilling or upskilling by 2030"
   value: "59%"

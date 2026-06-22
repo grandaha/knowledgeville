@@ -11,11 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
-## 2026.06 — 2026-06-22
+## v1.0.0 — 2026-06-22
 
 Initial release of the Knowledgeville knowledge base.
 
-### 📚 Frameworks in this release
+### Frameworks in this release
 
 **Enterprise AI Transformation** — a complete eight-track framework for taking an organization from AI ambition to measured value, plus a *Running the Program* section that ties the tracks together into an assessment, a sequencing model, and a 90-day launch:
 
@@ -34,4 +34,4 @@ Read it at <https://knowledge.onesteplabs.com/enterprise-ai-transformation/>.
 
 ### What's next
 
-Future releases record what changed since the last one — grouped as 📚 new & expanded content · 🔎 citation corrections · 🔄 freshness updates · 🧱 structural & tooling — so returning readers can see what's new as more domains and topics are added.
+Future releases record what changed since the last one — grouped as new & expanded content, citation corrections, freshness updates, and structural & tooling changes — so returning readers can see what's new as more domains and topics are added.

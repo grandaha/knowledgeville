@@ -229,16 +229,16 @@
   status: secondary-mirror
   expires: 2026-12-31
 - id: ev-mckinsey-state-of-ai-2024-adoption
-  claim: "Organizations using AI in at least one business function (prior edition; the page cites this earlier 78% figure, since superseded by the 88% current edition)"
+  claim: "Organizations using AI in at least one business function (prior edition — survey fielded July 2024, report published March 2025; the page cites this earlier 78% figure, since superseded by the 88% current edition)"
   value: "78%"
-  wording: "78% of organizations now use AI in at least one business function"
+  wording: "78% of organizations now use AI in at least one business function (up from 72% in early 2024 and 55% in 2023)"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
     edition: 2024
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
     pdf_hash:
-  verified: 2026-06-20
+  verified: 2026-06-22
   status: primary
   expires: 2026-12-31
 

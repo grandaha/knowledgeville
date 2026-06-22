@@ -64,7 +64,7 @@ Most governance functions start with one or two people wearing multiple hats. Th
 
 ### Chief AI Officer (CAIO)
 
-The CAIO owns the organization's AI strategy, policy, and governance at the executive level. In US federal agencies, this role is legally required under OMB M-24-10 and retained under OMB M-25-21 (which preserves the CAIO requirement while removing some reporting mandates). In the private sector, this is frequently an expanded scope added to the CDO or CTO rather than a net-new hire — which is pragmatic as long as the expanded mandate comes with real authority and not just a new title.
+The CAIO owns the organization's AI strategy, policy, and governance at the executive level. In US federal agencies, this role is required under OMB M-24-10 (March 2024) and retained under OMB M-25-21 (April 2025), which rescinded and replaced M-24-10 while preserving the CAIO requirement. In the private sector, this is frequently an expanded scope added to the CDO or CTO rather than a net-new hire — which is pragmatic as long as the expanded mandate comes with real authority and not just a new title.
 
 **Common mistake:** The CAIO role is staffed but has no genuine authority to block or pause AI deployments. Without decision rights, the function is advisory only and will be ignored when it conflicts with a business priority.
 

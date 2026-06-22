@@ -86,7 +86,7 @@ One design principle overrides everything else here: escalation paths must be de
 
 This is where organizations are most often caught unprepared. AI incidents increasingly carry mandatory notification requirements, and the timelines are short.
 
-**EU AI Act.** High-risk AI systems must notify the relevant national supervisory authority of serious incidents. A "serious incident" under the Act includes incidents causing death, serious damage to health or property, or significant adverse societal impact. Timeline: notification within 15 days for most serious incidents; the timeline is shortened for incidents involving death or suspected causation of death.
+**EU AI Act.** High-risk AI systems must notify the relevant market surveillance authority of serious incidents (Article 73). A "serious incident" under the Act includes incidents causing death, serious damage to health or property, or significant adverse societal impact. Timeline: notification within 15 days of awareness for most serious incidents; shortened to 10 days where the incident involves a person's death, and to 2 days for a widespread infringement or a serious and irreversible disruption of the management or operation of critical infrastructure.
 
 **GDPR and US state privacy laws.** If the AI incident involves personal data — even if the data was accessed by the AI model rather than exfiltrated in a traditional breach — this may trigger data breach notification requirements. GDPR requires notification to supervisory authorities within 72 hours of becoming aware of a breach affecting EU persons. US state law timelines vary (California, New York, and others have their own regimes), but 30–60 days is a common range for notification to affected individuals.
 

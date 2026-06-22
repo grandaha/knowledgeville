@@ -20,7 +20,7 @@ This playbook is org-type-agnostic: it works whether you are a regulated enterpr
 | 2. Quick wins & foundation | 3–6 | Lightweight governance guardrails, instrument measurement from day one, pick 1–2 quick-win use cases | Guardrails live, telemetry in place, baselines captured, use cases scoped |
 | 3. First use case activation | 7–12 | Ship to real users, measure against baseline, prepare the first reprioritization | A deployed use case with measured value and an evidence-based next bet |
 
-The phases stagger intensity rather than running as a waterfall: governance and measurement begin in Phase 1 as lightweight activity and deepen as the work demands it. This is the framework's core operating rule — run the tracks concurrently but at staggered intensity, and let Measurement (08) pace the next investment.
+The phases stagger intensity rather than running as a waterfall: governance and measurement begin in Phase 1 as lightweight activity and deepen as the work demands it. This is the framework's core operating rule — run the tracks concurrently but at staggered intensity, and let [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) pace the next investment.
 
 ## Weeks 1–2 — Assessment and alignment
 
@@ -50,7 +50,7 @@ Now you ship — but shipping is the start of measurement, not the finish line.
 
 **Measure against the baseline.** Re-measure the same workflow on the same metrics you captured before deployment — time saved, quality, cost — alongside adoption signals (active users, acceptance rate, retention) and technical health (latency, cost, error rate). Adoption without outcome is logins, not value; this layered read is what tells you whether the use case actually moved the constraint. The contrast you are trying to avoid is stark: only 47% of IT decision-makers say their company is currently achieving positive ROI from its AI projects ([IBM, 2024](#ev-ibm-ai-roi-2024-positive-roi)), and only 48% of organizations even use specific KPIs to evaluate gen-AI performance ([Deloitte, 2024](#ev-deloitte-state-genai-2024-specific-kpis)). Your instrumented baseline is what puts you on the right side of those numbers.
 
-**Prepare the first reprioritization.** The evidence from weeks 7–12 is the input to your next quarter, not a victory lap. Bring it to the sponsor and make an explicit decision — scale the use case, iterate on it, or kill it — and let that decision pull the next investment. This closes the loop: Measurement (08) feeds back into Strategy (01), and the constraint you relieve next is the one the evidence points to, not the one that was loudest in week 1.
+**Prepare the first reprioritization.** The evidence from weeks 7–12 is the input to your next quarter, not a victory lap. Bring it to the sponsor and make an explicit decision — scale the use case, iterate on it, or kill it — and let that decision pull the next investment. This closes the loop: [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) feeds back into [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), and the constraint you relieve next is the one the evidence points to, not the one that was loudest in week 1.
 
 ## Creating momentum without over-promising
 

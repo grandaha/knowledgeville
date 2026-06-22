@@ -18,7 +18,7 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 
 **Profile.** Many business units, established (often regulated) governance, deep legacy data estates, thousands of employees, competing internal agendas. The hard problem is not capability but coordination: scaling across units without either fragmenting into uncoordinated pilots or collapsing under central-program overhead. McKinsey found that while only about a third of organizations have begun scaling AI across the enterprise, larger companies are the *most* likely to have reached the scaling phase — they have the resources, but also the most surface area to coordinate ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-scaling-by-size)).
 
-**Binding constraint.** Governance and platform coherence. With multiple units buying their own tools, the constraint is rarely "can we build AI" — it is "can we build it once, safely, and reuse it." Direction (01/02) must be real, and Foundation (04) must be shared, or the enterprise pays for the same point solution ten times and cannot pass an audit on any of them.
+**Binding constraint.** Governance and platform coherence. With multiple units buying their own tools, the constraint is rarely "can we build AI" — it is "can we build it once, safely, and reuse it." Direction ([AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md)) must be real, and Foundation ([Technology Architecture & Platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md)) must be shared, or the enterprise pays for the same point solution ten times and cannot pass an audit on any of them.
 
 **Recommended sequence.** `01` (light but funded) → `02` + `04` in parallel to lay shared guardrails and a shared platform → `03` on the priority data domains → then `05`/`06`/`07` piloted in *one or two lead business units*, with `08` instrumented from day one. Let the lead-unit evidence pull the next unit in, rather than mandating all units at once.
 
@@ -29,7 +29,9 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 | Q3 | 04 Platform, 05 Workflow (lead BU) | 06 Adoption, 07 Talent (lead BU), 08 |
 | Q4 | 05/06/07 (lead BU), 08 Measurement | 01 (reprioritize on evidence), expand to BU #2 |
 
-**Top risk: boil-the-ocean.** The large enterprise has the budget to stand up all eight tracks at full intensity at once — which is exactly the "too parallel" failure mode. Teams thrash, work is duplicated across units, and foundation gaps surface only after execution has been built on top of them. Resist the urge to launch everywhere; prove the pattern in a lead unit and let Measurement (08) pace the rollout. See the [program architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md) for the operating model that keeps central guardrails and unit autonomy in balance.
+*Numbers are track #s — see the [eight-track key](/enterprise-ai-transformation/framework-architecture.md#what-each-track-owns).*
+
+**Top risk: boil-the-ocean.** The large enterprise has the budget to stand up all eight tracks at full intensity at once — which is exactly the "too parallel" failure mode. Teams thrash, work is duplicated across units, and foundation gaps surface only after execution has been built on top of them. Resist the urge to launch everywhere; prove the pattern in a lead unit and let [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) pace the rollout. See the [program architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md) for the operating model that keeps central guardrails and unit autonomy in balance.
 
 ## Archetype 2 — Mid-Market (resource-constrained, high urgency)
 
@@ -37,7 +39,7 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 
 **Binding constraint.** Focus and talent. The mid-market cannot run eight tracks; it must pick the one or two highest-leverage workflows and resource them properly. Spreading a thin team across all tracks guarantees that none reaches the threshold where value appears.
 
-**Recommended sequence.** `01` (very light — pick *one* business outcome) → `05` on a single high-value workflow, using a bought platform rather than a built one (externally sourced tools reached deployment at roughly twice the rate of internal builds in MIT's data) ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-buy-vs-build)) → `06`/`07` tightly coupled to that one workflow → `08` to prove it → only then widen. Governance (02) and Data (03) are addressed *just enough* for the chosen use case, not enterprise-wide.
+**Recommended sequence.** `01` (very light — pick *one* business outcome) → `05` on a single high-value workflow, using a bought platform rather than a built one (externally sourced tools reached deployment at roughly twice the rate of internal builds in MIT's data) ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-buy-vs-build)) → `06`/`07` tightly coupled to that one workflow → `08` to prove it → only then widen. [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md) and [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md) are addressed *just enough* for the chosen use case, not enterprise-wide.
 
 | Quarter | High intensity | Active / assessment-only |
 | --- | --- | --- |
@@ -45,6 +47,8 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 | Q2 | 05 Workflow, 06 Adoption, 07 Talent | 08 Measurement |
 | Q3 | 08 Measurement (prove value), 06 Adoption | 01 (decide whether to widen) |
 | Q4 | Widen to use case #2 *only if #1 proved out* | 02/03/04 (extend as needed) |
+
+*Numbers are track #s — see the [eight-track key](/enterprise-ai-transformation/framework-architecture.md#what-each-track-owns).*
 
 **Top risk: spreading too thin.** With a lean team, the temptation is to dabble in everything and finish nothing. The fix is ruthless single-threading — one workflow, fully resourced through to measured value, before the second. Buy rather than build to preserve the scarce engineering talent for integration, not infrastructure. The [90-day launch](/enterprise-ai-transformation/running-the-program/the-90-day-launch.md) is calibrated for exactly this tempo.
 
@@ -54,7 +58,7 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 
 **Binding constraint.** Adoption and proof. The technology and the workflow are well understood; what decides success is whether the function's people actually change how they work, and whether the win is measured credibly enough to defend and expand. McKinsey found only about 21% of gen-AI users have redesigned any workflow — most simply layer AI on top of existing process — yet high performers are 2.8x more likely to have fundamentally redesigned theirs (55% vs 20%) ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-workflow-redesign); [McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-workflow-redesign-highperf)).
 
-**Recommended sequence.** `05` (redesign the one workflow, not just bolt AI onto it) → `06` + `07` in lockstep so the function adopts and is enabled together → `08` from day zero to capture a clean baseline and a defensible delta. Strategy (01), Governance (02), Data (03), and Platform (04) are *inherited* from the parent org or scoped to the single use case — this archetype consumes foundation rather than building it.
+**Recommended sequence.** `05` (redesign the one workflow, not just bolt AI onto it) → `06` + `07` in lockstep so the function adopts and is enabled together → `08` from day zero to capture a clean baseline and a defensible delta. [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), [AI Governance & Risk](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/index.md), [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md), and [Technology Architecture & Platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md) are *inherited* from the parent org or scoped to the single use case — this archetype consumes foundation rather than building it.
 
 | Quarter | High intensity | Active / assessment-only |
 | --- | --- | --- |
@@ -62,13 +66,15 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 | Q2 | 06 Adoption, 07 Talent, 05 | 08 Measurement (early signal) |
 | Q3 | 08 Measurement (attribute value), 06 | 01 (make the case to expand) |
 
-**Top risk: a pilot that proves nothing.** A narrow deployment that never captures a baseline, or that measures share-of-output ("X% of work used AI") instead of outcomes, ends as one of the 95% with no measurable P&L impact ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)). Instrument Measurement (08) *before* go-live and tie the win to a real before/after delta — see the [attribution methodology](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/03-attribution-methodology.md) for the counterfactual discipline this requires.
+*Numbers are track #s — see the [eight-track key](/enterprise-ai-transformation/framework-architecture.md#what-each-track-owns).*
+
+**Top risk: a pilot that proves nothing.** A narrow deployment that never captures a baseline, or that measures share-of-output ("X% of work used AI") instead of outcomes, ends as one of the 95% with no measurable P&L impact ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)). Instrument [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) *before* go-live and tie the win to a real before/after delta — see the [attribution methodology](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/03-attribution-methodology.md) for the counterfactual discipline this requires.
 
 ## Archetype 4 — Greenfield (new org or division, building from scratch)
 
 **Profile.** A new company, a new division, or a clean-sheet business unit with no legacy estate, no entrenched tooling, and no incumbent process to defend. The rare luxury is genuine choice of order — and the rare trap is mistaking the absence of legacy for the absence of foundations. There is no data to clean, but also no data, no governance, no platform, and no people yet.
 
-**Binding constraint.** Foundations-by-design. Because nothing exists, the constraint is building the substrate *correctly the first time* — AI-ready data contracts, governance, and a platform baked in from the start — rather than retrofitting them later. This is the one archetype where investing early and deliberately in Foundation (03/04) is not over-engineering; it is the entire advantage of being greenfield.
+**Binding constraint.** Foundations-by-design. Because nothing exists, the constraint is building the substrate *correctly the first time* — AI-ready data contracts, governance, and a platform baked in from the start — rather than retrofitting them later. This is the one archetype where investing early and deliberately in Foundation ([Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md), [Technology Architecture & Platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/index.md)) is not over-engineering; it is the entire advantage of being greenfield.
 
 **Recommended sequence.** `01` to set intent and the operating model → `02` + `04` + `03` built *AI-native from the start* (data products with lineage and contracts, a self-serve platform, governance as a platform property rather than a committee) → `07` to hire and shape roles around human-AI collaboration → `05`/`06` as the work and the team come online → `08` instrumented as a first-class system, not an afterthought.
 
@@ -79,7 +85,9 @@ Each playbook below gives the org profile, its usual binding constraint, a recom
 | Q3 | 05 Workflow, 06 Adoption, 07 Talent | 08 Measurement |
 | Q4 | 05/06, 08 Measurement | 01 (refine on first evidence) |
 
-**Top risk: waterfall transformation.** The greenfield's freedom to build foundations first can curdle into the "too sequential" failure mode — perfecting the platform and the data architecture for a year while shipping nothing and learning nothing. Even here, run a thin slice of execution (05/06) and measurement (08) early so the foundation is shaped by real usage, not by speculation. Build the substrate deliberately, but never in isolation from a live use case.
+*Numbers are track #s — see the [eight-track key](/enterprise-ai-transformation/framework-architecture.md#what-each-track-owns).*
+
+**Top risk: waterfall transformation.** The greenfield's freedom to build foundations first can curdle into the "too sequential" failure mode — perfecting the platform and the data architecture for a year while shipping nothing and learning nothing. Even here, run a thin slice of execution ([Workflow Optimization & Automation](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/index.md), [AI Adoption & Culture](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/index.md)) and measurement ([Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md)) early so the foundation is shaped by real usage, not by speculation. Build the substrate deliberately, but never in isolation from a live use case.
 
 ## How to Choose Your Archetype
 
@@ -98,7 +106,7 @@ Do not pick by intuition. Run the [integrated assessment](/enterprise-ai-transfo
 - **Run concurrently at staggered intensity.** Some activity in every track early (even just assessment); heavy investment only where the upstream dependency is ready. Avoid both failure modes — waterfall ("too sequential") and boil-the-ocean ("too parallel").
 - **The constraint differs by archetype.** Large enterprises stall on coordination/platform coherence; mid-market on focus/talent; single-function on adoption/proof; greenfield on building foundations right the first time.
 - **Narrow and proven beats broad and unproven.** ~95% of gen-AI pilots show no P&L impact, and the winners run narrow, workflow-specific use cases ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)); only ~5% of companies reach value at scale ([BCG, 2025](#ev-bcg-value-gap-2025-distribution)).
-- **Let Measurement (08) pace the next move.** Instrument it from day zero, prove the first win, and let the evidence pull the next investment.
+- **Let [Measurement & Value Realization](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/index.md) pace the next move.** Instrument it from day zero, prove the first win, and let the evidence pull the next investment.
 - **Choose your archetype from the [integrated assessment](/enterprise-ai-transformation/running-the-program/integrated-assessment.md)**, not from intuition — the spread of track scores names your binding constraint.
 
 ## Sources

@@ -11,7 +11,7 @@ timestamp: "2026-06-22"
 This record documents the **full-bundle provenance backfill** — the sweep that took every
 statistic, external reference, and sourced claim across the entire knowledge base and migrated it
 into a structured, independently verified evidence ledger
-([`evidence.yaml`](/enterprise-ai-transformation/validation/overview.md)), then turned on CI
+([`evidence.yaml`](/enterprise-ai-transformation/validation/index.md)), then turned on CI
 enforcement so the convention can no longer silently regress. It is the successor to the June 12
 [Data Readiness audit](/enterprise-ai-transformation/validation/audits/2026-06-12-data-readiness.md),
 which covered one track; this sweep covers **all of them**.
@@ -185,7 +185,7 @@ illustrations, and worked-example arithmetic.
 At the close of the sweep, both provenance checks were flipped from advisory to **blocking** in CI. A
 new page that states a statistic without anchoring it, or anchors it to a ledger entry that doesn't
 exist, is now rejected before merge. Combined with the recurring-source registry
-([`sources.yaml`](/enterprise-ai-transformation/validation/overview.md)), which tracks the edition the
+([`sources.yaml`](/enterprise-ai-transformation/validation/index.md)), which tracks the edition the
 bundle cites for each franchise and flags when one is aging, the base now maintains its own provenance
 rather than relying on periodic manual audits.
 

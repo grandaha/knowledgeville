@@ -43,7 +43,7 @@ fields:
     required: true
 ```
 
-**Quality rules** are quantified, testable thresholds — not aspirational statements. The difference between "email should be valid" and "email must match a valid pattern with 99.5% compliance" is the difference between a wish and an enforceable commitment.
+**Quality rules** are quantified, testable thresholds — not aspirational statements. The difference between "email should be valid" and "email must match a valid pattern with 99.5% compliance" is the difference between a wish and an enforceable commitment.  <!-- noev: illustrative quality-rule threshold, not a sourced statistic -->
 
 ```yaml
 quality:

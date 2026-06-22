@@ -111,7 +111,7 @@ Governance is not a one-time review before launch. AI systems change over time �
 - Policy violations — are access controls being honored? Is any un-permissioned data reaching the pipeline?
 - Regulatory changes — have new obligations come into effect that require policy updates?
 
-**Automation is not optional:** manual governance processes break down as AI workloads grow. Global data volumes reached approximately 180 zettabytes in 2025 and continue to double roughly every two years. Without automation, organizations face inconsistent enforcement, documentation gaps, and delayed detection of violations. Governance checks must be embedded in development pipelines — catching issues at ingestion, transformation, and deployment rather than in post-hoc reviews.
+**Automation is not optional:** manual governance processes break down as AI workloads grow. Global data volumes reached approximately 180 zettabytes in 2025 ([IDC, 2025](#ev-idc-datasphere-2025-growth-cagr)), growing at roughly a 23% CAGR — an approximately three-year doubling. Without automation, organizations face inconsistent enforcement, documentation gaps, and delayed detection of violations. Governance checks must be embedded in development pipelines — catching issues at ingestion, transformation, and deployment rather than in post-hoc reviews.
 
 ---
 
@@ -123,7 +123,7 @@ AI governance shifted from voluntary best practice to legal obligation in 2025. 
 
 A voluntary US framework with four core functions: **Govern, Map, Measure, Manage**. Not legally binding, but referenced by the FTC, CFPB, FDA, SEC, EEOC, and DoD. A GenAI Profile (AI 600-1, July 2024) adds 12 risk categories specific to LLMs and agents, including confabulation, data privacy, information integrity, and intellectual property.
 
-Practical value: NIST AI RMF adoption satisfies an estimated 60–80% of requirements across EU AI Act, US state laws, and international standards simultaneously. It's the operational layer most organizations use for EU AI Act readiness.
+Practical value: NIST AI RMF adoption satisfies an estimated 60–80% of requirements across EU AI Act, US state laws, and international standards simultaneously. It's the operational layer most organizations use for EU AI Act readiness.  <!-- noev: author estimate of framework coverage, not a sourced statistic -->
 
 ### EU AI Act
 
@@ -221,3 +221,4 @@ See the Glossary page for definitions of: **Data Owner, Data Steward, Data Custo
 - **Gartner — *Gartner Predicts by 2028, 50% of Organizations Will Adopt Zero-Trust Data Governance*, 2026.** By 2028, 50% of organizations will adopt zero-trust data governance as unverified AI-generated data grows. [View source](https://www.gartner.com/en/newsroom/press-releases/2026-01-21-gartner-predicts-by-2028-50-percent-of-organizations-will-adopt-zero-trust-data-governance-as-unverified-ai-generated-data-grows){#ev-gartner-zero-trust-data-governance-2028} · verified 2026-06-20 · primary
 - **IAPP — *AI Governance Profession Report 2025*, 2025.** 77% of surveyed organizations say they are actively building or refining AI governance programs. [View source](https://iapp.org/resources/article/ai-governance-profession-report/){#ev-iapp-2025-ai-governance-building} · verified 2026-06-20 · primary
 - **Pacific AI — *2025 AI Governance Survey*, 2025.** 75% of organizations have established AI usage policies, yet only 36% have adopted a formal governance framework. [View source](https://pacific.ai/2025-ai-governance-survey/){#ev-pacific-ai-2025-formal-framework} · verified 2026-06-20 · ⚠ secondary mirror
+- **IDC — *Worldwide IDC Global DataSphere Forecast*, 2025.** Global data creation and replication will experience a compound annual growth rate of 23% over the 2020-2025 forecast period, with more than 180 zettabytes created in 2025. [View source](https://my.idc.com/getdoc.jsp?containerId=US53363625){#ev-idc-datasphere-2025-growth-cagr} · verified 2026-06-21 · ⚠ secondary mirror

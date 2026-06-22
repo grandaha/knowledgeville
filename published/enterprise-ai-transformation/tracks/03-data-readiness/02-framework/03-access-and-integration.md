@@ -158,7 +158,7 @@ Agents introduce access requirements that traditional integration architectures 
 
 **High concurrency, unpredictable load.** AI workloads generate access patterns that differ fundamentally from human analytics: higher concurrency, lower latency requirements, and unpredictable query volumes. Infrastructure must be sized for agent-scale access.
 
-> Gartner predicts 40% of business applications will include task-specific AI agents by end of 2026, up from less than 5% in 2025. The integration infrastructure to support this transition is the most urgent data readiness investment most organizations are not making.
+> Gartner predicts 40% of business applications will include task-specific AI agents by end of 2026, up from less than 5% in 2025 ([Gartner, 2025](#ev-gartner-ai-agents-2025-enterprise-apps)). The integration infrastructure to support this transition is the most urgent data readiness investment most organizations are not making.
 
 ---
 
@@ -170,7 +170,7 @@ Agents introduce access requirements that traditional integration architectures 
 
 **Building integration without governance.** Every new data connection is a new data flow that must be governed. Integration projects that skip governance create technical debt that compounds with every new AI use case.
 
-**Assuming the catalog is complete.** Most enterprise data catalogs cover 40–60% of actual data assets. The data a team most needs for AI is often exactly what is not in the catalog.
+**Assuming the catalog is complete.** Most enterprise data catalogs cover 40–60% of actual data assets. The data a team most needs for AI is often exactly what is not in the catalog.  <!-- noev: author estimate / rule of thumb, not a sourced statistic -->
 
 ---
 
@@ -199,3 +199,4 @@ Agents introduce access requirements that traditional integration architectures 
 - **DATAVERSITY — *Trends in Data Management 2024*, 2024.** 68% of respondents citing data silos as their top concern - up 7% from the previous year. [View source](https://www.dataversity.net/articles/data-strategy-trends-in-2025-from-silos-to-unified-enterprise-value/){#ev-dataversity-2024-data-silos} · verified 2026-06-20 · ⚠ secondary mirror
 - **MarketsandMarkets — *Data Integration Market - Global Forecast to 2030*, 2025.** the data integration market is slated to expand from USD 17.58 billion in 2025 to USD 33.24 billion by 2030, at a CAGR of 13.6%. [View source](https://www.marketsandmarkets.com/PressReleases/data-integration.asp){#ev-marketsandmarkets-2025-data-integration-market} · verified 2026-06-20 · ⚠ secondary mirror
 - **Gartner — *Lack of AI-Ready Data Puts AI Projects at Risk*, 2025.** Through 2026, organizations will abandon 60% of AI projects unsupported by AI-ready data. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk){#ev-gartner-ai-ready-data-2025-abandonment} · verified 2026-06-20 · primary
+- **Gartner — *Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026*, 2025.** Forty percent of enterprise applications will be integrated with task-specific AI agents by the end of 2026, up from less than 5% today. [View source](https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025){#ev-gartner-ai-agents-2025-enterprise-apps} · verified 2026-06-20 · primary

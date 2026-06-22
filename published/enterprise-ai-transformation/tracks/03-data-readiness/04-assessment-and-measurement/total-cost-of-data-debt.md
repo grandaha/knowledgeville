@@ -84,7 +84,7 @@ Formula: number of failed/delayed projects per year × average project cost × p
 
 **Risk exposure** — regulatory, reputational, and operational risk from ungoverned or poor-quality data in AI systems.
 
-For regulatory risk: GDPR fines up to 4% of global annual revenue; CCPA up to \$7,988 per intentional violation. Estimate exposure as fine amount × probability of an enforcement action given current compliance posture.
+For regulatory risk: GDPR fines up to 4% of global annual revenue; CCPA up to \$7,988 per intentional violation. Estimate exposure as fine amount × probability of an enforcement action given current compliance posture.  <!-- noev: statutory penalty cap / worked-example figure, not a sourced statistic -->
 
 For operational risk: estimate the cost of a significant AI failure — customer impact, remediation, reputational damage, executive time.
 
@@ -148,9 +148,9 @@ Data readiness investment gets funded when it is presented correctly. It fails w
 
 **Frame it as AI enablement.** "This investment is the prerequisite for the \$X AI initiative leadership already approved. Without it, that initiative will fail or take twice as long." Data readiness as a dependency of a funded AI initiative is much easier to approve than data readiness as a standalone program.
 
-**Lead with the annual debt tax.** Leadership approves investments to eliminate known, quantified costs more readily than investments to capture uncertain future value. If the annual debt tax is \$2M in wasted labor and failed projects, a \$500K investment to eliminate it is a straightforward decision.
+**Lead with the annual debt tax.** Leadership approves investments to eliminate known, quantified costs more readily than investments to capture uncertain future value. If the annual debt tax is \$2M in wasted labor and failed projects, a \$500K investment to eliminate it is a straightforward decision.  <!-- noev: statutory penalty cap / worked-example figure, not a sourced statistic -->
 
-**Show the compounding trajectory.** A simple chart showing the debt tax at current AI deployment growth rates — if it costs \$2M today with 5 AI systems, what does it look like with 50? The visual case for acting now vs. later is often more compelling than the financial model.
+**Show the compounding trajectory.** A simple chart showing the debt tax at current AI deployment growth rates — if it costs \$2M today with 5 AI systems, what does it look like with 50? The visual case for acting now vs. later is often more compelling than the financial model.  <!-- noev: statutory penalty cap / worked-example figure, not a sourced statistic -->
 
 **Use the regulatory exposure.** In regulated industries, the risk from ungoverned data in AI systems is quantifiable and escalating. The question is not whether to invest — it is whether to invest proactively before an incident or reactively after one.
 
@@ -164,7 +164,7 @@ Data readiness investment gets funded when it is presented correctly. It fails w
 - [ ] Data incident rate and MTTR tracked as board-visible KPIs
 - [ ] Regulatory risk exposure quantified for ungoverned AI systems
 - [ ] ROI model built — debt tax reduction plus AI value enabled
-- [ ] Compounding trajectory modeled at 2x and 5x current AI deployment scale
+- [ ] Compounding trajectory modeled at 2x and 5x current AI deployment scale  <!-- noev: statutory penalty cap / worked-example figure, not a sourced statistic -->
 - [ ] Business case framed as AI enablement, not infrastructure spend
 - [ ] Debt remediation sequenced as prerequisite to specific funded AI initiatives
 - [ ] Governance council has visibility into debt levels and remediation progress

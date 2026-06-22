@@ -63,10 +63,10 @@ What profiling produces:
 
 What to look for immediately:
 
-- Null rates above 5% on fields declared as required
+- Null rates above 5% on fields declared as required  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 - Sentinel values (-1, 0, 9999, "N/A", "Unknown") suggesting missing data encoded as values
 - Date fields with values in 1900 or 2099 — common default handling artifacts in legacy systems
-- Fields where 80%+ of values are a single value — may indicate a broken pipeline defaulting to a constant
+- Fields where 80%+ of values are a single value — may indicate a broken pipeline defaulting to a constant  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 - Schema mismatches between the data dictionary and what the profiler finds
 
 ---
@@ -79,7 +79,7 @@ Four accuracy audit techniques:
 
 **Technique 1: Source system comparison**
 
-Compare values in the audited dataset against the authoritative source system. Pull a statistically valid sample — at least 5% of records, or 500 records minimum. If failures cluster in a time range or system segment, expand the sample in that area.
+Compare values in the audited dataset against the authoritative source system. Pull a statistically valid sample — at least 5% of records, or 500 records minimum. If failures cluster in a time range or system segment, expand the sample in that area.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 **Technique 2: Validation rules**
 
@@ -99,7 +99,7 @@ If the same entity exists in multiple systems, compare corresponding fields. A c
 
 **Technique 4: Statistical anomaly detection**
 
-For numerical data, flag values that deviate significantly from historical distributions. If average order value has been around \$150 for 12 months and a segment suddenly shows \$15,000, that is either a real business event or a data error. Z-score analysis and statistical process control automate this detection.
+For numerical data, flag values that deviate significantly from historical distributions. If average order value has been around \$150 for 12 months and a segment suddenly shows \$15,000, that is either a real business event or a data error. Z-score analysis and statistical process control automate this detection.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 Accuracy scoring:
 
@@ -107,7 +107,7 @@ Accuracy scoring:
 Accuracy Score = (Records passing all accuracy rules / Total records audited) x 100
 ```
 
-Target for AI training data: 95% or above. Below 90%: block from production AI use pending remediation.
+Target for AI training data: 95% or above. Below 90%: block from production AI use pending remediation.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 ---
 
@@ -119,8 +119,8 @@ Completeness is more nuanced than null rate. A field can be populated with a val
 
 For each field, calculate the percentage of records where the value is null or empty. Compare against acceptable thresholds:
 
-- Primary key: 0% nulls acceptable
-- Required business fields (email, account ID): under 1%
+- Primary key: 0% nulls acceptable  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+- Required business fields (email, account ID): under 1%  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 - Optional enrichment fields: document the rate; context-dependent threshold
 
 **Technique 2: Sentinel value detection**
@@ -131,7 +131,7 @@ Build a sentinel value register for your environment. Common sentinel values:
 - String: "N/A", "Unknown", "None", "TBD", "NULL" as a string
 - Date: 1900-01-01, 2099-12-31, 1970-01-01 (Unix epoch default)
 
-Treat sentinel values as nulls in completeness scoring. A field that is 98% complete by null count but 25% sentinel-value is actually 73% complete.
+Treat sentinel values as nulls in completeness scoring. A field that is 98% complete by null count but 25% sentinel-value is actually 73% complete.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 **Technique 3: Conditional completeness**
 
@@ -144,7 +144,7 @@ Flat null rate analysis misses these. Conditional completeness requires SQL-base
 
 **Technique 4: Cross-record completeness**
 
-For time-series data, check whether expected records exist. If you expect a transaction record for every active customer every month, and 3% of active customers have no record in March, that is a completeness failure at the record level — not the field level.
+For time-series data, check whether expected records exist. If you expect a transaction record for every active customer every month, and 3% of active customers have no record in March, that is a completeness failure at the record level — not the field level.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 Completeness scoring:
 
@@ -153,7 +153,7 @@ Completeness Score = (Required fields populated with valid values /
                       Required fields x Total records) x 100
 ```
 
-Target for AI training data: 98% or above for primary fields. Below 95%: flag for steward review.
+Target for AI training data: 98% or above for primary fields. Below 95%: flag for steward review.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 ---
 
@@ -307,14 +307,14 @@ Escalation policy:
 
 ### Governance Metrics to Track
 
-- Quality score by asset: weighted composite across all dimensions — target 85% or above for AI-eligible assets
-- Accuracy rate: percentage of records passing all accuracy rules — target 95% or above
-- Completeness rate: percentage of required fields populated with valid values — target 98% or above
-- Rule coverage: percentage of AI-critical assets with automated checks — target 100%
+- Quality score by asset: weighted composite across all dimensions — target 85% or above for AI-eligible assets  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+- Accuracy rate: percentage of records passing all accuracy rules — target 95% or above  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+- Completeness rate: percentage of required fields populated with valid values — target 98% or above  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+- Rule coverage: percentage of AI-critical assets with automated checks — target 100%  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 - MTTD: mean time from issue introduction to detection — target under 1 hour for critical assets
 - MTTR: mean time from detection to resolution — target under 4 hours critical, under 24 hours major
-- SLA compliance: percentage of issues resolved within SLA — target 95% or above
-- Recurring issue rate: percentage of issues that recur within 30 days — target under 10%
+- SLA compliance: percentage of issues resolved within SLA — target 95% or above  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+- Recurring issue rate: percentage of issues that recur within 30 days — target under 10%  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 ---
 
@@ -336,7 +336,7 @@ Limitation: only covers dbt models; no monitoring of production data outside the
 
 Website: [https://www.getdbt.com](https://www.getdbt.com)
 
-Open source core. dbt Cloud (managed) starts at \$50/month per developer seat.
+Open source core. dbt Cloud (managed) starts at \$50/month per developer seat.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 ---
 
@@ -390,7 +390,7 @@ Best for: mid-market teams on a modern dbt-centric stack who need production obs
 
 Website: [https://www.metaplane.dev](https://www.metaplane.dev)
 
-Starts at approximately \$500/month.
+Starts at approximately \$500/month.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
 
 ---
 

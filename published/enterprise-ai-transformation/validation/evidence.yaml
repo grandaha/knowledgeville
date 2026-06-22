@@ -3540,3 +3540,16 @@
   verified: 2026-06-21
   status: primary
   expires: 2026-12-31
+- id: ev-zhang-persistent-pretraining-poisoning-2024-0point1pct
+  claim: "Pre-training poisoning fraction sufficient to embed persistent backdoors in LLMs"
+  value: "0.1% of a 100B-token pre-training dataset; persists in models up to 7B params (4B among tested sizes)"
+  wording: "poisoning only 0.1% of a model's pre-training dataset is sufficient for three out of four attacks to measurably persist through post-training"
+  source:
+    org: "Zhang, Rando, Evtimov, Carlini, Tramer, Ippolito, et al. (Meta / ETH Zurich / Google DeepMind / CMU)"
+    report: "Persistent Pre-Training Poisoning of LLMs (arXiv:2410.13722)"
+    edition: 2024
+    url: https://arxiv.org/abs/2410.13722
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-10-17

@@ -56,7 +56,7 @@ The four fitness questions:
 
 **Are the labels (if any) still accurate?** For supervised learning, you need ground truth labels. Labels assigned under old business definitions may not match current definitions. Labels assigned by a team that no longer exists may have been applied inconsistently. Labels for outcomes that only became apparent later — did this customer actually churn? — may only be reliable for data old enough that the outcome is known.
 
-**Is the data complete enough to be useful?** A dataset with 40% null rates on the features that matter most to your model is not a training dataset — it's a liability. Determine the minimum completeness threshold your use case requires, and assess whether the historical data meets it.
+**Is the data complete enough to be useful?** A dataset with 40% null rates on the features that matter most to your model is not a training dataset — it's a liability. Determine the minimum completeness threshold your use case requires, and assess whether the historical data meets it.  <!-- noev: illustrative null-rate example, not a sourced statistic -->
 
 ### Step 2: Categorize What You Have
 

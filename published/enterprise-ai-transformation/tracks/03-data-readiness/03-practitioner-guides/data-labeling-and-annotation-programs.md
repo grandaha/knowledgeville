@@ -10,7 +10,7 @@ timestamp: "2026-06-12"
 
 Supervised machine learning has one hard dependency: labeled data. The model learns by seeing examples where the correct answer is already known. It has no other way to learn what right looks like.
 
-This makes labeling the highest-leverage investment in most ML projects — and the most underestimated. Organizations that treat annotation as a commodity task get commodity models. The difference between a 95% accurate model and a 99% accurate model is almost always in the quality of the training data, not the algorithm.
+This makes labeling the highest-leverage investment in most ML projects — and the most underestimated. Organizations that treat annotation as a commodity task get commodity models. The difference between a 95% accurate model and a 99% accurate model is almost always in the quality of the training data, not the algorithm.  <!-- noev: illustrative comparison / tool pricing / product feature, not a sourced statistic -->
 
 The specific failure mode is label noise: inconsistent or incorrect annotations that teach the model wrong patterns. Label noise is invisible in the raw data. Everything looks complete. Training runs successfully. The model performs badly — and the cause is nearly impossible to diagnose without going back to the labels.
 
@@ -105,7 +105,7 @@ The right sourcing model depends on three factors: how sensitive the data is, ho
 
 **Internal team** — the right choice when data cannot leave the organization (sensitive PII, proprietary IP, regulated PHI), when the task requires deep domain expertise that general annotators cannot be trained to, or when the program is long-term enough that building annotation infrastructure is a worthwhile investment. Requires annotation platform, ontology management, QA processes, and annotator management overhead. More control, slower to ramp, highest unit quality for specialized tasks.
 
-**Managed service** — the right choice for specialized tasks you don't have internal expertise for, for burst capacity during an ML project ramp-up, or for organizations that don't have the infrastructure to run an internal program. Scale AI offers 24–48 hour turnaround for well-defined tasks and is particularly strong for autonomous vehicles, defense, and LLM fine-tuning. Appen provides a multilingual global workforce. Surge AI offers higher-quality US-based annotators for NLP tasks. Cost: \$500–\$5,000 per 1,000 items depending on complexity and expertise required.
+**Managed service** — the right choice for specialized tasks you don't have internal expertise for, for burst capacity during an ML project ramp-up, or for organizations that don't have the infrastructure to run an internal program. Scale AI offers 24–48 hour turnaround for well-defined tasks and is particularly strong for autonomous vehicles, defense, and LLM fine-tuning. Appen provides a multilingual global workforce. Surge AI offers higher-quality US-based annotators for NLP tasks. Cost: \$500–\$5,000 per 1,000 items depending on complexity and expertise required.  <!-- noev: illustrative comparison / tool pricing / product feature, not a sourced statistic -->
 
 **Crowdsourced** — the right choice only for general annotation tasks at high volume where specialized expertise is not required and data sensitivity is low. Platforms: Amazon Mechanical Turk, Scale AI crowdsource tier, Appen. The risk is quality variance and security exposure. Requires robust QA to catch the errors that come with high annotator turnover and inconsistent training. Not appropriate for sensitive data or tasks requiring domain knowledge.
 
@@ -114,9 +114,9 @@ The right sourcing model depends on three factors: how sensitive the data is, ho
 ## Tooling
 
 **Label Studio** — the most widely adopted open-source annotation platform. Supports text, image, audio, video, and multimodal annotation. Self-hosted or cloud-hosted. Integrates with ML backends for AI-assisted labeling. The right starting point for small-to-medium internal programs and R&D teams.
-Website: [https://labelstud.io](https://labelstud.io) \| Open source free; Cloud from \$25/month; Enterprise custom.
+Website: [https://labelstud.io](https://labelstud.io) \| Open source free; Cloud from \$25/month; Enterprise custom.  <!-- noev: illustrative comparison / tool pricing / product feature, not a sourced statistic -->
 
-**Labelbox** — full-stack enterprise annotation platform. Model-Assisted Labeling (MAL) uses your own or built-in foundation models to pre-label; annotators correct errors only — reported to cut annotation time by up to 60%. Direct pipeline integration via API. Best for enterprise teams running annotation as a core operation at scale with MLOps integration requirements.
+**Labelbox** — full-stack enterprise annotation platform. Model-Assisted Labeling (MAL) uses your own or built-in foundation models to pre-label; annotators correct errors only — reported to cut annotation time by up to 60%. Direct pipeline integration via API. Best for enterprise teams running annotation as a core operation at scale with MLOps integration requirements.  <!-- noev: illustrative comparison / tool pricing / product feature, not a sourced statistic -->
 Website: [https://labelbox.com](https://labelbox.com) \| Enterprise quote-based pricing.
 
 **Scale AI** — managed annotation service with a large global annotator workforce. Fastest ramp time in the market — 24–48 hour turnaround for well-defined tasks. Strong for autonomous vehicles, defense contracts, and LLM fine-tuning datasets. Best when you need volume quickly without managing annotators internally.
@@ -129,7 +129,7 @@ Website: [https://cvat.ai](https://cvat.ai) \| Fully open source.
 Website: [https://www.v7labs.com](https://www.v7labs.com) \| Contact for quote.
 
 **Prodigy** — commercial annotation tool from the creators of spaCy. Python-native with active learning built in. Annotators work in tight loops — the model immediately incorporates each labeled example and surfaces the next most uncertain one. Best for NLP-focused internal teams where active learning is critical.
-Website: [https://prodi.gy](https://prodi.gy) \| \~\$490 one-time license per user *(verify current pricing at *[*prodi.gy*](http://prodi.gy)* before quoting to clients)*.
+Website: [https://prodi.gy](https://prodi.gy) \| \~\$490 one-time license per user *(verify current pricing at *[*prodi.gy*](http://prodi.gy)* before quoting to clients)*.  <!-- noev: illustrative comparison / tool pricing / product feature, not a sourced statistic -->
 
 ---
 

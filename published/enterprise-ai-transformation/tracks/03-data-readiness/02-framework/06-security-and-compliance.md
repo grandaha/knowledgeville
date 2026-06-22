@@ -14,7 +14,7 @@ The 2026 reality: organizations that don't build security and compliance into AI
 
 > **78%** of CISOs report significant impact from AI-powered cyber threats ([Darktrace, 2025](#ev-darktrace-2025-ciso-ai-threat-impact))
 > **97%** of organizations that experienced AI-related breaches lacked adequate AI security controls ([IBM, 2025](#ev-ibm-2025-ai-breaches-controls))
-> **€7.1 billion** in cumulative GDPR fines since 2018 — €1.2 billion in 2025 alone
+> **€7.1 billion** in cumulative GDPR fines since 2018 — €1.2 billion in 2025 alone ([DLA Piper, 2026](#ev-dlapiper-gdpr-fines-2026-cumulative-total))
 > **131** AI-related laws passed by US states in 2024, more than double the previous year
 > **50%** of world governments expected to enforce AI laws by 2026 ([Gartner, 2024](#ev-gartner-ai-laws-2026-enforcement))
 
@@ -47,7 +47,7 @@ The deliberate insertion of corrupted, biased, or malicious data into a model's 
 
 **How it works:** attackers don't need access to the model or its infrastructure. They only need to compromise the data the model trains on — a third-party dataset, a scraped corpus, a RAG document store, or an external tool definition that an agent consumes.
 
-**Scale of the threat:** researchers demonstrated that poisoning 0.1% of a 100-billion-token training dataset was sufficient to embed persistent backdoors in 4-billion-parameter models. Check Point and OWASP both classify data and model poisoning as critical AI risks in 2026. NSA, CISA, and FBI joint guidance (May 2025) identifies training data supply chain compromise as a primary attack method against AI systems.
+**Scale of the threat:** researchers demonstrated that poisoning 0.1% of a 100-billion-token training dataset was sufficient to embed persistent backdoors that survived post-training across model sizes up to 7 billion parameters ([Zhang et al., 2024](#ev-zhang-persistent-pretraining-poisoning-2024-0point1pct)). Check Point and OWASP both classify data and model poisoning as critical AI risks in 2026. NSA, CISA, and FBI joint guidance (May 2025) identifies training data supply chain compromise as a primary attack method against AI systems.
 
 **The Grok case:** social-media jailbreak prompts posted on X saturated the training data, effectively turning a Twitter handle into a persistent backdoor in the deployed model — a data poisoning attack executed entirely through public content.
 
@@ -81,7 +81,7 @@ Indirect prompt injection is the more dangerous form for agentic systems because
 
 LLMs can memorize and reproduce verbatim sequences from their training data — including PII, proprietary information, API keys, and confidential documents that appeared in the training corpus. An attacker who knows what the model was trained on can craft inputs that cause the model to reproduce that data.
 
-**Legal implication:** under GDPR Article 17 (right to erasure) and CCPA, if personal data was used to train a model, a data subject's erasure request creates an obligation that is technically complex and legally ambiguous. Once personal data informs model parameters, "deleting" it requires retraining. 78% of organizations surveyed have not solved this problem.
+**Legal implication:** under GDPR Article 17 (right to erasure) and CCPA, if personal data was used to train a model, a data subject's erasure request creates an obligation that is technically complex and legally ambiguous. Once personal data informs model parameters, "deleting" it requires retraining — a problem most organizations have not solved.
 
 **Defense:**
 
@@ -142,11 +142,11 @@ The global privacy regulatory environment expanded significantly in 2025–2026.
 
 ### Key Regulations Affecting AI Data
 
-**GDPR (EU)** — Applies to AI processing personal data. Automated decision-making affecting individuals must be explainable. Right to erasure creates obligations when personal data is used in model training. Fines: up to €20M or 4% of global revenue.
+**GDPR (EU)** — Applies to AI processing personal data. Automated decision-making affecting individuals must be explainable. Right to erasure creates obligations when personal data is used in model training. Fines: up to €20M or 4% of global revenue.  <!-- noev: statutory penalty cap, cited by official designation (GDPR / CCPA) -->
 
 **EU AI Act** — Risk-based AI regulation. High-risk applications must document training data sources, implement bias controls, and maintain human oversight. Full enforcement August 2026.
 
-**CCPA/CPRA (California)** — Automated Decision-Making Technology (ADMT) requirements effective January 2026. Requires meaningful disclosure of decision-making logic and likely outcomes. Fines: \$2,663/negligent violation, \$7,988/intentional.
+**CCPA/CPRA (California)** — Automated Decision-Making Technology (ADMT) requirements effective January 2026. Requires meaningful disclosure of decision-making logic and likely outcomes. Fines: \$2,663/negligent violation, \$7,988/intentional.  <!-- noev: statutory penalty cap, cited by official designation (GDPR / CCPA) -->
 
 **US State Laws** — 20+ states now have comprehensive privacy laws. 8 states mandate Global Privacy Control signal recognition. Indiana, Kentucky, and Rhode Island added January 2026.
 
@@ -243,4 +243,6 @@ See the Glossary page for definitions of: **Data Poisoning, Model Inversion, Mem
 
 - **Darktrace — *State of AI Cybersecurity 2025*, 2025.** 78% of CISOs say that AI-powered threats are having a significant impact on their organizations, a 5% increase from 2024. [View source](https://www.darktrace.com/news/new-report-finds-that-78-of-chief-information-security-officers-globally-are-seeing-a-significant-impact-from-ai-powered-cyber-threats){#ev-darktrace-2025-ciso-ai-threat-impact} · verified 2026-06-20 · primary
 - **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2025*, 2025.** 13% of organizations reported breaches of AI models or applications, 97% of which reported lacking proper AI access controls. [View source](https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls){#ev-ibm-2025-ai-breaches-controls} · verified 2026-06-20 · primary
+- **DLA Piper — *GDPR Fines and Data Breach Survey: January 2026*, 2026.** The aggregate total fines reported since the application of GDPR on 25 May 2018 to 10 January 2026 across all the jurisdictions surveyed now stands at EUR7.1 billion. [View source](https://www.dlapiper.com/en/insights/publications/2026/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2026){#ev-dlapiper-gdpr-fines-2026-cumulative-total} · verified 2026-06-21 · primary
 - **Gartner — *AI Regulations to Drive Responsible AI Initiatives*, 2024.** By 2026, 50% of governments worldwide will enforce the use of responsible AI through regulations, policies and the need for data privacy. [View source](https://www.gartner.com/en/newsroom/press-releases/2024-02-29-ai-regulations-to-drive-responsible-ai-initiatives){#ev-gartner-ai-laws-2026-enforcement} · verified 2026-06-20 · primary
+- **Zhang, Rando, Evtimov, Carlini, Tramer, Ippolito, et al. (Meta / ETH Zurich / Google DeepMind / CMU) — *Persistent Pre-Training Poisoning of LLMs (arXiv:2410.13722)*, 2024.** poisoning only 0.1% of a model's pre-training dataset is sufficient for three out of four attacks to measurably persist through post-training. [View source](https://arxiv.org/abs/2410.13722){#ev-zhang-persistent-pretraining-poisoning-2024-0point1pct} · verified 2026-06-21 · primary

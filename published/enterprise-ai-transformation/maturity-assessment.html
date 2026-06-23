@@ -200,6 +200,26 @@
   .bc .lab .dot6{width:6px;height:6px;border-radius:50%;background:var(--orange-500)}
   .bc .val{font-size:19px;font-weight:700;margin-top:6px;letter-spacing:-.01em}
   .bc .why{font-size:13.5px;color:var(--soft);margin-top:7px}
+  .bc .bc-cost{font-size:13px;color:var(--soft);margin-top:11px;padding-top:11px;border-top:1px dashed var(--orange-500);
+    display:flex;flex-wrap:wrap;gap:7px;align-items:baseline}
+  .bc .cost-tag{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--orange-500);background:var(--surface);border:1px solid var(--orange-500);border-radius:var(--r-pill);padding:2px 8px;flex:0 0 auto}
+
+  /* ---- profile-shape card: the primary takeaway, above the constraint block ---- */
+  .profile{position:relative;background:var(--surface);border:1px solid var(--orange-500);border-radius:var(--r-card);
+    padding:18px 20px 19px;margin:22px 0 16px;box-shadow:var(--shadow-md);overflow:hidden}
+  .profile::before{content:"";position:absolute;top:0;left:0;bottom:0;width:4px;background:var(--orange-500)}
+  .profile-eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange-500);
+    display:flex;align-items:center;gap:7px}
+  .profile-eyebrow .dot6{width:6px;height:6px;border-radius:50%;background:var(--orange-500)}
+  .profile-name{font-size:22px;font-weight:700;letter-spacing:-.015em;margin-top:7px;line-height:1.18;color:var(--text)}
+  .profile-diag{font-size:14.5px;color:var(--soft);margin-top:9px;line-height:1.5;max-width:68ch}
+  .profile-rx{font-size:14px;color:var(--text);margin-top:13px;line-height:1.55;max-width:68ch;
+    display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+  .profile-rx .rx-tag{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--on-blue);background:var(--orange-500);border-radius:var(--r-pill);padding:3px 9px;flex:0 0 auto}
+  .method-note a{color:var(--blue-500);text-decoration:none;font-weight:600}
+  .method-note a:hover{color:var(--blue-700);text-decoration:underline}
   .rgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
   @media(max-width:640px){.rgrid{grid-template-columns:1fr}}
   .blk .lab{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-700);margin-bottom:11px;
@@ -342,22 +362,110 @@ function scoredCount(){ return TRACKS.filter(trackScored).length; }
 /* Engine operates on ROUNDED averaged track scores (round half up). */
 function engineScore(t){ const a=trackAvgFull(t); return a==null?null:Math.round(a); }
 
+/* track lookup by id, plus the well-known framework track ids */
+function trackById(id){ return TRACKS.find(t=>t.id===id) || null; }
+const TID = {STRATEGY:1,GOVERNANCE:2,DATA:3,PLATFORM:4,WORKFLOW:5,ADOPTION:6,TALENT:7,MEASUREMENT:8};
+
+/* A dependency edge is "named" when it is one of the framework's two
+   call-out-by-name throttle boundaries. We key on the (dependent <- dependency)
+   pair so the headline can name the boundary when that edge is the spiky one. */
+function namedBoundary(depId, dependsOnId){
+  // Workflow -> Adoption/Talent : Adoption (6) and Talent (7) depend on Workflow (5).
+  // (The framework also names a "Data -> Platform" stall, but Platform does not depend
+  // on Data in the dependency graph — that low-Foundation-under-execution dynamic is
+  // surfaced by the foundation-gap pattern instead, not as a spiky dependency edge.)
+  if(dependsOnId===TID.WORKFLOW && (depId===TID.ADOPTION||depId===TID.TALENT)) return "Workflow → Adoption/Talent";
+  return null;
+}
+
 function computeEngine(){
   // deps model framework-architecture.md's dependency graph. The T8->T1 "Measurement
   // feeds Strategy" relationship is intentionally NOT a dep edge: the framework frames
   // it as a co-evolving loop, not an ordered dependency, so it doesn't gate sequencing.
   const S = {}; TRACKS.forEach(t=> S[t.id]=engineScore(t));
   const min = Math.min(...TRACKS.map(t=>S[t.id]));
+  const max = Math.max(...TRACKS.map(t=>S[t.id]));
   const hasDependents = id => TRACKS.some(t=>t.deps.includes(id));
   // throttlers: a dependency scoring >=2 below a track that depends on it
   const throttlers = new Set();
   TRACKS.forEach(t=> t.deps.forEach(d=>{ if(S[t.id]-S[d] >= 2) throttlers.add(d); }));
+
+  /* ---- binding constraint: lowest-scoring track(s) that have dependents ---- */
   let constraints = TRACKS.filter(t=>S[t.id]===min && (hasDependents(t.id)||throttlers.has(t.id)));
   if(!constraints.length) constraints = TRACKS.filter(t=>S[t.id]===min);
+
+  /* downstream cost: higher-scoring tracks that directly depend on a constraint */
+  function downstreamOf(id){
+    return TRACKS.filter(t=>t.deps.includes(id) && S[t.id]>S[id])
+      .sort((a,b)=> S[b.id]-S[a.id] || a.id-b.id);
+  }
+
   // suggested sequence: low tracks (<= min+1), Direction->Feedback then id
   const seq = TRACKS.filter(t=>S[t.id]<=min+1)
     .sort((a,b)=> LAYER_ORDER.indexOf(a.layer)-LAYER_ORDER.indexOf(b.layer) || a.id-b.id);
-  return {S,min,constraints,seq,throttlers};
+
+  /* ============================================================
+     PROFILE CLASSIFICATION — one dominant pattern, precedence
+     top->bottom. Reads the SHAPE of the 8-track profile.
+     ============================================================ */
+  const data = trackById(TID.DATA), platform = trackById(TID.PLATFORM);
+  const dataS = data? S[data.id] : null, platS = platform? S[platform.id] : null;
+  const dirExecLayers = ["Direction","Execution"];
+
+  // every dependency edge with its gap (dependent score - dependency score)
+  const edges = [];
+  TRACKS.forEach(t=> t.deps.forEach(d=>{
+    const dep = trackById(d); if(!dep) return;
+    edges.push({ dependent:t, dependency:dep, gap:S[t.id]-S[d] });
+  }));
+  const spikyEdges = edges.filter(e=>e.gap>=2)
+    .sort((a,b)=> b.gap-a.gap || a.dependency.id-b.dependency.id);
+
+  let pattern;
+  if(max<=2){
+    /* 1. Flat-but-low */
+    pattern = {
+      key:"flat-low",
+      name:"Flat but low",
+      diagnosis:"No track has crossed the threshold where value appears — the whole profile sits at or below Level 2.",
+      prescription:"Don't nudge all eight up a notch — pick one or two tracks on the critical path and push them to Level 3–4 so something crosses into value, then re-assess."
+    };
+  } else if(dataS!=null && platS!=null && Math.min(dataS,platS)<=2 &&
+            TRACKS.some(t=>dirExecLayers.includes(t.layer) && S[t.id]>=3)){
+    /* 2. Foundation gap under execution pressure */
+    const lowFound = [data, platform].filter(t=>S[t.id]<=2);
+    const lowNames = lowFound.map(t=>`${t.name} (Level ${S[t.id]})`).join(" and ");
+    const resting = TRACKS.filter(t=>dirExecLayers.includes(t.layer) && S[t.id]>=3)
+      .sort((a,b)=> S[b.id]-S[a.id] || a.id-b.id);
+    const restNames = resting.map(t=>`${t.name} (Level ${S[t.id]})`).join(", ");
+    pattern = {
+      key:"foundation-gap",
+      name:"Foundation gap under execution pressure",
+      diagnosis:`${lowNames} ${lowFound.length>1?"are":"is"} weak while ${restNames} push${resting.length>1?"":"es"} ahead — momentum is stacking on a thin substrate.`,
+      prescription:"Execution is being built on substrate that will force a redo — relieve Foundation (Data, Platform) before pouring more into Execution."
+    };
+  } else if(spikyEdges.length){
+    /* 3. Spiky — a high track next to a low dependency (largest gap headlines) */
+    const e = spikyEdges[0];
+    const boundary = namedBoundary(e.dependent.id, e.dependency.id);
+    const boundaryNote = boundary? ` This is the ${boundary} boundary.` : "";
+    pattern = {
+      key:"spiky",
+      name:"Spiky" + (boundary? ` — ${boundary}` : ""),
+      diagnosis:`${e.dependent.name} (Level ${S[e.dependent.id]}) is being throttled by ${e.dependency.name} (Level ${S[e.dependency.id]}) — working pilots that won't scale trace to the Level-${S[e.dependency.id]} dependency next door.${boundaryNote}`,
+      prescription:`Relieve ${e.dependency.name} first — it is the low dependency capping the track resting on it.`
+    };
+  } else {
+    /* 4. Balanced / advancing */
+    pattern = {
+      key:"balanced",
+      name:"Balanced / advancing",
+      diagnosis:"No single track is sharply throttling the rest — the profile is moving up together.",
+      prescription:"Advance the lowest track on the critical path and keep Measurement running so evidence paces the next move."
+    };
+  }
+
+  return {S,min,max,constraints,seq,throttlers,downstreamOf,pattern,spikyEdges};
 }
 
 /* ============================================================
@@ -566,13 +674,22 @@ function resultsHTML(){
     </div></div>`;
   }
   const eng = computeEngine();
-  const {S,min,constraints,seq} = eng;
+  const {S,min,constraints,seq,downstreamOf,pattern} = eng;
   // focus lines
   const focus = constraints.map(c=>{
     const downstream = TRACKS.filter(t=>t.deps.includes(c.id) && S[t.id]>S[c.id]).map(t=>t.short);
     const line = downstream.length? `is throttling ${downstream.join(', ')} downstream` : `gates the layers built on it`;
     return `<div class="item"><span class="mk">▸</span><div><b>${c.name}</b> — ${line}.</div></div>`;
   }).join('');
+  /* downstream-cost line for the binding constraint block: higher-scoring
+     tracks that directly depend on the constraint(s), with their levels. */
+  const dsTargets = [];
+  const seen = new Set();
+  constraints.forEach(c=> downstreamOf(c.id).forEach(t=>{ if(!seen.has(t.id)){ seen.add(t.id); dsTargets.push(t); } }));
+  dsTargets.sort((a,b)=> S[b.id]-S[a.id] || a.id-b.id);
+  const downstreamCost = dsTargets.length
+    ? `Capping ${dsTargets.map(t=>`${t.short} (${S[t.id]})`).join(', ')}.`
+    : `Nothing above it scores higher yet — it gates the layers above it.`;
   const seqHTML = seq.map((t,i)=>
     `${i?'<span class="arrow">→</span>':''}<span class="chip">${t.short} <span class="cn">${trackAvgFull(t).toFixed(1)}</span></span>`).join('');
   // score table, in layer order
@@ -594,10 +711,17 @@ function resultsHTML(){
         <p>Engine run on your rounded average track scores. A track is only as strong as its weakest upstream dependency.</p>
       </div>
     </div>
+    <div class="profile">
+      <div class="profile-eyebrow"><span class="dot6"></span>Profile shape</div>
+      <div class="profile-name">${pattern.name}</div>
+      <div class="profile-diag">${pattern.diagnosis}</div>
+      <div class="profile-rx"><span class="rx-tag">Do this</span> ${pattern.prescription}</div>
+    </div>
     <div class="bc">
       <div class="lab"><span class="dot6"></span>Binding constraint</div>
       <div class="val">${bcNames}</div>
       <div class="why">Lowest maturity (level ${min}) with work stacked on top — relieve this before pouring resources into the layers above it.</div>
+      <div class="bc-cost"><span class="cost-tag">Downstream cost</span> ${downstreamCost}</div>
     </div>
     <div class="rgrid">
       <div class="blk">
@@ -614,7 +738,8 @@ function resultsHTML(){
       <div class="st-row head"><span class="st-num">#</span><span>Track</span><span>Maturity</span><span class="st-avg">Avg</span></div>
       ${rows}
     </div>
-    <div class="note">Track averages are the mean of each track's scored dimensions, shown to one decimal. The dependency engine rounds those averages (half up) to integers 1–5 before finding the binding constraint, flagging throttled tracks (a dependency ≥2 levels below), and ordering the sequence.</div>
+    <div class="note">Track averages are the mean of each track's scored dimensions, shown to one decimal. The dependency engine rounds those averages (half up) to integers 1–5 before reading the profile shape, finding the binding constraint, flagging throttled tracks (a dependency ≥2 levels below), and ordering the sequence.</div>
+    <div class="note method-note">This mirrors the framework's read — see the <a href="/enterprise-ai-transformation/running-the-program/integrated-assessment/">Integrated Assessment</a> for how to turn this into an investment case.</div>
   </div>
   <div class="stepnav">
     <button class="btn" data-nav="prev">← Back to scoring</button>

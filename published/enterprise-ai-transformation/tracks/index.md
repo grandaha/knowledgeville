@@ -1,6 +1,6 @@
 # Tracks
 
-The eight workstreams of enterprise AI transformation. Each track contains a core framework, practitioner guides, and assessment tools. For how the tracks fit together — what each owns, how they depend on one another, how to sequence them, and the maturity matrix — see [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
+The eight workstreams of enterprise AI transformation. Each track contains a core framework, practitioner guides, and assessment tools. For how the tracks fit together — what each owns, how they depend on one another, and how to sequence them — see [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md). For the shared five-level ladder and the eight-track maturity matrix, see the [Maturity Model](/enterprise-ai-transformation/maturity-model.md).
 
 ## In this section
 

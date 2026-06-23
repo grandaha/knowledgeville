@@ -44,8 +44,9 @@ It's written for the people accountable for making AI actually work inside an or
 | Page | Last updated |
 | --- | --- |
 | [Executive Summary](executive-summary.md)<br>A one-page synthesis of the Enterprise AI Transformation framework for leaders deciding where to invest before funding AI programs. | Updated 2026-06-19 |
-| [Framework Architecture](framework-architecture.md)<br>The cross-cutting architecture of the framework — what each of the eight tracks owns, how they depend on one another, how to sequence them, the two failure modes, and a maturity matrix. | Updated 2026-06-15 |
+| [Framework Architecture](framework-architecture.md)<br>The cross-cutting architecture of the framework — what each of the eight tracks owns, how they depend on one another, how to sequence them, and the two failure modes. | Updated 2026-06-15 |
 | [Glossary](glossary.md)<br>A practitioner glossary of AI and data terms used across the framework — fundamentals, agents, governance, architecture, lineage, infrastructure, security, and integration. | Updated 2026-06-12 |
+| [Maturity Model](maturity-model.md)<br>The shared five-level maturity ladder and the eight-track maturity matrix used to score an organization across the whole framework. | Updated 2026-06-23 |
 | [Running the Program](running-the-program/)<br>How to operate all eight tracks as a coherent program — staffing, funding, sequencing, and stakeholder communication. | Updated 2026-06-12 |
 | [Tracks](tracks/)<br>The eight workstreams of enterprise AI transformation, each containing a core framework, practitioner guides, and assessment tools. | Updated 2026-06-12 |
 | [Validation](validation/)<br>How this knowledge base is validated — every statistic, source, and claim is checked, and each sweep is recorded here. | Updated 2026-06-22 |

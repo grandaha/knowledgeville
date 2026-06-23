@@ -24,7 +24,7 @@ git clone https://github.com/grandaha/knowledgeville.git
 
 Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to use, share, and adapt with attribution. Cited third-party statistics and trademarks remain property of their respective owners.
 
-## Frameworks
+## Knowledge bundles
 
 - **[Enterprise AI Transformation](/enterprise-ai-transformation/index.md)** —
   an eight-track model for taking AI from strategy to measured value across an
@@ -34,6 +34,6 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
 ## Where to start
 
 - New here? Read the [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
-- **Benchmark your organization** with the [AI Transformation Maturity Self-Assessment](https://www.onesteplabs.com/maturity-assessment.html) — score all eight tracks against the framework's rubrics, see your binding constraint, and get a recommended sequence.
+- **Benchmark your organization** with the [AI Transformation Maturity Self-Assessment](https://www.onesteplabs.com/maturity-assessment.html) — score all eight tracks against the rubrics, see your binding constraint, and get a recommended sequence.
 - Use the search box (top of the page) to jump to any concept.
 

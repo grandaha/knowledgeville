@@ -1,12 +1,12 @@
 ---
 type: Concept
 title: Executive Summary
-description: A one-page synthesis of the Enterprise AI Transformation framework for leaders deciding where to invest before funding AI programs.
+description: A one-page synthesis of the Enterprise AI Transformation knowledge bundle for leaders deciding where to invest before funding AI programs.
 tags: [ai-transformation, executive-summary, leadership]
 timestamp: "2026-06-19"
 ---
 
-Almost every large organization is now spending on AI. Far fewer are getting value back. The gap between those two facts is the entire problem this framework exists to close — and closing it is a leadership problem before it is a technical one. This page is the one-page synthesis: the size of the gap, the model for thinking about the whole effort, why most programs fall into it, and what leadership should do in the first 90 days. The detail lives in the [eight tracks](/enterprise-ai-transformation/framework-architecture.md) and the [program-execution layer](/enterprise-ai-transformation/running-the-program/index.md); this is the map you read first.
+Almost every large organization is now spending on AI. Far fewer are getting value back. The gap between those two facts is the entire problem this bundle exists to close — and closing it is a leadership problem before it is a technical one. This page is the one-page synthesis: the size of the gap, the model for thinking about the whole effort, why most programs fall into it, and what leadership should do in the first 90 days. The detail lives in the [eight tracks](/enterprise-ai-transformation/framework-architecture.md) and the [program-execution layer](/enterprise-ai-transformation/running-the-program/index.md); this is the map you read first.
 
 ## The Transformation Problem in Numbers
 

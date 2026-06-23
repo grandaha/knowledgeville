@@ -1,10 +1,10 @@
 # Enterprise AI Transformation
 
-A structured framework for organizations navigating AI transformation — from strategy and governance through data readiness, workflow optimization, adoption, talent, and value measurement.
+A structured knowledge bundle for organizations navigating AI transformation — from strategy and governance through data readiness, workflow optimization, adoption, talent, and value measurement.
 
 Organized into eight tracks plus a cross-cutting program layer. Each track contains a core framework, practitioner guides, and assessment tools.
 
-It's written for the people accountable for making AI actually work inside an organization — transformation and strategy leaders, heads of data and platform, and the practitioners running each workstream. The core thesis: AI transformation succeeds or fails as **one interdependent system**, not as a set of isolated pilots — so this framework treats the eight tracks as a whole and helps you find and fund the binding constraint rather than the most visible layer.
+It's written for the people accountable for making AI actually work inside an organization — transformation and strategy leaders, heads of data and platform, and the practitioners running each workstream. The core thesis: AI transformation succeeds or fails as **one interdependent system**, not as a set of isolated pilots — so this bundle treats the eight tracks as a whole and helps you find and fund the binding constraint rather than the most visible layer.
 
 ---
 
@@ -43,7 +43,7 @@ It's written for the people accountable for making AI actually work inside an or
 
 | Page | Last updated |
 | --- | --- |
-| [Executive Summary](executive-summary.md)<br>A one-page synthesis of the Enterprise AI Transformation framework for leaders deciding where to invest before funding AI programs. | Updated 2026-06-19 |
+| [Executive Summary](executive-summary.md)<br>A one-page synthesis of the Enterprise AI Transformation knowledge bundle for leaders deciding where to invest before funding AI programs. | Updated 2026-06-19 |
 | [Framework Architecture](framework-architecture.md)<br>The cross-cutting architecture of the framework — what each of the eight tracks owns, how they depend on one another, how to sequence them, and the two failure modes. | Updated 2026-06-15 |
 | [Glossary](glossary.md)<br>A practitioner glossary of AI and data terms used across the framework — fundamentals, agents, governance, architecture, lineage, infrastructure, security, and integration. | Updated 2026-06-12 |
 | [Maturity Model](maturity-model.md)<br>The shared five-level maturity ladder and the eight-track maturity matrix used to score an organization across the whole framework. | Updated 2026-06-23 |

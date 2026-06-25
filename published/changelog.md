@@ -19,13 +19,7 @@ This page records how this knowledge base has changed over time — new and expa
 * Surface AI Use Cases on the homepage
 
 ### Site & structure
-* Clean up the generated changelog rendering
 * Add the Maturity Self-Assessment tool to the site nav
-* Move assessment tool under the Enterprise AI Transformation section
-* Place assessment tool above the glossary in the section nav
-* Richer assessment results (profile-shape read) + cross-link Integrated Assessment
-* Move maturity tool out of the OKF bundle (host on onesteplabs.com)
-* Split Maturity Model out of Framework Architecture
 
 ## v1.1.0 — 2026-06-22
 

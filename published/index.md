@@ -10,7 +10,8 @@ research on the things we find important, shared openly so it's useful beyond us
 The direction is One Step Labs'; the research and writing are done with Claude. We publish it here as
 structured, openly-licensed concepts — frameworks, playbooks, assessments, and references built on the
 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-and continuously validated. Our first body of work is enterprise AI transformation; more topics will follow.
+and continuously validated. We began with enterprise AI transformation and are expanding into practical,
+everyday AI use; more topics will follow.
 
 ## Two ways to use this
 
@@ -31,9 +32,15 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   enterprise: strategy & leadership, governance & risk, data readiness, platform,
   workflow, adoption, talent, and measurement.
 
+- **[AI Use Cases](/ai-use-cases/index.md)** — practical, hands-on ways to put AI
+  to work, grouped into sub-domains. The first is **Everyday Tasks**: copy-paste
+  recipes — a ready-to-run prompt plus a before-and-after — for writing, editing,
+  summarizing, planning, and more with any AI chat tool.
+
 ## Where to start
 
 - New here? Read the [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
+- Want something you can use in five minutes? Browse [Everyday Tasks](/ai-use-cases/everyday-tasks/index.md) and copy a recipe.
 - **Benchmark your organization** with the [AI Transformation Maturity Self-Assessment](https://www.onesteplabs.com/maturity-assessment.html) — score all eight tracks against the rubrics, see your binding constraint, and get a recommended sequence.
 - Use the search box (top of the page) to jump to any concept.
 

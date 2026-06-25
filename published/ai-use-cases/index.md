@@ -1,0 +1,14 @@
+# AI Use Cases
+
+**AI Use Cases** is a growing library of practical, hands-on ways to put AI to work — the kind you can try the moment you finish reading. It's organized into **sub-domains**, each a focused collection for a particular kind of user or setting. More will be added over time.
+
+The first sub-domain is **[Everyday Tasks](/ai-use-cases/everyday-tasks/index.md)** — copy-paste recipes for everyday work, written for someone who just wants to get something done with an AI chat tool, with no technical setup.
+
+New here? Start with **[The Use-Case Map](/ai-use-cases/the-use-case-map.md)** to see how everything is laid out, then jump straight to whatever you're trying to do.
+
+## In this section
+
+| Page | Last updated |
+| --- | --- |
+| [Everyday Tasks](everyday-tasks/)<br>Copy-paste AI recipes for everyday tasks — each page is a ready-to-run prompt with a before-and-after. | Updated 2026-06-24 |
+| [The Use-Case Map](the-use-case-map.md)<br>How this domain is organized — sub-domains, and within Everyday Tasks, the ten task types. | Updated 2026-06-24 |

@@ -1,0 +1,58 @@
+# evidence.yaml — public provenance record for the Everyday Tasks bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+
+- id: ev-x-post-character-limit-280
+  claim: Character limit for a standard post on X (Twitter)
+  value: "280"
+  wording: "Posts on X can contain up to 280 characters."
+  source:
+    org: X (formerly Twitter)
+    report: Counting Characters — X Developer Platform
+    edition: "2026"
+    url: https://docs.x.com/fundamentals/counting-characters
+  verified: "2026-06-24"
+  status: primary
+  expires: "2027-06-24"
+
+- id: ev-linkedin-post-character-limit-3000
+  claim: Character limit for a LinkedIn post or share update
+  value: "3,000"
+  wording: "The character limit for a post is 3000 characters."
+  source:
+    org: LinkedIn
+    report: Post and share updates — LinkedIn Help
+    edition: "2026"
+    url: https://www.linkedin.com/help/linkedin/answer/a528176
+  verified: "2026-06-24"
+  status: primary
+  expires: "2027-06-24"
+
+- id: ev-instagram-hashtag-limit-5
+  claim: Maximum number of hashtags allowed per Instagram post or reel
+  value: "5"
+  wording: "Instagram will gradually update the number of hashtags that you can include in a caption for a reel or post to five."
+  source:
+    org: Instagram
+    report: Use hashtags on Instagram — Instagram Help Center (cap reduced from 30 to 5 per Instagram's own announcement)
+    edition: "2026"
+    url: https://help.instagram.com/351460621611097
+  verified: "2026-06-24"
+  status: secondary-mirror
+  expires: "2027-06-24"

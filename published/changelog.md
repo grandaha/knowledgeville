@@ -11,6 +11,16 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v3.0.0 — 2026-06-29
+
+### New & expanded content
+* **AI Research Briefs** — a new bundle of plain-language briefs of notable AI research papers, written for business leaders and knowledge workers: what each paper found, how much to trust it, and what it means for you.
+* **There's No Silver Bullet for Coding-Agent Rewards** — why no single reward keeps a coding agent honest, and what a layered verification stack does instead.
+* **Why AI Drops Its Caution the Moment You Ask for Advice** — AI models assert cause-and-effect when asked for advice that they'd carefully hedge under analysis, and a one-line re-prompt brings the caution back.
+
+### Site & structure
+* New **AI Research Briefs** area on the site, grouped by theme (Agents & Tool Use, Reasoning & Capabilities), with a guide to how each brief is structured and how to read its trust assessment.
+
 ## v2.1.1 — 2026-06-29
 
 ### New & expanded content

@@ -37,6 +37,18 @@ worthless — it's early. A well-funded result isn't fake — it's worth a secon
 section gives you the questions a careful reader would ask. You decide what the answer is
 worth.
 
+## How briefs are grouped
+
+Briefs are sorted into themes so you can follow the area you care about. A theme shows up on
+the site once it has its first brief, so the list fills in over time. The themes we're
+working toward:
+
+- **Agents and tool use** — AI that takes multi-step action and uses tools.
+- **Reasoning and capabilities** — what models can and can't do, and how they plan.
+- **Training and efficiency** — how models are built, tuned, and made cheaper to run.
+- **Evaluation and benchmarks** — how AI gets measured, tested, and compared.
+- **Safety and alignment** — keeping AI useful and reducing real harms.
+
 ## What a brief is not
 
 A brief is a starting point, not a citation you can lean on. We summarize one paper and add

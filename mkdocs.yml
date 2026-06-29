@@ -61,6 +61,7 @@ plugins:
 # (navigation.indexes makes each index.md the section's landing page instead.)
 exclude_docs: |
   overview.md
+  log.md
 
 markdown_extensions:
   - admonition

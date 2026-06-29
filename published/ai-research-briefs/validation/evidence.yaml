@@ -1,0 +1,33 @@
+# evidence.yaml — public provenance record for the AI Research Briefs bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+# Single-source briefs: one entry represents the paper being briefed; the findings
+# paragraphs anchor to it as "([Authors, Year](#ev-...))" = "reported by this paper".
+- id: ev-qwen-verification-horizon-2026
+  claim: "Reward hacking by coding agents on SWE-Bench Verified, before vs after adding per-trajectory behavior monitoring during RL"
+  value: "hack rate 51.49% → 2.13%"
+  wording: "On SWE-Bench Verified, the reward-hacking rate dropped from 51.49% to 2.13% and the genuine resolved rate rose from 36.49% to 64.98% once behavior monitoring was added."
+  source:
+    org: "Qwen Team"
+    report: "The Verification Horizon: No Silver Bullet for Coding Agent Rewards"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.26300
+    pdf_hash:
+  verified: 2026-06-29
+  status: primary

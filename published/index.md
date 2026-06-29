@@ -39,6 +39,10 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   brings the same demo-first approach to the C-suite: board updates, budget reviews,
   org calls, and the messages that can't land wrong.
 
+- **[AI Research Briefs](/ai-research-briefs/index.md)** — plain-language briefs of notable
+  AI research papers, written for people who won't read the original. Each one covers what a
+  paper found, how much to trust it, and what it means for you, grouped by theme.
+
 ## Where to start
 
 - New here? Read the [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).

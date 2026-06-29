@@ -31,15 +31,3 @@
     pdf_hash:
   verified: 2026-06-29
   status: primary
-- id: ev-jetspec-2026
-  claim: "JetSpec single-request decoding speedup vs prior speculative decoding on MATH-500 (Qwen3-8B, draft budget 256, temperature 0), and its fall-off under batched serving"
-  value: "9.64x single-request (vs EAGLE-3 2.36x); 2.85x at batch 32"
-  wording: "On MATH-500 with Qwen3-8B at draft budget 256 and temperature 0, JetSpec reached a 9.64x speedup versus 2.36x for EAGLE-3 and 8.78x for DDTree; under realistic vLLM serving the speedup falls to 2.85x at batch 32."
-  source:
-    org: "Hu et al."
-    report: "JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting"
-    edition: 2026
-    url: https://arxiv.org/abs/2606.18394
-    pdf_hash:
-  verified: 2026-06-29
-  status: primary

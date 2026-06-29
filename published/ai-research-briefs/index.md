@@ -17,6 +17,7 @@ minutes whether the full paper is worth your time.
 Briefs are grouped by theme. A theme appears once it has its first brief, so the list grows as we go:
 
 - **[Agents and Tool Use](/ai-research-briefs/agents-and-tool-use/index.md)** — AI that takes multi-step action and uses tools.
+- **[Reasoning and Capabilities](/ai-research-briefs/reasoning-and-capabilities/index.md)** — what models can and can't reliably do, and how they reason.
 
 More themes open up as briefs land. **[How These Briefs Work](/ai-research-briefs/how-these-briefs-work.md)** lists the full set we're working toward.
 
@@ -29,4 +30,5 @@ New to the bundle? Start with **[How These Briefs Work](/ai-research-briefs/how-
 | [Agents and Tool Use](agents-and-tool-use/)<br>Briefs on papers about AI agents, tool use, and multi-step autonomy. | Updated 2026-06-29 |
 | [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-29 |
 | [How These Briefs Work](how-these-briefs-work.md)<br>What every brief contains, how to read it, and how much to trust it. | Updated 2026-06-29 |
+| [Reasoning and Capabilities](reasoning-and-capabilities/)<br>Briefs on papers about model reasoning, planning, and what models can and cannot do. | Updated 2026-06-29 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-29 |

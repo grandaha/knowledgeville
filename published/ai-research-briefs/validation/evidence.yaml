@@ -31,3 +31,15 @@
     pdf_hash:
   verified: 2026-06-29
   status: primary
+- id: ev-okumura-causal-caution-2026
+  claim: "LLM causal caution (refusing to assert causation from correlation) under academic vs practical-advice framing, and recovery after a self-correction prompt — 4 models, 480 trials"
+  value: "caution 91.7-100% (academic) -> 6.7-18.3% (advice) -> 71.4-100% (after re-prompt)"
+  wording: "Across four models and 480 trials, causal caution held in 91.7-100.0% of academic-framed responses but only 6.7-18.3% under practical-advice framing; a single reconsider-from-a-causal-perspective prompt restored it to 71.4-100.0%."
+  source:
+    org: "Okumura (Mitsubishi Research Institute / Kobe University)"
+    report: "When Helpfulness Overrides Causal Caution: Context-Dependent Suppression and Recovery in LLMs"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.24370
+    pdf_hash:
+  verified: 2026-06-29
+  status: primary

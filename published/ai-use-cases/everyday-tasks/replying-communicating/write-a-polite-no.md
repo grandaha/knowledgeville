@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-Someone asks you to do something you can't or don't want to do — take on a project, attend an event, give a favor — and you want to say no without leaving them feeling dismissed or leaving yourself feeling guilty about the wording.
+Someone asks you to do something you can't or don't want to do: take on a project, attend an event, give a favor. You want to say no without leaving them feeling dismissed, or leaving yourself feeling guilty about the wording.
 
 ## The prompt
 

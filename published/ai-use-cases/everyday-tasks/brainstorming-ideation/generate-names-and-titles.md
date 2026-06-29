@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-When you need to name something — a project, product, article, event, or team — and want a range of real options to react to rather than staring at a blinking cursor.
+You need to name something: a project, product, article, event, or team. You want a batch of real options to react to, instead of staring at a blinking cursor.
 
 ## The prompt
 

@@ -33,9 +33,11 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   workflow, adoption, talent, and measurement.
 
 - **[AI Use Cases](/ai-use-cases/index.md)** — practical, hands-on ways to put AI
-  to work, grouped into sub-domains. The first is **Everyday Tasks**: copy-paste
-  recipes — a ready-to-run prompt plus a before-and-after — for writing, editing,
-  summarizing, planning, and more with any AI chat tool.
+  to work, grouped into sub-domains. **[Everyday Tasks](/ai-use-cases/everyday-tasks/index.md)**
+  is copy-paste recipes — a ready-to-run prompt plus a before-and-after — for writing,
+  editing, summarizing, planning, and more. **[Executive Leadership](/ai-use-cases/executive-leadership/index.md)**
+  brings the same demo-first approach to the C-suite: board updates, budget reviews,
+  org calls, and the messages that can't land wrong.
 
 ## Where to start
 

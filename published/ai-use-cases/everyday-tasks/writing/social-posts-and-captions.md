@@ -60,7 +60,7 @@ Platform limits matter — the AI won't always get them right on the first try, 
 
 - **X (Twitter):** Standard posts are capped at **280 characters** ([X Developer Docs, 2026](#ev-x-post-character-limit-280)). Keep it tight, or break a longer thought into a thread.
 - **LinkedIn:** Posts can be up to **3,000 characters** ([LinkedIn Help, 2026](#ev-linkedin-post-character-limit-3000)). Anything longer needs to be published as an article instead.
-- **Instagram hashtags:** You can use up to **5 hashtags** per post ([Instagram Help Center, 2026](#ev-instagram-hashtag-limit-5)). Instagram cut this from 30 to 5, saying fewer, well-chosen hashtags perform better — so the prompt asking for 3–5 is right where you want to be.
+- **Instagram hashtags:** You can use up to **5 hashtags** per post ([Instagram Help Center, 2026](#ev-instagram-hashtag-limit-5)). Instagram cut this from 30 to 5, saying fewer, well-chosen hashtags perform better. So the prompt asking for 3–5 is right where you want to be.
 - **Caption length:** Instagram's caption character limit is not clearly documented in their Help Center. In practice, captions are cut off in the feed after the first 125 characters — make your first line count.
 
 ## Make it yours

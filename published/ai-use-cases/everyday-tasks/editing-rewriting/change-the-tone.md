@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-Use this when the words are right but the feeling is off — the email sounds too cold, the request sounds too weak, or the update sounds more casual than the situation calls for. The message stays the same; only the delivery changes.
+Use this when the words are right but the feeling is off. Maybe the email sounds too cold, the request sounds too weak, or the update sounds more casual than the situation calls for. The message stays the same; only the delivery changes.
 
 ## The prompt
 

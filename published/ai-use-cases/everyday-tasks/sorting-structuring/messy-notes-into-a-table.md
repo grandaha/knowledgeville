@@ -52,4 +52,4 @@ Here are my notes:
 
 ## Watch out for
 
-The AI will occasionally merge two separate items into one row or split one item into two — skim the table against your original notes before sharing it. Also, it can only assign an owner if the name appears in your notes; it will not infer who should own something.
+The AI will occasionally merge two separate items into one row, or split one item into two. Skim the table against your original notes before sharing it. Also, it can only assign an owner if the name appears in your notes; it will not infer who should own something.

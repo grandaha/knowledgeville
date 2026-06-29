@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-When you know what you want to say but the blank page is staring back at you. Works especially well for anything that needs a careful tone — following up, asking a favour, delivering bad news, or writing to someone you don't know well.
+When you know what you want to say but the blank page is staring back at you. Works especially well when the tone needs care. Think following up, asking a favour, delivering bad news, or writing to someone you don't know well.
 
 ## The prompt
 
@@ -57,4 +57,4 @@ Write a complete email with a subject line. Use plain, natural language — no c
 
 ## Watch out for
 
-AI is good at finding the right words, but it doesn't know your relationship with the reader the way you do. Read what it gives you before you send — check the tone, trim anything that sounds off, and make sure any commitments it made are ones you're actually prepared to keep.
+AI is good at finding the right words, but it doesn't know your relationship with the reader the way you do. Read what it gives you before you send. Check the tone, trim anything that sounds off, and make sure any commitments it made are ones you're actually prepared to keep.

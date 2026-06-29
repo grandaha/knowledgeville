@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-You've encountered a term, idea, or topic that you don't fully understand — and you want a clear explanation without having to wade through jargon or a Wikipedia rabbit hole.
+You've encountered a term, idea, or topic that you don't fully understand. You want a clear explanation, without wading through jargon or hours on Wikipedia.
 
 ## The prompt
 

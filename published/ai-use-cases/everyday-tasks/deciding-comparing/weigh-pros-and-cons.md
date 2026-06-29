@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-You're sitting with a decision and can't see it clearly — either because you're too close to it, or because the upsides and downsides are all mixed together in your head. A few seconds with this prompt cuts through the noise.
+You're sitting with a decision and can't see it clearly. Maybe you're too close to it, or the upsides and downsides are all mixed together in your head. A few seconds with this prompt cuts through the noise.
 
 ## The prompt
 
@@ -62,4 +62,4 @@ Keep it honest and don't try to make one side look better than the other.
 
 ## Watch out for
 
-AI is good at surfacing considerations you've suppressed, but it doesn't know your life. The cons list may feel impersonal — push back if something doesn't fit your situation, and treat the output as a starting point for your own thinking, not a verdict.
+AI is good at surfacing considerations you've suppressed, but it doesn't know your life. The cons list may feel impersonal. Push back if something doesn't fit your situation, and treat the output as a starting point for your own thinking, not a verdict.

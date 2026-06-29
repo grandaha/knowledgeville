@@ -52,4 +52,4 @@ You want to say yes but flag that you need the client notes first.
 
 ## Watch out for
 
-AI tends to over-agree. If you need to push back or set a limit, say so clearly in your goal — otherwise the reply may come out softer than you intended. Always read it once before sending: the AI doesn't know your relationship with this person.
+AI tends to over-agree. If you need to push back or set a limit, say so clearly in your goal. Otherwise the reply may come out softer than you intended. Always read it once before sending: the AI doesn't know your relationship with this person.

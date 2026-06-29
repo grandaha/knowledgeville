@@ -3,13 +3,27 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-06-25"
+timestamp: "2026-06-29"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v2.1.1 — 2026-06-29
+
+### New & expanded content
+* Plain-language readability pass on everyday-tasks (20-page audit)
+
+## v2.1.0 — 2026-06-28
+
+### New & expanded content
+* Executive-leadership sub-domain bundle (design + scaffold, 16 planned stubs)
+* Author draft-a-board-update (first executive-leadership page)
+* Author prep-board-investor-qa (first workflow-shape page)
+* Author remaining 14 executive-leadership pages (bundle complete 16/16)
+* Surface Executive Leadership on the homepage
 
 ## v2.0.0 — 2026-06-25
 

@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-You're choosing between two or more options — tools, vendors, plans, job offers — and you want to see them side by side without the comparison getting muddled in your head.
+You're choosing between two or more options: tools, vendors, plans, job offers. You want to see them side by side, without the comparison getting muddled in your head.
 
 ## The prompt
 

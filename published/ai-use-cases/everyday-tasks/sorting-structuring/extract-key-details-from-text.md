@@ -8,7 +8,7 @@ timestamp: "2026-06-24"
 
 ## When to use this
 
-You have a block of text — an email, a contract clause, a product description, a support ticket — and you need specific fields pulled out of it without reading the whole thing yourself. Useful when you have one piece of text or a handful of them and need the same fields from each.
+You have a block of text: an email, a contract clause, a product description, a support ticket. You need specific fields pulled out of it without reading the whole thing yourself. Useful when you have one piece of text, or a handful, and need the same fields from each.
 
 ## The prompt
 
@@ -54,4 +54,4 @@ Fields requested: Vendor name · Amount · Deadline · Approver · Sender
 
 ## Watch out for
 
-When a field appears multiple times with different values — say, two deadlines mentioned in one email — the AI may pick one and silently drop the other. If precision matters, ask it to "list all occurrences" for fields that might repeat. Also, it will not catch information that's implied rather than stated; if the deadline is "before the weekend" in an email sent Thursday, it won't infer Friday.
+A field can appear multiple times with different values. Say two deadlines are mentioned in one email: the AI may pick one and silently drop the other. If precision matters, ask it to "list all occurrences" for fields that might repeat. It also won't catch information that's implied rather than stated. If the deadline is "before the weekend" in an email sent Thursday, it won't infer Friday.

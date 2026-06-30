@@ -1,0 +1,34 @@
+# evidence.yaml — public provenance record for the AI Industry Briefs bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+# Single-source briefs: one entry represents the analyst article being briefed; the page's
+# figure lines anchor to it as "([HFS Research, 2026](#ev-...))" = "reported by this article".
+# Per the bundle's defining rule, the article is the PRIMARY source for its own figures.
+- id: ev-hfs-ai-balloon-2026
+  claim: "HFS Research thesis on the gap between AI market valuations and enterprise adoption: valuation multiples, accumulated enterprise debt, AI-maturity rates, and market-size forecasts"
+  value: "$18T enterprise debt; fewer than 1 in 10 pilots reach production; IT services ~1.5x vs AI-native average above 45x revenue"
+  wording: "an estimated $18 trillion challenge; fewer than one in ten enterprise AI pilots make it into production; large IT-services firms trade at roughly 1.5x revenue while AI-native firms average above 45x"
+  source:
+    org: "HFS Research (Saurabh Gupta and Phil Fersht)"
+    report: "The AI balloon is bursting and services must be ready to pick up the pieces"
+    edition: 2026
+    url: https://www.horsesforsources.com/wall-street-betting-on-an-ai-future-main-street-cannot-deliver_062526/
+    pdf_hash:
+  verified: 2026-06-30
+  status: primary

@@ -3,13 +3,24 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-06-29"
+timestamp: "2026-06-30"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v4.0.0 — 2026-06-30
+
+## New & expanded content
+
+- **AI Industry Briefs** — a new area of plain-language briefs on what analysts and the market are saying about AI, written for business leaders. The companion to AI Research Briefs: where those cover academic papers, these cover analyst, vendor, and market commentary.
+- **The AI Adoption Gap** — the first brief, a read of an HFS Research thesis on why AI's market valuations have run ahead of real enterprise adoption, and what leaders should do about it.
+
+## Site & structure
+
+- New top-level **AI Industry Briefs** section, opening with its first theme, **Market and Adoption**. Each brief states plainly who is making a claim and what they stand to gain, so you can weigh it yourself.
 
 ## v3.0.0 — 2026-06-29
 

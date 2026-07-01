@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.2.0 — 2026-07-01
+
+## New & expanded content
+
+- **AI Use Cases — AI Playbooks** — a new sub-domain of agent-executable playbooks: procedures an AI assistant reads and runs on its own across your email and calendar, rather than prompts you paste. Six to start — Morning Brief, Inbox Triage, Meeting Prep, Weekly Review, Follow-up Tracker, and End-of-Day Wrap — each with numbered steps for the assistant, an example of what it produces, and read-first guardrails (it reads and drafts, but never sends, deletes, or changes anything).
+
 ## v5.1.0 — 2026-07-01
 
 ## New & expanded content

@@ -1,5 +1,5 @@
 {
-  "version": "v5.1.0",
+  "version": "v5.2.0",
   "generated": "2026-07-01",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
@@ -24,6 +24,17 @@
         "temporal_mode": "point-in-time-supersedable"
       },
       "pageCount": 3
+    },
+    {
+      "slug": "ai-playbooks",
+      "title": "AI Playbooks",
+      "description": "Agent-executable playbooks — procedures an AI assistant can read and run across your everyday tools.",
+      "posture": {
+        "citation_style": "demo-first",
+        "verification_posture": "verify-embedded-facts",
+        "temporal_mode": "always-newer"
+      },
+      "pageCount": 7
     },
     {
       "slug": "everyday-tasks",
@@ -312,6 +323,104 @@
           "verified": "2026-06-29"
         }
       ]
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "01-morning-brief.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/01-morning-brief/",
+      "title": "Morning Brief",
+      "description": "Have your assistant read your email and calendar and hand you a prioritized plan for the day.",
+      "tags": [
+        "ai-playbooks",
+        "daily"
+      ],
+      "body": "This playbook has your assistant turn your inbox and calendar into a plan for the day. It reads what is on today and what came in overnight, then hands you a short, prioritized brief. It is the simplest playbook here, and the template the others follow.\n\n## When to run it\n\nRun this each weekday morning, before the user starts work.\n\n## What it needs\n\nRead access to the user's calendar and email. That is enough — you only read and draft here. You will pull today's calendar events and the email that arrived since yesterday evening. No send, edit, or delete access is required.\n\n## The playbook\n\n1. Read today's events from the user's calendar, from now until end of day. Note the time, title, attendees, and any location or video link for each.\n2. Read the user's email received since 6pm yesterday. Focus on unread and flagged messages. Skip obvious newsletters, receipts, and automated notifications.\n3. For each meeting, decide if it needs prep. It needs prep if the user is the organizer, if there is an agenda or attached document, or if a linked email thread is unresolved. Note what the prep is in one short line.\n4. For each email from a real person that asks a question or expects a reply, capture three things. Who it is from, the subject, and what they want.\n5. Look for anything time-sensitive across both: a deadline today, a meeting starting soon, a message marked urgent. Set these aside to call out first.\n6. Draft the top three to five priorities for the day. Base them on deadlines, meeting prep, and emails that cannot wait. Keep each to one line.\n7. Find the open gaps between meetings that are 45 minutes or longer. Suggest one focus block per gap, matched to a priority from step 6.\n8. Assemble the brief in this order: priorities, then today's meetings with prep flags, then emails needing a reply, then suggested focus blocks. Keep it scannable.\n9. Present the brief to the user. Take no other action — do not reply to anything, do not add calendar events, do not mark anything read.\n\n## What it produces\n\nA short, scannable plan for the day: a few priorities up top, then meetings, replies to write, and focus blocks. It is meant to be read in under a minute.\n\n```\nMorning brief — Tuesday, Mar 4\n\nTop priorities\n1. Finish Q2 budget draft (due today, 5pm)\n2. Prep for 2pm client review — read their brief first\n3. Reply to Sam about the vendor contract\n\nToday's meetings\n- 10:00  Team standup\n- 14:00  Client review with Acme  ⚑ needs prep: read the brief they sent Monday\n- 16:30  1:1 with Priya\n\nEmails to reply to\n- Sam Ortiz — \"Vendor contract — need your OK by Wed\"\n- Jordan Lee — \"Can you review the deck?\"\n\nSuggested focus blocks\n- 10:30–12:00  Q2 budget draft\n- 15:00–16:00  Deck review for Jordan\n```\n\n## Guardrails\n\nYou read and draft only. Never send, reply to, delete, archive, or mark anything as read. Never accept, decline, or create calendar events. Never change anything on the user's behalf.\n\nIf something looks urgent, sensitive, or unclear, flag it for the user and let them decide. That includes a message that reads as a crisis, a legal or personal matter, or a deadline you cannot confirm. Do not guess. Respect private data: keep the brief with the user and do not repeat message contents anywhere else.\n\n## Make it yours\n\n- Tell the assistant how you rank priorities — deadlines first, or the people you most want to keep happy.\n- Change what counts as an email worth flagging. Include your boss and top clients by name, or ignore whole senders.\n- Set your own focus-block length and how many the assistant suggests.\n- Move the trigger. Run it Sunday night for a week-ahead view, or after lunch for an afternoon reset.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "02-inbox-triage.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/02-inbox-triage/",
+      "title": "Inbox Triage",
+      "description": "Have your assistant sort your unread mail into reply-now, read-later, and ignore, and surface what matters.",
+      "tags": [
+        "ai-playbooks",
+        "email"
+      ],
+      "body": "This playbook has your assistant read your unread mail and sort it, so you open your inbox to a plan instead of a pile. It groups everything into three buckets and surfaces the few messages that actually need you. It drafts nothing and changes nothing.\n\n## When to run it\n\nRun this when your inbox feels heavy and you cannot tell what matters. Good at set times too — say mid-morning and after lunch. Run it any time you would otherwise skim your inbox and stall.\n\n## What it needs\n\nRead access to the user's email. That is all. You will read unread messages, sort them, and report back. You do not need permission to send, label, or file anything, because you will not do any of that.\n\n## The playbook\n\n1. Fetch the user's unread messages. If there are more than about 40, take the 40 most recent so the pass stays quick.\n2. For each message, read the sender, subject, and enough of the body to judge it. Skim, do not study.\n3. Sort each message into one of three buckets:\n   - **Reply now** — it asks something of the user, or it is time-sensitive and needs a human answer.\n   - **Read later** — worth reading, but no action today: newsletters worth keeping, long threads, updates.\n   - **FYI / no action** — receipts, notifications, confirmations, automated noise.\n4. Within **Reply now**, pick the two or three messages that genuinely matter most. Weigh who sent it, what they are asking, and how soon it is due.\n5. Watch for anything urgent, sensitive, or unclear — a deadline today, a payment, a personal or legal matter. Set these aside to flag, do not guess at them.\n6. Write a short summary: the three buckets with counts, then the top two or three messages named with one line each on why they matter. List anything you flagged in step 5 separately.\n7. Present the summary to the user. Do nothing else — no replies, no labels, no filing. Stop here and wait.\n\n## What it produces\n\nA short, scannable readout: how your unread breaks down, the handful of messages that actually need you, and anything worth a second look. Nothing in your inbox changes.\n\n```\nInbox triage — 34 unread\n\nReply now (5) · Read later (12) · FYI / no action (17)\n\nTop messages:\n- Priya Nair — \"Re: Q3 budget sign-off\" — asks for your\n  approval before Thursday's finance review.\n- Sam Okafor — \"Contract redlines attached\" — wants your\n  reply on two clauses before they send to legal.\n- Dana Lee — \"Lunch next week?\" — quick yes/no, no rush.\n\nWorth a second look:\n- \"Invoice #4821 overdue\" — payment-related, flagging so\n  you can decide. I did not act on it.\n```\n\n## Guardrails\n\nRead and organize only. Draft nothing, send nothing. Never reply, forward, delete, archive, label, file, or mark anything as read. You touch the inbox with read access and nothing more.\n\nIf a message looks urgent, sensitive, or ambiguous, do not act on it or guess. Flag it in your summary and let the user decide. This holds for anything about money, contracts, health, or personal matters.\n\nWhen you are unsure which bucket fits, say so rather than forcing a guess. Respect private content — summarize what the user needs, do not quote sensitive detail they did not ask to see.\n\n## Make it yours\n\n- **Change the cadence.** Run it once each morning, or every few hours on a heavy day.\n- **Adjust the buckets.** Add a \"Waiting on me\" or \"From my manager\" bucket if that matches how you work.\n- **Widen or narrow the scope.** Triage one label or folder, or the last two days instead of only unread.\n- **Tune what counts as urgent.** Tell the assistant which senders or topics always rise to the top.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "03-meeting-prep.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/03-meeting-prep/",
+      "title": "Meeting Prep",
+      "description": "Have your assistant build a one-page brief for your next meeting from the invite, emails, and linked docs.",
+      "tags": [
+        "ai-playbooks",
+        "meetings"
+      ],
+      "body": "This playbook has your assistant build a one-page brief for your next meeting. It pulls the invite, the related emails, and any shared docs, then tells you who is in the room, why, and what is still open. Read it in the minute before you walk in.\n\n## When to run it\n\nRun it before a meeting so the user walks in ready. Or run it at the start of the day and prep every meeting on their calendar at once.\n\n## What it needs\n\nRead access to the user's calendar, email, and document storage. Calendar for the invite, email for the back-and-forth, docs for anything shared. Read access is enough. You are gathering and drafting, not sending or changing anything.\n\n## The playbook\n\n1. Identify the target meeting. If the user named one, find it. Otherwise pull the next upcoming meeting on their calendar. If a day was named, list that day's meetings and prep each one.\n2. Open the calendar invite. Note the title, date, time, location or link, the full attendee list, and any agenda or description the organizer wrote.\n3. For each external attendee, record their name and, where the invite or their email signature shows it, their role and organization. Do not guess a role you cannot see.\n4. Search email next. Find recent threads that name the meeting, its subject, or its attendees. Read the latest few messages in each to catch what was decided, promised, or left open.\n5. Collect the documents. Check the invite for attached or linked files. Scan the related email threads for shared documents. Search document storage for files whose title matches the meeting topic.\n6. Read each relevant document enough to summarize it in a line or two. If a file is long, focus on the summary, decisions, and any section aimed at this meeting.\n7. Pull together open questions. Draw them from unanswered email threads, action items with no owner, and gaps between the agenda and what you found.\n8. Draft two or three suggested talking points grounded in the background you gathered. Keep them specific to this meeting. Mark anything you inferred rather than read.\n9. Assemble a one-page brief: purpose, who is attending and their role, relevant background, open questions, suggested talking points. Note anything you could not find rather than filling the gap.\n10. Present the brief to the user. Take no other action.\n\n## What it produces\n\nA one-page brief the user can skim in a minute before they walk in. It names who is in the room and why the meeting exists. It gives what the user needs to know going in, what is still open, and a few things worth raising.\n\n```\nMeeting Brief — Q3 Roadmap Sync\nThu, 2:00 PM · Video call\n\nPurpose\nAlign on Q3 priorities and confirm the launch date for Project Falcon.\n\nAttendees\n- Jordan Lee (Product Lead, Acme) — owns the roadmap\n- Sam Rivera (Eng Manager, Acme) — flagged the timeline risk\n- You\n\nBackground\n- Last email thread (Mon): Sam raised that the API work may slip two weeks.\n- \"Falcon Launch Plan\" doc: launch pencilled for Aug 12, still marked draft.\n\nOpen questions\n- Is Aug 12 firm, given the API slip Sam raised?\n- Who owns the marketing handoff? No owner in the plan doc.\n\nSuggested talking points\n- Ask Sam to size the two-week risk before the date is locked.\n- Propose naming a marketing-handoff owner today.\n\nCouldn't find: no notes from the prior roadmap sync.\n```\n\n## Guardrails\n\nRead and draft only. Never send a message, reply to a thread, accept or decline the invite, edit a document, or change anything on the user's behalf. The brief is for the user's eyes.\n\nIf a thread or document looks sensitive or personal, do not quote it in detail. Flag that it exists and let the user decide.\n\nIf two attendees share a name, or a document might be the wrong version, say so rather than guessing. When something is inferred rather than read directly, mark it as such.\n\n## Make it yours\n\n- Ask for a specific length: a tight half-page, or a fuller brief with more background.\n- Tell the assistant to weight one source more, like \"lean on the email thread, skip old docs.\"\n- For recurring meetings, ask it to lead with what changed since last time.\n- Have it flag prep the user still owes: an unanswered question or a promised document.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "04-weekly-review.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/04-weekly-review/",
+      "title": "Weekly Review",
+      "description": "Have your assistant summarize your week and set up next week's priorities from your calendar and sent mail.",
+      "tags": [
+        "ai-playbooks",
+        "weekly"
+      ],
+      "body": "This playbook has your assistant close out your week and start the next one. It reads the week's calendar and your sent mail, tells you what moved and what slipped, then drafts next week's priorities for you to confirm.\n\n## When to run it\n\nRun it Friday afternoon to close the week, or Monday morning to open it. Or any week where the days blurred together and you are not sure what got done.\n\n## What it needs\n\n- Read access to the user's calendar (this week's events).\n- Read access to the user's sent mail (what they sent this week).\n- A task list is a nice-to-have. If one is connected, read it for open items. Read access is enough for all of this. You will not change anything.\n\n## The playbook\n\n1. Work out the date range for the week just ending: the most recent Monday through today. State the exact dates you are using so the user can catch an off-by-one.\n2. Read this week's calendar events across that range. Note the meetings, their titles, and who was in them. Skip declined events and all-day blocks that are not real commitments.\n3. Read the user's sent mail across the same range. For each thread, note who it went to and what it was about. This is your record of what the user pushed forward.\n4. Group the week into themes. Cluster meetings and sent mail by project, person, or topic. A \"1:1 with Priya\" plus three emails to Priya is one thread of work, not four.\n5. Build the \"what happened\" recap from those themes. Under each theme, list what moved: decisions made, things shipped, questions answered.\n6. Find what slipped. Look for meetings with no follow-up sent, threads where the user was mid-conversation, and questions asked of the user that their sent mail never answered. Flag these plainly; do not guess at why.\n7. If a task list is connected, read it. Note items still open, and any that were due this week and were not completed.\n8. Now look forward. From the slipped items, the open threads, and anything on next week's calendar, draft a short list of priorities for next week. Keep it to five or six. Order them by what seems most pressing, but say the ordering is a guess.\n9. Assemble the recap and the draft priorities into one summary. Keep it skimmable: themes, what slipped, next week's draft list.\n10. Present the summary to the user. Ask them to confirm or reshuffle the priorities. Take no other action.\n\n## What it produces\n\nA two-part summary: a look back at the week, and a draft look forward. The recap is grouped by theme, the forward list is a handful of priorities the user can confirm or edit. Nothing is sent or scheduled.\n\n```\nWeekly Review — Mon Jun 23 to Fri Jun 27\n\nTHIS WEEK\nAcme renewal\n  - Pricing call Tue; agreed to a 2-year term\n  - Sent revised quote to dana@acme.example Thu\nHiring (backend role)\n  - 2 screens done; sent feedback to recruiting\nTeam 1:1s\n  - Met with Priya, Sam, and Lee\n\nSLIPPED / UNANSWERED\n  - Jordan asked for the Q3 forecast Mon — no reply sent yet\n  - Design review booked Wed, but no notes or follow-up went out\n  - Task \"Draft offsite agenda\" was due Thu, still open\n\nNEXT WEEK — DRAFT (please confirm)\n  1. Reply to Jordan with the Q3 forecast\n  2. Send design review follow-up\n  3. Close out the Acme renewal paperwork\n  4. Draft the offsite agenda\n  5. Finish the two remaining backend screens\n```\n\n## Guardrails\n\n- Read and draft only. Never send a reply, and never answer a slipped thread for the user. Never mark a task done, and never create, move, or delete a calendar event. You surface the work; the user acts on it.\n- The next-week list is a draft. Present it as a suggestion to confirm, not a plan you have committed to.\n- When you cannot tell if something slipped or was just handled elsewhere, say so. Flag it as \"looks unanswered — check?\" rather than stating it as fact.\n- Respect private data. If a meeting or thread looks personal, you can note it exists without repeating its contents.\n\n## Make it yours\n\n- Shift the trigger: run it Sunday evening if that is when you plan, or month-end for a longer look back.\n- Add a source: if your notes or docs live somewhere connected, fold in what you finished there too.\n- Change the lookback: a two-week range after time off, or just yesterday for a daily version.\n- Tune the priority count: ask for a top three if five feels like too much.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "05-follow-up-tracker.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/05-follow-up-tracker/",
+      "title": "Follow-up Tracker",
+      "description": "Have your assistant scan your mail for open loops and tell you who owes whom.",
+      "tags": [
+        "ai-playbooks",
+        "email"
+      ],
+      "body": "This playbook is a weekly scan of your recent mail that surfaces open loops. It reads what came in and what you sent. Then it tells you who is waiting on a reply, and what you are still waiting to hear back on. Good for when you suspect a few things have slipped but cannot say which.\n\n## When to run it\n\nRun it weekly, on the same day each week. Or run it any time you feel like threads are getting missed and you want a clean picture.\n\n## What it needs\n\nRead access to the user's mailbox — sent and received. That is enough. The assistant reads and drafts only; it never sends, replies, or changes a thing.\n\n## The playbook\n\n1. Set the window. Default to the last 14 days unless the user names a different range.\n2. Read the user's received mail from that window. For each thread, note the sender, the topic, and the date of the latest message. Note whether it asks the user a question or waits on them for something.\n3. Read the user's sent mail from that window. Note who each message went to, the topic, the date, and whether the user asked for something or posed a question.\n4. Match messages into threads so a back-and-forth reads as one loop, not many.\n5. Build the \"You owe a reply\" list. Include any thread where the latest message is from someone else, it wants a response, and the user has not replied since.\n6. Build the \"Waiting on others\" list. Include any thread where the user's message was last, it asked for something, and no reply has come back.\n7. Drop the noise. Skip newsletters, automated notifications, receipts, and calendar invites. Skip threads that read as closed (\"thanks!\", \"sounds good\", \"will do\").\n8. For each item, work out roughly how long it has been sitting. Count days from the last message to today, and round to a plain phrase like \"3 days\" or \"2 weeks\".\n9. Sort each list oldest-first, so the most stale loops sit at the top.\n10. Flag anything ambiguous rather than guessing — a thread you cannot tell is open or closed goes in a short \"Not sure\" note under the lists.\n11. Present both lists to the user in the chat. Take no other action.\n\n## What it produces\n\nTwo short lists, oldest loop first, each line naming the person, the topic, and how long it has been sitting. A \"Not sure\" note follows if any thread was hard to read. Nothing is sent; nothing is changed.\n\n```\nFollow-up scan — last 14 days\n\nYou owe a reply (3)\n  • Priya R. — budget sign-off she asked for — 9 days\n  • Marcus T. — feedback on the draft deck — 4 days\n  • Jordan L. — intro to the design vendor — 2 days\n\nWaiting on others (2)\n  • Sam K. — you asked for the Q3 numbers — 11 days\n  • Dana W. — you sent the signed contract, no confirmation — 6 days\n\nNot sure (1)\n  • Alex P. — \"let's circle back\" thread — can't tell if it's your move\n```\n\n## Guardrails\n\nThe assistant reads and drafts only. It never sends, replies, nudges, forwards, deletes, or marks anything — on any thread, for any reason. Its job is to report open loops, not to chase them.\n\nIt reports; you decide. No message goes out without you writing and sending it yourself.\n\nWhen a thread is ambiguous — unclear whose move it is, or whether it is even open — the assistant flags it in the \"Not sure\" note. It does not guess and it does not pad the lists to look thorough.\n\nTreat mail as private. Keep topics short and factual, do not quote sensitive contents back, and never act on what you read beyond building these lists.\n\n## Make it yours\n\n- Change the window. Ask for the last 7 days for a tighter view, or 30 for a full sweep after time away.\n- Scope it to people. Ask for only your team, your manager, or one client, and the assistant filters to them.\n- Set a staleness floor. Ask it to hide anything under 3 days so only the truly stale loops show.\n- Add a priority flag. Ask it to mark loops with a named person or a keyword (\"contract\", \"invoice\") so they jump out.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "06-end-of-day-wrap.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/06-end-of-day-wrap/",
+      "title": "End-of-Day Wrap",
+      "description": "Have your assistant recap what got done and carry what slipped into tomorrow.",
+      "tags": [
+        "ai-playbooks",
+        "daily"
+      ],
+      "body": "This playbook has your assistant close out your day. It reads today's calendar and sent mail, and reconciles what got done against what you planned. Then it hands you a short wrap with a carry-over list for tomorrow. It closes the day the Morning Brief opened.\n\n## When to run it\n\nRun this at the end of your workday, when you are ready to close out.\n\n## What it needs\n\nRead access to your calendar and your sent mail for today. If you keep a task list, read access to that too. Reading is enough — this playbook never writes anything back.\n\n## The playbook\n\n1. Establish \"today\" in the user's local time zone. Set the window to today from midnight to now.\n2. Read today's calendar events. Note each meeting's title, time, and whether it has ended.\n3. Read the user's sent mail from today. For each message, note who it went to and the one-line gist.\n4. If a task list is connected, read today's tasks: what is marked done, what is still open, and anything overdue.\n5. Reconcile the day against the plan. Match sent mail and completed tasks to the meetings and intentions on the calendar.\n6. Sort what you found into three buckets: **done** (finished today), **open** (started or planned but not finished), and **carry-over** (should move to tomorrow).\n7. For each carry-over item, note why it is carrying — waiting on a reply, ran out of time, blocked, or not started.\n8. Flag anything that looks time-sensitive for tomorrow: a deadline, a reply someone is waiting on, an early meeting.\n9. Write a short wrap: two or three lines on how the day went, then the three buckets, then the carry-over list.\n10. Present the wrap to the user. Take no other action — do not send, reschedule, or create anything.\n\n## What it produces\n\nA short written wrap of your day, split into what got done, what is still open, and what carries into tomorrow. Each carry-over says why it is carrying.\n\n```\nEnd-of-Day Wrap — Tue, Jul 1\n\nSolid day. Cleared the review backlog, but the budget draft\nslipped again. Two things need you first thing tomorrow.\n\nDone\n- Shipped the Q3 review notes to Priya\n- Replied to the vendor about the contract dates\n- Closed 3 tickets in the tracker\n\nOpen\n- Budget draft — got through 2 of 5 sections\n\nCarry into tomorrow\n- Finish budget draft (ran out of time) — before the 10am sync\n- Reply to Marcus re: hiring plan (waiting on your call)\n- Book the offsite venue (not started)\n```\n\n## Guardrails\n\nRead and draft only. Never send, reply, delete, or archive anything. Do not create, complete, or reschedule tasks. Do not add or change calendar events. The wrap is a summary you hand over.\n\nIf something is ambiguous — a meeting with no clear outcome, a task you cannot tell is done — flag it and ask, do not guess. Treat mail and task contents as private; keep them in the wrap, not anywhere else.\n\n## Make it yours\n\n- Tell it to group carry-overs by project or by person instead of one flat list.\n- Ask for a one-line \"biggest win\" and \"biggest snag\" at the top.\n- Have it draft (not send) tomorrow's top three priorities from the carry-over list.\n- Narrow the sent-mail scan to a specific account or label if you run several.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "ai-playbooks",
+      "path": "how-to-run-these.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/ai-playbooks/how-to-run-these/",
+      "title": "How to Run These Playbooks",
+      "description": "What an agent-executable playbook is, how to hand one to your assistant, and the read-first guardrails they all share.",
+      "tags": [
+        "ai-playbooks",
+        "agents"
+      ],
+      "body": "Most of the AI recipes people share are prompts you paste. You do the work; the assistant helps with one step. A playbook is different. It is a whole procedure your assistant runs on its own — reading your tools, doing the work, and handing you the result. This page explains how to run one and what keeps it safe.\n\n## What an agent-executable playbook is\n\nA playbook is written for your assistant to follow, not just for you to read. It says what to do, in order, in plain steps: read this, pull that, sort them, draft the output. You hand the page to an AI assistant that can reach your email and calendar, and it works through the steps.\n\nThat is the shift these are built around. Instead of you running the assistant one prompt at a time, the assistant runs the playbook. Your job moves from doing the steps to checking the result. It is the same idea behind [knowledge written for agents](/open-knowledge-format/02-the-potential/01-knowledge-for-agents.md): when the reader is a machine, the instructions have to carry everything it needs.\n\n## How to run one\n\nYou need an AI assistant connected to the tools the playbook uses — usually your email and calendar. Most assistants support this through connectors: ChatGPT, Claude, and Gemini can all read a connected inbox and calendar. Then it is three steps:\n\n1. **Connect your tools.** Give the assistant read access to your email and calendar. Read access is enough; you do not need to let it send or change anything.\n2. **Hand it the playbook.** Paste the playbook into the chat, or point your assistant at this page. The steps are written for it to follow directly.\n3. **Review what it gives back.** The assistant does the reading and drafting. You get a finished result — a plan, a triaged inbox, a brief — and you decide what to do with it.\n\n## The shape they all share\n\nEvery playbook here follows the same layout, so once you have run one you can run any of them:\n\n- **When to run it** — the trigger, like each weekday morning, or on demand.\n- **What it needs** — the tools and access required.\n- **The playbook** — the numbered steps the assistant follows.\n- **What it produces** — the output, with an example.\n- **Guardrails** — the limits the assistant must respect.\n- **Make it yours** — how to adjust it to your work.\n\n## The one rule: read-first\n\nEvery playbook here is read-first, and that is deliberate. The assistant reads your email and calendar and drafts a result, but it does not send, reply, delete, archive, or accept anything on your behalf. If something looks urgent, sensitive, or unclear, the playbook tells it to flag the item for you rather than act on it.\n\nThat keeps you in control. The worst a read-first playbook can do is show you the wrong summary, which you catch in the review step. Nothing leaves your outbox and nothing gets deleted without you. When you are ready to let an assistant take an action — send a reply, book a slot — that is a bigger decision. These playbooks leave it to you.",
+      "updated": "2026-07-01",
+      "sources": []
     },
     {
       "bundle": "everyday-tasks",
@@ -6027,6 +6136,35 @@
       ]
     },
     {
+      "bundle": "ai-playbooks",
+      "terms": [
+        {
+          "term": "Playbook",
+          "definition": "a procedure your AI assistant reads and runs on its own, start to finish, rather than a single prompt you paste."
+        },
+        {
+          "term": "Agent-executable",
+          "definition": "written so an AI assistant can follow the steps directly, not just so a person can understand them."
+        },
+        {
+          "term": "Connector (tool)",
+          "definition": "the link that lets your assistant read a service such as your email or calendar. Also called a tool or an integration."
+        },
+        {
+          "term": "Read-first",
+          "definition": "the assistant reads and drafts, but does not send, delete, or change anything on its own."
+        },
+        {
+          "term": "Trigger",
+          "definition": "when the playbook is meant to run: on a schedule (each morning) or when you ask."
+        },
+        {
+          "term": "Guardrails",
+          "definition": "the limits the assistant must respect while running a playbook, such as never sending mail or acting on anything ambiguous."
+        }
+      ]
+    },
+    {
       "bundle": "everyday-tasks",
       "terms": [
         {
@@ -6261,6 +6399,16 @@
       "date": "2026-06-29",
       "bundle": "ai-research-briefs",
       "entry": "Creation**: Theme sections — Agents and Tool Use, Reasoning and Capabilities, Training and Efficiency, Evaluation and Benchmarks, Safety and Alignment."
+    },
+    {
+      "date": "2026-07-01",
+      "bundle": "ai-playbooks",
+      "entry": "Creation**: new sub-domain — agent-executable playbooks an AI assistant reads and runs on its own across your everyday tools, opening with How to Run These Playbooks."
+    },
+    {
+      "date": "2026-07-01",
+      "bundle": "ai-playbooks",
+      "entry": "Creation**: six playbooks — Morning Brief, Inbox Triage, Meeting Prep, Weekly Review, Follow-up Tracker, and End-of-Day Wrap. All read-first: the assistant reads and drafts, but never sends, deletes, or changes anything."
     },
     {
       "date": "2026-06-29",

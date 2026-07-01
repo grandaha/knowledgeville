@@ -10,11 +10,12 @@ This page is the map. It shows how **AI Use Cases** is organized so you can find
 
 ## Two levels: domain and sub-domains
 
-**AI Use Cases** is the whole domain. Inside it are **sub-domains** — each a self-contained collection aimed at a particular kind of user or setting. A sub-domain is the unit that gets added, maintained, and read on its own. Today there are three; more will follow.
+**AI Use Cases** is the whole domain. Inside it are **sub-domains** — each a self-contained collection aimed at a particular kind of user or setting. A sub-domain is the unit that gets added, maintained, and read on its own. Today there are four; more will follow.
 
 - **[Everyday Tasks](/ai-use-cases/everyday-tasks/index.md)** — for a non-technical person getting things done with an AI chat tool (ChatGPT, Claude, Gemini, Copilot). No code, no accounts to wire up, no jargon.
 - **[Executive Leadership](/ai-use-cases/executive-leadership/index.md)** — AI recipes and workflows for the C-suite, organized by the leadership job in front of you: strategy, finance, people, board, communications, and decisions.
 - **[Realtors](/ai-use-cases/realtors/index.md)** — paste-ready recipes for real-estate agents, organized by the job in front of you: listings and marketing, prospecting and outreach, and client communication.
+- **[AI Playbooks](/ai-use-cases/ai-playbooks/index.md)** — procedures an AI assistant reads and runs on its own across your everyday tools, like a morning brief or inbox triage. Read-first and safe: it reads and drafts, but never sends or changes anything.
 
 Future sub-domains (for example, deeper or more specialized cuts) will sit alongside these, each free to set its own depth and sourcing.
 

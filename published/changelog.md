@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.1.0 — 2026-07-01
+
+## New & expanded content
+
+- **AI Industry Briefs — Enterprise AI Is Not a Startup** — a new Market and Adoption brief on Aaron Levie's (Box CEO) argument, via HFS Research: enterprise AI is constrained by workflow, data, and accountability — not model quality — and the real transformation lives in the ~88% of the economy that does not run like a tech startup. Levie's figures are flagged as forward projections, with both the CEO's and the analyst's commercial stakes noted.
+
 ## v5.0.2 — 2026-07-01
 
 ## Fixes

@@ -1,11 +1,11 @@
 {
-  "version": "v5.3.0",
+  "version": "v5.3.1",
   "generated": "2026-07-01",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
       "slug": "industry-briefs",
-      "title": "AI Industry Briefs",
+      "title": "Industry Briefs",
       "description": "Plain-language briefs of analyst, vendor, and market commentary on AI, for business leaders.",
       "posture": {
         "citation_style": "selective",
@@ -16,7 +16,7 @@
     },
     {
       "slug": "research-briefs",
-      "title": "AI Research Briefs",
+      "title": "Research Briefs",
       "description": "Plain-language briefs of notable AI research papers — what each one found, how much to trust it, and what it means for you.",
       "posture": {
         "citation_style": "selective",
@@ -6388,7 +6388,7 @@
     {
       "date": "2026-06-29",
       "bundle": "research-briefs",
-      "entry": "Creation**: New bundle — plain-language briefs of notable AI research papers, grouped by theme. — AI Research Briefs"
+      "entry": "Creation**: New bundle — plain-language briefs of notable AI research papers, grouped by theme. — Research Briefs"
     },
     {
       "date": "2026-06-29",

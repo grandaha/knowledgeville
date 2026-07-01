@@ -1,18 +1,18 @@
-# AI Industry Briefs
+# Industry Briefs
 
 AI moves fast, and the commentary moves even faster. Analysts publish theses, vendors
 release surveys, and trade press spins the same data six different ways. Most of it is
 written for people who are already deep in the space. This bundle is for everyone else.
 
-AI Industry Briefs translates analyst and market commentary into plain language for
+Industry Briefs translates analyst and market commentary into plain language for
 business leaders and knowledge workers — the people who need to make decisions about AI
 without spending their days reading research. Each brief takes one piece of commentary,
 explains the argument, shows the evidence behind it, and tells you what it means for
 you.
 
-## How it differs from AI Research Briefs
+## How it differs from Research Briefs
 
-[AI Research Briefs](/ai-briefs/research-briefs/index.md) covers empirical papers — studies
+[Research Briefs](/ai-briefs/research-briefs/index.md) covers empirical papers — studies
 with data, methods, and measurable results. This bundle covers commentary: analyst
 theses, vendor reports, and market takes. The sources are less formal, more opinionated,
 and often written by people with a stake in the answer. That's not a reason to ignore

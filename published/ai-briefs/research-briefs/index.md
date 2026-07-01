@@ -1,4 +1,4 @@
-# AI Research Briefs
+# Research Briefs
 
 New AI research lands every day, and almost none of it is written for you. The papers
 are dense, the claims are easy to overstate, and you don't have an afternoon to spend

@@ -1,4 +1,4 @@
-# Change log — AI Industry Briefs
+# Change log — Industry Briefs
 
 ## 2026-07-01
 

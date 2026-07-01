@@ -14,5 +14,5 @@ The split matters because the two ask for different kinds of trust. A peer-revie
 
 | Page | Last updated |
 | --- | --- |
-| [AI Industry Briefs](industry-briefs/)<br>Plain-language briefs of analyst, vendor, and market commentary on AI, for business leaders. | Updated 2026-06-30 |
-| [AI Research Briefs](research-briefs/)<br>Plain-language briefs of notable AI research papers — what each one found, how much to trust it, and what it means for you. | Updated 2026-06-29 |
+| [Industry Briefs](industry-briefs/)<br>Plain-language briefs of analyst, vendor, and market commentary on AI, for business leaders. | Updated 2026-06-30 |
+| [Research Briefs](research-briefs/)<br>Plain-language briefs of notable AI research papers — what each one found, how much to trust it, and what it means for you. | Updated 2026-06-29 |

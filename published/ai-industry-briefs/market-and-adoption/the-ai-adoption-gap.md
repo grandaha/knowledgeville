@@ -12,7 +12,7 @@ timestamp: "2026-06-30"
 - **Publication:** Horses for Sources, the content arm of HFS Research, an enterprise-tech analyst and advisory firm
 - **Date:** June 25, 2026
 - **Who it's really for:** Enterprise leaders deciding where AI value comes from, and IT-services buyers weighing how to contract for it
-- **Link:** [horsesforsources.com](https://www.horsesforsources.com/wall-street-betting-on-an-ai-future-main-street-cannot-deliver_062526/)
+- **Link:** [https://www.horsesforsources.com/wall-street-betting-on-an-ai-future-main-street-cannot-deliver_062526/](https://www.horsesforsources.com/wall-street-betting-on-an-ai-future-main-street-cannot-deliver_062526/)
 
 ## The one-line takeaway
 

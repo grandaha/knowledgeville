@@ -12,7 +12,7 @@ timestamp: "2026-07-01"
 - **Publication:** Posted as a long-form article on X
 - **Date:** June 30, 2026
 - **Who it's really for:** Public-market investors deciding where AI profits will land. Secondarily, leaders choosing which layer of the AI stack to bet their organization on
-- **Link:** [x.com](https://x.com/i/status/2071932670788198687)
+- **Link:** [https://x.com/i/status/2071932670788198687](https://x.com/i/status/2071932670788198687)
 
 ## The one-line takeaway
 

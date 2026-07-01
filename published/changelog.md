@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.0.2 — 2026-07-01
+
+## Fixes
+
+- Industry brief source links now show the full source URL instead of just the domain, so the exact article a brief is based on is visible at a glance.
+
 ## v5.0.1 — 2026-07-01
 
 ## Site & structure

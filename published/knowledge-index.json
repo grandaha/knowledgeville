@@ -68,6 +68,17 @@
         "temporal_mode": "always-newer"
       },
       "pageCount": 59
+    },
+    {
+      "slug": "open-knowledge-format",
+      "title": "Open Knowledge Format",
+      "description": "What OKF is, why a format for knowledge matters, and where it could go — for knowledge and strategy leaders.",
+      "posture": {
+        "citation_style": "selective",
+        "verification_posture": "verify-embedded-facts",
+        "temporal_mode": "point-in-time-supersedable"
+      },
+      "pageCount": 8
     }
   ],
   "pages": [
@@ -5784,6 +5795,170 @@
       "body": "## Purpose\n\nThis record documents the **full-bundle provenance backfill** — the sweep that took every\nstatistic, external reference, and sourced claim across the entire knowledge base and migrated it\ninto a structured, independently verified evidence ledger\n([`evidence.yaml`](/enterprise-ai-transformation/validation/index.md)), then turned on CI\nenforcement so the convention can no longer silently regress. It is the successor to the June 12\n[Data Readiness audit](/enterprise-ai-transformation/validation/audits/2026-06-12-data-readiness.md),\nwhich covered one track; this sweep covers **all of them**.\n\n**Audit conducted:** June 19–22, 2026 (building on the evidence-infrastructure work of June 20).\n\n**Scope:** the **entire published bundle** — the framework executive summary, all eight tracks\n(01 Strategy & Leadership, 02 Governance & Risk, 03 Data Readiness, 04 Technology Architecture &\nPlatform, 05 Workflow Optimization & Automation, 06 Adoption & Culture, 07 Talent & Capability\nBuilding, 08 Measurement & Value Realization), the Running-the-Program guides, and the glossary.\n\n**Summary verdict:** the knowledge base is **broadly well-sourced and accurate**. Across the sweep,\n**272 discrete claims** were verified against their primary sources and recorded in the ledger. **No\nfabricated statistic survived** — but several were caught and removed at the source: a fabricated\n\"Deloitte: organizations scoring >70% on readiness are 3× more likely to succeed\" (no such report\nexists; the AI Readiness Index is Cisco's), a misquoted \"Gartner: 85% of AI failures are\nattributable to data\" (the real 2018 figure was about biased outcomes, not failure rates), and a\n\"Gartner: 35% of large enterprises will have a CAIO by 2025\" prediction that appears in no Gartner\nprimary. Beyond outright removals, the sweep corrected numerous edition mix-ups, attribution-chain\nerrors, scope/wording imprecisions, and stale forward-looking framings, and pruned roughly a dozen\nunsourceable vendor/aggregator figures. Every claim-shaped number in the bundle is now either\ntraceable to a verified primary source or explicitly classified as a non-claim (a recommended\nthreshold, worked example, scoring-rubric band, or statutory cap cited by official designation).\n\n---\n\n## What changed — from inline labels to a verified ledger\n\nBefore this sweep, sources were cited as inline `(Org, Year)` labels, with a hand-written `## Sources`\nlist at the foot of each page. That convention couldn't be checked: a label could be misattributed,\nan edition could drift, and a bare number in narrative prose could carry no source at all without\nanything flagging it.\n\nThe backfill replaced that with a structured provenance layer:\n\n- **Every verified claim is now an entry in the evidence ledger** (`validation/evidence.yaml`),\n  carrying the exact figure, the wording it supports, its primary source (organization · report ·\n  edition · URL), a verification date, and a status (`primary`, `secondary-mirror` where the\n  publisher domain blocks automated fetching but the figure was confirmed via press release plus\n  corroboration, or `blocked` where the primary could not be reached).\n- **Inline citations became followable anchored links** — `([Org, Year](#ev-…))` — so any statistic\n  reaches its primary source in two clicks or fewer.\n- **The `## Sources` list at the foot of each page is now generated** from those anchors, not\n  hand-maintained.\n- **Two CI gates now enforce the convention on every change** (turned on at the close of this\n  sweep): `validate_okf.py --strict-citations` fails the build if any citation anchor does not\n  resolve to a ledger entry, and `check_uncited_numbers.py --strict` fails it if any claim-shaped\n  number sits in prose without an anchor (or an explicit `<!-- noev -->` exemption for a documented\n  non-claim).\n\nThe ledger itself is the canonical per-claim record. This document is the **narrative sweep\nrecord** — what was covered, what was corrected, and what was pruned.\n\n---\n\n## Coverage and ledger growth\n\nThe sweep ran section by section, each verifying claims against primaries and recording new ledger\nentries (reusing existing entries wherever a recurring franchise — McKinsey *State of AI*, BCG's AI\nvalue series, Gartner, IBM, Deloitte — had already been verified):\n\n| Section | Citations migrated | New verified ledger entries |\n| --- | --- | --- |\n| Framework executive summary | 16 | +12 (seeded the recurring franchises) |\n| Track 06 — Adoption & Culture | 73 | +40 |\n| Track 07 — Talent & Capability Building | 58 | +18 |\n| Track 08 — Measurement & Value Realization | 84 | +29 |\n| Running the Program | 85 | +27 |\n| Track 05 — Workflow Optimization & Automation | ~90 (two passes) | +44 |\n| Track 04 — Technology Architecture & Platform | ~18 (two passes) | +16 |\n| Track 03 — Data Readiness | ~55 (multiple passes) | +44 |\n| Track 02 — Governance & Risk | 20 | +17 |\n| Track 01 — AI Strategy & Leadership | ~30 | +23 |\n| Glossary + cross-track stragglers | 2 (reuse) | 0 (classification only) |\n| **Total** | **≈530** | **272 ledger entries** |\n\nA second, complementary pass — driven by a new uncited-number linter built during the sweep — caught\na structural blind spot: the first backfill keyed on *italic* `*(Source, Year)*` citations, so it had\nsilently skipped every page that cited sources in **non-italic** `(Source, Year)` narrative prose\n(notably across Tracks 03, 04, and 05). Closing that gap added the final entries and brought the\nlinter to **zero findings across the bundle**.\n\n---\n\n## Material corrections, by section\n\nThe substantive findings — the corrections that changed what a reader sees, beyond mechanically\nanchoring an already-correct citation.\n\n**Framework executive summary.** Four precision corrections from the verification pass: the McKinsey\n*Superagency* \"1% mature\" figure had been misattributed; the 39% impact figure was qualified to\n\"enterprise-level EBIT impact\"; the high-performer figure was stated as \"5% or more\"; and BCG's \"~60%\"\nwas scoped to \"little or no value.\"\n\n**Track 01 — AI Strategy & Leadership.** The densest track and the best-sourced — **zero prunes**,\nevery claim verified to a primary. Corrections: Prosci's sponsorship multiplier was overstated as\n\"~6×\" → corrected to Prosci's actual **3.5×** (extremely-effective vs. very-ineffective sponsorship);\nGartner spending split into two distinct entries ($644B GenAI, March 2025; $1.5T total AI, September\n2025 — different press releases); BCG's \"5× greater financial impact\" clarified as **per use case**,\nnot aggregate; the McKinsey \"3× senior-leader ownership\" claim separated from the high-performer\nentry as a distinct figure.\n\n**Track 02 — Governance & Risk.** Materially better sourced than Track 03 (16 of 17 claims verified,\none prune), but several re-attributions: \"66% of boards have limited AI knowledge\" was credited to\n*Corporate Compliance Insights* but is really **Deloitte Global** (CCI was republishing); the Stanford\nHAI incident counts conflated two AI Index editions → split into 2025 (233) and 2026 (362); IBM \"97%\nlack AI access controls\" rescoped to \"97% **of breached orgs**\"; the EU AI Act €15M/3% penalty\nrelabeled from \"high-risk violations\" to the correct operator-obligations scope. **Pruned:** Gartner\n\"35% of large enterprises will have a CAIO by 2025\" — unfindable in any Gartner primary (the IBM IBV\n26%/11% CAIO figures were verified and kept).\n\n**Track 03 — Data Readiness.** The largest cleanup, because the track leaned on vendor blogs and\nseveral bare attributions. **Removed (no valid source / misquote / circular vendor marketing):** the\nfabricated \"Deloitte 3× success above 70% readiness\" (→ restated to Cisco's verified 13%-fully-ready);\nthe misquoted \"Gartner 85% of AI failures attributable to data\" (→ RAND 2024 \">80% of AI projects\nfail\"); a garbled \"BCG 10% budget → 1.5× success\" (→ BCG's real **10-20-70** rule); DATAVERSITY \"61%\nbias-detection gap\" (a misquote laundered via Atlan); and several SEO/aggregator citations (Gitnux,\nQuinnox, Ranktracker, Azumo). **Re-attributed to true primary:** \"$3.1T data-quality cost\" to IBM/HBR\n2016 (not Gartner); \"80% of ML effort\" to Cognilytica 2020 (not IBM); \"25% revenue loss\" to MIT Sloan\n(Redman) with the figure corrected to the real **15–25%** range. **Verified new primary** (gap pass):\nthe data-poisoning research on the security page — poisoning **0.1%** of a 100B-token corpus embeds\npersistent backdoors — traced to **Zhang et al., *Persistent Pre-Training Poisoning of LLMs*\n(arXiv:2410.13722, 2024)**, with the prose scope corrected to \"model sizes up to 7 billion parameters.\"\nAn unsourced \"78% have not solved machine unlearning\" was softened to remove the false precision. The\ndata-audits page was confirmed to be **authored methodology** (recommended thresholds, worked examples,\ntool pricing) rather than sourced statistics, and its figures classified as non-claims accordingly.\n\n**Track 04 — Technology Architecture & Platform.** The FinOps Foundation metric was corrected from\n\"tracking or managing\" to the source's actual \"**managing** AI spend\" (63%, up from 31%). In the gap\npass, three parallel verification agents confirmed the platform/vendor stats; the IBM Cost-of-a-Breach\nshadow-AI figures were checked carefully — IBM's 2025 global-average breach cost actually **fell** to\n$4.44M, and the page correctly cites only the **+$670K shadow-AI delta** above that average, not a\nbogus baseline.\n\n**Track 05 — Workflow Optimization & Automation.** RPA scaling was stated as \"3–4%\" but Deloitte's\n2018 survey says **about 3%** → corrected; Deloitte's 25%/30% production-redesign figures were the\n**2026** edition, not the cited 2025 → re-anchored and relabeled. In the gap pass, an unverified\n\"Gartner-via-PEX $872M→$2B process-mining market\" aside and an unverified \"MarketsandMarkets 45.6%\nCAGR\" clause were **dropped** (the verified Deloitte and Fortune Business Insights figures on the same\nlines carry the point).\n\n**Track 06 — Adoption & Culture.** Edition-honesty calls captured rather than silently upgraded: the\nMcKinsey 78% adoption figure was anchored to the **2024** edition (the page itself says \"up from 55% in\n2023\"), so freshness tooling surfaces it as a prior edition; BCG's 10-20-70 was anchored to the\ncanonical 2024 source even where pages' prose mis-dated it 2025.\n\n**Track 07 — Talent & Capability Building.** Deloitte's \"Skills-Based Organization\" research was dated\n2024 in the pages but is **2022** → corrected on ids and link labels; MIT CISR came back richer than\ncited (62% in the first two of four stages, n=721).\n\n**Track 08 — Measurement & Value Realization.** Brynjolfsson's customer-support study was updated to\nthe **QJE 2025** edition (15%/30%, n=5,172), superseding the 2023 NBER working-paper figures\n(14%/34%); the Deloitte \"State of GenAI\" waves were pinned to their correct quarterly editions.\n\n**Running the Program.** The Goldman Sachs SMB resource-gap figure — the share of small-business\nowners who say they lack the resources and expertise to deploy AI — was stated as \"~42%\" but the\nprimary says **44%** → corrected; a McKinsey \"one-third vs. one-in-ten measurement\" split could not be pinned to a public\nquote → its ledger entry is marked **blocked** (and renders a \"primary source unreachable\" note rather\nthan asserting a figure we couldn't confirm); a KPMG 83% assurance figure was confirmed only as the\n**Australia** snapshot and flagged as such.\n\n**Glossary + cross-track stragglers.** Two figures reused existing ledger anchors (BCG's \"5% at scale\";\nthe Rogers/Moore ~16% diffusion-chasm threshold); the remainder were classified as non-claims —\nstatutory caps cited by official designation (GDPR €20M/4%, CCPA $2,500/$7,988), definitional\nillustrations, and worked-example arithmetic.\n\n---\n\n## What this hardens going forward\n\nAt the close of the sweep, both provenance checks were flipped from advisory to **blocking** in CI. A\nnew page that states a statistic without anchoring it, or anchors it to a ledger entry that doesn't\nexist, is now rejected before merge. Combined with the recurring-source registry\n([`sources.yaml`](/enterprise-ai-transformation/validation/index.md)), which tracks the edition the\nbundle cites for each franchise and flags when one is aging, the base now maintains its own provenance\nrather than relying on periodic manual audits.\n\n**Flagged for future sweeps** (verified-honest gaps, not errors):\n\n- A **regulatory-claims pass** — several non-statistical regulatory instruments (e.g. SR 26-2's \"April\n  2026\" date, NYDFS Circular 2024-7) are cited by official designation but predate this verification\n  sweep and were not re-checked in it.\n- A **secondary→primary upgrade pass** for entries currently marked `secondary-mirror` because the\n  publisher domain blocked automated fetching.\n- Relabeling the McKinsey 2024-adoption edition entry where it sits behind the current 2025 figure.\n\n---\n\n*Audit performed by Claude (One Step Labs) · June 19–22, 2026. Per-claim verification detail lives in\nthe evidence ledger; this record is the narrative summary of the sweep.*",
       "updated": "2026-06-22",
       "sources": []
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "what-okf-is.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/what-okf-is/",
+      "title": "What OKF Is",
+      "description": "A plain-language introduction to the Open Knowledge Format and why a format for knowledge is worth caring about.",
+      "tags": [
+        "okf",
+        "open-knowledge-format"
+      ],
+      "body": "The Open Knowledge Format (OKF) is an open format for representing *knowledge* — the context, judgment, and curated insight around your data and systems. It is written so both people and AI agents can read it. Its own definition calls it \"an open, human- and agent-friendly format for representing knowledge\" ([OKF spec, 2026](#ev-okf-spec-v01-definition)).\n\nThe surprising part is how little there is to it. An OKF bundle is a directory of markdown files with a few lines of structured metadata at the top of each one. There is no database, no schema registry, and no special tool you must install. As the specification puts it: if you can read a file, you can read OKF ([OKF spec, 2026](#ev-okf-spec-v01-definition)).\n\n## Why a format for knowledge matters\n\nMost organizational knowledge lives in places that do not travel well: wikis, slide decks, scattered documents, and people's heads. It is hard to move, hard to trust, and hard for a machine to use. A format changes that. Write knowledge to a shared, portable structure and the same body of work travels. A colleague can read it, a new hire can inherit it, or an AI assistant can be pointed at it. You do not rebuild it each time.\n\nThis matters more now that the reader is often an agent. An AI assistant handed a pile of raw documents has to guess at what is authoritative and where a claim came from. Knowledge written to a format carries that structure with it. That is the shift this bundle is really about: knowledge you can publish once and let both people and machines consume.\n\nKnowledgeville itself is built on OKF, so this bundle is also us describing the format we use every day.\n\n## How to read this bundle\n\nThis bundle is written for knowledge and strategy leaders, not for engineers implementing the spec. It comes in two arcs.\n\n**[Understanding OKF](/open-knowledge-format/01-understanding-okf/index.md)** covers the format as it stands today. It shows how the model works, where it fits against the alternatives you know, and how it handles where a claim came from.\n\n**[The Potential](/open-knowledge-format/02-the-potential/index.md)** is our grounded read of where this is heading. It asks why a format matters when an agent reads, where OKF could go next, and whether the direction fits you.\n\nOne honest note on sourcing. Where this bundle states what OKF *is*, it is grounded in the canonical specification. Where it argues about what OKF *could become*, that is our analysis — informed by real signals, but a point of view, not settled fact. We mark the difference as we go.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Open Knowledge Format specification — *OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)*, v0.1.** an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF. [View source](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){#ev-okf-spec-v01-definition} · verified 2026-07-01 · primary",
+      "updated": "2026-07-01",
+      "sources": [
+        {
+          "id": "ev-okf-spec-v01-definition",
+          "org": "Open Knowledge Format specification",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md",
+          "wording": "an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF",
+          "status": "primary",
+          "verified": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "01-understanding-okf/01-how-it-works.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/01-understanding-okf/01-how-it-works/",
+      "title": "How OKF Works",
+      "description": "Bundles, concepts, and provenance — the OKF model at a leader's altitude.",
+      "tags": [
+        "okf",
+        "model"
+      ],
+      "body": "The Open Knowledge Format (OKF) is a way to store knowledge as plain text files. It is built so that both people and software agents can read it without special tools. You do not need to understand the spec to reason about it, because the whole model rests on two ideas: a bundle and a concept.\n\n## What a bundle is\n\nA bundle is a self-contained collection of knowledge. It can be a git repository, a single downloadable archive, or a subdirectory inside a larger project. The form does not matter. What matters is that everything a reader needs travels together in one place.\n\nA bundle is the unit you share, publish, or hand to someone else. It carries everything the reader needs in one place, so nobody has to chase down separate links.\n\n## What a concept is\n\nA concept is one idea, written in one file. Each file has two parts: a short header of structured fields at the top, and the written content below it. The header holds the facts about the page. The content is the page itself, written in plain markdown.\n\nOne file equals one concept. This keeps each idea small enough to read in a sitting and easy to find later.\n\n## The one required field\n\nEvery concept must declare its `type`. That is the only field OKF demands ([OKF spec, 2026](#ev-okf-spec-v01-model)). The type tells a reader what kind of page they are looking at, such as a concept, a reference, or a guide.\n\nOther fields are recommended but optional: a title, a description, a source link, tags, and a date. You may also add your own fields when you need them. A reader that does not recognize a field must ignore it and move on, so no producer is ever locked out by another producer's choices.\n\n## How the pieces link\n\nConcepts point to each other with ordinary markdown links. Each concept has an ID, which is its file path inside the bundle with the `.md` ending removed. A page at `tables/users.md` has the ID `tables/users`, and that is what other pages link to.\n\nThe link itself does not carry meaning about the relationship. If one concept depends on another, or contradicts it, or extends it, you state that in the sentence around the link. The prose explains the connection; the link only makes the jump. Where a claim needs a source, that is [a matter of provenance](/open-knowledge-format/01-understanding-okf/03-provenance-and-trust.md), which OKF handles with a light convention.\n\n## Why it stays this small\n\nOKF is deliberately small, and that is the answer to the question a leader actually asks. There is no schema registry to maintain, no central authority to clear changes through, and no required tooling to install. If you can open a text file, you can read OKF ([OKF spec, 2026](#ev-okf-spec-v01-definition)).\n\nThat smallness is what makes the knowledge portable. A format with fewer rules survives longer, moves between systems more easily, and stays readable by both your team and the agents working alongside them. That restraint is deliberate: every rule left out is one less thing that can break, expire, or lock your knowledge inside one vendor's product.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Open Knowledge Format specification — *OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)*, v0.1.** type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them. [View source](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){#ev-okf-spec-v01-model} · verified 2026-07-01 · primary\n- **Open Knowledge Format specification — *OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)*, v0.1.** an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF. [View source](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){#ev-okf-spec-v01-definition} · verified 2026-07-01 · primary",
+      "updated": "2026-07-01",
+      "sources": [
+        {
+          "id": "ev-okf-spec-v01-definition",
+          "org": "Open Knowledge Format specification",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md",
+          "wording": "an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF",
+          "status": "primary",
+          "verified": "2026-07-01"
+        },
+        {
+          "id": "ev-okf-spec-v01-model",
+          "org": "Open Knowledge Format specification",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md",
+          "wording": "type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them",
+          "status": "primary",
+          "verified": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "01-understanding-okf/02-where-it-fits.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/01-understanding-okf/02-where-it-fits/",
+      "title": "Where OKF Fits",
+      "description": "How OKF compares to RAG dumps, knowledge graphs, schema.org, and plain docs — and what it deliberately is not.",
+      "tags": [
+        "okf",
+        "comparison"
+      ],
+      "body": "OKF is not the only way to hold knowledge, and it is not always the right one. This page lines it up against the tools you already know, then states what it does not try to be.\n\n## The alternatives you already use\n\nYou have several ways to hold knowledge, and each solves part of the problem. A RAG document dump chunks raw files and embeds them for retrieval. It is good for search, but the content stays unstructured and carries no curation or provenance. A knowledge graph models typed entities and their relationships. It is powerful for querying connections, but heavy to build, and it needs specialized tooling and upkeep.\n\nTwo more options round out the set. Structured-data vocabularies like schema.org describe things on web pages so machines can read them. That is a vocabulary, not a portable bundle you can hand to someone. Plain docs and wikis are easy for people to read, but they are not structured for machines and do not travel as a single unit.\n\n## What OKF does differently\n\nOKF is a minimal, portable envelope for knowledge artifacts ([OKF spec, 2026](#ev-okf-spec-v01-definition)). It is a directory of markdown files with a metadata header, readable by both people and agents. It sits close to tools you likely use: LLM wiki repositories, personal knowledge tools like Obsidian and Notion, and \"metadata as code.\"\n\nThe difference is that OKF is specified. It writes down how a bundle is structured and how it stays interoperable. So a bundle means the same thing wherever it lands. It does this without telling you which tools to run. You get a shared format and keep your own stack.\n\n## What OKF is deliberately not\n\nOKF is not a knowledge graph, not a schema.org implementation, and not a standard built only for RAG. Its non-goals are stated plainly, and they matter for a fair read of where it fits ([OKF spec, 2026](#ev-okf-spec-v01-model)).\n\n- It does not define fixed concept taxonomies. You bring your own subject matter.\n- It does not prescribe storage or serving infrastructure. Where a bundle lives and how you serve it are your call.\n- It does not replace domain-specific schemas such as Avro, Protobuf, or OpenAPI. OKF references them; it does not subsume them.\n\n## When to reach for it\n\nReach for OKF when you need knowledge to be curated, structured, and portable as one unit, and when both people and agents will read it. It fits when you want a stable format without committing to a fixed toolset or a heavy build.\n\nReach for something else when your need is narrower. If you only need retrieval over raw text, a RAG store is enough. If you need rich queries over typed relationships, a knowledge graph earns its cost. If you only need to mark up web pages for machines, a vocabulary like schema.org is the right tool.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Open Knowledge Format specification — *OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)*, v0.1.** an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF. [View source](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){#ev-okf-spec-v01-definition} · verified 2026-07-01 · primary\n- **Open Knowledge Format specification — *OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)*, v0.1.** type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them. [View source](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){#ev-okf-spec-v01-model} · verified 2026-07-01 · primary",
+      "updated": "2026-07-01",
+      "sources": [
+        {
+          "id": "ev-okf-spec-v01-definition",
+          "org": "Open Knowledge Format specification",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md",
+          "wording": "an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF",
+          "status": "primary",
+          "verified": "2026-07-01"
+        },
+        {
+          "id": "ev-okf-spec-v01-model",
+          "org": "Open Knowledge Format specification",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md",
+          "wording": "type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them",
+          "status": "primary",
+          "verified": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "01-understanding-okf/03-provenance-and-trust.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/01-understanding-okf/03-provenance-and-trust/",
+      "title": "Provenance and Trust",
+      "description": "Why 'where did this come from' is a first-class question, and how OKF starts to answer it.",
+      "tags": [
+        "okf",
+        "provenance"
+      ],
+      "body": "Of everything OKF touches, provenance is the part that matters most once an agent is the reader. This page covers why, what the format gives you today, and where we have pushed past it.\n\n## Why provenance matters more for agents\n\nA human reader brings judgment to a claim. You see an unsourced number, sense it is off, and go check. An AI agent reading your knowledge base does none of that. It treats what it reads as fact and acts on it. So the question \"where did this come from\" has to be answered in the text itself, not left to the reader.\n\nThis changes what a knowledge base owes its readers. When a person is the audience, a missing citation is a gap you can fill later. When an agent is the audience, that gap becomes a confident wrong answer passed downstream. Provenance stops being polish and becomes part of the payload.\n\n## What OKF provides today\n\nThe Open Knowledge Format is deliberately modest here. Version 0.1 asks each page to carry a `# Citations` heading with numbered references that back the claims in the body ([OKF spec, 2026](#ev-okf-spec-v01-model)). That is close to the whole of it.\n\nThose citations can take a few shapes. A reference can be a plain URL to an outside source. It can be a bundle-relative path to another page in the same knowledge base. It can also point into a `references/` subdirectory that mirrors outside material as its own concepts. The format tells you to cite your claims and gives you room in how you do it. It does not tell you to verify them.\n\n## How we extend it\n\nThat last gap is where Knowledgeville goes further than the spec. The base format asks you to list sources; it does not check that a source says what you claim. We treat that check as the point, so we have built practice on top of the format rather than reading it into the format.\n\nHere is what we do. Every sourced claim lives in a small structured store, one entry per claim. Each entry is checked against its primary source before the page ships, not against a model's memory of the source. Inline citations link to that store instead of to a loose list at the bottom. A build check fails when a claim-shaped number appears with no source behind it.\n\nNone of this is required by OKF v0.1. It is what the format made possible once we decided verification was not optional. The spec gives you a place to put citations; we made those citations answer to their sources.\n\n## What good provenance buys you\n\nThe payoff is that an agent reading your knowledge base inherits your standards, not just your words. A claim carries its source, and the source has been checked, so an agent acting on it is acting on ground you have already tested. Trust moves with the content instead of staying in your head.\n\nFor you as the owner of that knowledge, the gain is quieter and larger. You can hand the base to a reader you will never meet, human or machine. You know that each number in it can be traced back, and was. That is the difference between publishing what you believe and publishing what you can stand behind.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Open Knowledge Format specification — *OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)*, v0.1.** type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them. [View source](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md){#ev-okf-spec-v01-model} · verified 2026-07-01 · primary",
+      "updated": "2026-07-01",
+      "sources": [
+        {
+          "id": "ev-okf-spec-v01-model",
+          "org": "Open Knowledge Format specification",
+          "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md",
+          "wording": "type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them",
+          "status": "primary",
+          "verified": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "02-the-potential/01-knowledge-for-agents.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/02-the-potential/01-knowledge-for-agents/",
+      "title": "Knowledge for Agents, Not People",
+      "description": "Why a knowledge format matters when the reader is an AI agent, and the hand-it-over-via-MCP shift.",
+      "tags": [
+        "okf",
+        "agents"
+      ],
+      "body": "The reader of your knowledge is increasingly an AI agent, not only a person. That reader does not skim or infer context the way a colleague does. This page argues our view: when the reader is an agent, the format you publish in starts to matter as much as the words.\n\n## What changes when an agent is the reader\n\nA person reads a document with a lifetime of context. You know your own company's style, you can tell a draft from a decision, and you can guess which page is out of date. An agent has none of that unless the knowledge carries it.\n\nHand an agent a folder of documents and it has to guess. It guesses what is authoritative, what is current, and where each claim came from. Those guesses are where wrong answers start. The gap is not the agent's reading skill. It is the missing structure around the words.\n\n## Why raw documents fall short\n\nA raw document is written for a human reader. It assumes you can judge the source, weigh the author, and notice the date at the top. Strip that judgment away and a pile of documents becomes a pile of undifferentiated text.\n\nThe agent cannot see which page supersedes another. It cannot tell a definition from an aside, or a cited fact from an offhand line. A knowledge format fixes this by carrying structure with the content. It records what kind of thing each piece is, how the pieces relate, and [where each claim came from](/open-knowledge-format/01-understanding-okf/03-provenance-and-trust.md). That structure travels with the knowledge instead of living only in a reader's head.\n\n## The hand-it-over shift\n\nThe old way to share knowledge was to hand over a copy. You exported the documents, the other side ingested them, and both sides drifted apart from that moment on. A copy is stale the instant it is made.\n\nMCP, the Model Context Protocol, changes the exchange. It is an open protocol that lets an AI assistant connect to an outside source and use it as a live tool. The agent does not download a snapshot. It queries the real thing.\n\nThis knowledge base is published that way. Knowledgeville is served over MCP at `https://www.onesteplabs.com/knowledgeville/mcp`. An assistant can search it, open a page with its sources attached, and see what changed, all live, without downloading anything. The agent connects to structured, sourced knowledge instead of ingesting a document dump.\n\n## What this means for how you publish\n\nIf some of your readers are agents, publishing a folder of documents is no longer enough. The structure a person supplies in their head now has to live in the format itself. That is a change in how you publish, not only in what you write.\n\nOur take: treat the format as part of the knowledge. Record what each piece is, how it relates to the rest, and where its claims came from. Then serve it as something an agent can query live, not a copy it has to ingest. You do not have to rebuild everything at once, but the direction is worth planning for now.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "02-the-potential/02-where-okf-could-go.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/02-the-potential/02-where-okf-could-go/",
+      "title": "Where OKF Could Go",
+      "description": "A grounded read of OKF's trajectory — ecosystem, verification, versioning, and the honest gaps in v0.1.",
+      "tags": [
+        "okf",
+        "potential"
+      ],
+      "body": "OKF is a young draft, so its future is a question, not a plan. This is our read of where it could go, held honestly against what it does not yet do.\n\n## Where the format is heading\n\nA few directions look plausible. Richer [provenance and verification](/open-knowledge-format/01-understanding-okf/03-provenance-and-trust.md) could become a norm, not just a citation habit. [Agent-native access](/open-knowledge-format/02-the-potential/01-knowledge-for-agents.md), through interfaces like MCP, could become a first-class way to distribute a bundle. Conventions for discovery and trust could emerge, alongside an ecosystem of tools and bundles that reaches beyond any single knowledge base.\n\n## The gaps in v0.1 today\n\nCredibility here depends on naming the gaps plainly. The format is young, and it shows.\n\nProvenance is minimal. Today it is a citations convention, nothing more. There is no standardized verification or trust layer, so a reader cannot check a bundle's claims through the format itself.\n\nThere is no fixed concept taxonomy. That is a deliberate choice. It keeps authoring flexible, but it costs you consistency across bundles and makes discovery harder.\n\nThere is no standard for discovery or registry. You have no defined way to find bundles, or to know that a given bundle is authoritative. Versioning and governance are also early, as you would expect from a draft.\n\n## What would have to be true\n\nFor the trajectory above to hold, several conditions would need to fall into place.\n\nProvenance would have to grow past a convention into something a machine can check. That means a shared trust layer, agreed and adopted, not just proposed. Without it, \"verified\" stays a claim rather than a property.\n\nDiscovery would need a real standard, so bundles can be found and ranked by authority. Governance would have to mature enough to carry breaking changes without fracturing the ecosystem. The versioning plan already signals intent here: minor bumps for backward-compatible additions, major bumps for breaking changes. Adoption is the harder part. A format becomes a standard when tools and authors outside its origin choose to build on it.\n\n## Our read\n\nThis is our view, not a forecast and not the maintainers' roadmap. We think the direction is sound. The gaps are the honest kind: known, named, and the sort a draft standard is expected to close over time. The open question is not the design. It is whether enough people build on it to make discovery, trust, and governance real rather than planned.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "02-the-potential/03-is-this-for-you.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/02-the-potential/03-is-this-for-you/",
+      "title": "Is This Direction for You?",
+      "description": "A short decision aid for a leader weighing OKF and the ideas behind it.",
+      "tags": [
+        "okf",
+        "decision"
+      ],
+      "body": "You do not have to adopt OKF to take something from it. Here is a quick read on whether the format, or the thinking behind it, fits your situation.\n\n## Signs this fits you\n\nConsider OKF, or the thinking behind it, if you recognize a few of these:\n\n- Your best knowledge is scattered across wikis, shared drives, docs, and people's heads.\n- You want AI agents to draw on that knowledge and answer reliably.\n- You care where each claim came from, and you want that recorded.\n- You need the knowledge to travel across teams, or even across organizations.\n- You are willing to curate what you keep, not just pile up documents.\n\nThe more of these you recognize, the stronger the fit.\n\n## Signs it does not fit\n\nBe honest about these. If they describe you, another approach will serve you better:\n\n- Your real need is document search, and a working RAG setup already covers it.\n- Your knowledge is small, or it goes stale within weeks.\n- You need rich, typed relationships between entities. A knowledge graph handles that better.\n- You have no time or people to curate and maintain the knowledge.\n\nAny one of these is a fair reason to wait or choose something else.\n\n## Where to start\n\nStart small and cheap. You can judge the fit in an afternoon.\n\n1. Read the [OKF specification](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md). It is short, and it tells you [what a bundle is](/open-knowledge-format/01-understanding-okf/01-how-it-works.md).\n2. Pick one real body of knowledge you already have. Keep it small.\n3. Structure it as a bundle: a directory of markdown files, each with a type.\n4. Point an AI assistant at that bundle and ask it questions.\n\nKnowledgeville itself is an OKF bundle. You can browse it as a worked example before you build your own.",
+      "updated": "2026-07-01",
+      "sources": []
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "path": "validation/audits/2026-07-01-okf-bundle.md",
+      "url": "https://knowledge.onesteplabs.com/open-knowledge-format/validation/audits/2026-07-01-okf-bundle/",
+      "title": "Citation audit — Open Knowledge Format bundle (2026-07-01)",
+      "description": "First citation audit of the seven-page OKF bundle against the canonical OKF specification.",
+      "tags": [
+        "validation",
+        "audit"
+      ],
+      "body": "**Scope:** the architecture page and all six leaf pages of the Open Knowledge Format bundle.\n**Verified against:** the canonical OKF specification, v0.1.\n**Posture:** `selective` / `verify-embedded-facts` — the claims are mostly conceptual, with essentially no statistics.\n\n## Result\n\n**0 confirmed-wrong, 0 could-not-verify** across all seven pages.\n\nEvery claim cited to the specification is faithful to it: the definition, the \"read a file, read OKF\" accessibility, `type` as the only required field, unknown-field tolerance, the concept-ID rule, prose-borne links, the `# Citations` provenance convention, the three non-goals, and the versioning plan. The rich verification layer (evidence ledger, per-claim checking, build gates) is correctly presented as a Knowledgeville extension, not as core OKF v0.1. The MCP claim was confirmed against the live endpoint.\n\n## Notes\n\n- The comparison to knowledge graphs, schema.org, and RAG is the bundle's own analytical framing; the specification does not name those formats. The pages present it as our framing, and the sourced citation attaches only to the spec's stated non-goals. Correct under this bundle's posture.",
+      "updated": "2026-07-01",
+      "sources": []
     }
   ],
   "glossaries": [
@@ -5974,6 +6149,43 @@
           "definition": "the inverse. Confirms the synthetic data reflects the same patterns the real data contains."
         }
       ]
+    },
+    {
+      "bundle": "open-knowledge-format",
+      "terms": [
+        {
+          "term": "OKF (Open Knowledge Format)",
+          "definition": "an open, human- and agent-friendly format for representing knowledge as a directory of markdown files with structured metadata."
+        },
+        {
+          "term": "Bundle",
+          "definition": "a self-contained collection of OKF concepts, distributed as a folder, a git repository, or an archive. The unit you publish and share."
+        },
+        {
+          "term": "Concept",
+          "definition": "one unit of knowledge: a single markdown file with a metadata header and a body."
+        },
+        {
+          "term": "Frontmatter",
+          "definition": "the short block of structured metadata at the top of a concept, in which `type` is the only required field."
+        },
+        {
+          "term": "Type",
+          "definition": "the label that says what kind of knowledge a concept holds (for example a framework, a playbook, or a reference)."
+        },
+        {
+          "term": "Provenance",
+          "definition": "the record of where a claim came from: its source, and whether it has been checked."
+        },
+        {
+          "term": "Agent-native",
+          "definition": "designed so an AI agent, not only a person, can read and use the knowledge directly."
+        },
+        {
+          "term": "MCP (Model Context Protocol)",
+          "definition": "an open protocol that lets an AI assistant connect to an external source and read it as a live tool."
+        }
+      ]
     }
   ],
   "changes": [
@@ -6061,6 +6273,16 @@
       "date": "2026-06-29",
       "bundle": "enterprise-ai-transformation",
       "entry": "Update**: Began tracking this bundle's change history here, as a per-bundle OKF log that ships with the bundle."
+    },
+    {
+      "date": "2026-07-01",
+      "bundle": "open-knowledge-format",
+      "entry": "Creation**: new bundle — a plain-language guide to the Open Knowledge Format for knowledge and strategy leaders, opening with What OKF Is."
+    },
+    {
+      "date": "2026-07-01",
+      "bundle": "open-knowledge-format",
+      "entry": "Creation**: two themes — Understanding OKF (the format as it stands today) and The Potential (our grounded read of where it could go)."
     }
   ]
 }

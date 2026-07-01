@@ -1,0 +1,46 @@
+# evidence.yaml — public provenance record for the Open Knowledge Format bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+# --- canonical spec (the bundle's primary source) ---
+- id: ev-okf-spec-v01-definition
+  claim: "OKF's own definition and minimalism: an open, human- and agent-friendly format for representing knowledge, as a directory of markdown files with YAML frontmatter"
+  value: "n/a — the spec's definitional framing"
+  wording: "an open, human- and agent-friendly format for representing knowledge; If you can cat a file, you can read OKF"
+  source:
+    org: "Open Knowledge Format specification"
+    report: "OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)"
+    edition: v0.1
+    url: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01
+- id: ev-okf-spec-v01-model
+  claim: "OKF v0.1's model and non-goals: bundles of concept files with a single required type field, prose-borne cross-links, a minimal # Citations provenance convention, and explicit non-goals (no fixed taxonomies, no storage or serving prescription, does not replace domain schemas)"
+  value: "n/a — the spec's model and stated non-goals"
+  wording: "type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them"
+  source:
+    org: "Open Knowledge Format specification"
+    report: "OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)"
+    edition: v0.1
+    url: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01

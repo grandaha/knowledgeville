@@ -35,6 +35,11 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
 
 ## Knowledge bundles
 
+- **[Open Knowledge Format](/open-knowledge-format/index.md)** — the open format
+  this whole knowledge base is built on, explained for leaders: what OKF is, why a
+  format for knowledge matters, and where the idea could go. Start here to understand
+  how everything else is structured.
+
 - **[Enterprise AI Transformation](/enterprise-ai-transformation/index.md)** —
   an eight-track model for taking AI from strategy to measured value across an
   enterprise: strategy & leadership, governance & risk, data readiness, platform,

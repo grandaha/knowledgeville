@@ -1,0 +1,8 @@
+# Change log — Realtors
+
+## 2026-06-30
+
+* **Creation**: [Listings & Marketing](/ai-use-cases/realtors/listings-and-marketing/index.md) recipes — [Write a Listing Description](/ai-use-cases/realtors/listings-and-marketing/write-a-listing-description.md), [Just-Listed and Just-Sold Posts](/ai-use-cases/realtors/listings-and-marketing/just-listed-and-just-sold-posts.md), and [Open-House Promo Kit](/ai-use-cases/realtors/listings-and-marketing/open-house-promo-kit.md).
+* **Creation**: [Prospecting & Outreach](/ai-use-cases/realtors/prospecting-and-outreach/index.md) recipes — [Neighborhood Farming Letter](/ai-use-cases/realtors/prospecting-and-outreach/neighborhood-farming-letter.md), [Expired and FSBO Scripts](/ai-use-cases/realtors/prospecting-and-outreach/expired-and-fsbo-scripts.md), and [Sphere and Referral Asks](/ai-use-cases/realtors/prospecting-and-outreach/sphere-and-referral-asks.md).
+* **Creation**: [Client Communication](/ai-use-cases/realtors/client-communication/index.md) recipes — [Buyer and Seller Follow-Ups](/ai-use-cases/realtors/client-communication/buyer-and-seller-follow-ups.md), [Explain an Offer or Contingency](/ai-use-cases/realtors/client-communication/explain-an-offer-or-contingency.md), and [Ask for a Review](/ai-use-cases/realtors/client-communication/ask-for-a-review.md).
+* **Creation**: new sub-domain bundle — paste-ready AI prompt recipes for real-estate agents, grouped into Listings & Marketing, Prospecting & Outreach, and Client Communication. Compliance (fair housing, do-not-call, and "not legal advice") is called out where each recipe touches it.

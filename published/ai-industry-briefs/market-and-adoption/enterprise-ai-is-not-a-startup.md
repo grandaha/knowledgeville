@@ -51,7 +51,7 @@ This is a single-source piece: an analyst's read of one CEO's interview. The fig
 
 Read the qualitative argument closely and hold the numbers loosely.
 
-**The people talking have a book to talk.** Levie runs Box, which sells enterprise content and AI infrastructure ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). So "enterprise AI is huge and needs real plumbing" is a message that helps him. Fersht's firm advises on enterprise services, and "adoption is harder than the hype" is its house view. Neither is wrong for having a stake, but weigh it.
+**The people talking have a book to talk.** Levie runs Box, which sells enterprise content and AI infrastructure. So the message that enterprise AI is huge and needs real plumbing is one that helps him. Fersht's firm advises on enterprise services, and its house view is that adoption is harder than the hype. Neither is wrong for having a stake, but weigh it.
 
 **The numbers are projections, not measurements.** "500,000 to a million roles" and "doubles enterprise tech spend" are guesses about a future that has not happened. There is no survey or model behind them in the piece. Treat them as informed direction, not data.
 

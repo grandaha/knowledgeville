@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.2.1 — 2026-07-01
+
+## Fixes
+
+- Tightened source fidelity across three recent additions: restored a verbatim quote of the OKF specification, corrected two citation/attribution details in the Aaron Levie industry brief, and reworded an AI Playbooks setup note so it no longer claims a capability for specific named products.
+
 ## v5.2.0 — 2026-07-01
 
 ## New & expanded content

@@ -9,7 +9,7 @@ timestamp: "2026-07-01"
 
 The Open Knowledge Format (OKF) is an open format for representing *knowledge* — the context, judgment, and curated insight around your data and systems. It is written so both people and AI agents can read it. Its own definition calls it "an open, human- and agent-friendly format for representing knowledge" ([OKF spec, 2026](#ev-okf-spec-v01-definition)).
 
-The surprising part is how little there is to it. An OKF bundle is a directory of markdown files with a few lines of structured metadata at the top of each one. There is no database, no schema registry, and no special tool you must install. As the specification puts it: if you can read a file, you can read OKF ([OKF spec, 2026](#ev-okf-spec-v01-definition)).
+The surprising part is how little there is to it. An OKF bundle is a directory of markdown files with a few lines of structured metadata at the top of each one. There is no database, no schema registry, and no special tool you must install. As the specification puts it, if you can `cat` a file, you can read OKF ([OKF spec, 2026](#ev-okf-spec-v01-definition)).
 
 ## Why a format for knowledge matters
 

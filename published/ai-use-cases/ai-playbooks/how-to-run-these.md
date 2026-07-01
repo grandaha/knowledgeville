@@ -16,7 +16,7 @@ That is the shift these are built around. Instead of you running the assistant o
 
 ## How to run one
 
-You need an AI assistant connected to the tools the playbook uses — usually your email and calendar. Most assistants support this through connectors: ChatGPT, Claude, and Gemini can all read a connected inbox and calendar. Then it is three steps:
+You need an AI assistant connected to the tools the playbook uses — usually your email and calendar. Most mainstream assistants support this through connectors that can read a connected inbox and calendar. Check whether the one you use offers it. Then it is three steps:
 
 1. **Connect your tools.** Give the assistant read access to your email and calendar. Read access is enough; you do not need to let it send or change anything.
 2. **Hand it the playbook.** Paste the playbook into the chat, or point your assistant at this page. The steps are written for it to follow directly.

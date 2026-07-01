@@ -34,7 +34,7 @@ Read access to your calendar and your sent mail for today. If you keep a task li
 A short written wrap of your day, split into what got done, what is still open, and what carries into tomorrow. Each carry-over says why it is carrying.
 
 ```
-End-of-Day Wrap — Tue, Jul 1
+End-of-Day Wrap — Wed, Jul 1
 
 Solid day. Cleared the review backlog, but the budget draft
 slipped again. Two things need you first thing tomorrow.

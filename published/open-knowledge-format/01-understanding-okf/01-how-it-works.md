@@ -25,7 +25,7 @@ One file equals one concept. This keeps each idea small enough to read in a sitt
 
 Every concept must declare its `type`. That is the only field OKF demands ([OKF spec, 2026](#ev-okf-spec-v01-model)). The type tells a reader what kind of page they are looking at, such as a concept, a reference, or a guide.
 
-Other fields are recommended but optional: a title, a description, a source link, tags, and a date. You may also add your own fields when you need them. A reader that does not recognize a field must ignore it and move on, so no producer is ever locked out by another producer's choices.
+Other fields are recommended but optional: a title, a description, a source link, tags, and a date. You may also add your own fields when you need them. A reader that does not recognize a field ignores it and moves on, so no producer is ever locked out by another producer's choices.
 
 ## How the pieces link
 

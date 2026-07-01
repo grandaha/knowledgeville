@@ -6,7 +6,7 @@ tags: [ai-playbooks, email]
 timestamp: "2026-07-01"
 ---
 
-This playbook has your assistant read your unread mail and sort it, so you open your inbox to a plan instead of a pile. It groups everything into three buckets and surfaces the few messages that actually need you. It drafts nothing and changes nothing.
+This playbook has your assistant read your unread mail and sort it, so you open your inbox to a plan instead of a pile. It groups everything into three buckets and surfaces the few messages that actually need you. It sorts and reports; it never touches your inbox.
 
 ## When to run it
 

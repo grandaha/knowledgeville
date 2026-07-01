@@ -62,8 +62,10 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
 
 ## Where to start
 
-- New here? Read the [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md).
-- Want something you can use in five minutes? Browse [Everyday Tasks](/ai-use-cases/everyday-tasks/index.md) and copy a recipe.
-- **Benchmark your organization** with the [AI Transformation Maturity Self-Assessment](https://www.onesteplabs.com/maturity-assessment.html) — score all eight tracks against the rubrics, see your binding constraint, and get a recommended sequence.
-- Use the search box (top of the page) to jump to any concept.
+- **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.
+- **Want something you can use today?** Copy a ready-to-run recipe from [Everyday Tasks](/ai-use-cases/everyday-tasks/index.md), or the role-specific sets for [Executive Leadership](/ai-use-cases/executive-leadership/index.md) and [Realtors](/ai-use-cases/realtors/index.md).
+- **Leading an AI effort?** Read the [Enterprise AI Transformation](/enterprise-ai-transformation/index.md) model — eight tracks that take AI from strategy to measured value across an enterprise.
+- **Keeping up with the field?** Skim the [AI Research Briefs](/ai-research-briefs/index.md) and [AI Industry Briefs](/ai-industry-briefs/index.md) — plain-language reads of the papers and analyst pieces that matter, with how much to trust each one.
+- **Working with an AI assistant?** Connect the whole knowledge base over MCP — see *Three ways to use this* above — and let it search and cite as you go.
+- Or use the search box (top of the page) to jump to any concept.
 

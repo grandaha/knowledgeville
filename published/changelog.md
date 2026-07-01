@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.0.1 — 2026-07-01
+
+## Site & structure
+
+- Refreshed the homepage **Where to start** guide to route by intent across the current knowledge base — begin with the Open Knowledge Format, copy a ready-to-run recipe, read the enterprise model, follow the research and industry briefs, or connect the whole base over MCP.
+
 ## v5.0.0 — 2026-07-01
 
 ## New & expanded content

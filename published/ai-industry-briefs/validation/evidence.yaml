@@ -32,3 +32,134 @@
     pdf_hash:
   verified: 2026-06-30
   status: primary
+
+# --- The Great Value Migration (Ricky Ho, "The AI Economy: The Next Chapter") ---
+# The briefed article. PRIMARY for the author's own framing, analogies, and thesis
+# (intelligence-per-dollar, airlines/airports, the Linux moment, the orchestration argument).
+- id: ev-rickyho-ai-economy-2026
+  claim: "Ricky Ho's investment thesis: as AI optimizes for intelligence-per-dollar, economic value migrates from selling compute to owning and orchestrating installed infrastructure (favoring the hyperscalers)"
+  value: "n/a — the author's argument, analogies, and conclusion"
+  wording: "the variable that ultimately determines where profits accrue... is unlikely to be intelligence itself, but rather the amount of intelligence delivered for every dollar spent"
+  source:
+    org: "Ricky Ho (@rickyho_1989), single-family-office CIO/PM"
+    report: "The AI Economy: The Next Chapter (four-part article)"
+    edition: 2026
+    url: https://x.com/i/status/2071932670788198687
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+# Third-party figures the article BORROWS — traced to their originals per the bundle's defining rule.
+- id: ev-stanford-ai-index-2025-cost-280x
+  claim: "Cost to query an AI model at GPT-3.5-level performance (MMLU 64.8%) fell more than 280-fold from late 2022 to late 2024"
+  value: "more than 280-fold ($20.00 to $0.07 per million tokens)"
+  wording: "dropped from $20 per million tokens in November 2022 to just $0.07 per million tokens by October 2024 (Gemini-1.5-Flash-8B) — a more than 280-fold reduction in approximately 18 months"
+  source:
+    org: "Stanford Institute for Human-Centered AI (HAI)"
+    report: "The 2025 AI Index Report (State of AI in 10 Charts)"
+    edition: 2025
+    url: https://hai.stanford.edu/news/ai-index-2025-state-of-ai-in-10-charts
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01
+- id: ev-a16z-llmflation-10x
+  claim: "For an LLM of equivalent (fixed) performance, inference cost is falling roughly 10x per year (a16z's LLMflation thesis)"
+  value: "~10x cheaper per year (about 1,000x over three years)"
+  wording: "For an LLM of equivalent performance, the cost is decreasing by 10x every year."
+  source:
+    org: "Andreessen Horowitz (Guido Appenzeller)"
+    report: "Welcome to LLMflation — LLM inference cost is going down fast"
+    edition: 2024
+    url: https://a16z.com/llmflation-llm-inference-cost/
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01
+- id: ev-epoch-inference-price-2025
+  claim: "Inference cost for a fixed capability level falls fast but unevenly across benchmarks; GPT-4-level science-question performance fell about 40x per year"
+  value: "9x to 900x per year (median ~50x/yr); GPT-4-level GPQA ~40x/yr"
+  wording: "between 9x to 900x per year... with a median of 50x per year. The price to achieve GPT-4's performance on a set of PhD-level science questions fell by 40x per year."
+  source:
+    org: "Epoch AI"
+    report: "LLM inference prices have fallen rapidly but unequally across tasks"
+    edition: 2025
+    url: https://epoch.ai/data-insights/llm-inference-price-trends
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01
+- id: ev-openai-friar-inference-97pct
+  claim: "OpenAI CFO Sarah Friar: inference cost fell about 97% from GPT-4 to the latest-generation model within roughly two years"
+  value: "~97% decline over ~2 years"
+  wording: "from 4 to 5.4, it was 97%, but that happened in like 2 years"
+  source:
+    org: "OpenAI CFO Sarah Friar (All-In Podcast)"
+    report: "OpenAI CFO Sarah Friar: IPO, AI Rivalries, New Device, and Spending $100B+ on Compute"
+    edition: 2026
+    url: https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/openai-cfo-sarah-friar-ipo-ai-rivalries-new-device-and-spending-100b-on-compute
+    pdf_hash:
+  verified: 2026-07-01
+  status: secondary-mirror
+  expires: 2027-07-01
+- id: ev-altman-2026-budget-q1
+  claim: "Sam Altman: enterprise customers report spending their annual AI budget within the first quarter and are asking for more efficient, not smarter, models"
+  value: "n/a — on-stage remark"
+  wording: "My company spent my entire 2026 budget in Q1. Can you make this more efficient?"
+  source:
+    org: "Sam Altman, OpenAI (Intelligence at Work event; reported by Tom's Hardware/Axios)"
+    report: "OpenAI CEO Sam Altman admits AI token costs are becoming a huge issue"
+    edition: 2026
+    url: https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-ceo-sam-altman-admits-ai-token-costs-are-becoming-a-huge-issue-company-seeks-improved-value-as-overspending-becomes-a-meme
+    pdf_hash:
+  verified: 2026-07-01
+  status: secondary-mirror
+- id: ev-meta-exfm-distillation-2025
+  claim: "Meta serves a trillion-parameter foundation model as a teacher and distills it into smaller vertical models that power ads recommendation at scale"
+  value: "n/a — production architecture (external distillation)"
+  wording: "a foundation model can serve multiple students as vertical models to amortize its building cost, using external distillation to transfer knowledge from the large teacher to smaller student models"
+  source:
+    org: "Meta (Liang, Liu, Jin et al.)"
+    report: "External Large Foundation Model: How to Efficiently Serve Trillions of Parameters for Online Ads Recommendation (WWW 2025)"
+    edition: 2025
+    url: https://arxiv.org/abs/2502.17494
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+- id: ev-whitehouse-eo-14409-2026
+  claim: "US Executive Order 14409 sets up a voluntary framework for pre-release government evaluation of frontier models with advanced cyber capabilities, explicitly not a mandatory licensing regime"
+  value: "EO 14409 (signed June 2, 2026); up to 30-day pre-release access; voluntary"
+  wording: "Nothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models."
+  source:
+    org: "The White House"
+    report: "Executive Order 14409 — Promoting Advanced Artificial Intelligence Innovation and Security"
+    edition: 2026
+    url: https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+- id: ev-anthropic-export-controls-2026
+  claim: "In mid-June 2026 US Commerce imposed an export-license requirement restricting access to Anthropic's most capable models"
+  value: "imposed ~June 12, 2026"
+  wording: "the Department of Commerce restricted access to Anthropic's latest models"
+  source:
+    org: "CSIS (reporting/analysis)"
+    report: "The Department of Commerce Restricted Access to Anthropic's Latest Models. What Comes Next?"
+    edition: 2026
+    url: https://www.csis.org/analysis/department-commerce-restricted-access-anthropics-latest-models-what-comes-next
+    pdf_hash:
+  verified: 2026-07-01
+  status: secondary-mirror
+  expires: 2026-12-31
+- id: ev-anthropic-export-controls-lifted-2026
+  claim: "The US administration lifted the export controls on Anthropic's most capable models around June 30, 2026, after an ~18-day standoff"
+  value: "lifted ~June 30, 2026"
+  wording: "Anthropic says Trump admin has lifted export controls"
+  source:
+    org: "CNBC"
+    report: "Anthropic says Trump admin has lifted export controls"
+    edition: 2026
+    url: https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html
+    pdf_hash:
+  verified: 2026-07-01
+  status: secondary-mirror
+  expires: 2026-12-31

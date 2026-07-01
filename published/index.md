@@ -13,7 +13,7 @@ structured, openly-licensed concepts — frameworks, playbooks, assessments, and
 and continuously validated. We began with enterprise AI transformation and are expanding into practical,
 everyday AI use; more topics will follow.
 
-## Two ways to use this
+## Three ways to use this
 
 **Read it like a site** — search for a concept, follow the tracks, use the assessments to benchmark where you are. Everything here is written for practitioners, not academics.
 
@@ -22,6 +22,14 @@ everyday AI use; more topics will follow.
 ```bash
 git clone https://github.com/grandaha/knowledgeville.git
 ```
+
+**Connect it over MCP** — point your AI assistant straight at the live knowledge base. Add the Knowledgeville server as a custom connector and your assistant can search the concepts, open a page with its sources attached, and check what has changed — all from your chat, always current, nothing to download.
+
+```
+https://www.onesteplabs.com/knowledgeville/mcp
+```
+
+In Claude, add it under **Settings → Connectors → Add custom connector**, paste the URL, and it is ready in any chat. Any client that speaks the [Model Context Protocol](https://modelcontextprotocol.io) can connect the same way.
 
 Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to use, share, and adapt with attribution. Cited third-party statistics and trademarks remain property of their respective owners.
 
@@ -42,6 +50,10 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
 - **[AI Research Briefs](/ai-research-briefs/index.md)** — plain-language briefs of notable
   AI research papers, written for people who won't read the original. Each one covers what a
   paper found, how much to trust it, and what it means for you, grouped by theme.
+
+- **[AI Industry Briefs](/ai-industry-briefs/index.md)** — plain-language briefs of notable
+  analyst and market commentary on the AI industry. Each one covers what the analyst argues,
+  how much to trust it, and what it means for you — with the author's stake flagged plainly.
 
 ## Where to start
 

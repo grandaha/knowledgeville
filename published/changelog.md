@@ -11,6 +11,17 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v4.2.0 — 2026-07-01
+
+## New & expanded content
+
+- **AI Industry Briefs — The Great Value Migration** — a new brief, and a new **Strategy & Investment** theme in the AI Industry Briefs. It's a plain-language read of an investor's thesis that as AI gets cheap, value shifts from *selling* compute to *owning and orchestrating* it — favoring the big cloud platforms. Every borrowed figure is traced to its original source, and the author's disclosed stock positions are flagged as stake, not advice.
+
+## Site & structure
+
+- **Connect over MCP** — the homepage now shows a third way to use Knowledgeville: point any AI assistant at the live knowledge base over the Model Context Protocol, at `https://www.onesteplabs.com/knowledgeville/mcp`. Alongside reading it as a site and cloning the GitHub repo.
+- The **AI Industry Briefs** area is now listed on the homepage bundle index.
+
 ## v4.1.0 — 2026-07-01
 
 ## New & expanded content

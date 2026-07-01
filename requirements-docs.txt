@@ -4,3 +4,5 @@
 mkdocs-material>=9.5,<10
 # Clean section nav labels (titles from .pages, not directory names).
 mkdocs-awesome-pages-plugin>=2.9
+# Redirect old URLs after a page/bundle move (e.g. the AI Briefs restructure).
+mkdocs-redirects>=1.2

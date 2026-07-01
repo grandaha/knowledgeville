@@ -23,7 +23,7 @@ everyday AI use; more topics will follow.
 git clone https://github.com/grandaha/knowledgeville.git
 ```
 
-**Connect it over MCP** — point your AI assistant straight at the live knowledge base. Add the Knowledgeville server as a custom connector and your assistant can search the concepts, open a page with its sources attached, and check what has changed — all from your chat, always current, nothing to download.
+**Connect it over MCP** — point your AI assistant straight at the live knowledge base. Add the Knowledgeville server as a custom connector. Then, from your chat, your assistant can search the concepts, open a page with its sources attached, and check what has changed. Always current, nothing to download.
 
 ```
 https://www.onesteplabs.com/knowledgeville/mcp
@@ -52,20 +52,18 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   brings the same demo-first approach to the C-suite: board updates, budget reviews,
   org calls, and the messages that can't land wrong.
 
-- **[AI Research Briefs](/ai-research-briefs/index.md)** — plain-language briefs of notable
-  AI research papers, written for people who won't read the original. Each one covers what a
-  paper found, how much to trust it, and what it means for you, grouped by theme.
-
-- **[AI Industry Briefs](/ai-industry-briefs/index.md)** — plain-language briefs of notable
-  analyst and market commentary on the AI industry. Each one covers what the analyst argues,
-  how much to trust it, and what it means for you — with the author's stake flagged plainly.
+- **[AI Briefs](/ai-briefs/index.md)** — plain-language briefs of the AI work you won't read
+  in full, in two kinds: **research briefs** of notable papers (what a study found and how much
+  to trust it) and **industry briefs** of analyst and market commentary (an argument, and where
+  the author's stake shapes it). Each covers what it says, how much to trust it, and what it
+  means for you.
 
 ## Where to start
 
 - **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.
 - **Want something you can use today?** Copy a ready-to-run recipe from [Everyday Tasks](/ai-use-cases/everyday-tasks/index.md), or the role-specific sets for [Executive Leadership](/ai-use-cases/executive-leadership/index.md) and [Realtors](/ai-use-cases/realtors/index.md).
 - **Leading an AI effort?** Read the [Enterprise AI Transformation](/enterprise-ai-transformation/index.md) model — eight tracks that take AI from strategy to measured value across an enterprise.
-- **Keeping up with the field?** Skim the [AI Research Briefs](/ai-research-briefs/index.md) and [AI Industry Briefs](/ai-industry-briefs/index.md) — plain-language reads of the papers and analyst pieces that matter, with how much to trust each one.
+- **Keeping up with the field?** Skim the [AI Briefs](/ai-briefs/index.md) — plain-language reads of the research papers and analyst pieces that matter, with how much to trust each one.
 - **Working with an AI assistant?** Connect the whole knowledge base over MCP — see *Three ways to use this* above — and let it search and cite as you go.
 - Or use the search box (top of the page) to jump to any concept.
 

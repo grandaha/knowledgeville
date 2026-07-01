@@ -9,7 +9,7 @@ timestamp: "2026-06-30"
 ## Purpose
 
 This record documents the citation sweep for the bundle's first brief,
-[The AI Adoption Gap](/ai-industry-briefs/market-and-adoption/the-ai-adoption-gap.md). Under this
+[The AI Adoption Gap](/ai-briefs/industry-briefs/market-and-adoption/the-ai-adoption-gap.md). Under this
 bundle's posture, the briefed analyst article is the **primary source for its own figures**, so the
 sweep verifies that every figure on the page matches what the article states, and that each is
 tagged with the right provenance.

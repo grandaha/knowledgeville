@@ -12,7 +12,7 @@ you.
 
 ## How it differs from AI Research Briefs
 
-[AI Research Briefs](/ai-research-briefs/index.md) covers empirical papers — studies
+[AI Research Briefs](/ai-briefs/research-briefs/index.md) covers empirical papers — studies
 with data, methods, and measurable results. This bundle covers commentary: analyst
 theses, vendor reports, and market takes. The sources are less formal, more opinionated,
 and often written by people with a stake in the answer. That's not a reason to ignore
@@ -22,9 +22,9 @@ them — it's a reason to read them carefully, and that's exactly what each brie
 
 Briefs are organized by theme. A theme appears once it has its first brief. Right now:
 
-- **[Market and Adoption](/ai-industry-briefs/market-and-adoption/index.md)** — how fast AI is actually landing in enterprises, and what that means for buyers and vendors.
+- **[Market and Adoption](/ai-briefs/industry-briefs/market-and-adoption/index.md)** — how fast AI is actually landing in enterprises, and what that means for buyers and vendors.
 
-More themes will appear as the bundle grows. See [How These Briefs Work](/ai-industry-briefs/how-these-briefs-work.md) for the full structure and the defining rules on sourcing and trust.
+More themes will appear as the bundle grows. See [How These Briefs Work](/ai-briefs/industry-briefs/how-these-briefs-work.md) for the full structure and the defining rules on sourcing and trust.
 
 ## In this section
 

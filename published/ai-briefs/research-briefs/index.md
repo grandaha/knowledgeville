@@ -16,12 +16,12 @@ minutes whether the full paper is worth your time.
 
 Briefs are grouped by theme. A theme appears once it has its first brief, so the list grows as we go:
 
-- **[Agents and Tool Use](/ai-research-briefs/agents-and-tool-use/index.md)** — AI that takes multi-step action and uses tools.
-- **[Reasoning and Capabilities](/ai-research-briefs/reasoning-and-capabilities/index.md)** — what models can and can't reliably do, and how they reason.
+- **[Agents and Tool Use](/ai-briefs/research-briefs/agents-and-tool-use/index.md)** — AI that takes multi-step action and uses tools.
+- **[Reasoning and Capabilities](/ai-briefs/research-briefs/reasoning-and-capabilities/index.md)** — what models can and can't reliably do, and how they reason.
 
-More themes open up as briefs land. **[How These Briefs Work](/ai-research-briefs/how-these-briefs-work.md)** lists the full set we're working toward.
+More themes open up as briefs land. **[How These Briefs Work](/ai-briefs/research-briefs/how-these-briefs-work.md)** lists the full set we're working toward.
 
-New to the bundle? Start with **[How These Briefs Work](/ai-research-briefs/how-these-briefs-work.md)** — it shows what's in every brief and how to read the "how much to trust it" section.
+New to the bundle? Start with **[How These Briefs Work](/ai-briefs/research-briefs/how-these-briefs-work.md)** — it shows what's in every brief and how to read the "how much to trust it" section.
 
 ## In this section
 

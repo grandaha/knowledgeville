@@ -2,7 +2,7 @@
 type: Concept
 title: How These Briefs Work
 description: "What every brief contains, how to read it, and how much to trust it."
-tags: [ai-research-briefs, architecture]
+tags: [research-briefs, architecture]
 timestamp: "2026-06-29"
 ---
 

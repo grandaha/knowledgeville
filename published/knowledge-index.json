@@ -1,10 +1,10 @@
 {
-  "version": "v5.2.1",
+  "version": "v5.3.0",
   "generated": "2026-07-01",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
-      "slug": "ai-industry-briefs",
+      "slug": "industry-briefs",
       "title": "AI Industry Briefs",
       "description": "Plain-language briefs of analyst, vendor, and market commentary on AI, for business leaders.",
       "posture": {
@@ -15,7 +15,7 @@
       "pageCount": 5
     },
     {
-      "slug": "ai-research-briefs",
+      "slug": "research-briefs",
       "title": "AI Research Briefs",
       "description": "Plain-language briefs of notable AI research papers — what each one found, how much to trust it, and what it means for you.",
       "posture": {
@@ -94,13 +94,13 @@
   ],
   "pages": [
     {
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "path": "how-these-briefs-work.md",
-      "url": "https://knowledge.onesteplabs.com/ai-industry-briefs/how-these-briefs-work/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/how-these-briefs-work/",
       "title": "How These Briefs Work",
       "description": "What every industry brief contains, how to read it, and how much to trust it.",
       "tags": [
-        "ai-industry-briefs",
+        "industry-briefs",
         "architecture"
       ],
       "body": "Every brief in this bundle follows the same shape. Once you know it, you can read any\nbrief in a couple of minutes and know exactly where to look for the part you need.\n\n## What's in every brief\n\nEach brief opens with a **source header**: the title of the piece, the author and their\naffiliation, when it was published, and a link to the original. The link matters — a\nbrief is our read of the analyst's work, not a replacement for it. If the brief changes\nhow you think, go read the source.\n\nThen six sections, always in this order:\n\n- **The one-line takeaway** — what the analyst argues and why you'd care, in a sentence.\n- **The argument** — the analyst's core thesis in plain language. Not their conclusion\n  alone, but the chain of reasoning that gets them there.\n- **The evidence behind it** — the data, surveys, or comparisons the analyst uses to\n  support the argument, with the actual figures where they appear.\n- **How much to trust it** — the honest read. Who wrote it, what stake they have in the\n  answer, how strong the underlying data is, and where the argument stretches further\n  than the evidence.\n- **So what — for you** — what you'd do differently because of this. The reason you're\n  here.\n- **The fine print** — limits, scope, and where not to over-apply the result.\n\n## How to read \"How much to trust it\"\n\nThis is the section to slow down on. An analyst can be sharp and still have a commercial\ninterest in the conclusion. We flag those things plainly so you can weigh the piece\nyourself.\n\nTreat it as a flag to slow down, not a final verdict. A piece from a vendor-sponsored\nfirm isn't worthless — it's worth a second look. The section gives you the questions a\ncareful reader would ask. You decide what the answer is worth.\n\n## The defining rule on figures\n\nAn analyst piece is a primary source for its own figures. We cite the piece for numbers\nthat appear in it. If the piece names a third-party source for a figure, we trace it\nthere and cite the original. If we can't trace it, we say so. We note the author's stake\nwhere it's relevant, but stake doesn't mean unsourced — it means read carefully.\n\n## How briefs are grouped\n\nBriefs are sorted into themes so you can follow the area you care about. A theme appears\non the site once it has its first brief, so the list fills in over time. The themes we're\nworking toward:\n\n- **Market and adoption** — how fast AI is actually landing in enterprises, and what that means for buyers and vendors.\n- **Strategy and investment** — where capital is moving and what the strategic bets look like.\n- **Vendors and platforms** — the competitive landscape and what the major players are doing.\n- **Workforce and skills** — what AI means for jobs, roles, and how people work.\n- **Risk and governance** — liability, regulation, and the decisions organizations have to make.\n\n## What a brief is not\n\nA brief is a starting point, not a citation you can lean on. We summarize one analyst\npiece and add our own plain-language read — we don't run independent research. The\nfigures in a brief are checked against the piece itself, but the piece can still be\nwrong. When a decision rides on a number, read the original and check it for yourself.\n\nEach brief reflects the piece as it stood when we wrote it. A later piece doesn't change\nan old brief — it gets its own. So a brief is a snapshot, dated at the top, of one\nargument at one moment.",
@@ -108,16 +108,16 @@
       "sources": []
     },
     {
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "path": "market-and-adoption/enterprise-ai-is-not-a-startup.md",
-      "url": "https://knowledge.onesteplabs.com/ai-industry-briefs/market-and-adoption/enterprise-ai-is-not-a-startup/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/market-and-adoption/enterprise-ai-is-not-a-startup/",
       "title": "Enterprise AI Is Not a Startup",
       "description": "Aaron Levie's case that real AI transformation happens in the 88% of the economy constrained by legacy systems and regulation, not model quality.",
       "tags": [
         "market-and-adoption",
         "industry-brief"
       ],
-      "body": "- **Title:** Stop treating enterprise AI like a Silicon Valley startup: Aaron Levie tells you why\n- **Author:** Phil Fersht (founder and CEO of HFS Research), reading an interview with Aaron Levie (co-founder and CEO of Box)\n- **Publication:** Horses for Sources, the content arm of HFS Research, an enterprise-tech analyst firm\n- **Date:** June 6, 2026\n- **Who it's really for:** Enterprise leaders and CIOs planning AI past the pilot stage\n- **Link:** [https://www.horsesforsources.com/aaron-levie_060626/](https://www.horsesforsources.com/aaron-levie_060626/)\n\n## The one-line takeaway\n\nEnterprise AI won't be won by the smartest model. It'll be won by the unglamorous work — fixing workflows, data, and accountability in the part of the economy that doesn't run like a tech startup.\n\n## The argument\n\n**The thesis.** The industry keeps optimizing for the slice of the world that already looks like Silicon Valley, and ignores where the hard, valuable transformation actually happens. Levie's framing, as Fersht reads it: the tech industry is a small share of the economy, and the rest plays by different rules.\n\n**The reasoning, step by step:**\n\n1. **Tech is a slice, not the whole.** Levie notes the tech industry is about **10-12% of GDP** ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). Most of the AI conversation happens inside that slice, among companies already built to adopt it.\n\n2. **The other 88% runs on different rules.** \"The other 88% is where the transformation happens\" ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). Those companies are held back by legacy systems, regulation, and thin resources, not by how clever the model is.\n\n3. **The real constraint is not model quality.** It is workflow redesign, data readiness, change management, and accountability for when something goes wrong. A better model does not fix a broken process or a compliance gap.\n\n4. **Humans do not leave the loop; they move.** As Levie puts it, we have not removed humans from the loop, we have changed where they enter it. That creates a new job category — people who run and supervise agents — which he sizes at **500,000 to a million roles** <!-- noev: same HFS source, already anchored above -->.\n\n5. **This grows the budget, it does not shrink it.** Levie's view is that this \"probably doubles global enterprise technology spend\" by tying investment directly to workflow productivity <!-- noev: same HFS source -->. AI becomes a new category of investment, not a cost cut.\n\n6. **Point the best models where they pay off.** His prescription: identify the **5-10%** of your workforce doing the highest-value work, and give them the best models with no capacity limits <!-- noev: same HFS source -->.\n\n**The conclusion.** Treat enterprise AI as enterprise transformation — slow, messy, and human — not as a product you drop in like a startup app. The winners will be the organizations that do the boring foundational work, not the ones chasing the top of the model leaderboard.\n\n## The evidence behind it\n\nThis is a single-source piece: an analyst's read of one CEO's interview. The figures are Levie's own projections, reported by Fersht, with no external data cited.\n\n- The tech industry is **10-12% of GDP**; \"the other 88% is where the transformation happens\" ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's figure and Fersht's framing; the 88% is the rhetorical complement, not a measured statistic.)*\n- A new category of agent-operator work, sized at **500,000 to a million roles** ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's projection about the future, not a current count.)*\n- AI \"probably doubles global enterprise technology spend\" ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's estimate; no model or source is shown for it.)*\n- Give the best models to the **5-10%** of the workforce doing the highest-value work ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's prescription, not a benchmark.)*\n\n## How much to trust it\n\nRead the qualitative argument closely and hold the numbers loosely.\n\n**The people talking have a book to talk.** Levie runs Box, which sells enterprise content and AI infrastructure. So the message that enterprise AI is huge and needs real plumbing is one that helps him. Fersht's firm advises on enterprise services, and its house view is that adoption is harder than the hype. Neither is wrong for having a stake, but weigh it.\n\n**The numbers are projections, not measurements.** \"500,000 to a million roles\" and \"doubles enterprise tech spend\" are guesses about a future that has not happened. There is no survey or model behind them in the piece. Treat them as informed direction, not data.\n\n**No independent source.** Everything traces back to one interview and one analyst's reading of it. Nothing here is corroborated by third-party research.\n\nWhat holds up best is the core claim. The binding constraint on enterprise AI is workflow, data, and accountability, not model IQ. That matches what broader adoption research keeps finding: pilots stall on enterprise readiness, not model quality (see our [The AI Adoption Gap](/ai-industry-briefs/market-and-adoption/the-ai-adoption-gap.md) brief).\n\n## So what — for you\n\n- **Stop shopping for the smartest model; start fixing the workflow.** Your bottleneck is your processes and data, not the leaderboard.\n- **Budget and org-design for agent operators.** If a new supervisory role is coming, plan the headcount and accountability now, not after the tools land.\n- **Concentrate frontier models on your highest-value work.** Give the best models to the few percent of work that pays for them. Use cheaper models for the rest — the same intelligence-per-dollar logic in our [The Great Value Migration](/ai-industry-briefs/strategy-and-investment/the-great-value-migration.md) brief.\n- **Plan for AI as an investment, not a cut.** If Levie is even directionally right, budgets go up, not down. Frame it as new capability, not cost savings.\n\n## The fine print\n\nThis is one operator's interview and one analyst's framing, not a study. The numbers are forward projections with no source shown. Both the CEO and the analyst have commercial interests in the \"enterprise AI is big and hard\" story. It is a snapshot dated June 2026; a later piece does not update it — it gets its own.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **HFS Research (Phil Fersht) — *Stop treating enterprise AI like a Silicon Valley startup: Aaron Levie tells you why*, 2026.** the tech industry represents 10-12% of GDP; the other 88% is where the transformation happens; Levie puts the job creation at 500,000 to a million roles; this probably doubles global enterprise technology spend; identify the 5-10% of your workforce doing the highest-value work. [View source](https://www.horsesforsources.com/aaron-levie_060626/){#ev-hfs-levie-enterprise-ai-2026} · verified 2026-07-01 · primary",
+      "body": "- **Title:** Stop treating enterprise AI like a Silicon Valley startup: Aaron Levie tells you why\n- **Author:** Phil Fersht (founder and CEO of HFS Research), reading an interview with Aaron Levie (co-founder and CEO of Box)\n- **Publication:** Horses for Sources, the content arm of HFS Research, an enterprise-tech analyst firm\n- **Date:** June 6, 2026\n- **Who it's really for:** Enterprise leaders and CIOs planning AI past the pilot stage\n- **Link:** [https://www.horsesforsources.com/aaron-levie_060626/](https://www.horsesforsources.com/aaron-levie_060626/)\n\n## The one-line takeaway\n\nEnterprise AI won't be won by the smartest model. It'll be won by the unglamorous work — fixing workflows, data, and accountability in the part of the economy that doesn't run like a tech startup.\n\n## The argument\n\n**The thesis.** The industry keeps optimizing for the slice of the world that already looks like Silicon Valley, and ignores where the hard, valuable transformation actually happens. Levie's framing, as Fersht reads it: the tech industry is a small share of the economy, and the rest plays by different rules.\n\n**The reasoning, step by step:**\n\n1. **Tech is a slice, not the whole.** Levie notes the tech industry is about **10-12% of GDP** ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). Most of the AI conversation happens inside that slice, among companies already built to adopt it.\n\n2. **The other 88% runs on different rules.** \"The other 88% is where the transformation happens\" ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). Those companies are held back by legacy systems, regulation, and thin resources, not by how clever the model is.\n\n3. **The real constraint is not model quality.** It is workflow redesign, data readiness, change management, and accountability for when something goes wrong. A better model does not fix a broken process or a compliance gap.\n\n4. **Humans do not leave the loop; they move.** As Levie puts it, we have not removed humans from the loop, we have changed where they enter it. That creates a new job category — people who run and supervise agents — which he sizes at **500,000 to a million roles** <!-- noev: same HFS source, already anchored above -->.\n\n5. **This grows the budget, it does not shrink it.** Levie's view is that this \"probably doubles global enterprise technology spend\" by tying investment directly to workflow productivity <!-- noev: same HFS source -->. AI becomes a new category of investment, not a cost cut.\n\n6. **Point the best models where they pay off.** His prescription: identify the **5-10%** of your workforce doing the highest-value work, and give them the best models with no capacity limits <!-- noev: same HFS source -->.\n\n**The conclusion.** Treat enterprise AI as enterprise transformation — slow, messy, and human — not as a product you drop in like a startup app. The winners will be the organizations that do the boring foundational work, not the ones chasing the top of the model leaderboard.\n\n## The evidence behind it\n\nThis is a single-source piece: an analyst's read of one CEO's interview. The figures are Levie's own projections, reported by Fersht, with no external data cited.\n\n- The tech industry is **10-12% of GDP**; \"the other 88% is where the transformation happens\" ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's figure and Fersht's framing; the 88% is the rhetorical complement, not a measured statistic.)*\n- A new category of agent-operator work, sized at **500,000 to a million roles** ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's projection about the future, not a current count.)*\n- AI \"probably doubles global enterprise technology spend\" ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's estimate; no model or source is shown for it.)*\n- Give the best models to the **5-10%** of the workforce doing the highest-value work ([HFS, 2026](#ev-hfs-levie-enterprise-ai-2026)). *(Levie's prescription, not a benchmark.)*\n\n## How much to trust it\n\nRead the qualitative argument closely and hold the numbers loosely.\n\n**The people talking have a book to talk.** Levie runs Box, which sells enterprise content and AI infrastructure. So the message that enterprise AI is huge and needs real plumbing is one that helps him. Fersht's firm advises on enterprise services, and its house view is that adoption is harder than the hype. Neither is wrong for having a stake, but weigh it.\n\n**The numbers are projections, not measurements.** \"500,000 to a million roles\" and \"doubles enterprise tech spend\" are guesses about a future that has not happened. There is no survey or model behind them in the piece. Treat them as informed direction, not data.\n\n**No independent source.** Everything traces back to one interview and one analyst's reading of it. Nothing here is corroborated by third-party research.\n\nWhat holds up best is the core claim. The binding constraint on enterprise AI is workflow, data, and accountability, not model IQ. That matches what broader adoption research keeps finding: pilots stall on enterprise readiness, not model quality (see our [The AI Adoption Gap](/ai-briefs/industry-briefs/market-and-adoption/the-ai-adoption-gap.md) brief).\n\n## So what — for you\n\n- **Stop shopping for the smartest model; start fixing the workflow.** Your bottleneck is your processes and data, not the leaderboard.\n- **Budget and org-design for agent operators.** If a new supervisory role is coming, plan the headcount and accountability now, not after the tools land.\n- **Concentrate frontier models on your highest-value work.** Give the best models to the few percent of work that pays for them. Use cheaper models for the rest — the same intelligence-per-dollar logic in our [The Great Value Migration](/ai-briefs/industry-briefs/strategy-and-investment/the-great-value-migration.md) brief.\n- **Plan for AI as an investment, not a cut.** If Levie is even directionally right, budgets go up, not down. Frame it as new capability, not cost savings.\n\n## The fine print\n\nThis is one operator's interview and one analyst's framing, not a study. The numbers are forward projections with no source shown. Both the CEO and the analyst have commercial interests in the \"enterprise AI is big and hard\" story. It is a snapshot dated June 2026; a later piece does not update it — it gets its own.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **HFS Research (Phil Fersht) — *Stop treating enterprise AI like a Silicon Valley startup: Aaron Levie tells you why*, 2026.** the tech industry represents 10-12% of GDP; the other 88% is where the transformation happens; Levie puts the job creation at 500,000 to a million roles; this probably doubles global enterprise technology spend; identify the 5-10% of your workforce doing the highest-value work. [View source](https://www.horsesforsources.com/aaron-levie_060626/){#ev-hfs-levie-enterprise-ai-2026} · verified 2026-07-01 · primary",
       "updated": "2026-07-01",
       "sources": [
         {
@@ -131,9 +131,9 @@
       ]
     },
     {
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "path": "market-and-adoption/the-ai-adoption-gap.md",
-      "url": "https://knowledge.onesteplabs.com/ai-industry-briefs/market-and-adoption/the-ai-adoption-gap/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/market-and-adoption/the-ai-adoption-gap/",
       "title": "The AI Adoption Gap",
       "description": "An analyst thesis on why AI's market valuations have outrun real enterprise adoption, and what leaders should do about it.",
       "tags": [
@@ -154,9 +154,9 @@
       ]
     },
     {
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "path": "strategy-and-investment/the-great-value-migration.md",
-      "url": "https://knowledge.onesteplabs.com/ai-industry-briefs/strategy-and-investment/the-great-value-migration/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/strategy-and-investment/the-great-value-migration/",
       "title": "The Great Value Migration",
       "description": "An investment thesis that as AI intelligence gets cheap, value migrates from selling compute to owning and orchestrating it — favoring the hyperscalers.",
       "tags": [
@@ -249,9 +249,9 @@
       ]
     },
     {
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "path": "validation/audits/2026-06-30-the-ai-adoption-gap.md",
-      "url": "https://knowledge.onesteplabs.com/ai-industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap/",
       "title": "Citation Sweep — The AI Adoption Gap",
       "description": "Verification of every figure in the first AI Industry Brief against its primary source, the HFS Research article.",
       "tags": [
@@ -260,18 +260,18 @@
         "validation",
         "market-and-adoption"
       ],
-      "body": "## Purpose\n\nThis record documents the citation sweep for the bundle's first brief,\n[The AI Adoption Gap](/ai-industry-briefs/market-and-adoption/the-ai-adoption-gap.md). Under this\nbundle's posture, the briefed analyst article is the **primary source for its own figures**, so the\nsweep verifies that every figure on the page matches what the article states, and that each is\ntagged with the right provenance.\n\n**Audit conducted:** June 30, 2026.\n\n**Scope:** the single page above, against its source, the HFS Research article *\"The AI balloon is\nbursting and services must be ready to pick up the pieces\"* (Saurabh Gupta and Phil Fersht, June 25,\n2026).\n\n## Method\n\nEvery figure on the page was checked verbatim against the live article: the source header (title,\nauthors, date), the four public-market figures, the four adoption figures, the four forecast\nfigures, and the 90-day outcome bar. Each was classified by provenance — the author's own, attributed\nto a third party, or publicly checkable — and the page's tags were checked against that\nclassification.\n\n## Summary verdict\n\n**Clean.** All fifteen figures match the article exactly. None was fabricated, misquoted, or\nmisattributed; the arithmetic complements (13% / 87%, 20% / 80%) are consistent. The page's\nprovenance tags are accurate: the load-bearing numbers are correctly marked as HFS's own, and the\npublic-market facts are correctly marked publicly checkable with the explicit caveat that the article\nnames no data provider.\n\nThe brief also discloses, in *How much to trust it* and *The fine print*, that HFS's own figures are\nself-attributed and externally unverified, and that the public-market facts should be re-sourced to\nfilings before reuse. Those disclosures are accurate and are the point of the bundle's posture, not a\ndefect.\n\n## Follow-ups\n\nNone. The page is sound as published.",
+      "body": "## Purpose\n\nThis record documents the citation sweep for the bundle's first brief,\n[The AI Adoption Gap](/ai-briefs/industry-briefs/market-and-adoption/the-ai-adoption-gap.md). Under this\nbundle's posture, the briefed analyst article is the **primary source for its own figures**, so the\nsweep verifies that every figure on the page matches what the article states, and that each is\ntagged with the right provenance.\n\n**Audit conducted:** June 30, 2026.\n\n**Scope:** the single page above, against its source, the HFS Research article *\"The AI balloon is\nbursting and services must be ready to pick up the pieces\"* (Saurabh Gupta and Phil Fersht, June 25,\n2026).\n\n## Method\n\nEvery figure on the page was checked verbatim against the live article: the source header (title,\nauthors, date), the four public-market figures, the four adoption figures, the four forecast\nfigures, and the 90-day outcome bar. Each was classified by provenance — the author's own, attributed\nto a third party, or publicly checkable — and the page's tags were checked against that\nclassification.\n\n## Summary verdict\n\n**Clean.** All fifteen figures match the article exactly. None was fabricated, misquoted, or\nmisattributed; the arithmetic complements (13% / 87%, 20% / 80%) are consistent. The page's\nprovenance tags are accurate: the load-bearing numbers are correctly marked as HFS's own, and the\npublic-market facts are correctly marked publicly checkable with the explicit caveat that the article\nnames no data provider.\n\nThe brief also discloses, in *How much to trust it* and *The fine print*, that HFS's own figures are\nself-attributed and externally unverified, and that the public-market facts should be re-sourced to\nfilings before reuse. Those disclosures are accurate and are the point of the bundle's posture, not a\ndefect.\n\n## Follow-ups\n\nNone. The page is sound as published.",
       "updated": "2026-06-30",
       "sources": []
     },
     {
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "path": "how-these-briefs-work.md",
-      "url": "https://knowledge.onesteplabs.com/ai-research-briefs/how-these-briefs-work/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/research-briefs/how-these-briefs-work/",
       "title": "How These Briefs Work",
       "description": "What every brief contains, how to read it, and how much to trust it.",
       "tags": [
-        "ai-research-briefs",
+        "research-briefs",
         "architecture"
       ],
       "body": "Every brief in this bundle follows the same shape. Once you know it, you can read any\nbrief here in a couple of minutes and know exactly where to look for the part you need.\n\n## What's in every brief\n\nEach brief opens with a short **paper header**: the title, the authors, where and when it\nwas published, who it's really for, and a link to the original. The link matters — a brief\nis our read of the paper, not a replacement for it. If a brief changes how you think, go\nread the source.\n\nThen six sections, always in this order:\n\n- **The one-line takeaway** — what the paper found and why you'd care, in a sentence.\n- **What they did** — the study in plain language. Enough method to trust the rest, no more.\n- **What they found** — the few results that matter, with the actual numbers.\n- **How much to trust it** — the honest read. Sample size, who funded it, peer-reviewed or\n  preprint, whether the conclusions follow from the evidence, and where it overclaims.\n- **So what — for you** — what you'd do differently because of this. The reason you're here.\n- **The fine print** — limits, scope, and where not to over-apply the result.\n\n## How to read \"How much to trust it\"\n\nThis is the section to slow down on. A paper can be interesting and still be thin, early,\nor funded by someone with a stake in the answer. We flag those things plainly so you can\nweigh the finding yourself.\n\nTreat it as a flag to slow down, not a final verdict. A preprint with a small sample isn't\nworthless — it's early. A well-funded result isn't fake — it's worth a second look. The\nsection gives you the questions a careful reader would ask. You decide what the answer is\nworth.\n\n## How briefs are grouped\n\nBriefs are sorted into themes so you can follow the area you care about. A theme shows up on\nthe site once it has its first brief, so the list fills in over time. The themes we're\nworking toward:\n\n- **Agents and tool use** — AI that takes multi-step action and uses tools.\n- **Reasoning and capabilities** — what models can and can't do, and how they plan.\n- **Training and efficiency** — how models are built, tuned, and made cheaper to run.\n- **Evaluation and benchmarks** — how AI gets measured, tested, and compared.\n- **Safety and alignment** — keeping AI useful and reducing real harms.\n\n## What a brief is not\n\nA brief is a starting point, not a citation you can lean on. We summarize one paper and add\nour own plain-language read; we don't re-run the experiments. The numbers in a brief are\nchecked against the paper itself, but the paper can still be wrong. When a decision rides on\na result, read the original and check it for yourself.\n\nEach brief reflects the paper as it stood when we wrote it. A later paper doesn't change an\nold brief — it gets its own. So a brief is a snapshot, dated at the top, of one piece of\nwork at one moment.",
@@ -279,9 +279,9 @@
       "sources": []
     },
     {
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "path": "agents-and-tool-use/the-verification-horizon.md",
-      "url": "https://knowledge.onesteplabs.com/ai-research-briefs/agents-and-tool-use/the-verification-horizon/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/research-briefs/agents-and-tool-use/the-verification-horizon/",
       "title": "There's No Silver Bullet for Coding-Agent Rewards",
       "description": "Why a single reward can't keep a coding agent honest, and what a layered verification stack does instead.",
       "tags": [
@@ -302,9 +302,9 @@
       ]
     },
     {
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "path": "reasoning-and-capabilities/causal-caution.md",
-      "url": "https://knowledge.onesteplabs.com/ai-research-briefs/reasoning-and-capabilities/causal-caution/",
+      "url": "https://knowledge.onesteplabs.com/ai-briefs/research-briefs/reasoning-and-capabilities/causal-caution/",
       "title": "Why AI Drops Its Caution the Moment You Ask for Advice",
       "description": "AI that hedges a correlation in analysis asserts it as cause-and-effect once you ask for advice — and a re-prompt brings the caution back.",
       "tags": [
@@ -6095,11 +6095,11 @@
   ],
   "glossaries": [
     {
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "terms": []
     },
     {
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "terms": [
         {
           "term": "Preprint",
@@ -6352,52 +6352,52 @@
   "changes": [
     {
       "date": "2026-07-01",
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "entry": "Creation**: new brief — Enterprise AI Is Not a Startup, a read of Aaron Levie's argument that enterprise AI is constrained by workflow, data, and accountability, not model quality."
     },
     {
       "date": "2026-07-01",
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "entry": "Creation**: new brief — The Great Value Migration, a read of an investor's thesis that AI value shifts from selling compute to owning and orchestrating it."
     },
     {
       "date": "2026-07-01",
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "entry": "Creation**: new theme — Strategy and Investment, briefs on where capital is moving in AI and what the strategic bets look like."
     },
     {
       "date": "2026-06-30",
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "entry": "Creation**: first brief — The AI Adoption Gap, a read of an HFS Research thesis on AI valuations versus enterprise adoption."
     },
     {
       "date": "2026-06-30",
-      "bundle": "ai-industry-briefs",
+      "bundle": "industry-briefs",
       "entry": "Creation**: new bundle — plain-language briefs of analyst and market commentary on AI for business leaders, with the first theme Market and Adoption."
     },
     {
       "date": "2026-06-29",
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "entry": "Creation**: Brief — AI models drop their causal caution when asked for advice (asserting cause-and-effect they'd hedge under analysis), and a one-line re-prompt restores it. Opens the Reasoning and Capabilities theme; first paper surfaced by the business-relevance discovery filter. — Why AI Drops Its Caution the Moment You Ask for Advice"
     },
     {
       "date": "2026-06-29",
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "entry": "Creation**: First brief — why no single reward keeps a coding agent honest, and what a layered verification stack does instead. — There's No Silver Bullet for Coding-Agent Rewards"
     },
     {
       "date": "2026-06-29",
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "entry": "Creation**: New bundle — plain-language briefs of notable AI research papers, grouped by theme. — AI Research Briefs"
     },
     {
       "date": "2026-06-29",
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "entry": "Creation**: Reader guide to the brief format and how to read the trust section. — How These Briefs Work"
     },
     {
       "date": "2026-06-29",
-      "bundle": "ai-research-briefs",
+      "bundle": "research-briefs",
       "entry": "Creation**: Theme sections — Agents and Tool Use, Reasoning and Capabilities, Training and Efficiency, Evaluation and Benchmarks, Safety and Alignment."
     },
     {

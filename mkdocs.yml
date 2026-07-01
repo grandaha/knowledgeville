@@ -55,6 +55,28 @@ extra:
 plugins:
   - search
   - awesome-pages
+  # Redirect the pre-restructure AI-briefs URLs to their new homes under /ai-briefs/.
+  - redirects:
+      redirect_maps:
+        ai-research-briefs/index.md: ai-briefs/research-briefs/index.md
+        ai-research-briefs/how-these-briefs-work.md: ai-briefs/research-briefs/how-these-briefs-work.md
+        ai-research-briefs/glossary.md: ai-briefs/research-briefs/glossary.md
+        ai-research-briefs/agents-and-tool-use/index.md: ai-briefs/research-briefs/agents-and-tool-use/index.md
+        ai-research-briefs/agents-and-tool-use/the-verification-horizon.md: ai-briefs/research-briefs/agents-and-tool-use/the-verification-horizon.md
+        ai-research-briefs/reasoning-and-capabilities/index.md: ai-briefs/research-briefs/reasoning-and-capabilities/index.md
+        ai-research-briefs/reasoning-and-capabilities/causal-caution.md: ai-briefs/research-briefs/reasoning-and-capabilities/causal-caution.md
+        ai-industry-briefs/index.md: ai-briefs/industry-briefs/index.md
+        ai-industry-briefs/how-these-briefs-work.md: ai-briefs/industry-briefs/how-these-briefs-work.md
+        ai-industry-briefs/glossary.md: ai-briefs/industry-briefs/glossary.md
+        ai-industry-briefs/market-and-adoption/index.md: ai-briefs/industry-briefs/market-and-adoption/index.md
+        ai-industry-briefs/market-and-adoption/the-ai-adoption-gap.md: ai-briefs/industry-briefs/market-and-adoption/the-ai-adoption-gap.md
+        ai-industry-briefs/market-and-adoption/enterprise-ai-is-not-a-startup.md: ai-briefs/industry-briefs/market-and-adoption/enterprise-ai-is-not-a-startup.md
+        ai-industry-briefs/strategy-and-investment/index.md: ai-briefs/industry-briefs/strategy-and-investment/index.md
+        ai-industry-briefs/strategy-and-investment/the-great-value-migration.md: ai-briefs/industry-briefs/strategy-and-investment/the-great-value-migration.md
+        ai-research-briefs/validation/index.md: ai-briefs/research-briefs/validation/index.md
+        ai-industry-briefs/validation/index.md: ai-briefs/industry-briefs/validation/index.md
+        ai-industry-briefs/validation/audits/index.md: ai-briefs/industry-briefs/validation/audits/index.md
+        ai-industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap.md: ai-briefs/industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap.md
 
 # Every overview.md is an AUTHORED SOURCE whose body is spliced into its directory's
 # generated index.md by build_index.py — so no overview.md renders as its own page.

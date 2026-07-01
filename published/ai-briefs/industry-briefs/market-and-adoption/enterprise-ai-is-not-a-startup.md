@@ -57,13 +57,13 @@ Read the qualitative argument closely and hold the numbers loosely.
 
 **No independent source.** Everything traces back to one interview and one analyst's reading of it. Nothing here is corroborated by third-party research.
 
-What holds up best is the core claim. The binding constraint on enterprise AI is workflow, data, and accountability, not model IQ. That matches what broader adoption research keeps finding: pilots stall on enterprise readiness, not model quality (see our [The AI Adoption Gap](/ai-industry-briefs/market-and-adoption/the-ai-adoption-gap.md) brief).
+What holds up best is the core claim. The binding constraint on enterprise AI is workflow, data, and accountability, not model IQ. That matches what broader adoption research keeps finding: pilots stall on enterprise readiness, not model quality (see our [The AI Adoption Gap](/ai-briefs/industry-briefs/market-and-adoption/the-ai-adoption-gap.md) brief).
 
 ## So what — for you
 
 - **Stop shopping for the smartest model; start fixing the workflow.** Your bottleneck is your processes and data, not the leaderboard.
 - **Budget and org-design for agent operators.** If a new supervisory role is coming, plan the headcount and accountability now, not after the tools land.
-- **Concentrate frontier models on your highest-value work.** Give the best models to the few percent of work that pays for them. Use cheaper models for the rest — the same intelligence-per-dollar logic in our [The Great Value Migration](/ai-industry-briefs/strategy-and-investment/the-great-value-migration.md) brief.
+- **Concentrate frontier models on your highest-value work.** Give the best models to the few percent of work that pays for them. Use cheaper models for the rest — the same intelligence-per-dollar logic in our [The Great Value Migration](/ai-briefs/industry-briefs/strategy-and-investment/the-great-value-migration.md) brief.
 - **Plan for AI as an investment, not a cut.** If Levie is even directionally right, budgets go up, not down. Frame it as new capability, not cost savings.
 
 ## The fine print

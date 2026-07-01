@@ -163,3 +163,19 @@
   verified: 2026-07-01
   status: secondary-mirror
   expires: 2026-12-31
+
+# --- Enterprise AI Is Not a Startup (Phil Fersht / HFS, on Aaron Levie) ---
+# Single-source brief: this one entry represents the briefed article. It is PRIMARY for its own
+# figures; the figures are Levie's projections and Fersht's framing, reported by the article.
+- id: ev-hfs-levie-enterprise-ai-2026
+  claim: "Phil Fersht's read of Aaron Levie's argument that enterprise AI is constrained by workflow, data, and accountability rather than model quality, with Levie's projections: tech is 10-12% of GDP, 500k-1M new agent-operator roles, roughly doubling enterprise tech spend, and pointing the best models at the top 5-10% of work"
+  value: "tech 10-12% of GDP; 500,000 to a million agent-operator roles; ~doubles enterprise tech spend; best models for the top 5-10% of work"
+  wording: "the tech industry represents 10-12% of GDP; the other 88% is where the transformation happens; Levie puts the job creation at 500,000 to a million roles; this probably doubles global enterprise technology spend; identify the 5-10% of your workforce doing the highest-value work"
+  source:
+    org: "HFS Research (Phil Fersht)"
+    report: "Stop treating enterprise AI like a Silicon Valley startup: Aaron Levie tells you why"
+    edition: 2026
+    url: https://www.horsesforsources.com/aaron-levie_060626/
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary

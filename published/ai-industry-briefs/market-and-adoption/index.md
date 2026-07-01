@@ -14,4 +14,5 @@ for your organization.
 
 | Page | Last updated |
 | --- | --- |
+| [Enterprise AI Is Not a Startup](enterprise-ai-is-not-a-startup.md)<br>Aaron Levie's case that real AI transformation happens in the 88% of the economy constrained by legacy systems and regulation, not model quality. | Updated 2026-07-01 |
 | [The AI Adoption Gap](the-ai-adoption-gap.md)<br>An analyst thesis on why AI's market valuations have outrun real enterprise adoption, and what leaders should do about it. | Updated 2026-06-30 |

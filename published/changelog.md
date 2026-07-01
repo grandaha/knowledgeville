@@ -11,6 +11,20 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.0.0 — 2026-07-01
+
+## New & expanded content
+
+- **Open Knowledge Format** — a new bundle explaining OKF, the open format this whole knowledge base is built on, for knowledge and strategy leaders. Two arcs across seven pages:
+  - **Understanding OKF** — what OKF is, how it works, where it fits against RAG, knowledge graphs, and plain docs, and how it handles provenance.
+  - **The Potential** — our grounded read of where it could go: knowledge for agents, the honest gaps in v0.1, and whether the direction fits you.
+
+  Facts are grounded in the canonical OKF specification; the forward-looking half is our analysis, marked as such.
+
+## Site & structure
+
+- **Open Knowledge Format now leads** the knowledge base — first in the bundle list on the homepage and first in the site navigation, since it is the format everything else is built on.
+
 ## v4.2.0 — 2026-07-01
 
 ## New & expanded content

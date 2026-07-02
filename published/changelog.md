@@ -11,6 +11,20 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v7.0.0 — AI Enablement bundle — 2026-07-02
+
+### New bundle: AI Enablement
+
+The operator's manual for the person accountable for AI adoption inside an organization — the **AI Enablement Lead**. A new top-level bundle, sibling to Enterprise AI Transformation (which covers the program at leadership altitude); this is the enablement seat, deep.
+
+Eight pages:
+- **What AI Enablement Is — and the Role** — the discipline, why adoption is the binding constraint, and the role/title taxonomy.
+- **Who's Accountable for What** — the shared-accountability model up the chain, so you are not made accountable for adoption you cannot control.
+- **Standing Up the Function** — Center of Excellence models, the AI Council, funding, and decision rights.
+- **Finding Where AI Earns Its Keep**, **Building the Champion Network**, **Enablement That Sticks**, **Measuring Adoption**, and **When It Stalls** — the operator's how-to arc.
+
+Grounded in primary sources (IBM CEO Study 2026, Microsoft AI Center of Excellence guidance), citation-audited, and dual-gated.
+
 ## v6.1.1 — 2026-07-02
 
 ## Site & structure

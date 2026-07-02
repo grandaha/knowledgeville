@@ -1,0 +1,56 @@
+# evidence.yaml — public provenance record for the Decision Guides bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-mckinsey-oxford-it-projects-2012
+  claim: "Large IT projects routinely overrun budget and schedule and under-deliver value (McKinsey–University of Oxford study of 5,400+ large IT projects)"
+  value: "45% over budget, 7% over time, 56% less value than predicted; 17% go so badly they threaten the company's existence"
+  wording: "Large IT projects, on average, run 45 percent over budget and 7 percent over time, while delivering 56 percent less value than predicted."
+  source:
+    org: "McKinsey & Company with the BT Centre for Major Programme Management, University of Oxford"
+    report: "Delivering large-scale IT projects on time, on budget, and on value"
+    edition: 2012
+    url: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2028-07-01
+- id: ev-glass-software-maintenance-2003
+  claim: "Maintenance is the majority of a software system's total lifecycle cost"
+  value: "40-80% of software cost (average ~60%)"
+  wording: "Maintenance typically consumes 40 to 80 percent (average, 60 percent) of software costs. Therefore, it is probably the most important life cycle phase of software."
+  source:
+    org: "Robert L. Glass"
+    report: "Facts and Fallacies of Software Engineering (Fact 41), Addison-Wesley (ISBN 0-321-11742-5)"
+    edition: 2003
+    url: https://www.informit.com/store/facts-and-fallacies-of-software-engineering-9780321117427
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+- id: ev-moore-core-vs-context-2000
+  claim: "Geoffrey Moore's core-vs-context: do the work that differentiates you (core) in-house; standardize or outsource everything else (context)"
+  value: "n/a — strategy framework"
+  wording: "Core is anything that contributes directly to competitive differentiation... Context is everything else — all the things that you or your company or product must do to pass muster but which do not differentiate you."
+  source:
+    org: "Geoffrey Moore"
+    report: "Living on the Fault Line (core-vs-context; later extended in Dealing with Darwin)"
+    edition: 2000
+    url: https://geoffreyamoore.com/book/living-on-the-fault-line/
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary

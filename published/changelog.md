@@ -11,6 +11,13 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v6.0.0 — 2026-07-02
+
+## New & expanded content
+
+- **Decision Guides** — a new area of cited, plain-language guides for the recurring, consequential decisions a knowledge worker faces: the real options, the criteria that matter, the tradeoffs with sources, and when each choice wins. Built to be used with your AI assistant — connect it and your agent works from grounded, sourced criteria instead of a generic pros-and-cons list.
+- **First guide: Build vs. Buy** — whether to build a capability in-house or buy it off the shelf, anchored in primary-source evidence (McKinsey–Oxford on IT-project risk, the software-maintenance cost share, and Geoffrey Moore's core-vs-context).
+
 ## v5.4.1 — 2026-07-02
 
 ## Site & structure

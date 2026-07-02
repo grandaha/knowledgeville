@@ -4,14 +4,14 @@ okf_version: "0.1"
 
 # Welcome to Knowledgeville
 
-Knowledgeville is the public knowledge base from **[One Step Labs](https://www.onesteplabs.com)** —
-research on the things we find important, shared openly so it's useful beyond us.
+Knowledgeville is my public knowledge base — research on the things I find important, shared openly
+so it's useful beyond me. It's part of what I'm building at **[One Step Labs](https://www.onesteplabs.com)**.
 
-The direction is One Step Labs'; the research and writing are done with Claude. We publish it here as
-structured, openly-licensed concepts — frameworks, playbooks, assessments, and references built on the
+I do the research and writing with Claude, and publish it here as structured, openly-licensed
+concepts — frameworks, playbooks, assessments, and references built on the
 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-and continuously validated. We began with enterprise AI transformation and are expanding into practical,
-everyday AI use; more topics will follow.
+and continuously validated. I started with enterprise AI transformation and I'm expanding into
+practical, everyday AI use; more topics will follow.
 
 ## Three ways to use this
 
@@ -45,12 +45,12 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   enterprise: strategy & leadership, governance & risk, data readiness, platform,
   workflow, adoption, talent, and measurement.
 
-- **[AI Use Cases](/ai-use-cases/index.md)** — practical, hands-on ways to put AI
-  to work, grouped into sub-domains. **[Everyday Tasks](/ai-use-cases/everyday-tasks/index.md)**
-  is copy-paste recipes — a ready-to-run prompt plus a before-and-after — for writing,
-  editing, summarizing, planning, and more. **[Executive Leadership](/ai-use-cases/executive-leadership/index.md)**
-  brings the same demo-first approach to the C-suite: board updates, budget reviews,
-  org calls, and the messages that can't land wrong.
+- **[AI Use Cases](/ai-use-cases/index.md)** — practical, hands-on ways to put AI to work,
+  grouped into sub-domains for different people and jobs. Most are copy-paste recipes — a
+  ready-to-run prompt plus a before-and-after — for [everyday tasks](/ai-use-cases/everyday-tasks/index.md),
+  [executives](/ai-use-cases/executive-leadership/index.md), and [realtors](/ai-use-cases/realtors/index.md).
+  The newest, **[AI Playbooks](/ai-use-cases/ai-playbooks/index.md)**, go a step further: procedures
+  an AI assistant runs for you across your email and calendar. More sub-domains over time.
 
 - **[AI Briefs](/ai-briefs/index.md)** — plain-language briefs of the AI work you won't read
   in full, in two kinds: **research briefs** of notable papers (what a study found and how much

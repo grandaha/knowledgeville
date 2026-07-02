@@ -3,13 +3,20 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-07-01"
+timestamp: "2026-07-02"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v5.3.2 — 2026-07-02
+
+## Site & structure
+
+- The homepage now speaks in the first person — Knowledgeville is written and shared by me, still linking out to One Step Labs.
+- Refreshed the AI Use Cases summary to include Realtors and the new AI Playbooks, and to stay current as more sub-domains are added.
 
 ## v5.3.1 — 2026-07-01
 

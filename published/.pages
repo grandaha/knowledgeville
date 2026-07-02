@@ -1,4 +1,8 @@
 nav:
   - index.md
   - open-knowledge-format
+  - changelog.md
+  - enterprise-ai-transformation
+  - ai-briefs
+  - ai-use-cases
   - ...

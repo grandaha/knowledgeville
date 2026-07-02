@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.4.1 — 2026-07-02
+
+## Site & structure
+
+- Reordered the top-level navigation so Enterprise AI Transformation sits directly below What's Changed and above AI Briefs.
+
 ## v5.4.0 — 2026-07-02
 
 ## New & expanded content

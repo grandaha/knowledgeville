@@ -179,3 +179,19 @@
     pdf_hash:
   verified: 2026-07-01
   status: primary
+
+# --- Exposed but Unprepared (HFS: 27M jobs exposed across the Global 2000) ---
+# Single-source brief: one entry for the briefed article. PRIMARY for its own figures — all from
+# HFS Research's own study of 505 AI leaders across the Global 2000; no third-party attribution.
+- id: ev-hfs-jobs-exposed-2026
+  claim: "HFS Research's study of AI's exposure of Global 2000 white-collar jobs and the strategy gap behind the cuts: roles exposed, strategy maturity, workers in unprepared orgs, recent cuts citing AI, and workforce plans by AI maturity"
+  value: "27M roles exposed over 3 years; 14% clear strategy (86% not); 17-20M workers in orgs with no strategy; 216,000+ cut across 12 firms since 2024, 71% citing AI; least-mature planning cuts 28% vs 2% most-mature; headcount growth 0% vs 37%"
+  wording: "Twenty-seven million... corporate roles across the Global 2000 that HFS Research identifies as meaningfully exposed to AI-driven elimination, displacement, or fundamental redesign over the next three years; only 14% have a clear enterprise AI strategy... The remaining 86% are split between strategies that are still developing and inconsistent (39%), AI activity that exists only in pockets (32%), and no defined strategy at all (15%); between 17 and 20 million workers sit inside Global 2000 organizations with no clear AI strategy; More than 216,000 roles have already been cut across just 12 Global 2000 companies since 2024, with 71% of those announcements citing AI as a driver; 28% of the least AI-mature organizations... are already planning active workforce cuts. Among the most mature, 2%. Zero percent of the least mature expect to grow headcount... Among the most mature, 37% do"
+  source:
+    org: "HFS Research (Dana Daher, Phil Fersht, Melissa Fersht)"
+    report: "Over 27 million jobs are exposed to AI-evaporation across the Global 2000"
+    edition: 2026
+    url: https://www.horsesforsources.com/over-27-million-jobs-are-exposed_051726/
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary

@@ -35,3 +35,4 @@ More themes will appear as the bundle grows. See [How These Briefs Work](/ai-bri
 | [Market and Adoption](market-and-adoption/)<br>Briefs on how fast AI is actually landing in enterprises and what that means for buyers and vendors. | Updated 2026-06-30 |
 | [Strategy and Investment](strategy-and-investment/)<br>Briefs on where capital is moving in AI and what the strategic bets look like. | Updated 2026-07-01 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-30 |
+| [Workforce and Skills](workforce-and-skills/)<br>Briefs on what AI means for jobs, roles, and how people work. | Updated 2026-07-01 |

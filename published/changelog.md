@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v5.4.0 — 2026-07-02
+
+## New & expanded content
+
+- **AI Briefs — Exposed but Unprepared** — a new brief opening the **Workforce and Skills** theme in Industry Briefs. It reads an HFS Research study finding 27 million Global 2000 jobs exposed to AI over three years, and argues the real problem is how few of those companies (only 14%) have a coherent plan. The brief deliberately defuses the headline: "exposed" bundles job loss with job redesign, the figures are one firm's estimate, and the firm sells the transition it describes — while keeping the useful signal that unprepared companies are cutting hardest and hiring least.
+
 ## v5.3.2 — 2026-07-02
 
 ## Site & structure

@@ -1,5 +1,6 @@
 title: Decision Guides
 nav:
+  - how-these-guides-work.md
   - ...
   - glossary.md
   - validation

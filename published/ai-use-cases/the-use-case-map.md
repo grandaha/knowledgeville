@@ -4,6 +4,7 @@ title: The Use-Case Map
 description: "How this domain is organized — sub-domains, and within Everyday Tasks, the ten task types."
 tags: [ai-use-cases, architecture]
 timestamp: "2026-06-24"
+lead: true
 ---
 
 This page is the map. It shows how **AI Use Cases** is organized so you can find what you need fast — and so the library can grow without turning into a junk drawer.

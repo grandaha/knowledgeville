@@ -4,6 +4,7 @@ title: The Leadership Map
 description: How this sub-domain is organized — six leadership functions and what each is for.
 tags: [executive-leadership, architecture]
 timestamp: "2026-06-28"
+lead: true
 ---
 
 This page is the map. It shows how **Executive Leadership** is organized so you can go straight to the work in front of you — a board update due Friday, a budget review to prep, a hard conversation you've been putting off.

@@ -30,9 +30,9 @@ More themes will appear as the bundle grows. See [How These Briefs Work](/ai-bri
 
 | Page | Last updated |
 | --- | --- |
-| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-30 |
 | [How These Briefs Work](how-these-briefs-work.md)<br>What every industry brief contains, how to read it, and how much to trust it. | Updated 2026-06-30 |
 | [Market and Adoption](market-and-adoption/)<br>Briefs on how fast AI is actually landing in enterprises and what that means for buyers and vendors. | Updated 2026-06-30 |
 | [Strategy and Investment](strategy-and-investment/)<br>Briefs on where capital is moving in AI and what the strategic bets look like. | Updated 2026-07-01 |
-| [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-30 |
 | [Workforce and Skills](workforce-and-skills/)<br>Briefs on what AI means for jobs, roles, and how people work. | Updated 2026-07-01 |
+| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-30 |
+| [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-30 |

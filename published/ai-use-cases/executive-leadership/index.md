@@ -32,12 +32,12 @@ The stakes here are higher than a typo — a figure in a board deck, the tone of
 
 | Page | Last updated |
 | --- | --- |
+| [The Leadership Map](the-leadership-map.md)<br>How this sub-domain is organized — six leadership functions and what each is for. | Updated 2026-06-28 |
 | [Board & Investor](board-investor/)<br>Prepare board updates and the Q&A that follows. | Updated 2026-06-28 |
 | [Communications](communications/)<br>Write the messages a leader sends — routine and high-stakes. | Updated 2026-06-28 |
 | [Decisions & Meetings](decisions-meetings/)<br>Make decisions explicit and run leadership meetings that land. | Updated 2026-06-28 |
 | [Finance & Performance](finance-performance/)<br>Read the numbers, prep reviews, and turn dense financials into a plain read. | Updated 2026-06-28 |
-| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-28 |
 | [People & Org](people-org/)<br>Think through org and hiring calls, and handle people conversations well. | Updated 2026-06-28 |
 | [Strategy & Planning](strategy-planning/)<br>Set direction, scan the field, and pressure-test the plan. | Updated 2026-06-28 |
-| [The Leadership Map](the-leadership-map.md)<br>How this sub-domain is organized — six leadership functions and what each is for. | Updated 2026-06-28 |
+| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-28 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-28 |

@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v6.1.1 — 2026-07-02
+
+## Site & structure
+
+- Consistent navigation: each area now leads with its "start here" page (what it is / how it works), instead of that page landing wherever it fell alphabetically. Fixes, for example, the Decision Guides order so *How These Guides Work* comes before the guides.
+
 ## v6.1.0 — 2026-07-02
 
 ## New & expanded content

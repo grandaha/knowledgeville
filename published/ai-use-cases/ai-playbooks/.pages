@@ -1,5 +1,6 @@
 title: AI Playbooks
 nav:
+  - how-to-run-these.md
   - ...
   - glossary.md
   - validation

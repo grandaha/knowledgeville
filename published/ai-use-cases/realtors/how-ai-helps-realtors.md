@@ -4,6 +4,7 @@ title: How AI Helps Realtors
 description: "How this bundle groups AI prompt recipes for agents, and where an agent must keep human judgment."
 tags: [realtors, architecture]
 timestamp: "2026-06-30"
+lead: true
 ---
 
 Most of an agent's day is words: a listing that has to sing, a follow-up that can't sound

@@ -41,11 +41,11 @@ AI is great at first drafts, options, and structure — and it will sometimes st
 | [Deciding & Comparing](deciding-comparing/)<br>Weigh options to make a choice. | Updated 2026-06-24 |
 | [Editing & Rewriting](editing-rewriting/)<br>Improve text you already have. | Updated 2026-06-24 |
 | [Explaining & Researching](explaining-researching/)<br>Understand something quickly. | Updated 2026-06-24 |
-| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-24 |
 | [Learning & Practicing](learning-practicing/)<br>Study a topic and practice a skill. | Updated 2026-06-24 |
 | [Planning](planning/)<br>Turn intent into a step-by-step plan. | Updated 2026-06-24 |
 | [Replying & Communicating](replying-communicating/)<br>Handle messages and tricky conversations. | Updated 2026-06-24 |
 | [Sorting & Structuring](sorting-structuring/)<br>Turn messy information into clean lists and tables. | Updated 2026-06-24 |
 | [Summarizing](summarizing/)<br>Compress something long into the essentials. | Updated 2026-06-24 |
-| [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-24 |
 | [Writing](writing/)<br>Draft things from a blank page. | Updated 2026-06-24 |
+| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-24 |
+| [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-24 |

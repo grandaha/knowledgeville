@@ -1,5 +1,6 @@
 title: Industry Briefs
 nav:
+  - how-these-briefs-work.md
   - ...
   - glossary.md
   - validation

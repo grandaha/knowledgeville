@@ -4,6 +4,7 @@ title: How These Briefs Work
 description: "What every industry brief contains, how to read it, and how much to trust it."
 tags: [industry-briefs, architecture]
 timestamp: "2026-06-30"
+lead: true
 ---
 
 Every brief in this bundle follows the same shape. Once you know it, you can read any

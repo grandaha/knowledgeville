@@ -18,8 +18,8 @@ The forward-looking half is our analysis, marked as such. Start with
 
 | Page | Last updated |
 | --- | --- |
+| [What OKF Is](what-okf-is.md)<br>A plain-language introduction to the Open Knowledge Format and why a format for knowledge is worth caring about. | Updated 2026-07-01 |
 | [Understanding OKF](01-understanding-okf/)<br>What OKF is today: how it works, where it fits, and how it handles provenance. | Updated 2026-07-01 |
 | [The Potential](02-the-potential/)<br>Our grounded read of where OKF and knowledge-for-agents could go. | Updated 2026-07-01 |
 | [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-07-01 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-07-01 |
-| [What OKF Is](what-okf-is.md)<br>A plain-language introduction to the Open Knowledge Format and why a format for knowledge is worth caring about. | Updated 2026-07-01 |

@@ -23,9 +23,9 @@ recipe touches a rule you can't get wrong, it says so. Start with
 
 | Page | Last updated |
 | --- | --- |
-| [Client Communication](client-communication/)<br>Prompt recipes for follow-ups, explaining offers, and asking for reviews. | Updated 2026-06-30 |
-| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-30 |
 | [How AI Helps Realtors](how-ai-helps-realtors.md)<br>How this bundle groups AI prompt recipes for agents, and where an agent must keep human judgment. | Updated 2026-06-30 |
+| [Client Communication](client-communication/)<br>Prompt recipes for follow-ups, explaining offers, and asking for reviews. | Updated 2026-06-30 |
 | [Listings & Marketing](listings-and-marketing/)<br>Prompt recipes that turn property facts into listings, posts, and open-house promo. | Updated 2026-06-30 |
 | [Prospecting & Outreach](prospecting-and-outreach/)<br>Prompt recipes for farming, expired and FSBO outreach, and referral asks. | Updated 2026-06-30 |
+| [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-06-30 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-06-30 |

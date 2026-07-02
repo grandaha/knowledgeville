@@ -1,5 +1,6 @@
 title: Realtors
 nav:
+  - how-ai-helps-realtors.md
   - ...
   - glossary.md
   - validation

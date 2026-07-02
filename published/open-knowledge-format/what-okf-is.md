@@ -5,6 +5,7 @@ description: A plain-language introduction to the Open Knowledge Format and why 
 resource: "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md"
 tags: [okf, open-knowledge-format]
 timestamp: "2026-07-01"
+lead: true
 ---
 
 The Open Knowledge Format (OKF) is an open format for representing *knowledge* — the context, judgment, and curated insight around your data and systems. It is written so both people and AI agents can read it. Its own definition calls it "an open, human- and agent-friendly format for representing knowledge" ([OKF spec, 2026](#ev-okf-spec-v01-definition)).

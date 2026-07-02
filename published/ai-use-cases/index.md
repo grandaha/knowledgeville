@@ -10,8 +10,8 @@ New here? Start with **[The Use-Case Map](/ai-use-cases/the-use-case-map.md)** t
 
 | Page | Last updated |
 | --- | --- |
+| [The Use-Case Map](the-use-case-map.md)<br>How this domain is organized — sub-domains, and within Everyday Tasks, the ten task types. | Updated 2026-06-24 |
 | [AI Playbooks](ai-playbooks/)<br>Agent-executable playbooks — procedures an AI assistant can read and run across your everyday tools. | Updated 2026-07-01 |
 | [Everyday Tasks](everyday-tasks/)<br>Copy-paste AI recipes for everyday tasks — each page is a ready-to-run prompt with a before-and-after. | Updated 2026-06-24 |
 | [Executive Leadership](executive-leadership/)<br>Demo-first AI recipes and workflows for the C-suite — each page is a runnable prompt or a leadership workflow with a before-and-after. | Updated 2026-06-28 |
 | [Realtors](realtors/)<br>Paste-ready AI prompt recipes for real-estate agents: listings, prospecting, and client communication. | Updated 2026-06-30 |
-| [The Use-Case Map](the-use-case-map.md)<br>How this domain is organized — sub-domains, and within Everyday Tasks, the ten task types. | Updated 2026-06-24 |

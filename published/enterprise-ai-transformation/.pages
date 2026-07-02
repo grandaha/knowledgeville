@@ -1,5 +1,6 @@
 title: Enterprise AI Transformation
 nav:
+  - framework-architecture.md
   - ...
   - glossary.md
   - validation

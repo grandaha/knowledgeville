@@ -4,6 +4,7 @@ title: How to Run These Playbooks
 description: "What an agent-executable playbook is, how to hand one to your assistant, and the read-first guardrails they all share."
 tags: [ai-playbooks, agents]
 timestamp: "2026-07-01"
+lead: true
 ---
 
 Most of the AI recipes people share are prompts you paste. You do the work; the assistant helps with one step. A playbook is different. It is a whole procedure your assistant runs on its own — reading your tools, doing the work, and handing you the result. This page explains how to run one and what keeps it safe.

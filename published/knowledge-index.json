@@ -1,5 +1,5 @@
 {
-  "version": "v6.0.0",
+  "version": "v6.1.0",
   "generated": "2026-07-01",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
@@ -78,7 +78,7 @@
         "verification_posture": "verify-embedded-facts",
         "temporal_mode": "point-in-time-supersedable"
       },
-      "pageCount": 2
+      "pageCount": 3
     },
     {
       "slug": "enterprise-ai-transformation",
@@ -1216,6 +1216,37 @@
       "body": "Every guide in this bundle helps you make one decision well. It does not make the call for you. It gives you the options, the criteria that matter, the tradeoffs with evidence behind them, and the conditions under which each choice wins. Once you know the shape, you can read any guide in a couple of minutes and find the part you need.\n\n## What's in every guide\n\nThe same sections, always in this order:\n\n- **The decision** — what you're deciding, in a sentence, and who tends to face it.\n- **Does this apply to you?** — when this decision comes up, so you know the guide fits your situation before you read on.\n- **The options** — the real choices, each described honestly, without strawmen.\n- **What actually matters** — the handful of criteria that should drive the call, not everything you could weigh.\n- **How the options compare** — the options against those criteria, with the evidence and sources on the claims that carry weight.\n- **When each one wins** — plain \"if your situation is X, lean toward Y.\" This is the part to slow down on.\n- **How to decide** — a short aid: the few questions to answer about your own situation, in order.\n- **Watch out for** — the common traps, how reversible the choice is, and when to bring in a human expert.\n\n## How to read one\n\nSkim **The options** and **What actually matters** to frame the choice. Then spend your time in **When each one wins** and **How to decide** — that's where the guide meets your situation. The **How the options compare** section is where the sourcing lives, so it's the place to check a claim you want to lean on.\n\n## Using a guide with your AI assistant\n\nThis is where a guide earns its keep. Connect this knowledge base to your AI assistant over [MCP](/open-knowledge-format/02-the-potential/01-knowledge-for-agents.md), then ask it to help you decide — \"help me think through build vs. buy for our situation.\" Instead of the confident, unsourced list a generic chatbot produces, your assistant works from the guide. It walks you through the real criteria, weighs the sourced tradeoffs, and applies the \"when each wins\" logic to what you tell it. You still make the call — but on grounded, checkable ground rather than vibes.\n\n## What a guide is not\n\nA guide is not a recommendation for your specific situation. And it's not a substitute for advice when the stakes are high or the details are unusual. It gives you a well-framed, sourced way to think, dated to when it was written. When a lot rides on the call, use it to get sharp. Then check the load-bearing facts against their sources, and bring in someone who knows your specifics.",
       "updated": "2026-07-01",
       "sources": []
+    },
+    {
+      "bundle": "decision-guides",
+      "path": "when-to-let-ai-do-it.md",
+      "url": "https://knowledge.onesteplabs.com/decision-guides/when-to-let-ai-do-it/",
+      "title": "When to Let AI Do It",
+      "description": "How to decide whether to hand a task to AI or do it yourself — where AI earns its keep, and how to keep control.",
+      "tags": [
+        "decision-guides",
+        "ai-use"
+      ],
+      "body": "## The decision\n\nYou have a task in front of you, and AI could plausibly do some or all of it. The question is how much to hand over — from \"AI drafts, I finish\" to \"AI does the whole thing.\" This guide helps you make that call task by task, so you know when to hand it off and when to keep it.\n\n## Does this apply to you?\n\nUse this when a task sits on the line between you and AI. The tool could do it, and you're deciding how much to trust it with. If the task is trivial, or clearly beyond what AI can do today, you don't have a decision to make. This is for the tasks in between, where either choice is defensible.\n\n## The options\n\nThink of it as a dial, not a switch:\n\n- **Do it yourself** — no AI, or AI only as a sounding board.\n- **AI-assisted** — AI does the grunt work; you steer it and make the final call. Augmentation.\n- **Let AI do it, then check** — AI produces the result; you review before it counts.\n- **Fully automate** — AI does it with no per-instance review. The far end, and a high bar.\n\n## What actually matters\n\nA few things should drive the call. Most else is noise:\n\n- **Stakes and reversibility** — how bad is it if the output is wrong, and how cheaply can you undo it?\n- **Verifiability** — can you check the result is right, and check it faster than doing the work yourself?\n- **AI's reliability on this kind of task** — is this something the tool is actually good at?\n- **The value of your time** — is doing this yourself the best use of you?\n- **Accountability** — who answers for the result? AI cannot.\n\n## How the options compare\n\n**Where AI earns its keep.** First drafts, summaries, reformatting, boilerplate, generating options to react to — low-stakes, easily reversible work whose output you can eyeball in seconds. Here, letting AI do it and skimming the result is a clear win.\n\n**Where to keep your hands on it.** The primary agent-guidance is blunt about this ([OpenAI, 2025](#ev-openai-agents-human-oversight-2025)). Keep a human in the loop for actions that are \"sensitive, irreversible, or have high stakes,\" and when the tool keeps failing. Anything you'll be held to, anything hard to take back, anything riding on current facts or real judgment — stay in the loop.\n\n**The verification trap.** Delegating only saves effort if checking the output is cheaper than producing it. If verifying is as hard as doing the task, handing it to AI does not save work — it just hides the risk. It is the same principle that makes AI agents reliable: check the work against reality instead of trusting it blindly ([Anthropic, 2024](#ev-anthropic-effective-agents-groundtruth-2024)).\n\n**Accountability does not transfer.** You still own what goes out under your name. \"The AI did it\" is not a defense, so the more you'll answer for it, the more you review it.\n\n## When each one wins\n\n**Let AI do it (with a quick check) when:**\n\n- The task is low-stakes and easy to reverse.\n- You can verify the output quickly.\n- AI is reliably good at this kind of work.\n- Your time is better spent on something else.\n\n**Do it yourself, or stay hands-on, when:**\n\n- The stakes are high or the result is hard to undo <!-- noev: OpenAI oversight triggers, cited above -->.\n- You can't check the output cheaply.\n- It turns on current facts or judgment that AI gets wrong.\n- You'll be held accountable for specifics you have to stand behind.\n\n**AI-assisted — the common middle — when:**\n\n- AI can do the heavy lifting, but the final call, the voice, or the judgment is yours. Draft with AI; decide for yourself.\n\n**Fully automate only when:**\n\n- The task is repetitive, well-bounded, and low-stakes, and you've watched AI do it reliably at scale. Even then, keep a spot-check.\n\n## How to decide\n\nAnswer these in order, about the task in front of you:\n\n1. **If it's wrong, how bad is it — and can I undo it cheaply?** High-stakes or one-way → stay hands-on.\n2. **Can I check the output faster than I could do it?** No → don't delegate; the verification costs more than it saves.\n3. **Is AI actually good at this kind of task?** Unsure → try it on a low-stakes case first.\n4. **Is my time better spent elsewhere?** Yes, and the above are green → let AI do it.\n5. **Who's accountable?** You → review it before it goes out.\n\n## Watch out for\n\n- **The confident-wrong problem.** AI is most dangerous when it's fluently wrong about something you didn't check. Keep a human check on anything that matters <!-- noev: OpenAI oversight triggers, cited above -->.\n- **The verification trap.** Delegating a task you can't cheaply verify doesn't save work — it moves the risk somewhere you're not looking.\n- **Over-reliance.** Handing over work you need to stay sharp at has a cost that shows up later, not today.\n- **The accountability gap.** You own what goes out under your name; make sure a human has actually read it.\n- **One-way doors.** Never fully automate something you can't take back without a human gate in front of it. For the runnable version of that rule, see the read-first [AI Playbooks](/ai-use-cases/ai-playbooks/index.md).\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **OpenAI — *A Practical Guide to Building Agents*, 2025.** Two primary triggers typically warrant human intervention: Exceeding failure thresholds... High-risk actions: Actions that are sensitive, irreversible, or have high stakes should trigger human oversight. [View source](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf){#ev-openai-agents-human-oversight-2025} · verified 2026-07-01 · primary\n- **Anthropic — *Building Effective Agents*, 2024.** gain ground truth from the environment at each step (such as tool call results or code execution) to assess its progress... It's also common to include stopping conditions (such as a maximum number of iterations) to maintain control. [View source](https://www.anthropic.com/engineering/building-effective-agents){#ev-anthropic-effective-agents-groundtruth-2024} · verified 2026-07-01 · primary",
+      "updated": "2026-07-01",
+      "sources": [
+        {
+          "id": "ev-openai-agents-human-oversight-2025",
+          "org": "OpenAI",
+          "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+          "wording": "Two primary triggers typically warrant human intervention: Exceeding failure thresholds... High-risk actions: Actions that are sensitive, irreversible, or have high stakes should trigger human oversight.",
+          "status": "primary",
+          "verified": "2026-07-01"
+        },
+        {
+          "id": "ev-anthropic-effective-agents-groundtruth-2024",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "wording": "gain ground truth from the environment at each step (such as tool call results or code execution) to assess its progress... It's also common to include stopping conditions (such as a maximum number of iterations) to maintain control.",
+          "status": "primary",
+          "verified": "2026-07-01"
+        }
+      ]
     },
     {
       "bundle": "enterprise-ai-transformation",
@@ -6570,6 +6601,11 @@
       "date": "2026-06-30",
       "bundle": "realtors",
       "entry": "Creation**: new sub-domain bundle — paste-ready AI prompt recipes for real-estate agents, grouped into Listings & Marketing, Prospecting & Outreach, and Client Communication. Compliance (fair housing, do-not-call, and \"not legal advice\") is called out where each recipe touches it."
+    },
+    {
+      "date": "2026-07-01",
+      "bundle": "decision-guides",
+      "entry": "Creation**: new guide — When to Let AI Do It: whether to hand a task to AI or do it yourself, where AI earns its keep, and when to keep a human in the loop."
     },
     {
       "date": "2026-07-01",

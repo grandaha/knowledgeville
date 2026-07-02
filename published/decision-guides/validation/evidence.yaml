@@ -54,3 +54,30 @@
     pdf_hash:
   verified: 2026-07-01
   status: primary
+# --- When to Let AI Do It (human-oversight anchors) ---
+- id: ev-openai-agents-human-oversight-2025
+  claim: "Keep a human in the loop for sensitive, irreversible, or high-stakes actions, and when an agent exceeds failure thresholds"
+  value: "two triggers for human intervention: exceeding failure thresholds; and high-risk (sensitive, irreversible, or high-stakes) actions"
+  wording: "Two primary triggers typically warrant human intervention: Exceeding failure thresholds... High-risk actions: Actions that are sensitive, irreversible, or have high stakes should trigger human oversight."
+  source:
+    org: "OpenAI"
+    report: "A Practical Guide to Building Agents"
+    edition: 2025
+    url: https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01
+- id: ev-anthropic-effective-agents-groundtruth-2024
+  claim: "Let AI check its work against reality and keep stopping conditions, rather than trusting output blindly"
+  value: "gain ground truth from the environment at each step; include stopping conditions to maintain control"
+  wording: "gain ground truth from the environment at each step (such as tool call results or code execution) to assess its progress... It's also common to include stopping conditions (such as a maximum number of iterations) to maintain control."
+  source:
+    org: "Anthropic"
+    report: "Building Effective Agents"
+    edition: 2024
+    url: https://www.anthropic.com/engineering/building-effective-agents
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01

@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v6.1.0 — 2026-07-02
+
+## New & expanded content
+
+- **Decision Guides — When to Let AI Do It** — a new guide on whether to hand a task to AI or do it yourself: where AI earns its keep, where to keep your hands on the work, and how to decide task by task. Anchored in primary agent-guidance on when to keep a human in the loop (sensitive, irreversible, or high-stakes work).
+
 ## v6.0.0 — 2026-07-02
 
 ## New & expanded content

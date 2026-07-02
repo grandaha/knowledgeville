@@ -1,0 +1,97 @@
+# evidence.yaml — public provenance record for the AI Enablement bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-ibm-ceo-study-2026-adoption-over-technology
+  claim: "CEOs saying AI success depends more on people's adoption than on the technology"
+  value: "83%"
+  wording: "83% of CEOs surveyed say AI success depends more on people's adoption than technology."
+  source:
+    org: "IBM Institute for Business Value (with Oxford Economics)"
+    report: "IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era"
+    edition: 2026
+    url: https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-ibm-ceo-study-2026-caio-prevalence
+  claim: "Surveyed organizations with a Chief AI Officer, 2026 vs 2025"
+  value: "76% in 2026, up from 26% in 2025"
+  wording: "76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025."
+  source:
+    org: "IBM Institute for Business Value (with Oxford Economics)"
+    report: "IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era"
+    edition: 2026
+    url: https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-ibm-ceo-study-2026-workforce-regular-use
+  claim: "Share of the workforce using AI regularly as part of their job"
+  value: "25%"
+  wording: "Surveyed CEOs say only 25% of the workforce is using AI regularly as part of their job."
+  source:
+    org: "IBM Institute for Business Value (with Oxford Economics)"
+    report: "IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era"
+    edition: 2026
+    url: https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-definition
+  claim: "What an AI Center of Excellence is and does"
+  value: "an internal team of experts that drives AI adoption and prevents fragmented or ungoverned use"
+  wording: "An AI CoE consists of an internal team of experts who drive successful and valuable AI outcomes. The AI CoE prevents fragmented or ungoverned AI adoption."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-operating-model-lifecycle
+  claim: "AI CoE operating-model lifecycle — centralized early, advisory as adoption matures"
+  value: "centralized for control and consistency early; advisory for flexibility as adoption matures"
+  wording: "Companies at an early stage of their AI journey benefit from a centralized CoE to consolidate expertise and foundational practices. As your AI adoption matures, you should move toward an advisory approach where the AI CoE supports AI use. A centralized model ensures control and consistency, while an advisory approach provides flexibility."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-executive-sponsorship
+  claim: "Executive sponsorship is required for the enablement function to enforce standards and drive change"
+  value: "without executive backing the function cannot enforce standards or drive organizational change"
+  wording: "Executive sponsorship provides the budget, authority, and organizational credibility that the AI CoE needs to succeed. Without executive backing, the AI CoE can't enforce standards or drive organizational change."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02

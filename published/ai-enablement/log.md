@@ -1,0 +1,5 @@
+# Change log — AI Enablement
+
+## 2026-07-02
+
+* **Creation**: New bundle — the operator's manual for the AI Enablement Lead, the person accountable for AI adoption inside an organization. The intro [What AI Enablement Is — and the Role](/ai-enablement/what-ai-enablement-is.md) plus the full operator's arc: [Who's Accountable for What](/ai-enablement/02-who-is-accountable-for-what.md), [Standing Up the Function](/ai-enablement/03-standing-up-the-function.md), [Finding Where AI Earns Its Keep](/ai-enablement/04-finding-where-ai-earns-its-keep.md), [Building the Champion Network](/ai-enablement/05-building-the-champion-network.md), [Enablement That Sticks](/ai-enablement/06-enablement-that-sticks.md), [Measuring Adoption](/ai-enablement/07-measuring-adoption.md), and [When It Stalls, and Keeping It Alive](/ai-enablement/08-when-it-stalls.md). Selective citation posture: the evidence that adoption is the binding constraint and the operating-model facts are cited to primary sources (IBM CEO Study 2026, Microsoft AI Center of Excellence guidance); the operator methods are grounded practice.

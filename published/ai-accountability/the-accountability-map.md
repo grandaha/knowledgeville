@@ -38,8 +38,8 @@ Accountability for AI outcomes roughly splits top to bottom:
 Alongside that chain sit specialist roles, each accountable for a risk the others don't
 cover:
 
-- **AI Governance Lead** *(planned)* — operationalizes AI policy, regulatory conformance,
-  and fairness/ethical-use review.
+- **[AI Governance Lead](/ai-accountability/ai-governance-lead/index.md)** — operationalizes
+  AI policy, regulatory conformance, and fairness/ethical-use review.
 - **[AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)** — owns model-level
   risk: accuracy, validation, and drift, distinct from policy or adoption.
 - **AI Security Lead** *(planned)* — adversarial testing and model-level security (prompt
@@ -47,8 +47,8 @@ cover:
 
 ## What's live vs. planned
 
-**AI Enablement**, **Chief AI Officer**, **AI Transformation Lead**, and **AI Risk Officer**
-are authored today. The other two roles are named here as the domain's intended scope so
-the map is honest about where it's going, without shipping empty bundles for roles that
-haven't been researched yet. Each gets stood up as its own bundle — profile, glossary, and
-operator's manual — when it's ready to be written.
+**AI Enablement**, **Chief AI Officer**, **AI Transformation Lead**, **AI Risk Officer**,
+and **AI Governance Lead** are authored today. **AI Security Lead** is named here as the
+domain's remaining intended scope so the map is honest about where it's going, without
+shipping an empty bundle for a role that hasn't been researched yet. It gets stood up as
+its own bundle — profile, glossary, and operator's manual — when it's ready to be written.

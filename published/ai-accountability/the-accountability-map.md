@@ -49,3 +49,14 @@ cover:
 All six roles are authored, listed above in hierarchical order. A role appears on this map
 only once it has a real operator's manual behind it — not scaffolded empty and filled in
 later.
+
+## What this map doesn't cover
+
+Six roles is not the same as six seats in a transformation program. Data readiness,
+platform, workflow, talent, and measurement all need an owner too — they just aren't
+run by a new, AI-specific accountability seat. Each is typically owned by an existing role
+whose remit AI has expanded (the CDO, platform engineering, business-unit leaders, the
+CLO/HR function, the CFO) rather than a dedicated title. See
+[Program Architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md#roles-from-the-cdao-to-the-working-teams)
+in Enterprise AI Transformation for who typically holds each of those seats, and how they
+sit alongside the six roles mapped here.

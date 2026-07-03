@@ -3553,3 +3553,29 @@
   verified: 2026-06-21
   status: primary
   expires: 2027-10-17
+- id: ev-shrm-state-of-ai-hr-2026-upskilling-lead
+  claim: "Organizational function closest to leading AI upskilling/reskilling"
+  value: "28%"
+  wording: "Upskilling and reskilling the workforce was the only area of AI implementation where HR functions were close to taking the lead (28%)"
+  source:
+    org: SHRM
+    report: "The State of AI in HR 2026 Report"
+    edition: 2026
+    url: https://www.shrm.org/topics-tools/research/state-of-ai-hr-2026/full-report
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-06-30
+- id: ev-fortune-cfo-ai-value-2026-substantial-value
+  claim: "Organizations achieving substantial AI value when CFOs own value accountability"
+  value: "2% assign it to CFOs; 76% of those achieve substantial value"
+  wording: "only 2% of companies assign CFOs this accountability role, yet when they do, 76% achieve substantial value"
+  source:
+    org: "Fortune (citing Return on AI Institute research)"
+    report: "Why CFOs—not chief AI officers—are the secret to getting real value from AI"
+    edition: 2026
+    url: https://fortune.com/2026/03/27/why-cfo-not-chief-ai-officer-secret-getting-real-value-ai/
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-03-27

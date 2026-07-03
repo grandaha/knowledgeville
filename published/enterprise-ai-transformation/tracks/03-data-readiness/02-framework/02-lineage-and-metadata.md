@@ -3,12 +3,19 @@ type: Concept
 title: Lineage & Metadata
 description: The evidence layer that makes data quality, governance, and access provable — four lineage types, column-level lineage, active metadata, the business glossary, model lineage, and the AI context layer.
 tags: [data-lineage, metadata, active-metadata, business-glossary]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
 
 ## Why Lineage and Metadata Are the Evidence Layer
 
-Data quality, governance, and access are the prerequisites. Lineage and metadata are what make them *provable*. They are the connective tissue that transforms a collection of data assets into a trusted, auditable, AI-ready context layer.
+Data quality, governance, and access are the prerequisites. Lineage and metadata make them
+*provable* — and provability is the requirement that rises fastest as a
+[use case moves toward acting autonomously](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md).
+When a human reviews every output, a lineage gap is an inconvenience: someone catches the
+bad number before it reaches a customer. When nothing reviews the output first, lineage is
+the only thing standing between "the agent acted on this data" and "we can prove what the
+agent acted on, and why." Lineage and metadata connect data quality, governance, and access
+into a trusted, auditable, AI-ready context layer.
 
 Without lineage, you can't answer the questions that matter most when AI goes wrong: Where did this training data come from? Which transformation introduced the error? What downstream models will break if this schema changes? Why did the model produce this output?
 

@@ -3,12 +3,17 @@ type: Concept
 title: Access & Integration
 description: The bridge between data that exists and data AI can use — the silo problem, four integration patterns, lake/warehouse/lakehouse/fabric/mesh architectures, cataloging, and agentic access requirements.
 tags: [data-integration, data-access, data-fabric, data-mesh]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
 
-## AI Can't Act on What It Can't Reach
+## AI Cannot Act on What It Cannot Reach
 
-Access and integration is the bridge between data that exists and data that AI can actually use. Most enterprises have data. Very few have data that is accessible, connected, and structured in a way that AI systems can consume reliably at scale.
+Access and integration matter most for the [use case that routes through a system of
+record](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md),
+where a stale or over-permissioned connection actually costs something. Access and
+integration is the bridge between data that exists and data AI can use. Most enterprises
+have data. Few have data that is accessible, connected, and structured in a way AI systems
+can consume reliably at scale.
 
 The problem isn't storage. It's fragmentation. CRM data in one system, support tickets in another, transaction records in a third — each owned by a different team, each in a different format, each requiring a separate integration effort. AI that needs a unified view of a customer, product, or process hits a wall at every system boundary.
 

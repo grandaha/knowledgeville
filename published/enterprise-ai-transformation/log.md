@@ -15,6 +15,13 @@
   seven-dimension organizational scoring, which is demoted to an optional portfolio lens
   for teams planning several initiatives at once. The interpretation bands no longer read
   as a blanket "fix everything before any AI" gate.
+* **Update**: [Data Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/index.md)
+  overview and [Executive Summary](/enterprise-ai-transformation/tracks/03-data-readiness/01-executive-summary.md)
+  now lead with the use-case diagnostic instead of an estate-wide framing, and the
+  [Data Readiness Framework](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/index.md)
+  reorders to put Lineage & Metadata second — the evidence layer that matters most once a
+  use case acts without review — ahead of Governance and Access & Integration, both of
+  which now cross-link the use-case diagnostic as well.
 * **Update**: [Program Architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md)
   now cross-links its CDAO, AI Program Lead, and Track Owner roles to their matching
   operator's manuals in AI Accountability, and names the typical owner (with cited

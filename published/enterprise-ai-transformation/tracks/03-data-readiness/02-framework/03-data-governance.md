@@ -3,12 +3,20 @@ type: Concept
 title: Data Governance
 description: Why governance is different for AI — ownership, policy infrastructure, bias monitoring, explainability, the NIST / EU AI Act / ISO 42001 landscape, agentic governance, and a readiness checklist.
 tags: [data-governance, ai-governance, eu-ai-act, nist-ai-rmf]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
 
 ## Why Governance Is Different for AI
 
-Traditional data governance was built to manage structured enterprise data for reporting and compliance. It answered questions like: who can access this database, how long do we keep this record, is this field definition consistent across systems?
+For AI, governance means naming who owns the data and the model, and holding them
+accountable for what it does. Its intensity follows the [same axis as every other
+component in this
+framework](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md):
+it rises as a use case moves from routing around the system of record to routing through
+it, and again as it moves from draft to autonomous action. Traditional data governance was
+built to manage structured enterprise data for reporting and compliance. It answered
+questions like: who can access this database, how long do we keep this record, is this
+field definition consistent across systems?
 
 AI governance must answer all of those questions *and* a new set that didn't exist before: Where did the training data come from? Was it ethically sourced and legally permissioned? Does the model reproduce or amplify bias present in that data? Can we explain why the model made a specific decision? Who is accountable when an automated decision causes harm?
 

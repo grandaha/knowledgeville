@@ -3,14 +3,18 @@ type: Concept
 title: Executive Summary
 description: A one-page synthesis of the AI Data Readiness knowledge base — for leaders deciding where to invest before funding AI.
 tags: [data-readiness, executive-summary, ai-investment, data-debt]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
 
 *A one-page synthesis of the AI Data Readiness knowledge base — for leaders deciding where to invest before funding AI.*
 
 ---
 
-Most organizations treat AI as a modeling problem. It is a data problem. The same finding recurs across every section of this knowledge base: AI initiatives rarely fail because the models are inadequate — they fail because the data underneath them was never ready.
+Most organizations treat AI as a modeling problem. For the use cases where it matters, it
+is a data problem. AI initiatives that read or write against a system of record rarely fail
+because the models are inadequate — they fail because the data underneath them was never
+ready. [Which use cases that describes](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md)
+is the first question to answer, not the last.
 
 > **More than 80%** of AI projects fail — and the root cause is data readiness, not model quality ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
 > Only **29%** of enterprises have data that meets the quality, access, and security bar for scaling GenAI ([IBM, 2024](#ev-ibm-ibv-2024-data-readiness-bar))
@@ -20,9 +24,18 @@ Most organizations treat AI as a modeling problem. It is a data problem. The sam
 
 AI data readiness rests on Data Quality, Data Governance, Access & Integration, Lineage & Metadata, Infrastructure Readiness, and Security & Compliance. A weakness in any one caps what AI can reliably do, regardless of strength in the others — which is why investment spread evenly across all six underperforms investment targeted at the single binding constraint.
 
-## Readiness is measurable, and should be measured before funding
+## Readiness is measurable: minutes for one use case, a session for a portfolio
 
-A seven-dimension assessment — Data, Governance, Infrastructure, Talent, Process, Risk & Compliance, and Strategy & Culture — each scored 1–5 on evidence rather than intent, places an organization on a five-level maturity ladder from Nascent to Transformational. Most enterprise programs sit at Level 3 (Emerging) in 2026, and the Level 3 → 4 jump — from working pilots to scaled production — is where most stall. The assessment's purpose is not a score to report upward but a prioritized gap list that changes what gets funded in the next 90 days.
+Placing a single use case on its data path and autonomy level takes minutes and tells you
+whether it needs anything from this knowledge base at all. For a portfolio of use cases
+that route through a system of record at rising autonomy, an optional seven-dimension
+assessment — Data, Governance, Infrastructure, Talent, Process, Risk & Compliance, and
+Strategy & Culture — each scored 1–5 on evidence rather than intent, places the
+organization on a five-level maturity ladder from Nascent to Transformational. Most
+enterprise programs sit at Level 3 (Emerging) in 2026, and the Level 3 → 4 jump — from
+working pilots to scaled production — is where most stall. Either way, the purpose is not
+a score to report upward but a prioritized gap list that changes what gets funded in the
+next 90 days.
 
 ## The cost of waiting compounds
 
@@ -34,7 +47,7 @@ Poor data quality already costs an estimated **\$3.1T** annually in the US econo
 
 ## What leadership should take from this
 
-- Assess before you build. Ninety minutes of honest scoring prevents twelve months of rework.
+- Place the use case first. Minutes spent on data path and autonomy tell you whether the ninety-minute assessment is even needed, and can save months of rework either way.
 - Fund the binding constraint first, not the most visible or fashionable layer.
 - Quantify the annual data-debt tax and show its compounding trajectory at 2x and 5x AI deployment.  <!-- noev: illustrative modeling parameter (2x/5x deployment scale), not a sourced statistic -->
 - Sequence remediation as a dependency of specific funded AI initiatives.

@@ -83,10 +83,10 @@ Before opening any page in this framework, place the use case in front of you:
 2. **If through, how autonomous is it?** Check [The Four
    Levels](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/03-the-four-levels-of-workflow-ai-integration.md)
    for where it sits.
-3. **Read the framework for what that combination needs.** [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-lineage-and-metadata.md)
-   and [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-access-and-integration.md)
+3. **Read the framework for what that combination needs.** [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md)
+   and [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-access-and-integration.md)
    carry the requirements that rise fastest as autonomy climbs on a through-path use case.
-   [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-data-governance.md)
+   [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md)
    and [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md)
    round out what the path needs once you know it needs anything at all.
 

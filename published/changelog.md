@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v8.0.1 — 2026-07-03
+
+### Site & structure
+* Reorder AI Accountability roles into hierarchy, tighten overview
+
 ## v8.0.0 — 2026-07-03
 
 ### New & expanded content

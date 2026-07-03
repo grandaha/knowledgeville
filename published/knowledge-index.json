@@ -15,6 +15,17 @@
       "pageCount": 8
     },
     {
+      "slug": "chief-ai-officer",
+      "title": "Chief AI Officer",
+      "description": "The operator's manual for the executive who sets AI strategy and owns the bet.",
+      "posture": {
+        "citation_style": "selective",
+        "verification_posture": "verify-embedded-facts",
+        "temporal_mode": "always-newer"
+      },
+      "pageCount": 3
+    },
+    {
       "slug": "industry-briefs",
       "title": "Industry Briefs",
       "description": "Plain-language briefs of analyst, vendor, and market commentary on AI, for business leaders.",
@@ -282,6 +293,115 @@
           "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era",
           "wording": "Surveyed CEOs say only 25% of the workforce is using AI regularly as part of their job.",
           "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "chief-ai-officer",
+      "path": "setting-the-operating-model.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/chief-ai-officer/setting-the-operating-model/",
+      "title": "Setting the Operating Model",
+      "description": "The federated model with centralized guardrails, the portfolio council, and the responsible-AI review that make it work.",
+      "tags": [
+        "chief-ai-officer",
+        "operating-model"
+      ],
+      "body": "The most common early mistake is choosing a single word — \"centralized\" or \"decentralized\" — and running the whole program on it. Neither survives contact with a real organization: pure centralization can't move fast enough for every business unit's use cases, and pure decentralization produces the fragmented, ungoverned sprawl a CAIO exists to prevent.\n\n## The federated model with centralized guardrails\n\nThe pattern most operator guidance converges on is federated: central standards and reviews, distributed delivery in product and business teams, and shared measurement ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-operating-model)). You set the guardrails once — risk tiers, approved platforms, a shared way to measure value — and let business units build inside them, rather than routing every initiative through a central team that becomes the bottleneck.\n\nWhat you own centrally:\n\n- **Standards** — risk tiers, approved data/platform choices, minimum lifecycle gates a project must clear before it ships.\n- **Review** — a portfolio council that decides what gets funded, and a separate responsible-AI review that decides what's safe to ship.\n- **Measurement** — one shared way to track value and adoption, so business units aren't each inventing their own definition of \"working.\"\n\nWhat you leave distributed: the actual building. Business units and product teams own delivery inside the guardrails you set.\n\n## The portfolio council\n\nA working operating model needs a forum, not just a policy. A monthly portfolio council — you, a finance partner, IT/engineering leadership, the data organization, a risk leader, and the business leaders whose budgets are on the line — is where priorities actually get decided. The mechanic that keeps it from becoming a status meeting: you run the agenda and propose priorities, while the other leaders in the room commit resources and ownership ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-portfolio-council-cadence)). If nobody at the table is committing budget or headcount, it isn't a portfolio council — it's a briefing.\n\n## The responsible-AI review\n\nKeep risk decisions in a separate forum from funding decisions. A portfolio council optimizes for value; mixing in risk sign-off pressures it to wave things through. A dedicated responsible-AI review sets risk gates proportional to how much is at stake — a low-stakes internal tool clears a lighter bar than a system making decisions about customers or employees. This is also where you formalize the minimum lifecycle gates every project must clear (see [The First 90 Days](/ai-accountability/chief-ai-officer/the-first-90-days.md) for what those gates look like in practice).\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** central standards and reviews, distributed delivery in product and business teams, and shared measurement. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-operating-model} · verified 2026-07-02 · primary\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-portfolio-council-cadence} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-umbrex-caio-playbook-2025-operating-model",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "central standards and reviews, distributed delivery in product and business teams, and shared measurement.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-umbrex-caio-playbook-2025-portfolio-council-cadence",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "chief-ai-officer",
+      "path": "the-first-90-days.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/chief-ai-officer/the-first-90-days/",
+      "title": "The First 90 Days",
+      "description": "A practitioner playbook for standing up the office: stakeholder mapping, a mandate charter, and the first production deployment.",
+      "tags": [
+        "chief-ai-officer",
+        "first-90-days"
+      ],
+      "body": "The temptation in the first month is to announce a strategy. Resist it. A strategy announced before you understand where the risk and the readiness actually sit is a strategy you'll have to walk back.\n\n## Days 1–30: map before you move\n\nRun stakeholder interviews with the same set of questions across every business unit: what outcome are you trying to reach, what's blocking you today, and are you ready to scale what's working. Use the answers to build a landscape map — the use cases already in flight, the foundational capabilities (data, platform, skills) each one can actually draw on, and where the risk exposure sits. You are not deciding anything yet. You are finding out what's true.\n\n## Days 31–60: publish the charter, stand up the forums\n\nPut the mandate in writing: a charter that says what you decide, what you're consulted on, and what stays with business-unit leaders. Ambiguity here is what gets exploited later, when a project fails and everyone points at everyone else.\n\nThen stand up the two forums from [Setting the Operating Model](/ai-accountability/chief-ai-officer/setting-the-operating-model.md): the portfolio council for funding decisions, and the responsible-AI review for risk sign-off. Set the minimum lifecycle gates every project must clear before it ships — a named business owner, a performance baseline, approved data access, a completed risk review, a monitoring plan, and an adoption approach ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-lifecycle-gates)). Projects that can't produce these six things aren't ready to fund, no matter how promising the demo looked.\n\n## Days 61–90: ship one thing for real\n\nPick two to four initiatives with strong sponsorship, real data access, and a benefit you can actually measure — not the most impressive idea, the most fundable one. Your day-90 target is concrete: at least one production deployment with monitoring and benefits tracking live ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-first-90-days)). A pilot that never reaches production teaches you nothing about whether your operating model actually works.\n\nBuild a simple dashboard — value, adoption, risk — with clear escalation rules for when a metric moves the wrong way. This is the artifact you bring to the board. Not a strategy deck: a working system, with one real result in it.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-lifecycle-gates} · verified 2026-07-02 · primary\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** Deliver at least one production deployment with monitoring and benefits tracking. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-first-90-days} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-umbrex-caio-playbook-2025-first-90-days",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "Deliver at least one production deployment with monitoring and benefits tracking.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-umbrex-caio-playbook-2025-lifecycle-gates",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "chief-ai-officer",
+      "path": "what-chief-ai-officer-is.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/chief-ai-officer/what-chief-ai-officer-is/",
+      "title": "What a Chief AI Officer Is — and the Role",
+      "description": "What a CAIO is accountable for, why organizations are staffing the role, and how it differs from adjacent roles.",
+      "tags": [
+        "chief-ai-officer",
+        "role-definition"
+      ],
+      "body": "Last year, one in four surveyed organizations had a Chief AI Officer. Now three in four do ([IBM, 2026](#ev-ibm-ceo-study-2026-caio-adoption-rate)). That is one of the fastest executive-role builds in recent memory, and it did not happen because boards like new titles. It happened because someone has to own the AI bet: what to invest in, what risk to accept, and who answers for the return.\n\n## What a CAIO is accountable for\n\nA CAIO owns the enterprise AI strategy end to end — not one workstream inside it. Concretely, that means: setting the direction (which problems AI is allowed to bet on, and which it isn't), choosing and running the operating model (how work gets prioritized and funded), setting risk appetite through a responsible-AI review, and making the build-vs-buy-vs-partner calls that decide where engineering effort goes. Organizations that design their C-suite around AI from the start — rather than bolting the mandate onto an existing title — scale 10% more AI initiatives enterprise-wide than peers who don't ([IBM, 2026](#ev-ibm-ceo-study-2026-ai-first-csuite-scaling)).\n\nThe job is a portfolio-management job, not an engineering job. You are not the best model builder in the room. You are the person who decides which bets get resourced, which get killed, and who is accountable when a bet fails.\n\n## Where it sits, and who it isn't\n\nThe titles around AI accountability stack by altitude — see [The Accountability Map](/ai-accountability/the-accountability-map.md) for the full picture. Two distinctions matter most for this seat:\n\n- **AI Transformation Lead** runs the program you set direction for. You decide where to play; they run the cross-functional portfolio day to day. If you're doing both jobs yourself, the program will outgrow you.\n- **Chief Data Officer** owns the data asset — whether it's governed, trustworthy, and available. You own what AI does with that asset. In practice the two titles converge often enough that they're worth naming: Deloitte's 2026 CDAO survey — of 100 C-suite executives at $1B+ revenue companies, with titles including CDAO, CDO, and CAIO — found 63% of CDAOs already describe themselves as the primary driver of their organization's data and analytics decisions ([Deloitte, 2026](#ev-deloitte-cdao-2026-methodology-and-primacy)). A CDAO claiming that ground is a mandate that overlaps yours, whether or not the titles are formally merged.\n\nThe role isn't settled yet. Of organizations with a CAIO, 40% report the role to the CEO and 24% to the CIO ([Foundry, 2025](#ev-foundry-state-of-cio-2025-caio-reporting-line)) — there is no single right answer on reporting line, only a judgment about how much independence the mandate needs from the technology budget it often has to challenge.\n\n## How this playbook is organized\n\n- [Setting the Operating Model](/ai-accountability/chief-ai-officer/setting-the-operating-model.md) — the federated model most CAIOs converge on, the portfolio council that runs it, and the responsible-AI review that sets risk gates.\n- [The First 90 Days](/ai-accountability/chief-ai-officer/the-first-90-days.md) — a practitioner playbook for standing up the office, from stakeholder mapping to your first production deployment.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **IBM Institute for Business Value (with Oxford Economics) — *IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era*, 2026.** 76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025. [View source](https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era){#ev-ibm-ceo-study-2026-caio-adoption-rate} · verified 2026-07-02 · primary\n- **IBM Institute for Business Value (with Oxford Economics) — *IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era*, 2026.** Organizations with an AI-first approach to C-suite design have scaled 10% more AI initiatives enterprise-wide than their peers. [View source](https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era){#ev-ibm-ceo-study-2026-ai-first-csuite-scaling} · verified 2026-07-02 · primary\n- **Deloitte — *2026 Chief Data and Analytics Officer Survey*, 2026.** 2026 Chief Data and Analytics Officer Survey... titles included CDAO, CDO, CAIO, among others... 63% of CDAOs describe themselves as the primary drivers of data and analytics decisions. [View source](https://www.prnewswire.com/news-releases/deloittes-chief-data-and-analytics-officer-survey-finds-cdaos-acting-as-ai-trailblazers-and-influential-leaders-in-driving-long-term-ai-value-302701424.html){#ev-deloitte-cdao-2026-methodology-and-primacy} · verified 2026-07-02 · primary\n- **Foundry (reported via CIO.com) — *State of the CIO Survey 2025*, 2025.** 14% of organizations employ CAIOs... 40% report directly to the CEO and 24% report to the CIO. [View source](https://www.cio.com/article/3845414/caios-role-reclaims-its-position-from-that-of-cio.html){#ev-foundry-state-of-cio-2025-caio-reporting-line} · verified 2026-07-02 · ⚠ secondary mirror",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-ibm-ceo-study-2026-caio-adoption-rate",
+          "org": "IBM Institute for Business Value (with Oxford Economics)",
+          "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era",
+          "wording": "76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-ibm-ceo-study-2026-ai-first-csuite-scaling",
+          "org": "IBM Institute for Business Value (with Oxford Economics)",
+          "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era",
+          "wording": "Organizations with an AI-first approach to C-suite design have scaled 10% more AI initiatives enterprise-wide than their peers.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-deloitte-cdao-2026-methodology-and-primacy",
+          "org": "Deloitte",
+          "url": "https://www.prnewswire.com/news-releases/deloittes-chief-data-and-analytics-officer-survey-finds-cdaos-acting-as-ai-trailblazers-and-influential-leaders-in-driving-long-term-ai-value-302701424.html",
+          "wording": "2026 Chief Data and Analytics Officer Survey... titles included CDAO, CDO, CAIO, among others... 63% of CDAOs describe themselves as the primary drivers of data and analytics decisions.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-foundry-state-of-cio-2025-caio-reporting-line",
+          "org": "Foundry (reported via CIO.com)",
+          "url": "https://www.cio.com/article/3845414/caios-role-reclaims-its-position-from-that-of-cio.html",
+          "wording": "14% of organizations employ CAIOs... 40% report directly to the CEO and 24% report to the CIO.",
+          "status": "secondary-mirror",
           "verified": "2026-07-02"
         }
       ]
@@ -6399,6 +6519,10 @@
       "terms": []
     },
     {
+      "bundle": "chief-ai-officer",
+      "terms": []
+    },
+    {
       "bundle": "industry-briefs",
       "terms": []
     },
@@ -6687,6 +6811,11 @@
       "date": "2026-07-02",
       "bundle": "ai-enablement",
       "entry": "Creation**: New bundle — the operator's manual for the AI Enablement Lead, the person accountable for AI adoption inside an organization. The intro What AI Enablement Is — and the Role plus the full operator's arc: Who's Accountable for What, Standing Up the Function, Finding Where AI Earns Its Keep, Building the Champion Network, Enablement That Sticks, Measuring Adoption, and When It Stalls, and Keeping It Alive. Selective citation posture: the evidence that adoption is the binding constraint and the operating-model facts are cited to primary sources (IBM CEO Study 2026, Microsoft AI Center of Excellence guidance); the operator methods are grounded practice."
+    },
+    {
+      "date": "2026-07-02",
+      "bundle": "chief-ai-officer",
+      "entry": "Creation**: New bundle — the operator's manual for the Chief AI Officer, the executive accountable for enterprise AI strategy and the budget behind it. The intro What a Chief AI Officer Is — and the Role plus Setting the Operating Model and The First 90 Days. Selective citation posture: role-adoption and reporting-line statistics (IBM CEO Study 2026, Deloitte's 2026 CDAO Survey, Foundry's State of the CIO 2025) and the operating-model/playbook facts are cited to primary sources; the operator methods are grounded practice."
     },
     {
       "date": "2026-07-01",

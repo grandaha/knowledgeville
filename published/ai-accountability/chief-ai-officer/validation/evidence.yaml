@@ -1,0 +1,123 @@
+# evidence.yaml — public provenance record for the Chief AI Officer bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-ibm-ceo-study-2026-caio-adoption-rate
+  claim: "Surveyed organizations with a Chief AI Officer, 2026 vs 2025"
+  value: "76% in 2026, up from 26% in 2025"
+  wording: "76% of surveyed organizations have a Chief AI Officer (CAIO) in 2026, up from just 26% in 2025."
+  source:
+    org: "IBM Institute for Business Value (with Oxford Economics)"
+    report: "IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era"
+    edition: 2026
+    url: https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-ibm-ceo-study-2026-ai-first-csuite-scaling
+  claim: "AI initiatives scaled by orgs with an AI-first C-suite design vs. peers"
+  value: "10% more"
+  wording: "Organizations with an AI-first approach to C-suite design have scaled 10% more AI initiatives enterprise-wide than their peers."
+  source:
+    org: "IBM Institute for Business Value (with Oxford Economics)"
+    report: "IBM CEO Study — CEOs are Reshaping C-suite Roles for the AI Era"
+    edition: 2026
+    url: https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-deloitte-cdao-2026-methodology-and-primacy
+  claim: "Deloitte's 2026 CDAO Survey — who it surveyed, and CDAOs' self-reported decision primacy"
+  value: "100 C-suite execs at $1B+ revenue companies; 63% call themselves the primary driver of data/analytics decisions"
+  wording: "2026 Chief Data and Analytics Officer Survey... titles included CDAO, CDO, CAIO, among others... 63% of CDAOs describe themselves as the primary drivers of data and analytics decisions."
+  source:
+    org: "Deloitte"
+    report: "2026 Chief Data and Analytics Officer Survey"
+    edition: 2026
+    url: https://www.prnewswire.com/news-releases/deloittes-chief-data-and-analytics-officer-survey-finds-cdaos-acting-as-ai-trailblazers-and-influential-leaders-in-driving-long-term-ai-value-302701424.html
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-foundry-state-of-cio-2025-caio-reporting-line
+  claim: "Share of orgs with a CAIO, and who that CAIO reports to"
+  value: "14% of orgs have a CAIO; of those, 40% report to the CEO and 24% to the CIO"
+  wording: "14% of organizations employ CAIOs... 40% report directly to the CEO and 24% report to the CIO."
+  source:
+    org: "Foundry (reported via CIO.com)"
+    report: "State of the CIO Survey 2025"
+    edition: 2025
+    url: https://www.cio.com/article/3845414/caios-role-reclaims-its-position-from-that-of-cio.html
+    pdf_hash:
+  verified: 2026-07-02
+  status: secondary-mirror
+  expires: 2027-07-02
+- id: ev-umbrex-caio-playbook-2025-operating-model
+  claim: "The operating model the CAIO playbook recommends: federated with centralized guardrails"
+  value: "central standards and reviews, distributed delivery, shared measurement"
+  wording: "central standards and reviews, distributed delivery in product and business teams, and shared measurement."
+  source:
+    org: "Umbrex"
+    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    edition: 2025
+    url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-umbrex-caio-playbook-2025-portfolio-council-cadence
+  claim: "How a CAIO's portfolio council runs — who sets the agenda, who commits resources"
+  value: "the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership"
+  wording: "the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership."
+  source:
+    org: "Umbrex"
+    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    edition: 2025
+    url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-umbrex-caio-playbook-2025-first-90-days
+  claim: "What a CAIO should have running by day 90"
+  value: "at least one production deployment with monitoring and benefits tracking"
+  wording: "Deliver at least one production deployment with monitoring and benefits tracking."
+  source:
+    org: "Umbrex"
+    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    edition: 2025
+    url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-umbrex-caio-playbook-2025-lifecycle-gates
+  claim: "The minimum lifecycle gates a project must clear before it ships"
+  value: "named business owner, baseline, approved data access, risk review, monitoring plan, adoption approach"
+  wording: "named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach."
+  source:
+    org: "Umbrex"
+    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    edition: 2025
+    url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02

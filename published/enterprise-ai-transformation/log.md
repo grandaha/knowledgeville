@@ -1,6 +1,14 @@
 # Update Log
 
 ## 2026-07-03
+* **Creation**: [Data Readiness Is a Use-Case Property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md)
+  opens the whole track with a diagnostic: whether a use case's data routes around or
+  through the system of record. Leads the track ahead of the Executive Summary.
+* **Update**: [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md)
+  is retitled and re-scoped: quality requirements now follow the path a use case touches,
+  and the material specific to training or fine-tuning your own model (label noise,
+  representation bias, drift, poisoning) is clearly scoped as optional reading rather than
+  presented as a universal AI truth.
 * **Update**: [Program Architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md)
   now cross-links its CDAO, AI Program Lead, and Track Owner roles to their matching
   operator's manuals in AI Accountability, and names the typical owner (with cited

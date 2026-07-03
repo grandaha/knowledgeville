@@ -1,26 +1,35 @@
 ---
 type: Concept
 title: Data Quality
-description: Why data quality is the AI bottleneck — the six quality dimensions, four AI-specific failure modes, a five-step framework, tooling, and a readiness checklist.
-tags: [data-quality, ai-readiness, label-noise, data-drift]
-timestamp: "2026-06-12"
+description: What data quality means for the path a use case touches — six dimensions, a five-step framework, tooling, and what changes if you train models.
+tags: [data-quality, ai-readiness, use-case-scoping]
+timestamp: "2026-07-03"
 ---
 
-## Why Data Quality Is the AI Bottleneck
+## Quality Is Something You Verify for the Path
 
-In traditional analytics, poor data quality leads to bad reports. In AI, it leads to something worse: models that are *confidently and systematically wrong* — and that scale those errors across every decision they touch. The failure mode isn't a wrong number in a cell; it's a biased hiring algorithm, a fraud model that misses an emerging attack pattern, or a clinical decision tool that underperforms for minority populations.
+[Data readiness is a use-case property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md),
+and quality is no exception. A use case that drafts a newsletter from a one-line brief
+needs almost no quality work; a use case that reads a customer's account and acts on it
+needs the dimensions below verified on that specific path. In traditional analytics, poor
+data quality leads to bad reports. In a use case that routes through a system of record, it
+leads to a system that is confidently and systematically wrong, repeating that error across
+every decision it touches. The failure mode is not a wrong number in a cell; it is a biased
+hiring algorithm, a fraud model that misses an emerging attack pattern, or a clinical
+decision tool that underperforms for minority populations.
 
-> **96%** of organizations encounter data quality problems when training AI models ([Dimensional Research, 2019](#ev-dimensional-research-2019-data-quality-ai))
-> **More than 80%** of AI projects fail — about twice the failure rate of IT projects that don't involve AI ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
-> **80%** of ML project effort is consumed by label noise, inconsistent tagging, and missing context ([Cognilytica, 2020](#ev-cognilytica-2020-ml-effort-data-prep))
+> **More than 80%** of AI projects fail — about twice the failure rate of IT projects that do not involve AI ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate))
 
-The core problem: enterprise data infrastructure was designed for reporting and transactions — not for AI training. Most data lakes were built with volume as the primary goal; quality, organization, and context were afterthoughts. AI requires all three.
+The core problem: enterprise data infrastructure was designed for reporting and
+transactions, not for feeding AI systems. Most data lakes were built with volume as the
+primary goal; quality, organization, and context were afterthoughts. AI requires all
+three, on whichever path a given use case actually depends on.
 
 ---
 
 ## The Six Quality Dimensions (and What Each Means for AI)
 
-The DAMA-DMBOK framework defines six primary data quality dimensions. Each has specific implications when applied to AI workloads that don't exist in traditional BI contexts.
+The DAMA-DMBOK framework defines six primary data quality dimensions. Each has specific implications when applied to AI workloads that do not exist in traditional Business Intelligence (BI) contexts.
 
 ### 1. Accuracy
 
@@ -40,12 +49,14 @@ Accuracy failures in AI often come from:
 
 All required values are present and populated.
 
-**In AI:** Missing values are not just gaps — they are a pattern the model will learn from. If null values in a demographic field correlate with a protected class, a model can learn to use missingness as a proxy feature, encoding bias without a single explicit sensitive field in the training set.
+**In AI:** Missing values are not just gaps — they are a pattern the model will learn from. If null values in a demographic field correlate with a protected class, a model can learn to use missingness as a proxy feature. It ends up encoding bias without a single explicit sensitive field in the training set.
 
 Completeness assessment for AI must include:
 
 - Null rate by column, by time range, by data source segment
-- Whether missing data is Missing Completely at Random (MCAR), Missing at Random (MAR), or Missing Not at Random (MNAR) — the three have very different implications for model fairness
+- Whether missing data is Missing Completely at Random (MCAR), Missing at Random (MAR), or
+  Missing Not at Random (MNAR). The three carry very different implications for model
+  fairness.
 - Impact of imputation strategies on downstream model behavior
 
 ### 3. Consistency
@@ -66,8 +77,14 @@ Data reflects the current state of the real-world entity, and is available when 
 
 Timeliness has two dimensions for AI:
 
-1. **Training data recency** — stale training data encodes outdated patterns. A credit risk model trained on pre-pandemic behavior fails as spending patterns shift. A customer churn model built before a major product change is working against itself.
-2. **Inference latency** — for real-time AI applications (fraud, personalization, dynamic pricing), the feature pipeline must deliver data within the decision window. Batch features inserted into a real-time model create a temporal mismatch.
+1. **Inference latency** — for a use case that reads a system of record at decision time
+   (fraud, personalization, dynamic pricing), the feature pipeline must deliver data within
+   the decision window. Batch features inserted into a real-time path create a temporal
+   mismatch. This applies whether or not you trained the model making the decision.
+2. **Training data recency** *(if you train your own model)* — stale training data encodes
+   outdated patterns. A credit risk model trained on pre-pandemic behavior fails as
+   spending patterns shift. A customer churn model built before a major product change is
+   working against itself.
 
 ### 5. Validity
 
@@ -79,7 +96,7 @@ Validity failures are often invisible in BI but catastrophic in AI:
 - Date fields with values from 1900 or 2099 due to default handling in legacy systems
 - Numeric fields with sentinel values (-1, 999) used to indicate missing data, interpreted as real values by a model
 
-Validity checks are the simplest to automate (schema validation, range checks, regex) and among the highest-leverage quality investments for AI readiness.
+Validity checks are the simplest to automate (schema validation, range checks, regex) and among the highest-value quality investments for AI readiness.
 
 ### 6. Uniqueness
 
@@ -89,15 +106,29 @@ Duplicate records are a training amplifier: they increase the effective weight o
 
 For AI specifically:
 
-- Duplicates in training data can cause overfitting to specific examples
-- If duplicates exist across train/test splits, evaluation metrics are artificially inflated
-- Customer-level deduplication requires probabilistic entity matching, not just exact ID matching
+- Customer-level deduplication requires probabilistic entity matching, not just exact ID
+  matching — this applies to any use case that looks up an entity through a system of
+  record, whether or not a model was trained on that data.
+- *(If you train your own model)* duplicates in the training set can cause overfitting to
+  specific examples, and duplicates that leak across train/test splits inflate evaluation
+  metrics.
 
 ---
 
-## The Four AI-Specific Quality Failure Modes
+## If You Train or Fine-Tune Your Own Models
 
-Beyond the standard dimensions, AI introduces failure modes that don't have direct analogs in traditional data quality work.
+Everything above applies to any use case that reads structured data through a system of
+record. The four failure modes below are different: they assume you are training or
+fine-tuning a model on your own labeled dataset, which is a minority of enterprise AI work
+today. Most teams deploy a model someone else trained and consume data at inference time,
+not training time — for that work, the dimensions above are the whole story. Read this
+section only if your use case includes a training or fine-tuning step.
+
+> **96%** of organizations encounter data quality problems when training AI models ([Dimensional Research, 2019](#ev-dimensional-research-2019-data-quality-ai))
+> **80%** of ML project effort is consumed by label noise, inconsistent tagging, and missing context ([Cognilytica, 2020](#ev-cognilytica-2020-ml-effort-data-prep))
+
+Beyond the standard dimensions, training your own model introduces failure modes that
+have no direct analog in traditional data quality work.
 
 ### 1. Label Noise
 
@@ -109,7 +140,7 @@ Sources of label noise:
 
 - Crowdsourced annotation without inter-annotator agreement checks
 - Automated labeling using heuristics treated as ground truth
-- Annotation drift (guidelines changed mid-project; early labels don't reflect later standards)
+- Annotation drift (guidelines changed mid-project; early labels do not reflect later standards)
 - Domain ambiguity (a computer vision defect model labeled by rotating shifts of workers who apply criteria inconsistently)
 
 Mitigation requires inter-annotator agreement scoring, confidence-weighted training, and human-in-the-loop QA throughout the annotation process — not just at the end.
@@ -117,8 +148,6 @@ Mitigation requires inter-annotator agreement scoring, confidence-weighted train
 ### 2. Representation Bias
 
 Training datasets often underrepresent certain populations, scenarios, or edge cases. Models perform well on majority groups but fail for minorities or rare events.
-
-> A Penn State study found that most users cannot identify bias in AI systems, even when told where it originates
 
 Bias manifests through:
 
@@ -135,10 +164,10 @@ Production data distributions shift over time, causing model performance to degr
 Drift manifests in three forms:
 
 - **Covariate shift** — feature distributions change (e.g., customer demographics of the user base evolve)
-- **Prior shift** — label distributions change (e.g., fraud rate increases; the model wasn't trained on the new base rate)
+- **Prior shift** — label distributions change (e.g., fraud rate increases; the model was not trained on the new base rate)
 - **Concept drift** — the relationship between features and labels changes (e.g., what predicts churn shifts after a product redesign)
 
-The challenge isn't just detecting drift — it's distinguishing temporary fluctuations from permanent shifts requiring model retraining. Continuous monitoring with automated retraining triggers is the production-grade solution.
+The harder problem is not detecting drift but distinguishing temporary fluctuations from permanent shifts that require retraining. Continuous monitoring with automated retraining triggers addresses both.
 
 ### 4. Data Poisoning
 
@@ -184,7 +213,9 @@ Quality failures must route to named owners for remediation — not to a generic
 | **Databand (IBM)** | Pipeline observability | Airflow/Spark pipeline health; upstream/downstream impact tracking |
 | **Deequ (AWS)** | Open-source (Spark) | Large-scale Spark-based dataset unit testing |
 
-**Key trend:** The convergence of data quality testing and data observability is creating a new expectation: reliable, transparent data pipelines built the same way modern software systems are built — with automated testing, version control, and continuous monitoring. ([DataKitchen, 2026](#ev-datakitchen-2026-dq-observability-convergence))
+**Key trend:** Data quality testing and data observability are converging. Teams now expect
+pipelines built the way modern software is built — with automated testing, version
+control, and continuous monitoring ([DataKitchen, 2026](#ev-datakitchen-2026-dq-observability-convergence)).
 
 ---
 
@@ -214,16 +245,16 @@ A score below 70 on any single dimension should block a dataset from production 
 
 ## Practical Readiness Checklist
 
-- [ ] Data profiling completed on all candidate datasets — null rates, distributions, cardinality documented
+- [ ] Data profiling completed on the datasets this use case's path actually touches — null rates, distributions, cardinality documented
 - [ ] Quality expectations defined as code and committed to version control
 - [ ] Quality checks integrated into the data pipeline (blocking, not advisory)
-- [ ] Label quality reviewed — inter-annotator agreement scored for supervised learning datasets
-- [ ] Demographic balance audit completed — underrepresented groups identified and addressed
-- [ ] Training/test split validated for data leakage and duplicate records across splits
 - [ ] Drift monitoring deployed in production — alert thresholds defined
 - [ ] Data quality scores tied to named owners with remediation SLAs
-- [ ] Data poisoning risk assessed for externally sourced training data
-- [ ] Quality score baseline established before first model training run
+- [ ] *(If you train your own model)* Label quality reviewed — inter-annotator agreement scored
+- [ ] *(If you train your own model)* Demographic balance audit completed — underrepresented groups identified and addressed
+- [ ] *(If you train your own model)* Training/test split validated for data leakage and duplicate records across splits
+- [ ] *(If you train your own model)* Data poisoning risk assessed for training data sourced externally
+- [ ] *(If you train your own model)* Quality score baseline established before the first training run
 
 ---
 
@@ -231,8 +262,8 @@ A score below 70 on any single dimension should block a dataset from production 
 
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
 
-- **Dimensional Research (commissioned by Alegion) — *Artificial Intelligence and Machine Learning Projects Are Obstructed by Data Issues*, 2019.** 96% of enterprises run into problems with data quality, data labeling required to train AI, and building model confidence. [View source](https://3971219.fs1.hubspotusercontent-na2.net/hubfs/3971219/Survey%20Assets%201905/Dimensional%20Research%20Machine%20Learning%20PPT%20Report%20FINAL.pdf){#ev-dimensional-research-2019-data-quality-ai} · verified 2026-06-22 · primary
 - **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
+- **Dimensional Research (commissioned by Alegion) — *Artificial Intelligence and Machine Learning Projects Are Obstructed by Data Issues*, 2019.** 96% of enterprises run into problems with data quality, data labeling required to train AI, and building model confidence. [View source](https://3971219.fs1.hubspotusercontent-na2.net/hubfs/3971219/Survey%20Assets%201905/Dimensional%20Research%20Machine%20Learning%20PPT%20Report%20FINAL.pdf){#ev-dimensional-research-2019-data-quality-ai} · verified 2026-06-22 · primary
 - **Cognilytica — *Data Preparation & Labeling for AI*, 2020.** as much as 80% of machine learning project time is spent on aggregating, cleaning, labeling, and augmenting machine learning model data. [View source](https://medium.com/cognilytica/data-preparation-labeling-for-ai-2020-b512a5ed777c){#ev-cognilytica-2020-ml-effort-data-prep} · verified 2026-06-20 · ⚠ secondary mirror
 - **Budach, Feuerpfeil, Ihde, Nathansen, Noack, Patzlaff, Naumann & Harmouch — *The Effects of Data Quality on Machine Learning Performance on Tabular Data*, 2022.** up to 20% of training labels could be flipped without performance losses of no more than 10% in F1-score. [View source](https://arxiv.org/abs/2207.14529){#ev-budach-2022-label-noise-degradation} · verified 2026-06-20 · primary
 - **DataKitchen — *The 2026 Open-Source Data Quality and Data Observability Landscape*, 2026.** the convergence of data quality testing and data observability is creating a new expectation: reliable, transparent data pipelines built the same way modern software systems ensure reliability. [View source](https://datakitchen.io/blog/the-2026-open-source-data-quality-and-data-observability-landscape/){#ev-datakitchen-2026-dq-observability-convergence} · verified 2026-06-20 · primary

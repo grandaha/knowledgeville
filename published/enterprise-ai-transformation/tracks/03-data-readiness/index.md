@@ -14,6 +14,7 @@ Leaders looking for the decision-level picture before going deeper should start 
 
 | Page | Last updated |
 | --- | --- |
+| [Data Readiness Is a Use-Case Property](readiness-is-a-use-case-property.md)<br>Data readiness is a property of the path a use case touches, not an estate-wide gate. How to place a use case on that path. | Updated 2026-07-03 |
 | [Executive Summary](01-executive-summary.md)<br>A one-page synthesis of the AI Data Readiness knowledge base — for leaders deciding where to invest before funding AI. | Updated 2026-06-12 |
 | [Data Readiness Framework](02-framework/)<br>The six foundational components of AI data readiness, each covering the full framework, AI-specific failure modes, tooling landscape, and a practical readiness checklist. | Updated 2026-06-16 |
 | [Practitioner Guides](03-practitioner-guides/)<br>Operational how-to guides for each AI data readiness discipline — methodology, tooling, and step-by-step implementation. | Updated 2026-06-16 |

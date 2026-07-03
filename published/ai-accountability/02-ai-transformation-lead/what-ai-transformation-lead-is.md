@@ -17,15 +17,15 @@ That means running the machinery a program needs to move: a steering committee w
 
 ## Where it sits, and who it isn't
 
-- **Chief AI Officer** sets the direction and owns the bet — see [What a Chief AI Officer Is](/ai-accountability/chief-ai-officer/what-chief-ai-officer-is.md). You run the portfolio they've pointed at. If a bet fails, they answer for the call; you answer for the execution.
-- **AI Enablement Lead** owns one specific workstream inside your portfolio: adoption — see [What AI Enablement Is](/ai-accountability/ai-enablement/what-ai-enablement-is.md). You coordinate across all the workstreams (governance, data, platform, workflow, adoption, talent, measurement); they go deep on one.
+- **Chief AI Officer** sets the direction and owns the bet — see [What a Chief AI Officer Is](/ai-accountability/01-chief-ai-officer/what-chief-ai-officer-is.md). You run the portfolio they've pointed at. If a bet fails, they answer for the call; you answer for the execution.
+- **AI Enablement Lead** owns one specific workstream inside your portfolio: adoption — see [What AI Enablement Is](/ai-accountability/03-ai-enablement/what-ai-enablement-is.md). You coordinate across all the workstreams (governance, data, platform, workflow, adoption, talent, measurement); they go deep on one.
 - The transformation program itself — the operating models, governance structures, and eight-track model this role executes against — is covered in [Enterprise AI Transformation](/enterprise-ai-transformation/index.md). This bundle is the operator's manual for the seat that runs it, not the program's own reference model.
 
 See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how every accountable role in this domain relates.
 
 ## How this playbook is organized
 
-- [Running the AI Center of Excellence](/ai-accountability/ai-transformation-lead/running-the-ai-coe.md) — staffing the steering committee, building the intake backlog, and evolving the model as the program matures.
+- [Running the AI Center of Excellence](/ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md) — staffing the steering committee, building the intake backlog, and evolving the model as the program matures.
 
 ## Sources
 

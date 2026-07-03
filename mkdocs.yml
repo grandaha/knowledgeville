@@ -77,18 +77,61 @@ plugins:
         ai-industry-briefs/validation/index.md: ai-briefs/industry-briefs/validation/index.md
         ai-industry-briefs/validation/audits/index.md: ai-briefs/industry-briefs/validation/audits/index.md
         ai-industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap.md: ai-briefs/industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap.md
-        # Redirect the pre-restructure AI Enablement URLs to their new home under /ai-accountability/.
-        ai-enablement/index.md: ai-accountability/ai-enablement/index.md
-        ai-enablement/what-ai-enablement-is.md: ai-accountability/ai-enablement/what-ai-enablement-is.md
-        ai-enablement/02-who-is-accountable-for-what.md: ai-accountability/ai-enablement/02-who-is-accountable-for-what.md
-        ai-enablement/03-standing-up-the-function.md: ai-accountability/ai-enablement/03-standing-up-the-function.md
-        ai-enablement/04-finding-where-ai-earns-its-keep.md: ai-accountability/ai-enablement/04-finding-where-ai-earns-its-keep.md
-        ai-enablement/05-building-the-champion-network.md: ai-accountability/ai-enablement/05-building-the-champion-network.md
-        ai-enablement/06-enablement-that-sticks.md: ai-accountability/ai-enablement/06-enablement-that-sticks.md
-        ai-enablement/07-measuring-adoption.md: ai-accountability/ai-enablement/07-measuring-adoption.md
-        ai-enablement/08-when-it-stalls.md: ai-accountability/ai-enablement/08-when-it-stalls.md
-        ai-enablement/glossary.md: ai-accountability/ai-enablement/glossary.md
-        ai-enablement/validation/index.md: ai-accountability/ai-enablement/validation/index.md
+        # Redirect the pre-restructure AI Enablement URLs straight to their final
+        # hierarchy-numbered home under /ai-accountability/ (mkdocs-redirects targets must
+        # be real pages, not another redirect stub, so this collapses what was a two-hop
+        # chain through the short-lived /ai-accountability/ai-enablement/ path).
+        ai-enablement/index.md: ai-accountability/03-ai-enablement/index.md
+        ai-enablement/what-ai-enablement-is.md: ai-accountability/03-ai-enablement/what-ai-enablement-is.md
+        ai-enablement/02-who-is-accountable-for-what.md: ai-accountability/03-ai-enablement/02-who-is-accountable-for-what.md
+        ai-enablement/03-standing-up-the-function.md: ai-accountability/03-ai-enablement/03-standing-up-the-function.md
+        ai-enablement/04-finding-where-ai-earns-its-keep.md: ai-accountability/03-ai-enablement/04-finding-where-ai-earns-its-keep.md
+        ai-enablement/05-building-the-champion-network.md: ai-accountability/03-ai-enablement/05-building-the-champion-network.md
+        ai-enablement/06-enablement-that-sticks.md: ai-accountability/03-ai-enablement/06-enablement-that-sticks.md
+        ai-enablement/07-measuring-adoption.md: ai-accountability/03-ai-enablement/07-measuring-adoption.md
+        ai-enablement/08-when-it-stalls.md: ai-accountability/03-ai-enablement/08-when-it-stalls.md
+        ai-enablement/glossary.md: ai-accountability/03-ai-enablement/glossary.md
+        ai-enablement/validation/index.md: ai-accountability/03-ai-enablement/validation/index.md
+        # Redirect the pre-reorder AI Accountability role URLs to their hierarchy-numbered homes.
+        ai-accountability/chief-ai-officer/glossary.md: ai-accountability/01-chief-ai-officer/glossary.md
+        ai-accountability/chief-ai-officer/index.md: ai-accountability/01-chief-ai-officer/index.md
+        ai-accountability/chief-ai-officer/setting-the-operating-model.md: ai-accountability/01-chief-ai-officer/setting-the-operating-model.md
+        ai-accountability/chief-ai-officer/the-first-90-days.md: ai-accountability/01-chief-ai-officer/the-first-90-days.md
+        ai-accountability/chief-ai-officer/validation/index.md: ai-accountability/01-chief-ai-officer/validation/index.md
+        ai-accountability/chief-ai-officer/what-chief-ai-officer-is.md: ai-accountability/01-chief-ai-officer/what-chief-ai-officer-is.md
+        ai-accountability/ai-transformation-lead/glossary.md: ai-accountability/02-ai-transformation-lead/glossary.md
+        ai-accountability/ai-transformation-lead/index.md: ai-accountability/02-ai-transformation-lead/index.md
+        ai-accountability/ai-transformation-lead/running-the-ai-coe.md: ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md
+        ai-accountability/ai-transformation-lead/validation/index.md: ai-accountability/02-ai-transformation-lead/validation/index.md
+        ai-accountability/ai-transformation-lead/what-ai-transformation-lead-is.md: ai-accountability/02-ai-transformation-lead/what-ai-transformation-lead-is.md
+        ai-accountability/ai-enablement/02-who-is-accountable-for-what.md: ai-accountability/03-ai-enablement/02-who-is-accountable-for-what.md
+        ai-accountability/ai-enablement/03-standing-up-the-function.md: ai-accountability/03-ai-enablement/03-standing-up-the-function.md
+        ai-accountability/ai-enablement/04-finding-where-ai-earns-its-keep.md: ai-accountability/03-ai-enablement/04-finding-where-ai-earns-its-keep.md
+        ai-accountability/ai-enablement/05-building-the-champion-network.md: ai-accountability/03-ai-enablement/05-building-the-champion-network.md
+        ai-accountability/ai-enablement/06-enablement-that-sticks.md: ai-accountability/03-ai-enablement/06-enablement-that-sticks.md
+        ai-accountability/ai-enablement/07-measuring-adoption.md: ai-accountability/03-ai-enablement/07-measuring-adoption.md
+        ai-accountability/ai-enablement/08-when-it-stalls.md: ai-accountability/03-ai-enablement/08-when-it-stalls.md
+        ai-accountability/ai-enablement/glossary.md: ai-accountability/03-ai-enablement/glossary.md
+        ai-accountability/ai-enablement/index.md: ai-accountability/03-ai-enablement/index.md
+        ai-accountability/ai-enablement/validation/index.md: ai-accountability/03-ai-enablement/validation/index.md
+        ai-accountability/ai-enablement/what-ai-enablement-is.md: ai-accountability/03-ai-enablement/what-ai-enablement-is.md
+        ai-accountability/ai-governance-lead/glossary.md: ai-accountability/04-ai-governance-lead/glossary.md
+        ai-accountability/ai-governance-lead/index.md: ai-accountability/04-ai-governance-lead/index.md
+        ai-accountability/ai-governance-lead/running-the-review-function.md: ai-accountability/04-ai-governance-lead/running-the-review-function.md
+        ai-accountability/ai-governance-lead/the-nist-ai-rmf-in-practice.md: ai-accountability/04-ai-governance-lead/the-nist-ai-rmf-in-practice.md
+        ai-accountability/ai-governance-lead/validation/index.md: ai-accountability/04-ai-governance-lead/validation/index.md
+        ai-accountability/ai-governance-lead/what-ai-governance-lead-is.md: ai-accountability/04-ai-governance-lead/what-ai-governance-lead-is.md
+        ai-accountability/ai-risk-officer/glossary.md: ai-accountability/05-ai-risk-officer/glossary.md
+        ai-accountability/ai-risk-officer/index.md: ai-accountability/05-ai-risk-officer/index.md
+        ai-accountability/ai-risk-officer/validating-and-monitoring-models.md: ai-accountability/05-ai-risk-officer/validating-and-monitoring-models.md
+        ai-accountability/ai-risk-officer/validation/index.md: ai-accountability/05-ai-risk-officer/validation/index.md
+        ai-accountability/ai-risk-officer/what-ai-risk-officer-is.md: ai-accountability/05-ai-risk-officer/what-ai-risk-officer-is.md
+        ai-accountability/ai-security-lead/glossary.md: ai-accountability/06-ai-security-lead/glossary.md
+        ai-accountability/ai-security-lead/index.md: ai-accountability/06-ai-security-lead/index.md
+        ai-accountability/ai-security-lead/running-a-red-team.md: ai-accountability/06-ai-security-lead/running-a-red-team.md
+        ai-accountability/ai-security-lead/the-owasp-top-10-for-llms.md: ai-accountability/06-ai-security-lead/the-owasp-top-10-for-llms.md
+        ai-accountability/ai-security-lead/validation/index.md: ai-accountability/06-ai-security-lead/validation/index.md
+        ai-accountability/ai-security-lead/what-ai-security-lead-is.md: ai-accountability/06-ai-security-lead/what-ai-security-lead-is.md
 
 # Every overview.md is an AUTHORED SOURCE whose body is spliced into its directory's
 # generated index.md by build_index.py — so no overview.md renders as its own page.

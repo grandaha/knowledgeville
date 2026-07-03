@@ -2,9 +2,9 @@
 
 Someone has to own the AI bet: what to invest in, what risk to accept, and who answers for the return. That's the **Chief AI Officer** — the executive who sets the enterprise AI strategy and holds the budget, distinct from the person who runs the resulting program day to day and the specialists who own model risk, policy, or security. This bundle is the operator's manual for that seat.
 
-It's one entry in [AI Accountability](/ai-accountability/index.md)'s role-by-role map — the sibling bundle to [AI Enablement](/ai-accountability/ai-enablement/index.md), which covers the adoption seat further down the org chart.
+It's one entry in [AI Accountability](/ai-accountability/index.md)'s role-by-role map — the sibling bundle to [AI Enablement](/ai-accountability/03-ai-enablement/index.md), which covers the adoption seat further down the org chart.
 
-New here? Start with [What a Chief AI Officer Is — and the Role](/ai-accountability/chief-ai-officer/what-chief-ai-officer-is.md).
+New here? Start with [What a Chief AI Officer Is — and the Role](/ai-accountability/01-chief-ai-officer/what-chief-ai-officer-is.md).
 
 ## In this section
 

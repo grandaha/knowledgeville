@@ -25,13 +25,13 @@ Here's the detail worth knowing before you assume too much: the current guidance
 
 - **AI Governance Lead** owns *policy* — regulatory conformance, fairness review, ethical-use sign-off. You own *math* — is this model accurate, and does it stay that way. A model can pass your review and still fail theirs, and vice versa.
 - **Chief Risk Officer** owns enterprise-wide risk across credit, market, operational, and liquidity exposure. Model risk is one input to that bigger picture, not a replacement for it — you feed the CRO's view, you don't own it.
-- **[Chief AI Officer](/ai-accountability/chief-ai-officer/what-chief-ai-officer-is.md)** owns the strategic bet. You don't decide whether to build a model; you decide whether the one that got built is trustworthy enough to rely on.
+- **[Chief AI Officer](/ai-accountability/01-chief-ai-officer/what-chief-ai-officer-is.md)** owns the strategic bet. You don't decide whether to build a model; you decide whether the one that got built is trustworthy enough to rely on.
 
 A proposed title for this seat — "Chief AI Risk Officer" — has been floated in industry commentary, but it's advocacy for a role that should exist, not evidence that it does ([ISACA, 2025](#ev-isaca-cairo-2025-proposal)). The function is real and well-established; the title is still unsettled. See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how this seat relates to the others.
 
 ## How this playbook is organized
 
-- [Validating and Monitoring Models](/ai-accountability/ai-risk-officer/validating-and-monitoring-models.md) — the three-part discipline that does the actual work: conceptual soundness, outcomes analysis, and ongoing monitoring for drift.
+- [Validating and Monitoring Models](/ai-accountability/05-ai-risk-officer/validating-and-monitoring-models.md) — the three-part discipline that does the actual work: conceptual soundness, outcomes analysis, and ongoing monitoring for drift.
 
 ## Sources
 

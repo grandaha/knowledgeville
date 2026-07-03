@@ -46,9 +46,9 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   workflow, adoption, talent, and measurement.
 
 - **[AI Accountability](/ai-accountability/index.md)** — a role-by-role map of who owns
-  which AI outcome inside an organization, with an operator's manual for each role.
-  Starts with **[AI Enablement](/ai-accountability/ai-enablement/index.md)**, the manual
-  for the person accountable for adoption; more roles are being added.
+  which AI outcome inside an organization, with an operator's manual for each role, from
+  the [Chief AI Officer](/ai-accountability/01-chief-ai-officer/index.md) who sets the
+  strategy down to the specialists who own risk, governance, and security.
 
 - **[Decision Guides](/decision-guides/index.md)** — cited, plain-language guides for
   the recurring, consequential decisions a knowledge worker faces: the real options, the

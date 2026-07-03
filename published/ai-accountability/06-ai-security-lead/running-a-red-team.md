@@ -18,7 +18,7 @@ Set your evaluation plan and capability thresholds *before* testing begins, not 
 
 ## Test the categories that actually matter for your system
 
-Use the [OWASP Top 10](/ai-accountability/ai-security-lead/the-owasp-top-10-for-llms.md) as your baseline coverage, then add domain-specific risks for what your system actually does. A worked example of how fast this can move: in Capture The Flag cybersecurity exercises, Claude went from the level of a high schooler to the level of an undergraduate in a single year ([Anthropic, 2025](#ev-anthropic-frontier-red-team-2025-cybersecurity-progress)). A red-team baseline from a year ago tells you less than you think it does — capability moves fast enough that "we tested this last year" isn't the same as "we tested this."
+Use the [OWASP Top 10](/ai-accountability/06-ai-security-lead/the-owasp-top-10-for-llms.md) as your baseline coverage, then add domain-specific risks for what your system actually does. A worked example of how fast this can move: in Capture The Flag cybersecurity exercises, Claude went from the level of a high schooler to the level of an undergraduate in a single year ([Anthropic, 2025](#ev-anthropic-frontier-red-team-2025-cybersecurity-progress)). A red-team baseline from a year ago tells you less than you think it does — capability moves fast enough that "we tested this last year" isn't the same as "we tested this."
 
 ## Don't red-team in isolation
 
@@ -26,7 +26,7 @@ The most credible AI security functions bring in outside eyes rather than relyin
 
 ## Turn findings into fixes, not just a report
 
-A red-team report that lists vulnerabilities and goes in a drawer accomplished nothing. Route findings through the same sign-off gate your [AI Governance Lead](/ai-accountability/ai-governance-lead/index.md) runs for deployment review — a critical finding should be able to block a launch, not just get logged for someday.
+A red-team report that lists vulnerabilities and goes in a drawer accomplished nothing. Route findings through the same sign-off gate your [AI Governance Lead](/ai-accountability/04-ai-governance-lead/index.md) runs for deployment review — a critical finding should be able to block a launch, not just get logged for someday.
 
 ## Sources
 

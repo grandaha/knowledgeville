@@ -11,7 +11,7 @@ Ask five organizations who owns AI governance and you'll get five different answ
 
 ## What this role operationalizes
 
-The AI Governance Lead turns AI policy from a document into a running practice: risk-tiering AI use cases, running sign-off gates before something ships, reviewing systems for fairness and ethical use, tracking regulatory change, and keeping the organization's AI management practices audit-ready. This is policy and process work — not model math (that's the [AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)'s job) and not the strategic bet (that's the [Chief AI Officer](/ai-accountability/chief-ai-officer/index.md)'s).
+The AI Governance Lead turns AI policy from a document into a running practice: risk-tiering AI use cases, running sign-off gates before something ships, reviewing systems for fairness and ethical use, tracking regulatory change, and keeping the organization's AI management practices audit-ready. This is policy and process work — not model math (that's the [AI Risk Officer](/ai-accountability/05-ai-risk-officer/index.md)'s job) and not the strategic bet (that's the [Chief AI Officer](/ai-accountability/01-chief-ai-officer/index.md)'s).
 
 ## Why the role is still finding its home
 
@@ -21,16 +21,16 @@ That split isn't necessarily wrong. Privacy teams already run impact-assessment 
 
 ## Where it sits, and who it isn't
 
-- **[AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)** owns whether a model is *accurate* — validation, drift, technical soundness. You own whether using it is *allowed* — policy conformance, fairness, ethical-use sign-off. A model can pass their review and fail yours, and vice versa.
-- **[Chief AI Officer](/ai-accountability/chief-ai-officer/index.md)** owns the strategic bet and the budget. You set the guardrails the bet has to operate inside — you don't decide whether to make the bet.
+- **[AI Risk Officer](/ai-accountability/05-ai-risk-officer/index.md)** owns whether a model is *accurate* — validation, drift, technical soundness. You own whether using it is *allowed* — policy conformance, fairness, ethical-use sign-off. A model can pass their review and fail yours, and vice versa.
+- **[Chief AI Officer](/ai-accountability/01-chief-ai-officer/index.md)** owns the strategic bet and the budget. You set the guardrails the bet has to operate inside — you don't decide whether to make the bet.
 - Common home bases for this seat: privacy, legal/compliance, or a dedicated risk function reporting into one of those. Wherever it sits, the same "three lines of defense" logic applies: this function is the second line, setting policy and providing challenge independent from the teams actually building and shipping AI (the first line).
 
 See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how this seat relates to the others.
 
 ## How this playbook is organized
 
-- [The NIST AI RMF in Practice](/ai-accountability/ai-governance-lead/the-nist-ai-rmf-in-practice.md) — Govern, Map, Measure, Manage: what each function concretely requires, not just what it's called.
-- [Running the Review Function](/ai-accountability/ai-governance-lead/running-the-review-function.md) — sensitive-use triage, pre-deployment sign-off, and the ISO 42001 management-system shape, via a worked example.
+- [The NIST AI RMF in Practice](/ai-accountability/04-ai-governance-lead/the-nist-ai-rmf-in-practice.md) — Govern, Map, Measure, Manage: what each function concretely requires, not just what it's called.
+- [Running the Review Function](/ai-accountability/04-ai-governance-lead/running-the-review-function.md) — sensitive-use triage, pre-deployment sign-off, and the ISO 42001 management-system shape, via a worked example.
 
 ## Sources
 

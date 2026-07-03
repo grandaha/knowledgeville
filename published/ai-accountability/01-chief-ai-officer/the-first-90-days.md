@@ -16,7 +16,7 @@ Run stakeholder interviews with the same set of questions across every business 
 
 Put the mandate in writing: a charter that says what you decide, what you're consulted on, and what stays with business-unit leaders. Ambiguity here is what gets exploited later, when a project fails and everyone points at everyone else.
 
-Then stand up the two forums from [Setting the Operating Model](/ai-accountability/chief-ai-officer/setting-the-operating-model.md): the portfolio council for funding decisions, and the responsible-AI review for risk sign-off. Set the minimum lifecycle gates every project must clear before it ships — a named business owner, a performance baseline, approved data access, a completed risk review, a monitoring plan, and an adoption approach ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-lifecycle-gates)). Projects that can't produce these six things aren't ready to fund, no matter how promising the demo looked.
+Then stand up the two forums from [Setting the Operating Model](/ai-accountability/01-chief-ai-officer/setting-the-operating-model.md): the portfolio council for funding decisions, and the responsible-AI review for risk sign-off. Set the minimum lifecycle gates every project must clear before it ships — a named business owner, a performance baseline, approved data access, a completed risk review, a monitoring plan, and an adoption approach ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-lifecycle-gates)). Projects that can't produce these six things aren't ready to fund, no matter how promising the demo looked.
 
 ## Days 61–90: ship one thing for real
 

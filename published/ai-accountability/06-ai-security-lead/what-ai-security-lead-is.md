@@ -18,15 +18,15 @@ The scale of the gap is telling: of organizations that had been breached through
 ## Where it sits, and who it isn't
 
 - **CISO** owns infrastructure, network, and identity security — the traditional perimeter. You own the model itself: what happens when an attacker talks to it directly, not around it.
-- **[AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)** owns whether a model is *accurate* — validation, drift, non-adversarial failure. You own what happens when someone is *actively trying to break it*. A model can be perfectly accurate and still be trivially jailbroken.
-- **[AI Governance Lead](/ai-accountability/ai-governance-lead/index.md)** owns policy and sign-off. You supply the technical finding — "this system is vulnerable to X" — that their review process has to act on.
+- **[AI Risk Officer](/ai-accountability/05-ai-risk-officer/index.md)** owns whether a model is *accurate* — validation, drift, non-adversarial failure. You own what happens when someone is *actively trying to break it*. A model can be perfectly accurate and still be trivially jailbroken.
+- **[AI Governance Lead](/ai-accountability/04-ai-governance-lead/index.md)** owns policy and sign-off. You supply the technical finding — "this system is vulnerable to X" — that their review process has to act on.
 
-There's no standardized title for this seat yet — postings use "AI Security Lead," "Head of AI Security Architecture," and others interchangeably, and frontier labs use their own terms entirely (Anthropic calls its version the Frontier Red Team, discussed in [Running a Red Team](/ai-accountability/ai-security-lead/running-a-red-team.md)). The function is what matters: adversarial testing of the model itself. See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how this seat relates to the others.
+There's no standardized title for this seat yet — postings use "AI Security Lead," "Head of AI Security Architecture," and others interchangeably, and frontier labs use their own terms entirely (Anthropic calls its version the Frontier Red Team, discussed in [Running a Red Team](/ai-accountability/06-ai-security-lead/running-a-red-team.md)). The function is what matters: adversarial testing of the model itself. See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how this seat relates to the others.
 
 ## How this playbook is organized
 
-- [The OWASP Top 10 for LLM Applications](/ai-accountability/ai-security-lead/the-owasp-top-10-for-llms.md) — the ten vulnerability categories that define what this role actually tests for.
-- [Running a Red Team](/ai-accountability/ai-security-lead/running-a-red-team.md) — scoping an engagement, the objective-based methodology, and a worked example from a frontier lab.
+- [The OWASP Top 10 for LLM Applications](/ai-accountability/06-ai-security-lead/the-owasp-top-10-for-llms.md) — the ten vulnerability categories that define what this role actually tests for.
+- [Running a Red Team](/ai-accountability/06-ai-security-lead/running-a-red-team.md) — scoping an engagement, the objective-based methodology, and a worked example from a frontier lab.
 
 ## Sources
 

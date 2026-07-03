@@ -26,7 +26,7 @@ A working operating model needs a forum, not just a policy. A monthly portfolio 
 
 ## The responsible-AI review
 
-Keep risk decisions in a separate forum from funding decisions. A portfolio council optimizes for value; mixing in risk sign-off pressures it to wave things through. A dedicated responsible-AI review sets risk gates proportional to how much is at stake — a low-stakes internal tool clears a lighter bar than a system making decisions about customers or employees. This is also where you formalize the minimum lifecycle gates every project must clear (see [The First 90 Days](/ai-accountability/chief-ai-officer/the-first-90-days.md) for what those gates look like in practice).
+Keep risk decisions in a separate forum from funding decisions. A portfolio council optimizes for value; mixing in risk sign-off pressures it to wave things through. A dedicated responsible-AI review sets risk gates proportional to how much is at stake — a low-stakes internal tool clears a lighter bar than a system making decisions about customers or employees. This is also where you formalize the minimum lifecycle gates every project must clear (see [The First 90 Days](/ai-accountability/01-chief-ai-officer/the-first-90-days.md) for what those gates look like in practice).
 
 ## Sources
 

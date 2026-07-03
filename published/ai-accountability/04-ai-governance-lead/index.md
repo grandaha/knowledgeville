@@ -2,9 +2,9 @@
 
 Policy on paper doesn't stop anything. The **AI Governance Lead** is the person who turns AI policy into a running practice — risk-tiering use cases, gating deployment, reviewing for fairness and ethical use, and tracking regulatory change. This bundle is the operator's manual for that seat, wherever it currently sits in your org chart.
 
-It's one entry in [AI Accountability](/ai-accountability/index.md)'s role-by-role map — distinct from [AI Risk Officer](/ai-accountability/ai-risk-officer/index.md) (model accuracy) and [Chief AI Officer](/ai-accountability/chief-ai-officer/index.md) (the strategic bet): this seat owns whether using AI is *allowed*, not whether a model is *right* or *worth building*.
+It's one entry in [AI Accountability](/ai-accountability/index.md)'s role-by-role map — distinct from [AI Risk Officer](/ai-accountability/05-ai-risk-officer/index.md) (model accuracy) and [Chief AI Officer](/ai-accountability/01-chief-ai-officer/index.md) (the strategic bet): this seat owns whether using AI is *allowed*, not whether a model is *right* or *worth building*.
 
-New here? Start with [What the AI Governance Lead Is — and the Role](/ai-accountability/ai-governance-lead/what-ai-governance-lead-is.md).
+New here? Start with [What the AI Governance Lead Is — and the Role](/ai-accountability/04-ai-governance-lead/what-ai-governance-lead-is.md).
 
 ## In this section
 

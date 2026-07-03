@@ -11,6 +11,14 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v9.1.0 — Data Readiness reframed around the use case — 2026-07-03
+
+### New & expanded content
+* Open the Data Readiness framework with a use-case diagnostic
+* Re-scope the AI Readiness Assessment to the use case, not the org
+* Reposition Data Readiness framework pages around the use case
+* Relabel practitioner guides around use-case scope
+
 ## v9.0.0 — The AI-Native Organization bundle — 2026-07-03
 
 ### New & expanded content

@@ -1,0 +1,84 @@
+# evidence.yaml — public provenance record for the AI Transformation Lead bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-microsoft-ai-coe-2025-steering-committee
+  claim: "What a working AI CoE steering structure looks like"
+  value: "a steering committee with business and IT leaders, monthly progress reviews with sponsors, and direct access to C-level decision makers"
+  wording: "Form a steering committee with business and IT leaders, establish monthly progress reviews with sponsors, and ensure that the CoE has direct access to C-level decision makers."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-coe-leader-role
+  claim: "The CoE leader's job: single point of contact for AI strategy implementation"
+  value: "a dedicated leader who drives AI initiatives and acts as the single point of contact for AI strategy implementation"
+  wording: "Appoint an AI CoE leader... a dedicated leader who drives AI initiatives and acts as the single point of contact for AI strategy implementation."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-intake-prioritization
+  claim: "The mechanism for deciding what the CoE works on next"
+  value: "intake and prioritization workflows, with a maintained prioritized AI initiative backlog"
+  wording: "Create intake and prioritization workflows... Maintain a prioritized AI initiative backlog."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-maturity-bottlenecks
+  claim: "The signal that a centralized CoE has outgrown its model"
+  value: "approval delays and knowledge bottlenecks, and growing friction as product teams and the CoE debate priorities"
+  wording: "Watch for approval delays and knowledge bottlenecks where AI experts in the CoE can't support all teams... growing friction where product teams and the CoE frequently debate priorities."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-microsoft-ai-coe-2025-maturity-transfer
+  claim: "What to do once a CoE has outgrown the centralized gatekeeper model"
+  value: "transfer AI delivery to the platform teams, and replace the CoE gatekeeper model with an advisory group that sets guardrails"
+  wording: "Transfer AI delivery to the platform teams... Replace the CoE gatekeeper model that blocks work with an advisory group that sets guardrails."
+  source:
+    org: "Microsoft"
+    report: "Cloud Adoption Framework — Establish an AI Center of Excellence"
+    edition: 2025
+    url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02

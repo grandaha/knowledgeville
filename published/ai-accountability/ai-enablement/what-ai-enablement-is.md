@@ -24,7 +24,7 @@ Organizations are staffing this on purpose. The share of surveyed organizations 
 The titles stack by altitude:
 
 - **Chief AI Officer** — sets the strategy and owns the bet.
-- **AI Transformation Lead** — runs the whole program across functions.
+- **[AI Transformation Lead](/ai-accountability/ai-transformation-lead/index.md)** — runs the whole program across functions.
 - **AI Enablement Lead** — makes people actually use it: literacy, champions, behavior change, and measurement. This is the seat this bundle serves.
 - **AI Champion** — a peer who spreads use inside one team. The network the enablement lead runs.
 

@@ -25,10 +25,11 @@ Accountability for AI outcomes roughly splits top to bottom:
 - **[Chief AI Officer](/ai-accountability/chief-ai-officer/index.md)** — sets the AI
   strategy and owns the bet: the executive who decides where the organization plays and
   holds the budget.
-- **AI Transformation Lead** *(planned)* — runs the whole transformation program across
-  functions, translating the CAIO's strategy into a portfolio of work. This is the
-  practitioner counterpart to [Enterprise AI Transformation](/enterprise-ai-transformation/index.md),
-  which covers the program itself at leadership altitude.
+- **[AI Transformation Lead](/ai-accountability/ai-transformation-lead/index.md)** — runs
+  the whole transformation program across functions, translating the CAIO's strategy into
+  a portfolio of work. This is the practitioner counterpart to
+  [Enterprise AI Transformation](/enterprise-ai-transformation/index.md), which covers the
+  program itself at leadership altitude.
 - **[AI Enablement Lead](/ai-accountability/ai-enablement/index.md)** — accountable for one
   specific slice of the program: adoption. Getting people to actually change how they work,
   not just what tools they can open. Reports into the transformation program, not a
@@ -46,8 +47,8 @@ cover:
 
 ## What's live vs. planned
 
-**AI Enablement** and **Chief AI Officer** are authored today. The other four roles are
-named here as the domain's intended scope so the map is honest about where it's going,
-without shipping empty bundles for roles that haven't been researched yet. Each gets
-stood up as its own bundle — profile, glossary, and operator's manual — when it's ready
-to be written.
+**AI Enablement**, **Chief AI Officer**, and **AI Transformation Lead** are authored today.
+The other three roles are named here as the domain's intended scope so the map is honest
+about where it's going, without shipping empty bundles for roles that haven't been
+researched yet. Each gets stood up as its own bundle — profile, glossary, and operator's
+manual — when it's ready to be written.

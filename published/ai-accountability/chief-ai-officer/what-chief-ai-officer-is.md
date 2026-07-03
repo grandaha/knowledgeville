@@ -19,7 +19,7 @@ The job is a portfolio-management job, not an engineering job. You are not the b
 
 The titles around AI accountability stack by altitude — see [The Accountability Map](/ai-accountability/the-accountability-map.md) for the full picture. Two distinctions matter most for this seat:
 
-- **AI Transformation Lead** runs the program you set direction for. You decide where to play; they run the cross-functional portfolio day to day. If you're doing both jobs yourself, the program will outgrow you.
+- **[AI Transformation Lead](/ai-accountability/ai-transformation-lead/index.md)** runs the program you set direction for. You decide where to play; they run the cross-functional portfolio day to day. If you're doing both jobs yourself, the program will outgrow you.
 - **Chief Data Officer** owns the data asset — whether it's governed, trustworthy, and available. You own what AI does with that asset. In practice the two titles converge often enough that they're worth naming: Deloitte's 2026 CDAO survey — of 100 C-suite executives at $1B+ revenue companies, with titles including CDAO, CDO, and CAIO — found 63% of CDAOs already describe themselves as the primary driver of their organization's data and analytics decisions ([Deloitte, 2026](#ev-deloitte-cdao-2026-methodology-and-primacy)). A CDAO claiming that ground is a mandate that overlaps yours, whether or not the titles are formally merged.
 
 The role isn't settled yet. Of organizations with a CAIO, 40% report the role to the CEO and 24% to the CIO ([Foundry, 2025](#ev-foundry-state-of-cio-2025-caio-reporting-line)) — there is no single right answer on reporting line, only a judgment about how much independence the mandate needs from the technology budget it often has to challenge.

@@ -1,10 +1,17 @@
 ---
 type: Playbook
 title: Data Mesh Governance in Practice
-description: A practitioner guide to data mesh — redistributing data ownership and accountability to domain teams, and enforcing enterprise standards through federated computational governance.
+description: An organization-scale option, not a per-use-case readiness step — redistributing data ownership across domain teams through federated computational governance.
 tags: [data-mesh, data-governance, federated-governance, data-products, ai-readiness]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
+
+*This is an organization-scale option, not a [readiness step a single use case needs
+to take](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md).*
+Data mesh answers how an enterprise structures ownership across many domains and many
+data products at once. A single through-the-record use case needs the access,
+governance, and lineage that page describes — not a mesh rollout. Read this when you are
+scoping a multi-domain data platform, not to ship one use case.
 
 ## What Data Mesh Is Actually Solving
 

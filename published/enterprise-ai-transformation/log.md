@@ -22,6 +22,13 @@
   reorders to put Lineage & Metadata second — the evidence layer that matters most once a
   use case acts without review — ahead of Governance and Access & Integration, both of
   which now cross-link the use-case diagnostic as well.
+* **Update**: [Data Labeling & Annotation Programs](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-labeling-and-annotation-programs.md)
+  and [Data Mesh Governance in Practice](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-mesh-governance-in-practice.md)
+  now open with a scope note: labeling applies only if you train or fine-tune your own
+  models, and data mesh is an organization-scale option, not a per-use-case readiness step.
+  [Master Data Management](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/master-data-management.md)
+  is reframed from "run an MDM program" to "resolve the entities a single use case needs,"
+  with the full program covered as what's warranted at organizational scale.
 * **Update**: [Program Architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md)
   now cross-links its CDAO, AI Program Lead, and Track Owner roles to their matching
   operator's manuals in AI Accountability, and names the typical owner (with cited

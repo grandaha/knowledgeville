@@ -1,18 +1,34 @@
 ---
 type: Playbook
 title: Master Data Management (MDM)
-description: A practitioner guide to creating and maintaining a single trusted authoritative version of core business entities, and why MDM is foundational to AI quality.
+description: A use case needs entity resolution, not a full MDM program — when a program earns its cost, and how to run one.
 tags: [master-data-management, data-governance, golden-record, data-quality, ai-readiness]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
 
 ## The Problem MDM Solves
 
-Every enterprise has a version of this problem. Ask five different systems who your best customer is and you get five different answers. The CRM says one thing, the ERP another, the billing system a third. The same product has four different SKUs across four platforms. A supplier exists under three different names depending on which team entered the record.
+Every enterprise has a version of this problem. Ask five different systems who your best
+customer is and you get five different answers. The CRM says one thing, the ERP another,
+the billing system a third. The same product has four different SKUs across four
+platforms. A supplier exists under three different names depending on which team entered
+the record.
 
-This is the master data problem. And it is the single most common reason that AI initiatives produce results that don't match reality — not because the models are wrong, but because the data they trained on never had a consistent, authoritative definition of the entities at the center of the business.
+[A single use case](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md)
+that routes through a system of record needs this resolved for the entities it actually
+touches — a support agent that looks up an account needs to find the right customer, not
+a company-wide golden record. That is a scoped data problem, solvable without a program:
+match the handful of source systems the use case reads, apply survivorship rules for the
+attributes it uses, and ship it. A full MDM program is the answer to a different
+question — many use cases across the organization sharing the same fractured entity, at a
+scale where resolving it use case by use case duplicates effort every time. The rest of
+this page covers that program: what it takes, and when it is actually worth building
+rather than resolving one path at a time.
 
-Master Data Management (MDM) is the discipline of creating and maintaining a single, trusted, authoritative version of core business entities — customers, products, suppliers, locations, employees — and ensuring that version is shared consistently across every system that uses it.
+Master Data Management (MDM) is the discipline of creating and maintaining a single,
+trusted, authoritative version of core business entities — customers, products, suppliers,
+locations, employees — and ensuring that version is shared consistently across every
+system that uses it.
 
 > Only **15%** of organizations report having mature data governance in place ([DATAVERSITY, 2025](#ev-dataversity-tdm-2025-mature-governance))
 

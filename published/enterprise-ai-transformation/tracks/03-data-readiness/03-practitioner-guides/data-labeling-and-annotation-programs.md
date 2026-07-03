@@ -1,10 +1,15 @@
 ---
 type: Playbook
 title: Data Labeling & Annotation Programs
-description: A practitioner guide to running production-grade data labeling and annotation programs, where label quality determines model quality.
+description: If you train or fine-tune your own models — a practitioner guide to running data labeling and annotation programs that hold up in production.
 tags: [data-labeling, annotation, supervised-learning, data-quality, mlops]
-timestamp: "2026-06-12"
+timestamp: "2026-07-03"
 ---
+
+*If you train or fine-tune your own models.* [Most enterprise AI work does
+not](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md) —
+deploying a model someone else trained needs nothing from this page. Read on only if your
+use case includes an actual training or fine-tuning step.
 
 ## Why Labeling Determines Model Quality
 

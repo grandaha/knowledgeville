@@ -42,13 +42,14 @@ cover:
   AI policy, regulatory conformance, and fairness/ethical-use review.
 - **[AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)** — owns model-level
   risk: accuracy, validation, and drift, distinct from policy or adoption.
-- **AI Security Lead** *(planned)* — adversarial testing and model-level security (prompt
-  injection, jailbreaks), distinct from general infrastructure security.
+- **[AI Security Lead](/ai-accountability/ai-security-lead/index.md)** — adversarial
+  testing and model-level security (prompt injection, jailbreaks), distinct from general
+  infrastructure security.
 
-## What's live vs. planned
+## Where this map stands
 
-**AI Enablement**, **Chief AI Officer**, **AI Transformation Lead**, **AI Risk Officer**,
-and **AI Governance Lead** are authored today. **AI Security Lead** is named here as the
-domain's remaining intended scope so the map is honest about where it's going, without
-shipping an empty bundle for a role that hasn't been researched yet. It gets stood up as
-its own bundle — profile, glossary, and operator's manual — when it's ready to be written.
+All six roles named above are authored. That's the domain's initial scope, researched and
+built one role at a time rather than scaffolded empty and filled in later — a role appears
+on this map only once it has a real operator's manual behind it. More roles will be added
+as new, genuinely distinct AI accountability seats emerge and get researched; when that
+happens, this page grows the same way it did to get here.

@@ -1,0 +1,123 @@
+# evidence.yaml — public provenance record for the AI Security Lead bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-ibm-databreach-2025-ai-breach-prevalence
+  claim: "Share of organizations reporting a breach of AI models or applications"
+  value: "13% reported a breach; 8% didn't know if they'd been breached"
+  wording: "13% of organizations reported breaches of AI models or applications, while 8% of organizations reported not knowing if they had been compromised in this way."
+  source:
+    org: "IBM (Ponemon Institute)"
+    report: "Cost of a Data Breach Report 2025"
+    edition: 2025
+    url: https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-ibm-databreach-2025-ai-access-controls-gap
+  claim: "Of organizations breached via AI, the share lacking AI access controls"
+  value: "97%"
+  wording: "Of those compromised, 97% report not having AI access controls in place."
+  source:
+    org: "IBM (Ponemon Institute)"
+    report: "Cost of a Data Breach Report 2025"
+    edition: 2025
+    url: https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-ibm-databreach-2025-ai-governance-gap
+  claim: "Of organizations breached via AI, the share with no or immature AI governance policy"
+  value: "63%"
+  wording: "63% of breached organizations either don't have an AI governance policy or are still developing a policy."
+  source:
+    org: "IBM (Ponemon Institute)"
+    report: "Cost of a Data Breach Report 2025"
+    edition: 2025
+    url: https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-owasp-llm-top-10-2025-list
+  claim: "The current OWASP Top 10 for LLM Applications, in order"
+  value: "Prompt Injection, Sensitive Information Disclosure, Supply Chain, Data and Model Poisoning, Improper Output Handling, Excessive Agency, System Prompt Leakage, Vector and Embedding Weaknesses, Misinformation, Unbounded Consumption"
+  wording: "LLM01:2025 Prompt Injection; LLM02:2025 Sensitive Information Disclosure; LLM03:2025 Supply Chain; LLM04:2025 Data and Model Poisoning; LLM05:2025 Improper Output Handling; LLM06:2025 Excessive Agency; LLM07:2025 System Prompt Leakage; LLM08:2025 Vector and Embedding Weaknesses; LLM09:2025 Misinformation; LLM10:2025 Unbounded Consumption."
+  source:
+    org: "OWASP (GenAI Security Project)"
+    report: "OWASP Top 10 for LLM Applications"
+    edition: 2025
+    url: https://genai.owasp.org/llm-top-10/
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-anthropic-frontier-red-team-2025-cybersecurity-progress
+  claim: "How fast Claude's offensive-cybersecurity capability moved in one year, per Anthropic's own red-team evals"
+  value: "from high-schooler level to undergraduate level in one year, on Capture The Flag exercises"
+  wording: "In Capture The Flag (CTF) exercises — cybersecurity challenges that involve finding and exploiting software vulnerabilities in a controlled environment — Claude improved from the level of a high schooler to the level of an undergraduate in just one year."
+  source:
+    org: "Anthropic"
+    report: "Strategic Warning for AI Risk — Progress and Insights from our Frontier Red Team"
+    edition: 2025
+    url: https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-anthropic-frontier-red-team-2025-thresholds-methodology
+  claim: "How Anthropic's Frontier Red Team ties evaluation to deployment decisions"
+  value: "pre-committed capability thresholds, defined before testing, trigger increased security levels"
+  wording: "By developing evaluation plans in advance and committing to capability thresholds that would motivate increased levels of security, the work of Anthropic's Frontier Red Team enhances our ability to advance the frontier of AI rapidly."
+  source:
+    org: "Anthropic"
+    report: "Strategic Warning for AI Risk — Progress and Insights from our Frontier Red Team"
+    edition: 2025
+    url: https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-owasp-llm10-2025-model-theft-scope
+  claim: "Whether model theft/extraction is covered under Unbounded Consumption"
+  value: "yes — explicitly covers stealing IP by cloning a model's behavior via API extraction"
+  wording: "Attacks designed to disrupt service, deplete the target's financial resources, or even steal intellectual property by cloning a model's behavior all depend on a common class of security vulnerability... Model Extraction via API: Attackers may query the model API using carefully crafted inputs and prompt injection techniques to collect sufficient outputs to replicate a partial model or create a shadow model."
+  source:
+    org: "OWASP (GenAI Security Project)"
+    report: "LLM10:2025 Unbounded Consumption"
+    edition: 2025
+    url: https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-anthropic-frontier-red-team-2025-external-partners
+  claim: "Who Anthropic brings in as external red-team partners, and for what"
+  value: "Carnegie Mellon (network security simulations), US/UK AI safety institutes (pre-deployment testing), NNSA/DOE (classified nuclear-knowledge evaluation)"
+  wording: "a model's ability to discover and exploit vulnerabilities in insecure software [with Carnegie Mellon University]... have undergone pre-deployment testing by both the US AI Safety Institute and UK AI Security Institute... a first-of-its-kind partnership [with NNSA] evaluating models in a classified environment for knowledge relevant to nuclear and radiological risk."
+  source:
+    org: "Anthropic"
+    report: "Strategic Warning for AI Risk — Progress and Insights from our Frontier Red Team"
+    edition: 2025
+    url: https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02

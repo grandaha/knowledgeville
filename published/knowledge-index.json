@@ -37,6 +37,17 @@
       "pageCount": 2
     },
     {
+      "slug": "ai-security-lead",
+      "title": "AI Security Lead",
+      "description": "The operator's manual for the person accountable for adversarial testing and model-level security.",
+      "posture": {
+        "citation_style": "selective",
+        "verification_posture": "verify-embedded-facts",
+        "temporal_mode": "always-newer"
+      },
+      "pageCount": 3
+    },
+    {
       "slug": "ai-transformation-lead",
       "title": "AI Transformation Lead",
       "description": "The operator's manual for the person who runs the cross-functional AI transformation program day to day.",
@@ -528,6 +539,115 @@
           "org": "ISACA (Charles Cresson Wood)",
           "url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2025/the-new-role-of-the-chief-artificial-intelligence-risk-officer",
           "wording": "The New Role of the Chief Artificial Intelligence Risk Officer — an advocacy piece analogized to the historical emergence of the CISO and CPO roles, proposing the title rather than documenting its adoption.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-security-lead",
+      "path": "running-a-red-team.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/ai-security-lead/running-a-red-team/",
+      "title": "Running a Red Team",
+      "description": "Scoping an engagement, the objective-based methodology, and a worked example from a frontier lab.",
+      "tags": [
+        "ai-security-lead",
+        "red-teaming"
+      ],
+      "body": "Traditional penetration testing asks \"can we get in.\" AI red-teaming asks a different question: \"can we get the model to do this specific thing it shouldn't\" — leak a document, take an unauthorized action, produce content it was explicitly built to refuse. That shift changes what the engagement looks like.\n\n## Why this isn't just penetration testing with a new label\n\nA traditional pentest has a fixed target with a finite, enumerable attack surface. An LLM is probabilistic — the same prompt can produce a different output on repeat runs, and the \"surface\" includes the model's training, its instructions, and everything an attacker can say to it. That means a red-team engagement needs objectives, not just techniques: define what you're trying to get the model to do, then test at scale, since a single failed attempt tells you nothing about whether the model is actually resistant.\n\n## Scope it before you start\n\nSet your evaluation plan and capability thresholds *before* testing begins, not after you see what the model does. Anthropic's own framing of why this matters: developing evaluation plans in advance and committing to capability thresholds that would motivate increased security is what lets a lab keep advancing capability while staying ahead of the risk that capability creates ([Anthropic, 2025](#ev-anthropic-frontier-red-team-2025-thresholds-methodology)). Decide what \"too dangerous to ship without more controls\" looks like before you're the one deciding it in the middle of a launch deadline.\n\n## Test the categories that actually matter for your system\n\nUse the [OWASP Top 10](/ai-accountability/ai-security-lead/the-owasp-top-10-for-llms.md) as your baseline coverage, then add domain-specific risks for what your system actually does. A worked example of how fast this can move: in Capture The Flag cybersecurity exercises, Claude went from the level of a high schooler to the level of an undergraduate in a single year ([Anthropic, 2025](#ev-anthropic-frontier-red-team-2025-cybersecurity-progress)). A red-team baseline from a year ago tells you less than you think it does — capability moves fast enough that \"we tested this last year\" isn't the same as \"we tested this.\"\n\n## Don't red-team in isolation\n\nThe most credible AI security functions bring in outside eyes rather than relying entirely on internal review. Anthropic's own program is a useful reference point: it's run technical evaluations with Carnegie Mellon on network-security exploitation, had models undergo pre-deployment testing by both the US and UK AI safety institutes, and built a dedicated partnership with the US Nuclear National Security Administration to evaluate models for nuclear and radiological risk in a classified setting ([Anthropic, 2025](#ev-anthropic-frontier-red-team-2025-external-partners)). You don't need a partnership with a national security agency to take the principle: an internal team checking its own organization's work has limits an outside evaluator doesn't.\n\n## Turn findings into fixes, not just a report\n\nA red-team report that lists vulnerabilities and goes in a drawer accomplished nothing. Route findings through the same sign-off gate your [AI Governance Lead](/ai-accountability/ai-governance-lead/index.md) runs for deployment review — a critical finding should be able to block a launch, not just get logged for someday.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Anthropic — *Strategic Warning for AI Risk — Progress and Insights from our Frontier Red Team*, 2025.** By developing evaluation plans in advance and committing to capability thresholds that would motivate increased levels of security, the work of Anthropic's Frontier Red Team enhances our ability to advance the frontier of AI rapidly. [View source](https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team){#ev-anthropic-frontier-red-team-2025-thresholds-methodology} · verified 2026-07-02 · primary\n- **Anthropic — *Strategic Warning for AI Risk — Progress and Insights from our Frontier Red Team*, 2025.** In Capture The Flag (CTF) exercises — cybersecurity challenges that involve finding and exploiting software vulnerabilities in a controlled environment — Claude improved from the level of a high schooler to the level of an undergraduate in just one year. [View source](https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team){#ev-anthropic-frontier-red-team-2025-cybersecurity-progress} · verified 2026-07-02 · primary\n- **Anthropic — *Strategic Warning for AI Risk — Progress and Insights from our Frontier Red Team*, 2025.** a model's ability to discover and exploit vulnerabilities in insecure software [with Carnegie Mellon University]... have undergone pre-deployment testing by both the US AI Safety Institute and UK AI Security Institute... a first-of-its-kind partnership [with NNSA] evaluating models in a classified environment for knowledge relevant to nuclear and radiological risk. [View source](https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team){#ev-anthropic-frontier-red-team-2025-external-partners} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-anthropic-frontier-red-team-2025-cybersecurity-progress",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+          "wording": "In Capture The Flag (CTF) exercises — cybersecurity challenges that involve finding and exploiting software vulnerabilities in a controlled environment — Claude improved from the level of a high schooler to the level of an undergraduate in just one year.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-anthropic-frontier-red-team-2025-thresholds-methodology",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+          "wording": "By developing evaluation plans in advance and committing to capability thresholds that would motivate increased levels of security, the work of Anthropic's Frontier Red Team enhances our ability to advance the frontier of AI rapidly.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-anthropic-frontier-red-team-2025-external-partners",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+          "wording": "a model's ability to discover and exploit vulnerabilities in insecure software [with Carnegie Mellon University]... have undergone pre-deployment testing by both the US AI Safety Institute and UK AI Security Institute... a first-of-its-kind partnership [with NNSA] evaluating models in a classified environment for knowledge relevant to nuclear and radiological risk.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-security-lead",
+      "path": "the-owasp-top-10-for-llms.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/ai-security-lead/the-owasp-top-10-for-llms/",
+      "title": "The OWASP Top 10 for LLM Applications",
+      "description": "The ten vulnerability categories that define what this role tests for.",
+      "tags": [
+        "ai-security-lead",
+        "owasp"
+      ],
+      "body": "OWASP's Top 10 for LLM Applications is the closest thing this field has to a shared vocabulary — a ranked list of the vulnerability categories that show up again and again in real LLM-based systems ([OWASP, 2025](#ev-owasp-llm-top-10-2025-list)). Use it as a checklist for what a review needs to cover, not a compliance box to tick once.\n\n## The list\n\n1. **Prompt Injection** — user input alters the model's behavior in ways the system designer didn't intend, overriding instructions or extracting data it shouldn't share.\n2. **Sensitive Information Disclosure** — the model exposes private, proprietary, or otherwise sensitive information through its outputs.\n3. **Supply Chain** — vulnerabilities inherited from third-party models, training data, fine-tuning services, or plugins the system depends on.\n4. **Data and Model Poisoning** — pre-training, fine-tuning, or embedding data is manipulated to introduce vulnerabilities, backdoors, or bias.\n5. **Improper Output Handling** — insufficient validation or sanitization of what the model produces before it's used downstream (rendered in a browser, executed as code, passed to another system).\n6. **Excessive Agency** — an agentic system is granted more autonomy, permissions, or tool access than its actual task requires.\n7. **System Prompt Leakage** — the instructions meant to stay hidden from the user get exposed, handing an attacker the system's own playbook.\n8. **Vector and Embedding Weaknesses** — security gaps specific to retrieval-augmented systems, where the vector store or embedding pipeline becomes the attack surface.\n9. **Misinformation** — the model generates false or misleading content that's presented with unwarranted confidence.\n10. **Unbounded Consumption** — the system allows unrestricted resource use, covering denial-of-service, cost exploitation, and unauthorized model replication.\n\n## What's changed from earlier versions\n\nThis list evolves as real-world incidents surface new patterns. One thing worth knowing if you've used an older version of this list: model theft is now folded into **Unbounded Consumption** rather than standing alone — OWASP's own description explicitly covers stealing IP by cloning a model's behavior through API extraction ([OWASP, 2025](#ev-owasp-llm10-2025-model-theft-scope)). Treat this as a living list — check for the current version before you scope a review, not this page's snapshot of it.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **OWASP (GenAI Security Project) — *OWASP Top 10 for LLM Applications*, 2025.** LLM01:2025 Prompt Injection; LLM02:2025 Sensitive Information Disclosure; LLM03:2025 Supply Chain; LLM04:2025 Data and Model Poisoning; LLM05:2025 Improper Output Handling; LLM06:2025 Excessive Agency; LLM07:2025 System Prompt Leakage; LLM08:2025 Vector and Embedding Weaknesses; LLM09:2025 Misinformation; LLM10:2025 Unbounded Consumption. [View source](https://genai.owasp.org/llm-top-10/){#ev-owasp-llm-top-10-2025-list} · verified 2026-07-02 · primary\n- **OWASP (GenAI Security Project) — *LLM10:2025 Unbounded Consumption*, 2025.** Attacks designed to disrupt service, deplete the target's financial resources, or even steal intellectual property by cloning a model's behavior all depend on a common class of security vulnerability... Model Extraction via API: Attackers may query the model API using carefully crafted inputs and prompt injection techniques to collect sufficient outputs to replicate a partial model or create a shadow model. [View source](https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/){#ev-owasp-llm10-2025-model-theft-scope} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-owasp-llm-top-10-2025-list",
+          "org": "OWASP (GenAI Security Project)",
+          "url": "https://genai.owasp.org/llm-top-10/",
+          "wording": "LLM01:2025 Prompt Injection; LLM02:2025 Sensitive Information Disclosure; LLM03:2025 Supply Chain; LLM04:2025 Data and Model Poisoning; LLM05:2025 Improper Output Handling; LLM06:2025 Excessive Agency; LLM07:2025 System Prompt Leakage; LLM08:2025 Vector and Embedding Weaknesses; LLM09:2025 Misinformation; LLM10:2025 Unbounded Consumption.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-owasp-llm10-2025-model-theft-scope",
+          "org": "OWASP (GenAI Security Project)",
+          "url": "https://genai.owasp.org/llmrisk/llm102025-unbounded-consumption/",
+          "wording": "Attacks designed to disrupt service, deplete the target's financial resources, or even steal intellectual property by cloning a model's behavior all depend on a common class of security vulnerability... Model Extraction via API: Attackers may query the model API using carefully crafted inputs and prompt injection techniques to collect sufficient outputs to replicate a partial model or create a shadow model.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-security-lead",
+      "path": "what-ai-security-lead-is.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/ai-security-lead/what-ai-security-lead-is/",
+      "title": "What the AI Security Lead Is — and the Role",
+      "description": "What model-level security means, why breaches are already happening, and how this differs from a CISO's scope.",
+      "tags": [
+        "ai-security-lead",
+        "role-definition"
+      ],
+      "body": "This isn't a hypothetical future risk. Thirteen percent of organizations have already reported a breach of an AI model or application ([IBM, 2025](#ev-ibm-databreach-2025-ai-breach-prevalence)) — and of those breached, 97% didn't have AI access controls in place ([IBM, 2025](#ev-ibm-databreach-2025-ai-access-controls-gap)). The gap isn't exotic attackers using techniques nobody's heard of. It's organizations deploying AI without the basic controls a security review would have caught.\n\n## What model-level security actually covers\n\nAI security is adversarial testing aimed specifically at how AI systems can be attacked *because* they're AI systems — prompt injection, jailbreaks, data exfiltration through model outputs, and abuse of the autonomy an agentic system has been given. That's a different attack surface than the network, identity, and infrastructure security a traditional security team already owns. A model can sit behind a perfectly locked-down network and still be manipulated into leaking data or taking an action it shouldn't, through the prompt itself.\n\nThe scale of the gap is telling: of organizations that had been breached through AI, 63% either had no AI governance policy or were still developing one ([IBM, 2025](#ev-ibm-databreach-2025-ai-governance-gap)). Most AI security failures right now aren't sophisticated — they're a system shipped before anyone checked it.\n\n## Where it sits, and who it isn't\n\n- **CISO** owns infrastructure, network, and identity security — the traditional perimeter. You own the model itself: what happens when an attacker talks to it directly, not around it.\n- **[AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)** owns whether a model is *accurate* — validation, drift, non-adversarial failure. You own what happens when someone is *actively trying to break it*. A model can be perfectly accurate and still be trivially jailbroken.\n- **[AI Governance Lead](/ai-accountability/ai-governance-lead/index.md)** owns policy and sign-off. You supply the technical finding — \"this system is vulnerable to X\" — that their review process has to act on.\n\nThere's no standardized title for this seat yet — postings use \"AI Security Lead,\" \"Head of AI Security Architecture,\" and others interchangeably, and frontier labs use their own terms entirely (Anthropic calls its version the Frontier Red Team, discussed in [Running a Red Team](/ai-accountability/ai-security-lead/running-a-red-team.md)). The function is what matters: adversarial testing of the model itself. See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how this seat relates to the others.\n\n## How this playbook is organized\n\n- [The OWASP Top 10 for LLM Applications](/ai-accountability/ai-security-lead/the-owasp-top-10-for-llms.md) — the ten vulnerability categories that define what this role actually tests for.\n- [Running a Red Team](/ai-accountability/ai-security-lead/running-a-red-team.md) — scoping an engagement, the objective-based methodology, and a worked example from a frontier lab.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2025*, 2025.** 13% of organizations reported breaches of AI models or applications, while 8% of organizations reported not knowing if they had been compromised in this way. [View source](https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls){#ev-ibm-databreach-2025-ai-breach-prevalence} · verified 2026-07-02 · primary\n- **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2025*, 2025.** Of those compromised, 97% report not having AI access controls in place. [View source](https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls){#ev-ibm-databreach-2025-ai-access-controls-gap} · verified 2026-07-02 · primary\n- **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2025*, 2025.** 63% of breached organizations either don't have an AI governance policy or are still developing a policy. [View source](https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls){#ev-ibm-databreach-2025-ai-governance-gap} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-ibm-databreach-2025-ai-breach-prevalence",
+          "org": "IBM (Ponemon Institute)",
+          "url": "https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls",
+          "wording": "13% of organizations reported breaches of AI models or applications, while 8% of organizations reported not knowing if they had been compromised in this way.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-ibm-databreach-2025-ai-access-controls-gap",
+          "org": "IBM (Ponemon Institute)",
+          "url": "https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls",
+          "wording": "Of those compromised, 97% report not having AI access controls in place.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-ibm-databreach-2025-ai-governance-gap",
+          "org": "IBM (Ponemon Institute)",
+          "url": "https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls",
+          "wording": "63% of breached organizations either don't have an AI governance policy or are still developing a policy.",
           "status": "primary",
           "verified": "2026-07-02"
         }
@@ -6857,6 +6977,10 @@
       "terms": []
     },
     {
+      "bundle": "ai-security-lead",
+      "terms": []
+    },
+    {
       "bundle": "ai-transformation-lead",
       "terms": []
     },
@@ -7163,6 +7287,11 @@
       "date": "2026-07-02",
       "bundle": "ai-risk-officer",
       "entry": "Creation**: New bundle — the operator's manual for the AI Risk Officer, accountable for model-level risk: accuracy, validation, and drift. The intro What the AI Risk Officer Is — and the Role plus Validating and Monitoring Models. Selective citation posture: the regulatory scope, the generative/agentic AI exclusion, and the three-part validation discipline (conceptual soundness, outcomes analysis, ongoing monitoring) are cited verbatim to OCC/Federal Reserve/FDIC Bulletin 2026-13; the proposed \"Chief AI Risk Officer\" title is cited to ISACA and framed as advocacy, not adoption."
+    },
+    {
+      "date": "2026-07-02",
+      "bundle": "ai-security-lead",
+      "entry": "Creation**: New bundle — the operator's manual for the AI Security Lead, accountable for adversarial testing and model-level security: prompt injection, jailbreaks, data exfiltration, and agentic tool-abuse. The intro What the AI Security Lead Is — and the Role plus The OWASP Top 10 for LLM Applications and Running a Red Team. Selective citation posture: real-world AI breach prevalence is cited to IBM's Cost of a Data Breach Report 2025, the vulnerability taxonomy to OWASP's GenAI Security Project, and the red-teaming methodology and external partnerships to Anthropic's own published Frontier Red Team practice."
     },
     {
       "date": "2026-07-02",

@@ -11,6 +11,14 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v9.0.0 — The AI-Native Organization bundle — 2026-07-03
+
+### New & expanded content
+* Author The Three Accountabilities and The Partnership Pyramid, Generalized
+
+### Site & structure
+* Scaffold ai-native-organization bundle
+
 ## v8.1.0 — 2026-07-03
 
 ### New & expanded content

@@ -3,13 +3,25 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-07-02"
+timestamp: "2026-07-03"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v8.0.0 — 2026-07-03
+
+### New & expanded content
+* Chief AI Officer bundle (operator's manual for the AI strategy owner)
+* AI Transformation Lead bundle (operator's manual for the program owner)
+* AI Risk Officer bundle (operator's manual for model-level risk)
+* AI Governance Lead bundle (operator's manual for AI policy operationalization)
+* AI Security Lead bundle (operator's manual for model-level security)
+
+### Site & structure
+* Restructure ai-enablement under a new ai-accountability container
 
 ## v7.0.0 — AI Enablement bundle — 2026-07-02
 

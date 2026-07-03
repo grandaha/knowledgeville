@@ -24,7 +24,7 @@ The [Enterprise AI Transformation program architecture](/enterprise-ai-transform
 
 ## The AI Council
 
-Whatever the model, adoption needs a cross-functional steering group. A workable AI council pairs an executive sponsor with the functions the work depends on: IT, change or enablement, and risk. Its job is to set priorities, unblock the enablement lead, and hold the shared accountability from [Who's Accountable for What](/ai-enablement/02-who-is-accountable-for-what.md). Keep it small, and keep it to a cadence.
+Whatever the model, adoption needs a cross-functional steering group. A workable AI council pairs an executive sponsor with the functions the work depends on: IT, change or enablement, and risk. Its job is to set priorities, unblock the enablement lead, and hold the shared accountability from [Who's Accountable for What](/ai-accountability/ai-enablement/02-who-is-accountable-for-what.md). Keep it small, and keep it to a cadence.
 
 ## Funding and decision rights
 

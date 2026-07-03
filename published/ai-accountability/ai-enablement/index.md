@@ -4,7 +4,7 @@ AI enablement is the discipline of getting an organization to actually adopt AI 
 
 It is the practitioner counterpart to [Enterprise AI Transformation](/enterprise-ai-transformation/index.md), which covers the whole program at the leadership altitude. Here we go deep on the people engine — the part the evidence says most often decides whether AI delivers.
 
-New here? Start with [What AI Enablement Is — and the Role](/ai-enablement/what-ai-enablement-is.md).
+New here? Start with [What AI Enablement Is — and the Role](/ai-accountability/ai-enablement/what-ai-enablement-is.md).
 
 ## In this section
 

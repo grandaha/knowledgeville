@@ -36,19 +36,19 @@ The most common way this role fails is being made accountable for adoption you c
 
 So draw the line clearly. You own the system that produces adoption: the enablement programs, the champion network, the measurement, and the removal of friction. Accountability for adoption itself is shared. Sponsors own air cover. Managers own their teams. Each person owns their own use.
 
-Making that split explicit, up front, is part of the job. That is why [Who's Accountable for What](/ai-enablement/02-who-is-accountable-for-what.md) comes first.
+Making that split explicit, up front, is part of the job. That is why [Who's Accountable for What](/ai-accountability/ai-enablement/02-who-is-accountable-for-what.md) comes first.
 
 ## How this playbook is organized
 
 The rest follows the arc of the work:
 
-- [Who's Accountable for What](/ai-enablement/02-who-is-accountable-for-what.md) — the relationship up the chain, and the accountability map to put in front of your sponsor.
-- [Standing Up the Function](/ai-enablement/03-standing-up-the-function.md) — Center of Excellence models, the AI Council, funding, and decision rights.
-- [Finding Where AI Earns Its Keep](/ai-enablement/04-finding-where-ai-earns-its-keep.md) — discovering and prioritizing the workflows worth changing.
-- [Building the Champion Network](/ai-enablement/05-building-the-champion-network.md) — sourcing, training, and sustaining champions.
-- [Enablement That Sticks](/ai-enablement/06-enablement-that-sticks.md) — training that changes behavior, not attendance.
-- [Measuring Adoption](/ai-enablement/07-measuring-adoption.md) — depth of use over logins, and reporting up.
-- [When It Stalls, and Keeping It Alive](/ai-enablement/08-when-it-stalls.md) — recovery when adoption plateaus, and reaching steady state.
+- [Who's Accountable for What](/ai-accountability/ai-enablement/02-who-is-accountable-for-what.md) — the relationship up the chain, and the accountability map to put in front of your sponsor.
+- [Standing Up the Function](/ai-accountability/ai-enablement/03-standing-up-the-function.md) — Center of Excellence models, the AI Council, funding, and decision rights.
+- [Finding Where AI Earns Its Keep](/ai-accountability/ai-enablement/04-finding-where-ai-earns-its-keep.md) — discovering and prioritizing the workflows worth changing.
+- [Building the Champion Network](/ai-accountability/ai-enablement/05-building-the-champion-network.md) — sourcing, training, and sustaining champions.
+- [Enablement That Sticks](/ai-accountability/ai-enablement/06-enablement-that-sticks.md) — training that changes behavior, not attendance.
+- [Measuring Adoption](/ai-accountability/ai-enablement/07-measuring-adoption.md) — depth of use over logins, and reporting up.
+- [When It Stalls, and Keeping It Alive](/ai-accountability/ai-enablement/08-when-it-stalls.md) — recovery when adoption plateaus, and reaching steady state.
 
 Read them in order to build the function. Or jump to the one that matches where you are stuck.
 

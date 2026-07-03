@@ -77,6 +77,18 @@ plugins:
         ai-industry-briefs/validation/index.md: ai-briefs/industry-briefs/validation/index.md
         ai-industry-briefs/validation/audits/index.md: ai-briefs/industry-briefs/validation/audits/index.md
         ai-industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap.md: ai-briefs/industry-briefs/validation/audits/2026-06-30-the-ai-adoption-gap.md
+        # Redirect the pre-restructure AI Enablement URLs to their new home under /ai-accountability/.
+        ai-enablement/index.md: ai-accountability/ai-enablement/index.md
+        ai-enablement/what-ai-enablement-is.md: ai-accountability/ai-enablement/what-ai-enablement-is.md
+        ai-enablement/02-who-is-accountable-for-what.md: ai-accountability/ai-enablement/02-who-is-accountable-for-what.md
+        ai-enablement/03-standing-up-the-function.md: ai-accountability/ai-enablement/03-standing-up-the-function.md
+        ai-enablement/04-finding-where-ai-earns-its-keep.md: ai-accountability/ai-enablement/04-finding-where-ai-earns-its-keep.md
+        ai-enablement/05-building-the-champion-network.md: ai-accountability/ai-enablement/05-building-the-champion-network.md
+        ai-enablement/06-enablement-that-sticks.md: ai-accountability/ai-enablement/06-enablement-that-sticks.md
+        ai-enablement/07-measuring-adoption.md: ai-accountability/ai-enablement/07-measuring-adoption.md
+        ai-enablement/08-when-it-stalls.md: ai-accountability/ai-enablement/08-when-it-stalls.md
+        ai-enablement/glossary.md: ai-accountability/ai-enablement/glossary.md
+        ai-enablement/validation/index.md: ai-accountability/ai-enablement/validation/index.md
 
 # Every overview.md is an AUTHORED SOURCE whose body is spliced into its directory's
 # generated index.md by build_index.py — so no overview.md renders as its own page.

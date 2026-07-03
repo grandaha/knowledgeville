@@ -45,6 +45,15 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   enterprise: strategy & leadership, governance & risk, data readiness, platform,
   workflow, adoption, talent, and measurement.
 
+- **[AI Accountability](/ai-accountability/index.md)** — a role-by-role map of who owns
+  which AI outcome inside an organization, with an operator's manual for each role.
+  Starts with **[AI Enablement](/ai-accountability/ai-enablement/index.md)**, the manual
+  for the person accountable for adoption; more roles are being added.
+
+- **[Decision Guides](/decision-guides/index.md)** — cited, plain-language guides for
+  the recurring, consequential decisions a knowledge worker faces: the real options, the
+  tradeoffs, the evidence behind them, and when each one wins.
+
 - **[AI Use Cases](/ai-use-cases/index.md)** — practical, hands-on ways to put AI to work,
   grouped into sub-domains for different people and jobs. Most are copy-paste recipes — a
   ready-to-run prompt plus a before-and-after — for [everyday tasks](/ai-use-cases/everyday-tasks/index.md),

@@ -1,0 +1,123 @@
+# evidence.yaml — public provenance record for the AI Risk Officer bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-occ-fed-fdic-bulletin-2026-13-scope
+  claim: "Who Bulletin 2026-13 is meant for, and its legal status"
+  value: "guidance, not an enforceable standard; most relevant to banks over $30 billion in assets"
+  wording: "This guidance does not set forth enforceable standards or prescriptive requirements; accordingly, non-compliance with this guidance will not result in supervisory criticism against a banking organization... expected to be most relevant to banking organizations with over $30 billion in total assets."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-occ-fed-fdic-bulletin-2026-13-genai-exclusion
+  claim: "Whether Bulletin 2026-13 covers generative and agentic AI"
+  value: "explicitly excluded, pending a forthcoming request for information"
+  wording: "Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance... the principles described in this guidance apply to traditional statistical and quantitative models and non-generative, non-agentic AI models."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-occ-fed-fdic-bulletin-2026-13-conceptual-soundness
+  claim: "What a conceptual soundness review requires"
+  value: "assessing and documenting model design, construction, and developmental testing"
+  wording: "assessing and documenting model design (including key modeling choices, assumptions, qualitative judgments, and data selection), construction, and developmental testing."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-occ-fed-fdic-bulletin-2026-13-outcomes-analysis
+  claim: "What outcomes analysis is, and the forms it can take"
+  value: "comparing model outputs to real-world outcomes, via back-testing or outlier analysis"
+  wording: "compares model outputs to corresponding real-world outcomes to assess model performance relative to model objectives... back-testing or outlier analysis."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-occ-fed-fdic-bulletin-2026-13-ongoing-monitoring
+  claim: "What ongoing model monitoring evaluates, and what triggers a response"
+  value: "performance against potential changes in products, exposures, activities, clients, data relevance, or market conditions"
+  wording: "an evaluation of the extent to which a model is performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-occ-fed-fdic-bulletin-2026-13-effective-challenge
+  claim: "What 'effective challenge' means as the guidance's core governance concept"
+  value: "critical analysis by objective experts with the independence and standing to effect change"
+  wording: "critical analysis conducted by objective experts... independence to maintain objectivity... organizational standing and influence to effect any change."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-occ-fed-fdic-bulletin-2026-13-vendor-models
+  claim: "Whether vendor/third-party models are held to the same validation standard"
+  value: "yes — same principles apply even without access to vendor code or methodology"
+  wording: "the same validation principles apply even without access to vendor code/methodology... requires ongoing monitoring and outcome analysis of vendor models and documentation of any customization."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02
+- id: ev-isaca-cairo-2025-proposal
+  claim: "Whether 'Chief AI Risk Officer' is an adopted title, or a proposal"
+  value: "a proposed title, not evidence of market adoption"
+  wording: "The New Role of the Chief Artificial Intelligence Risk Officer — an advocacy piece analogized to the historical emergence of the CISO and CPO roles, proposing the title rather than documenting its adoption."
+  source:
+    org: "ISACA (Charles Cresson Wood)"
+    report: "ISACA Now Blog — The New Role of the Chief Artificial Intelligence Risk Officer"
+    edition: 2025
+    url: https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2025/the-new-role-of-the-chief-artificial-intelligence-risk-officer
+    pdf_hash:
+  verified: 2026-07-02
+  status: primary
+  expires: 2027-07-02

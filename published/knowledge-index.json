@@ -15,6 +15,17 @@
       "pageCount": 8
     },
     {
+      "slug": "ai-risk-officer",
+      "title": "AI Risk Officer",
+      "description": "The operator's manual for the person accountable for model-level risk: accuracy, validation, and drift.",
+      "posture": {
+        "citation_style": "selective",
+        "verification_posture": "verify-embedded-facts",
+        "temporal_mode": "point-in-time-supersedable"
+      },
+      "pageCount": 2
+    },
+    {
       "slug": "ai-transformation-lead",
       "title": "AI Transformation Lead",
       "description": "The operator's manual for the person who runs the cross-functional AI transformation program day to day.",
@@ -303,6 +314,100 @@
           "org": "IBM Institute for Business Value (with Oxford Economics)",
           "url": "https://newsroom.ibm.com/2026-05-04-ibm-study-ceos-are-reshaping-c-suite-roles-for-the-ai-era",
           "wording": "Surveyed CEOs say only 25% of the workforce is using AI regularly as part of their job.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-risk-officer",
+      "path": "validating-and-monitoring-models.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/ai-risk-officer/validating-and-monitoring-models/",
+      "title": "Validating and Monitoring Models",
+      "description": "The three-part discipline: conceptual soundness, outcomes analysis, and ongoing monitoring for drift.",
+      "tags": [
+        "ai-risk-officer",
+        "model-validation"
+      ],
+      "body": "Validation isn't a gate you clear once. It's three separate checks, done at different times, each catching a different way a model goes wrong.\n\n## Conceptual soundness — before the model ships\n\nThe first check happens before first use: assessing and documenting the model's design, construction, and developmental testing ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-conceptual-soundness)) — the modeling choices, the assumptions, the data selected, and why. This is where you catch a model built on a bad premise before it ever touches a real decision. For models where a full theoretical review doesn't fit — some AI/ML approaches included — interpretability measures or benchmarking can substitute for a classical soundness argument.\n\n## Outcomes analysis — does it match reality\n\nOnce a model is live, compare what it predicted against what actually happened. This is outcomes analysis: comparing model outputs to real-world outcomes to assess performance relative to the model's objectives, typically through back-testing or outlier analysis ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-outcomes-analysis)). A model that looked sound on paper can still fail this check — theory and reality are different tests, and you run both.\n\n## Ongoing monitoring — catching drift before it costs you\n\nThe world the model was built for keeps changing after you've validated it. Ongoing monitoring evaluates whether a model is still performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-ongoing-monitoring)). When performance deviates meaningfully from what you'd expect, that's your trigger for an overlay, an adjustment, or full redevelopment — not a reason to wait and see if it self-corrects.\n\n## The governance underneath all three\n\nNone of this works without **effective challenge** — critical analysis from objective experts who have both the independence to stay objective and the organizational standing to actually force a change ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-effective-challenge)). A validation function that reports to the same people who built the model, or that can be overruled without consequence, isn't providing effective challenge — it's providing cover.\n\nKeep a model inventory and tier models by materiality — a low-exposure internal tool doesn't need the same scrutiny as a model driving customer-facing decisions. And don't let vendor models off the hook: the same validation principles apply even when you don't have access to the vendor's code or methodology, including ongoing monitoring, outcome analysis, and documentation of any customization you've made ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-vendor-models)). \"We bought it from a reputable vendor\" is not a validation result.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** assessing and documenting model design (including key modeling choices, assumptions, qualitative judgments, and data selection), construction, and developmental testing. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-conceptual-soundness} · verified 2026-07-02 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** compares model outputs to corresponding real-world outcomes to assess model performance relative to model objectives... back-testing or outlier analysis. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-outcomes-analysis} · verified 2026-07-02 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** an evaluation of the extent to which a model is performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-ongoing-monitoring} · verified 2026-07-02 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** critical analysis conducted by objective experts... independence to maintain objectivity... organizational standing and influence to effect any change. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-effective-challenge} · verified 2026-07-02 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** the same validation principles apply even without access to vendor code/methodology... requires ongoing monitoring and outcome analysis of vendor models and documentation of any customization. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-vendor-models} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-conceptual-soundness",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "assessing and documenting model design (including key modeling choices, assumptions, qualitative judgments, and data selection), construction, and developmental testing.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-outcomes-analysis",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "compares model outputs to corresponding real-world outcomes to assess model performance relative to model objectives... back-testing or outlier analysis.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-ongoing-monitoring",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "an evaluation of the extent to which a model is performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-effective-challenge",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "critical analysis conducted by objective experts... independence to maintain objectivity... organizational standing and influence to effect any change.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-vendor-models",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "the same validation principles apply even without access to vendor code/methodology... requires ongoing monitoring and outcome analysis of vendor models and documentation of any customization.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-risk-officer",
+      "path": "what-ai-risk-officer-is.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/ai-risk-officer/what-ai-risk-officer-is/",
+      "title": "What the AI Risk Officer Is — and the Role",
+      "description": "What model risk means, why the function is rooted in banking, and what it deliberately doesn't cover yet.",
+      "tags": [
+        "ai-risk-officer",
+        "role-definition"
+      ],
+      "body": "Model risk management is not a new discipline invented for AI. Banks have run it for over a decade under federal guidance, because a model that's wrong — not hacked, not misused, just wrong — can lose as much money as a bad trade. The AI Risk Officer is that function, pointed at AI/ML models.\n\n## What model risk actually means\n\nNot every piece of software is a \"model\" in this sense. The regulatory definition is specific: a complex quantitative method, system, or approach that applies statistical, economic, or financial theories to process input data into quantitative estimates. Simple arithmetic, spreadsheets, and deterministic rule-based processes are explicitly excluded — this function is about systems that produce an estimate, not systems that just execute a formula.\n\nThe job is accuracy, not ethics. You own whether a model's outputs are right, stay right over time, and were built and reviewed the way a serious estimate deserves to be. You do not own whether the model's *use* is fair, legal, or aligned with company policy — that's a different job (see below).\n\n## Where this comes from, and what it deliberately doesn't cover\n\nThis function is rooted in bank supervisory guidance — most recently the OCC, Federal Reserve, and FDIC's revised Model Risk Management guidance, Bulletin 2026-13 (April 2026), which supersedes the prior 2011 guidance known as SR 11-7. It's guidance, not an enforceable rule, and it's aimed primarily at large banks — regulators say it's \"expected to be most relevant to banking organizations with over $30 billion in total assets\" ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-scope)). Its principles have become the de facto standard for model risk functions well beyond banking, in insurance, fintech, and elsewhere.\n\nHere's the detail worth knowing before you assume too much: the current guidance explicitly does **not** yet cover generative or agentic AI. Regulators were direct about it — \"Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance\" ([OCC/Fed/FDIC, 2026](#ev-occ-fed-fdic-bulletin-2026-13-genai-exclusion)) — with a request for information on how to extend the framework to those systems still pending. If your organization is validating an LLM-based system today, you're extending established principles into a gap the regulators themselves haven't yet filled — say so plainly to whoever you report to, rather than implying the ground is more settled than it is.\n\n## Where it sits, and who it isn't\n\n- **AI Governance Lead** owns *policy* — regulatory conformance, fairness review, ethical-use sign-off. You own *math* — is this model accurate, and does it stay that way. A model can pass your review and still fail theirs, and vice versa.\n- **Chief Risk Officer** owns enterprise-wide risk across credit, market, operational, and liquidity exposure. Model risk is one input to that bigger picture, not a replacement for it — you feed the CRO's view, you don't own it.\n- **[Chief AI Officer](/ai-accountability/chief-ai-officer/what-chief-ai-officer-is.md)** owns the strategic bet. You don't decide whether to build a model; you decide whether the one that got built is trustworthy enough to rely on.\n\nA proposed title for this seat — \"Chief AI Risk Officer\" — has been floated in industry commentary, but it's advocacy for a role that should exist, not evidence that it does ([ISACA, 2025](#ev-isaca-cairo-2025-proposal)). The function is real and well-established; the title is still unsettled. See [The Accountability Map](/ai-accountability/the-accountability-map.md) for how this seat relates to the others.\n\n## How this playbook is organized\n\n- [Validating and Monitoring Models](/ai-accountability/ai-risk-officer/validating-and-monitoring-models.md) — the three-part discipline that does the actual work: conceptual soundness, outcomes analysis, and ongoing monitoring for drift.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** This guidance does not set forth enforceable standards or prescriptive requirements; accordingly, non-compliance with this guidance will not result in supervisory criticism against a banking organization... expected to be most relevant to banking organizations with over $30 billion in total assets. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-scope} · verified 2026-07-02 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13*, 2026.** Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance... the principles described in this guidance apply to traditional statistical and quantitative models and non-generative, non-agentic AI models. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-fed-fdic-bulletin-2026-13-genai-exclusion} · verified 2026-07-02 · primary\n- **ISACA (Charles Cresson Wood) — *ISACA Now Blog — The New Role of the Chief Artificial Intelligence Risk Officer*, 2025.** The New Role of the Chief Artificial Intelligence Risk Officer — an advocacy piece analogized to the historical emergence of the CISO and CPO roles, proposing the title rather than documenting its adoption. [View source](https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2025/the-new-role-of-the-chief-artificial-intelligence-risk-officer){#ev-isaca-cairo-2025-proposal} · verified 2026-07-02 · primary",
+      "updated": "2026-07-02",
+      "sources": [
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-scope",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "This guidance does not set forth enforceable standards or prescriptive requirements; accordingly, non-compliance with this guidance will not result in supervisory criticism against a banking organization... expected to be most relevant to banking organizations with over $30 billion in total assets.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-occ-fed-fdic-bulletin-2026-13-genai-exclusion",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance... the principles described in this guidance apply to traditional statistical and quantitative models and non-generative, non-agentic AI models.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-isaca-cairo-2025-proposal",
+          "org": "ISACA (Charles Cresson Wood)",
+          "url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2025/the-new-role-of-the-chief-artificial-intelligence-risk-officer",
+          "wording": "The New Role of the Chief Artificial Intelligence Risk Officer — an advocacy piece analogized to the historical emergence of the CISO and CPO roles, proposing the title rather than documenting its adoption.",
           "status": "primary",
           "verified": "2026-07-02"
         }
@@ -6624,6 +6729,10 @@
       "terms": []
     },
     {
+      "bundle": "ai-risk-officer",
+      "terms": []
+    },
+    {
       "bundle": "ai-transformation-lead",
       "terms": []
     },
@@ -6920,6 +7029,11 @@
       "date": "2026-07-02",
       "bundle": "ai-enablement",
       "entry": "Creation**: New bundle — the operator's manual for the AI Enablement Lead, the person accountable for AI adoption inside an organization. The intro What AI Enablement Is — and the Role plus the full operator's arc: Who's Accountable for What, Standing Up the Function, Finding Where AI Earns Its Keep, Building the Champion Network, Enablement That Sticks, Measuring Adoption, and When It Stalls, and Keeping It Alive. Selective citation posture: the evidence that adoption is the binding constraint and the operating-model facts are cited to primary sources (IBM CEO Study 2026, Microsoft AI Center of Excellence guidance); the operator methods are grounded practice."
+    },
+    {
+      "date": "2026-07-02",
+      "bundle": "ai-risk-officer",
+      "entry": "Creation**: New bundle — the operator's manual for the AI Risk Officer, accountable for model-level risk: accuracy, validation, and drift. The intro What the AI Risk Officer Is — and the Role plus Validating and Monitoring Models. Selective citation posture: the regulatory scope, the generative/agentic AI exclusion, and the three-part validation discipline (conceptual soundness, outcomes analysis, ongoing monitoring) are cited verbatim to OCC/Federal Reserve/FDIC Bulletin 2026-13; the proposed \"Chief AI Risk Officer\" title is cited to ISACA and framed as advocacy, not adoption."
     },
     {
       "date": "2026-07-02",

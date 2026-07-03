@@ -40,15 +40,15 @@ cover:
 
 - **AI Governance Lead** *(planned)* — operationalizes AI policy, regulatory conformance,
   and fairness/ethical-use review.
-- **AI Risk Officer / Model Risk Manager** *(planned)* — owns model-level risk: accuracy,
-  validation, and drift, distinct from policy or adoption.
+- **[AI Risk Officer](/ai-accountability/ai-risk-officer/index.md)** — owns model-level
+  risk: accuracy, validation, and drift, distinct from policy or adoption.
 - **AI Security Lead** *(planned)* — adversarial testing and model-level security (prompt
   injection, jailbreaks), distinct from general infrastructure security.
 
 ## What's live vs. planned
 
-**AI Enablement**, **Chief AI Officer**, and **AI Transformation Lead** are authored today.
-The other three roles are named here as the domain's intended scope so the map is honest
-about where it's going, without shipping empty bundles for roles that haven't been
-researched yet. Each gets stood up as its own bundle — profile, glossary, and operator's
-manual — when it's ready to be written.
+**AI Enablement**, **Chief AI Officer**, **AI Transformation Lead**, and **AI Risk Officer**
+are authored today. The other two roles are named here as the domain's intended scope so
+the map is honest about where it's going, without shipping empty bundles for roles that
+haven't been researched yet. Each gets stood up as its own bundle — profile, glossary, and
+operator's manual — when it's ready to be written.

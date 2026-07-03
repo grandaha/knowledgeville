@@ -1,0 +1,130 @@
+# evidence.yaml — public provenance record for the The AI-Native Organization bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-mckinsey-agentic-organization-2025-pod-ratio
+  claim: "Small human teams already supervise large fleets of specialized AI agents running end-to-end business processes"
+  value: "2-5 humans : 50-100 agents"
+  wording: "In our experience, a human team of two to five people can already supervise an agent factory of 50 to 100 specialized agents running an end-to-end process such as onboarding a customer, launching a product, or closing the books."
+  source:
+    org: McKinsey & Company
+    report: "The Agentic Organization: Contours of the Next Paradigm for the AI Era"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-09-30
+
+- id: ev-pwc-unleash-2025-two-pyramids
+  claim: "PwC frames the future operating model as two separate pyramids — one of humans, one of agents — not one generalized pyramid"
+  value: "two pyramids (humans, agents)"
+  wording: "one is a pyramid of humans, and one is a pyramid of agents – this will be the future operating model"
+  source:
+    org: "PwC (Prasun Shah, Partner, Global CTO & AI Leader, Workforce Consulting)"
+    report: "PwC on an agentic AI future: Your people will become the 'fundamental differentiator' (UNLEASH)"
+    edition: 2025
+    url: https://www.unleash.ai/artificial-intelligence/pwc-on-an-agentic-ai-future-your-people-will-become-the-fundamental-differentiator/
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-06-02
+
+- id: ev-pwc-no-more-pyramids-2026-hourglass-structure
+  claim: "PwC's own flagship report argues the winning shape for knowledge-intensive firms is an hourglass, not a pyramid at all"
+  value: "hourglass structure (wide top, lean middle, wide base)"
+  wording: "With a strong, capable base and a forward-looking leadership tier, connected by a lean, high-performing middle, your org chart looks like an hourglass."
+  source:
+    org: PwC
+    report: "No More Pyramids: Rethinking Your Workforce for the Agentic AI Era"
+    edition: 2026
+    url: https://www.pwc.com/us/en/tech-effect/ai-analytics/agentic-ai-workforce-redesign.html
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-07-03
+
+- id: ev-eu-ai-act-2024-1689-audit-trail-obligations
+  claim: "The EU AI Act requires high-risk AI systems to enable automatic logging, and requires deployers to retain those logs for at least six months"
+  value: "Article 12 (logging) and Article 26(6) (six-month retention)"
+  wording: "High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system."
+  source:
+    org: European Union
+    report: "Regulation (EU) 2024/1689 (the AI Act), Articles 12 and 26"
+    edition: 2024
+    url: https://artificialintelligenceact.eu/article/12/
+    pdf_hash:
+  verified: 2026-07-03
+  status: secondary-mirror
+  expires: 2027-07-03
+
+- id: ev-accenture-wharton-2026-co-intelligence-outcome-ownership
+  claim: "As AI agents take on more analysis and execution, accountability for outcomes does not scale with them — humans must still own the outcome"
+  value: "n/a — qualitative argument"
+  wording: "Intelligence may be scalable, but accountability is not."
+  source:
+    org: "Accenture (global products practice) and the Wharton School's AI & Analytics Initiative"
+    report: "The Age of Co-Intelligence: How Humans, AI Agents, and Robots Are Redefining Value"
+    edition: 2026
+    url: https://www.accenture.com/us-en/insights/strategy/age-of-co-intelligence
+    pdf_hash:
+  verified: 2026-07-03
+  status: secondary-mirror
+  expires: 2027-03-26
+
+- id: ev-gallup-2026-ai-workplace-nonuser-relevance-doubt
+  claim: "A large share of employees with AI access still don't use it, because they judge their own work as unsuited to it"
+  value: "39% relevance doubt, 43% ethical opposition, 46% prefer current methods"
+  wording: "39% of non-users say they do not believe AI can assist with the work they do."
+  source:
+    org: Gallup
+    report: "AI in the Workplace: What Separates Adopters and Holdouts"
+    edition: 2026
+    url: https://www.gallup.com/workplace/704252/workplace-separates-adopters-holdouts.aspx
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-04-13
+
+- id: ev-deloitte-state-ai-enterprise-2026-verifier-governance-gap
+  claim: "Agentic AI deployment intent vs share with a mature governance model"
+  value: "~74% expect agent use by 2027; only 21% have mature governance"
+  wording: "By 2027, 74% of respondents expect their companies to be using AI agents at least moderately, but only 21% say their organizations have a mature governance model in place for agentic AI"
+  source:
+    org: Deloitte
+    report: "State of AI in the Enterprise 2026 (Agentic AI is scaling faster than guardrails)"
+    edition: 2026
+    url: https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html
+    pdf_hash:
+  verified: 2026-06-21
+  status: primary
+  expires: 2027-06-21
+
+- id: ev-chambers-associate-2026-partner-associate-ratio
+  claim: "Leverage ratios (associates per partner) vary widely across major US law firms — the precedent for a small-owner/many-leveraged-workers structure"
+  value: "~2.5:1 (Latham & Watkins) to ~4.4:1 (Davis Polk & Wardwell)"
+  wording: "This basic ratio showing how much partner exposure each associate gets... gives a basic idea of how a firm staffs its teams."
+  source:
+    org: Chambers Associate
+    report: "America's Leading Law Firms Uncovered — Partner-Associate Leverage"
+    edition: 2026
+    url: https://www.chambers-associate.com/law-firms/partner-associate-leverage
+    pdf_hash:
+  verified: 2026-07-03
+  status: primary
+  expires: 2027-07-03

@@ -1,22 +1,63 @@
 ---
 type: Playbook
 title: AI Readiness Assessment Framework
-description: A seven-dimension framework for assessing whether the organizational conditions for AI success exist before committing budget to building.
-tags: [ai-readiness, assessment, maturity-model, data-governance, strategy]
-timestamp: "2026-06-12"
+description: A use-case-first check for whether an AI initiative needs readiness work, plus an optional seven-dimension lens for organizations planning a portfolio at once.
+tags: [ai-readiness, assessment, maturity-model, use-case-scoping, strategy]
+timestamp: "2026-07-03"
 ---
 
 ## What This Is For
 
-An AI readiness assessment tells you whether the organizational conditions for AI success actually exist — before you commit budget to building.
+[Data readiness is a use-case property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md),
+so the first question an assessment has to answer is which use case, on which path, at
+what autonomy — not "how ready is the organization." This framework runs in two layers.
+The first layer checks a single use case in minutes. The second is an optional,
+heavier org-wide lens for teams planning several AI initiatives at once, not a gate every
+use case has to clear.
 
-Most organizations skip the assessment. They announce an AI initiative, fund a model, discover the data isn't ready, and spend 12 months fixing foundations they could have assessed in 90 minutes. The assessment doesn't prevent that work. It sequences it correctly.
+Most organizations skip straight to funding a model, discover the data is not ready, and
+spend 12 months fixing foundations they could have scoped in 90 minutes. The assessment
+does not prevent that work. It sequences it correctly, and it stops teams from doing
+foundation work that a low-stakes use case never needed in the first place.
 
-This framework produces a prioritized gap list, not a score to report upward. A score that doesn't change what gets funded next quarter is a waste of everyone's time.
+This framework produces a prioritized gap list, not a score to report upward. A score that
+does not change what gets funded next quarter is a waste of everyone's time.
 
-> Only **13%** of organizations are fully ready to deploy and leverage AI — readiness, not ambition, is the constraint ([Cisco, 2024](#ev-cisco-ai-readiness-2024-fully-ready))
+---
 
-> Approximately **one-third** of organizations have begun scaling AI across the enterprise — larger companies most of all; the rest have not yet reached the scaling phase ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-scaling-by-size))
+## Layer 1: Check the Use Case First
+
+Before assembling a cross-functional group for the full assessment below, place the
+specific use case in front of you on two axes:
+
+1. **Data path** — does it route around the system of record, or through it? Use [Data
+   Readiness Is a Use-Case Property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md).
+2. **Autonomy** — does a human review every output, or does it act without review? Use
+   [The Four Levels of Workflow AI
+   Integration](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/03-the-four-levels-of-workflow-ai-integration.md).
+
+A use case that routes around the system of record, or stays at draft-level autonomy,
+rarely needs anything from Layer 2. Read the relevant [framework
+pages](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/index.md) —
+Data Quality, Governance, Access & Integration, Lineage & Metadata — for what that specific
+path needs, and ship it. Layer 2 exists for the case that keeps coming up as autonomy and
+stakes rise: several use cases at once that route through a system of record and act
+without review, where the constraint is no longer any single use case's data but the
+organization's shared infrastructure, governance, and talent.
+
+---
+
+## Layer 2: The Portfolio-Wide Seven Dimensions (Optional)
+
+Run this layer when you are planning a portfolio of AI initiatives, most of which route
+through a system of record at rising autonomy — not to score a single use case. If Layer 1
+told you this is a low-stakes use case, skip to the framework pages instead; this section
+will not tell you anything Layer 1 did not already answer.
+
+> Only **13%** of organizations are fully ready to deploy and use AI — readiness, not ambition, is the constraint ([Cisco, 2024](#ev-cisco-ai-readiness-2024-fully-ready))
+
+> Approximately **one-third** of organizations have begun scaling AI across the enterprise.
+> Larger companies lead; the rest have not yet reached the scaling phase ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-scaling-by-size))
 
 > BCG's **10-20-70** rule: AI success comes 10% from algorithms, 20% from technology and data, and **70% from people and process** ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy))
 
@@ -24,11 +65,13 @@ This framework produces a prioritized gap list, not a score to report upward. A 
 
 ## The Seven Dimensions
 
-This framework scores AI readiness across seven dimensions, each on a 1–5 scale. They score independently. The combination tells you where to invest first.
+This layer scores organization-wide AI readiness across seven dimensions, each on a 1–5
+scale. They score independently. The combination tells you where the organization should
+invest first for its *portfolio* of AI work — it is not a per-use-case gate.
 
 ### Dimension 1: Data
 
-The fuel of AI. Data must exist, be accessible, and be clean enough to learn from.
+A model learns only from the data it can reach, so data must exist, be accessible, and be clean enough to learn from.
 
 | Level | What it looks like |
 | --- | --- |
@@ -112,7 +155,7 @@ Evidence to collect: NIST AI RMF adoption status, EU AI Act tier assessments, bi
 
 ### Dimension 7: Strategy and Culture
 
-The dimension most assessments underweight and most failures trace back to. A technically excellent program fails if leadership doesn't champion it and business teams don't trust it.
+The dimension most assessments underweight and most failures trace back to. A technically excellent program fails if leadership does not champion it and business teams do not trust it.
 
 | Level | What it looks like |
 | --- | --- |
@@ -128,10 +171,15 @@ Evidence to collect: written AI strategy with outcome targets, executive sponsor
 
 ## The Five Maturity Levels
 
+These five levels describe the organization's overall AI maturity, not any single use
+case's readiness. A Level 2 organization can still ship a use case that routes around the
+system of record and stays at draft-level autonomy — the organization's maturity score
+does not gate that use case.
+
 | Level | Name | Where you are |
 | --- | --- | --- |
 | 1 | Nascent | AI is aspirational. No operational foundation. Pilots exist in isolation without repeatable process. |
-| 2 | Developing | Some foundational elements in place. Governance is informal. Pilots succeed but don't scale. Most mid-market organizations in 2025. |
+| 2 | Developing | Some foundational elements in place. Governance is informal. Pilots succeed but do not scale. Most mid-market organizations in 2025. |
 | 3 | Emerging | Working pilots, some production models. Data and governance foundations are being built. Where most enterprise AI programs sit in 2026. |
 | 4 | Scaling | Production AI across multiple use cases. MLOps mature. Governance operational. AI embedded in workflows. Fewer than 25% of large enterprises. |
 | 5 | Transformational | AI is a core competitive capability. Self-reinforcing data flywheel. Less than 5% of enterprises globally. |
@@ -142,11 +190,18 @@ The gap between Level 3 and Level 4 is where most programs stall. The organizati
 
 ## How to Run the Assessment
 
+Run this once Layer 1 has confirmed the portfolio genuinely needs the org-wide view — a
+mix of through-the-system-of-record use cases rising toward autonomous action, not a
+single low-stakes one.
+
 **Assemble the right group.** No single function can score all seven dimensions accurately. You need data, IT, business, compliance, and leadership in the room. A cross-functional session of 90–120 minutes is the minimum. Without multiple functions present, the scores will reflect one team's perspective rather than the organization's actual state.
 
 **Score on evidence, not intent.** For each dimension, rate 1–5 and capture the evidence that supports the score. Not "we plan to implement X" but "we have X in place and can demonstrate it." The value of the assessment comes entirely from honest scoring. A score inflated by optimism produces a roadmap built on fiction.
 
-**Plot the radar.** Map all seven scores on a radar chart. The shape tells you more than the average. A high infrastructure score with low data and governance scores means you've invested in the wrong layer. A high strategy score with low data and process scores means leadership ambition is outrunning operational readiness. The pattern is the insight.
+**Plot the radar.** Map all seven scores on a radar chart. The shape shows more than the
+average does. A high infrastructure score with low data and governance scores means the
+organization has invested in the wrong layer. A high strategy score with low data and
+process scores means leadership ambition is outrunning operational readiness.
 
 **Identify the binding constraint.** One dimension is almost always the limiting factor — the one that caps AI progress regardless of strength elsewhere. A Level 5 infrastructure with a Level 1 data foundation cannot produce reliable AI. The binding constraint is what to fix first, before anything else. Adding capability on top of a binding constraint produces waste, not progress.
 
@@ -169,12 +224,22 @@ Use this in your assessment session:
 | Strategy & Culture |  |  |  |  |
 | **Average** |  |  |  |  |
 
-**Interpreting the average:**
+**Interpreting the average:** this is a portfolio signal, not a per-use-case gate. Match it
+to the use case's Layer 1 placement rather than reading it as a blanket stop-light.
 
-- 1.0–2.0: Fix data and governance before launching any AI initiative.
-- 2.0–3.0: Pilot-ready but not production-ready. Identify and address the binding constraint.
-- 3.0–4.0: Production-capable for specific use cases. Build systematically toward scaling.
-- 4.0–5.0: Scaling-ready. Expand use case coverage and focus on continuous improvement.
+A use case that routes around the system of record or stays at draft-level autonomy is
+never gated by this score — ship those at any organizational maturity level. The bands
+below describe only through-the-record use cases at rising autonomy, the category this
+score actually governs.
+
+- 1.0–2.0: The organization-wide foundation is weak. Fix the binding constraint before
+  committing to a through-the-record program that acts on autonomy.
+- 2.0–3.0: Pilot-ready, not production-ready. Identify and address the binding constraint
+  before scaling.
+- 3.0–4.0: Production-capable for specific through-the-record use cases. Build
+  systematically toward scaling the portfolio.
+- 4.0–5.0: Scaling-ready across the portfolio, including higher-autonomy, through-the-record
+  use cases. Expand coverage and focus on continuous improvement.
 
 ---
 
@@ -188,7 +253,7 @@ Results should drive four specific decisions:
 
 **Hiring decisions** — if talent scores 2, the next hire is not another data scientist. It is an ML engineer or applied AI practitioner in a business unit.
 
-**Project sequencing** — AI initiatives that require capabilities you don't yet have should be sequenced after those capabilities are built, not before.
+**Project sequencing** — AI initiatives that require capabilities you do not yet have should be sequenced after those capabilities are built, not before.
 
 **Governance council agenda** — the lowest-scoring dimensions should be standing agenda items until they improve.
 

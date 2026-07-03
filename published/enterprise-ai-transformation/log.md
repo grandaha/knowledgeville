@@ -9,6 +9,12 @@
   and the material specific to training or fine-tuning your own model (label noise,
   representation bias, drift, poisoning) is clearly scoped as optional reading rather than
   presented as a universal AI truth.
+* **Update**: [AI Readiness Assessment Framework](/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/ai-readiness-assessment-framework.md)
+  now runs in two layers: a fast use-case-first check (place the use case's data path and
+  autonomy level, decide whether the heavier assessment is even needed) ahead of the
+  seven-dimension organizational scoring, which is demoted to an optional portfolio lens
+  for teams planning several initiatives at once. The interpretation bands no longer read
+  as a blanket "fix everything before any AI" gate.
 * **Update**: [Program Architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md)
   now cross-links its CDAO, AI Program Lead, and Track Owner roles to their matching
   operator's manuals in AI Accountability, and names the typical owner (with cited

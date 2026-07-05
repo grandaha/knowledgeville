@@ -11,6 +11,15 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v9.2.1 — 2026-07-05
+
+### New & expanded content
+* Rewrite Knowledgeville welcome intro in Dave's voice
+* Add Team Second Brain to the homepage bundle list
+
+### Site & structure
+* Fix team-second-brain page order to match narrative sequence
+
 ## v9.2.0 — Team Second Brain bundle — 2026-07-05
 
 ### New & expanded content

@@ -4,14 +4,26 @@ okf_version: "0.1"
 
 # Welcome to Knowledgeville
 
-Knowledgeville is my public knowledge base — research on the things I find important, shared openly
-so it's useful beyond me. It's part of what I'm building at **[One Step Labs](https://www.onesteplabs.com)**.
+Knowledgeville is my public knowledge base: research on the things I find important, shared openly
+so it's useful beyond me. It's just one of the things I'm working on at
+[One Step Labs](https://www.onesteplabs.com) right now.
 
-I do the research and writing with Claude, and publish it here as structured, openly-licensed
-concepts — frameworks, playbooks, assessments, and references built on the
+Working with AI every day produces knowledge, but most of it stays in a silo: one person's, not
+shared. Knowledgeville tests whether it can work differently. Bundle it up, and you can plug it
+straight into your own workflow instead of rebuilding it from scratch. Connect your AI to it, and
+it has more to work with right away. My research becomes your starting point.
+
+I work with Claude on all of it, as a standard workflow: take a question, research it, design the
+bundle, write it, publish it. It's anchored on the
 [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-and continuously validated. I started with enterprise AI transformation and I'm expanding into
-practical, everyday AI use; more topics will follow.
+as a test of the proposed standard. Right now that's frameworks, playbooks, assessments, and
+references, but I keep adding new ones, and expanding existing ones, as I explore new questions and
+ideas.
+
+It's incomplete and rough, but it's been useful to me, and I think it will be useful to you too.
+Hopefully you'll help me test my theory, and let me know your thoughts.
+
+Raff
 
 ## Three ways to use this
 

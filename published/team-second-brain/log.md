@@ -1,16 +1,20 @@
 # Update Log
 
 ## 2026-07-05
-* **Creation**: [Building Yours Without an Engineer](/team-second-brain/building-yours-without-an-engineer.md)
+* **Update**: Renumbered [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md)
+  and [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
+  so the section listing follows the bundle's actual reading order — the landscape survey
+  before the setup guide that builds on it, matching the lead page's own cross-references.
+* **Creation**: [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
   is authored, completing the bundle: a concrete setup path built on a shared Git repository
   and Dr. Tali Rezun's private-by-default, explicit-contribution architecture — plus a
   weekly health-check habit adapted from Andrej Karpathy's own maintenance loop, addressing
   the "fast teams document least" risk this bundle's research surfaced.
-* **Creation**: [The Single-Player Ceiling](/team-second-brain/the-single-player-ceiling.md)
+* **Creation**: [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md)
   is authored: a decision-aid reference covering what a small team can actually try today —
   self-hosted options (AnythingLLM, Onyx, Khoj, the raw LLM Wiki repos) and accessible SaaS
   (Claude Team, ChatGPT Business, Notion AI, Obsidian) — with verified pricing and an honest
-  account of what each one actually shares across a team. [Building Yours Without an Engineer](/team-second-brain/building-yours-without-an-engineer.md)
+  account of what each one actually shares across a team. [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
   remains the last planned page.
 * **Update**: [The Team Second Brain](/team-second-brain/the-team-second-brain.md) adds a new
   "Phase one, already built" section: a direct GitHub search shows dozens of single-user
@@ -27,6 +31,6 @@
 * **Creation**: New bundle. [The Team Second Brain](/team-second-brain/the-team-second-brain.md)
   names Andrej Karpathy's LLM Wiki pattern as the real foundation for a small team's shared,
   compounding knowledge base, and argues the gap every real implementation of it shares:
-  built for one person, not a team. [The Single-Player Ceiling](/team-second-brain/the-single-player-ceiling.md)
-  and [Building Yours Without an Engineer](/team-second-brain/building-yours-without-an-engineer.md)
+  built for one person, not a team. [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md)
+  and [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
   are scaffolded as planned pages, to be authored next.

@@ -6,7 +6,7 @@ tags: [team-second-brain, practitioner-guide]
 timestamp: "2026-07-05"
 ---
 
-Everything on [The Single-Player Ceiling](/team-second-brain/the-single-player-ceiling.md)
+Everything on [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md)
 either needs someone to run a server or caps out at sharing files, not a person's actual AI
 use. This page covers a third path: no server, no proprietary platform, built from a shared
 Git repository and whatever AI tool each person already uses.
@@ -69,7 +69,7 @@ This setup has an honest ceiling. Search gets slow once the repo holds a few hun
 without embeddings. Access control is whatever Git's own permissions give you, nothing
 finer. And once someone is hired specifically to keep the repo running, the team has quietly
 crossed into needing the engineer this page was written to avoid. At that point,
-[The Single-Player Ceiling](/team-second-brain/the-single-player-ceiling.md) is where to look
+[The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md) is where to look
 for what comes next.
 
 ## Sources

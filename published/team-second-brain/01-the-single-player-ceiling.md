@@ -45,7 +45,7 @@ someone chose to save — never a person's ongoing use of AI itself.
 | Notion AI | SaaS | $20-24/mo (Business) | Team wiki pages someone already wrote |
 | Obsidian + Sync | SaaS add-on | $4-5/user/mo | A shared vault, no real-time co-editing |
 
-[Building Yours Without an Engineer](/team-second-brain/building-yours-without-an-engineer.md)
+[Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
 picks a starting point from this table and covers what it actually takes to run it.
 
 ## Sources

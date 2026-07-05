@@ -59,7 +59,7 @@ already tried to build this, thoughtfully, and it has not caught on.
 
 ## The gap: general-purpose team knowledge, not yet built for a small team
 
-[The Single-Player Ceiling](/team-second-brain/the-single-player-ceiling.md) surveys what
+[The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md) surveys what
 people have actually built on Karpathy's specific pattern — real, popular, actively
 maintained projects. Every one of them targets only a single person's own machine and
 accounts, whatever topic that person feeds it.
@@ -93,9 +93,9 @@ underlying claim at two different scopes.
 
 ## How to use this bundle
 
-Read [The Single-Player Ceiling](/team-second-brain/the-single-player-ceiling.md) next for
+Read [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md) next for
 an honest look at what's already built and where it stops being useful for a team. Then
-[Building Yours Without an Engineer](/team-second-brain/building-yours-without-an-engineer.md)
+[Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
 covers how a small team actually sets this up and keeps it alive, without hiring anyone to
 run it.
 

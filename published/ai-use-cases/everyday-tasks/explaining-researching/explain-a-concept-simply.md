@@ -19,7 +19,7 @@ I want to understand: [CONCEPT OR TOPIC]
 
 My background: [e.g. "I'm not technical", "I know a bit about finance but nothing about investing", "I'm a high-school student"]
 
-Please explain it to me as if I'm smart but completely new to this subject. Use an analogy if it helps. Keep it under 200 words, then ask me if I'd like to go deeper on any part.
+Please explain it to me as if I'm smart but completely new to this subject. Use an analogy if it helps, but if no analogy fits the concept accurately, say so instead of forcing one. Flag anything experts still debate. Keep it under 200 words, then ask me if I'd like to go deeper on any part.
 ```
 
 ## Before and after
@@ -41,4 +41,4 @@ Please explain it to me as if I'm smart but completely new to this subject. Use 
 
 ## Watch out for
 
-AI explanations can be confidently wrong on technical details. For anything high-stakes — medical, legal, financial — treat the explanation as a starting point and verify with a credible source. It's great for building intuition, less great as a final reference.
+A good analogy is exactly where AI can smuggle in a subtly wrong mental model. Fluency makes the error harder to catch than a plain factual slip. This risk isn't limited to topics that obviously feel high-stakes. It's often worse on ones that feel like general knowledge but are actually contested — a legal doctrine, a disputed research finding. Treat any explanation as a starting point and verify with a credible source before relying on it. It's great for building intuition, less great as a final reference.

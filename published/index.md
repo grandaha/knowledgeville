@@ -79,6 +79,11 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   the author's stake shapes it). Each covers what it says, how much to trust it, and what it
   means for you.
 
+- **[Team Second Brain](/team-second-brain/index.md)** — how a small team turns everyone's
+  individual AI use into shared, compounding knowledge without buying an enterprise platform:
+  what's already out there ([The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md))
+  and how to build the team layer yourself ([Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)).
+
 ## Where to start
 
 - **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.

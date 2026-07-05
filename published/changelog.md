@@ -3,13 +3,26 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-07-03"
+timestamp: "2026-07-05"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v9.2.0 — Team Second Brain bundle — 2026-07-05
+
+### New & expanded content
+* Author The Single-Player Ceiling as a decision-aid reference
+* Author Building Yours Without an Engineer, completing team-second-brain
+
+### Citation corrections
+* Correct overstated single-user claim on team-second-brain lead page
+* Add GitHub ecosystem evidence as phase-one history
+
+### Site & structure
+* Scaffold the Team Second Brain bundle
 
 ## v9.1.0 — Data Readiness reframed around the use case — 2026-07-03
 

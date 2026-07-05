@@ -81,3 +81,56 @@
   verified: 2026-07-01
   status: primary
   expires: 2027-07-01
+# --- Build vs. Buy (AI-specific addendum) ---
+- id: ev-openai-deprecations-2026-notice-and-cutoff
+  claim: "A fine-tuned model is not affected when its base model is deprecated, but becomes permanently unusable once the base model itself is retired — fine-tuning does not make a team independent of the vendor's own model lifecycle"
+  value: "6 months notice (GA models), 3 months (specialized variants), 2 weeks (preview models); fine-tuned models stop working once the base model is deprecated"
+  wording: "Fine-tuned models created from these base models are not affected by this deprecation, but you will no longer be able to create new fine-tuned versions with these models... Inference on fine-tuned models will be disabled only when the underlying base model is deprecated."
+  source:
+    org: "OpenAI"
+    report: "Model deprecations (API docs)"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/deprecations
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-01-05
+- id: ev-openai-finetuning-2026-api-only-access
+  claim: "Fine-tuning a model through OpenAI's API produces a model callable only by ID through that same API, not exportable weights a team can run or move elsewhere"
+  value: "n/a — access mechanism, not a figure"
+  wording: "Use this model just like you would the final fine-tuned model"
+  source:
+    org: "OpenAI"
+    report: "Supervised fine-tuning (API docs)"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/guides/supervised-fine-tuning
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-01-05
+- id: ev-openai-pricing-2026-per-token
+  claim: "OpenAI's API is billed per token processed, so cost scales directly with how much a system is used rather than with a flat per-seat fee"
+  value: "billed per 1M tokens, separate input/output rates"
+  wording: "Tokens are billed at the chosen model's input and output rates."
+  source:
+    org: "OpenAI"
+    report: "Pricing (API docs)"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+- id: ev-anthropic-reduce-hallucinations-2026-standing-risk
+  claim: "Even well-built LLM applications can produce factually incorrect output, which is why vendors themselves recommend ongoing verification rather than one-time testing"
+  value: "n/a — qualitative vendor guidance"
+  wording: "Even the most advanced language models, like Claude, can sometimes generate text that is factually incorrect or inconsistent with the given context... Always validate critical information, especially for high-stakes decisions."
+  source:
+    org: "Anthropic"
+    report: "Reduce hallucinations (Claude Platform docs)"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-01-05

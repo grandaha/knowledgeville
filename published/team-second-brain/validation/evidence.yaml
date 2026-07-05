@@ -1,0 +1,312 @@
+# evidence.yaml — public provenance record for the Team Second Brain bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-karpathy-llm-wiki-2026-pattern-definition
+  claim: "The LLM Wiki pattern: an LLM incrementally builds and maintains a persistent, interlinked markdown wiki from raw sources, instead of re-deriving answers from scratch each time"
+  value: "n/a — qualitative pattern description"
+  wording: "incrementally build and maintain a persistent wiki — a structured, interlinked collection of markdown files that sits between you and the raw sources"
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-karpathy-llm-wiki-2026-team-scope
+  claim: "Karpathy explicitly scopes the LLM Wiki pattern to team and business use, not only individual use"
+  value: "Personal, Research, Business/team"
+  wording: "Personal... Research... Business/team... anything where you're accumulating knowledge over time."
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-karpathy-llm-wiki-2026-maintenance-cost
+  claim: "An LLM-maintained wiki stays current because the marginal cost of maintenance is near zero for an LLM, unlike for a human"
+  value: "n/a — qualitative argument"
+  wording: "Humans abandon wikis because the maintenance burden grows faster than the value... The wiki stays maintained because the cost of maintenance is near zero."
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-granola-2025-collective-brain-positioning
+  claim: "Granola 2.0 lets a team chat across every meeting transcript in a shared folder, with answers sourced across the whole team's conversations rather than one person's notes"
+  value: "n/a — product feature description"
+  wording: "your company's new collective brain"
+  source:
+    org: Granola (Chris Pedregal, CEO)
+    report: "Granola 2.0"
+    edition: 2025
+    url: https://www.granola.ai/blog/two-dot-zero
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-11-05
+
+- id: ev-granola-2026-self-serve-pricing
+  claim: "Granola's shared folders and cross-meeting AI chat are included on the free Basic tier; the paid Business tier ($14/user/month, self-serve) adds unlimited history, advanced models, and integrations rather than gating the shared-folder feature itself"
+  value: "Basic: free (includes shared folders + cross-meeting chat); Business: $14/user/month self-serve"
+  wording: "AI chat within and across meetings... Shared folders for collaboration"
+  source:
+    org: Granola
+    report: "Granola Pricing"
+    edition: 2026
+    url: https://www.granola.ai/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-meta-analytics-2026-third-brain
+  claim: "Meta's internal AI second brain is piloting a team-level shared context layer, internally called Third Brain, that individual workspaces feed into"
+  value: "piloting across dozens of teams, hundreds of participants"
+  wording: "A team-level shared context system, internally called 'Third Brain', lets team members' individual workspaces feed into a shared knowledge layer."
+  source:
+    org: "Analytics at Meta"
+    report: "How We Built an AI Second Brain for 60K Knowledge Workers"
+    edition: 2026
+    url: https://medium.com/@AnalyticsAtMeta/how-we-built-an-ai-second-brain-for-60k-knowledge-workers-78c507dd795b
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-01-05
+
+- id: ev-rezun-2026-shared-brain-architecture
+  claim: "A proposed small-team-shared-knowledge architecture keeps each person's second brain private and local by default, and builds the shared layer only from what each person explicitly chooses to contribute"
+  value: "n/a — proposed architecture"
+  wording: "Private brains remain private. Shared intelligence is built only from explicit contributions."
+  source:
+    org: "Dr. Tali Rezun and Dražen Kapusta"
+    report: "The Shared Brain: When Second Brains Start Thinking Together"
+    edition: 2026
+    url: https://medium.com/@talirezun/the-shared-brain-when-second-brains-start-thinking-together-0d2ad54413d9
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-khoj-2026-stars
+  claim: "Khoj is the largest individual-tier AI second brain project on GitHub, with no team-collaboration knowledge-compounding features documented in its main repository"
+  value: "35,478 stars"
+  wording: "Your AI second brain. Self-hostable. Get answers from the web or your docs."
+  source:
+    org: Khoj (khoj-ai)
+    report: "khoj-ai/khoj (GitHub repository)"
+    edition: 2026
+    url: https://github.com/khoj-ai/khoj
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-nashsu-llm-wiki-2026-stars
+  claim: "A desktop app built explicitly on the LLM Wiki pattern has real adoption, and is single-user only"
+  value: "13,676 stars"
+  wording: "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically."
+  source:
+    org: nashsu
+    report: "nashsu/llm_wiki (GitHub repository)"
+    edition: 2026
+    url: https://github.com/nashsu/llm_wiki
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-accountsfon-2026-zero-traction
+  claim: "A real, well-designed attempt to build an org-wide shared second brain from plain markdown files exists on GitHub, but has drawn no adoption"
+  value: "0 stars, 0 forks, 14 commits, single contributor"
+  wording: "A plug-and-play system for building a shared 'second brain' for any organization using plain markdown files. Works with any AI tool."
+  source:
+    org: "Five One Nine Marketing (accountsFON)"
+    report: "accountsFON/second-brain-system (GitHub repository)"
+    edition: 2026
+    url: https://github.com/accountsFON/second-brain-system
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-anythingllm-2026-pricing
+  claim: "AnythingLLM is free to self-host; its managed cloud tiers cost $50/month for teams under 5 seats and $99/month for the Pro tier"
+  value: "Free self-hosted; Basic $50/mo (<5 seats); Pro $99/mo"
+  wording: "Basic $50/mo, for teams of less than 5 users; Pro $99/mo"
+  source:
+    org: AnythingLLM
+    report: "AnythingLLM Pricing"
+    edition: 2026
+    url: https://anythingllm.com/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-onyx-2026-pricing
+  claim: "Onyx's managed cloud Business plan costs $20 per user per month, with no stated seat minimum"
+  value: "$20/user/month, self-serve"
+  wording: "$20 per user/month"
+  source:
+    org: Onyx
+    report: "Onyx Pricing"
+    edition: 2026
+    url: https://onyx.app/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-khoj-2026-team-sales-gated
+  claim: "Khoj's individual product is free to self-host; its team offering has no public price and requires contacting sales"
+  value: "n/a — no public team price"
+  wording: "tell them about what you're looking for, how big your team is, and what your needs are"
+  source:
+    org: Khoj
+    report: "Khoj Teams (product page)"
+    edition: 2026
+    url: https://khoj.dev/teams
+    pdf_hash:
+  verified: 2026-07-05
+  status: secondary-mirror
+  expires: 2026-10-05
+
+- id: ev-claude-team-2026-pricing
+  claim: "Claude's Team plan is self-serve for 5-150 seats, at $25/user/month monthly or $20/user/month billed annually"
+  value: "$25/user/mo monthly, $20/user/mo annual; 5-150 seats"
+  wording: "$25/person/month billed monthly, $20/person/month billed annually"
+  source:
+    org: Anthropic
+    report: "Claude Pricing"
+    edition: 2026
+    url: https://claude.com/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-chatgpt-business-2026-pricing
+  claim: "ChatGPT Business is self-serve with a two-seat minimum, at $20/user/month annual or $25/user/month monthly"
+  value: "$20/user/mo annual, $25/user/mo monthly; 2-seat minimum"
+  wording: "$20/user/month on an annual plan or $25/user/month monthly, with a 2-seat minimum"
+  source:
+    org: OpenAI
+    report: "ChatGPT Business Pricing"
+    edition: 2026
+    url: https://openai.com/chatgpt/business/
+    pdf_hash:
+  verified: 2026-07-05
+  status: secondary-mirror
+  expires: 2026-10-05
+
+- id: ev-notion-ai-2026-business-pricing
+  claim: "Notion's Business tier, required for the full AI feature set, costs $20-24 per user per month"
+  value: "$20/user/mo annual, $24/user/mo monthly"
+  wording: "Business: $20/mo per member billed annually, $24/mo per member billed monthly"
+  source:
+    org: Notion
+    report: "Notion Pricing"
+    edition: 2026
+    url: https://www.notion.com/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-obsidian-sync-2026-pricing
+  claim: "Obsidian Sync supports a shared vault at $4-5 per user per month, with no real-time co-editing"
+  value: "$4/user/mo annual, $5/user/mo monthly"
+  wording: "Sync: $4/mo billed annually, $5/mo billed monthly"
+  source:
+    org: Obsidian
+    report: "Obsidian Pricing"
+    edition: 2026
+    url: https://obsidian.md/pricing
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-karpathy-llm-wiki-2026-query-compounds
+  claim: "A good answer an AI assistant gives can be filed back into the wiki as a new page, so explorations compound the same way ingested sources do"
+  value: "n/a — qualitative mechanic"
+  wording: "good answers can be filed back into the wiki as new pages... This way your explorations compound in the knowledge base just like ingested sources do."
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-karpathy-llm-wiki-2026-lint-loop
+  claim: "Periodically health-checking the wiki for contradictions, stale claims, and orphan pages is what keeps it healthy as it grows"
+  value: "n/a — qualitative mechanic"
+  wording: "Periodically, ask the LLM to health-check the wiki. Look for: contradictions between pages, stale claims that newer sources have superseded, orphan pages with no inbound links... This keeps the wiki healthy as it grows."
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-claude-2026-github-integration
+  claim: "Claude's GitHub integration lets a Project connect to a repository, add selected files to the project's shared knowledge, and sync to fetch the latest changes on demand"
+  value: "n/a — product capability"
+  wording: "Your selected content will be added to the project knowledge for Claude to access and process... You can click 'Sync now' to fetch the latest changes from your repository."
+  source:
+    org: Anthropic
+    report: "Use the GitHub Integration (Claude Help Center)"
+    edition: 2026
+    url: https://support.claude.com/en/articles/10167454-use-the-github-integration
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2026-10-05
+
+- id: ev-adin-2026-fast-teams-document-least
+  claim: "The teams who would benefit most from capturing decisions are also the ones moving fastest and documenting least, making them least likely to build that habit"
+  value: "n/a — qualitative observation from a practitioner"
+  wording: "the teams who would benefit most from this are the ones moving fastest and documenting least, which means they're also the ones least likely to build a new habit around capturing decisions"
+  source:
+    org: "Ansari Adin (Product Hunt commenter)"
+    report: "Brief — Product Hunt launch discussion"
+    edition: 2026
+    url: https://www.producthunt.com/products/brief-10
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05

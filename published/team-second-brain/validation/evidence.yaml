@@ -102,8 +102,8 @@
   expires: 2027-01-05
 
 - id: ev-rezun-2026-shared-brain-architecture
-  claim: "A proposed small-team-shared-knowledge architecture keeps each person's second brain private and local by default, and builds the shared layer only from what each person explicitly chooses to contribute"
-  value: "n/a — proposed architecture"
+  claim: "A released-beta small-team-shared-knowledge architecture keeps each person's second brain private and local by default, and builds the shared layer only from what each person explicitly chooses to contribute; no confirmed real-team adoption reported"
+  value: "n/a — beta release, no confirmed adoption"
   wording: "Private brains remain private. Shared intelligence is built only from explicit contributions."
   source:
     org: "Dr. Tali Rezun and Dražen Kapusta"

@@ -46,7 +46,7 @@ someone chose to save — never a person's ongoing use of AI itself.
 | Obsidian + Sync | SaaS add-on | $4-5/user/mo | A shared vault, no real-time co-editing |
 
 [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
-picks a starting point from this table and covers what it actually takes to run it.
+picks a starting point from this table and sketches what it'd take to run it.
 
 ## Sources
 

@@ -96,8 +96,8 @@ underlying claim at two different scopes.
 Read [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md) next for
 an honest look at what's already built and where it stops being useful for a team. Then
 [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
-covers how a small team actually sets this up and keeps it alive, without hiring anyone to
-run it.
+sketches a way a small team could set this up and keep it alive, without hiring anyone to
+run it — an untested design, not a proven one.
 
 ## Sources
 

@@ -1,6 +1,12 @@
 # Update Log
 
 ## 2026-07-05
+* **Update**: [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
+  rewritten from a prescriptive how-to into an explicitly-labeled untested design: it now states
+  plainly that no team has been observed running this setup past its first weeks, and frames
+  each cited pattern (Karpathy's solo wiki maintenance, the Rezun & Kapusta shared-brain
+  architecture) at the scale it was actually documented for, rather than implying team-scale
+  validation the evidence doesn't support.
 * **Update**: Renumbered [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md)
   and [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
   so the section listing follows the bundle's actual reading order — the landscape survey

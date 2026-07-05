@@ -11,7 +11,7 @@ each session. [The Team Second Brain](/team-second-brain/the-team-second-brain.m
 that pattern and the specific gap in it — every real implementation so far is built for one
 person. [The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md) surveys
 what's actually out there. [Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)
-covers how to close that gap without hiring anyone or buying an enterprise platform.
+sketches a way to close that gap without hiring anyone or buying an enterprise platform.
 
 ## In this section
 
@@ -19,6 +19,6 @@ covers how to close that gap without hiring anyone or buying an enterprise platf
 | --- | --- |
 | [The Team Second Brain](the-team-second-brain.md)<br>A small team's shared, compounding knowledge base — extending Andrej Karpathy's LLM Wiki pattern from one person to a whole team. | Updated 2026-07-05 |
 | [The Single-Player Ceiling](01-the-single-player-ceiling.md)<br>What's actually been built on the LLM Wiki pattern so far — real, popular, and every one of them single-user. | Updated 2026-07-05 |
-| [Building Yours Without an Engineer](02-building-yours-without-an-engineer.md)<br>How a non-technical small team actually sets up and keeps alive a shared team knowledge base. | Updated 2026-07-05 |
+| [Building Yours Without an Engineer](02-building-yours-without-an-engineer.md)<br>A design for a team knowledge base with no server and no engineer, built from patterns proven for one person, not yet observed working for a team. | Updated 2026-07-05 |
 | [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-07-05 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-07-05 |

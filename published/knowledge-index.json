@@ -1,6 +1,6 @@
 {
   "version": "v9.4.0",
-  "generated": "2026-07-05",
+  "generated": "2026-07-06",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
@@ -68,6 +68,17 @@
         "temporal_mode": "always-newer"
       },
       "pageCount": 3
+    },
+    {
+      "slug": "ai-assisted-software-development",
+      "title": "AI-Assisted Software Development",
+      "description": "The real, evidence-backed questions for developers using AI coding agents: does it actually help, and how do you secure the workflow it creates.",
+      "posture": {
+        "citation_style": "deeply-cited",
+        "verification_posture": "full",
+        "temporal_mode": "always-newer"
+      },
+      "pageCount": 6
     },
     {
       "slug": "industry-briefs",
@@ -875,6 +886,223 @@
           "wording": "63% of breached organizations either don't have an AI governance policy or are still developing a policy.",
           "status": "primary",
           "verified": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-software-development",
+      "path": "framework-architecture.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-software-development/framework-architecture/",
+      "title": "The Two Real Questions",
+      "description": "How this bundle is organized: whether AI coding agents actually help, and how to secure the workflow they create.",
+      "tags": [
+        "ai-assisted-software-development"
+      ],
+      "body": "AI coding agents raise exactly two questions that matter, and most coverage of them\nanswers neither honestly. This bundle is organized around those two questions, in order,\nbecause the second one only matters once you've taken the first seriously.\n\n## [Does AI Coding Actually Help?](/ai-assisted-software-development/01-does-ai-coding-actually-help/index.md)\n\nThe productivity story most teams operate on is vendor telemetry and adoption surveys — numbers built to justify a purchase already made. A randomized controlled trial reaches a different, uncomfortable conclusion. Experienced developers on real tasks took 19% longer with AI assistance than without it. They still believed afterward that it had made them roughly 20% faster ([METR, 2025](#ev-metr-2025-early-ai-experienced-os-dev-productivity)). That contradiction — not a settled \"AI helps\" or \"AI hurts\" verdict — is the actual state of the evidence. It changes what a reasonable team should do next. Not adopt or reject wholesale, but find which tasks and developers it helps, and check your own results instead of trusting someone else's benchmark.\n\n## [Securing the AI Coding Workflow](/ai-assisted-software-development/02-securing-the-coding-workflow/index.md)\n\nAn AI coding agent that can read your repo, run commands, and write code is also a new target. It has already been hit, not hypothetically. A real, patched vulnerability exists in Claude Code. A malicious repository could exfiltrate a user's API keys before the trust prompt was ever shown ([Check Point Research, 2026](#ev-checkpoint-2026-claude-code-key-exfiltration-cve)). Separately, a supply-chain campaign has hidden invisible-Unicode instructions inside AI assistant config files. That is one tactic among several it uses to steal developer secrets ([Socket Research Team, 2026](#ev-trapdoor-2026-ai-assistant-config-poisoning)). This track treats that as a workflow-security problem an individual developer or small team can act on. Review what an agent reads, scope what it can touch, and know what a compromise actually looks like — not an enterprise security-team abstraction.\n\n## Why this order\n\nTrack one establishes that the tools' core promise is contested, not proven — which means\nthe second track is not a tax on a settled win, it is a real cost against an uncertain\nbenefit. Read productivity first, security second, and the tradeoff is honest either way\nyou land.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **METR — *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*, 2025.** When developers are allowed to use AI tools, they take 19% longer to complete issues. Developers had anticipated a 24% speedup before using AI. After experiencing the slowdown firsthand, they still believed AI had accelerated their work by approximately 20%. [View source](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/){#ev-metr-2025-early-ai-experienced-os-dev-productivity} · verified 2026-07-06 · primary\n- **Check Point Research — *Caught in the Hook: RCE and API Token Exfiltration Through Claude Code Project Files*, 2026.** If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt. [View source](https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/){#ev-checkpoint-2026-claude-code-key-exfiltration-cve} · verified 2026-07-06 · primary\n- **Socket Research Team — *TrapDoor Crypto Stealer Supply Chain Attack Hits 34 Packages*, 2026.** One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io. [View source](https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates){#ev-trapdoor-2026-ai-assistant-config-poisoning} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-metr-2025-early-ai-experienced-os-dev-productivity",
+          "org": "METR",
+          "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+          "wording": "When developers are allowed to use AI tools, they take 19% longer to complete issues. Developers had anticipated a 24% speedup before using AI. After experiencing the slowdown firsthand, they still believed AI had accelerated their work by approximately 20%.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-checkpoint-2026-claude-code-key-exfiltration-cve",
+          "org": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/",
+          "wording": "If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-trapdoor-2026-ai-assistant-config-poisoning",
+          "org": "Socket Research Team",
+          "url": "https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates",
+          "wording": "One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-software-development",
+      "path": "01-does-ai-coding-actually-help/the-productivity-evidence.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-software-development/01-does-ai-coding-actually-help/the-productivity-evidence/",
+      "title": "The Productivity Evidence",
+      "description": "What rigorous research actually shows about AI coding agents and developer speed — and where it contradicts vendor telemetry.",
+      "tags": [
+        "ai-assisted-software-development",
+        "productivity"
+      ],
+      "body": "## The vendor telemetry story\n\nGitHub ran its own controlled experiment on Copilot: 95 professional developers, split randomly. They were asked to build an HTTP server in JavaScript from a provided skeleton codebase. The developers with Copilot access completed the task 55.8% faster than the ones without it ([Peng, Kalliamvakou, Cihon & Demirer, 2023](#ev-peng-copilot-rct-2023-55-percent-faster)). It is genuinely one of the strongest productivity results anywhere in this literature.\n\n## What the controlled study actually found\n\nMETR ran a different experiment two years later, on a different population, doing different work. Sixteen experienced open-source developers worked on real issues, in repositories they had personally contributed to for years, using Cursor. The result: developers were 19% *slower* with AI tools than without them. Even after living through that slowdown themselves, they still believed afterward that AI had made them roughly 20% faster ([METR, 2025](#ev-metr-2025-early-ai-experienced-os-dev-productivity)).\n\n## Why they do not measure the same thing\n\nBoth studies are real randomized experiments, not anecdotes. The difference is what they actually tested. GitHub's task was a well-specified build from a small starter template, with no real production codebase to learn. That is exactly the shape of task an AI assistant handles best. METR's developers were doing real maintenance work on codebases they already knew intimately, averaging 22,000+ GitHub stars and over a million lines of code. That work carried the kind of implicit quality standards, documentation expectations, and existing conventions a well-specified greenfield task does not have ([METR, 2025](#ev-metr-2025-familiar-codebase-and-quality-caveats)). METR's own authors flag this directly: AI capabilities may be comparatively lower in settings with very high quality standards or many implicit requirements. Neither study is wrong. They tested different kinds of work, and most real engineering work looks much more like METR's setup than GitHub's.\n\n## What is still unresolved\n\nMETR's own authors go further and speculate that AI assistance might help *more* in an unfamiliar codebase than a familiar one. Their reasoning: an unfamiliar codebase is exactly where a developer most needs the orientation an AI assistant can provide. That is worth taking seriously, but it is a hypothesis the study's own authors raised, not something their data tested or confirmed. Nobody has yet run the controlled experiment that would actually settle it. It would need a familiar codebase against an unfamiliar one, same developers, same AI tool, measured head to head.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Peng, Kalliamvakou, Cihon, Demirer — *The Impact of AI on Developer Productivity: Evidence from GitHub Copilot*, 2023.** The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group. [View source](https://arxiv.org/abs/2302.06590){#ev-peng-copilot-rct-2023-55-percent-faster} · verified 2026-07-06 · primary\n- **METR — *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*, 2025.** When developers are allowed to use AI tools, they take 19% longer to complete issues. Developers had anticipated a 24% speedup before using AI. After experiencing the slowdown firsthand, they still believed AI had accelerated their work by approximately 20%. [View source](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/){#ev-metr-2025-early-ai-experienced-os-dev-productivity} · verified 2026-07-06 · primary\n- **METR — *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*, 2025.** experienced developers from large open-source repositories (averaging 22k+ stars and 1M+ lines of code). AI capabilities may be comparatively lower in settings with very high quality standards, or with many implicit requirements. [View source](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/){#ev-metr-2025-familiar-codebase-and-quality-caveats} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-metr-2025-early-ai-experienced-os-dev-productivity",
+          "org": "METR",
+          "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+          "wording": "When developers are allowed to use AI tools, they take 19% longer to complete issues. Developers had anticipated a 24% speedup before using AI. After experiencing the slowdown firsthand, they still believed AI had accelerated their work by approximately 20%.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-peng-copilot-rct-2023-55-percent-faster",
+          "org": "Peng, Kalliamvakou, Cihon, Demirer",
+          "url": "https://arxiv.org/abs/2302.06590",
+          "wording": "The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-metr-2025-familiar-codebase-and-quality-caveats",
+          "org": "METR",
+          "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+          "wording": "experienced developers from large open-source repositories (averaging 22k+ stars and 1M+ lines of code). AI capabilities may be comparatively lower in settings with very high quality standards, or with many implicit requirements.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-software-development",
+      "path": "01-does-ai-coding-actually-help/when-it-helps-and-when-it-doesnt.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-software-development/01-does-ai-coding-actually-help/when-it-helps-and-when-it-doesnt/",
+      "title": "When It Helps and When It Does Not",
+      "description": "What the evidence implies about task type, developer experience, and codebase familiarity as the real variables.",
+      "tags": [
+        "ai-assisted-software-development",
+        "productivity"
+      ],
+      "body": "The [productivity evidence](/ai-assisted-software-development/01-does-ai-coding-actually-help/the-productivity-evidence.md) shows two real, controlled experiments landing on opposite answers. That is not a contradiction to resolve by picking a side. It is a signal that the variables matter more than the headline number. Here is what the evidence actually supports about which variables, and how confidently.\n\n## Task type matters more than the tool\n\nThe clearest variable comes straight out of comparing the two studies' own designs. A well-specified task built from a small starter template, with no real production codebase to learn, is close to the best case. That is where an AI coding assistant performs strongest. That is exactly what GitHub's Copilot experiment measured. Real maintenance work on a codebase with years of accumulated convention is a harder case. That is exactly what METR's experiment measured ([METR, 2025](#ev-metr-2025-familiar-codebase-and-quality-caveats)). If your day-to-day work looks more like the second than the first, do not expect the first study's number to transfer.\n\n## Experience level cuts in a direction worth watching, not yet fully proven\n\nAI assistance may help less-experienced developers more than experienced ones, though not yet by a quantified amount. GitHub's own Copilot study notes this in its own findings, without giving exact figures. It states: \"observed heterogeneous effects show promise for AI pair programmers to help people transition into software development careers\" ([Peng, Kalliamvakou, Cihon & Demirer, 2023](#ev-peng-copilot-rct-2023-55-percent-faster)). Treat it as a direction supported by early evidence, not a settled multiplier you can plug into a decision.\n\n## Codebase familiarity as the hidden variable\n\nAs the [productivity evidence](/ai-assisted-software-development/01-does-ai-coding-actually-help/the-productivity-evidence.md) page covers, METR's developers were selected specifically for deep familiarity with their own repositories. That is a real constraint on what the study can tell you. It measures AI assistance on codebases developers already know deeply, not on unfamiliar ones. The study's own authors speculate that unfamiliarity might reverse the effect. AI could help more, not less, when a developer does not already carry an experienced maintainer's context. Nobody has run the head-to-head experiment that would confirm or kill that idea yet.\n\n## A quick self-check\n\nBefore trusting any productivity number for your own team, ask three things about the task you actually care about:\n\n- Is it closer to a greenfield build, or maintenance on a codebase your team already knows cold?\n- Does it carry quality standards or implicit conventions a benchmark task would not have?\n- Are the developers you are asking less experienced, more experienced, or a mix?\n\nThe answer changes which study's number is the more honest guess for your situation. It does not settle the question. Neither METR's nor GitHub's number was measured on your team, doing your kind of work.\n\n## Measure it yourself instead of trusting either number\n\nYou do not need a research lab to get a real answer for your own team. Pick one recurring type of task you already do often — a bug-fix category, a routine feature shape, a maintenance chore. Track three things for a few weeks. Time from start to merged, whether it passed review without a substantive rework request, and whether it shipped a regression within two weeks. Split the work roughly in half, AI-assisted and not, for that same task type. Aim for at least 10 to 15 real instances per side, enough that one unusually hard or easy task does not decide the result.\n\nRead the outcome honestly in both directions. If AI-assisted work is genuinely faster with no increase in rework or regressions, that is real signal, but only for the task type you measured. If it is the same speed or slower, that is real signal too, and deserves the same weight as a positive result. Watch for the one dishonest read: judging by how fast the work *felt* rather than what the numbers say. Rerun the comparison whenever the work or the tool changes shape, rather than assuming an old result still holds.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **METR — *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*, 2025.** experienced developers from large open-source repositories (averaging 22k+ stars and 1M+ lines of code). AI capabilities may be comparatively lower in settings with very high quality standards, or with many implicit requirements. [View source](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/){#ev-metr-2025-familiar-codebase-and-quality-caveats} · verified 2026-07-06 · primary\n- **Peng, Kalliamvakou, Cihon, Demirer — *The Impact of AI on Developer Productivity: Evidence from GitHub Copilot*, 2023.** The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group. [View source](https://arxiv.org/abs/2302.06590){#ev-peng-copilot-rct-2023-55-percent-faster} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-peng-copilot-rct-2023-55-percent-faster",
+          "org": "Peng, Kalliamvakou, Cihon, Demirer",
+          "url": "https://arxiv.org/abs/2302.06590",
+          "wording": "The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-metr-2025-familiar-codebase-and-quality-caveats",
+          "org": "METR",
+          "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+          "wording": "experienced developers from large open-source repositories (averaging 22k+ stars and 1M+ lines of code). AI capabilities may be comparatively lower in settings with very high quality standards, or with many implicit requirements.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-software-development",
+      "path": "02-securing-the-coding-workflow/protecting-your-repo-and-secrets.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-software-development/02-securing-the-coding-workflow/protecting-your-repo-and-secrets/",
+      "title": "Protecting Your Repo and Secrets",
+      "description": "Practical defenses: reviewing agent config file changes, scoping credentials and tool access, and catching tampering early.",
+      "tags": [
+        "ai-assisted-software-development",
+        "security"
+      ],
+      "body": "Each of these defenses answers a specific attack from [The Real Attack Surface](/ai-assisted-software-development/02-securing-the-coding-workflow/the-real-attack-surface.md) — this is not a generic security checklist.\n\n## Review agent config file changes like a dependency update\n\nTrapDoor hid its instructions inside `.cursorrules` and `CLAUDE.md` files using zero-width Unicode characters. Those characters are invisible in a normal editor, but an AI assistant still reads and acts on them regardless ([Socket Research Team, 2026](#ev-trapdoor-2026-ai-assistant-config-poisoning)). Treat a change to any file an AI agent reads automatically the same way you would treat a change to a dependency. It is something to diff and read before merging, not something that gets a pass for being \"just config.\" A diff tool that renders invisible Unicode visibly, or a pre-commit check that flags non-printable characters, catches this specific technique directly.\n\n## Keep the agent patched, and control where it can send data\n\nCVE-2026-21852 worked because Claude Code issued API requests carrying credentials before a user had approved the repository at all ([Check Point Research, 2026](#ev-checkpoint-2026-claude-code-key-exfiltration-cve)). It is fixed as of version 2.0.65, so the first defense is simply running a current version. Patching does not end the category of risk, though. Any agent that can read a project's own network configuration before establishing trust can be redirected the same way. Pin or allowlist the endpoints an agent is allowed to call. Run agents against unfamiliar repositories inside a sandbox or container with controlled network egress, rather than your normal environment with full credentials. Scoped, short-lived tokens are still worth using over long-lived API keys, but scoping only limits the damage after a leak. It does not stop the leak the way patching and egress control do.\n\n## Control what the agent can execute, not just what it reads\n\nEvery attack in this bundle ends the same way. The agent takes an action, a network call or a shell command, that a human never approved. Reading defenses like reviewing config files and scoping credentials address how the bad instruction gets in. They do not address what happens when the agent tries to act on it. Run agents with the narrowest shell and network permissions the task actually needs. Require explicit approval before an agent runs a command it has not run before in that session. An agent that can open pull requests or send messages on your behalf earns the same review discipline as a new engineer's first commits.\n\n## Watch for the tells of a compromised config\n\nA few concrete, checkable signs are worth watching for. A config file that changed recently with no explained commit message. A settings file that redirects a base URL, endpoint, or API host somewhere unfamiliar. A dependency added specifically because an AI agent suggested it, one you have not independently checked. None of these require deep security expertise. They require actually looking, which is the step both documented attacks in this bundle depended on someone skipping.\n\n## A minimal checklist\n\nBefore opening an AI coding agent in a new or unfamiliar repository, read every file it will load automatically — `CLAUDE.md`, `.cursorrules`, or equivalent — before starting a session, not after. Confirm what credentials and environment variables it can access, and scope them down where you can. Diff any change to those config files the same way you would review a pull request, watching specifically for non-printable characters. Do not treat \"the agent did something surprising\" as a quirk to shrug off. Treat it as the first observable sign of the kind of compromise this bundle documents.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Socket Research Team — *TrapDoor Crypto Stealer Supply Chain Attack Hits 34 Packages*, 2026.** One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io. [View source](https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates){#ev-trapdoor-2026-ai-assistant-config-poisoning} · verified 2026-07-06 · primary\n- **Check Point Research — *Caught in the Hook: RCE and API Token Exfiltration Through Claude Code Project Files*, 2026.** If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt. [View source](https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/){#ev-checkpoint-2026-claude-code-key-exfiltration-cve} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-checkpoint-2026-claude-code-key-exfiltration-cve",
+          "org": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/",
+          "wording": "If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-trapdoor-2026-ai-assistant-config-poisoning",
+          "org": "Socket Research Team",
+          "url": "https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates",
+          "wording": "One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-software-development",
+      "path": "02-securing-the-coding-workflow/supply-chain-and-mcp-risk.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-software-development/02-securing-the-coding-workflow/supply-chain-and-mcp-risk/",
+      "title": "Supply Chain and MCP Risk",
+      "description": "How dependency and MCP-server compromise extends the same attack surface beyond your own repo.",
+      "tags": [
+        "ai-assisted-software-development",
+        "security"
+      ],
+      "body": "## How a poisoned dependency or MCP server extends the same attack\n\n[The Real Attack Surface](/ai-assisted-software-development/02-securing-the-coding-workflow/the-real-attack-surface.md) covers what happens inside your own repo. The same trust problem extends to anything your agent connects to on your behalf. A Model Context Protocol (MCP) tool poisoning attack embeds malicious instructions directly inside a tool's own description. That description is invisible to the person using the agent but read and acted on by the AI model itself. Invariant Labs demonstrated this live against Cursor: a malicious MCP server's tool description silently redirected outgoing email to an attacker's address. \"The agent willingly [sent] all emails to the attacker, even if the user explicitly specifie[d] a different recipient\" ([Invariant Labs, 2025](#ev-invariant-labs-2025-mcp-tool-poisoning)). An academic threat-modeling paper on the wider MCP ecosystem confirms this is not a one-off demo. It names 16 distinct threat scenarios across four attacker types ([Hou, Zhao, Wang & Wang, 2025](#ev-hou-2025-mcp-threat-taxonomy)). This is a structural risk in how MCP connects agents to tools they do not independently verify.\n\n## What has already been found\n\nA separate, documented supply-chain campaign called PromptMink took this a step further. Instead of attacking a repository directly, it wrote fake package documentation. That documentation was engineered to make an AI coding agent recommend installing a malicious dependency on its own. Researchers describe the technique as \"a combination of LLM Optimization (LLMO) abuse and knowledge injection.\" Researchers named the goal directly. It was \"to make the LLM likely to recommend using the malicious package by making the documentation as believable as possible\" ([ReversingLabs, 2026](#ev-promptmink-2026-llmo-abuse-supply-chain)). The campaign ran for seven months across more than 60 unique packages and 300 published versions. The target is the AI agent's judgment, which many developers now trust with less scrutiny than they would apply themselves.\n\n## A trust checklist for third-party tools\n\nBefore connecting an AI coding agent to a new MCP server, read what tools it exposes and what each tool's description actually says. Read it the same way you would read a permissions request. The description itself is the attack surface, not just the tool's behavior. Prefer MCP servers you or your organization control or have reviewed over ones added casually from a marketplace or a forum recommendation. Before accepting an AI agent's dependency suggestion for a package you have not used before, verify the package independently. Check its actual maintainer history and download count. Do not trust that the agent's citation of it means it is legitimate.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Invariant Labs — *MCP Security Notification: Tool Poisoning Attacks*, 2025.** A Tool Poisoning Attack occurs when malicious instructions are embedded within MCP tool descriptions that are invisible to users but visible to AI models. The agent willingly sends all emails to the attacker, even if the user explicitly specifies a different recipient. [View source](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks){#ev-invariant-labs-2025-mcp-tool-poisoning} · verified 2026-07-06 · primary\n- **Hou, Zhao, Wang, Wang — *Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions*, 2025.** Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions. [View source](https://arxiv.org/abs/2503.23278){#ev-hou-2025-mcp-threat-taxonomy} · verified 2026-07-06 · primary\n- **ReversingLabs — *PromptMink: Claude-Targeting Crypto Malware Campaign*, 2026.** a combination of LLM Optimization (LLMO) abuse and knowledge injection. The goal is to make the LLM likely to recommend using the malicious package by making the documentation as believable as possible. [View source](https://www.reversinglabs.com/blog/claude-promptmink-malware-crypto){#ev-promptmink-2026-llmo-abuse-supply-chain} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-invariant-labs-2025-mcp-tool-poisoning",
+          "org": "Invariant Labs",
+          "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+          "wording": "A Tool Poisoning Attack occurs when malicious instructions are embedded within MCP tool descriptions that are invisible to users but visible to AI models. The agent willingly sends all emails to the attacker, even if the user explicitly specifies a different recipient.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-promptmink-2026-llmo-abuse-supply-chain",
+          "org": "ReversingLabs",
+          "url": "https://www.reversinglabs.com/blog/claude-promptmink-malware-crypto",
+          "wording": "a combination of LLM Optimization (LLMO) abuse and knowledge injection. The goal is to make the LLM likely to recommend using the malicious package by making the documentation as believable as possible.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-hou-2025-mcp-threat-taxonomy",
+          "org": "Hou, Zhao, Wang, Wang",
+          "url": "https://arxiv.org/abs/2503.23278",
+          "wording": "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-software-development",
+      "path": "02-securing-the-coding-workflow/the-real-attack-surface.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-software-development/02-securing-the-coding-workflow/the-real-attack-surface/",
+      "title": "The Real Attack Surface",
+      "description": "The documented vulnerabilities and attack campaigns already targeting AI coding agents — named CVEs, real incidents, not hypotheticals.",
+      "tags": [
+        "ai-assisted-software-development",
+        "security"
+      ],
+      "body": "## The CVE\n\nAn AI coding agent reads your repo and runs commands on your behalf. It has to trust that repo, at least a little, before you have had a chance to look at it yourself. CVE-2026-21852 shows what happens when that trust starts too early. Picture an attacker-controlled repository whose own settings file sets `ANTHROPIC_BASE_URL` to an attacker-controlled endpoint. Starting Claude Code there would issue API requests before ever showing the trust prompt a user would normally approve ([Check Point Research, 2026](#ev-checkpoint-2026-claude-code-key-exfiltration-cve)). That request stream could carry the user's own API key to the attacker's server. The bug was real and specific: CVSS v4.0 score of 5.3, fixed in Claude Code 2.0.65, publicly disclosed in January 2026. It is already patched, so the single most effective defense is simply running a version released after that fix. The same Check Point report also covers a separate, higher-severity vulnerability (CVE-2025-59536, an unrelated remote-code-execution bug); this section describes CVE-2026-21852 specifically. The lesson generalizes past this one tool. Any agent that reads project-level configuration before establishing trust in the project is exposed to the same class of bug.\n\n## The config-file attack campaign\n\nA separate, larger campaign shows the same idea used at scale. Socket's research team has been tracking a supply-chain campaign it calls TrapDoor, spanning more than 34 malicious packages across npm, PyPI, and Crates.io, aimed mainly at stealing crypto wallets and developer credentials ([Socket Research Team, 2026](#ev-trapdoor-2026-ai-assistant-config-poisoning)). One tactic inside that campaign targets AI coding tools specifically: hiding instructions inside `.cursorrules` and `CLAUDE.md` files, the config files coding agents read automatically every session, using zero-width Unicode characters. The instructions are invisible in a normal text editor. An AI assistant can still parse and act on them, triggering what looks like a routine \"security scan\" that actually exfiltrates local secrets.\n\n## What the broader research shows\n\nThese two incidents are not isolated. A systematic review synthesized 78 studies of prompt-injection research against AI coding assistants, published between 2021 and 2026. It spans tools including Claude Code, Cursor, and Copilot ([Maloyan, 2026](#ev-maloyan-2026-agentic-coding-injection-sok)). Aggregated across that whole body of research, attack success rates against state-of-the-art defenses exceed 85% when adaptive strategies are used. Most published defenses stop fewer than half of sophisticated attacks. That is a meta-analysis finding, not a single measurement against any one tool. The mechanism still generalizes. Any content an agent reads and treats as instructions is a place to hide an instruction the agent will follow. A config file, a PR description, a code comment, a tool's own output — all of it qualifies.\n\nBoth incidents above are documented, named, and very likely incomplete.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Check Point Research — *Caught in the Hook: RCE and API Token Exfiltration Through Claude Code Project Files*, 2026.** If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt. [View source](https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/){#ev-checkpoint-2026-claude-code-key-exfiltration-cve} · verified 2026-07-06 · primary\n- **Socket Research Team — *TrapDoor Crypto Stealer Supply Chain Attack Hits 34 Packages*, 2026.** One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io. [View source](https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates){#ev-trapdoor-2026-ai-assistant-config-poisoning} · verified 2026-07-06 · primary\n- **Maloyan — *Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems*, 2026.** Our meta-analysis synthesizes findings from 78 recent studies (2021-2026). Attack success rates against state-of-the-art defenses exceed 85% when adaptive attack strategies are employed. We identify that most achieve less than 50% mitigation against sophisticated adaptive attacks. [View source](https://arxiv.org/abs/2601.17548){#ev-maloyan-2026-agentic-coding-injection-sok} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-checkpoint-2026-claude-code-key-exfiltration-cve",
+          "org": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/",
+          "wording": "If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-trapdoor-2026-ai-assistant-config-poisoning",
+          "org": "Socket Research Team",
+          "url": "https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates",
+          "wording": "One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-maloyan-2026-agentic-coding-injection-sok",
+          "org": "Maloyan",
+          "url": "https://arxiv.org/abs/2601.17548",
+          "wording": "Our meta-analysis synthesizes findings from 78 recent studies (2021-2026). Attack success rates against state-of-the-art defenses exceed 85% when adaptive attack strategies are employed. We identify that most achieve less than 50% mitigation against sophisticated adaptive attacks.",
+          "status": "primary",
+          "verified": "2026-07-06"
         }
       ]
     },
@@ -7534,6 +7762,10 @@
       "terms": []
     },
     {
+      "bundle": "ai-assisted-software-development",
+      "terms": []
+    },
+    {
       "bundle": "industry-briefs",
       "terms": []
     },
@@ -7855,6 +8087,21 @@
       "date": "2026-07-02",
       "bundle": "06-ai-security-lead",
       "entry": "Creation**: New bundle — the operator's manual for the AI Security Lead, accountable for adversarial testing and model-level security: prompt injection, jailbreaks, data exfiltration, and agentic tool-abuse. The intro What the AI Security Lead Is — and the Role plus The OWASP Top 10 for LLM Applications and Running a Red Team. Selective citation posture: real-world AI breach prevalence is cited to IBM's Cost of a Data Breach Report 2025, the vulnerability taxonomy to OWASP's GenAI Security Project, and the red-teaming methodology and external partnerships to Anthropic's own published Frontier Red Team practice."
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-software-development",
+      "entry": "Creation**: Scaffolded the bundle — Knowledgeville's first developer/builder-facing"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-software-development",
+      "entry": "Update**: Verified and cited the bundle's overview and architecture pages against"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-software-development",
+      "entry": "Creation**: Authored all five remaining pages, completing the bundle for the first"
     },
     {
       "date": "2026-07-01",

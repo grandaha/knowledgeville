@@ -1,0 +1,144 @@
+# evidence.yaml — public provenance record for the AI-Assisted Software Development bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-metr-2025-early-ai-experienced-os-dev-productivity
+  claim: "A randomized controlled trial found AI coding tools slowed experienced open-source developers down, even as those same developers believed AI had sped them up"
+  value: "19% slower with AI; developers still believed they were ~20% faster"
+  wording: "When developers are allowed to use AI tools, they take 19% longer to complete issues. Developers had anticipated a 24% speedup before using AI. After experiencing the slowdown firsthand, they still believed AI had accelerated their work by approximately 20%."
+  source:
+    org: METR
+    report: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    edition: 2025
+    url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-07-06
+
+- id: ev-checkpoint-2026-claude-code-key-exfiltration-cve
+  claim: "A real, patched vulnerability let a malicious repository exfiltrate a Claude Code user's API keys before the trust prompt was ever shown"
+  value: "CVE-2026-21852, CVSS v4.0 score 5.3 (CVSS 3.1: 7.5), fixed in Claude Code 2.0.65, publicly disclosed January 2026"
+  wording: "If a user started Claude Code in an attacker-controlled repository. The repository included a settings file that set ANTHROPIC_BASE_URL to an attacker-controlled endpoint. Claude Code would issue API requests before showing the trust prompt."
+  source:
+    org: Check Point Research
+    report: "Caught in the Hook: RCE and API Token Exfiltration Through Claude Code Project Files"
+    edition: 2026
+    url: https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-trapdoor-2026-ai-assistant-config-poisoning
+  claim: "A real, documented supply-chain campaign (TrapDoor) hid instructions in AI coding assistant config files using invisible Unicode characters to trigger a fake security scan that exfiltrated developer secrets"
+  value: "34+ malicious packages, npm/PyPI/Crates.io, first observed May 2026"
+  wording: "One of the more unusual features in TrapDoor is its use of AI-targeted injection through files such as .cursorrules and CLAUDE.md. The attacker attempts to plant hidden instructions using zero-width Unicode characters. The campaign spans more than 34 malicious packages and 384+ related versions and artifacts across npm, PyPI, and Crates.io."
+  source:
+    org: Socket Research Team
+    report: "TrapDoor Crypto Stealer Supply Chain Attack Hits 34 Packages"
+    edition: 2026
+    url: https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2026-11-06
+
+- id: ev-peng-copilot-rct-2023-55-percent-faster
+  claim: "A controlled experiment found developers using GitHub Copilot completed a defined greenfield task 55.8% faster than developers without it"
+  value: "55.8% faster; 95 professional developers; single novel task (build an HTTP server)"
+  wording: "The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group."
+  source:
+    org: "Peng, Kalliamvakou, Cihon, Demirer"
+    report: "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
+    edition: 2023
+    url: https://arxiv.org/abs/2302.06590
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-07-06
+
+- id: ev-metr-2025-familiar-codebase-and-quality-caveats
+  claim: "METR's own study measured experienced developers working on codebases they already knew well, not unfamiliar codebases, and flagged high quality standards as a likely factor in the slowdown -- the study's own authors, not this page, speculate AI might help more elsewhere"
+  value: "n/a -- study-design constraint and authors' own caveat, qualitative"
+  wording: "experienced developers from large open-source repositories (averaging 22k+ stars and 1M+ lines of code). AI capabilities may be comparatively lower in settings with very high quality standards, or with many implicit requirements."
+  source:
+    org: METR
+    report: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    edition: 2025
+    url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-07-06
+
+- id: ev-invariant-labs-2025-mcp-tool-poisoning
+  claim: "A documented MCP (Model Context Protocol) attack lets a malicious tool server hide instructions in its tool descriptions that are invisible to the user but read and acted on by the AI agent"
+  value: "n/a -- attack technique, qualitative; demonstrated live against Cursor"
+  wording: "A Tool Poisoning Attack occurs when malicious instructions are embedded within MCP tool descriptions that are invisible to users but visible to AI models. The agent willingly sends all emails to the attacker, even if the user explicitly specifies a different recipient."
+  source:
+    org: Invariant Labs
+    report: "MCP Security Notification: Tool Poisoning Attacks"
+    edition: 2025
+    url: https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-04-01
+
+- id: ev-promptmink-2026-llmo-abuse-supply-chain
+  claim: "A real, documented supply-chain campaign (PromptMink) wrote fake package documentation specifically to persuade an AI coding agent to recommend installing a malicious dependency"
+  value: "60+ unique packages, 300+ versions, 20+ domains/IPs, 7-month campaign"
+  wording: "a combination of LLM Optimization (LLMO) abuse and knowledge injection. The goal is to make the LLM likely to recommend using the malicious package by making the documentation as believable as possible."
+  source:
+    org: ReversingLabs
+    report: "PromptMink: Claude-Targeting Crypto Malware Campaign"
+    edition: 2026
+    url: https://www.reversinglabs.com/blog/claude-promptmink-malware-crypto
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2026-10-29
+
+- id: ev-hou-2025-mcp-threat-taxonomy
+  claim: "An academic threat-modeling paper catalogs 16 distinct threat scenarios across four attacker types for MCP-connected AI agents"
+  value: "16 threat scenarios; 4 attacker types (malicious developers, external attackers, malicious users, security flaws)"
+  wording: "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions"
+  source:
+    org: "Hou, Zhao, Wang, Wang"
+    report: "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions"
+    edition: 2025
+    url: https://arxiv.org/abs/2503.23278
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-10-07
+
+- id: ev-maloyan-2026-agentic-coding-injection-sok
+  claim: "A systematic review synthesizing 78 studies found attack success rates against agentic coding assistants exceed 85% when adaptive attack strategies are used, and most published defenses mitigate less than half of sophisticated attacks"
+  value: "78 studies (2021-2026); >85% adaptive attack success; <50% defense mitigation"
+  wording: "Our meta-analysis synthesizes findings from 78 recent studies (2021-2026). Attack success rates against state-of-the-art defenses exceed 85% when adaptive attack strategies are employed. We identify that most achieve less than 50% mitigation against sophisticated adaptive attacks."
+  source:
+    org: Maloyan
+    report: "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems"
+    edition: 2026
+    url: https://arxiv.org/abs/2601.17548
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06

@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v9.3.1 — 2026-07-06
+
+### New & expanded content
+* Simplify Knowledgeville's welcome intro
+
 ## v9.3.0 — 2026-07-06
 
 ### New & expanded content

@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-07-06
+* **Update**: [Practitioner Guide: Running a Workflow Optimization Program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md)
+  adds a section naming DAIN Studios' and ServiceNow's competing "A.G.E.N.T." frameworks, mapping
+  both onto this guide's own four phases (they're a relabeling, not an addition), and naming the
+  real gaps neither closes — multi-step agent evaluation, non-determinism versus irreversible-action
+  safety, error compounding across steps, and context/tool-selection limits. Also notes DAIN's
+  framework is the methodology behind Harvard Data Science Initiative's "Agentic AI Intensive" course,
+  co-taught by DAIN's own co-founders alongside independent faculty.
+
 ## 2026-07-03
 * **Creation**: [Data Readiness Is a Use-Case Property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md)
   opens the whole track with a diagnostic: whether a use case's data routes around or

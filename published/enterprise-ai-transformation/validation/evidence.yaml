@@ -3579,3 +3579,45 @@
   verified: 2026-07-03
   status: primary
   expires: 2027-03-27
+
+- id: ev-dain-studios-2026-agent-framework-phases
+  claim: "DAIN Studios publishes a named five-phase framework (A.G.E.N.T.) for scoping and piloting agentic AI use cases"
+  value: "Audit, Gauge, Engineer, Navigate, Track"
+  wording: "Audit current workflows and roles, gauge value and complexity, engineer agent-first processes, navigate human-agent collaboration and track impact over time."
+  source:
+    org: DAIN Studios
+    report: "How to Start and Scale Agentic AI: A.G.E.N.T. + 6-Step Strategy"
+    edition: 2026
+    url: https://dainstudios.com/insights/from-agents-to-transformation/
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-servicenow-2026-agent-method-phases
+  claim: "ServiceNow publishes a separate, similarly-shaped five-phase framework, also named A.G.E.N.T., for designing AI agent use cases"
+  value: "Assess, Ground, Engineer, Navigate, Tune & Scale; 75-80% accuracy benchmark before scaling"
+  wording: "Before you open any tooling, understand the terrain. The framework recommends a 75-80% accuracy rate as the typical benchmark before advancing."
+  source:
+    org: ServiceNow (community contributor)
+    report: "The A.G.E.N.T. Method: A Practical Framework for Designing AI Agent Use Cases on ServiceNow"
+    edition: 2026
+    url: https://www.servicenow.com/community/ceg-ai-coe-articles/the-a-g-e-n-t-method-a-practical-framework-for-designing-ai/ta-p/3509219
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-hdsr-2026-agentic-ai-intensive-faculty
+  claim: "DAIN's A.G.E.N.T. framework is the course backbone for a real Harvard-affiliated executive course, co-taught by DAIN's own co-founders alongside independent faculty — not an arms-length third-party academic endorsement"
+  value: "6 named instructors, 2 of whom are DAIN Studios co-founders/CEOs"
+  wording: "A collaboration between Next Gen Learning and Harvard Data Science Initiative."
+  source:
+    org: Harvard Data Science Initiative / Next Gen Learning
+    report: "Agentic AI Intensive course page"
+    edition: 2026
+    url: https://live.hdsrcourses.org/agentic-ai-intensive
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2026-09-06

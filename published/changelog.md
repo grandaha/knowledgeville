@@ -11,6 +11,12 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v9.5.0 — 2026-07-06
+
+### New & expanded content
+
+* **New bundle: AI-Assisted Software Development.** The two real questions a developer or team lead faces with AI coding agents — does it actually make you faster, and does it open you up to new attacks. Covers the contested productivity evidence (a randomized controlled trial found AI coding tools slowed experienced developers down even as they believed it sped them up, set against vendor-reported speedups on simpler tasks) in [Does AI Coding Actually Help?](https://knowledge.onesteplabs.com/ai-assisted-software-development/01-does-ai-coding-actually-help/), and the named, documented vulnerabilities and supply-chain campaigns already targeting AI coding assistants in [Securing the AI Coding Workflow](https://knowledge.onesteplabs.com/ai-assisted-software-development/02-securing-the-coding-workflow/). ([#247](https://github.com/grandaha/knowledgeville-workspace/pull/247), [#248](https://github.com/grandaha/knowledgeville-workspace/pull/248), [#249](https://github.com/grandaha/knowledgeville-workspace/pull/249))
+
 ## v9.4.0 — 2026-07-06
 
 ### New & expanded content

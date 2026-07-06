@@ -4,9 +4,8 @@ okf_version: "0.1"
 
 # Welcome to Knowledgeville
 
-Knowledgeville is my public knowledge base: research on the things I find important, shared openly
-so it's useful beyond me. It's just one of the things I'm working on at
-[One Step Labs](https://www.onesteplabs.com) right now.
+Knowledgeville is a public knowledge base: research on the things I find interesting, shared openly
+so it's useful beyond me.
 
 Working with AI every day produces knowledge, but most of it stays in a silo: one person's, not
 shared. Knowledgeville tests whether it can work differently. Bundle it up, and you can plug it

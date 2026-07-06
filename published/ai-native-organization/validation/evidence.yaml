@@ -115,6 +115,48 @@
   status: primary
   expires: 2027-06-21
 
+- id: ev-accenture-faculty-2026-decision-intelligence-product
+  claim: "Accenture acquired Faculty, an AI-native services and products business, to add a licensable decision-intelligence product to its own product suite rather than build the capability internally"
+  value: "n/a — acquisition, qualitative"
+  wording: "a leading UK-based AI native services and products business built on highly technical applied AI skills. Faculty Frontier, Faculty's enterprise decision intelligence product, will join Accenture's suite of products that help organizations make better, faster decisions."
+  source:
+    org: Accenture
+    report: "Accenture to Acquire Faculty to Scale AI Capabilities (newsroom)"
+    edition: 2026
+    url: https://newsroom.accenture.com/news/2026/accenture-to-acquire-faculty-to-scale-ai-capabilities
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-07-05
+
+- id: ev-faculty-frontier3-2026-computational-twin-and-agent
+  claim: "Faculty's core decision-intelligence technology (Computational Twin) is classic simulation-and-optimization technology combining predictive models, optimization algorithms, and business rules; its newest release adds a genuinely agentic layer (ADA) on top of that core, not instead of it"
+  value: "n/a — product architecture, qualitative"
+  wording: "CT brings together an organisation's data sources, predictive models, optimisation algorithms, and business rules into a dynamic simulation of how work and decisions flow. ADA enables natural-language interaction, tailored recommendations, and specialist support agents that help teams query, analyse, and act on complex data."
+  source:
+    org: Faculty
+    report: "Faculty Launches Frontier 3: The Next Evolution in Decision Intelligence for Enterprises Worldwide (PR Newswire)"
+    edition: 2026
+    url: https://www.prnewswire.co.uk/news-releases/faculty-launches-frontier-3-the-next-evolution-in-decision-intelligence-for-enterprises-worldwide-302580976.html
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-01-05
+
+- id: ev-accenture-aws-2026-autonomous-supply-chain-agents
+  claim: "Accenture's AI Products line with AWS ships pre-built, enterprise-certified AI agents that autonomously run supply-chain planning, logistics, and inventory work, deployed under a 'human-in-the-lead' governance model with Accenture engineers embedded directly alongside clients, not a fully unstaffed offering"
+  value: "n/a — product capability, qualitative"
+  wording: "pre-built, enterprise certified AI agents that autonomously collect data and build a contextual knowledge layer. This 'human-in-the-lead' model has already identified hundreds of millions in savings. These engineers work directly alongside clients."
+  source:
+    org: Accenture
+    report: "Accenture Expands Accenture AWS Business Group with New AI Products Capability (newsroom)"
+    edition: 2026
+    url: https://newsroom.accenture.com/blogs/2026/accenture-expands-accenture-aws-business-group-with-new-ai-products-capability
+    pdf_hash:
+  verified: 2026-07-05
+  status: primary
+  expires: 2027-01-05
+
 - id: ev-chambers-associate-2026-partner-associate-ratio
   claim: "Leverage ratios (associates per partner) vary widely across major US law firms — the precedent for a small-owner/many-leveraged-workers structure"
   value: "~2.5:1 (Latham & Watkins) to ~4.4:1 (Davis Polk & Wardwell)"

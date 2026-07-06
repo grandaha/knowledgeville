@@ -24,3 +24,12 @@ organization. See [The Three Accountabilities](/ai-native-organization/the-three
 **Partnership pyramid** — the professional-services staffing model (few partners, many
 leveraged associates) that this bundle argues generalizes to other organization types once
 AI agents supply the leverage. See [The Partnership Pyramid, Generalized](/ai-native-organization/the-partnership-pyramid-generalized.md).
+
+**Execution Specs** — machine-readable contracts for a firm's commodity work: inputs,
+outputs, rules, and the quality bar. AI-drafted and disposable, cheap to produce and cheap
+to replace once written. See [Who Owns the Codified Judgment](/ai-native-organization/who-owns-the-codified-judgment.md).
+
+**Decision Rubrics** — the proprietary judgment inside a firm's frameworks: the thresholds,
+override conditions, and reasoning a senior professional applies that a framework alone
+does not capture. Hand-authored and durable — the actual asset a client is paying for. See
+[Who Owns the Codified Judgment](/ai-native-organization/who-owns-the-codified-judgment.md).

@@ -15,7 +15,7 @@ while that journey runs. Neither describes where the journey ends. This bundle d
 an organization actually looks like once the transformation is complete, not mid-way
 through it.
 
-## Three pages, building on each other
+## Four pages, building on each other
 
 - **[The Three Accountabilities](/ai-native-organization/the-three-accountabilities.md)**
   — describes how work divides inside an AI-native organization: Owner, Architect, and
@@ -28,6 +28,12 @@ through it.
   partnership model, historically confined to law firms and consultancies, generalizes to
   other organization types once AI agents supply the leverage that used to require armies
   of associates.
+- **[Who Owns the Codified Judgment](/ai-native-organization/who-owns-the-codified-judgment.md)**
+  — a different axis than the pyramid question. Once a firm's judgment is codified well
+  enough for an agent to apply it, the staffing model can survive fully intact and a
+  separate property-and-rent question still bites: who owns that codified judgment, and
+  what happens to the people it displaces, depending on whether the firm buys its way
+  there or builds it in-house.
 
 ## Why this is a different genre of content
 

@@ -1,6 +1,7 @@
 # Update Log
 
 ## 2026-07-05
+* **Creation**: [Verify AI's Facts and Citations](/ai-use-cases/everyday-tasks/explaining-researching/verify-ai-facts-and-citations.md) — a new recipe in Explaining & Researching for checking an AI's claims and sources before relying on them, grounded in real hallucination-rate studies rather than a generic "always verify" caution.
 * **Update**: [Explain a Concept Simply](/ai-use-cases/everyday-tasks/explaining-researching/explain-a-concept-simply.md) — the prompt now tells the assistant to say so instead of forcing an analogy when none fits accurately, and to flag anything experts still debate. "Watch out for" now names the actual failure mode (a fluent, wrong analogy on a topic that feels like general knowledge but is contested) instead of a generic high-stakes-topics caveat.
 
 ## 2026-06-29

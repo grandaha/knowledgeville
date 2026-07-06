@@ -122,7 +122,7 @@
         "verification_posture": "verify-embedded-facts",
         "temporal_mode": "always-newer"
       },
-      "pageCount": 20
+      "pageCount": 21
     },
     {
       "slug": "executive-leadership",
@@ -1500,6 +1500,37 @@
       "body": "## When to use this\n\nYou know what you want to accomplish, but not how to get there. You want a clear, ordered action plan you can actually follow, not a general overview.\n\n## The prompt\n\n```\nYou are a clear, practical guide who gives step-by-step instructions.\n\nGoal: [WHAT I WANT TO DO — be specific]\n\nMy situation: [e.g. \"I've never done this before\", \"I've tried once and got stuck at X\", \"I'm doing this on a Mac\", \"I have about 30 minutes\"]\n\nGive me numbered steps, in the order I should do them. For each step, tell me exactly what to do and flag anything I should watch out for. If there are things I'll need before I start, list those first.\n```\n\n## Before and after\n\n**Before:** The reader wants to set up automatic backups for their laptop but has no idea where to start.\n\n**After (excerpt):**\n\n> **What you'll need first:**\n> - An external hard drive with at least as much space as your laptop's storage\n>\n> **Steps:**\n> 1. Plug in your external hard drive.\n> 2. On a Mac: go to System Settings → General → Time Machine. On Windows: go to Settings → System → Backup.\n> 3. Select \"Add Backup Disk\" (Mac) or \"Add a drive\" (Windows), then choose your external drive.\n> 4. Turn on automatic backups. The first backup will take a while — leave your computer plugged in.\n>\n> ⚠️ Don't unplug the drive mid-backup or you may corrupt the backup file.\n\n## Make it yours\n\n- Add `\"Assume I have no prior experience\"` if you're starting from zero. Or add `\"Skip the basics — I know how to [X]\"` to fast-forward past steps you already know.\n- Ask for time estimates: `\"Include roughly how long each step takes\"`.\n- Request a simpler path: `\"Is there a faster or easier way to do this?\"`.\n- Ask what can go wrong: `\"After the steps, add a short troubleshooting section for the most common problems\"`.\n\n## Watch out for\n\nAI works best for common, well-documented tasks. For niche software, very recent changes, or anything requiring exact version-specific steps, double-check the official documentation. The AI may give you instructions that are close but slightly out of date.",
       "updated": "2026-06-24",
       "sources": []
+    },
+    {
+      "bundle": "everyday-tasks",
+      "path": "explaining-researching/verify-ai-facts-and-citations.md",
+      "url": "https://knowledge.onesteplabs.com/ai-use-cases/everyday-tasks/explaining-researching/verify-ai-facts-and-citations/",
+      "title": "Verify AI's Facts and Citations",
+      "description": "Catch fabricated citations and wrong facts before you rely on what AI told you.",
+      "tags": [
+        "explaining-researching",
+        "verification"
+      ],
+      "body": "## When to use this\n\nAI gave you a specific fact, statistic, quote, or source. You're about to actually use it — in a document, a decision, or something you'll repeat to someone else. Not needed for pure brainstorming or a first-pass explanation you already know you'll double-check later.\n\n## The prompt\n\n```\nBefore I use anything you just told me, help me verify it.\n\nFor each specific fact, statistic, or claim in your last answer, tell me separately:\n1. The exact claim.\n2. Whether you have a specific, real source for it (name it, and link it if you can) — or whether this is your own synthesis or inference rather than something a source directly states.\n3. Your honest confidence: well-established, actively debated, or something you're not fully sure about.\n\nIf you don't have a real primary source for something, say so plainly instead of presenting it with the same confidence as something you do.\n```\n\nThis surfaces what the AI is willing to flag as shaky — it doesn't reliably catch its own confident fabrications. A claim labeled \"well-established\" or \"sourced\" still needs the source opened, not less checking.\n\n## Before and after\n\n**Before:** You ask an AI tool for the typical price range for a service you're about to quote a client. It gives you a confident-sounding number with no source attached.\n\n**After (excerpt):**\n\n> Claim: \"typical range is $8,000-$15,000.\" <!-- noev: hypothetical worked example, explicitly labeled unsourced in the next line -->\n> Source: no specific report backs this figure — it's my own synthesis from general patterns, not a cited statistic.\n> Confidence: moderate at best. Treat this as a rough starting point, not something to quote as fact.\n\nNow you know to check the number independently before it goes in front of a client. You won't repeat an estimate as if it were sourced.\n\n## Make it yours\n\n- If the answer is long, ask it to list only the claims it's **least** confident about — that's where your verification time is best spent.\n- If the AI names a source, actually open it. Don't count a plausible-sounding title as verified — open the link and check it actually says what the AI claimed. This is the one step that touches real ground truth; the rest of this page is just routing your attention toward it faster.\n- Some tools now do part of this for you. Gemini's \"Double-check response\" feature cross-references its own answer against Google Search results. It highlights where they agree or disagree, so you can see at a glance which parts to trust more.\n\n## Watch out for\n\nGrounding an AI's answer in real search or retrieval helps a lot, but it changes the odds. It doesn't eliminate the problem. One independent study looked at deep-research tools built specifically for citation-backed research. Even those tools still generate a real share of hallucinated citations: \"We find that 3-13% of citation URLs are hallucinated. They have no record in the Wayback Machine and likely never existed\" ([Rao, Wong & Callison-Burch, 2026](#ev-upenn-2026-deep-research-citation-hallucination-rates)).\n\nGrounding is also only as good as what it's grounded on. A Stanford study of AI legal-research tools found retrieval-based tools cut hallucination sharply compared to general-purpose models. Even so, one tool \"hallucinated more than 34% of the time\" ([Stanford RegLab/HAI, 2024](#ev-stanford-reglab-2024-legal-ai-hallucination-rates)). Researchers stopped short of calling any tool tested \"hallucination-free.\" Treat \"the AI searched for this\" as meaningfully better than \"the AI just generated this from memory\" — never as a guarantee.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Rao, Wong, Callison-Burch (University of Pennsylvania) — *Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents*, 2026.** We find that 3-13% of citation URLs are hallucinated. They have no record in the Wayback Machine and likely never existed. [View source](https://arxiv.org/abs/2604.03173){#ev-upenn-2026-deep-research-citation-hallucination-rates} · verified 2026-07-05 · primary\n- **Stanford RegLab / Stanford HAI — *AI on Trial: Legal Models Hallucinate in 1 out of 6 (or More) Benchmarking Queries*, 2024.** the Lexis+ AI and Ask Practical Law AI systems produced incorrect information more than 17% of the time. Westlaw's AI-Assisted Research hallucinated more than 34% of the time. They hallucinated between 58% and 82% of the time on legal queries. [View source](https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries){#ev-stanford-reglab-2024-legal-ai-hallucination-rates} · verified 2026-07-05 · primary",
+      "updated": "2026-07-05",
+      "sources": [
+        {
+          "id": "ev-stanford-reglab-2024-legal-ai-hallucination-rates",
+          "org": "Stanford RegLab / Stanford HAI",
+          "url": "https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries",
+          "wording": "the Lexis+ AI and Ask Practical Law AI systems produced incorrect information more than 17% of the time. Westlaw's AI-Assisted Research hallucinated more than 34% of the time. They hallucinated between 58% and 82% of the time on legal queries.",
+          "status": "primary",
+          "verified": "2026-07-05"
+        },
+        {
+          "id": "ev-upenn-2026-deep-research-citation-hallucination-rates",
+          "org": "Rao, Wong, Callison-Burch (University of Pennsylvania)",
+          "url": "https://arxiv.org/abs/2604.03173",
+          "wording": "We find that 3-13% of citation URLs are hallucinated. They have no record in the Wayback Machine and likely never existed.",
+          "status": "primary",
+          "verified": "2026-07-05"
+        }
+      ]
     },
     {
       "bundle": "everyday-tasks",
@@ -7890,6 +7921,11 @@
       "date": "2026-07-01",
       "bundle": "ai-playbooks",
       "entry": "Creation**: six playbooks — Morning Brief, Inbox Triage, Meeting Prep, Weekly Review, Follow-up Tracker, and End-of-Day Wrap. All read-first: the assistant reads and drafts, but never sends, deletes, or changes anything."
+    },
+    {
+      "date": "2026-07-05",
+      "bundle": "everyday-tasks",
+      "entry": "Creation**: Verify AI's Facts and Citations — a new recipe in Explaining & Researching for checking an AI's claims and sources before relying on them, grounded in real hallucination-rate studies rather than a generic \"always verify\" caution."
     },
     {
       "date": "2026-07-05",

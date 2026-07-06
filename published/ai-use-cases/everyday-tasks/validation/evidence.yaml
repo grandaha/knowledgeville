@@ -56,3 +56,31 @@
   verified: "2026-06-24"
   status: secondary-mirror
   expires: "2027-06-24"
+
+- id: ev-stanford-reglab-2024-legal-ai-hallucination-rates
+  claim: "AI legal-research tools that ground answers in retrieval still hallucinate meaningfully, just far less than general-purpose models with no retrieval"
+  value: "17-34% (retrieval-based legal tools) vs. 58-82% (general-purpose LLMs)"
+  wording: "the Lexis+ AI and Ask Practical Law AI systems produced incorrect information more than 17% of the time. Westlaw's AI-Assisted Research hallucinated more than 34% of the time. They hallucinated between 58% and 82% of the time on legal queries."
+  source:
+    org: Stanford RegLab / Stanford HAI
+    report: "AI on Trial: Legal Models Hallucinate in 1 out of 6 (or More) Benchmarking Queries"
+    edition: 2024
+    url: https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries
+    pdf_hash:
+  verified: "2026-07-05"
+  status: primary
+  expires: "2027-07-05"
+
+- id: ev-upenn-2026-deep-research-citation-hallucination-rates
+  claim: "Even AI tools built specifically for citation-backed deep research still generate a meaningful share of citations that link to sources that don't exist"
+  value: "3-13% of citation URLs hallucinated"
+  wording: "We find that 3-13% of citation URLs are hallucinated. They have no record in the Wayback Machine and likely never existed."
+  source:
+    org: "Rao, Wong, Callison-Burch (University of Pennsylvania)"
+    report: "Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents"
+    edition: 2026
+    url: https://arxiv.org/abs/2604.03173
+    pdf_hash:
+  verified: "2026-07-05"
+  status: primary
+  expires: "2027-07-05"

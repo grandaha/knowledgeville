@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v9.4.0 — 2026-07-06
+
+### New & expanded content
+* Name and map competing agentic-AI framework acronyms in workflow-optimization guide
+
 ## v9.3.1 — 2026-07-06
 
 _No reader-facing knowledge changes in this release — wording polish only._

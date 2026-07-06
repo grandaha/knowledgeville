@@ -83,6 +83,13 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   what's already out there ([The Single-Player Ceiling](/team-second-brain/01-the-single-player-ceiling.md))
   and how to build the team layer yourself ([Building Yours Without an Engineer](/team-second-brain/02-building-yours-without-an-engineer.md)).
 
+- **[AI-Assisted Software Development](/ai-assisted-software-development/index.md)** — the two
+  real questions a developer or team lead faces with AI coding agents: does it actually make you
+  faster, and does it open you up to new attacks. Covers the contested productivity evidence
+  ([Does AI Coding Actually Help?](/ai-assisted-software-development/01-does-ai-coding-actually-help/index.md))
+  and the named, documented vulnerabilities and campaigns already targeting AI coding assistants
+  ([Securing the AI Coding Workflow](/ai-assisted-software-development/02-securing-the-coding-workflow/index.md)).
+
 ## Where to start
 
 - **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.

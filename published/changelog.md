@@ -14,11 +14,11 @@ This page records how this knowledge base has changed over time — new and expa
 ## v9.3.0 — 2026-07-06
 
 ### New & expanded content
-* Reframe Building Yours Without an Engineer as an untested design
-* Add AI-specific considerations to Build vs. Buy
-* Give the analogy prompt an escape hatch, sharpen the caveat
-* Author Who Owns the Codified Judgment for ai-native-organization
-* Author Verify AI's Facts and Citations in everyday-tasks
+* **Who Owns the Codified Judgment** (ai-native-organization) — a new page asking who owns a firm's judgment once it's codified well enough for an AI agent to apply it, and who's exposed when a firm buys that judgment rather than building it in-house. https://github.com/grandaha/knowledgeville-workspace/pull/240
+* **Verify AI's Facts and Citations** (everyday-tasks) — a new recipe for checking an AI's claims and sources before relying on them, grounded in real hallucination-rate studies rather than a generic "always verify" caution. https://github.com/grandaha/knowledgeville-workspace/pull/241
+* **Build vs. Buy** (decision guides) adds a new section on AI systems specifically — vendor dependency even when fine-tuning, per-token billing instead of a flat subscription, and the ongoing burden of evaluating factually wrong output that traditional software doesn't carry. https://github.com/grandaha/knowledgeville-workspace/pull/235
+* **Explain a Concept Simply** (everyday-tasks) — the prompt now tells the AI to say so instead of forcing an analogy when none fits, and to flag anything experts still debate; the caveat now names the actual risk (a fluent but wrong analogy on a topic that feels like general knowledge but is actually contested). https://github.com/grandaha/knowledgeville-workspace/pull/239
+* **Building Yours Without an Engineer** (team second brain) now states plainly it's an untested design, not a validated practice — the setup steps stay, but the page no longer implies this has been proven at team scale. https://github.com/grandaha/knowledgeville-workspace/pull/234
 
 ## v9.2.1 — 2026-07-05
 

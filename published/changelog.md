@@ -13,8 +13,7 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v9.3.1 — 2026-07-06
 
-### New & expanded content
-* Simplify Knowledgeville's welcome intro
+_No reader-facing knowledge changes in this release — wording polish only._
 
 ## v9.3.0 — 2026-07-06
 

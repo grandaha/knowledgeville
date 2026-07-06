@@ -3,13 +3,22 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-07-05"
+timestamp: "2026-07-06"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v9.3.0 — 2026-07-06
+
+### New & expanded content
+* Reframe Building Yours Without an Engineer as an untested design
+* Add AI-specific considerations to Build vs. Buy
+* Give the analogy prompt an escape hatch, sharpen the caveat
+* Author Who Owns the Codified Judgment for ai-native-organization
+* Author Verify AI's Facts and Citations in everyday-tasks
 
 ## v9.2.1 — 2026-07-05
 

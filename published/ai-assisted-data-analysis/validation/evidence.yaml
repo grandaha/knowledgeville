@@ -1,0 +1,396 @@
+# evidence.yaml — public provenance record for the AI-Assisted Data Analysis bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique in this bundle, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-anthropic-2026-claudeai-context-overflow-behavior
+  claim: "Claude.ai automatically summarizes earlier messages as a conversation approaches its context window, rather than erroring or silently dropping content -- but only when code execution is enabled"
+  value: "200K-token context window on Claude.ai (500K on some Enterprise plans); auto-summarization requires code execution enabled"
+  wording: "Claude's context window size is 200K tokens across all models and paid plans, except for Enterprise plans, which have a 500K context window on some models. When your conversation approaches the context window limit, Claude summarizes earlier messages to continue the conversation seamlessly."
+  source:
+    org: Anthropic
+    report: "How do usage and length limits work?"
+    edition: 2026
+    url: https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-anthropic-2026-api-files-exceeds-context-error
+  claim: "Anthropic's Files API returns a hard, named error when an uploaded file is larger than the model's context window, rather than truncating it silently"
+  value: "Exceeds context window size (400 error)"
+  wording: "Exceeds context window size (400): The file is larger than the context window size (for example, using a 500 MB plain text file in a /v1/messages request)"
+  source:
+    org: Anthropic
+    report: "Files API"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/build-with-claude/files
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-anthropic-2026-files-api-xlsx-not-native
+  claim: "Anthropic's Files API does not support Excel files as a native document block; a spreadsheet must be converted to plain text or routed to the code-execution tool"
+  value: "n/a -- documented format-support gap, qualitative"
+  wording: "For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block."
+  source:
+    org: Anthropic
+    report: "Files API"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/build-with-claude/files
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-anthropic-2026-pdf-dense-table-context-limit
+  claim: "Dense PDFs with complex tables can exhaust Claude's context window before hitting the document's page-count limit, since each page is processed as an image rather than parsed cell by cell"
+  value: "Max 600 pages per request (100 when context window is under 1M tokens); dense tables can fail before that page count is reached"
+  wording: "Dense PDFs (many small-font pages, complex tables, or heavy graphics) can fill the context window before reaching the page limit. Requests with large PDFs can also fail before reaching the page limit, even when using the Files API."
+  source:
+    org: Anthropic
+    report: "PDF support"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/build-with-claude/pdf-support
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-google-2026-gemini-app-context-window-by-tier
+  claim: "Gemini's context window in the consumer app is tiered by subscription plan, not a single fixed size"
+  value: "32K tokens (no plan); 128K tokens (AI Plus); 1 million tokens (AI Pro and AI Ultra)"
+  wording: "Without an AI plan: 32k tokens. AI Plus: 128k tokens. AI Pro & AI Ultra: 1 million tokens."
+  source:
+    org: Google
+    report: "Gemini Apps limits & upgrades for Google AI subscribers"
+    edition: 2026
+    url: https://support.google.com/gemini/answer/16275805
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-google-2026-gemini-app-overflow-behavior
+  claim: "Google documents that exceeding Gemini's context window degrades answer quality rather than producing a hard error or silent truncation"
+  value: "n/a -- documented behavior, qualitative"
+  wording: "If you exceed the context window, this could lead to responses that don't take into account all the content provided or miss connections or details throughout the content."
+  source:
+    org: Google
+    report: "Gemini Apps limits & upgrades for Google AI subscribers"
+    edition: 2026
+    url: https://support.google.com/gemini/answer/16275805
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-google-2026-code-execution-file-limit
+  claim: "Unlike Anthropic's code-execution tool, Google's code-execution mode is capped by the same token window as plain chat -- it is not a workaround for an oversized file"
+  value: "n/a -- documented architectural constraint, qualitative"
+  wording: "The maximum file input size is limited by the model token window. If you upload a file that exceeds the model's maximum context window, the API will return an error."
+  source:
+    org: Google
+    report: "Code execution"
+    edition: 2026
+    url: https://ai.google.dev/gemini-api/docs/code-execution
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-openai-2026-chatgpt-context-window
+  claim: "GPT-5.5's documented context window, the current flagship model behind ChatGPT"
+  value: "1,050,000-token context window; 128,000 max output tokens"
+  wording: "1,050,000 context window. 128,000 max output tokens."
+  source:
+    org: OpenAI
+    report: "GPT-5.5 Model"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/models/gpt-5.5
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-openai-2026-file-input-spreadsheet-row-cap
+  claim: "OpenAI's file-input API silently caps spreadsheet processing at the first 1,000 rows per sheet, substituting a generated summary for the rest rather than reading the whole file"
+  value: "First 1,000 rows per sheet parsed directly; remaining rows represented only via generated summary and header metadata"
+  wording: "For spreadsheet-like files (such as .xlsx, .xls, .csv, .tsv, and .iif), input_file uses a spreadsheet-specific augmentation process. Instead of passing entire sheets to the model, the API parses up to the first 1,000 rows per sheet and adds model-generated summary and header metadata so the model can work from a smaller, structured view of the data."
+  source:
+    org: OpenAI
+    report: "File inputs"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/guides/pdf-files
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-openai-2026-code-interpreter-merged-cells
+  claim: "Users have documented, on OpenAI's own developer community forum, that ChatGPT's Code Interpreter misreads Excel files containing merged cells because the underlying parsing library has no awareness of merge regions"
+  value: "n/a -- documented user-reported bug on the vendor's own official forum, qualitative"
+  wording: "cells move out, chatgpt is mistaken when there are merged cells in the file, it does not perceive them"
+  source:
+    org: OpenAI Developer Community
+    report: "Advanced Data Analysis GPT-4 | Excel Files - Bugs"
+    edition: 2026
+    url: https://community.openai.com/t/advanced-data-analysis-gpt-4-excel-files/351159
+    pdf_hash:
+  verified: 2026-07-06
+  status: secondary-mirror
+  expires: 2027-01-06
+
+- id: ev-anthropic-2026-pdf-splitting-recommendation
+  claim: "Anthropic's own documentation recommends splitting a large PDF into sections and downsampling embedded images before upload, rather than uploading it whole and hoping it fits"
+  value: "n/a -- documented vendor recommendation, qualitative"
+  wording: "Try splitting the document into sections; for large files, since each page is processed as an image, downsampling embedded images can also help."
+  source:
+    org: Anthropic
+    report: "PDF support"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/build-with-claude/pdf-support
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-anthropic-2026-pdf-page-limit-doc
+  claim: "Anthropic documents a hard, numeric PDF page limit per request, which a reader could cross-reference against their own document's page count"
+  value: "600 pages per request maximum (100 pages when the request's context window is under 1M tokens); 32 MB max request size"
+  wording: "Maximum request size | 32 MB (varies by platform). Maximum pages per request | 600 (100 when the request's context window is under 1M tokens). Both limits are on the entire request payload, including any other content sent alongside PDFs."
+  source:
+    org: Anthropic
+    report: "PDF support"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/build-with-claude/pdf-support
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-anthropic-2026-token-count-endpoint
+  claim: "Anthropic's token-counting endpoint reports how many tokens a file will consume before sending it, but is documented as a cost-estimation tool, not a completeness or truncation check"
+  value: "POST /v1/messages/count_tokens returns an estimated input-token count; count may differ by a small amount from the actual tokens used"
+  wording: "Token counting lets you determine the number of tokens in a message before you send it to Claude. This helps you make informed decisions about your prompts and usage. The token count should be considered an estimate. In some cases, the actual number of input tokens used when creating a message may differ by a small amount."
+  source:
+    org: Anthropic
+    report: "Token counting"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/build-with-claude/token-counting
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-kundurthy-2026-bluefin-code-execution-accuracy
+  claim: "A benchmark testing AI agents with a real code-execution tool against actual financial spreadsheets found the strongest frontier models still scored below 50% accuracy, showing code execution alone does not make an answer correct"
+  value: "GPT-5.5: 49.6% average score; Claude Opus 4.7: 49.2%; Claude Sonnet 4.6: 42.9%; Gemini 3.1 Pro: 45.9%, all with full tool-use enabled"
+  wording: "a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront"
+  source:
+    org: "Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner"
+    report: "BlueFin: Benchmarking LLM Agents on Financial Spreadsheets"
+    edition: 2026
+    url: https://arxiv.org/abs/2605.30907
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-power-bi-copilot-mechanism
+  claim: "Power BI Copilot answers data questions by generating and running real DAX queries against the live semantic model, not a text summary of it"
+  value: "Copilot translates natural-language questions into real queries against the semantic model; for ad hoc calculations it generates inspectable DAX queries"
+  wording: "[Copilot for Power BI] answers natural-language questions about your data by querying your semantic model and returning the results as a visual. Copilot can also generate DAX queries to answer questions that require ad hoc calculations, such as creating new measures that are not contained in the model."
+  source:
+    org: Microsoft
+    report: "Ask Copilot questions about your data - Power BI"
+    edition: 2026
+    url: https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-power-bi-copilot-needs-data-prep
+  claim: "Power BI Copilot's data-question feature requires the underlying semantic model to be prepared for AI -- it does not work reliably on arbitrary, unprepared data"
+  value: "n/a -- documented vendor guidance, qualitative"
+  wording: "You need to prepare data to work with Copilot. Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs."
+  source:
+    org: Microsoft
+    report: "Copilot for Power BI overview"
+    edition: 2026
+    url: https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-power-bi-copilot-qa-toggle
+  claim: "Power BI Copilot's data-question feature requires the semantic model's Q&A setting to be enabled, though Q&A is on by default for most data sources and only needs manual enabling for some (e.g. DirectQuery, Direct Lake)"
+  value: "Q&A enabled by default for most data sources; manual enablement needed only for some source types"
+  wording: "You need to enable Q&A for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default. For some sources, such as DirectQuery or Direct Lake models, you might need to enable Q&A manually."
+  source:
+    org: Microsoft
+    report: "Ask Copilot questions about your data - Power BI"
+    edition: 2026
+    url: https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-power-bi-copilot-review-dax-caveat
+  claim: "Microsoft's own guidance instructs users to review Power BI Copilot's generated DAX query before applying it, rather than accepting it outright"
+  value: "n/a -- documented vendor guidance, qualitative"
+  wording: "Review Copilot-generated DAX queries before you apply them to your model."
+  source:
+    org: Microsoft
+    report: "Privacy, security, and responsible use for Copilot in Power BI"
+    edition: 2026
+    url: https://learn.microsoft.com/en-us/fabric/get-started/copilot-power-bi-privacy-security
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-power-bi-copilot-show-reasoning
+  claim: "Power BI Copilot provides a 'How Copilot arrived at this' explanation a user can expand to verify which fields, measures, or filters it actually used before trusting the answer"
+  value: "n/a -- documented vendor guidance, qualitative"
+  wording: "Expand the How Copilot arrived at this section to learn more about how Copilot understood your question and to verify that the correct fields, measures, or filters were selected from your model."
+  source:
+    org: Microsoft
+    report: "Ask Copilot questions about your data - Power BI"
+    edition: 2026
+    url: https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-copilot-excel-writes-real-formulas
+  claim: "Copilot in Excel generates and inserts live, functioning formulas into the workbook rather than describing an answer in prose"
+  value: "n/a -- documented mechanism, qualitative"
+  wording: "Copilot in Excel can create new columns or rows that calculate values from your existing data, and explain how each formula works. It recommends a formula such as XLOOKUP and adds a new column for the results."
+  source:
+    org: Microsoft
+    report: "Generate formula rows and columns with Copilot in Excel"
+    edition: 2026
+    url: https://support.microsoft.com/en-us/office/generate-formula-rows-and-columns-with-copilot-in-excel-d866d926-9791-4e5f-be2a-c6dd9e587a47
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-copilot-excel-edits-live-workbook
+  claim: "Copilot in Excel edits the real, shared workbook directly, with changes saved automatically and visible to every collaborator with access"
+  value: "n/a -- documented mechanism, qualitative"
+  wording: "Copilot updates your workbook using Excel's built-in features. When Copilot edits your workbook, changes are saved automatically. Anyone with access to the file can see those changes, including people in a coauthoring session."
+  source:
+    org: Microsoft
+    report: "Frequently asked questions about Copilot in Excel"
+    edition: 2026
+    url: https://support.microsoft.com/en-gb/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-microsoft-2026-copilot-excel-accuracy-disclaimer
+  claim: "Microsoft's own documentation warns Copilot in Excel can make mistakes or misinterpret data, and instructs users to verify its output before relying on it"
+  value: "n/a -- documented vendor guidance, qualitative"
+  wording: "Copilot uses AI to generate suggestions and can sometimes make mistakes, misinterpret information, or produce inaccurate results. Review, edit, and verify anything Copilot creates before you rely on it."
+  source:
+    org: Microsoft
+    report: "Frequently asked questions about Copilot in Excel"
+    edition: 2026
+    url: https://support.microsoft.com/en-gb/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-zhang-2024-cibench-hallucination-error-category
+  claim: "A code-interpreter benchmark defines a distinct 'Hallucination Errors' category, separate from reasoning and instruction-following errors, measured at 4.3% of one model's categorized errors -- though this specific category covers generated code referencing undefined variables, not a model silently reporting an invented number as a successful result"
+  value: "Instruction Following Errors 31.9%; Hallucination Errors 4.3%; Reasoning Errors 40.4%; Code Errors 23.4% (GPT-4-1106-preview, manually categorized)"
+  wording: "the model generating code that contains hallucinated elements, such as utilizing undefined parameters or referencing irrelevant variables. Instruction Following Errors: 31.9%, Hallucination Errors: 4.3%, Reasoning Errors: 40.4%, and Code Errors: 23.4%."
+  source:
+    org: "Zhang, Zhang, Hu, Shen, Liu, Ma, Zhou, Zhang, He, Lin, Chen"
+    report: "CIBench: Evaluating Your LLMs with a Code Interpreter Plugin"
+    edition: 2024
+    url: https://arxiv.org/abs/2407.10499
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-rechtorik-2026-timeseries-hallucinated-values-not-prevalent
+  claim: "A study of LLM coding agents on time-series analysis defines a distinct 'Hallucinated values' taxonomy category (a model introducing numbers absent from the data or code output), but does not report it as a prevalent error pattern, unlike other categories the same study quantifies with specific percentages"
+  value: "n/a -- taxonomy category defined and tracked, but not reported among the prevalent, quantified failure patterns this study highlights"
+  wording: "Hallucinated values: Introduced numerical values absent from data or code output."
+  source:
+    org: "Rechtorík, Dušek, Kasner"
+    report: "Can LLM Coding Agents Reason About Time Series?"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.16545
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-zhang-2024-cibench-reasoning-error-category
+  claim: "CIBench's own error taxonomy for code-interpreter tasks found reasoning errors, not hallucination, were the single largest error category, at 40.4% of one model's categorized errors"
+  value: "Reasoning Errors 40.4% (GPT-4-1106-preview, manually categorized), the largest of the four categories, compared to 4.3% for Hallucination Errors"
+  wording: "Instruction Following Errors: 31.9%, Hallucination Errors: 4.3%, Reasoning Errors: 40.4%, and Code Errors: 23.4%."
+  source:
+    org: "Zhang, Zhang, Hu, Shen, Liu, Ma, Zhou, Zhang, He, Lin, Chen"
+    report: "CIBench: Evaluating Your LLMs with a Code Interpreter Plugin"
+    edition: 2024
+    url: https://arxiv.org/abs/2407.10499
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-rechtorik-2026-timeseries-wrong-method-prevalent
+  claim: "A time-series coding-agent study found that even when an agent chose the right overall strategy and ran real code, it still used the wrong specific method or threshold in 25 percent of code-agent answers and 19 percent of hybrid-agent answers"
+  value: "Wrong method within strategy: 25% of code-agent answers, 19% of hybrid-agent answers"
+  wording: "Right strategy, but wrong specific method or threshold. the strategy chosen by the agent was suitable for answering the question, but failed due to the specific method chosen within the strategy."
+  source:
+    org: "Rechtorík, Dušek, Kasner"
+    report: "Can LLM Coding Agents Reason About Time Series?"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.16545
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06
+
+- id: ev-hu-2024-infiagent-dabench-fictitious-results
+  claim: "The team building a data-analysis agent benchmark documented that GPT-4 could generate fictitious results by simulating its own code-execution outcome instead of waiting for the real sandbox's output, and had to add explicit prompt instructions blocking GPT-4 from performing that simulated execution itself"
+  value: "n/a -- documented named mechanism, qualitative"
+  wording: "To counter the challenge of hallucination, where GPT-4 might generate fictitious results, explicit instructions are included in the prompt to prevent GPT-4 from executing the code."
+  source:
+    org: "Hu, Zhao, Wei, Chai, Ma, Wang, Wang, Su, Xu, Zhu, Cheng, Yuan, Li, Kuang, Yang, Yang, Wu"
+    report: "InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks"
+    edition: 2024
+    url: https://arxiv.org/abs/2401.05507
+    pdf_hash:
+  verified: 2026-07-06
+  status: primary
+  expires: 2027-01-06

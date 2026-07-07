@@ -1,6 +1,6 @@
 {
   "version": "v9.5.0",
-  "generated": "2026-07-06",
+  "generated": "2026-07-07",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
@@ -68,6 +68,17 @@
         "temporal_mode": "always-newer"
       },
       "pageCount": 3
+    },
+    {
+      "slug": "ai-assisted-data-analysis",
+      "title": "AI-Assisted Data Analysis",
+      "description": "How to actually analyze data with AI properly -- getting data in without silent truncation, a repeatable method instead of a lucky prompt, and catching where AI gets numbers wrong.",
+      "posture": {
+        "citation_style": "deeply-cited",
+        "verification_posture": "full",
+        "temporal_mode": "always-newer"
+      },
+      "pageCount": 11
     },
     {
       "slug": "ai-assisted-software-development",
@@ -888,6 +899,446 @@
           "verified": "2026-07-02"
         }
       ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "what-ai-is-actually-doing-with-your-data.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/what-ai-is-actually-doing-with-your-data/",
+      "title": "What AI Is Actually Doing With Your Data",
+      "description": "The mental model this bundle builds on: AI can be a genuinely capable analyst or a confident fabricator of numbers, depending entirely on how you use it.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "foundations"
+      ],
+      "body": "The common way people use AI for data work is to drop a file into a chat window and type \"analyze this.\" Sometimes that produces a genuinely useful answer. Sometimes it produces a confident, well-formatted, completely wrong one — and nothing in the output tells you which case you are looking at. That gap is what this bundle exists to close.\n\nThe reason the gap exists is not a clean split between \"real analysis\" and \"fake analysis.\" It is a spectrum. At one end, an AI tool reads a sample of your file, or a truncated slice of it, and pattern-matches the rest from what similar data usually looks like — text that reads exactly like analysis but is not one. At the other end, a tool runs real code against your file, row by row. That second case is closer to trustworthy, but it is not automatically trustworthy: real code can still run against a truncated or misread version of your file, and even code that ran correctly against the whole file can compute the wrong thing — a sign error, a misread column, a wrong assumption baked into the generated code. Running real code makes an answer auditable in principle, since there is a trace you could check. It does not make the answer correct in fact. From the outside, in a plain chat window, none of these cases announce themselves, and the tool rarely tells you which one just happened.\n\nThis bundle is organized around that spectrum, worked through in three parts:\n\n- **[Getting Your Data In](/ai-assisted-data-analysis/01-getting-your-data-in/index.md)** — why \"drop the file and ask\" silently fails more often than people realize, what it takes to make sure a tool is actually working with the whole dataset, and what running real code against your file does and does not guarantee.\n- **[Doing the Analysis](/ai-assisted-data-analysis/02-doing-the-analysis/index.md)** — once the data is properly in, how to ask questions that produce a real, defensible answer, and the specific, documented ways AI gets numbers wrong even when it appears to be doing real work.\n- **[Making It Repeatable](/ai-assisted-data-analysis/03-making-it-repeatable/index.md)** — for anyone running the same kind of analysis again and again: turning a result you got once into a method that holds up on the next dataset, not a lucky prompt.\n\nNone of this requires a statistics background or a data science title. It requires knowing where on that spectrum your last answer actually came from.",
+      "updated": "2026-07-06",
+      "sources": []
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "01-getting-your-data-in/a-landscape-of-ai-data-analysis-tools.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/01-getting-your-data-in/a-landscape-of-ai-data-analysis-tools/",
+      "title": "A Landscape of AI Data Analysis Tools",
+      "description": "Where chat-based code interpreters, BI-embedded AI features, and spreadsheet AI features actually differ, and which fits which job.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "tooling"
+      ],
+      "body": "## The three broad categories and what each is for\n\nAs [Code Interpreters vs. Plain Chat](/ai-assisted-data-analysis/01-getting-your-data-in/code-interpreters-vs-plain-chat.md) covers, one question matters most for any tool in this bundle. Does it run a real computation against your data, or predict a plausible-sounding answer? That question extends past chat tools. Two other categories deserve the same test: AI built into business intelligence dashboards, and AI built into spreadsheets themselves.\n\n**Chat-based code interpreters** are the category the rest of this track has covered directly. Claude's code execution tool, OpenAI's Advanced Data Analysis, and Gemini's code execution mode all fit here. Each writes and runs real code in a sandboxed environment. The earlier pages in this track show the vendors disagree on what that guarantees about file size. The BlueFin benchmark shows real code execution does not guarantee a correct answer either ([Kundurthy et al., 2026](#ev-kundurthy-2026-bluefin-code-execution-accuracy)).\n\n**BI-embedded AI features** live inside a business intelligence tool already used for reporting. Microsoft's Power BI Copilot answers natural-language questions by generating and running real DAX queries against the live semantic model. It does not read a summary of the data ([Microsoft, 2026](#ev-microsoft-2026-power-bi-copilot-mechanism)). That guarantee comes with a real precondition. The underlying model has to be genuinely prepared for AI, with descriptive field names and sound structure. Without that preparation, Microsoft's own documentation states the tool can produce generic or misleading output ([Microsoft, 2026](#ev-microsoft-2026-power-bi-copilot-needs-data-prep)). A separate, narrower toggle also applies. Q&A is enabled by default for most data sources, though some, like DirectQuery or Direct Lake models, need it turned on manually ([Microsoft, 2026](#ev-microsoft-2026-power-bi-copilot-qa-toggle)).\n\n**Spreadsheet AI features** are built directly into the spreadsheet application itself. Copilot in Excel writes real, functioning formulas into the workbook, the same kind of formula a person could write by hand. It does not describe an answer in prose ([Microsoft, 2026](#ev-microsoft-2026-copilot-excel-writes-real-formulas)). Its edits save automatically to the live file. Every collaborator with access can see the change ([Microsoft, 2026](#ev-microsoft-2026-copilot-excel-edits-live-workbook)).\n\n## A quick decision guide by task type\n\nA chat-based code interpreter fits a one-off analysis of a file already in hand. It needs no setup beyond uploading the file. A BI-embedded feature fits a recurring question against a dataset an organization already tracks in a dashboard. That only holds once the underlying model is prepared for it. A spreadsheet AI feature fits building or auditing a calculation inside a workbook people will keep editing by hand. Its output stays as ordinary, inspectable formulas, not a one-time answer.\n\nNone of these three categories replace the others. Each assumes a different starting point: a standalone file, a maintained data model, or a live workbook. Picking the wrong one for the job often means falling back to a prose answer. The tool could have run a real computation instead, had it been set up that way.\n\n## What to check before adopting a new one\n\nConfirm three things before adopting any tool in these categories for a recurring task. First, confirm it is actually computing against the data, not summarizing it. Use the demonstrable test from [Code Interpreters vs. Plain Chat](/ai-assisted-data-analysis/01-getting-your-data-in/code-interpreters-vs-plain-chat.md): a known total should match exactly, not approximately. Second, check what preparation the tool actually requires. Power BI Copilot's own documentation states plainly that a poorly structured model produces worse answers, not just slower ones ([Microsoft, 2026](#ev-microsoft-2026-power-bi-copilot-needs-data-prep)). Third, read what the vendor itself says about verifying an answer before trusting it. Power BI Copilot's own guidance says to review its generated DAX query before applying it ([Microsoft, 2026](#ev-microsoft-2026-power-bi-copilot-review-dax-caveat)). It also says to expand its \"How Copilot arrived at this\" explanation, to check which fields it actually used ([Microsoft, 2026](#ev-microsoft-2026-power-bi-copilot-show-reasoning)). Copilot in Excel carries the same instruction, to review, edit, and verify anything it creates before relying on it ([Microsoft, 2026](#ev-microsoft-2026-copilot-excel-accuracy-disclaimer)). A vendor telling a user to check its own output is not a formality. It is the same caution [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md) opened this track with.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner — *BlueFin: Benchmarking LLM Agents on Financial Spreadsheets*, 2026.** a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront. [View source](https://arxiv.org/abs/2605.30907){#ev-kundurthy-2026-bluefin-code-execution-accuracy} · verified 2026-07-06 · primary\n- **Microsoft — *Ask Copilot questions about your data - Power BI*, 2026.** [Copilot for Power BI] answers natural-language questions about your data by querying your semantic model and returning the results as a visual. Copilot can also generate DAX queries to answer questions that require ad hoc calculations, such as creating new measures that are not contained in the model. [View source](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question){#ev-microsoft-2026-power-bi-copilot-mechanism} · verified 2026-07-06 · primary\n- **Microsoft — *Copilot for Power BI overview*, 2026.** You need to prepare data to work with Copilot. Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. [View source](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction){#ev-microsoft-2026-power-bi-copilot-needs-data-prep} · verified 2026-07-06 · primary\n- **Microsoft — *Ask Copilot questions about your data - Power BI*, 2026.** You need to enable Q&A for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default. For some sources, such as DirectQuery or Direct Lake models, you might need to enable Q&A manually. [View source](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question){#ev-microsoft-2026-power-bi-copilot-qa-toggle} · verified 2026-07-06 · primary\n- **Microsoft — *Generate formula rows and columns with Copilot in Excel*, 2026.** Copilot in Excel can create new columns or rows that calculate values from your existing data, and explain how each formula works. It recommends a formula such as XLOOKUP and adds a new column for the results. [View source](https://support.microsoft.com/en-us/office/generate-formula-rows-and-columns-with-copilot-in-excel-d866d926-9791-4e5f-be2a-c6dd9e587a47){#ev-microsoft-2026-copilot-excel-writes-real-formulas} · verified 2026-07-06 · primary\n- **Microsoft — *Frequently asked questions about Copilot in Excel*, 2026.** Copilot updates your workbook using Excel's built-in features. When Copilot edits your workbook, changes are saved automatically. Anyone with access to the file can see those changes, including people in a coauthoring session. [View source](https://support.microsoft.com/en-gb/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec){#ev-microsoft-2026-copilot-excel-edits-live-workbook} · verified 2026-07-06 · primary\n- **Microsoft — *Privacy, security, and responsible use for Copilot in Power BI*, 2026.** Review Copilot-generated DAX queries before you apply them to your model. [View source](https://learn.microsoft.com/en-us/fabric/get-started/copilot-power-bi-privacy-security){#ev-microsoft-2026-power-bi-copilot-review-dax-caveat} · verified 2026-07-06 · primary\n- **Microsoft — *Ask Copilot questions about your data - Power BI*, 2026.** Expand the How Copilot arrived at this section to learn more about how Copilot understood your question and to verify that the correct fields, measures, or filters were selected from your model. [View source](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question){#ev-microsoft-2026-power-bi-copilot-show-reasoning} · verified 2026-07-06 · primary\n- **Microsoft — *Frequently asked questions about Copilot in Excel*, 2026.** Copilot uses AI to generate suggestions and can sometimes make mistakes, misinterpret information, or produce inaccurate results. Review, edit, and verify anything Copilot creates before you rely on it. [View source](https://support.microsoft.com/en-gb/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec){#ev-microsoft-2026-copilot-excel-accuracy-disclaimer} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-kundurthy-2026-bluefin-code-execution-accuracy",
+          "org": "Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner",
+          "url": "https://arxiv.org/abs/2605.30907",
+          "wording": "a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-power-bi-copilot-mechanism",
+          "org": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question",
+          "wording": "[Copilot for Power BI] answers natural-language questions about your data by querying your semantic model and returning the results as a visual. Copilot can also generate DAX queries to answer questions that require ad hoc calculations, such as creating new measures that are not contained in the model.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-power-bi-copilot-needs-data-prep",
+          "org": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+          "wording": "You need to prepare data to work with Copilot. Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-power-bi-copilot-qa-toggle",
+          "org": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question",
+          "wording": "You need to enable Q&A for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default. For some sources, such as DirectQuery or Direct Lake models, you might need to enable Q&A manually.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-power-bi-copilot-review-dax-caveat",
+          "org": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/copilot-power-bi-privacy-security",
+          "wording": "Review Copilot-generated DAX queries before you apply them to your model.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-power-bi-copilot-show-reasoning",
+          "org": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-ask-data-question",
+          "wording": "Expand the How Copilot arrived at this section to learn more about how Copilot understood your question and to verify that the correct fields, measures, or filters were selected from your model.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-copilot-excel-writes-real-formulas",
+          "org": "Microsoft",
+          "url": "https://support.microsoft.com/en-us/office/generate-formula-rows-and-columns-with-copilot-in-excel-d866d926-9791-4e5f-be2a-c6dd9e587a47",
+          "wording": "Copilot in Excel can create new columns or rows that calculate values from your existing data, and explain how each formula works. It recommends a formula such as XLOOKUP and adds a new column for the results.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-copilot-excel-edits-live-workbook",
+          "org": "Microsoft",
+          "url": "https://support.microsoft.com/en-gb/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec",
+          "wording": "Copilot updates your workbook using Excel's built-in features. When Copilot edits your workbook, changes are saved automatically. Anyone with access to the file can see those changes, including people in a coauthoring session.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-microsoft-2026-copilot-excel-accuracy-disclaimer",
+          "org": "Microsoft",
+          "url": "https://support.microsoft.com/en-gb/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec",
+          "wording": "Copilot uses AI to generate suggestions and can sometimes make mistakes, misinterpret information, or produce inaccurate results. Review, edit, and verify anything Copilot creates before you rely on it.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "01-getting-your-data-in/code-interpreters-vs-plain-chat.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/01-getting-your-data-in/code-interpreters-vs-plain-chat/",
+      "title": "Code Interpreters vs. Plain Chat",
+      "description": "What each mode actually does with your file, why running real code is necessary but not sufficient for a trustworthy answer, and the limits code interpreters have too.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "tooling"
+      ],
+      "body": "## What each mode actually does with your file\n\nAs [What AI Is Actually Doing With Your Data](/ai-assisted-data-analysis/what-ai-is-actually-doing-with-your-data.md) covers, an AI tool can respond to your file in two structurally different ways. Plain chat reads your file into its context window and predicts a response. It works the same way it would predict the next word in any conversation. A code interpreter does something different. It writes real code and runs it against your file in a sandboxed environment, the same computation a person could run and check themselves.\n\nVendors do not even document the same guarantee for a similarly named feature. Anthropic's own documentation addresses format, not size. Its `document` block does not natively support Excel files at all. A spreadsheet has to be converted to plain text, or routed to the code-execution tool instead ([Anthropic, 2026](#ev-anthropic-2026-files-api-xlsx-not-native)). Google's documentation addresses the opposite question: size, not format. Its code-execution mode is capped by the same token window as plain chat. A file too large for that window returns an error rather than routing around it ([Google, 2026](#ev-google-2026-code-execution-file-limit)). Neither vendor's documentation tells you what the other vendor's does. A reader has to check both questions separately for whichever tool they are actually using.\n\n## Why running real code is not automatically trustworthy\n\nRunning real code against a file is a genuine step up from plain chat. It replaces a guess with a computation you could, in principle, check. It is not, on its own, a guarantee that the computation is correct. A benchmark called BlueFin tested frontier models with a real code-execution tool against actual financial spreadsheets. The test environment exposed each workbook as a live, in-memory object, not a text summary ([Kundurthy et al., 2026](#ev-kundurthy-2026-bluefin-code-execution-accuracy)).\n\nEvery model tested had full tool access, and the strongest still scored below fifty percent overall. GPT-5.5 reached 49.6 percent, and Claude Opus 4.7 reached 49.2 percent, both with code execution fully enabled ([Kundurthy et al., 2026](#ev-kundurthy-2026-bluefin-code-execution-accuracy)). The failure was not whether code executed. It was in what code the model chose to write. A wrong assumption about which column holds a total produces a confidently wrong answer, and so does a formula applied to the wrong range. Either one still comes with a real, running trace behind it.\n\nThis is the distinction worth carrying forward from the rest of this bundle. Code execution answers one question: did a real computation happen. It does not answer a second, separate question: was that computation the right one. A tool passing the first test tells you nothing about the second.\n\n## A demonstrable test you can run yourself\n\nYou do not need a benchmark to see this distinction on your own data. Give a code-execution-enabled tool a spreadsheet with a column you have already summed by hand. Ask it to compute the same total. If the code interpreter is genuinely running against your whole file, the result should match exactly, not approximately. Then ask a harder question, one requiring the tool to select the correct subset of rows first. A real filtered total or a conditional average works this way. A mismatch on the first test points back to [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md), and whether the whole file even arrived. A mismatch on the second test, with the first passing, is the BlueFin finding in your own data: a real computation, still wrong.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Anthropic — *Files API*, 2026.** For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block. [View source](https://platform.claude.com/docs/en/build-with-claude/files){#ev-anthropic-2026-files-api-xlsx-not-native} · verified 2026-07-06 · primary\n- **Google — *Code execution*, 2026.** The maximum file input size is limited by the model token window. If you upload a file that exceeds the model's maximum context window, the API will return an error. [View source](https://ai.google.dev/gemini-api/docs/code-execution){#ev-google-2026-code-execution-file-limit} · verified 2026-07-06 · primary\n- **Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner — *BlueFin: Benchmarking LLM Agents on Financial Spreadsheets*, 2026.** a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront. [View source](https://arxiv.org/abs/2605.30907){#ev-kundurthy-2026-bluefin-code-execution-accuracy} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-anthropic-2026-files-api-xlsx-not-native",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+          "wording": "For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-google-2026-code-execution-file-limit",
+          "org": "Google",
+          "url": "https://ai.google.dev/gemini-api/docs/code-execution",
+          "wording": "The maximum file input size is limited by the model token window. If you upload a file that exceeds the model's maximum context window, the API will return an error.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-kundurthy-2026-bluefin-code-execution-accuracy",
+          "org": "Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner",
+          "url": "https://arxiv.org/abs/2605.30907",
+          "wording": "a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "01-getting-your-data-in/preparing-your-data-before-you-ask.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/01-getting-your-data-in/preparing-your-data-before-you-ask/",
+      "title": "Preparing Your Data Before You Ask",
+      "description": "The preprocessing steps that make the difference between AI reading your whole dataset and AI guessing at it.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "data-ingestion"
+      ],
+      "body": "## Checking whether your whole file actually made it in\n\nAs [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md) covers, a file that is too large does not reliably produce an error. It can produce a confident, partial answer instead. No major vendor documents a purpose-built way to confirm a file was read in full. The closest primary-sourced option belongs to Anthropic, and even that is an inference, not a built-in check.\n\nAnthropic documents a hard, numeric limit on PDF requests. The cap is 600 pages, or 100 pages when the request's context window is under one million tokens ([Anthropic, 2026](#ev-anthropic-2026-pdf-page-limit-doc)). A reader who knows their own document's page count can compare it against that stated ceiling before uploading. Anthropic also offers a free token-counting endpoint. It reports how many tokens a file will consume before it is sent ([Anthropic, 2026](#ev-anthropic-2026-token-count-endpoint)). Running a file through that endpoint first tells a reader whether it fits. The tool is documented for managing cost and rate limits, not for confirming completeness. Treat both as a proactive check to run beforehand. Neither is a confirmation you can request after the fact, since no vendor's documentation offers one.\n\n## Splitting or restructuring large files before you upload\n\nGiven no vendor can confirm full processing after the fact, the safer move is preventing partial processing in the first place. Anthropic's own documentation recommends this directly for PDFs. Split a large document into sections, and downsample any embedded images ([Anthropic, 2026](#ev-anthropic-2026-pdf-splitting-recommendation)). Each page is processed as an image regardless of its actual content, so size matters more than a reader might expect. The same logic extends past PDFs. A single request has to hold your entire file, alongside your prompt and the model's answer. A file near a vendor's stated size limit leaves little room for anything else.\n\nFor spreadsheets, splitting means something more specific. It means staying under whatever row limit the receiving tool actually enforces. OpenAI's file-input API is the clearest documented case. It silently processes only the first one thousand rows of a sheet ([OpenAI, 2026](#ev-openai-2026-file-input-spreadsheet-row-cap)). It substitutes a generated summary for the rest. A sheet with more rows than that needs a different approach. Split it into separate uploads, or reduce it to the specific rows the question actually requires. Do not send it whole and assume it was read whole.\n\n## Converting formats the tool handles poorly\n\nAs [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md) covers, Excel and PDF each carry a format-specific risk beyond size. Anthropic's Files API does not treat Excel files as a natively supported document type. A spreadsheet must first be converted to plain text, or routed through the code-execution tool, before Claude can work with it directly ([Anthropic, 2026](#ev-anthropic-2026-files-api-xlsx-not-native)). Converting a spreadsheet to CSV before upload sidesteps that gap entirely. It also sidesteps the separately documented merged-cell bug reported on OpenAI's own developer community forum ([OpenAI Developer Community, 2026](#ev-openai-2026-code-interpreter-merged-cells)). A flat CSV has no merge regions for a parsing library to misread in the first place.\n\nPDF tables do not have as clean a fix. The underlying problem is not a parsing bug, but the format itself: a PDF has no structured cell data at all. Claude processes its pages as images instead. That is why a dense or complex table can exhaust the context window before the document's own page limit is reached ([Anthropic, 2026](#ev-anthropic-2026-pdf-dense-table-context-limit)). When the source data is available as a spreadsheet or a CSV export, use that version instead of a PDF. When it is not, the splitting and downsampling steps above are the closest defense current documentation supports.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Anthropic — *PDF support*, 2026.** Maximum request size | 32 MB (varies by platform). Maximum pages per request | 600 (100 when the request's context window is under 1M tokens). Both limits are on the entire request payload, including any other content sent alongside PDFs. [View source](https://platform.claude.com/docs/en/build-with-claude/pdf-support){#ev-anthropic-2026-pdf-page-limit-doc} · verified 2026-07-06 · primary\n- **Anthropic — *Token counting*, 2026.** Token counting lets you determine the number of tokens in a message before you send it to Claude. This helps you make informed decisions about your prompts and usage. The token count should be considered an estimate. In some cases, the actual number of input tokens used when creating a message may differ by a small amount. [View source](https://platform.claude.com/docs/en/build-with-claude/token-counting){#ev-anthropic-2026-token-count-endpoint} · verified 2026-07-06 · primary\n- **Anthropic — *PDF support*, 2026.** Try splitting the document into sections; for large files, since each page is processed as an image, downsampling embedded images can also help. [View source](https://platform.claude.com/docs/en/build-with-claude/pdf-support){#ev-anthropic-2026-pdf-splitting-recommendation} · verified 2026-07-06 · primary\n- **OpenAI — *File inputs*, 2026.** For spreadsheet-like files (such as .xlsx, .xls, .csv, .tsv, and .iif), input_file uses a spreadsheet-specific augmentation process. Instead of passing entire sheets to the model, the API parses up to the first 1,000 rows per sheet and adds model-generated summary and header metadata so the model can work from a smaller, structured view of the data. [View source](https://developers.openai.com/api/docs/guides/pdf-files){#ev-openai-2026-file-input-spreadsheet-row-cap} · verified 2026-07-06 · primary\n- **Anthropic — *Files API*, 2026.** For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block. [View source](https://platform.claude.com/docs/en/build-with-claude/files){#ev-anthropic-2026-files-api-xlsx-not-native} · verified 2026-07-06 · primary\n- **OpenAI Developer Community — *Advanced Data Analysis GPT-4 | Excel Files - Bugs*, 2026.** cells move out, chatgpt is mistaken when there are merged cells in the file, it does not perceive them. [View source](https://community.openai.com/t/advanced-data-analysis-gpt-4-excel-files/351159){#ev-openai-2026-code-interpreter-merged-cells} · verified 2026-07-06 · ⚠ secondary mirror\n- **Anthropic — *PDF support*, 2026.** Dense PDFs (many small-font pages, complex tables, or heavy graphics) can fill the context window before reaching the page limit. Requests with large PDFs can also fail before reaching the page limit, even when using the Files API. [View source](https://platform.claude.com/docs/en/build-with-claude/pdf-support){#ev-anthropic-2026-pdf-dense-table-context-limit} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-anthropic-2026-files-api-xlsx-not-native",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+          "wording": "For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-pdf-dense-table-context-limit",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/pdf-support",
+          "wording": "Dense PDFs (many small-font pages, complex tables, or heavy graphics) can fill the context window before reaching the page limit. Requests with large PDFs can also fail before reaching the page limit, even when using the Files API.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-openai-2026-file-input-spreadsheet-row-cap",
+          "org": "OpenAI",
+          "url": "https://developers.openai.com/api/docs/guides/pdf-files",
+          "wording": "For spreadsheet-like files (such as .xlsx, .xls, .csv, .tsv, and .iif), input_file uses a spreadsheet-specific augmentation process. Instead of passing entire sheets to the model, the API parses up to the first 1,000 rows per sheet and adds model-generated summary and header metadata so the model can work from a smaller, structured view of the data.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-openai-2026-code-interpreter-merged-cells",
+          "org": "OpenAI Developer Community",
+          "url": "https://community.openai.com/t/advanced-data-analysis-gpt-4-excel-files/351159",
+          "wording": "cells move out, chatgpt is mistaken when there are merged cells in the file, it does not perceive them",
+          "status": "secondary-mirror",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-pdf-splitting-recommendation",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/pdf-support",
+          "wording": "Try splitting the document into sections; for large files, since each page is processed as an image, downsampling embedded images can also help.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-pdf-page-limit-doc",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/pdf-support",
+          "wording": "Maximum request size | 32 MB (varies by platform). Maximum pages per request | 600 (100 when the request's context window is under 1M tokens). Both limits are on the entire request payload, including any other content sent alongside PDFs.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-token-count-endpoint",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/token-counting",
+          "wording": "Token counting lets you determine the number of tokens in a message before you send it to Claude. This helps you make informed decisions about your prompts and usage. The token count should be considered an estimate. In some cases, the actual number of input tokens used when creating a message may differ by a small amount.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "01-getting-your-data-in/why-dumping-a-file-rarely-works.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works/",
+      "title": "Why Dumping a File Rarely Works",
+      "description": "Context-window limits, silent sampling instead of full-file processing, and format-handling gaps that make 'analyze this' fail without telling you it failed.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "data-ingestion"
+      ],
+      "body": "## Why \"analyze this\" is not one request\n\nAs [What AI Is Actually Doing With Your Data](/ai-assisted-data-analysis/what-ai-is-actually-doing-with-your-data.md) covers, the same instruction can route to genuinely different processing paths. Vendors do not even agree on what a given path guarantees, or on how large a request that path can even take. The three major chat tools do not share one context-window size. Anthropic's flagship consumer plan tops out at 200,000 tokens ([Anthropic, 2026](#ev-anthropic-2026-claudeai-context-overflow-behavior)). OpenAI's current flagship model is documented at 1,050,000 tokens ([OpenAI, 2026](#ev-openai-2026-chatgpt-context-window)). Google's Gemini app scales from 32,000 tokens on its free tier up to 1,000,000 on its top paid tiers ([Google, 2026](#ev-google-2026-gemini-app-context-window-by-tier)). Size is only half the difference. Anthropic documents its code-execution tool as an explicit workaround for an oversized file. That tool moves the work out of the context window entirely, into a sandboxed environment ([Anthropic, 2026](#ev-anthropic-2026-files-api-xlsx-not-native)). Google documents the opposite architecture for the same feature. Its code-execution mode is capped by the same token window as plain chat. A file too large for that window returns an error rather than routing around it ([Google, 2026](#ev-google-2026-code-execution-file-limit)). Two vendors built the same-sounding feature to solve different problems. Neither failure looks different from the outside. Knowing which architecture, and which size limit, you are actually using matters before you trust either one.\n\n## What happens when a file does not fit\n\nThe three major vendors document three different answers to the same question. None of them is \"the file gets fully processed regardless of size.\" Anthropic's consumer product, Claude.ai, automatically summarizes earlier parts of a long conversation once it nears the context window. That happens only when code execution is turned on. Without that setting, the same conversation can simply hit a limit ([Anthropic, 2026](#ev-anthropic-2026-claudeai-context-overflow-behavior)). At the API level, Anthropic instead returns a named, explicit error. It reads \"Exceeds context window size,\" and fires when a file is larger than the model can hold ([Anthropic, 2026](#ev-anthropic-2026-api-files-exceeds-context-error)). Google's documented behavior is softer and harder to notice. Exceeding the context window does not error. It degrades, producing answers that miss connections or details spread across the content ([Google, 2026](#ev-google-2026-gemini-app-overflow-behavior)).\n\nThe sharpest example of a silent, easy-to-miss limit sits with OpenAI. Its file-input API does not read an entire spreadsheet once a sheet exceeds one thousand rows. Instead, it parses only the first one thousand rows directly. It substitutes a model-generated summary and header metadata for the rest of the sheet ([OpenAI, 2026](#ev-openai-2026-file-input-spreadsheet-row-cap)). A ten-thousand-row spreadsheet and an eleven-hundred-row spreadsheet come back in exactly the same answer format. Nothing marks which one was actually read in full. The three vendor behaviors above differ. They share one trait: each is silent by default, and a reader has to already know to look for it. [Preparing Your Data Before You Ask](/ai-assisted-data-analysis/01-getting-your-data-in/preparing-your-data-before-you-ask.md) covers what to check before you rely on any of them.\n\n## The formats that add a second layer of risk\n\nFile format adds a failure mode on top of size. The three common formats do not carry that risk equally. Anthropic's own Files API does not treat Excel files as a natively supported document type at all. A spreadsheet must first be converted to plain text, or routed through the code-execution tool, before Claude can work with it ([Anthropic, 2026](#ev-anthropic-2026-files-api-xlsx-not-native)). Once a spreadsheet does reach a tool's code-execution mode, merged cells are a separately documented failure. Users have reported it directly on OpenAI's own developer community forum. The parsing library has no concept of a merged region. Values shift into the wrong cells without any error ([OpenAI Developer Community, 2026](#ev-openai-2026-code-interpreter-merged-cells)).\n\nPDF tables carry a different risk entirely, because a PDF has no structured cell data to begin with. Claude processes PDF pages as images. A dense page of small text, or a complex table, can exhaust the context window before the page limit is reached ([Anthropic, 2026](#ev-anthropic-2026-pdf-dense-table-context-limit)). A plain CSV file avoids both of these specific problems. It has no merge regions to misread and no page images to parse, since it is already a flat, structured text format. That does not make a CSV immune to the size limits covered above. It does remove an entire category of failure that Excel and PDF both add on top of size.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Anthropic — *How do usage and length limits work?*, 2026.** Claude's context window size is 200K tokens across all models and paid plans, except for Enterprise plans, which have a 500K context window on some models. When your conversation approaches the context window limit, Claude summarizes earlier messages to continue the conversation seamlessly. [View source](https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work){#ev-anthropic-2026-claudeai-context-overflow-behavior} · verified 2026-07-06 · primary\n- **OpenAI — *GPT-5.5 Model*, 2026.** 1,050,000 context window. 128,000 max output tokens. [View source](https://developers.openai.com/api/docs/models/gpt-5.5){#ev-openai-2026-chatgpt-context-window} · verified 2026-07-06 · primary\n- **Google — *Gemini Apps limits & upgrades for Google AI subscribers*, 2026.** Without an AI plan: 32k tokens. AI Plus: 128k tokens. AI Pro & AI Ultra: 1 million tokens. [View source](https://support.google.com/gemini/answer/16275805){#ev-google-2026-gemini-app-context-window-by-tier} · verified 2026-07-06 · primary\n- **Anthropic — *Files API*, 2026.** For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block. [View source](https://platform.claude.com/docs/en/build-with-claude/files){#ev-anthropic-2026-files-api-xlsx-not-native} · verified 2026-07-06 · primary\n- **Google — *Code execution*, 2026.** The maximum file input size is limited by the model token window. If you upload a file that exceeds the model's maximum context window, the API will return an error. [View source](https://ai.google.dev/gemini-api/docs/code-execution){#ev-google-2026-code-execution-file-limit} · verified 2026-07-06 · primary\n- **Anthropic — *Files API*, 2026.** Exceeds context window size (400): The file is larger than the context window size (for example, using a 500 MB plain text file in a /v1/messages request). [View source](https://platform.claude.com/docs/en/build-with-claude/files){#ev-anthropic-2026-api-files-exceeds-context-error} · verified 2026-07-06 · primary\n- **Google — *Gemini Apps limits & upgrades for Google AI subscribers*, 2026.** If you exceed the context window, this could lead to responses that don't take into account all the content provided or miss connections or details throughout the content. [View source](https://support.google.com/gemini/answer/16275805){#ev-google-2026-gemini-app-overflow-behavior} · verified 2026-07-06 · primary\n- **OpenAI — *File inputs*, 2026.** For spreadsheet-like files (such as .xlsx, .xls, .csv, .tsv, and .iif), input_file uses a spreadsheet-specific augmentation process. Instead of passing entire sheets to the model, the API parses up to the first 1,000 rows per sheet and adds model-generated summary and header metadata so the model can work from a smaller, structured view of the data. [View source](https://developers.openai.com/api/docs/guides/pdf-files){#ev-openai-2026-file-input-spreadsheet-row-cap} · verified 2026-07-06 · primary\n- **OpenAI Developer Community — *Advanced Data Analysis GPT-4 | Excel Files - Bugs*, 2026.** cells move out, chatgpt is mistaken when there are merged cells in the file, it does not perceive them. [View source](https://community.openai.com/t/advanced-data-analysis-gpt-4-excel-files/351159){#ev-openai-2026-code-interpreter-merged-cells} · verified 2026-07-06 · ⚠ secondary mirror\n- **Anthropic — *PDF support*, 2026.** Dense PDFs (many small-font pages, complex tables, or heavy graphics) can fill the context window before reaching the page limit. Requests with large PDFs can also fail before reaching the page limit, even when using the Files API. [View source](https://platform.claude.com/docs/en/build-with-claude/pdf-support){#ev-anthropic-2026-pdf-dense-table-context-limit} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-anthropic-2026-claudeai-context-overflow-behavior",
+          "org": "Anthropic",
+          "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work",
+          "wording": "Claude's context window size is 200K tokens across all models and paid plans, except for Enterprise plans, which have a 500K context window on some models. When your conversation approaches the context window limit, Claude summarizes earlier messages to continue the conversation seamlessly.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-api-files-exceeds-context-error",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+          "wording": "Exceeds context window size (400): The file is larger than the context window size (for example, using a 500 MB plain text file in a /v1/messages request)",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-files-api-xlsx-not-native",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+          "wording": "For file types that the document block doesn't support (for example, .docx and .xlsx), convert the files to plain text and include the content directly in your message... To analyze datasets instead of reading them as text, upload them for the code execution tool using a container_upload block.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-anthropic-2026-pdf-dense-table-context-limit",
+          "org": "Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/pdf-support",
+          "wording": "Dense PDFs (many small-font pages, complex tables, or heavy graphics) can fill the context window before reaching the page limit. Requests with large PDFs can also fail before reaching the page limit, even when using the Files API.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-google-2026-gemini-app-context-window-by-tier",
+          "org": "Google",
+          "url": "https://support.google.com/gemini/answer/16275805",
+          "wording": "Without an AI plan: 32k tokens. AI Plus: 128k tokens. AI Pro & AI Ultra: 1 million tokens.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-google-2026-gemini-app-overflow-behavior",
+          "org": "Google",
+          "url": "https://support.google.com/gemini/answer/16275805",
+          "wording": "If you exceed the context window, this could lead to responses that don't take into account all the content provided or miss connections or details throughout the content.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-google-2026-code-execution-file-limit",
+          "org": "Google",
+          "url": "https://ai.google.dev/gemini-api/docs/code-execution",
+          "wording": "The maximum file input size is limited by the model token window. If you upload a file that exceeds the model's maximum context window, the API will return an error.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-openai-2026-chatgpt-context-window",
+          "org": "OpenAI",
+          "url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+          "wording": "1,050,000 context window. 128,000 max output tokens.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-openai-2026-file-input-spreadsheet-row-cap",
+          "org": "OpenAI",
+          "url": "https://developers.openai.com/api/docs/guides/pdf-files",
+          "wording": "For spreadsheet-like files (such as .xlsx, .xls, .csv, .tsv, and .iif), input_file uses a spreadsheet-specific augmentation process. Instead of passing entire sheets to the model, the API parses up to the first 1,000 rows per sheet and adds model-generated summary and header metadata so the model can work from a smaller, structured view of the data.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-openai-2026-code-interpreter-merged-cells",
+          "org": "OpenAI Developer Community",
+          "url": "https://community.openai.com/t/advanced-data-analysis-gpt-4-excel-files/351159",
+          "wording": "cells move out, chatgpt is mistaken when there are merged cells in the file, it does not perceive them",
+          "status": "secondary-mirror",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "02-doing-the-analysis/asking-good-analytical-questions.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/02-doing-the-analysis/asking-good-analytical-questions/",
+      "title": "Asking Good Analytical Questions",
+      "description": "How the shape of the question you ask determines whether AI does real analysis or produces a vague summary.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "analysis-technique"
+      ],
+      "body": "## The difference between a summary request and an analytical question\n\nA summary request asks the model to describe what is already visible in the data. An analytical question asks it to derive something that is not visible without work: a comparison, a trend, a specific number computed from other numbers. The two requests can sound similar. Only one of them forces the model to do anything beyond restating what it already read.\n\n\"Tell me about this data\" is a summary request, however the sentence is phrased. It invites a general description with no fixed answer to check against. \"What changed between these two periods, and by how much\" is an analytical question. It has one correct answer, computable from the data itself, that a person could check by hand.\n\n## A before-and-after example\n\nBefore: \"Can you look at this sales file and tell me what stands out?\" This produces a plausible-sounding list of observations. Some of them may be real. Nothing in the answer tells you which ones, or how the model decided what counted as standing out.\n\nAfter: \"Which product category had the largest percentage change in revenue between Q1 and Q2, and what was that percentage?\" This produces one specific, checkable claim. As [Code Interpreters vs. Plain Chat](/ai-assisted-data-analysis/01-getting-your-data-in/code-interpreters-vs-plain-chat.md) covers, a tool running real code against the whole file can show you the calculation. If it is not, a vague answer to the same question will not expose that gap. A specific one usually will. A model guessing at an answer rarely lands on the same exact percentage a real computation would produce, which is the tell.\n\nThe shift between the two questions is not about politeness or detail. It is about giving the model one clear target instead of an open invitation to describe.\n\n## Questions that force the model to show its work\n\nA follow-up question does more work than a better-phrased first question. After any analytical answer, ask what the underlying numbers were, not just the conclusion. Ask which rows or records it used to reach that answer. Ask what it would have found if a specific input changed. A model that generated the answer through real computation can usually recompute it under a changed assumption. A model that pattern-matched the answer often cannot.\n\nThis habit connects directly to the verification problem [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md) opened this bundle with. A good analytical question does not just produce a better answer on its own. It produces an answer specific enough that a follow-up question can actually test it.",
+      "updated": "2026-07-06",
+      "sources": []
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "02-doing-the-analysis/from-raw-numbers-to-a-defensible-conclusion.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/02-doing-the-analysis/from-raw-numbers-to-a-defensible-conclusion/",
+      "title": "From Raw Numbers to a Defensible Conclusion",
+      "description": "Going beyond a surface-level summary to a conclusion you could actually explain and stand behind, including the checklist question that catches an overstated trend or a mistaken correlation.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "analysis-technique"
+      ],
+      "body": "## What separates a summary from a conclusion\n\nA summary restates what the data shows. A conclusion claims something about why it shows that, or what it means for a decision. [Asking Good Analytical Questions](/ai-assisted-data-analysis/02-doing-the-analysis/asking-good-analytical-questions.md) gets you a specific, checkable answer. That answer is not yet a conclusion. \"Revenue in the Northeast region grew twelve percent\" is a summary, even though it is specific. \"Revenue in the Northeast grew because of the new pricing tier\" is a conclusion, and it makes a claim the numbers alone cannot settle.\n\nThe gap between the two is the actual work of analysis. A model can produce the first sentence from the data directly. The second sentence requires ruling out other explanations, which the model cannot do for you. That is why reaching a defensible conclusion takes more than one exchange with the tool.\n\n## Questions to ask the model before you trust its conclusion\n\nOnce a model offers a conclusion, not just a summary, ask it directly what else could explain the same numbers. A defensible conclusion survives this question. A model repeating its first answer in different words, without naming a real alternative, has not actually ruled anything out.\n\nThe next question presses harder: what would have to be true for the conclusion to be wrong, and whether the data says anything about it. A model that cannot describe a way its own conclusion could fail has not tested it, only asserted it.\n\nA third question closes the loop: what is the smallest change to the data that would have produced a different conclusion. An answer naming a specific, plausible change shows real reasoning about the data's structure. An answer that cannot name one suggests the conclusion was never actually derived from the specific numbers in front of it.\n\n## A correlation-is-not-causation check before you accept a trend\n\nBefore accepting any conclusion that names a cause, run one check. Two things moving together does not mean one caused the other. Ask whether the model's explanation would survive a third factor moving both numbers at once, and whether it checked for one. That third factor might be a season, a promotion, or an unrelated event that happened at the same time. If the model never addresses whether one of these is the real explanation, its answer has not earned the word \"because\" it is using.\n\n## When to stop trusting the model and check the data yourself\n\nAt some point in this back-and-forth, verify a piece of the conclusion against the source data directly, rather than asking the model another question. [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md) and [Code Interpreters vs. Plain Chat](/ai-assisted-data-analysis/01-getting-your-data-in/code-interpreters-vs-plain-chat.md) cover why this matters. A model's own account of its reasoning is not the same as the reasoning being correct. A conclusion that will inform a real decision earns a direct check. Pull the relevant rows yourself, or ask the tool to show its work on the specific comparison the conclusion rests on. The model answering more questions convincingly is not the same as the underlying claim being true.",
+      "updated": "2026-07-06",
+      "sources": []
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "02-doing-the-analysis/silent-arithmetic-and-logic-errors.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/02-doing-the-analysis/silent-arithmetic-and-logic-errors/",
+      "title": "Silent Arithmetic and Logic Errors",
+      "description": "Why AI can get the math wrong on your own data even when it ran real code against the whole file, without flagging any uncertainty, and how to catch it.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "verification"
+      ],
+      "body": "## Why arithmetic errors happen even when the tool ran real code\n\nAs [Code Interpreters vs. Plain Chat](/ai-assisted-data-analysis/01-getting-your-data-in/code-interpreters-vs-plain-chat.md) covers, running real code against a file is necessary for a trustworthy answer, but it is not sufficient. This is the sharpest version of that claim in the whole bundle. Real code, run against your real data, can still land on a wrong answer. Nothing in the output marks the difference.\n\n[Where AI Fabricates Data and Numbers](/ai-assisted-data-analysis/02-doing-the-analysis/where-ai-fabricates-data-and-numbers.md) covers a model inventing a number with no basis in the file. This is a different failure. The data is real, and the code that ran against it is real. A model can choose the right overall approach to a problem. It can still get a detail inside that approach wrong: the wrong column, the wrong threshold, the wrong specific method for the task. The formatting, the confidence, and the level of detail look identical whether the underlying computation was right or wrong.\n\n## Documented error rates\n\nThree sources measure this failure from three different angles, and together they show it is common, not rare. CIBench measured how often each kind of mistake occurred across a model's errors on code-interpreter tasks. Reasoning errors reached 40.4 percent, the largest of its four categories. Hallucination, on the same model, measured only 4.3 percent ([Zhang et al., 2024](#ev-zhang-2024-cibench-reasoning-error-category)).\n\nA study of coding agents on time-series analysis supplies the mechanism behind that prevalence. One error occurred when an agent chose the right strategy but the wrong specific method or threshold within it. That single error appeared in 25 percent of code-agent answers, and 19 percent of hybrid-agent answers ([Rechtorík et al., 2026](#ev-rechtorik-2026-timeseries-wrong-method-prevalent)). The strategy was sound. The specific execution of it was not.\n\nA financial-spreadsheet benchmark shows the ceiling this failure imposes even under close to ideal conditions. With full code execution enabled, the strongest frontier models still scored below fifty percent overall ([Kundurthy et al., 2026](#ev-kundurthy-2026-bluefin-code-execution-accuracy)). Real tool access, on real data, was not enough to clear even a coin flip.\n\n## A quick verification habit\n\nPick one number from the analysis that matters enough to check, and verify it two ways. Ask the tool to recompute that specific number using a different method than the one it used the first time. Try a different formula, a different grouping, or a manual filter instead of an automatic one. Agreement between the two is real evidence. A mismatch is the exact failure this page documents, caught before it reaches a decision. Running real code bought you an answer worth checking. It never bought you an answer you could skip checking.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Zhang, Zhang, Hu, Shen, Liu, Ma, Zhou, Zhang, He, Lin, Chen — *CIBench: Evaluating Your LLMs with a Code Interpreter Plugin*, 2024.** Instruction Following Errors: 31.9%, Hallucination Errors: 4.3%, Reasoning Errors: 40.4%, and Code Errors: 23.4%. [View source](https://arxiv.org/abs/2407.10499){#ev-zhang-2024-cibench-reasoning-error-category} · verified 2026-07-06 · primary\n- **Rechtorík, Dušek, Kasner — *Can LLM Coding Agents Reason About Time Series?*, 2026.** Right strategy, but wrong specific method or threshold. the strategy chosen by the agent was suitable for answering the question, but failed due to the specific method chosen within the strategy. [View source](https://arxiv.org/abs/2606.16545){#ev-rechtorik-2026-timeseries-wrong-method-prevalent} · verified 2026-07-06 · primary\n- **Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner — *BlueFin: Benchmarking LLM Agents on Financial Spreadsheets*, 2026.** a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront. [View source](https://arxiv.org/abs/2605.30907){#ev-kundurthy-2026-bluefin-code-execution-accuracy} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-kundurthy-2026-bluefin-code-execution-accuracy",
+          "org": "Kundurthy, Na, Moraine, Mohta, Winter, Fang, Ling, Strubell, Kirshner",
+          "url": "https://arxiv.org/abs/2605.30907",
+          "wording": "a sandboxed code execution tool exposes the workbook as an in-memory openpyxl object with restricted built-ins... frontier LLMs demonstrate poor performance on the challenging benchmark, with the strongest LLMs achieving less than 50% average scores across tasks... frontier models all struggle to clear the 50% threshold, with GPT-5.5 and Opus 4.7 at the forefront",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-zhang-2024-cibench-reasoning-error-category",
+          "org": "Zhang, Zhang, Hu, Shen, Liu, Ma, Zhou, Zhang, He, Lin, Chen",
+          "url": "https://arxiv.org/abs/2407.10499",
+          "wording": "Instruction Following Errors: 31.9%, Hallucination Errors: 4.3%, Reasoning Errors: 40.4%, and Code Errors: 23.4%.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-rechtorik-2026-timeseries-wrong-method-prevalent",
+          "org": "Rechtorík, Dušek, Kasner",
+          "url": "https://arxiv.org/abs/2606.16545",
+          "wording": "Right strategy, but wrong specific method or threshold. the strategy chosen by the agent was suitable for answering the question, but failed due to the specific method chosen within the strategy.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "02-doing-the-analysis/where-ai-fabricates-data-and-numbers.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/02-doing-the-analysis/where-ai-fabricates-data-and-numbers/",
+      "title": "Where AI Fabricates Data and Numbers",
+      "description": "Documented cases of AI inventing data points and figures during data analysis specifically, not general AI hallucination, with evidence matched to the mode -- chat or code-executed -- it was actually measured in.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "verification"
+      ],
+      "body": "## What fabrication looks like in a data context\n\nFabrication in a data-analysis context means the model states a specific number, row, or data point that was never in the source. It uses the same confident phrasing as a figure it actually computed. This is a different failure from the one [Silent Arithmetic and Logic Errors](/ai-assisted-data-analysis/02-doing-the-analysis/silent-arithmetic-and-logic-errors.md) covers next. An arithmetic error takes real data and computes the wrong thing. Fabrication invents a data point that does not correspond to anything in the file at all.\n\n## Documented rates and examples\n\nResearchers building benchmarks for exactly this kind of task have built fabrication detection directly into their evaluation taxonomies. That means the evidence here is more specific than a general hallucination statistic. CIBench, a benchmark for code-interpreter tasks, defines a distinct \"Hallucination Errors\" category in its own error taxonomy. It measured this category at 4.3 percent of one model's categorized errors ([Zhang et al., 2024](#ev-zhang-2024-cibench-hallucination-error-category)). That specific category covers generated code referencing undefined variables, not a model quietly reporting an invented number as though it were computed. It is a related failure, not the same one.\n\nA study of coding agents working on time-series analysis defines a category closer to the one this page is about. It calls the category \"hallucinated values\": numbers introduced that are absent from the data or the code's output ([Rechtorík et al., 2026](#ev-rechtorik-2026-timeseries-hallucinated-values-not-prevalent)). The same study reports specific rates for other error categories, such as choosing the wrong analytical method. Hallucinated values do not appear among the prevalent, quantified problems it found. Fabrication is a real category researchers specifically built detection for. In this particular study, it simply did not turn out to be the dominant one.\n\nThe clearest documented instance of the mechanism itself comes from the team that built InfiAgent-DABench, a benchmark for data-analysis agents. While assembling the benchmark's own training data, GPT-4 was asked to propose code, and a separate framework actually ran it. The team found that letting GPT-4 simulate its own execution result, instead of waiting for the real one, invited exactly this kind of fabrication. They added explicit prompt instructions blocking GPT-4 from performing that simulated execution itself ([Hu et al., 2024](#ev-hu-2024-infiagent-dabench-fictitious-results)). Even a benchmark's own construction process needed a specific safeguard against this exact failure.\n\n## A spot-check habit that catches it\n\nAsk the model to point to the specific row or record a suspicious number came from. A number that was genuinely computed can be traced back to its source data in seconds. A fabricated number cannot be traced, because there is nothing in the file to trace it to. This habit costs one extra question. It catches a failure mode that, as the research above shows, is real but not the most common way an AI-assisted analysis goes wrong.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Zhang, Zhang, Hu, Shen, Liu, Ma, Zhou, Zhang, He, Lin, Chen — *CIBench: Evaluating Your LLMs with a Code Interpreter Plugin*, 2024.** the model generating code that contains hallucinated elements, such as utilizing undefined parameters or referencing irrelevant variables. Instruction Following Errors: 31.9%, Hallucination Errors: 4.3%, Reasoning Errors: 40.4%, and Code Errors: 23.4%. [View source](https://arxiv.org/abs/2407.10499){#ev-zhang-2024-cibench-hallucination-error-category} · verified 2026-07-06 · primary\n- **Rechtorík, Dušek, Kasner — *Can LLM Coding Agents Reason About Time Series?*, 2026.** Hallucinated values: Introduced numerical values absent from data or code output. [View source](https://arxiv.org/abs/2606.16545){#ev-rechtorik-2026-timeseries-hallucinated-values-not-prevalent} · verified 2026-07-06 · primary\n- **Hu, Zhao, Wei, Chai, Ma, Wang, Wang, Su, Xu, Zhu, Cheng, Yuan, Li, Kuang, Yang, Yang, Wu — *InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks*, 2024.** To counter the challenge of hallucination, where GPT-4 might generate fictitious results, explicit instructions are included in the prompt to prevent GPT-4 from executing the code. [View source](https://arxiv.org/abs/2401.05507){#ev-hu-2024-infiagent-dabench-fictitious-results} · verified 2026-07-06 · primary",
+      "updated": "2026-07-06",
+      "sources": [
+        {
+          "id": "ev-zhang-2024-cibench-hallucination-error-category",
+          "org": "Zhang, Zhang, Hu, Shen, Liu, Ma, Zhou, Zhang, He, Lin, Chen",
+          "url": "https://arxiv.org/abs/2407.10499",
+          "wording": "the model generating code that contains hallucinated elements, such as utilizing undefined parameters or referencing irrelevant variables. Instruction Following Errors: 31.9%, Hallucination Errors: 4.3%, Reasoning Errors: 40.4%, and Code Errors: 23.4%.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-rechtorik-2026-timeseries-hallucinated-values-not-prevalent",
+          "org": "Rechtorík, Dušek, Kasner",
+          "url": "https://arxiv.org/abs/2606.16545",
+          "wording": "Hallucinated values: Introduced numerical values absent from data or code output.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        },
+        {
+          "id": "ev-hu-2024-infiagent-dabench-fictitious-results",
+          "org": "Hu, Zhao, Wei, Chai, Ma, Wang, Wang, Su, Xu, Zhu, Cheng, Yuan, Li, Kuang, Yang, Yang, Wu",
+          "url": "https://arxiv.org/abs/2401.05507",
+          "wording": "To counter the challenge of hallucination, where GPT-4 might generate fictitious results, explicit instructions are included in the prompt to prevent GPT-4 from executing the code.",
+          "status": "primary",
+          "verified": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "03-making-it-repeatable/building-a-method-not-a-lucky-prompt.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/03-making-it-repeatable/building-a-method-not-a-lucky-prompt/",
+      "title": "Building a Method, Not a Lucky Prompt",
+      "description": "Turning a one-off prompt that happened to work into a documented method you can run again with confidence.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "repeatability"
+      ],
+      "body": "## What makes a prompt lucky rather than reliable\n\nA prompt that produced a good result once may have worked for a reason that has nothing to do with the prompt itself. The file happened to be clean. The question happened to match the exact structure of that particular dataset. The tool happened to run real code that day, rather than pattern-matching from a sample, as [What AI Is Actually Doing With Your Data](/ai-assisted-data-analysis/what-ai-is-actually-doing-with-your-data.md) covers. None of these are properties of the prompt. They are properties of that one dataset, on that one day.\n\nA method is different from a lucky prompt in one specific way. It names the conditions under which it is expected to work, not just the instruction that produced a good result once. If you cannot state what has to be true for your prompt to work again, you do not yet have a method. You have a result you got once.\n\n## The parts of a method worth writing down\n\nA documented method needs four things, and a single successful prompt usually only gives you the first one.\n\n**The exact question or instruction**, phrased the way [Asking Good Analytical Questions](/ai-assisted-data-analysis/02-doing-the-analysis/asking-good-analytical-questions.md) recommends. It should be specific enough to produce one checkable answer, not an open-ended summary.\n\n**What the data has to look like before you run it**: which columns must exist, and what format they need to be in. Note any preprocessing step from [Preparing Your Data Before You Ask](/ai-assisted-data-analysis/01-getting-your-data-in/preparing-your-data-before-you-ask.md) the method depends on.\n\n**The verification step that goes with it.** [Silent Arithmetic and Logic Errors](/ai-assisted-data-analysis/02-doing-the-analysis/silent-arithmetic-and-logic-errors.md) covers a recomputation habit that catches a wrong answer even when the code ran. Name exactly which number to check, and how, every time the method runs.\n\n**What the output should look like when it has actually worked**, so a wrong-shaped result is obvious before you trust it.\n\n## A minimal template to start from\n\nA method does not need to be long to be real. The four items above fit in four short lines: the prompt, the data requirements, the verification step, and the expected output. Capture them the first time a prompt works well enough that you expect to use it again. The next section covers the test that tells you whether what you captured actually holds. Run it against a dataset that is not the one you wrote it for.",
+      "updated": "2026-07-07",
+      "sources": []
+    },
+    {
+      "bundle": "ai-assisted-data-analysis",
+      "path": "03-making-it-repeatable/testing-your-method-on-a-new-dataset.md",
+      "url": "https://knowledge.onesteplabs.com/ai-assisted-data-analysis/03-making-it-repeatable/testing-your-method-on-a-new-dataset/",
+      "title": "Testing Your Method on a New Dataset",
+      "description": "Why a method that worked once needs a second, different dataset before you trust it as repeatable.",
+      "tags": [
+        "ai-assisted-data-analysis",
+        "repeatability"
+      ],
+      "body": "## Why one success does not prove a method\n\nA method documented the way [Building a Method, Not a Lucky Prompt](/ai-assisted-data-analysis/03-making-it-repeatable/building-a-method-not-a-lucky-prompt.md) describes still rests on one data point: the dataset you wrote it against. Writing the method down proves you can describe what worked. It does not prove the description holds for anything other than the file already in front of you.\n\nThe only way to tell a real method from a documented coincidence is to run it somewhere else. If the method only works on the dataset it was written for, it was never a method. It was a precise description of one lucky result.\n\n## What different enough actually means\n\nA second dataset does not count as a real test if it is nearly identical to the first. Change something that could actually break the method. A larger file, closer to the size limits [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md) covers, tests whether the whole file still arrives intact. A different format tests whether the preprocessing step in your written method still applies. A dataset with missing values, extra columns, or a slightly different structure tests something else again. It reveals whether the method's assumptions actually held, or just happened to hold once.\n\nPick at least one of these differences deliberately for the test, rather than grabbing the next convenient file. A second dataset that shares every relevant property with the first is not a second test. It is the same test, run twice.\n\n## A simple pass or fail check\n\nRun the documented method exactly as written against the new dataset. Do not adjust the prompt to compensate for something that looks off. Check the same verification step named in the method, on this new data, and compare it against what the method's expected output describes. If either one fails, the method needs a revision, not a one-time fix applied quietly and forgotten. If the verification step passes and the output matches the documented shape, on a dataset genuinely different from the first, the method has earned it. It is repeatable, not just lucky.",
+      "updated": "2026-07-07",
+      "sources": []
     },
     {
       "bundle": "ai-assisted-software-development",
@@ -7762,6 +8213,10 @@
       "terms": []
     },
     {
+      "bundle": "ai-assisted-data-analysis",
+      "terms": []
+    },
+    {
       "bundle": "ai-assisted-software-development",
       "terms": []
     },
@@ -8087,6 +8542,66 @@
       "date": "2026-07-02",
       "bundle": "06-ai-security-lead",
       "entry": "Creation**: New bundle — the operator's manual for the AI Security Lead, accountable for adversarial testing and model-level security: prompt injection, jailbreaks, data exfiltration, and agentic tool-abuse. The intro What the AI Security Lead Is — and the Role plus The OWASP Top 10 for LLM Applications and Running a Red Team. Selective citation posture: real-world AI breach prevalence is cited to IBM's Cost of a Data Breach Report 2025, the vulnerability taxonomy to OWASP's GenAI Security Project, and the red-teaming methodology and external partnerships to Anthropic's own published Frontier Red Team practice."
+    },
+    {
+      "date": "2026-07-07",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Testing Your Method on a New Dataset,"
+    },
+    {
+      "date": "2026-07-07",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Building a Method, Not a Lucky Prompt —"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Silent Arithmetic and Logic Errors,"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Where AI Fabricates Data and Numbers —"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored From Raw Numbers to a Defensible Conclusion —"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Asking Good Analytical Questions —"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored A Landscape of AI Data Analysis Tools,"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Code Interpreters vs. Plain Chat —"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Preparing Your Data Before You Ask —"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Authored Why Dumping a File Rarely Works,"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Creation**: Scaffolded the bundle — practical guidance on analyzing data with AI"
+    },
+    {
+      "date": "2026-07-06",
+      "bundle": "ai-assisted-data-analysis",
+      "entry": "Update**: A bundle-wide reasoning-panel review (domain skeptic, cold reader, and"
     },
     {
       "date": "2026-07-06",

@@ -90,6 +90,14 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   and the named, documented vulnerabilities and campaigns already targeting AI coding assistants
   ([Securing the AI Coding Workflow](/ai-assisted-software-development/02-securing-the-coding-workflow/index.md)).
 
+- **[AI-Assisted Data Analysis](/ai-assisted-data-analysis/index.md)** — how to actually analyze
+  data with AI, past pasting in a file and hoping: getting your data in without silent truncation
+  ([Getting Your Data In](/ai-assisted-data-analysis/01-getting-your-data-in/index.md)), catching
+  the fabrication and arithmetic errors that survive real code execution
+  ([Doing the Analysis](/ai-assisted-data-analysis/02-doing-the-analysis/index.md)), and turning a
+  result that worked once into a method you can trust again
+  ([Making It Repeatable](/ai-assisted-data-analysis/03-making-it-repeatable/index.md)).
+
 ## Where to start
 
 - **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.

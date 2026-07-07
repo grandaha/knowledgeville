@@ -24,7 +24,7 @@ This page records how this knowledge base has changed over time — new and expa
 * Author Silent Arithmetic and Logic Errors, completing track 2
 * Author Building a Method, Not a Lucky Prompt
 * Author Testing Your Method on a New Dataset, completing the bundle
-* Fix bundle-wide reasoning-panel findings in ai-assisted-data-analysis
+* Refine and correct four pages in AI-Assisted Data Analysis after a full editorial review of the finished bundle
 
 ### Site & structure
 * Scaffold AI-Assisted Data Analysis bundle

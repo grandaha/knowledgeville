@@ -1,6 +1,25 @@
 # Update Log
 
 ## 2026-07-07
+* **Update**: A bundle-wide reasoning-panel review (domain skeptic, cold reader, and
+  AI/ML feasibility personas) ran against all eleven authored pages now that the bundle
+  is complete. It confirmed the central thesis -- that running real code is necessary
+  but not sufficient for a trustworthy answer -- holds up across all three tracks, and
+  found the evidence base genuinely drives the content rather than decorating it. It
+  also surfaced four fixable gaps, addressed here: a scoping clarification on
+  [Why Dumping a File Rarely Works](/ai-assisted-data-analysis/01-getting-your-data-in/why-dumping-a-file-rarely-works.md)
+  (a documented OpenAI row limit applies to a developer API, not the ChatGPT app most
+  readers actually use); a signpost in
+  [Making It Repeatable](/ai-assisted-data-analysis/03-making-it-repeatable/index.md)
+  explaining why that section carries no citations; a model-independent verification
+  step added to
+  [From Raw Numbers to a Defensible Conclusion](/ai-assisted-data-analysis/02-doing-the-analysis/from-raw-numbers-to-a-defensible-conclusion.md);
+  a precision fix to how three different benchmarks are compared on
+  [Silent Arithmetic and Logic Errors](/ai-assisted-data-analysis/02-doing-the-analysis/silent-arithmetic-and-logic-errors.md);
+  and a one-line guard on
+  [Testing Your Method on a New Dataset](/ai-assisted-data-analysis/03-making-it-repeatable/testing-your-method-on-a-new-dataset.md)
+  clarifying that passing the test twice does not retire the method's own verification step,
+  since a model's output can still vary between runs.
 * **Creation**: Authored [Testing Your Method on a New Dataset](/ai-assisted-data-analysis/03-making-it-repeatable/testing-your-method-on-a-new-dataset.md),
   completing [Making It Repeatable](/ai-assisted-data-analysis/03-making-it-repeatable/index.md)
   and, with it, the entire bundle — why a method that worked once has not yet

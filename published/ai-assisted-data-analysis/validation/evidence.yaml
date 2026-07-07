@@ -20,7 +20,7 @@
 - id: ev-anthropic-2026-claudeai-context-overflow-behavior
   claim: "Claude.ai automatically summarizes earlier messages as a conversation approaches its context window, rather than erroring or silently dropping content -- but only when code execution is enabled"
   value: "200K-token context window on Claude.ai (500K on some Enterprise plans); auto-summarization requires code execution enabled"
-  wording: "Claude's context window size is 200K tokens across all models and paid plans, except for Enterprise plans, which have a 500K context window on some models. When your conversation approaches the context window limit, Claude summarizes earlier messages to continue the conversation seamlessly."
+  wording: "Claude's context window size is 200K tokens across all models and paid plans, except for Enterprise plans, which have a 500K context window on some models. When your conversation approaches the context window limit, Claude summarizes earlier messages to continue the conversation seamlessly. Code execution must be enabled for automatic context management."
   source:
     org: Anthropic
     report: "How do usage and length limits work?"

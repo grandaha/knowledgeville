@@ -14,7 +14,7 @@ As [Code Interpreters vs. Plain Chat](/ai-assisted-data-analysis/01-getting-your
 
 ## Documented error rates
 
-Three sources measure this failure from three different angles, and together they show it is common, not rare. CIBench measured how often each kind of mistake occurred across a model's errors on code-interpreter tasks. Reasoning errors reached 40.4 percent, the largest of its four categories. Hallucination, on the same model, measured only 4.3 percent ([Zhang et al., 2024](#ev-zhang-2024-cibench-reasoning-error-category)).
+Three sources measure this failure in three different ways. No single number below should be read against the others directly, since each uses a different denominator. Each one, on its own terms, shows the same failure is frequent. CIBench measured how often each kind of mistake occurred across a model's errors on code-interpreter tasks. Reasoning errors reached 40.4 percent of those errors, the largest of its four categories. Hallucination, on the same model, measured only 4.3 percent of errors ([Zhang et al., 2024](#ev-zhang-2024-cibench-reasoning-error-category)).
 
 A study of coding agents on time-series analysis supplies the mechanism behind that prevalence. One error occurred when an agent chose the right strategy but the wrong specific method or threshold within it. That single error appeared in 25 percent of code-agent answers, and 19 percent of hybrid-agent answers ([Rechtorík et al., 2026](#ev-rechtorik-2026-timeseries-wrong-method-prevalent)). The strategy was sound. The specific execution of it was not.
 

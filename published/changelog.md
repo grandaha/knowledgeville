@@ -3,13 +3,33 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-07-06"
+timestamp: "2026-07-07"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v10.0.0 — 2026-07-07
+
+### New & expanded content
+* Author Why Dumping a File Rarely Works for AI-Assisted Data Analysis
+* Author Preparing Your Data Before You Ask for AI-Assisted Data Analysis
+* Author Code Interpreters vs. Plain Chat
+* Author A Landscape of AI Data Analysis Tools, completing track 1
+* Author Asking Good Analytical Questions
+* Author From Raw Numbers to a Defensible Conclusion
+* Author Where AI Fabricates Data and Numbers
+* Author Silent Arithmetic and Logic Errors, completing track 2
+* Author Building a Method, Not a Lucky Prompt
+* Author Testing Your Method on a New Dataset, completing the bundle
+* Fix bundle-wide reasoning-panel findings in ai-assisted-data-analysis
+
+### Site & structure
+* Scaffold AI-Assisted Data Analysis bundle
+* Reframe AI-Assisted Data Analysis from 5 tracks to 3
+* Surface AI-Assisted Data Analysis on the homepage
 
 ## v9.5.0 — 2026-07-06
 

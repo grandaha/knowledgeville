@@ -3621,3 +3621,101 @@
   verified: 2026-07-06
   status: primary
   expires: 2026-09-06
+
+- id: ev-mcp-spec-2025-06-18-primitives
+  claim: "the exact set of primitives MCP standardizes between clients and servers"
+  value: "6 primitives total: 3 server-offered (Resources, Prompts, Tools), 3 client-offered (Sampling, Roots, Elicitation)"
+  wording: "Servers offer any of the following features to clients: Resources: Context and data, for the user or the AI model to use. Prompts: Templated messages and workflows for users. Tools: Functions for the AI model to execute. Clients may offer the following features to servers: Sampling: Server-initiated agentic behaviors and recursive LLM interactions. Roots... Elicitation..."
+  source:
+    org: Model Context Protocol
+    report: "MCP Specification (2025-06-18 revision)"
+    edition: "2025-06-18"
+    url: https://modelcontextprotocol.io/specification/2025-06-18
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires: 2027-01-08
+
+- id: ev-mcp-spec-2025-06-18-no-protocol-level-security
+  claim: "MCP's own specification states the protocol itself cannot enforce security, consent, or access-control principles — that is left to implementors"
+  value: "n/a — qualitative protocol-scope statement"
+  wording: "While MCP itself cannot enforce these security principles at the protocol level, implementors SHOULD: Build robust consent and authorization flows into their applications..."
+  source:
+    org: Model Context Protocol
+    report: "MCP Specification (2025-06-18 revision) — Security and Trust & Safety"
+    edition: "2025-06-18"
+    url: https://modelcontextprotocol.io/specification/2025-06-18
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires: 2027-01-08
+
+- id: ev-anthropic-2024-mcp-announcement-problem-and-definition
+  claim: "Anthropic's original framing of the integration problem MCP solves, and its own definition of what MCP is"
+  value: "n/a — qualitative framing"
+  wording: "Every new data source requires its own custom implementation, making truly connected systems difficult to scale. The Model Context Protocol is an open standard that enables developers to build secure, two-way connections between their data sources and AI-powered tools."
+  source:
+    org: Anthropic
+    report: "Introducing the Model Context Protocol"
+    edition: "2024-11-25"
+    url: https://www.anthropic.com/news/model-context-protocol
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires:
+
+- id: ev-anthropic-2025-mcp-agentic-ai-foundation-donation
+  claim: "MCP was donated to a Linux Foundation directed fund (the Agentic AI Foundation), co-founded with Block and OpenAI, with adoption figures at the time of donation"
+  value: "97M+ monthly SDK downloads across Python and TypeScript; 10,000+ active public MCP servers"
+  wording: "co-founded by Anthropic, Block and OpenAI, with support from Google, Microsoft, Amazon Web Services (AWS), Cloudflare, and Bloomberg... more than 10,000 active public MCP servers... 97M+ monthly SDK downloads across Python and TypeScript... adopted by ChatGPT, Cursor, Gemini, Microsoft Copilot, Visual Studio Code"
+  source:
+    org: Anthropic
+    report: "Donating the Model Context Protocol and establishing the Agentic AI Foundation"
+    edition: "2025-12-09"
+    url: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires: 2027-01-08
+
+- id: ev-vishnyakova-2026-context-engineering-maturity-model
+  claim: "arXiv preprint (solo author, not peer-reviewed) proposing a 4-stage maturity model from prompt engineering to specification engineering"
+  value: "4-stage model: prompt engineering -> context engineering -> intent engineering -> specification engineering"
+  wording: "whoever controls the agent's context controls its behavior; whoever controls its intent controls its strategy; whoever controls its specifications controls its scale."
+  source:
+    org: "Vishnyakova, V.V. (independent arXiv preprint author)"
+    report: "Context Engineering: From Prompts to Corporate Multi-Agent Architecture (arXiv:2603.09619)"
+    edition: 2026
+    url: https://arxiv.org/abs/2603.09619
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires:
+
+- id: ev-atlan-2026-context-layer-guide-vendor-example
+  claim: "example of a data-catalog vendor publishing 'context layer' category-defining content in a shape that matches its own product line"
+  value: "n/a — qualitative example"
+  wording: "the de facto standard for connecting agents to tools (referring to MCP). Atlan's own guide names its product line — Enterprise Data Graph, Context Agents, Context Lakehouse — as the delivery mechanism for the context layer it describes."
+  source:
+    org: Atlan
+    report: "Context Layer for AI Agents: Enterprise Guide 2026"
+    edition: "2026-05-08 (published), updated 2026-06-30"
+    url: https://atlan.com/know/context-layer-for-ai-agents/
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires: 2027-01-08
+
+- id: ev-mouzouni-2026-context-kubernetes
+  claim: "arXiv preprint (solo author, not peer-reviewed) proposing a declarative, Kubernetes-inspired governance model for enterprise agent context"
+  value: "6 core abstractions; 3-tier permission model; TLA+ model-checked across millions of states"
+  wording: "establishes a three-tier permission model ensuring agent authority remains subordinate to human authority... Formal verification using TLA+ model-checking confirms safety across millions of states."
+  source:
+    org: "Mouzouni, C. (independent arXiv preprint author)"
+    report: "Context Kubernetes: Declarative Orchestration of Enterprise Knowledge for Agentic AI Systems (arXiv:2604.11623)"
+    edition: 2026
+    url: https://arxiv.org/abs/2604.11623
+    pdf_hash:
+  verified: 2026-07-08
+  status: primary
+  expires:

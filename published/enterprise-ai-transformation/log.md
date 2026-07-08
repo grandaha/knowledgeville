@@ -1,5 +1,16 @@
 # Update Log
 
+## 2026-07-08
+* **Creation**: [MCP and the Context Gap](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/06-mcp-and-the-context-gap.md)
+  explains what the Model Context Protocol actually standardizes (six primitives over JSON-RPC),
+  the gap its own specification admits it leaves open (memory, semantic agreement, access
+  enforcement), and why every "context layer" vendor pitch is really a bet on filling that
+  acknowledged gap differently.
+* **Update**: [Tooling Landscape](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/03-tooling-landscape.md)
+  adds a new "Memory and Context Frameworks" category (Mem0, Cognee, Zep, Graphiti, Redis Iris),
+  and [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md)
+  cross-links to the new MCP page.
+
 ## 2026-07-06
 * **Update**: [Practitioner Guide: Running a Workflow Optimization Program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md)
   adds a section naming DAIN Studios' and ServiceNow's competing "A.G.E.N.T." frameworks, mapping

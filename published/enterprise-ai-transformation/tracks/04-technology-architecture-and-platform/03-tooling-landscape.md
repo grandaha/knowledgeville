@@ -90,6 +90,20 @@ Vector databases store and index high-dimensional embeddings and serve nearest-n
 
 ---
 
+## Memory and Context Frameworks
+
+This is the newest category in this landscape, and the one where the vendor marketing outpaces the settled technology by the widest margin (see [MCP and the Context Gap](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/06-mcp-and-the-context-gap.md) for why). Stripped of "context layer" branding, these tools solve one specific, narrower problem: giving an agent durable memory across sessions, on top of — not instead of — the [Model Context Protocol](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/06-mcp-and-the-context-gap.md) and the vector databases above. Every product below launched or materially repositioned within the past eighteen months; treat this table as a starting map, not a settled category, and verify current licensing and deployment options directly.
+
+| Tool | What it does | Best for |
+|------|--------------|----------|
+| **[Mem0](https://mem0.ai)** | Memory layer that extracts, updates, and retrieves facts from agent interactions automatically (an "add / learn / retrieve" model), condensing chat history into compact memories to cut tokens and latency. Core is Apache-2.0 licensed; offers both a managed cloud (with SOC 2 Type 1 and HIPAA-oriented compliance features) and self-hosted deployment (Kubernetes, private cloud, or air-gapped) behind the same API. | Teams that want a managed or self-hosted drop-in memory API without building extraction/retrieval logic themselves, and that value having both a cloud and an air-gapped deployment path on the same interface. |
+| **[Cognee](https://www.cognee.ai)** (topoteretes) | Open-source (Apache-2.0) agent memory platform that turns ingested data into a graph-based memory — entities and relationships, not just embeddings — so agents can recall structured context across sessions. Self-hosted by default, with an optional managed Cognee Cloud tier; exposes both direct SDKs and an MCP server interface, and integrates with multiple agent frameworks (Claude Code, LangGraph, and others). | Teams that want the memory store itself to be a real, queryable knowledge graph rather than a flat key-value or vector cache, and that prefer to start fully self-hosted before considering a managed tier. |
+| **[Zep](https://www.getzep.com)** | Proprietary managed memory platform built around a "Context Graph Engine" that builds a graph from chat history and business data, tracks when facts change over time (invalidating outdated facts while preserving history), and targets sub-200ms retrieval. Deployment options are Zep Cloud, Cloud with customer-held encryption keys, or bring-your-own-cloud (BYOC) — no self-hosted open-source tier for the managed platform itself. | Teams that need temporal reasoning — not just "what do we know," but "what did we know, and when did it change" — and are comfortable with a managed or BYOC deployment rather than fully self-hosting. |
+| **[Graphiti](https://github.com/getzep/graphiti)** (Zep) | The open-source (Apache-2.0) temporal knowledge-graph engine that powers Zep's managed platform, but is independently self-hostable. Tracks validity windows per fact, traces every derived fact back to its source data, and combines semantic search, keyword matching, and graph traversal for retrieval. | Teams that want Zep's temporal-graph approach without the managed service — building agent memory on infrastructure they fully control and can inspect. |
+| **[Redis Iris](https://redis.io/iris)** (Context Retriever + Agent Memory) | Redis's context-and-memory platform, announced May 2026: **Context Retriever** lets teams define a semantic model of business entities and relationships, then auto-generates MCP tools agents use instead of querying databases directly, with access rules enforced server-side; **Agent Memory** manages short-term conversational state and longer-term durable memory in the same Redis infrastructure. Both components are in preview as of launch. Proprietary; built on Redis. | Organizations already running Redis for agent-runtime state that want memory and a governed, agent-facing retrieval layer added to infrastructure they already operate, rather than adding a separate vendor. |
+
+---
+
 ## MLOps and Model Registry
 
 Full MLOps tooling — experiment tracking, model registries, data versioning, and model serving — is most relevant for organizations that are fine-tuning or training models, not just consuming APIs. For teams using foundation models via API, the relevant subset is narrower: a model registry to track which version of what model is deployed where, and a serving layer if fine-tuned models are deployed. Notably, several of these tools have pivoted toward GenAI/agent workflows, and the ownership of two changed in 2025.
@@ -150,6 +164,11 @@ The developer enablement layer covers the tools AI engineering teams use day-to-
 - Qdrant — *Qdrant documentation*, qdrant.tech/documentation
 - Chroma — *Chroma documentation*, docs.trychroma.com
 - Milvus — *Milvus documentation*, milvus.io/docs
+- Mem0 — *Mem0 documentation and license*, docs.mem0.ai / github.com/mem0ai/mem0
+- Cognee — *Cognee documentation*, docs.cognee.ai / github.com/topoteretes/cognee
+- Zep — *Zep documentation*, help.getzep.com
+- Graphiti — *Graphiti documentation*, github.com/getzep/graphiti
+- Redis — *Introducing Redis Iris*, redis.io/blog/context-is-all-you-need
 - MLflow — *MLflow 3 documentation*, mlflow.org/docs
 - DVC — *DVC documentation*, dvc.org/doc
 - Hugging Face — *Hugging Face Hub documentation*, huggingface.co/docs/hub

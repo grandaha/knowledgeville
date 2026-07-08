@@ -186,6 +186,14 @@ Tool use is what transforms a language model from a text generator into an agent
 
 ---
 
+## MCP (Model Context Protocol)
+
+An open, JSON-RPC-based standard (Anthropic, November 2024; donated to the Linux Foundation's Agentic AI Foundation in December 2025) for connecting an AI application to external tools and data sources without a bespoke integration per source. It defines six primitives — servers offer Resources, Prompts, and Tools; clients offer Sampling, Roots, and Elicitation — and nothing more.
+
+**What it is not:** MCP's own specification states it "cannot enforce security principles at the protocol level" — it has no built-in notion of memory across sessions, no mechanism for two servers to agree on what an entity means, and no access-control enforcement. Those remain separate concerns, built on top of or alongside MCP. See [MCP and the Context Gap](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/06-mcp-and-the-context-gap.md) for the full picture.
+
+---
+
 ## Multi-Agent System
 
 An architecture where multiple specialized AI agents collaborate to complete a task — each handling a specific domain or step, passing outputs to the next agent. One agent might research, another reason, another write, another review.

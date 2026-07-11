@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v10.2.0 — 2026-07-11
+
+### New & expanded content
+* Author The Great Decoupling industry brief
+
 ## v10.1.0 — 2026-07-11
 
 ### New & expanded content

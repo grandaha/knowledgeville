@@ -3719,3 +3719,73 @@
   verified: 2026-07-08
   status: primary
   expires:
+
+- id: ev-oasis-1993-consortium-scale
+  claim: "OASIS was (and is) a genuine neutral, not-for-profit, multi-vendor standards consortium — comparable in kind to MCP's current Linux Foundation governance, not evidence that prior waves lacked real governance"
+  value: "founded 1993; 4,000+ participants; 600+ organizations; 100 countries"
+  wording: "OASIS is a not-for-profit, international consortium that drives the development, convergence, and adoption of e-business standards. Founded in 1993, OASIS has more than 4,000 participants representing over 600 organizations and individual members in 100 countries."
+  source:
+    org: OASIS
+    report: "OASIS organization description (via innoQ SOA/web-services standards overview)"
+    edition: 2026
+    url: https://www.innoq.com/soa/ws-standards/
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+  expires:
+
+- id: ev-ws-i-charter-and-dissolution-2010
+  claim: "WS-I was a dedicated cross-platform, cross-vendor Web-services interoperability body, and wound down cleanly in 2010 by transferring its work to a purpose-built OASIS member section — not an example of ungoverned vendor fragmentation"
+  value: "chartered body; dissolved/transferred November 2010"
+  wording: "The Web Services Interoperability Organization is an open industry organization chartered to promote Web services interoperability across platforms, operating systems and programming languages. ... The Web Services Interoperability (WS-I) organization has just announced that its mission has been accomplished and it is transferring all future efforts to OASIS. ... OASIS announces the creation of a Web Services Interoperability Member Section to accept and take over the donations from the WS-I."
+  source:
+    org: "WS-I / OASIS / InfoQ"
+    report: "WS-I charter (via innoQ) and WS-I-to-OASIS transition announcement (InfoQ, Nov 2010)"
+    edition: 2010
+    url: https://www.infoq.com/ws-i/news/
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+  expires:
+
+- id: ev-w3c-owl-2012-semantic-web-stack
+  claim: "OWL is a genuine W3C standard, part of a coordinated multi-technology Semantic Web stack — the enterprise semantic web wave also had real neutral governance, not just competing vendor specs"
+  value: "W3C standard; 1st edition 2009, 2nd edition 2012; part of RDF/RDFS/SPARQL/OWL stack"
+  wording: "The current version, OWL 2, was developed by the W3C OWL Working Group and published in 2009, with a Second Edition released in 2012. OWL is part of the W3C's Semantic Web technology stack, which includes RDF, RDFS, SPARQL, etc."
+  source:
+    org: W3C
+    report: "OWL (Web Ontology Language) — W3C standard page"
+    edition: 2012
+    url: https://www.w3.org/OWL/
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+  expires:
+
+- id: ev-guo-2025-mcp-ecosystem-measurement
+  claim: "MCP's own surrounding ecosystem (servers/marketplaces) already shows the same fragmentation and abandonment pattern as prior enterprise-unification waves, despite the protocol core's real governance"
+  value: "17,630 raw listed entries crawled across 6 marketplaces; 8,401 passed validity filtering and were analyzed in depth; more than half of all listed entries are invalid or low-value"
+  wording: "more than half of listed projects are invalid or low-value... servers face structural risks including dependency monocultures and uneven maintenance, [while] clients exhibit a transitional phase in protocol and connection patterns."
+  source:
+    org: "Guo, Hao, Zhang, Xu, Lv, Chen, Cheng"
+    report: "A Measurement Study of Model Context Protocol Ecosystem (arXiv:2509.25292)"
+    edition: 2025
+    url: https://arxiv.org/abs/2509.25292
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+  expires: 2027-01-10
+
+- id: ev-mcp-blog-2026-05-21-feature-lifecycle-and-extensions
+  claim: "MCP's protocol governance has become more formally rigorous since the Linux Foundation donation — a feature lifecycle policy, a namespaced extensions framework built to prevent vendor forks, and conformance-test gating for spec changes"
+  value: "12-month minimum deprecation-to-removal window; reverse-DNS-namespaced extensions with independent versioning; Standards Track proposals require a passing conformance-suite scenario before Final status"
+  wording: "The feature lifecycle policy gives every feature an Active, Deprecated, and Removed lifecycle with at least twelve months between deprecation and the earliest possible removal. ... extensions are identified by reverse-DNS IDs, negotiated through an extensions map on client and server capabilities, live in their own ext-* repositories with delegated maintainers, and version independently of the specification. ... a Standards Track SEP can no longer reach Final status until a matching scenario lands in the conformance suite."
+  source:
+    org: Model Context Protocol
+    report: "MCP specification update blog post (release-candidate governance mechanics)"
+    edition: "2026-05-21"
+    url: https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+  expires: 2027-01-10

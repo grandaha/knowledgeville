@@ -195,3 +195,48 @@
     pdf_hash:
   verified: 2026-07-01
   status: primary
+
+# --- The Great Decoupling (Frank D'Souza / Recognize) ---
+# Single-source brief: one entry for the briefed article. PRIMARY for its own claims — the
+# productivity-gain chart is the author's own "Estimated" analysis with no stated methodology;
+# the OpenAI/Anthropic valuations are stated as fact with no named source within the article.
+- id: ev-dsouza-great-decoupling-2026
+  claim: "Frank D'Souza's thesis that AI decouples the value of code (rising) from the value of coding-as-labor (falling toward zero), with an illustrative productivity-gain estimate across the software lifecycle and OpenAI/Anthropic valuation figures cited without a named source"
+  value: "OpenAI valued at $840B, Anthropic at $380B (early 2026); boilerplate coding and unit testing time reductions of up to 90% and 85% respectively (author's own estimate)"
+  wording: "In early 2026, OpenAI was valued at $840 billion and Anthropic at $380 billion... boilerplate coding and unit testing have seen reductions of up to 90% and 85%, respectively."
+  source:
+    org: "Frank D'Souza, Recognize (Co-Founder and Managing Partner)"
+    report: "The Great Decoupling: The Evolution of Services Firms when the Value of Code Is Infinite, but the Value of Coding Is Zero"
+    edition: 2026
+    url: https://recognize.com/wp-content/uploads/2026/04/The-Great-Decoupling-4.15.pdf
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+# Follow-on fact-check added by this brief (not from D'Souza's article) — the one pair of
+# checkable figures in the source piece turned out to be stale within weeks of publication.
+- id: ev-anthropic-2026-series-h-965b
+  claim: "Anthropic raised a Series H round valuing the company at $965 billion post-money, nearly tripling its reported February 2026 valuation and overtaking OpenAI"
+  value: "$65B raised; $965B post-money valuation"
+  wording: "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money."
+  source:
+    org: Anthropic
+    report: "Series H announcement"
+    edition: 2026
+    url: https://www.anthropic.com/news/series-h
+    pdf_hash:
+  verified: 2026-07-10
+  status: primary
+  expires: 2027-01-10
+- id: ev-openai-2026-852b-round-close
+  claim: "OpenAI closed its funding round at an $852 billion post-money valuation on $122 billion of committed capital, up from the $110 billion/$840 billion figures announced in February 2026"
+  value: "$122B committed capital; $852B post-money valuation"
+  wording: "AI giant OpenAI announced a massive funding round of $122 billion at a valuation of a whopping $852 billion on March 31, sending shock waves throughout the tech world."
+  source:
+    org: "Yahoo Finance (reporting)"
+    report: "OpenAI raises $122 billion at $852 billion valuation"
+    edition: 2026
+    url: https://finance.yahoo.com/sectors/technology/articles/openai-raises-122-billion-852-073000122.html
+    pdf_hash:
+  verified: 2026-07-10
+  status: secondary-mirror
+  expires: 2027-01-10

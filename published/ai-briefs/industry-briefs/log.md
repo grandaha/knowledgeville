@@ -1,5 +1,9 @@
 # Change log — Industry Briefs
 
+## 2026-07-10
+
+* **Creation**: new brief — [The Great Decoupling](/ai-briefs/industry-briefs/strategy-and-investment/the-great-decoupling.md), a read of a PE investor's thesis that AI splits the value of code (rising) from the value of coding-as-labor (falling toward zero), and what that means for how services firms price, staff, and structure themselves.
+
 ## 2026-07-01
 
 * **Creation**: new brief — [Exposed but Unprepared](/ai-briefs/industry-briefs/workforce-and-skills/exposed-but-unprepared.md), a read of an HFS study that 27 million Global 2000 jobs are exposed to AI, and that the real problem is how few of those firms have a plan.

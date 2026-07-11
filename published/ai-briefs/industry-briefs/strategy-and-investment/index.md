@@ -13,4 +13,5 @@ reasoning and the honest read, so you can weigh the call for yourself.
 
 | Page | Last updated |
 | --- | --- |
+| [The Great Decoupling](the-great-decoupling.md)<br>An investor's thesis that AI splits code's value from coding's value, and what that means for how services firms price, staff, and structure themselves. | Updated 2026-07-10 |
 | [The Great Value Migration](the-great-value-migration.md)<br>An investment thesis that as AI intelligence gets cheap, value migrates from selling compute to owning and orchestrating it — favoring the hyperscalers. | Updated 2026-07-01 |

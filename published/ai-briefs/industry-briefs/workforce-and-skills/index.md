@@ -13,3 +13,4 @@ The goal is to give you a clear-eyed view of the workforce shift, not a scare or
 | Page | Last updated |
 | --- | --- |
 | [Exposed but Unprepared](exposed-but-unprepared.md)<br>An HFS study finds 27 million Global 2000 jobs exposed to AI — and says too few of those firms are ready. | Updated 2026-07-01 |
+| [The Talent Obsession](the-talent-obsession.md)<br>A search firm says enterprise AI's bottleneck is now the engineer who deploys it, and that about 2,000 US engineers qualify. | Updated 2026-08-04 |

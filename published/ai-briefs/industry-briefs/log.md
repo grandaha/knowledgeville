@@ -1,5 +1,14 @@
 # Change log — Industry Briefs
 
+## 2026-08-04
+
+* **Creation**: new brief — [The Talent Obsession](/ai-briefs/industry-briefs/workforce-and-skills/the-talent-obsession.md):
+  a news report that enterprise AI's bottleneck has shifted from the model to the engineer who
+  deploys it, and that only about 2,000 US engineers qualify. The brief separates the structural
+  claim, which is checkable elsewhere, from the figures, which all originate with the executive
+  search firm that places these engineers. That firm names the data sources it drew on, but the
+  full study is gated behind a request form and the step to its headline counts is not shown.
+
 ## 2026-07-10
 
 * **Creation**: new brief — [The Great Decoupling](/ai-briefs/industry-briefs/strategy-and-investment/the-great-decoupling.md), a read of a PE investor's thesis that AI splits the value of code (rising) from the value of coding-as-labor (falling toward zero), and what that means for how services firms price, staff, and structure themselves.

@@ -14,7 +14,12 @@ This page records how this knowledge base has changed over time — new and expa
 ## v10.3.0 — 2026-08-04
 
 ### New & expanded content
-* Author When to Embed an Engineer decision guide
+
+**New guide — [When to Embed an Engineer](https://knowledge.onesteplabs.com/decision-guides/when-to-embed-an-engineer/)**
+
+For leaders whose AI pilots demo well and stall before production, and who have been told to hire a "forward deployed engineer." The guide is built around the decision rather than the job title: embed an engineer, hire a firm, or fix the handoff.
+
+It covers the scope condition that makes embedding worth its cost, why deep context usually beats a fast start for internal work, who maintains what gets built, and the compensation and reporting-line traps that surface only after a search has already run. Every source quoted sells embedding in some form, and the guide says so at each point of use.
 
 ## v10.2.0 — 2026-07-11
 

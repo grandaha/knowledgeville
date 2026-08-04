@@ -14,7 +14,14 @@ This page records how this knowledge base has changed over time — new and expa
 ## v10.4.0 — 2026-08-04
 
 ### New & expanded content
-* Author The Talent Obsession industry brief
+
+**New brief — [The Talent Obsession](https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/workforce-and-skills/the-talent-obsession/)**
+
+A read of TechCrunch's report that enterprise AI's bottleneck has moved from the model to the engineer who deploys it, and that only about 2,000 US engineers qualify.
+
+The brief separates two layers the coverage blurs. The structural claim is checkable elsewhere: two frontier labs stood up services arms. The figures are not — every one comes from the executive search firm that places these engineers, from a study whose data sources are named but whose full text sits behind a request form. The shortage turns out to be a definition rather than a count, and the firm setting that threshold sells the scarce thing.
+
+Companion to [When to Embed an Engineer](https://knowledge.onesteplabs.com/decision-guides/when-to-embed-an-engineer/), which covers the hiring decision itself.
 
 ## v10.3.0 — 2026-08-04
 

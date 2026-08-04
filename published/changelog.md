@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v10.4.0 — 2026-08-04
+
+### New & expanded content
+* Author The Talent Obsession industry brief
+
 ## v10.3.0 — 2026-08-04
 
 ### New & expanded content

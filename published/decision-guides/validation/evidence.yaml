@@ -134,3 +134,85 @@
   verified: 2026-07-05
   status: primary
   expires: 2027-01-05
+# --- When to Embed an Engineer ---
+# The premise (pilots stall before production), the market's structural commitment to
+# embedding, and the one substantive scope condition. NOTE ON STAKE: every party quoted
+# here sells embedding in some form — Accenture sells the practice, Ode is Anthropic's
+# joint venture, and Otter is an investor with a stake in the product-vs-services margin
+# story. Their stake is stated wherever they are cited.
+- id: ev-hfs-ai-balloon-2026-pilots-to-production
+  claim: "Most enterprise AI pilots do not reach production (carried from the industry-briefs ledger, where the same source backs the wider enterprise-debt thesis)"
+  value: "fewer than 1 in 10 pilots reach production"
+  wording: "fewer than one in ten enterprise AI pilots make it into production"
+  source:
+    org: "HFS Research (Saurabh Gupta and Phil Fersht)"
+    report: "The AI balloon is bursting and services must be ready to pick up the pieces"
+    edition: 2026
+    url: https://www.horsesforsources.com/wall-street-betting-on-an-ai-future-main-street-cannot-deliver_062526/
+    pdf_hash:
+  verified: 2026-06-30
+  status: primary
+- id: ev-accenture-microsoft-fde-practice-2026
+  claim: "Accenture and Microsoft launched a joint forward deployed engineering practice; Accenture's own stated rationale is that stalled AI is an expertise-placement problem rather than a technology problem (STAKE: Accenture sells this practice)"
+  value: "announced 2026-03-18; 'thousands of AI-skilled engineers'"
+  wording: "Most enterprise AI initiatives stall not for lack of technology, but for lack of the right engineering expertise applied in the right place."
+  source:
+    org: "Accenture"
+    report: "Accenture Launches Microsoft Forward Deployed Engineering Practice to Help Organizations Scale AI Across the Enterprise"
+    edition: 2026
+    url: https://newsroom.accenture.com/news/2026/accenture-launches-microsoft-forward-deployed-engineering-practice-to-help-organizations-scale-ai-across-the-enterprise
+    pdf_hash:
+  verified: 2026-08-04
+  status: primary
+  expires: 2027-08-04
+- id: ev-ode-anthropic-blackstone-2026
+  claim: "Anthropic and Blackstone launched Ode, a joint venture that places forward deployed engineers inside enterprise customers, indicating that major AI vendors have committed capital and corporate structure to deployment as a distinct business"
+  value: "valued at $1.5B; launched May 2026; 100 engineers; acquired Fractional AI"
+  wording: "Ode with Anthropic is the $1.5 billion AI implementation company that Anthropic launched in May as a joint venture with Blackstone, Hellman & Friedman, Goldman Sachs, and others."
+  source:
+    org: "TechCrunch"
+    report: "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models"
+    edition: 2026
+    url: https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/
+    pdf_hash:
+  verified: 2026-08-04
+  status: secondary-mirror
+  expires: 2027-08-04
+- id: ev-perspective-fde-comp-band-2026
+  claim: "Posted compensation for forward-deployed-engineer roles in 2026 clusters in a wide band for mid-to-senior levels (STAKE: the publisher sells AI interviewing tooling and promotes it in the piece)"
+  value: "$300K-$550K total comp for mid-to-senior roles; staff and principal at frontier labs clearing $1M+"
+  wording: "Posted FDE compensation in 2026 clusters in a wide $300K–$550K total-comp band for mid-to-senior roles, with staff and principal levels at frontier labs clearing $1M+ in headline numbers."
+  source:
+    org: "Perspective AI"
+    report: "2026 FDE Hiring Trends: What 1,000 Job Posts Reveal"
+    edition: 2026
+    url: https://getperspective.ai/blog/2026-fde-hiring-trends-what-1000-job-posts-reveal
+    pdf_hash:
+  verified: 2026-08-04
+  status: primary
+  expires: 2027-08-04
+- id: ev-otter-fde-scope-condition-2026
+  claim: "Thomas Otter argues embedding suits only complex high-value work with genuine scope uncertainty, and warns that billable embedded engineers serve the project rather than the product. In the same piece he describes his own early-1990s role at QData implementing HR systems as the sole vendor representative on a customer site, which is the basis for the page describing him as a former embedded implementation consultant (STAKE: as a software investor he has an interest in the product-versus-services margin story)"
+  value: "n/a — the author's argument and scope condition"
+  wording: "If the FDE is billable, they are working for the project, not the product. This could get messy."
+  source:
+    org: "Thomas Otter"
+    report: "on the forward deployed engineer"
+    edition: 2026
+    url: https://thomasotter.substack.com/p/on-the-forward-deployed-engineer
+    pdf_hash:
+  verified: 2026-08-04
+  status: primary
+- id: ev-perspective-fde-title-variants-2026
+  claim: "An analysis of roughly 1,000 forward-deployed-engineer job posts found the same work advertised under six different titles (STAKE: the publisher sells AI interviewing tooling and promotes it in the piece)"
+  value: "~1,000 job posts, first half of 2026; six title variants; roughly a third of the market sits under adjacent titles"
+  wording: "candidates filtering on the literal string 'forward deployed engineer' miss roughly a third of the live market hiding under adjacent titles"
+  source:
+    org: "Perspective AI"
+    report: "2026 FDE Hiring Trends: What 1,000 Job Posts Reveal"
+    edition: 2026
+    url: https://getperspective.ai/blog/2026-fde-hiring-trends-what-1000-job-posts-reveal
+    pdf_hash:
+  verified: 2026-08-04
+  status: primary
+  expires: 2027-08-04

@@ -1,5 +1,13 @@
 # Change log — Decision Guides
 
+## 2026-08-04
+
+* **Creation**: new guide — [When to Embed an Engineer](/decision-guides/when-to-embed-an-engineer.md):
+  whether a stalled AI project needs an embedded "forward deployed" engineer, an outside firm, or
+  a better handoff. Covers the scope condition that makes embedding worth its cost, why deep context
+  usually beats fast starts for internal work, who maintains what gets built, and the compensation
+  and reporting-line traps that surface after a search has already run.
+
 ## 2026-07-05
 
 * **Update**: [Build vs. Buy](/decision-guides/build-vs-buy.md) adds a new section, "When the

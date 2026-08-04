@@ -1,0 +1,119 @@
+---
+type: Decision
+title: When to Embed an Engineer
+description: "When a stalled AI project needs an embedded \"forward deployed\" engineer, an outside firm, or a better handoff."
+tags: [decision-guides, ai-delivery]
+timestamp: "2026-08-04"
+---
+
+## The decision
+
+Your AI pilots demo well and then stall. Months pass, and nothing reaches production. Someone proposes hiring a **forward deployed engineer** (FDE): an engineer who sits inside the work rather than shipping software and leaving.
+
+The real choice is wider than that one job title. You can **embed an engineer**, **hire a firm**, or **fix the handoff** by addressing the organizational causes that kill most pilots. This guide helps you tell which one your situation actually calls for.
+
+## Does this apply to you?
+
+Start with a diagnostic, because the answer often is not a hiring decision at all.
+
+**Did the pilot work when you demonstrated it, and on what?** A demo that succeeded on a curated sample is a weaker signal than it feels like. Ask what share of real volume those cases represented. If it worked on representative data, model capability was never your constraint, and hiring for capability will not fix it. If it worked only on the easy slice, you have a data and scoping problem, which is a different fix again. Either way, something between the demo and production stopped it. The common causes are mundane:
+
+- Nobody owned it once the vendor's team left the room.
+- The demo ran on clean sample data; production data carries decades of exceptions.
+- Security, compliance, or change control entered late enough to be fatal.
+- No one's objectives depended on adoption, so usage quietly went to zero.
+
+Embedding an engineer addresses one narrow failure mode: nobody can specify the work. Closing that gap takes someone sitting inside the problem, watching how it actually runs. That failure is real and common. It is not the only one, and rarely the most likely one.
+
+This guide applies if pilots keep dying between demo and production. Fewer than one in ten enterprise AI pilots reach production at all ([HFS Research, 2026](#ev-hfs-ai-balloon-2026-pilots-to-production)), so you are not unusual. If your pilots fail because the technology genuinely cannot do the task, you have a different problem. [When to Let AI Do It](/decision-guides/when-to-let-ai-do-it.md) is the better guide.
+
+## The options
+
+**Embed an engineer.** Put a senior engineer inside the business process, accountable for a working outcome rather than a delivered ticket. Two routes: hire externally, or move someone internally who already understands your systems. These are not equivalent. An external hire brings no context; an internal move brings no outside perspective. This guide treats them separately.
+
+**Hire a firm.** This is now a mature market rather than a favor you ask your vendor. Accenture and Microsoft launched a joint forward deployed engineering practice in March 2026 ([Accenture, 2026](#ev-accenture-microsoft-fde-practice-2026)). Anthropic launched Ode, a joint venture with Blackstone and other backers valued at $1.5 billion, which places engineers inside enterprise customers ([TechCrunch, 2026](#ev-ode-anthropic-blackstone-2026)).
+
+**Fix the handoff.** Treat the failure as organizational, because it usually is. Name an owner with authority after the pilot ends. Fund the production data work. Bring compliance in at kickoff. Attach someone's objectives to adoption.
+
+That list is easy to say and specific to do, so here is what it costs. The owner cannot be a project manager. It has to be someone who can already redirect budget and overrule a queue. In practice that means a director or above with authority over the process. The production data work is the expensive part. Reconciling the exceptions your demo data excluded is measured in weeks of a data engineer, not an afternoon. Compliance at kickoff costs you a slower start and saves a dead launch.
+
+You can test this cheaply, which is the main argument for trying it first. Take one stalled pilot, give it a named owner with real authority for two weeks, and ask that person to list what actually blocks production. If the list is ownership, data, or approvals, you have your answer and it was never a hiring problem. If the list is "we still cannot describe what this should do," that is genuine scope uncertainty. The case for embedding an engineer starts there.
+
+These are not mutually exclusive. Fixing the handoff first is usually right, because it is faster, cheaper, and tells you whether the remaining gap needs an engineer in it.
+
+## What actually matters
+
+Five things should drive the call.
+
+- **Scope uncertainty.** Embedding earns its cost when nobody can specify the work upfront. If you can write a clear specification, you do not need someone embedded to discover it.
+- **Whether your scarce asset is context or velocity.** Ask which is harder to buy: someone who starts fast in an unfamiliar system, or someone who already knows yours. Most enterprises need the second and shop for the first.
+- **Core or context.** Embedding makes sense for work that differentiates you. For everything else, the standard advice is to standardize or outsource it ([Moore, 2000](#ev-moore-core-vs-context-2000)).
+- **Who maintains it afterwards.** Maintenance consumes 40 to 80 percent of a software system's lifetime cost, averaging around 60 percent ([Glass, 2003](#ev-glass-software-maintenance-2003)). Bespoke systems built fast by someone who then leaves are the expensive kind.
+- **Whether you can actually place the role.** A compensation band you cannot approve is a decision you have already made.
+
+## How the options compare
+
+**The case for embedding is stronger than the statistics behind it.** Major vendors have built corporate structure around this model, not merely job postings. Accenture puts it plainly ([Accenture, 2026](#ev-accenture-microsoft-fde-practice-2026)). Most enterprise AI initiatives "stall not for lack of technology, but for lack of the right engineering expertise applied in the right place." Note what that claim actually says. The expertise exists; it sits in the wrong place. Treat it as a serious argument from an interested party. Every organization quoted here sells embedding in some form, which is the first question to ask of anyone citing them to you, including this page.
+
+The circulating market statistics are a different matter, and worth separating carefully. A count you could in principle recount, such as how many job posts used which title, is checkable. A growth rate quoted without its starting base is not, and the widely repeated versions do not agree with each other. Treat the counts as evidence and give the growth and scarcity figures no weight in your decision.
+
+**The scope condition is the real test.** Thomas Otter is an investor who began his career as an embedded implementation consultant. He argues that embedding suits complex, high-value work with genuine scope uncertainty. Beyond that envelope, it is becoming fashionable rather than useful. His structural warning is worth quoting: "If the FDE is billable, they are working for the project, not the product" ([Otter, 2026](#ev-otter-fde-scope-condition-2026)). An embedded engineer optimizes for the engagement in front of them. That produces bespoke systems rather than reusable capability. He invests in software companies, so that conclusion suits him, and it is still the sharpest test available.
+
+**Context beats velocity for most enterprises, and the market says the opposite.** The case for hiring externally usually runs through scarcity: very few engineers can do this, so you must compete for them. Notice who that describes: someone who enters an unfamiliar organization with no context and ships in weeks. That is a vendor's requirement, because a vendor's engineer arrives knowing nothing about you. Your requirement is usually the reverse. For internal work, deep knowledge of your systems, data, and politics is the scarce input, and it is the one an outside hire lacks.
+
+So look internally first. Two honest caveats. The person who holds that context is already your most oversubscribed engineer. Price what it costs to free them, rather than treating the move as free. And what makes embedding work is tolerance for undefined work in front of a business owner, which is temperament and seniority rather than a course. Training someone on AI tooling is the easy part; picking someone who can operate without a specification is the decision.
+
+**Bespoke delivery concentrates a specific risk.** Embedding puts your delivery risk into work that, by design, nobody ever specified, held largely in one person's head. The exposure is not overrun so much as succession: the context that made the build fast is the context that leaves with them. Whoever inherits it pays the maintenance cost above, without the understanding that produced it.
+
+## When each one wins
+
+**Embed an engineer when:**
+
+- Nobody can specify the work upfront, and that uncertainty is real rather than a symptom of nobody having thought about it.
+- The outcome is high value and differentiating.
+- You have identified who maintains the result, and funded it.
+- You can either move someone internally, or genuinely justify an external hire's premium.
+
+**Hire a firm when:**
+
+- The capability is context rather than core.
+- You need it faster than you can hire, and the engagement has a defined end.
+- You want the option of walking away, and you have written down what you keep when you do.
+
+**Fix the handoff when:** this is the most common case, and the cheapest to test.
+
+- Your diagnostic above pointed at ownership, data, approvals, or incentives rather than at the work being undefinable.
+- You have not yet run the two-week test, in which case run it before spending a headcount request.
+
+## How to decide
+
+Work through these in order.
+
+1. **Did the pilot work in the demo?** If yes, the constraint is organizational. Fix the handoff before hiring anyone.
+2. **Can you write a clear specification for what remains?** If yes, you do not need someone embedded. Scope the work and staff it normally.
+3. **Is this work differentiating?** If not, hire a firm or buy the capability. See [Build vs. Buy](/decision-guides/build-vs-buy.md).
+4. **Is your gap context or velocity?** Context means look internally first. Velocity, with a defined endpoint, means hire a firm.
+5. **Who maintains it in two years, and have you funded that?** No answer means you are buying a liability.
+6. **Can you actually approve the compensation and the reporting line?** If not, decide that now rather than after a failed search.
+
+## Watch out for
+
+- **The title means at least six different jobs.** An analysis of roughly 1,000 job posts found the same work advertised under at least six titles ([Perspective AI, 2026](#ev-perspective-fde-title-variants-2026)). About a third of the market sits under adjacent names. That analysis comes from a firm selling hiring tools, and the pattern is still worth heeding. In our reading, those names usually track different reporting lines. A reporting line sets what counts as success: quota, utilization, roadmap, renewal, or ticket queue. Decide which one you mean before you open the role, or you will hire a mismatch.
+- **The compensation collision.** Posted pay clustered in a $300,000 to $550,000 band for mid-to-senior levels in 2026 ([Perspective AI, 2026](#ev-perspective-fde-comp-band-2026)). Staff and principal roles at frontier labs ran above $1 million. That can exceed your vice-president band for an individual contributor. Settle whether you can approve it before a search runs, because this surfaces late.
+- **A new title as a procurement workaround.** Human resources has a band for a solutions architect. A newer title does not have one yet, which is sometimes the real reason someone picks it. That is worth naming out loud.
+- **Hiring a person to avoid an organizational fix.** A headcount request is concrete and fits on a slide. Assigning accountability, funding data work, and changing incentives are none of those things, and are more often the real answer.
+- **Treating the label as the unit of change.** The durable analysis is task-level, not title-level: AI acts on tasks rather than on jobs ([Role Redesign Methodology](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/03-role-redesign-methodology.md)). The work described here is genuine, and the name for it has changed repeatedly and will change again. For the wider argument about why this work concentrates at the edges of delivery, see [The Great Decoupling](/ai-briefs/industry-briefs/strategy-and-investment/the-great-decoupling.md).
+- **Assuming this is an accountability role.** It is a delivery role. If you are deciding who owns AI risk, governance, or adoption at an organizational level, [The Accountability Map](/ai-accountability/the-accountability-map.md) covers those seats instead.
+
+## Sources
+
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **HFS Research (Saurabh Gupta and Phil Fersht) — *The AI balloon is bursting and services must be ready to pick up the pieces*, 2026.** fewer than one in ten enterprise AI pilots make it into production. [View source](https://www.horsesforsources.com/wall-street-betting-on-an-ai-future-main-street-cannot-deliver_062526/){#ev-hfs-ai-balloon-2026-pilots-to-production} · verified 2026-06-30 · primary
+- **Accenture — *Accenture Launches Microsoft Forward Deployed Engineering Practice to Help Organizations Scale AI Across the Enterprise*, 2026.** Most enterprise AI initiatives stall not for lack of technology, but for lack of the right engineering expertise applied in the right place. [View source](https://newsroom.accenture.com/news/2026/accenture-launches-microsoft-forward-deployed-engineering-practice-to-help-organizations-scale-ai-across-the-enterprise){#ev-accenture-microsoft-fde-practice-2026} · verified 2026-08-04 · primary
+- **TechCrunch — *Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models*, 2026.** Ode with Anthropic is the $1.5 billion AI implementation company that Anthropic launched in May as a joint venture with Blackstone, Hellman & Friedman, Goldman Sachs, and others. [View source](https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/){#ev-ode-anthropic-blackstone-2026} · verified 2026-08-04 · ⚠ secondary mirror
+- **Geoffrey Moore — *Living on the Fault Line (core-vs-context; later extended in Dealing with Darwin)*, 2000.** Core is anything that contributes directly to competitive differentiation... Context is everything else — all the things that you or your company or product must do to pass muster but which do not differentiate you. [View source](https://geoffreyamoore.com/book/living-on-the-fault-line/){#ev-moore-core-vs-context-2000} · verified 2026-07-01 · primary
+- **Robert L. Glass — *Facts and Fallacies of Software Engineering (Fact 41), Addison-Wesley (ISBN 0-321-11742-5)*, 2003.** Maintenance typically consumes 40 to 80 percent (average, 60 percent) of software costs. Therefore, it is probably the most important life cycle phase of software. [View source](https://www.informit.com/store/facts-and-fallacies-of-software-engineering-9780321117427){#ev-glass-software-maintenance-2003} · verified 2026-07-01 · primary
+- **Thomas Otter — *on the forward deployed engineer*, 2026.** If the FDE is billable, they are working for the project, not the product. This could get messy. [View source](https://thomasotter.substack.com/p/on-the-forward-deployed-engineer){#ev-otter-fde-scope-condition-2026} · verified 2026-08-04 · primary
+- **Perspective AI — *2026 FDE Hiring Trends: What 1,000 Job Posts Reveal*, 2026.** candidates filtering on the literal string 'forward deployed engineer' miss roughly a third of the live market hiding under adjacent titles. [View source](https://getperspective.ai/blog/2026-fde-hiring-trends-what-1000-job-posts-reveal){#ev-perspective-fde-title-variants-2026} · verified 2026-08-04 · primary
+- **Perspective AI — *2026 FDE Hiring Trends: What 1,000 Job Posts Reveal*, 2026.** Posted FDE compensation in 2026 clusters in a wide $300K–$550K total-comp band for mid-to-senior roles, with staff and principal levels at frontier labs clearing $1M+ in headline numbers. [View source](https://getperspective.ai/blog/2026-fde-hiring-trends-what-1000-job-posts-reveal){#ev-perspective-fde-comp-band-2026} · verified 2026-08-04 · primary

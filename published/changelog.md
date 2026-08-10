@@ -14,7 +14,12 @@ This page records how this knowledge base has changed over time — new and expa
 ## v11.0.0 — 2026-08-10
 
 ### New & expanded content
-* Add the research-note tier and its first note
+
+**New bundle — [Research Notes](https://knowledge.onesteplabs.com/research-notes/)** — working notes on questions that are still open. Everything else here is finished and meant to be relied on; these are sourced findings published while the conclusion is still unsettled. Every number is still cited and verified.
+
+**New note — [Why Your AI Gives Three Different Answers](https://knowledge.onesteplabs.com/research-notes/why-your-ai-gives-three-different-answers/)** — three executives ask an AI assistant how many active customers the company has and get three numbers, because Finance, Sales and Support each define "active" correctly for their own job. On what the word *ontology* is currently sold to solve, which version of that work has a track record, and where the evidence runs out.
+
+Two corrections it records, both against primary sources: the Open Semantic Interchange specification's first release was **v0.1**, not the v1.0 several write-ups report, and it has since moved to the Apache Incubator as **Apache Ossie**.
 
 ## v10.4.0 — 2026-08-04
 

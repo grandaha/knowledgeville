@@ -1,6 +1,6 @@
 {
   "version": "v10.4.0",
-  "generated": "2026-08-04",
+  "generated": "2026-08-10",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
@@ -200,6 +200,17 @@
         "temporal_mode": "point-in-time-supersedable"
       },
       "pageCount": 8
+    },
+    {
+      "slug": "research-notes",
+      "title": "Research Notes",
+      "description": "Working notes on live questions — current understanding, actively revised, not finished reference material.",
+      "posture": {
+        "citation_style": "selective",
+        "verification_posture": "verify-embedded-facts",
+        "temporal_mode": "living-document"
+      },
+      "pageCount": 1
     },
     {
       "slug": "team-second-brain",
@@ -8250,6 +8261,70 @@
       "sources": []
     },
     {
+      "bundle": "research-notes",
+      "path": "why-your-ai-gives-three-different-answers.md",
+      "url": "https://knowledge.onesteplabs.com/research-notes/why-your-ai-gives-three-different-answers/",
+      "title": "Why Your AI Gives Three Different Answers",
+      "description": "A working note on shared definitions — why the same question returns different numbers, and how much semantic modeling is actually worth doing.",
+      "tags": [
+        "semantics",
+        "data-governance",
+        "definitions"
+      ],
+      "body": "!!! note \"Working notes\"\n    Current understanding of an active question, not a finished reference. Revised as the\n    research develops.\n\nThree executives ask an AI assistant how many active customers the company has. They get three\nnumbers. Nobody has made an error.\n\nFinance counts a customer as active if they have been billed in the current period. Sales counts\nanyone with an open opportunity. Support counts anyone entitled to raise a ticket. Each\ndefinition is correct for the job it was built for, and each has been correct for years. What\nchanged is that one system now answers all three questions from the same prompt box. A\ndisagreement that sat unnoticed across three reports shows up in one.\n\nThis is the problem the word *ontology* is currently sold to solve. That word covers work ranging\nfrom a week of arguing to a multi-year program. So the useful question is how much of it to do.\n\n## The distinction that does the work\n\nTwo very different projects share the vocabulary, and they have opposite track records.\n\n**Agreeing on definitions for the measures you already report** has a long history of working. It\nhas been done under names nobody calls ontology: the chart of accounts, Business Objects\nuniverses, LookML, dbt metrics. The work is bounded, and something reads the output every week.\n\n**Modeling the enterprise and its relationships as one coherent structure** is the recurring\nfailure. Enterprise-wide master data management, the semantic web, and data fabric all promised\nit. All were governed seriously, and all faded.\n\nA plausible mechanism for the difference, and I have not found a case that tests it. A metric\ndefinition has a consumer who notices when it breaks. Somebody reads that dashboard on Monday, and a wrong\nnumber produces a complaint the same day. A full enterprise model serves queries that have not\nbeen asked yet. Nothing pulls on it, the upkeep loses its budget line, and the model decays\nwithout anyone noticing until much later.\n\nThe story would also predict things I have not checked. A metric nobody watches any more should\ndecay like an enterprise model. An enterprise model serving one narrow, heavily-queried slice\nshould hold up like a metrics layer. Until one of those is tested, this fits two known outcomes\nafter the fact rather than predicting a third.\n\nTaking it at face value gives a gradient. Metric definitions, then resolving identity on a few\ncore entities, then modeling relationships between them, then the whole enterprise. The risk\nrises at every step. Where a given organization should stop is what I could not find answered\nanywhere.\n\n## Why the sales pitch blurs the two\n\nAlmost every number available on this topic comes from someone who benefits from the answer.\n\nData catalog vendors gain from \"agents need semantics,\" which lets a catalog bill against an AI\nbudget instead of a governance one. Consultancies gain because the definitional argument is\nbillable by the hour. Internally, the strongest advocate is often a data leader for whom \"AI\nneeds this\" turns a cost center into the CEO's top priority.\n\nThe skeptics have positions too. An article titled *why most enterprise ontologies fail* is rarely\nan argument against doing the project. It usually argues for hiring someone who knows the way\nthat does not fail. Selection bias compounds this. No one writes up the boring metrics layer that\nhas worked for four years, so the visible record over-represents failure.\n\nThe blur matters because credibility transfers. A bounded standard for metric definitions gets\ndiscussed alongside a platform that models your whole business. The second borrows the first's\nrespectability.\n\nOpen Semantic Interchange is the current example, and the detail worth knowing is how early it\nis. Its first release was **v0.1**, announced in January 2026 under Apache 2.0\n([Open Semantic Interchange, 2026](#ev-osi-spec-v01-release-2026)). It has since moved to the\nApache Incubator and been renamed Apache Ossie\n([The Apache Software Foundation, 2026](#ev-apache-ossie-incubator-2026)). Moving governance to a\nneutral foundation is a good sign. Incubation is also a starting line, and a 0.1 spec is a\nproposal that platforms have agreed to look at.\n\nThat version number is worth dwelling on, because I got it wrong first. Several write-ups call it\nv1.0. The spec's own version history says otherwise, and the difference between a 1.0 and a 0.1\nis most of what a reader wants to know about how settled something is.\n\nNote what it standardizes: datasets, relationships, fields and metrics, expressed in YAML\n([Open Semantic Interchange, 2026](#ev-osi-spec-scope-yaml-2026)). That is metric definitions —\nthe bounded work with the good record. It is weak evidence for the enterprise modeling it gets\nquoted alongside.\n\n## What the three words mean, once you need them\n\nLearn the vocabulary once you have a decision to make, not before.\n\n- **Ontology** is the rulebook: what an entity is, what attributes it must have, what values are\n  allowed, how it relates to other entities.\n- **Knowledge graph** is a place that rulebook can live and be queried.\n- **Semantic layer** is how definitions get exposed to whatever consumes them.\n\nThe use of this distinction is defensive. A vendor selling a platform will bundle all three and\nname the bundle after whichever term is selling best that quarter. Knowing they are separable is\nwhat lets you ask which part you are buying.\n\n## What is new since the last time this failed\n\nThe honest steelman rests on three costs that moved, not on ontology improving.\n\n**Writing the model got cheap.** Drafting definitions and mappings was the bottleneck that helped\nkill the previous wave. Language models now produce a first draft at almost no cost, which moves\nthe bottleneck to deciding.\n\n**Incompleteness stopped being fatal.** Formal reasoners of the previous era needed the model to\nbe correct. An inconsistent ontology broke them, so a half-finished model returned nothing.\nLanguage models degrade gradually, so partial semantics still helps. Every real model is\npermanently incomplete, so this changes the economics of the normal case.\n\n**There is finally a consumer that reads definitions every day.** People route around bad\ndefinitions without noticing. An analyst knows which revenue figure is meant in which meeting.\nSoftware does not know, and it will not ask.\n\n**The counter is serious, and I have not resolved it.** The first two changes argue for cheap,\ndisposable, per-use-case semantics. That is close to the opposite of the durable practice the\nvendor pitch describes. It also matches what this knowledge base argues elsewhere: readiness is a\nproperty of the specific data path a use case touches, not a company-wide state to reach first.\nSee\n[Readiness Is a Use-Case Property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md).\n\n## The failure mode nobody reports\n\nThe likeliest bad outcome is a completed project.\n\nFaced with a definitional argument the business will not settle, the pragmatic move is to ship\nboth definitions with better labels. The model now holds `active_customer_finance` and\n`active_customer_sales`. Nobody lost the argument, the program delivered on schedule, and the\nassistant still returns three different numbers, each now correctly attributed.\n\nThat outcome looks like success in every status report, which is why it is hard to find written\nup as failure. If it is as common as the mechanism suggests, it would explain a fair share of the\n\"we did this and nothing changed\" accounts. I am reasoning about incentives here, not reporting a\nmeasured result.\n\n## What the evidence does and does not show\n\n**There is a controlled measurement, and it measures the wrong unit.** I went looking for evidence\nthat an agreed semantic layer improves AI output, expecting to find none. What exists is close\nenough to be worth reporting and different enough that it does not settle the question.\n\nBIRD is an academic text-to-SQL benchmark built over real databases. It supplies hand-written\nnotes explaining what each question means, on the explicit grounds that schema alone does not\ncarry the meaning a query needs ([Li et al., 2023](#ev-bird-external-knowledge-design-2023)).\nThen it publishes accuracy with those notes and without them, on identical questions.\n\nThe difference is large ([Li et al., 2023](#ev-bird-external-knowledge-delta-2023)). On the development set, GPT-4 went from 30.90% to 46.35% execution accuracy, a gain of 15.45 points.\nThe result I did not expect is the human row of the same split ([Li et al., 2023](#ev-bird-external-knowledge-delta-2023)): people went from 72.37% to 92.96%, a gain of 20.59 points.\nThe annotations helped the people more than they helped the model.\n\nThat last figure is what makes the measurement worth having. If annotations helped only the\nmodel, this would be a story about model limitations, and next year's model might close it. The\nhumans needed them more, which says the meaning is genuinely absent from the schema rather than\nmerely hard for software to infer.\n\nBoth figures above are development-set numbers, because the paper reports no human result on the\ntest set. The test-set model figures are higher, at 34.88% and 54.89% <!-- noev: same Table 2, cited immediately above -->.\n\nWhat it does not measure is the thing being sold. BIRD's notes are written per question, by hand,\nby someone who already knows the answer. An organization-wide semantic layer is a different\nobject: negotiated once, maintained by people who will not be in the room when it is used, and\napplied to questions nobody anticipated. The 20 points establish that meaning is missing and\nvaluable. They do not establish that a governed layer is how you supply it.\n\nFor scale on the underlying task ([Li et al., 2023](#ev-bird-benchmark-human-gap-2023)), BIRD's headline gap at publication was 54.89% for the leading model against 92.96% for human annotators. Models have improved substantially since.\n\n**Numbers I left out.** A widely repeated claim that only 27% of organizations <!-- noev: deliberately unsourced — the point is that this figure has no traceable instrument --> run knowledge\ngraphs in production came with no instrument, sample, or definition of \"in production.\" It also\nconflicts with a figure already published here, that roughly 15% report mature data governance <!-- noev: DATAVERSITY, cited in Master Data Management -->,\nin [Master Data Management](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/master-data-management.md).\nThe two are not strictly contradictory, but they sit oddly together, and the first gives no way\nto check. A staffing rule of thumb of one full-time person per 50\nto 100 entity types is a consulting heuristic, even though it is easy to budget against. Analyst\nforecasts of accuracy gains by 2027 are sold by the firms that sell the research, and they are\nevidence about the discourse rather than the effect.\n\n**Still open.** Has anyone round-tripped a real metric set between two rival platforms through\nthe spec and got identical results? Is there a documented case, with a named organization and a\nnamed decision-maker, where a definitional conflict was settled? Does any published result break\nsuccess out by scope, so that a number about metric definitions is not quoted to justify an\nenterprise program? Absent that last one, every published number describes something other than\nthe decision a reader is making.\n\n## Where this leaves me\n\nThe work worth doing is smaller than the work being sold, and it starts with people rather than\nsoftware.\n\nIf three functions report three numbers, that is a disagreement between people, and no platform\nsettles it. Buying infrastructure first means paying to apply an argument nobody has finished\nhaving. Worse, whoever configures the system settles it by default — usually the data team, under\ndeadline, without anyone registering that a business decision was made.\n\nI cannot support the following with a citation, but here is what I would try. Take one question\nthat several functions answer differently. Get the argument settled by someone with the authority\nto settle it. Only then encode the result where machines read it. That is a claim about\nsequencing, and it stays a note until I find someone who has done it and written it up.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Open Semantic Interchange (now Apache Ossie, incubating) — *core-spec/spec.md, Version History section (repo: apache/ossie, formerly open-semantic-interchange/OSI); the January 2026 announcement is 'OSI Specification Now Live' at open-semantic-interchange.org/updates/*, 2026.** 0.1.1 (2025-12-11): Initial release. [View source](https://open-semantic-interchange.org/updates/){#ev-osi-spec-v01-release-2026} · verified 2026-08-10 · primary\n- **The Apache Software Foundation — *Apache Ossie (Incubating): The New Name for Open Semantic Interchange*, 2026.** The Open Semantic Interchange project has been accepted into the Apache Incubator under a new name — Apache Ossie (incubating). [View source](https://ossie.apache.org/updates/){#ev-apache-ossie-incubator-2026} · verified 2026-08-10 · primary\n- **Open Semantic Interchange (now Apache Ossie, incubating) — *core-spec/spec.md (repo: apache/ossie, formerly open-semantic-interchange/OSI)*, 2026.** Support for datasets, relationships, fields, and metrics. [View source](https://open-semantic-interchange.org/){#ev-osi-spec-scope-yaml-2026} · verified 2026-08-10 · primary\n- **Li et al. (University of Hong Kong and collaborators) — *Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs (BIRD), arXiv:2305.03111 (v3)*, 2023.** Our emphasis on database values highlights the new challenges of dirty and noisy database values, external knowledge grounding between NL questions and database values, and SQL efficiency, particularly in the context of massive databases. [View source](https://ar5iv.labs.arxiv.org/html/2305.03111){#ev-bird-external-knowledge-design-2023} · verified 2026-08-10 · primary\n- **Li et al. (University of Hong Kong and collaborators) — *BIRD, arXiv:2305.03111 (v3), Table 2 — columns 'w/o knowledge' and 'w/ knowledge' for development and testing data*, 2023.** The Execution Accuracy (EX) of advanced text-to-SQL models in Bird. The human performance is also provided. [View source](https://ar5iv.labs.arxiv.org/html/2305.03111){#ev-bird-external-knowledge-delta-2023} · verified 2026-08-10 · primary\n- **Li et al. (University of Hong Kong and collaborators) — *Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs (BIRD), arXiv:2305.03111 (v3, NeurIPS version of record — the arXiv abstract PAGE still renders the superseded v1 abstract, which says ChatGPT/40.08%; quote the v3 full text, not the abs page)*, 2023.** even the most effective text-to-SQL models, i.e. GPT-4, only achieve 54.89% in execution accuracy, which is still far from the human result of 92.96%. [View source](https://ar5iv.labs.arxiv.org/html/2305.03111){#ev-bird-benchmark-human-gap-2023} · verified 2026-08-10 · primary",
+      "updated": "2026-08-10",
+      "sources": [
+        {
+          "id": "ev-apache-ossie-incubator-2026",
+          "org": "The Apache Software Foundation",
+          "url": "https://ossie.apache.org/updates/",
+          "wording": "The Open Semantic Interchange project has been accepted into the Apache Incubator under a new name — Apache Ossie (incubating).",
+          "status": "primary",
+          "verified": "2026-08-10"
+        },
+        {
+          "id": "ev-osi-spec-v01-release-2026",
+          "org": "Open Semantic Interchange (now Apache Ossie, incubating)",
+          "url": "https://open-semantic-interchange.org/updates/",
+          "wording": "0.1.1 (2025-12-11): Initial release",
+          "status": "primary",
+          "verified": "2026-08-10"
+        },
+        {
+          "id": "ev-osi-spec-scope-yaml-2026",
+          "org": "Open Semantic Interchange (now Apache Ossie, incubating)",
+          "url": "https://open-semantic-interchange.org/",
+          "wording": "Support for datasets, relationships, fields, and metrics",
+          "status": "primary",
+          "verified": "2026-08-10"
+        },
+        {
+          "id": "ev-bird-benchmark-human-gap-2023",
+          "org": "Li et al. (University of Hong Kong and collaborators)",
+          "url": "https://ar5iv.labs.arxiv.org/html/2305.03111",
+          "wording": "even the most effective text-to-SQL models, i.e. GPT-4, only achieve 54.89% in execution accuracy, which is still far from the human result of 92.96%",
+          "status": "primary",
+          "verified": "2026-08-10"
+        },
+        {
+          "id": "ev-bird-external-knowledge-delta-2023",
+          "org": "Li et al. (University of Hong Kong and collaborators)",
+          "url": "https://ar5iv.labs.arxiv.org/html/2305.03111",
+          "wording": "The Execution Accuracy (EX) of advanced text-to-SQL models in Bird. The human performance is also provided.",
+          "status": "primary",
+          "verified": "2026-08-10"
+        },
+        {
+          "id": "ev-bird-external-knowledge-design-2023",
+          "org": "Li et al. (University of Hong Kong and collaborators)",
+          "url": "https://ar5iv.labs.arxiv.org/html/2305.03111",
+          "wording": "Our emphasis on database values highlights the new challenges of dirty and noisy database values, external knowledge grounding between NL questions and database values, and SQL efficiency, particularly in the context of massive databases.",
+          "status": "primary",
+          "verified": "2026-08-10"
+        }
+      ]
+    },
+    {
       "bundle": "team-second-brain",
       "path": "01-the-single-player-ceiling.md",
       "url": "https://knowledge.onesteplabs.com/team-second-brain/01-the-single-player-ceiling/",
@@ -8794,6 +8869,10 @@
       ]
     },
     {
+      "bundle": "research-notes",
+      "terms": []
+    },
+    {
       "bundle": "team-second-brain",
       "terms": []
     }
@@ -9143,6 +9222,16 @@
       "date": "2026-07-01",
       "bundle": "open-knowledge-format",
       "entry": "Creation**: two themes — Understanding OKF (the format as it stands today) and The Potential (our grounded read of where it could go)."
+    },
+    {
+      "date": "2026-08-10",
+      "bundle": "research-notes",
+      "entry": "Creation**: the Research Notes bundle — working notes on open questions, published while the"
+    },
+    {
+      "date": "2026-08-10",
+      "bundle": "research-notes",
+      "entry": "Creation**: why the same question returns different numbers from an AI assistant, what the"
     },
     {
       "date": "2026-07-05",

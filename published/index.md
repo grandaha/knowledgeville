@@ -98,6 +98,12 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   result that worked once into a method you can trust again
   ([Making It Repeatable](/ai-assisted-data-analysis/03-making-it-repeatable/index.md)).
 
+- **[Research Notes](/research-notes/index.md)** — working notes on questions that are still
+  open. Everything else here is finished and meant to be relied on; these are sourced findings
+  with a conclusion that has not settled yet, published while the question is still live. Every
+  number is still cited and verified. The first one asks
+  [Why Your AI Gives Three Different Answers](/research-notes/why-your-ai-gives-three-different-answers.md).
+
 ## Where to start
 
 - **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.

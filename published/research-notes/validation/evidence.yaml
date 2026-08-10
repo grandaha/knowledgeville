@@ -1,0 +1,101 @@
+# evidence.yaml — public provenance record for the Research Notes bundle.
+#
+# Canonical store of verified, sourced claims for this bundle. Per-page `## Sources`
+# lists are GENERATED from it (never hand-maintained); inline citations link to an
+# entry id as `([Org, Year](#ev-...))`. First-class infrastructure, NOT a rendered
+# concept: no OKF frontmatter, not indexed by build_index.py, read directly by
+# scripts/validate_okf.py.
+#
+# A working-notes bundle holds its CONCLUSIONS loosely. This file is where it does not:
+# every number in a note is verified against a primary source and recorded here, the same
+# as any other bundle. `id`s are globally unique across ALL bundles, not just this one.
+#
+# Schema (one list entry per DISCRETE claim):
+#   - id:       kebab-case, globally unique, PREFIXED `ev-`
+#               (convention: ev-<org>-<report-slug>-<edition>-<claim-slug>)
+#     claim:    short human label for what the number measures
+#     value:    the figure as cited (e.g. "88%")
+#     wording:  the source's own phrasing, for faithful quotation
+#     source:   { org, report, edition, url, pdf_hash }
+#     verified: YYYY-MM-DD
+#     status:   primary | secondary-mirror | blocked
+#     expires:  YYYY-MM-DD (staleness horizon)
+#
+- id: ev-apache-ossie-incubator-2026
+  claim: "The Open Semantic Interchange project moved to the Apache Incubator and was renamed Apache Ossie"
+  value: "accepted 10 July 2026"
+  wording: "The Open Semantic Interchange project has been accepted into the Apache Incubator under a new name — Apache Ossie (incubating)."
+  source:
+    org: "The Apache Software Foundation"
+    report: "Apache Ossie (Incubating): The New Name for Open Semantic Interchange"
+    edition: 2026
+    url: https://ossie.apache.org/updates/
+    pdf_hash:
+  verified: 2026-08-10
+  status: primary
+  expires: 2027-08-10
+- id: ev-osi-spec-v01-release-2026
+  claim: "The Open Semantic Interchange specification's first release was v0.1.x, not a 1.0 — widely miscited as v1.0 by third-party aggregators"
+  value: "0.1.1, dated 2025-12-11 in the spec's own version history; publicly announced 27 January 2026 under Apache 2.0"
+  wording: "0.1.1 (2025-12-11): Initial release"
+  source:
+    org: "Open Semantic Interchange (now Apache Ossie, incubating)"
+    report: "core-spec/spec.md, Version History section (repo: apache/ossie, formerly open-semantic-interchange/OSI); the January 2026 announcement is 'OSI Specification Now Live' at open-semantic-interchange.org/updates/"
+    edition: 2026
+    url: https://open-semantic-interchange.org/updates/
+    pdf_hash:
+  verified: 2026-08-10
+  status: primary
+  expires: 2027-02-10
+- id: ev-osi-spec-scope-yaml-2026
+  claim: "What the Open Semantic Interchange spec standardizes is metric-layer constructs in YAML, not a general enterprise ontology"
+  value: "datasets, relationships, fields, and metrics"
+  wording: "Support for datasets, relationships, fields, and metrics"
+  source:
+    org: "Open Semantic Interchange (now Apache Ossie, incubating)"
+    report: "core-spec/spec.md (repo: apache/ossie, formerly open-semantic-interchange/OSI)"
+    edition: 2026
+    url: https://open-semantic-interchange.org/
+    pdf_hash:
+  verified: 2026-08-10
+  status: primary
+  expires: 2027-02-10
+- id: ev-bird-benchmark-human-gap-2023
+  claim: "On the BIRD text-to-SQL benchmark over real databases, the gap between the leading model and human annotators was large at publication"
+  value: "54.89% execution accuracy for GPT-4 vs 92.96% human"
+  wording: "even the most effective text-to-SQL models, i.e. GPT-4, only achieve 54.89% in execution accuracy, which is still far from the human result of 92.96%"
+  source:
+    org: "Li et al. (University of Hong Kong and collaborators)"
+    report: "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs (BIRD), arXiv:2305.03111 (v3, NeurIPS version of record — the arXiv abstract PAGE still renders the superseded v1 abstract, which says ChatGPT/40.08%; quote the v3 full text, not the abs page)"
+    edition: 2023
+    url: https://ar5iv.labs.arxiv.org/html/2305.03111
+    pdf_hash:
+  verified: 2026-08-10
+  status: primary
+  expires: 2027-08-10
+- id: ev-bird-external-knowledge-delta-2023
+  claim: "BIRD publishes a controlled with/without comparison of hand-written external-knowledge annotations on identical questions, for models and for humans"
+  value: "Development set (the only split with a human result): GPT-4 30.90% without knowledge to 46.35% with (+15.45 points); human 72.37% to 92.96% (+20.59). Test set, models only: GPT-4 34.88% to 54.89% (+20.01)"
+  wording: "The Execution Accuracy (EX) of advanced text-to-SQL models in Bird. The human performance is also provided."
+  source:
+    org: "Li et al. (University of Hong Kong and collaborators)"
+    report: "BIRD, arXiv:2305.03111 (v3), Table 2 — columns 'w/o knowledge' and 'w/ knowledge' for development and testing data"
+    edition: 2023
+    url: https://ar5iv.labs.arxiv.org/html/2305.03111
+    pdf_hash:
+  verified: 2026-08-10
+  status: primary
+  expires: 2027-08-10
+- id: ev-bird-external-knowledge-design-2023
+  claim: "BIRD supplies hand-written external knowledge annotations because schema alone does not carry the meaning a query needs"
+  value: "external knowledge grounding is a named component of the benchmark"
+  wording: "Our emphasis on database values highlights the new challenges of dirty and noisy database values, external knowledge grounding between NL questions and database values, and SQL efficiency, particularly in the context of massive databases."
+  source:
+    org: "Li et al. (University of Hong Kong and collaborators)"
+    report: "Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs (BIRD), arXiv:2305.03111 (v3)"
+    edition: 2023
+    url: https://ar5iv.labs.arxiv.org/html/2305.03111
+    pdf_hash:
+  verified: 2026-08-10
+  status: primary
+  expires: 2027-08-10

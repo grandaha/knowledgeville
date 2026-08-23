@@ -3,13 +3,29 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-08-10"
+timestamp: "2026-08-23"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v11.1.0 — 2026-08-23
+
+### New & expanded content
+
+**Expanded — [Data Audits & Automated Quality Governance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-audits-and-automated-quality-governance/)** — the audit walkthrough now covers all six quality dimensions instead of two. New steps for consistency, timeliness, validity and uniqueness, each with its audit techniques, a scoring formula and a threshold. A new step covers the composite score: how to pick dimension weights from your use case's failure mode, the formula, a worked example, and the thresholds in one table.
+
+The worked example is deliberately a failing one. A dataset scores 84.0 overall and is still unfit for production AI use, because three dimensions sit below their blocking gate and the composite shows none of that.
+
+### Corrections
+
+**[Data Quality](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality/) — the six dimensions were credited to the wrong source.** They come from a DAMA UK working group paper of October 2013, not from DAMA-DMBOK, which is a separate and broader publication. There is also no canonical list of six: DAMA's Dutch chapter distilled 60 preferred dimension definitions from 127 across nine authoritative sources. The page now says both, cited.
+
+**Quality thresholds are now stated as recommendations, not standards.** No standards body publishes them. ISO 8000-8:2015 says directly that establishing a threshold is the organisation's job and that the standard does not set one. Both pages now say so and tell you to set your own against the consequence of failure, and to write down the reasoning.
+
+**A contradiction between the two pages is resolved.** The framework page blocked any dataset scoring below 70 on a dimension, while the audit guide blocked accuracy below 90. The audit guide's per-dimension gates are now the single set, and the scoring section links to them — previously it named a scoring approach with no way to reach the method behind it.
 
 ## v11.0.0 — 2026-08-10
 

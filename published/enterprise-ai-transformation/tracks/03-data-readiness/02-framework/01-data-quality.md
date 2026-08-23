@@ -29,7 +29,9 @@ three, on whichever path a given use case actually depends on.
 
 ## The Six Quality Dimensions (and What Each Means for AI)
 
-The DAMA-DMBOK framework defines six primary data quality dimensions. Each has specific implications when applied to AI workloads that do not exist in traditional Business Intelligence (BI) contexts.
+These six dimensions come from a DAMA UK working group paper published in October 2013 ([DAMA NL, 2020](#ev-dama-nl-2020-six-dimensions-attribution)). They are often credited to DAMA-DMBOK, which is a different and broader publication. No single canonical list exists: DAMA's Dutch chapter distilled 60 preferred dimension definitions from 127 across nine authoritative sources ([DAMA NL, 2020](#ev-dama-nl-2020-sixty-preferred-dimensions)). These six are the widely adopted working set.
+
+Each has specific implications when applied to AI workloads that do not exist in traditional Business Intelligence (BI) contexts.
 
 ### 1. Accuracy
 
@@ -227,7 +229,13 @@ A data quality score provides a single composite measure of a dataset's fitness 
 - **Tied to a business KPI** — otherwise the scorecard becomes a vanity report.
 - **Computed continuously** — a score produced once at project start decays as data changes.
 
-Sample scoring approach:
+Each of the six dimensions is measured with its own formula, against its own threshold.
+[Data Audits & Automated Quality Governance](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-audits-and-automated-quality-governance.md)
+carries the audit techniques, the scoring formula for every dimension, guidance on
+choosing the weights for your use case, and the canonical threshold table. Use it to
+produce the scores; use this page to understand what each dimension means.
+
+Sample scoring approach, for a batch churn model weighted toward completeness and consistency:
 
 | Dimension | Weight | Score | Weighted Score |
 | --- | --- | --- | --- |
@@ -239,7 +247,11 @@ Sample scoring approach:
 | Uniqueness | 10% | 78 | 7.8 |
 | **Total** | **100%** |  | **84.0** |
 
-A score below 70 on any single dimension should block a dataset from production AI use until remediated.
+The composite is a reporting device, not a gate. This dataset scores a respectable 84.0 and
+is still unfit for production AI use: accuracy, consistency, and uniqueness all sit below
+their blocking thresholds, and a reader looking only at the composite would not see
+any of them. Gate on the dimension
+scores, and report them wherever the composite appears.
 
 ---
 
@@ -263,6 +275,8 @@ A score below 70 on any single dimension should block a dataset from production 
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
 
 - **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
+- **DAMA Netherlands — *Dimensions of Data Quality (DDQ) Research Paper, version 1.2*, 2020.** DAMA-UK (2013). The six primary dimensions for data quality assessment. October 2013. / DAMA (2017). DAMA-DMBOK. Data Management Body of Knowledge. 2nd Edition. [View source](https://dama-nl.org/wp-content/uploads/2020/09/DDQ-Dimensions-of-Data-Quality-Research-Paper-version-1.2-d.d.-3-Sept-2020.pdf){#ev-dama-nl-2020-six-dimensions-attribution} · verified 2026-08-23 · primary
+- **DAMA Netherlands — *Dimensions of Data Quality (DDQ) Research Paper, version 1.2*, 2020.** Out of 127 definitions from nine authoritative sources, 60 preferred definitions of essential quality dimensions and associated concepts have been drawn up. [View source](https://dama-nl.org/wp-content/uploads/2020/09/DDQ-Dimensions-of-Data-Quality-Research-Paper-version-1.2-d.d.-3-Sept-2020.pdf){#ev-dama-nl-2020-sixty-preferred-dimensions} · verified 2026-08-23 · primary
 - **Dimensional Research (commissioned by Alegion) — *Artificial Intelligence and Machine Learning Projects Are Obstructed by Data Issues*, 2019.** 96% of enterprises run into problems with data quality, data labeling required to train AI, and building model confidence. [View source](https://3971219.fs1.hubspotusercontent-na2.net/hubfs/3971219/Survey%20Assets%201905/Dimensional%20Research%20Machine%20Learning%20PPT%20Report%20FINAL.pdf){#ev-dimensional-research-2019-data-quality-ai} · verified 2026-06-22 · primary
 - **Cognilytica — *Data Preparation & Labeling for AI*, 2020.** as much as 80% of machine learning project time is spent on aggregating, cleaning, labeling, and augmenting machine learning model data. [View source](https://medium.com/cognilytica/data-preparation-labeling-for-ai-2020-b512a5ed777c){#ev-cognilytica-2020-ml-effort-data-prep} · verified 2026-06-20 · ⚠ secondary mirror
 - **Budach, Feuerpfeil, Ihde, Nathansen, Noack, Patzlaff, Naumann & Harmouch — *The Effects of Data Quality on Machine Learning Performance on Tabular Data*, 2022.** up to 20% of training labels could be flipped without performance losses of no more than 10% in F1-score. [View source](https://arxiv.org/abs/2207.14529){#ev-budach-2022-label-noise-degradation} · verified 2026-06-20 · primary

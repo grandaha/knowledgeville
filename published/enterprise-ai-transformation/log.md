@@ -1,5 +1,28 @@
 # Update Log
 
+## 2026-08-23
+* **Update**: [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md)
+  corrects a misattribution. The six quality dimensions were credited to DAMA-DMBOK; they
+  come from a DAMA UK working group paper of October 2013, and DAMA-DMBOK is a broader,
+  separate publication. The page now says so, and notes that no single canonical list exists —
+  DAMA's Dutch chapter distilled 60 preferred dimension definitions from 127 across nine
+  authoritative sources.
+* **Update**: [Data Audits & Automated Quality Governance](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-audits-and-automated-quality-governance.md)
+  extends the audit walkthrough from two dimensions to all six. New steps cover auditing for
+  consistency, timeliness, validity, and uniqueness — each with its audit techniques, a scoring
+  formula, and a threshold. A new step covers the composite score: how to choose dimension
+  weights from the use case's failure mode, the composite formula, a worked example, and one
+  threshold table for all six dimensions plus the composite.
+* **Update**: The same guide now states plainly that its thresholds are recommended starting
+  points rather than standards. ISO 8000-8:2015 requires a threshold to be set per business
+  and per measured object, and says explicitly that it does not set one. Readers are told to
+  set their own against the consequence of failure, and to record the reasoning.
+* **Update**: [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md)
+  now links its scoring section to the audit guide that supplies the formulas, which it
+  previously did not. Its blanket "below 70 on any dimension" rule is replaced — that number
+  contradicted the per-dimension thresholds in the audit guide. The worked example now shows
+  that a dataset can score 84.0 overall and still fail three blocking gates.
+
 ## 2026-07-08
 * **Creation**: [MCP and the Context Gap](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/06-mcp-and-the-context-gap.md)
   explains what the Model Context Protocol actually standardizes (six primitives over JSON-RPC),

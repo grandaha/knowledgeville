@@ -3789,3 +3789,39 @@
   verified: 2026-07-10
   status: primary
   expires: 2027-01-10
+- id: ev-iso-8000-8-2015-does-not-set-thresholds
+  claim: "ISO 8000-8 requires a business-set quality threshold per measured object and does not itself set one"
+  value: "qualitative"
+  wording: "When assessing whether the quality of information and data is sufficient, it is necessary to establish the threshold, pertinent to the business, for each object to be measured. This part of ISO 8000 does not set these thresholds."
+  source:
+    org: ISO
+    report: "ISO 8000-8:2015, Data quality — Part 8: Information and data quality: Concepts and measuring"
+    edition: 2015
+    url: https://cdn.standards.iteh.ai/samples/60805/be8fc414189e4e4b8383282034f68746/ISO-8000-8-2015.pdf
+    pdf_hash: cbfe0d2a74a27a50194b7f627be66b1196291fcf717047e157424e9c3e205466
+  verified: 2026-08-23
+  status: primary
+- id: ev-dama-nl-2020-six-dimensions-attribution
+  claim: "The six primary data quality dimensions are a 2013 DAMA UK publication, cited separately from DAMA-DMBOK 2nd Edition"
+  value: "qualitative"
+  wording: "DAMA-UK (2013). The six primary dimensions for data quality assessment. October 2013. / DAMA (2017). DAMA-DMBOK. Data Management Body of Knowledge. 2nd Edition."
+  source:
+    org: DAMA Netherlands
+    report: "Dimensions of Data Quality (DDQ) Research Paper, version 1.2"
+    edition: 2020
+    url: https://dama-nl.org/wp-content/uploads/2020/09/DDQ-Dimensions-of-Data-Quality-Research-Paper-version-1.2-d.d.-3-Sept-2020.pdf
+    pdf_hash: 58c865712c270eee27408348c3a5d11c449c6cf311b7e2813df4fd38543f6c60
+  verified: 2026-08-23
+  status: primary
+- id: ev-dama-nl-2020-sixty-preferred-dimensions
+  claim: "Preferred data quality dimension definitions distilled by DAMA NL from nine authoritative sources"
+  value: "60 definitions from 127, across nine sources"
+  wording: "Out of 127 definitions from nine authoritative sources, 60 preferred definitions of essential quality dimensions and associated concepts have been drawn up."
+  source:
+    org: DAMA Netherlands
+    report: "Dimensions of Data Quality (DDQ) Research Paper, version 1.2"
+    edition: 2020
+    url: https://dama-nl.org/wp-content/uploads/2020/09/DDQ-Dimensions-of-Data-Quality-Research-Paper-version-1.2-d.d.-3-Sept-2020.pdf
+    pdf_hash: 58c865712c270eee27408348c3a5d11c449c6cf311b7e2813df4fd38543f6c60
+  verified: 2026-08-23
+  status: primary

@@ -10,12 +10,16 @@ timestamp: "2026-06-12"
 
 Knowing that data quality matters is not the same as knowing how to measure it, enforce it, and sustain it. This is a practitioner guide covering:
 
-1. How to actually conduct a data audit for accuracy and completeness
+1. How to actually conduct a data audit across all six quality dimensions, and score each one
 2. How to translate audit findings into measurable, enforced quality rules
 3. How to automate those rules so governance runs continuously
 4. How to connect automation to remediation so issues get fixed, not just flagged
 
 The goal: data quality that is not a project that runs once and decays, but an operational property of the infrastructure enforced automatically, visible continuously, and owned by named people.
+
+[Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md)
+defines the six dimensions this guide measures, and explains what each one means for AI
+specifically. Read it first if the dimensions are unfamiliar.
 
 ---
 
@@ -23,7 +27,7 @@ The goal: data quality that is not a project that runs once and decays, but an o
 
 ### What a Data Quality Audit Actually Is
 
-A data quality audit is a systematic review of data assets to determine whether they meet defined standards for accuracy, completeness, consistency, validity, and timeliness. It runs in two modes:
+A data quality audit reviews data assets against defined standards for accuracy, completeness, consistency, timeliness, validity, and uniqueness. It runs in two modes:
 
 - Internal continuous auditing — automated checks running on a schedule or triggered by pipeline events
 - External periodic auditing — independent review of quality practices and compliance posture, typically annually or before a major AI initiative
@@ -43,6 +47,12 @@ Before touching any data, define exactly what you are auditing and why.
 - Who is the data owner who will receive and act on findings?
 
 Practical guidance: start with data flowing into your most critical AI systems or business decisions. Auditing everything at once produces a backlog no team can clear. Prioritize by business impact and AI risk.
+
+**On the thresholds in this guide.** Every target and blocking number below is a recommended
+starting point, not a standard. No standards body sets these values, and ISO 8000-8:2015 is
+explicit that establishing the threshold is the organisation's job rather than the standard's
+([ISO, 2015](#ev-iso-8000-8-2015-does-not-set-thresholds)). Set yours against the consequence
+of failure for your use case, and write down the reasoning. Step 9 collects them in one table.
 
 ---
 
@@ -157,7 +167,192 @@ Target for AI training data: 98% or above for primary fields. Below 95%: flag fo
 
 ---
 
-### Step 5: Document Findings
+### Step 5: Auditing for Consistency
+
+Consistency asks whether the same entity is represented the same way everywhere. Unlike accuracy, it needs no external reference — the dataset contradicts itself.
+
+**Technique 1: Cross-system field agreement**
+
+For entities present in more than one system, compare each shared field. Report the agreement rate per field, not per record. A single disagreeing field drags a whole-record measure down and hides which field is actually broken.
+
+**Technique 2: Controlled vocabulary drift**
+
+Enumerate the distinct values in every categorical field and compare against the controlled vocabulary. Values outside the list are the visible failure. The subtler one is two codes that mean the same thing — `CANCELLED` and `CANCELED`, `Y` and `TRUE` — which a model treats as unrelated categories.
+
+**Technique 3: Structural break detection**
+
+Plot the distribution of each categorical field over time. A taxonomy that changed mid-dataset shows as a sharp discontinuity. This matters most for training data: the model learns a relationship that only held on one side of the break.
+
+**Technique 4: Referential integrity**
+
+Verify that every foreign key resolves to an existing parent record. Orphaned rows mean either a deletion that did not cascade or a join that will silently drop records during feature engineering.
+
+Consistency scoring:
+
+```javascript
+Consistency Score = (Field comparisons in agreement /
+                     Total field comparisons performed) x 100
+```
+
+Target for AI training data: 95% or above. Below 90%: block from production AI use pending remediation.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+
+---
+
+### Step 6: Auditing for Timeliness
+
+Timeliness has two separate questions, and a dataset can pass one while failing the other. Is the data current, and does it arrive inside the decision window?
+
+**Technique 1: Freshness measurement**
+
+For each asset, measure the lag between the real-world event and its availability for query. Report the distribution, not the average. A pipeline with a median lag of two minutes and a 99th percentile of six hours will fail the decisions that matter most.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+
+**Technique 2: SLA conformance rate**
+
+Where a freshness SLA exists, measure the proportion of intervals that met it. Where no SLA exists, that is the finding — write it up before scoring the dimension.
+
+**Technique 3: Decision-window fit**
+
+Compare the feature pipeline's delivery time against the time the decision must be made. This is the check that catches batch features wired into a real-time path. The data can be perfectly fresh by its own SLA and still arrive after the decision was needed.
+
+**Technique 4: Training-serving skew** *(if you train your own model)*
+
+Confirm that a feature computed at training time uses only information available at inference time. A feature built from a column populated after the event leaks the future into training, and performance drops sharply once the model is deployed.
+
+Timeliness scoring:
+
+```javascript
+Timeliness Score = (Records available inside the decision window /
+                    Total records required for the decision) x 100
+```
+
+Target for AI training data: 98% or above. Below 95%: flag for steward review.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+
+---
+
+### Step 7: Auditing for Validity
+
+Validity asks whether values conform to their declared domain — type, format, range, and reference list. It is the cheapest dimension to automate and the one most often skipped.
+
+**Technique 1: Schema and type conformance**
+
+Assert the declared type of every column and count violations. Text in a numeric field, and timestamps stored as free-text strings, are the common cases.
+
+**Technique 2: Range and boundary checks**
+
+Define a plausible range per numeric and date field, then count values outside it. Dates in 1900 or 2099 usually indicate legacy default handling rather than real events.
+
+**Technique 3: Format and pattern assertions**
+
+Apply regex to structured text fields — email, phone, postal code, identifiers. Report the pass rate per field so remediation targets the worst field first.
+
+**Technique 4: Reference list membership**
+
+Check coded fields against their authoritative list: ISO country codes, an internal product catalogue, a currency table. A code outside the list is invalid regardless of how consistently it appears.
+
+Validity scoring:
+
+```javascript
+Validity Score = (Values conforming to their domain rules /
+                  Total values checked) x 100
+```
+
+Target for AI training data: 99% or above. Below 95%: block from production AI use pending remediation.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+
+---
+
+### Step 8: Auditing for Uniqueness
+
+Uniqueness asks whether each real-world entity appears exactly once. Exact-key deduplication is the easy half; the duplicates that damage AI are the ones without a shared key.
+
+**Technique 1: Exact duplicate detection**
+
+Count records that are byte-identical across all fields, and records sharing a primary key. These are the trivially findable duplicates and should be zero.
+
+**Technique 2: Probabilistic entity resolution**
+
+Score record pairs on multiple attributes — name, address, contact details — and flag pairs above a match threshold. Tune the threshold against a manually labelled sample before trusting the rate.
+
+**Technique 3: Cross-source duplication**
+
+When a dataset is assembled from several systems, measure the duplication introduced by the assembly itself. This is where most invisible duplication comes from, and profiling a single source will never surface it.
+
+**Technique 4: Train/test leakage check** *(if you train your own model)*
+
+Search for near-duplicate records that landed on both sides of the split. Leakage here inflates evaluation metrics, so the model tests well and then underperforms in production.
+
+Uniqueness scoring:
+
+```javascript
+Uniqueness Score = (Distinct real-world entities identified /
+                    Total records in the dataset) x 100
+```
+
+Target for AI training data: 99% or above. Below 97%: block from production AI use pending remediation.  <!-- noev: recommended threshold / target / worked example / tool pricing, not a sourced statistic -->
+
+---
+
+### Step 9: Compute the Composite Quality Score
+
+The six dimension scores above combine into one figure for the dataset. The composite is a reporting device, not a gate — the per-dimension gates are what block a dataset.
+
+**Choosing the weights**
+
+Weights come from the use case's failure mode, not from a house default. Ask which dimension, if it degraded quietly, would do the most damage to this specific use case, and weight that one hardest.
+
+| Use case shape | Weight the most | Why |
+| --- | --- | --- |
+| Real-time decision through a system of record (fraud, pricing, personalisation) | Timeliness, accuracy | A correct answer delivered after the decision window is a wrong answer |
+| Batch prediction on assembled history (churn, propensity, forecasting) | Completeness, consistency | Gaps and taxonomy breaks are learned as signal |
+| Entity lookup and record action (service agents, account automation) | Uniqueness, validity | Acting on the wrong merged record is the failure that reaches a customer |
+
+Record the weights and the reasoning alongside the score. A weighting no one can explain is the first thing challenged when the score is used to block a project.
+
+**The composite formula**
+
+```javascript
+Composite Score = Σ (Dimension Score × Dimension Weight)
+```
+
+Worked example for a batch churn model, weighted toward completeness and consistency:
+
+| Dimension | Weight | Score | Weighted | Gate |
+| --- | --- | --- | --- | --- |
+| Accuracy | 25% | 82 | 20.5 | Blocked (below 90) |
+| Completeness | 20% | 91 | 18.2 | Flagged (below 95) |
+| Consistency | 20% | 74 | 14.8 | Blocked (below 90) |
+| Timeliness | 15% | 88 | 13.2 | Flagged (below 95) |
+| Validity | 10% | 95 | 9.5 | Pass |
+| Uniqueness | 10% | 78 | 7.8 | Blocked (below 97) |
+| **Composite** | **100%** |  | **84.0** | **Blocked** |
+
+This dataset scores 84.0 and is not fit for production AI use. Three dimensions sit below their blocking gate, and a reader looking only at the composite would not see any of them. Report the dimension scores beside the composite everywhere the composite appears. On its own, a single number invites exactly the wrong conclusion.
+
+**The threshold table**
+
+No standards body publishes the numbers below. ISO 8000-8:2015 is explicit that setting a
+threshold is your job, not the standard's:
+
+> When assessing whether the quality of information and data is sufficient, it is necessary to establish the threshold, pertinent to the business, for each object to be measured. This part of ISO 8000 does not set these thresholds. ([ISO, 2015](#ev-iso-8000-8-2015-does-not-set-thresholds))
+
+So treat the table as a starting point for the conversation, not a standard to comply with.
+It collects the gates used throughout this guide so they sit in one place. Tighten them where
+the failure consequence is severe, loosen them where it is trivial, and record either move as
+a governance decision with a named owner and a stated reason. A threshold you cannot justify
+against your own use case is a number you borrowed.
+
+| Dimension | Target | Flag for review | Block from production AI |
+| --- | --- | --- | --- |
+| Accuracy | 95%+ | below 95% | below 90% |
+| Completeness | 98%+ (primary fields) | below 95% | — |
+| Consistency | 95%+ | below 95% | below 90% |
+| Timeliness | 98%+ | below 95% | — |
+| Validity | 99%+ | below 99% | below 95% |
+| Uniqueness | 99%+ | below 99% | below 97% |
+| Composite | 85%+ | below 85% | — |
+
+---
+
+### Step 10: Document Findings
 
 For each finding document:
 
@@ -486,13 +681,6 @@ Enterprise:
 
 ## Sources
 
-- Atlan — Data Quality Audit: How To Get It Right (May 2025)
-- Atlan — Automated Data Quality: Fix Bad Data and Get AI-Ready (May 2025)
-- Atlan — Best Data Quality Tools for 2026 (March 2026)
-- OvalEdge — Data Quality Assessment: A 2026 Guide to AI-Ready Trusted Data (May 2026)
-- OvalEdge — Which Data Quality Monitoring Tool Is Right for You (June 2026)
-- Improvado — Data Quality Audit: The Complete Guide (April 2026)
-- LatentView — What Is Data Audit? (January 2026)
-- Airbyte — 4 Best Tools to Automate Data Quality Checks in ETL Pipelines (September 2025)
-- DataKitchen — The 2026 Open-Source Data Quality and Data Observability Landscape (October 2025)
-- Lumenalta — Data Quality Checklist (January 2026)
+<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
+
+- **ISO — *ISO 8000-8:2015, Data quality — Part 8: Information and data quality: Concepts and measuring*, 2015.** When assessing whether the quality of information and data is sufficient, it is necessary to establish the threshold, pertinent to the business, for each object to be measured. This part of ISO 8000 does not set these thresholds. [View source](https://cdn.standards.iteh.ai/samples/60805/be8fc414189e4e4b8383282034f68746/ISO-8000-8-2015.pdf){#ev-iso-8000-8-2015-does-not-set-thresholds} · verified 2026-08-23 · primary

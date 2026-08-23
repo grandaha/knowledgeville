@@ -11,6 +11,20 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v11.1.1 — 2026-08-23
+
+### Cleanup
+
+**Four pages lose a trailing glossary block that pointed nowhere.** [Lineage & Metadata](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata/), [Data Governance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance/), [Infrastructure Readiness](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/05-infrastructure-readiness/) and [Security & Compliance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/06-security-and-compliance/) each ended with a list of bolded terms telling you to see the glossary, with no link — and the glossary defined none of the terms named. Each page already defines those terms where you meet them, which is where they belong.
+
+**The [Glossary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/glossary/) now links to the pages its terms come from.** Its section introductions referred to "Component 02" through "Component 06", numbering from an earlier structure that no longer matched any page.
+
+### Corrections
+
+**[Lineage & Metadata](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata/) drops two unsourced passages** — one asserting what most enterprises had realised by 2026, one asserting what enterprises reporting AI value had done. The AI context layer section now explains what actually distinguishes a context layer from a catalog: an agent queries it mid-task, so it cannot afford the staleness a catalog can.
+
+**Its tooling table no longer carries an analyst award in the suitability column.** The award was accurate but held by more than one vendor in the same table, and that column describes fit.
+
 ## v11.1.0 — 2026-08-23
 
 ### New & expanded content

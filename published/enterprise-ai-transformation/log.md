@@ -1,5 +1,26 @@
 # Update Log
 
+## 2026-08-24
+* **Update**: [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md),
+  [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md),
+  [Infrastructure Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/05-infrastructure-readiness.md)
+  and [Security & Compliance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/06-security-and-compliance.md)
+  drop a trailing "New Glossary Terms from This Component" block. It listed terms in bold,
+  told the reader to see the glossary, and linked nothing — and the glossary defined none of
+  the terms it named. Each page already defines these terms in context, which is where they
+  belong.
+* **Update**: [Glossary](/enterprise-ai-transformation/glossary.md) section introductions no
+  longer refer to "Component 02", "Component 03" and so on. That numbering came from an
+  earlier structure and no longer matched any page. Each introduction now links to the page
+  its terms belong to.
+* **Update**: [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md)
+  cuts two passages that asserted what "most enterprises" had realised and what enterprises
+  reporting AI value had done, neither of which was sourced. The AI context layer section now
+  explains what makes it a layer rather than a catalog: an agent queries it mid-task, so it
+  cannot afford the staleness a catalog can. The tooling table also drops an analyst award
+  from one vendor's suitability note — that column describes fit, and the award was carried
+  for one vendor when others in the same table hold it too.
+
 ## 2026-08-23
 * **Update**: [Data Quality](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/01-data-quality.md)
   corrects a misattribution. The six quality dimensions were credited to DAMA-DMBOK; they

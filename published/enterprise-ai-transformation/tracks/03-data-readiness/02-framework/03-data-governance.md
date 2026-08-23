@@ -215,12 +215,6 @@ Retirement criteria met. Data retention obligations fulfilled. Model card update
 
 ---
 
-## New Glossary Terms from This Component
-
-See the Glossary page for definitions of: **Data Owner, Data Steward, Data Custodian, CDAO, DPO, Governance Council, Model Card, DPIA, Policy as Code, NIST AI RMF, EU AI Act, ISO/IEC 42001, Explainability, Auditability, Fairness Metrics, Prompt Injection**
-
----
-
 ## Sources
 
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->

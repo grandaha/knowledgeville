@@ -24,8 +24,6 @@ Without metadata, you can't answer the questions that matter most before AI star
 > **54%** of business leaders aren't totally confident the data they need is even accessible ([Salesforce, 2023](#ev-salesforce-state-data-analytics-2023-accessibility))
 > **70%** faster delivery of new data assets by organizations using active metadata analytics ([Gartner, 2022](#ev-gartner-active-metadata-2025-delivery))
 
-The 2026 consensus: organizations getting AI right are not treating lineage as a compliance checkbox. They are treating it as the infrastructure that makes everything else function. By 2026, most enterprises have realized that AI success depends far more on data engineering discipline than on model selection.
-
 ---
 
 ## The Four Types of Data Lineage
@@ -191,7 +189,7 @@ For AI agents, this context layer is what allows:
 - Permission verification before accessing it
 - Lineage-aware reasoning about whether a data asset is trustworthy for the current task
 
-The enterprises reporting real AI-driven value in 2026 stopped running new pilots and invested in this data foundation. The context layer — not the model — is the competitive differentiator.
+What makes this a layer rather than a catalog is that agents query it at runtime, as part of doing the task. A catalog a human reads before writing a query can afford to be a day stale. A context layer an agent consults mid-task cannot.
 
 ---
 
@@ -199,7 +197,7 @@ The enterprises reporting real AI-driven value in 2026 stopped running new pilot
 
 | Tool | Category | Lineage Depth | Best for |
 | --- | --- | --- | --- |
-| **Atlan** | Catalog + Active Metadata | Column-level | Gartner MQ Leader 2026; AI-native context layer; best overall for modern stacks |
+| **Atlan** | Catalog + Active Metadata | Column-level | AI-native context layer; strong fit for modern cloud stacks |
 | **Collibra** | Governance platform | Column-level | Regulated enterprises with mature governance; strong stewardship workflows |
 | **Alation** | Data Intelligence | Table + Column | Analytics-first organizations; strong discovery and glossary |
 | **Microsoft Purview** | Cloud governance | Table + Column | Microsoft-centric environments; cloud-native |
@@ -233,12 +231,6 @@ The enterprises reporting real AI-driven value in 2026 stopped running new pilot
 - [ ] Operational metadata monitored — pipeline health and SLA status visible
 - [ ] Business and technical metadata views available for both stewards and engineers
 - [ ] Lineage coverage measured — what percentage of AI-relevant assets have documented lineage?
-
----
-
-## New Glossary Terms from This Component
-
-See the Glossary page for definitions of: **Technical Lineage, Business Lineage, Operational Lineage, End-to-End Lineage, Column-Level Lineage, Impact Analysis, Active Metadata, Business Glossary, Model Lineage, Context Layer, OpenLineage**
 
 ---
 

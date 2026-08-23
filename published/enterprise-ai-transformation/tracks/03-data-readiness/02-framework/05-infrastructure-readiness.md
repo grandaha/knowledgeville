@@ -166,7 +166,7 @@ The monitoring and alerting layer that tracks infrastructure health, model perfo
 
 ### Layer 7: Governance & Compliance Infrastructure
 
-The enforcement layer that ensures AI systems operate within approved parameters — access controls, audit logging, approval workflows, and incident response. Covered in depth in Component 02 — the infrastructure requirements are:
+The enforcement layer that ensures AI systems operate within approved parameters — access controls, audit logging, approval workflows, and incident response. Covered in depth in [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md) — the infrastructure requirements are:
 
 - Role-based access controls on all training and inference environments
 - Immutable audit logs for model training runs, deployment events, and inference requests
@@ -260,12 +260,6 @@ Most organizations entering AI in 2025–2026 are at Level 0–1. Production-gra
 - [ ] Governance approval workflow gates before production deployment
 - [ ] Incident response plan tested for AI-specific failure modes
 - [ ] Infrastructure maturity level assessed — gap to Level 3 documented and roadmapped
-
----
-
-## New Glossary Terms from This Component
-
-See the Glossary page for definitions of: **MLOps, LLMOps, AgentOps, Experiment Tracking, Model Registry, Feature Store, Serving Infrastructure, Guardrails, Semantic Logging, Prompt Versioning, Canary Deployment, A/B Testing (AI), Token Cost Monitoring**
 
 ---
 

@@ -274,7 +274,7 @@ Requires high-quality, low-latency data pipelines — the loop only works if the
 
 ## SECTION 3 — Governance, Compliance & Accountability
 
-Terms introduced in Component 02 — Data Governance.
+Terms used in [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md).
 
 ---
 
@@ -376,7 +376,7 @@ An attack where malicious content embedded in data retrieved by an AI agent mani
 
 ## SECTION 4 — Data Architecture & Integration
 
-Terms that will appear in Component 03 — Access & Integration.
+Terms used in [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-access-and-integration.md).
 
 ---
 
@@ -447,7 +447,7 @@ The formal definition of how data is structured — field names, data types, rel
 
 ## SECTION 5 — Lineage, Metadata & Semantic Layer
 
-Terms that will appear in Component 04 — Lineage & Metadata.
+Terms used in [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md).
 
 ---
 
@@ -502,7 +502,7 @@ A database purpose-built for storing and querying vector embeddings. Supports si
 
 ## SECTION 6 — Infrastructure & Operations
 
-Terms that will appear in Component 05 — Infrastructure Readiness.
+Terms used in [Infrastructure Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/05-infrastructure-readiness.md).
 
 ---
 
@@ -548,7 +548,7 @@ The time elapsed between a request being made and a response being received. In 
 
 ## SECTION 7 — Security, Privacy & Compliance
 
-Terms that will appear in Component 06 — Security & Compliance.
+Terms used in [Security & Compliance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/06-security-and-compliance.md).
 
 ---
 
@@ -683,7 +683,7 @@ A security model built on the principle of "never trust, always verify." No user
 
 ## SECTION 8 — Integration Patterns & Architecture
 
-New terms introduced in Component 03 — Access & Integration.
+Further terms used in [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-access-and-integration.md).
 
 ---
 

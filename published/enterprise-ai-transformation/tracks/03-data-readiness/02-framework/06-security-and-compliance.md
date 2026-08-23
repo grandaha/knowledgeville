@@ -231,12 +231,6 @@ Beyond access control and governance, several technical approaches reduce privac
 
 ---
 
-## New Glossary Terms from This Component
-
-See the Glossary page for definitions of: **Data Poisoning, Model Inversion, Membership Inference, Differential Privacy, Federated Learning, Synthetic Data, Data Minimization, AI Supply Chain Attack, Purpose Limitation, Right to Erasure (AI), ABAC, Inference Data Leakage, Zero Trust**
-
----
-
 ## Sources
 
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->

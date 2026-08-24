@@ -3,13 +3,27 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-08-23"
+timestamp: "2026-08-24"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v11.1.2 — 2026-08-24
+
+### Corrections
+
+A sweep for unsourced claims turned up a pattern the existing checks could not see: assertions that are load-bearing but contain no number, so nothing flagged them.
+
+**[Access & Integration](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-access-and-integration/) now credits Deloitte for a passage that was presented as anonymous consensus.** The paragraph describing the data architecture AI leaders are converging on read as "the 2026 consensus" with no source. It is a near-verbatim paraphrase of Deloitte's State of AI in the Enterprise 2026 — a survey of 3,235 leaders across 24 countries — which is now verified and cited.
+
+**Two further "2026 consensus" claims are gone.** A second passage on that page, and one in [Data Mesh Governance in Practice](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-mesh-governance-in-practice/), asserted a consensus sourced to "multiple implementation reports" or to nobody at all. Both now read as what they always were: this framework's recommendation.
+
+**[AI Governance & Risk](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/01-executive-summary/) drops an invented figure.** It claimed most enterprises run governance "three to four years behind" their AI deployments. Nothing supported that number. The point it was making — that governance is routinely stood up after the AI it governs — stands without it.
+
+**[The AI Governance Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework/) no longer opens on an unsourced proportion.** It asserted what share of enterprise AI is assembled from third-party components. The concrete list that follows makes the case without needing a measured figure.
 
 ## v11.1.1 — 2026-08-23
 

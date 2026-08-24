@@ -8,7 +8,7 @@ timestamp: "2026-06-15"
 
 ## The Problem
 
-Most organizations do not lack AI ambition. They lack a *process* for turning ambition into a funded, sequenced, governed plan — so the ambition scatters into disconnected pilots that never compound into value.
+Most organizations do not lack AI ambition. They lack a *process* for turning ambition into a funded, sequenced, governed plan — so the ambition scatters into disconnected pilots that never compound into value.  <!-- noclaim: rhetorical framing of the guide's premise, not a measured prevalence -->
 
 > Only **25%** of AI initiatives have delivered the ROI organizations expected over the last few years, and only **16%** have scaled enterprise-wide ([IBM Institute for Business Value, 2025](#ev-ibm-ibv-ceo-2025-enterprise-scale))
 

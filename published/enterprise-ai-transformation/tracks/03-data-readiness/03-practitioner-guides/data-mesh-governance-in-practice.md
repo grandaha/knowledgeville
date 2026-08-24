@@ -125,7 +125,7 @@ These two are frequently confused and sometimes positioned as competing. They so
 
 **Data fabric** is a technical integration layer. It answers: how do consumers — human analysts or AI agents — access data across disparate sources through a unified interface.
 
-They work best together. The 2026 consensus from multiple implementation reports: use data mesh to distribute ownership and accountability across domain teams, and data fabric to provide the unified access and discovery layer that agents and analytics systems consume. Mesh sets the governance rules. Fabric enforces consistent access to the resulting products.
+They work best together: use data mesh to distribute ownership and accountability across domain teams, and data fabric to provide the unified access and discovery layer that agents and analytics systems consume. Mesh sets the governance rules. Fabric enforces consistent access to the resulting products.
 
 ---
 

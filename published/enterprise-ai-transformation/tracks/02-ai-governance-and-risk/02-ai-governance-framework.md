@@ -47,7 +47,7 @@ The components of a mature AI model risk program, whether or not your industry i
 
 ## Vendor and Third-Party AI Risk
 
-The majority of enterprise AI is now assembled from third-party components. Enterprises access foundation models from OpenAI, Anthropic, Google, and others via API. They procure AI-enabled SaaS products — HR platforms, underwriting tools, fraud detection systems — without always knowing what models are embedded in them or how those models behave. They run AI in cloud infrastructure managed by hyperscalers under shared-responsibility models that frequently leave governance accountability ambiguous.
+Enterprise AI is assembled, not built. Enterprises access foundation models from OpenAI, Anthropic, Google, and others via API. They procure AI-enabled SaaS products — HR platforms, underwriting tools, fraud detection systems — without always knowing what models are embedded in them or how those models behave. They run AI in cloud infrastructure managed by hyperscalers under shared-responsibility models that frequently leave governance accountability ambiguous.
 
 > **49%** of financial institutions experienced a vendor-related cyber incident in the past year ([Ncontracts, 2025](#ev-ncontracts-tprm-survey-2025-vendor-cyber-incident))
 > **73%** of organizations have two or fewer full-time employees managing vendor risk, even though more than half oversee more than 300 vendors ([Ncontracts, 2025](#ev-ncontracts-tprm-survey-2025-vendor-risk-staffing))

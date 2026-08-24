@@ -26,7 +26,7 @@ Wall Street has written off the IT-services firms that enterprises actually need
 
 1. **Wall Street has rerated services as obsolete.** The market prices AI-native firms at huge multiples and big services firms at a fraction. Accenture posted a solid quarter and the stock still fell hard. Good numbers, punished anyway, because the story turned against the category.
 
-2. **Main Street's reality contradicts the story.** On the ground, almost no one runs AI at scale. Most enterprises are still experimenting, most lack a coherent strategy, and most pilots never ship. The valuations assume an adoption that has not happened.
+2. **Main Street's reality contradicts the story.** On the ground, almost no one runs AI at scale. Most enterprises are still experimenting, most lack a coherent strategy, and most pilots never ship. The valuations assume an adoption that has not happened.  <!-- noclaim: restates the source article's own reasoning, attributed above -->
 
 3. **The blocker is accumulated "enterprise debt."** The real obstacle is not the models. It is a backlog of debt across technology, data, process, and talent. Messy systems and messy data are why pilots stall. AI cannot paper over that. Someone has to fix the foundations first.
 

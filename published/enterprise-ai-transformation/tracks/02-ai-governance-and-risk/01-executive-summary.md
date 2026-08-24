@@ -10,7 +10,7 @@ timestamp: "2026-06-16"
 
 ---
 
-AI governance is no longer an IT control. It is a board-level risk management function — and most enterprises are running it three to four years behind where their AI deployments already are.
+AI governance is no longer an IT control. It is a board-level risk management function, and it is routinely stood up long after the AI it is meant to govern.
 
 > **Only 43%** of organizations have a formal AI governance policy in place ([PEX Network, 2025](#ev-pex-network-2025-ai-governance-policy))
 > **66%** of directors report having "limited to no knowledge or experience" with AI ([Deloitte, 2025](#ev-deloitte-governance-ai-2025-board-knowledge-gap))
@@ -41,7 +41,7 @@ The difference is not primarily one of resources. Organizations that established
 
 ## What leadership should take from this
 
-- Establish or formally charter an AI governance function — even a lightweight one — before the August 2026 EU AI Act high-risk deadline. Most enterprises are still in the gap between "working on it" and "formally accountable."
+- Establish or formally charter an AI governance function — even a lightweight one — before the August 2026 EU AI Act high-risk deadline. The gap to close is between "working on it" and "formally accountable."
 - Conduct an AI system inventory now. You cannot govern, monitor, or report on systems you do not know exist.
 - Extend vendor due diligence to cover AI-specific terms: training data provenance, data retention, model update notification, output liability, and right to audit.
 - Publish an acceptable use policy. It is the single highest-leverage low-cost governance action available, and most organizations do not have one.

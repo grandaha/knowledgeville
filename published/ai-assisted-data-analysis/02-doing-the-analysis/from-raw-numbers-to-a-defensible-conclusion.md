@@ -8,7 +8,7 @@ timestamp: "2026-07-06"
 
 ## What separates a summary from a conclusion
 
-A summary restates what the data shows. A conclusion claims something about why it shows that, or what it means for a decision. [Asking Good Analytical Questions](/ai-assisted-data-analysis/02-doing-the-analysis/asking-good-analytical-questions.md) gets you a specific, checkable answer. That answer is not yet a conclusion. "Revenue in the Northeast region grew twelve percent" is a summary, even though it is specific. "Revenue in the Northeast grew because of the new pricing tier" is a conclusion, and it makes a claim the numbers alone cannot settle.
+A summary restates what the data shows. A conclusion claims something about why it shows that, or what it means for a decision. [Asking Good Analytical Questions](/ai-assisted-data-analysis/02-doing-the-analysis/asking-good-analytical-questions.md) gets you a specific, checkable answer. That answer is not yet a conclusion. "Revenue in the Northeast region grew twelve percent" is a summary, even though it is specific. "Revenue in the Northeast grew because of the new pricing tier" is a conclusion, and it makes a claim the numbers alone cannot settle.  <!-- noclaim: defining what a summary is, not citing data -->
 
 The gap between the two is the actual work of analysis. A model can produce the first sentence from the data directly. The second sentence requires ruling out other explanations, which the model cannot do for you. That is why reaching a defensible conclusion takes more than one exchange with the tool.
 

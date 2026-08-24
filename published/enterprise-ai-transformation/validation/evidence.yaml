@@ -3825,3 +3825,15 @@
     pdf_hash: 58c865712c270eee27408348c3a5d11c449c6cf311b7e2813df4fd38543f6c60
   verified: 2026-08-23
   status: primary
+- id: ev-deloitte-state-ai-enterprise-2026-data-architecture
+  claim: "The data architecture Deloitte reports AI leaders are converging on"
+  value: "qualitative"
+  wording: "Leaders are enabling modular, cloud-native platforms that securely connect, govern, and integrate all data types. They break down silos with domain-owned data products and embed privacy, sovereignty, and security-by-design, while enforcing enterprise standards for quality, interoperability, and lineage."
+  source:
+    org: Deloitte
+    report: "The State of AI in the Enterprise 2026 (3,235 leaders across 24 countries, fielded August-September 2025)"
+    edition: 2026
+    url: https://www.deloitte.com/global/en/issues/generative-ai/state-of-ai-in-enterprise.html
+    pdf_hash:
+  verified: 2026-08-24
+  status: primary

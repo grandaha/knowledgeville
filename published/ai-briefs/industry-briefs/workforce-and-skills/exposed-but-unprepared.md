@@ -20,7 +20,7 @@ Twenty-seven million big-company jobs are exposed to AI. The scarier finding is 
 
 ## The argument
 
-**The thesis.** The exposure number is not the story. The story is that most large companies are cutting jobs under an AI banner without the strategy to back it up. HFS calls that "leadership debt," and it lands hardest on the workers least able to absorb it.
+**The thesis.** The exposure number is not the story. The story is that most large companies are cutting jobs under an AI banner without the strategy to back it up. HFS calls that "leadership debt," and it lands hardest on the workers least able to absorb it.  <!-- noclaim: restates the source's thesis, attributed to HFS in the same line -->
 
 **The reasoning, step by step:**
 
@@ -38,7 +38,7 @@ Twenty-seven million big-company jobs are exposed to AI. The scarier finding is 
 
 ## The evidence behind it
 
-Every figure here comes from one place: HFS Research's own study of 505 AI leaders across the Global 2000. There is no third-party data, so read these as one firm's estimates and model, not an industry consensus.
+Every figure here comes from one place: HFS Research's own study of 505 AI leaders across the Global 2000. There is no third-party data, so read these as one firm's estimates and model, not an industry consensus.  <!-- noclaim: a caveat denying industry consensus, not asserting one -->
 
 - **27 million** roles "meaningfully exposed to AI-driven elimination, displacement, or fundamental redesign" over three years ([HFS, 2026](#ev-hfs-jobs-exposed-2026)). *(HFS's own estimate. Note the definition bundles job loss with job change — see the trust section.)*
 - **14%** have a clear strategy; the rest split into developing-and-inconsistent (**39%**), pockets with no direction (**32%**), and none at all (**15%**) ([HFS, 2026](#ev-hfs-jobs-exposed-2026)). *(From the survey of 505 leaders.)*

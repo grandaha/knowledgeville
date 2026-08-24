@@ -1,6 +1,24 @@
 # Update Log
 
 ## 2026-08-24
+* **Update**: [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-access-and-integration.md)
+  now attributes its data-architecture direction to Deloitte's State of AI in the Enterprise
+  2026 — a survey of 3,235 leaders across 24 countries — and cites it. The passage previously
+  paraphrased that report almost verbatim under the heading "the 2026 consensus", with no
+  citation. A second passage on that page, and one in
+  [Data Mesh Governance in Practice](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-mesh-governance-in-practice.md),
+  also claimed a "2026 consensus" — one sourced to "multiple implementation reports" and one
+  to nobody. Both now read as what they are: this framework's recommendation.
+* **Update**: [AI Governance & Risk: Executive Summary](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/01-executive-summary.md)
+  drops the claim that most enterprises run governance "three to four years behind" their AI
+  deployments. Nothing supported the figure. The point it was making — that governance is
+  routinely stood up after the AI it governs — survives without the invented precision.
+* **Update**: [AI Governance Framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md)
+  no longer opens on an unsourced claim about what share of enterprise AI is assembled from
+  third-party components. The concrete list that follows — foundation models via API, AI-enabled
+  SaaS, hyperscaler infrastructure — makes the case without needing a measured proportion.
+
+## 2026-08-24
 * **Update**: [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md),
   [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md),
   [Infrastructure Readiness](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/05-infrastructure-readiness.md)

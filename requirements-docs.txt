@@ -1,5 +1,5 @@
-# Build-only dependencies for the MkDocs wiki (NOT used by the OKF tooling,
-# which stays zero-dependency stdlib). mkdocs-material >= 9.5 requires
+-r requirements.txt
+# Build-only dependencies for the MkDocs wiki (build-only; the OKF tooling's own deps are in requirements.txt). mkdocs-material >= 9.5 requires
 # MkDocs >= 1.6, needed for validation.links.absolute_links: relative_to_docs.
 mkdocs-material>=9.5,<10
 # Clean section nav labels (titles from .pages, not directory names).

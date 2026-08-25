@@ -15,7 +15,7 @@
 #
 # First-class infrastructure (no OKF frontmatter, not indexed). Read by scripts/evidence.py and
 # scripts/build_tracked_sources.py (which generates the public validation/tracked-sources.md).
-# Same stdlib parser as evidence.yaml — NO inline `#` comments on data lines.
+# Same yaml.safe_load reader as evidence.yaml.
 #
 # ── Schema (one entry per recurring franchise) ──────────────────────────────────────────────
 #   - id:             kebab-case, `src-`-prefixed, globally unique.

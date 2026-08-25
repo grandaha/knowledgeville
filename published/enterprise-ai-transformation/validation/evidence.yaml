@@ -39,11 +39,7 @@
 #                never seeded) — that is informational and is NOT validated, so it never errors.
 #
 #   Do NOT store `cited_by` — back-references are computed on demand by a query script.
-#   Do NOT put inline `#` comments on the `id:`, `expires:`, or any data line: PyYAML is not
-#   available in CI, so the gate reads this file with a line-based parser (like the one in
-#   scripts/okf_common.py, which does not strip trailing `# ...`). An inline comment would be
-#   folded into the field value and corrupt the id / break the date parse. Full-line comments
-#   (a `#` in column 0, like these) are always fine.
+#   Read with yaml.safe_load; inline comments and block lists are supported.
 # ──────────────────────────────────────────────────────────────────────────────────────────
 
 - id: ev-mckinsey-state-of-ai-2025-adoption

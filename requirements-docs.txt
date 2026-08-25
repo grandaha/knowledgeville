@@ -1,4 +1,6 @@
--r requirements.txt
+# NOTE: do NOT add `-r requirements.txt` here. This file SHIPS to the public
+# repo (publish.LOOSE_FILES) but requirements.txt does not, so the chain breaks
+# the public Pages build. For a local preview venv, install BOTH files.
 # Build-only dependencies for the MkDocs wiki (build-only; the OKF tooling's own deps are in requirements.txt). mkdocs-material >= 9.5 requires
 # MkDocs >= 1.6, needed for validation.links.absolute_links: relative_to_docs.
 mkdocs-material>=9.5,<10

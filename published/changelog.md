@@ -3,13 +3,52 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-08-24"
+timestamp: "2026-08-25"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.0.0 — 2026-08-25
+
+## Knowledgeville is now an OKF v0.2 knowledge base
+
+The [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) released v0.2, and this knowledge base has moved to it. The headline change is that **provenance is now part of the format itself**, not just a local habit.
+
+### Every page now carries machine-readable provenance
+
+Open any page's source and you will find, in its frontmatter:
+
+- **`generated`** — which model wrote it, and when it last meaningfully changed
+- **`verified`** — who checked its claims against their primary sources, and on what date
+- **`sources`** — the sources behind the page, as structured data rather than only a list at the bottom
+- **`stale_after`** — a freshness horizon, where every source behind the page carries one
+
+An agent or a person reading a bundle can now ask what has been checked, and by whom, without trusting a summary. Across the published bundle that resolves to **103 pages human-reviewed** and **105 unverified** — the honest split, not a target. A page with no cited evidence carries no verification claim, because in OKF an absent field means something.
+
+### Two pages were wrong, and v0.2 is why
+
+The OKF bundle explains the format, and it had predicted this direction. Its own words:
+
+> *"There is no standardized verification or trust layer, so a reader cannot check a bundle's claims through the format itself."*
+
+That gap is now closed, so both pages that described it have been rewritten:
+
+- **[Provenance and Trust](https://knowledge.onesteplabs.com/open-knowledge-format/01-understanding-okf/03-provenance-and-trust/)** — said none of our verification practice was required by the format. The spec has since moved toward it.
+- **[Where OKF Could Go](https://knowledge.onesteplabs.com/open-knowledge-format/02-the-potential/02-where-okf-could-go/)** — its "gaps today" section now records what v0.2 closed and what is still open.
+
+The distinction that survives, and is now the honest open question: the format records *that* a check happened. It cannot tell you the check was any good. "Verified" remains the publisher's assertion, and a reader still has no way to weigh one publisher's against another's.
+
+### Two rendering corrections
+
+A parser fault had been corrupting two live pages:
+
+- **[Decision Guides](https://knowledge.onesteplabs.com/decision-guides/)** — a listing showed `\"forward deployed\"` with literal backslashes
+- **[The Talent Obsession](https://knowledge.onesteplabs.com/ai-briefs/industry-briefs/workforce-and-skills/the-talent-obsession/)** — a quoted source line had lost its closing quotation mark
+
+Both now render as written.
 
 ## v11.1.2 — 2026-08-24
 

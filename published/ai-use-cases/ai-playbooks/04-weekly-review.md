@@ -4,6 +4,9 @@ title: Weekly Review
 description: "Have your assistant summarize your week and set up next week's priorities from your calendar and sent mail."
 tags: [ai-playbooks, weekly]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 This playbook has your assistant close out your week and start the next one. It reads the week's calendar and your sent mail, tells you what moved and what slipped, then drafts next week's priorities for you to confirm.

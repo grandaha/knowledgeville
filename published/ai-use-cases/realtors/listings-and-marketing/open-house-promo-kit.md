@@ -4,6 +4,9 @@ title: "Open-House Promo Kit"
 description: "Generate flyer, email, and social copy to promote an open house."
 tags: [listings-and-marketing, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

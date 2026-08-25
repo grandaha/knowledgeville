@@ -4,6 +4,9 @@ title: "Building a Method, Not a Lucky Prompt"
 description: "Turning a one-off prompt that happened to work into a documented method you can run again with confidence."
 tags: [ai-assisted-data-analysis, repeatability]
 timestamp: "2026-07-07"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-07T00:00:00Z"
 ---
 
 ## What makes a prompt lucky rather than reliable

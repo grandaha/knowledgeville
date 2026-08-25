@@ -4,6 +4,9 @@ title: Citation Sweep — The AI Adoption Gap
 description: "Verification of every figure in the first AI Industry Brief against its primary source, the HFS Research article."
 tags: [audit, citations, validation, market-and-adoption]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## Purpose

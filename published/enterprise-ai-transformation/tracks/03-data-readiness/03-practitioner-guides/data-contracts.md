@@ -4,6 +4,9 @@ title: Data Contracts
 description: A practitioner guide to data contracts — formal, enforced agreements between data producers and consumers that prevent silent breaking changes, expressed as code.
 tags: [data-contracts, data-governance, schema, data-quality, mlops]
 timestamp: "2026-06-12"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-12T00:00:00Z"
 ---
 
 ## The Problem

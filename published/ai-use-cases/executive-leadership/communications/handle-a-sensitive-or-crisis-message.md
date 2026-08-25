@@ -4,6 +4,9 @@ title: Handle a Sensitive or Crisis Message
 description: Work through a sensitive or crisis message carefully before it goes out.
 tags: [communications, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

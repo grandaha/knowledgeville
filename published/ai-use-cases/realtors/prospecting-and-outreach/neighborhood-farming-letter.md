@@ -4,6 +4,9 @@ title: "Neighborhood Farming Letter"
 description: "Draft a farming letter or postcard for a target neighborhood."
 tags: [prospecting-and-outreach, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

@@ -4,6 +4,9 @@ title: Follow-up Tracker
 description: "Have your assistant scan your mail for open loops and tell you who owes whom."
 tags: [ai-playbooks, email]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 This playbook is a weekly scan of your recent mail that surfaces open loops. It reads what came in and what you sent. Then it tells you who is waiting on a reply, and what you are still waiting to hear back on. Good for when you suspect a few things have slipped but cannot say which.

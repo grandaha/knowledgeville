@@ -5,6 +5,9 @@ description: How this sub-domain is organized — six leadership functions and w
 tags: [executive-leadership, architecture]
 timestamp: "2026-06-28"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 This page is the map. It shows how **Executive Leadership** is organized so you can go straight to the work in front of you — a board update due Friday, a budget review to prep, a hard conversation you've been putting off.

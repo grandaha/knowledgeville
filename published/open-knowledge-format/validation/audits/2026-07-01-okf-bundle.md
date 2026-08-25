@@ -5,6 +5,9 @@ description: "First citation audit of the seven-page OKF bundle against the cano
 tags: [validation, audit]
 timestamp: "2026-07-01"
 appendix: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 **Scope:** the architecture page and all six leaf pages of the Open Knowledge Format bundle.

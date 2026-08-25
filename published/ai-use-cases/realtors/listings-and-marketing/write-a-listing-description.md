@@ -4,6 +4,9 @@ title: Write a Listing Description
 description: "Turn property facts into a compelling, fair-housing-compliant listing description."
 tags: [listings-and-marketing, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

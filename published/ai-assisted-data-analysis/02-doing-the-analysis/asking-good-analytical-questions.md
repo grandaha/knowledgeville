@@ -4,6 +4,9 @@ title: Asking Good Analytical Questions
 description: "How the shape of the question you ask determines whether AI does real analysis or produces a vague summary."
 tags: [ai-assisted-data-analysis, analysis-technique]
 timestamp: "2026-07-06"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-06T00:00:00Z"
 ---
 
 ## The difference between a summary request and an analytical question

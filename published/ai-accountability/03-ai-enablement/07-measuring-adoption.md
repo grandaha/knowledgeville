@@ -4,6 +4,9 @@ title: Measuring Adoption
 description: "What to instrument and what good targets look like: depth of use over logins, early signals of a stall, and reporting up."
 tags: [enablement, measurement, metrics]
 timestamp: "2026-07-02"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-02T00:00:00Z"
 ---
 
 You cannot manage adoption you cannot see, and the easiest thing to measure is the least useful. Logins tell you people opened the tool. They say nothing about whether the work changed. A useful measurement stack tracks depth of use, warns you early when a rollout is stalling, and gives your sponsor a number they trust.

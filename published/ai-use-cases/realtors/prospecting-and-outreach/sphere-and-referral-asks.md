@@ -4,6 +4,9 @@ title: "Sphere and Referral Asks"
 description: "Write messages to your sphere that ask for referrals without being pushy."
 tags: [prospecting-and-outreach, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

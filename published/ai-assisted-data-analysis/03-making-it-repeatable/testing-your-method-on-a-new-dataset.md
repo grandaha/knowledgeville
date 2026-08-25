@@ -4,6 +4,9 @@ title: Testing Your Method on a New Dataset
 description: "Why a method that worked once needs a second, different dataset before you trust it as repeatable."
 tags: [ai-assisted-data-analysis, repeatability]
 timestamp: "2026-07-07"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-07T00:00:00Z"
 ---
 
 ## Why one success does not prove a method

@@ -4,6 +4,9 @@ title: Make a Plan or Checklist
 description: Turn a goal into an actionable plan or checklist.
 tags: [planning, checklists]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

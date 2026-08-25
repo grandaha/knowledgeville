@@ -4,6 +4,9 @@ title: Pressure-Test a Plan with Scenarios
 description: "Stress a plan against best-, base-, and worst-case scenarios before you commit."
 tags: [strategy-planning, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

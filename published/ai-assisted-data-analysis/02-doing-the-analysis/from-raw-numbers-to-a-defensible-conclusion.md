@@ -4,6 +4,9 @@ title: From Raw Numbers to a Defensible Conclusion
 description: "Going beyond a surface-level summary to a conclusion you could actually explain and stand behind, including the checklist question that catches an overstated trend or a mistaken correlation."
 tags: [ai-assisted-data-analysis, analysis-technique]
 timestamp: "2026-07-06"
+generated:
+  by: claude-code/claude-opus-5
+  at: "2026-07-06T00:00:00Z"
 ---
 
 ## What separates a summary from a conclusion

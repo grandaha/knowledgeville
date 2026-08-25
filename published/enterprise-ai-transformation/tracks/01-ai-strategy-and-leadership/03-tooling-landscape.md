@@ -4,6 +4,9 @@ title: Tooling & Frameworks Landscape
 description: A survey of the strategy and maturity frameworks, roadmapping and portfolio tools, board communication tools, and ROI modeling tools used to direct enterprise AI — most general-purpose, applied to AI.
 tags: [ai-strategy, tooling, frameworks, roadmapping, roi]
 timestamp: "2026-06-15"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-15T00:00:00Z"
 ---
 
 ## How to Use This Landscape

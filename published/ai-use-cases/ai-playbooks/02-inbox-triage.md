@@ -4,6 +4,9 @@ title: Inbox Triage
 description: "Have your assistant sort your unread mail into reply-now, read-later, and ignore, and surface what matters."
 tags: [ai-playbooks, email]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 This playbook has your assistant read your unread mail and sort it, so you open your inbox to a plan instead of a pile. It groups everything into three buckets and surfaces the few messages that actually need you. It sorts and reports; it never touches your inbox.

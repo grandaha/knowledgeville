@@ -5,6 +5,9 @@ description: "How AI accountability is split across roles in an organization, an
 tags: [ai-accountability, architecture]
 timestamp: "2026-07-02"
 lead: true
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-02T00:00:00Z"
 ---
 
 This page is the map. It shows how **AI Accountability** is organized so you can find the

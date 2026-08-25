@@ -4,6 +4,9 @@ title: Weigh Pros & Cons
 description: Get a balanced pros-and-cons read on a decision.
 tags: [decisions, pros-cons]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

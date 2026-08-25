@@ -4,6 +4,9 @@ title: Brainstorm Angles & Ideas
 description: Generate a spread of fresh ideas or angles on a topic.
 tags: [brainstorming, ideation]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

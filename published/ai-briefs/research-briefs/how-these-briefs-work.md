@@ -5,6 +5,9 @@ description: "What every brief contains, how to read it, and how much to trust i
 tags: [research-briefs, architecture]
 timestamp: "2026-06-29"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-29T00:00:00Z"
 ---
 
 Every brief in this bundle follows the same shape. Once you know it, you can read any

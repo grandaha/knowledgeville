@@ -4,6 +4,9 @@ title: Turn a Finance Deck into a One-Page Read
 description: Compress a long finance deck into a one-page read you can act on.
 tags: [finance-performance, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

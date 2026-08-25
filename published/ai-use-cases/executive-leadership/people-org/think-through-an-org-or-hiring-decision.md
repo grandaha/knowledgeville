@@ -4,6 +4,9 @@ title: Think Through an Org or Hiring Decision
 description: Lay out the options and trade-offs behind an org-design or senior-hire decision.
 tags: [people-org, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

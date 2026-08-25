@@ -4,6 +4,9 @@ title: Write a Decision Memo
 description: Turn a pending call into a crisp decision memo others can act on.
 tags: [decisions-meetings, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

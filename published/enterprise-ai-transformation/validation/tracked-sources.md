@@ -5,6 +5,9 @@ description: Public registry of the recurring research franchises this knowledge
 tags: [validation, citations, sources, freshness]
 timestamp: "2026-06-20"
 appendix: true
+generated:
+  by: process:build_tracked_sources
+  at: "2026-06-20T00:00:00Z"
 ---
 
 <!-- generated from validation/sources.yaml — do not edit; run scripts/build_index.py -->

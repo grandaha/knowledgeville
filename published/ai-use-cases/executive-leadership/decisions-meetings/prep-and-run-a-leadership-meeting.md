@@ -4,6 +4,9 @@ title: Prep and Run a Leadership Meeting
 description: Build an agenda and pre-read so a leadership meeting drives to decisions.
 tags: [decisions-meetings, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

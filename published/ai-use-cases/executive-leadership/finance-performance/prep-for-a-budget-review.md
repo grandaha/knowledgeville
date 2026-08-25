@@ -4,6 +4,9 @@ title: Prep for a Budget Review
 description: Walk into a budget review knowing the trade-offs and the calls you need to make.
 tags: [finance-performance, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

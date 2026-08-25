@@ -4,6 +4,9 @@ title: Write a Polite No
 description: Decline a request kindly but clearly.
 tags: [communication, boundaries]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

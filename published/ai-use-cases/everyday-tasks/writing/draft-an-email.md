@@ -4,6 +4,9 @@ title: Draft an Email
 description: Turn a few bullet points into a finished email you can send.
 tags: [email, writing]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

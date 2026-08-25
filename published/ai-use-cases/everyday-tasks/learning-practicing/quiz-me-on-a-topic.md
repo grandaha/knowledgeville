@@ -4,6 +4,9 @@ title: Quiz Me on a Topic
 description: Have AI test you to lock in what you're learning.
 tags: [learning, practice]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

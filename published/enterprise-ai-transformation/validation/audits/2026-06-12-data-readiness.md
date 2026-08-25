@@ -4,6 +4,9 @@ title: Data Readiness — June 2026
 description: Validation sweep of the statistics, references, and sourced claims in the Data Readiness track.
 tags: [audit, citations, validation, data-readiness]
 timestamp: "2026-06-12"
+generated:
+  by: claude-code/claude-sonnet-4.6
+  at: "2026-06-12T00:00:00Z"
 ---
 
 ## Purpose

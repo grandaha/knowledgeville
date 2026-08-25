@@ -4,6 +4,9 @@ title: "Prep Board / Investor Q&A"
 description: "Anticipate the hard questions a board or investor will ask, and your answers."
 tags: [board-investor, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

@@ -4,6 +4,9 @@ title: Meeting Prep
 description: "Have your assistant build a one-page brief for your next meeting from the invite, emails, and linked docs."
 tags: [ai-playbooks, meetings]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 This playbook has your assistant build a one-page brief for your next meeting. It pulls the invite, the related emails, and any shared docs, then tells you who is in the room, why, and what is still open. Read it in the minute before you walk in.

@@ -4,6 +4,9 @@ title: Write an All-Hands or Exec Message
 description: "Draft a clear, on-tone all-hands or company-wide message."
 tags: [communications, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

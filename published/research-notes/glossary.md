@@ -5,6 +5,9 @@ description: Plain-language definitions of the terms used across this bundle.
 tags: [glossary, reference]
 timestamp: "2026-08-10"
 appendix: true
+generated:
+  by: claude-code/claude-opus-5
+  at: "2026-08-10T00:00:00Z"
 ---
 
 Plain-language definitions of the terms these notes use. It grows as the notes do.

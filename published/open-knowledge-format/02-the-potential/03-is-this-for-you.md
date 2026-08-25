@@ -4,6 +4,9 @@ title: Is This Direction for You?
 description: "A short decision aid for a leader weighing OKF and the ideas behind it."
 tags: [okf, decision]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 You do not have to adopt OKF to take something from it. Here is a quick read on whether the format, or the thinking behind it, fits your situation.

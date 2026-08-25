@@ -4,6 +4,9 @@ title: "Buyer and Seller Follow-Ups"
 description: "Draft follow-up messages after a showing or an inquiry."
 tags: [client-communication, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

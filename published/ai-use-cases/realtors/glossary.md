@@ -5,6 +5,9 @@ description: Plain-language definitions of the terms used across this bundle.
 tags: [glossary, reference]
 timestamp: "2026-06-30"
 appendix: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 Plain-language definitions of the terms these recipes use. It grows as the bundle does.

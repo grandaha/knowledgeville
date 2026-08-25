@@ -5,6 +5,9 @@ description: A practitioner glossary of AI and data terms used across the framew
 tags: [glossary, reference, ai, governance]
 timestamp: "2026-06-12"
 appendix: true
+generated:
+  by: claude-code/claude-opus-5
+  at: "2026-06-12T00:00:00Z"
 ---
 
 A running glossary of AI and data terms — added to as we build out each component. Definitions are written for practitioners, not academics.

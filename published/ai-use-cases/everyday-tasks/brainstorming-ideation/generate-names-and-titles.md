@@ -4,6 +4,9 @@ title: Generate Names & Titles
 description: Produce a batch of name or title options to choose from.
 tags: [naming, brainstorming]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

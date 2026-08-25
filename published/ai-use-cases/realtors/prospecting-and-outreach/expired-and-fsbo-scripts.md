@@ -4,6 +4,9 @@ title: "Expired and FSBO Scripts"
 description: "Draft outreach scripts for expired listings and for-sale-by-owner sellers."
 tags: [prospecting-and-outreach, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

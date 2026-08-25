@@ -4,6 +4,9 @@ title: Finding Where AI Earns Its Keep
 description: "How to discover and prioritize the few workflows AI will actually move, and avoid pilot sprawl and shelfware."
 tags: [enablement, use-cases, prioritization]
 timestamp: "2026-07-02"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-02T00:00:00Z"
 ---
 
 Adoption fails most often not because the tool is weak, but because it was pointed at the wrong work. Your job here is to find the few workflows where AI clearly earns its keep. Prove it there, and refuse the sprawl of pilots that go nowhere.

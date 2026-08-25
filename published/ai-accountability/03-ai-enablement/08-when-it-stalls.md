@@ -4,6 +4,9 @@ title: "When It Stalls, and Keeping It Alive"
 description: "Diagnostics and recovery when adoption plateaus — shelfware, adoption zombies, converting shadow AI to sanctioned use, and reaching steady state."
 tags: [enablement, failure-recovery, sustainability]
 timestamp: "2026-07-02"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-02T00:00:00Z"
 ---
 
 Many adoption programs stall. Usage climbs at launch, plateaus, and then slips. This is common, not a verdict on your work. The difference between a program that recovers and one that dies is whether someone diagnoses the stall instead of guessing at fixes.

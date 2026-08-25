@@ -4,6 +4,9 @@ title: Full-Bundle Provenance Backfill — June 2026
 description: "Validation sweep migrating every statistic in the bundle to the verified evidence ledger, with both citation gates now enforced in CI."
 tags: [audit, citations, validation, provenance]
 timestamp: "2026-06-22"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-22T00:00:00Z"
 ---
 
 ## Purpose

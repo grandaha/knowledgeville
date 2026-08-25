@@ -4,6 +4,9 @@ title: Program Architecture — Accountability Cross-Links, July 2026
 description: Validation sweep of the new track-ownership citations added to Program Architecture's Roles section.
 tags: [audit, citations, validation, program-architecture]
 timestamp: "2026-07-03"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-03T00:00:00Z"
 ---
 
 ## Purpose

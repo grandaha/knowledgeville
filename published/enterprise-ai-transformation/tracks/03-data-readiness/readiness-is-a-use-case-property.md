@@ -5,6 +5,9 @@ description: "Data readiness is a property of the path a use case touches, not a
 tags: [data-readiness, ai-readiness, use-case-scoping]
 timestamp: "2026-07-03"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-03T00:00:00Z"
 ---
 
 Most data readiness programs start with the same question: how clean, governed, and

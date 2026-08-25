@@ -4,6 +4,9 @@ title: Maturity Model
 description: The shared five-level maturity ladder and the eight-track maturity matrix used to score an organization across the whole framework.
 tags: [ai-transformation, maturity-model, assessment, eight-track-model]
 timestamp: "2026-06-23"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-23T00:00:00Z"
 ---
 
 The [Framework Architecture](/enterprise-ai-transformation/framework-architecture.md) gives you the structural picture — what each track owns, how the tracks depend on one another, and how to sequence them. The maturity model is the measurement layer on top of it: a single five-level ladder applied to all eight tracks, so you can score where the organization stands today and see the whole board on one comparable scale.

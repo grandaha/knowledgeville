@@ -5,6 +5,9 @@ description: "What an organization actually looks like once AI transformation is
 tags: [ai-native-organization, destination-state, organizational-design]
 timestamp: "2026-07-03"
 lead: true
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-03T00:00:00Z"
 ---
 
 This bundle answers a different question than the two it sits beside. **[Enterprise AI

@@ -5,6 +5,9 @@ description: "How this bundle groups AI prompt recipes for agents, and where an 
 tags: [realtors, architecture]
 timestamp: "2026-06-30"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 Most of an agent's day is words: a listing that has to sing, a follow-up that can't sound

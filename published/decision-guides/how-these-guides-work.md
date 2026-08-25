@@ -5,6 +5,9 @@ description: "What every decision guide contains, how to read it, and how to use
 tags: [decision-guides, architecture]
 timestamp: "2026-07-01"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 Every guide in this bundle helps you make one decision well. It does not make the call for you. It gives you the options, the criteria that matter, the tradeoffs with evidence behind them, and the conditions under which each choice wins. Once you know the shape, you can read any guide in a couple of minutes and find the part you need.

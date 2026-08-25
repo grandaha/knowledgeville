@@ -4,6 +4,9 @@ title: Draft a Reply
 description: Write a reply to a message that hits the right note.
 tags: [communication, replies]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

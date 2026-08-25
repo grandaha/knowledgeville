@@ -4,6 +4,9 @@ title: End-of-Day Wrap
 description: "Have your assistant recap what got done and carry what slipped into tomorrow."
 tags: [ai-playbooks, daily]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 This playbook has your assistant close out your day. It reads today's calendar and sent mail, and reconciles what got done against what you planned. Then it hands you a short wrap with a carry-over list for tomorrow. It closes the day the Morning Brief opened.

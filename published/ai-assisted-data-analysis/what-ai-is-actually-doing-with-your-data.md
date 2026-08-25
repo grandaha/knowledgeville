@@ -5,6 +5,9 @@ description: "The mental model this bundle builds on: AI can be a genuinely capa
 tags: [ai-assisted-data-analysis, foundations]
 timestamp: "2026-07-06"
 lead: true
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-06T00:00:00Z"
 ---
 
 The common way people use AI for data work is to drop a file into a chat window and type "analyze this." Sometimes that produces a genuinely useful answer. Sometimes it produces a confident, well-formatted, completely wrong one — and nothing in the output tells you which case you are looking at. That gap is what this bundle exists to close.

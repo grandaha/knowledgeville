@@ -4,6 +4,9 @@ title: Draft a Board Update
 description: "Turn the quarter's facts into a clear, honest board update."
 tags: [board-investor, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

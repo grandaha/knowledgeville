@@ -4,6 +4,9 @@ title: Run a Strategy-Review Prep
 description: Pull scattered inputs into a tight pre-read so the strategy review starts on the real questions.
 tags: [strategy-planning, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

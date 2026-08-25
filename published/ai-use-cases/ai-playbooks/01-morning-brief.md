@@ -4,6 +4,9 @@ title: Morning Brief
 description: "Have your assistant read your email and calendar and hand you a prioritized plan for the day."
 tags: [ai-playbooks, daily]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 This playbook has your assistant turn your inbox and calendar into a plan for the day. It reads what is on today and what came in overnight, then hands you a short, prioritized brief. It is the simplest playbook here, and the template the others follow.

@@ -4,6 +4,9 @@ title: Practice a Conversation (Role-Play)
 description: Rehearse a hard conversation with AI playing the other side.
 tags: [learning, role-play]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

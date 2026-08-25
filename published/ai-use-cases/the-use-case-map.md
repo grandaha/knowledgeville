@@ -5,6 +5,9 @@ description: "How this domain is organized — sub-domains, and within Everyday 
 tags: [ai-use-cases, architecture]
 timestamp: "2026-06-24"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 This page is the map. It shows how **AI Use Cases** is organized so you can find what you need fast — and so the library can grow without turning into a junk drawer.

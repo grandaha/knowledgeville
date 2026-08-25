@@ -5,6 +5,9 @@ description: The cross-cutting architecture of the framework — what each of th
 tags: [ai-transformation, eight-track-model, architecture, sequencing]
 timestamp: "2026-06-15"
 lead: true
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-15T00:00:00Z"
 ---
 
 AI transformation is not one program. It is eight interdependent workstreams that succeed or fail together. Most organizations run a subset of them — usually whichever one their loudest function owns — and then wonder why results stall. The eight-track model exists so you can see the whole board at once: what each track is accountable for, where the hand-offs are, and how to sequence the work so it neither stalls (too sequential) nor sprawls (too parallel).

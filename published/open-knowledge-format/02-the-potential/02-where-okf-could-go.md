@@ -4,6 +4,9 @@ title: Where OKF Could Go
 description: "A grounded read of OKF's trajectory — ecosystem, verification, versioning, and the honest gaps in v0.1."
 tags: [okf, potential]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 OKF is a young draft, so its future is a question, not a plan. This is our read of where it could go, held honestly against what it does not yet do.

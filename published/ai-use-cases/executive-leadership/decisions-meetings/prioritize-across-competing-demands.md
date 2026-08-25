@@ -4,6 +4,9 @@ title: Prioritize Across Competing Demands
 description: Work through competing priorities to a defensible ranking.
 tags: [decisions-meetings, workflow]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

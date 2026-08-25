@@ -4,6 +4,9 @@ title: Scan a Market or Competitor Fast
 description: Turn raw notes and links into a quick read on a market or competitor.
 tags: [strategy-planning, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

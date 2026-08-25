@@ -4,6 +4,9 @@ title: "Tooling Landscape"
 description: "AI platform and orchestration tools, API management and cost governance, model evaluation, and developer tooling for the enterprise AI platform layer."
 tags: [ai-platform, tooling, orchestration, mlops, api-governance]
 timestamp: "2026-06-18"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-06-18T00:00:00Z"
 ---
 
 ## How to Use This Landscape

@@ -4,6 +4,9 @@ title: "Ask for a Review"
 description: "Ask a happy client for a review after closing."
 tags: [client-communication, realtors]
 timestamp: "2026-06-30"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-30T00:00:00Z"
 ---
 
 ## When to use this

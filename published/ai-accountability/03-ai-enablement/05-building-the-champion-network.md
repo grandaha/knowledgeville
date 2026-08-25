@@ -4,6 +4,9 @@ title: Building the Champion Network
 description: "How to source, train, recognize, and sustain a network of AI champions that keeps driving adoption past the launch."
 tags: [enablement, champions, change-management]
 timestamp: "2026-07-02"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-02T00:00:00Z"
 ---
 
 No enablement team is large enough to change how a whole organization works. Champions are how adoption scales past you: trusted peers inside each team who make AI normal by example. Built well, the network extends your reach. Left unsupported, it decays.

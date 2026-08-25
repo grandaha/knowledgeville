@@ -4,6 +4,9 @@ title: Explain a Concept Simply
 description: Get a plain-language explanation of anything, at your level.
 tags: [explaining, learning]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

@@ -4,6 +4,9 @@ title: Ask Better Questions of the Numbers
 description: Get a sharper set of questions to put to a finance report before a review.
 tags: [finance-performance, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

@@ -4,6 +4,9 @@ title: "Practitioner Guide: AI Policy and Acceptable Use"
 description: How to write and maintain an AI acceptable use policy — risk tiering, prohibited and permitted use categories, human-in-the-loop requirements, data classification, and EU AI Act alignment.
 tags: [ai-governance, policy, acceptable-use, human-in-the-loop, eu-ai-act]
 timestamp: "2026-06-17"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-17T00:00:00Z"
 ---
 
 ## What this guide is for

@@ -4,6 +4,9 @@ title: Enablement That Sticks
 description: "How to design training and upskilling that changes behavior — literacy tiers, communities of practice, prompt libraries, and measuring learning, not attendance."
 tags: [enablement, training, behavior-change]
 timestamp: "2026-07-02"
+generated:
+  by: claude-code/claude-sonnet-5
+  at: "2026-07-02T00:00:00Z"
 ---
 
 Most AI training measures the wrong thing. It counts who attended, not who changed. A course completed on Monday and forgotten by Friday is a cost, not an outcome. Enablement that sticks is designed backwards from behavior: what should people do differently, and what makes that change hold.

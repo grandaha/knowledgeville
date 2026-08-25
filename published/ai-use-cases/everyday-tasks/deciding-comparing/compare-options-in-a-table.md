@@ -4,6 +4,9 @@ title: Compare Options in a Table
 description: Lay out choices side by side on the criteria that matter.
 tags: [decisions, comparison]
 timestamp: "2026-06-24"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-24T00:00:00Z"
 ---
 
 ## When to use this

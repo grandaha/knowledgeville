@@ -4,6 +4,9 @@ title: Draft and Sharpen Performance Feedback
 description: "Turn rough notes into clear, specific, fair performance feedback."
 tags: [people-org, recipe]
 timestamp: "2026-06-28"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-06-28T00:00:00Z"
 ---
 
 ## When to use this

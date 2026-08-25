@@ -4,6 +4,9 @@ title: Knowledge for Agents, Not People
 description: "Why a knowledge format matters when the reader is an AI agent, and the hand-it-over-via-MCP shift."
 tags: [okf, agents]
 timestamp: "2026-07-01"
+generated:
+  by: claude-code/claude-opus-4.8
+  at: "2026-07-01T00:00:00Z"
 ---
 
 The reader of your knowledge is increasingly an AI agent, not only a person. That reader does not skim or infer context the way a colleague does. This page argues our view: when the reader is an agent, the format you publish in starts to matter as much as the words.

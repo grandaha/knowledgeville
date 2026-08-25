@@ -15,4 +15,4 @@ covers the part that matters most when an agent is the reader: knowing where a c
 | --- | --- |
 | [How OKF Works](01-how-it-works.md)<br>Bundles, concepts, and provenance — the OKF model at a leader's altitude. | Updated 2026-07-01 |
 | [Where OKF Fits](02-where-it-fits.md)<br>How OKF compares to RAG dumps, knowledge graphs, schema.org, and plain docs — and what it deliberately is not. | Updated 2026-07-01 |
-| [Provenance and Trust](03-provenance-and-trust.md)<br>Why 'where did this come from' is a first-class question, and how OKF starts to answer it. | Updated 2026-07-01 |
+| [Provenance and Trust](03-provenance-and-trust.md)<br>Why 'where did this come from' is a first-class question, and how OKF starts to answer it. | Updated 2026-08-25 |

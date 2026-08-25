@@ -5,7 +5,7 @@ is analysis, not specification — forward-looking, anchored to real signals, an
 
 [Knowledge for Agents, Not People](/open-knowledge-format/02-the-potential/01-knowledge-for-agents.md)
 argues why a format matters when an agent is the reader. [Where OKF Could Go](/open-knowledge-format/02-the-potential/02-where-okf-could-go.md)
-reads the trajectory and names the honest gaps in v0.1. [Is This Direction for You?](/open-knowledge-format/02-the-potential/03-is-this-for-you.md)
+reads the trajectory, records what v0.2 already closed, and names what is still open. [Is This Direction for You?](/open-knowledge-format/02-the-potential/03-is-this-for-you.md)
 turns it into a decision aid.
 
 ## In this section
@@ -13,5 +13,5 @@ turns it into a decision aid.
 | Page | Last updated |
 | --- | --- |
 | [Knowledge for Agents, Not People](01-knowledge-for-agents.md)<br>Why a knowledge format matters when the reader is an AI agent, and the hand-it-over-via-MCP shift. | Updated 2026-07-01 |
-| [Where OKF Could Go](02-where-okf-could-go.md)<br>A grounded read of OKF's trajectory — ecosystem, verification, versioning, and the honest gaps in v0.1. | Updated 2026-07-01 |
+| [Where OKF Could Go](02-where-okf-could-go.md)<br>A grounded read of OKF's trajectory — ecosystem, verification, versioning, what v0.2 closed, and what is still open. | Updated 2026-08-25 |
 | [Is This Direction for You?](03-is-this-for-you.md)<br>A short decision aid for a leader weighing OKF and the ideas behind it. | Updated 2026-07-01 |

@@ -25,22 +25,35 @@
   source:
     org: "Open Knowledge Format specification"
     report: "OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)"
-    edition: v0.1
+    edition: v0.2
     url: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
     pdf_hash:
-  verified: 2026-07-01
+  verified: 2026-08-25
   status: primary
-  expires: 2027-07-01
+  expires: 2027-08-25
 - id: ev-okf-spec-v01-model
-  claim: "OKF v0.1's model and non-goals: bundles of concept files with a single required type field, prose-borne cross-links, a minimal # Citations provenance convention, and explicit non-goals (no fixed taxonomies, no storage or serving prescription, does not replace domain schemas)"
+  claim: "OKF's model and non-goals: bundles of concept files with a single required type field, prose-borne cross-links, and explicit non-goals (no fixed taxonomies, no storage or serving prescription, does not replace domain schemas). v0.2 supersedes the body # Citations list with a frontmatter sources family"
   value: "n/a — the spec's model and stated non-goals"
-  wording: "type is the only required field; a # Citations heading with numbered references; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them"
+  wording: "type is the only required field; Body # Citations list superseded by frontmatter sources; OKF references [domain schemas such as Avro, Protobuf, OpenAPI]; it does not subsume them"
   source:
     org: "Open Knowledge Format specification"
     report: "OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)"
-    edition: v0.1
+    edition: v0.2
     url: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
     pdf_hash:
-  verified: 2026-07-01
+  verified: 2026-08-25
   status: primary
-  expires: 2027-07-01
+  expires: 2027-08-25
+- id: ev-okf-spec-v02-provenance-families
+  claim: "OKF v0.2 adds machine-readable provenance to the format itself: a sources frontmatter family, generated and verified actor records, and trust tiers a consumer derives from them"
+  value: "n/a — the spec's v0.2 provenance model"
+  wording: "verified: A list of records of who or what has confirmed the content against its sources; No verified key means unverified; verified by non-human actors only means machine-confirmed; verified by a human: actor means human-reviewed"
+  source:
+    org: "Open Knowledge Format specification"
+    report: "OKF SPEC.md (GoogleCloudPlatform/knowledge-catalog)"
+    edition: v0.2
+    url: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+    pdf_hash:
+  verified: 2026-08-25
+  status: primary
+  expires: 2027-08-25

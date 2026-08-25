@@ -14,7 +14,7 @@ it has more to work with right away. My research becomes your starting point.
 
 I work with Claude on all of it, as a standard workflow: take a question, research it, design the
 bundle, write it, publish it. It's anchored on the
-[Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+[Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
 as a test of the proposed standard. Right now that's frameworks, playbooks, assessments, and
 references, but I keep adding new ones, and expanding existing ones, as I explore new questions and
 ideas.

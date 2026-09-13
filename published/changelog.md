@@ -3,13 +3,18 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-08-25"
+timestamp: "2026-09-13"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.1.0 — 2026-09-13
+
+### New & expanded content
+* Two delivery handoffs for the AI Transformation Lead
 
 ## v12.0.0 — 2026-08-25
 

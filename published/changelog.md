@@ -13,8 +13,16 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.2.0 — 2026-09-13
 
-### New & expanded content
-* Decision guide on which AI model for which job
+## New decision guide: Which AI Model for Which Job
+
+Should a team's recurring AI work run on one model, a model per type of work, a router that picks for each request, or an open-weight model? The guide explains why a listed price is not the real cost, and why being able to switch matters more than any single choice. It ends with a 20-task pilot for testing the decision on your own work.
+
+- [Which AI Model for Which Job](https://knowledge.onesteplabs.com/decision-guides/which-ai-model-for-which-job/)
+- [Decision Guides glossary](https://knowledge.onesteplabs.com/decision-guides/glossary/): adds acceptance test, cost per accepted result, open-weight model, and routing.
+
+## Technology Architecture Framework corrections
+
+- [Technology Architecture Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework/): the routing section now cites its evidence and separates three patterns: assigning a cheaper model to a task, a router choosing per request, and fallback to a second model. It notes that benchmark savings do not carry over cleanly to multi-turn or agent work. The self-hosting guidance drops the claim that suitable open models run on commodity hardware and adds the OECD's volume threshold. The prompt-caching paragraph now cites OpenAI's current guide.
 
 ## v12.1.1 — 2026-09-13
 

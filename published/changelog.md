@@ -13,8 +13,16 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.1.0 — 2026-09-13
 
-### New & expanded content
-* Two delivery handoffs for the AI Transformation Lead
+## How prioritized AI work actually gets done
+
+Knowledgeville covered what to prioritize and who is accountable for it, but not what happens next. Two new pages in the AI Transformation Lead playbook take a position: once a use case is prioritized, decide who will own the result before you decide who will build it.
+
+- **[Staffing the Delivery Team](https://knowledge.onesteplabs.com/ai-accountability/02-ai-transformation-lead/staffing-the-delivery-team/)** covers the first handoff, from the backlog to the team that builds. Name the owner first. Staff three seats: the owner's delegate, one or two builders, and an architect from the hub. Budget the domain expert's time the way you budget an engineer's, and run only as many teams as you have owners. The page also explains what a vendor means by "pod," and why that differs from the run-state unit in The Three Accountabilities.
+- **[The Handoff to the Owner](https://knowledge.onesteplabs.com/ai-accountability/02-ai-transformation-lead/the-handoff-to-the-owner/)** covers the second handoff, from that team to whoever runs the result. It explains why AI systems need an owner after launch and lists the five things that must change hands. It gives a test to run before the builders leave, says when a team should stay permanently, and argues for judging a use case a year after launch.
+
+### One correction
+
+- **[Setting the Operating Model](https://knowledge.onesteplabs.com/ai-accountability/01-chief-ai-officer/setting-the-operating-model/)** (Chief AI Officer) now describes the portfolio council in its source's own words: business leaders commit sponsorship and benefits ownership, and technology leaders commit capacity. The earlier line paraphrased the source.
 
 ## v12.0.0 — 2026-08-25
 

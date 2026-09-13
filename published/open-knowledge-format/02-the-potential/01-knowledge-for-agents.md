@@ -15,7 +15,7 @@ The reader of your knowledge is increasingly an AI agent, not only a person. Tha
 
 A person reads a document with a lifetime of context. You know your own company's style, you can tell a draft from a decision, and you can guess which page is out of date. An agent has none of that unless the knowledge carries it.
 
-Hand an agent a folder of documents and it has to guess. It guesses what is authoritative, what is current, and where each claim came from. Those guesses are where wrong answers start. The gap is not the agent's reading skill. It is the missing structure around the words.
+Hand an agent a folder of documents and it has to guess. It guesses what is authoritative, what is current, and where each claim came from. Those guesses are where wrong answers start. The gap is not the agent's reading skill. It is the missing structure around the words. Keeping that knowledge current and owned is its own decision, covered in [Keeping What Your AI Knows True](/decision-guides/keeping-what-your-ai-knows-true.md).
 
 ## Why raw documents fall short
 

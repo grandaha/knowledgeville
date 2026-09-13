@@ -11,6 +11,16 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.4.0 — 2026-09-13
+
+## New decision guide: Keeping What Your AI Knows True
+
+When the knowledge an AI assistant or agent uses is wrong or out of date, it repeats it with the same confidence as a right answer. This guide helps the person responsible for what an AI tells people decide how each body of knowledge stays true. It sorts knowledge by whether a machine can check it: code and system settings can be tested, while policies and procedures cannot. It then compares reviewing knowledge when it is used, reviewing it on a schedule, letting AI maintain it, and answering only from reviewed sources. It is plain about the limits: no one has shown which approach works best, and in the two court rulings found, the source content was correct and the AI still got it wrong.
+
+- [Keeping What Your AI Knows True](https://knowledge.onesteplabs.com/decision-guides/keeping-what-your-ai-knows-true/)
+- [Decision Guides glossary](https://knowledge.onesteplabs.com/decision-guides/glossary/): adds answer key, Knowledge-Centered Success (KCS), last-verified date, and semantic layer.
+- [Knowledge for Agents, Not People](https://knowledge.onesteplabs.com/open-knowledge-format/02-the-potential/01-knowledge-for-agents/) now links to the new guide.
+
 ## v12.3.0 — 2026-09-13
 
 ## New decision guide: Who Should Own the AI Bill

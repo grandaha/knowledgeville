@@ -19,6 +19,7 @@ all share, or go straight to [Build vs. Buy](/decision-guides/build-vs-buy.md).
 | --- | --- |
 | [How These Guides Work](how-these-guides-work.md)<br>What every decision guide contains, how to read it, and how to use one with your AI assistant. | Updated 2026-07-01 |
 | [Build vs. Buy](build-vs-buy.md)<br>How to decide whether to build a capability yourself or buy it off the shelf — the options, the tradeoffs, and when each one wins. | Updated 2026-07-05 |
+| [Keeping What Your AI Knows True](keeping-what-your-ai-knows-true.md)<br>How to keep the knowledge your AI acts on current, owned, and safe, with the right maintenance approach for each kind. | Updated 2026-09-13 |
 | [When to Embed an Engineer](when-to-embed-an-engineer.md)<br>When a stalled AI project needs an embedded "forward deployed" engineer, an outside firm, or a better handoff. | Updated 2026-08-04 |
 | [When to Let AI Do It](when-to-let-ai-do-it.md)<br>How to decide whether to hand a task to AI or do it yourself — where AI earns its keep, and how to keep control. | Updated 2026-07-01 |
 | [Which AI Model for Which Job](which-ai-model-for-which-job.md)<br>How to decide whether your team's recurring AI work should run on one model or several, and how to test the choice. | Updated 2026-09-13 |

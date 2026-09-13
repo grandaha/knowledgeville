@@ -854,3 +854,341 @@
   verified: 2026-09-13
   status: primary
   expires: 2027-09-13
+- id: ev-karpathy-llm-wiki-2026-llm-writes-all-knowledge
+  claim: "In the LLM Wiki pattern, the model writes and maintains the knowledge base, and the person curates sources and asks questions"
+  value: "n/a (qualitative)"
+  wording: "You never (or rarely) write the wiki yourself - the LLM writes and maintains all of it. You're in charge of sourcing, exploration, and asking the right questions."
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-karpathy-llm-wiki-2026-business-humans-possibly-knowledge
+  claim: "For business and team use, the LLM Wiki pattern leaves human review of the model's updates optional"
+  value: "n/a (qualitative)"
+  wording: "Business/team: an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents, customer calls. Possibly with humans in the loop reviewing updates. The wiki stays current because the LLM does the maintenance that no one on the team wants to do."
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-karpathy-llm-wiki-2026-lint-checks-knowledge
+  claim: "The LLM Wiki's health check looks for contradictions between pages and claims superseded by newer sources in the wiki"
+  value: "n/a (qualitative)"
+  wording: "Periodically, ask the LLM to health-check the wiki. Look for: contradictions between pages, stale claims that newer sources have superseded, orphan pages with no inbound links"
+  source:
+    org: Andrej Karpathy
+    report: "LLM Wiki (personal gist)"
+    edition: 2026
+    url: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-dbt-2026-semantic-layer-refuses-knowledge
+  claim: "In dbt Labs' 2026 benchmark, questions outside its semantic layer's scope got a refusal rather than a wrong answer, while text-to-SQL returned plausible wrong numbers (STAKE: dbt Labs sells the dbt Semantic Layer)"
+  value: "n/a (qualitative)"
+  wording: "But here's the critical difference: the Semantic Layer tells you it can't answer. It never returns invalid data. Text-to-SQL will cheerfully give you a wrong number."
+  source:
+    org: dbt Labs
+    report: "Semantic Layer vs. Text-to-SQL: 2026 Benchmark Update (Jason Ganz, Benoit Perigaud)"
+    edition: 2026
+    url: https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-dbt-2026-benchmark-method-knowledge
+  claim: "The dbt Labs benchmark ran 11 questions from a published insurance dataset, 20 times each, across several models (STAKE: dbt Labs sells the dbt Semantic Layer)"
+  value: "11 questions x 20 runs"
+  wording: "11 questions, each run 20 times, across multiple LLMs."
+  source:
+    org: dbt Labs
+    report: "Semantic Layer vs. Text-to-SQL: 2026 Benchmark Update (Jason Ganz, Benoit Perigaud)"
+    edition: 2026
+    url: https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-atlan-2026-ownership-lapse-knowledge
+  claim: "Atlan says knowledge goes stale partly through ownership lapse, as owners move on and content loses certification silently (STAKE: Atlan sells a data catalog with ownership and certification features)"
+  value: "n/a (qualitative)"
+  wording: "Staleness accumulates across three layers: source documents, schema drift, and ownership lapse. ... Owners move on and assets lose certification silently"
+  source:
+    org: Atlan
+    report: "LLM Knowledge Base Staleness: Scoring, Causes, and How to Fix It"
+    edition: 2026
+    url: https://atlan.com/know/llm-knowledge-base-staleness/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-sequoia-2024-knowing-out-of-date-knowledge
+  claim: "Glean's CEO says the harder enterprise problem is telling which information is good and which has gone out of date (STAKE: Glean sells enterprise search)"
+  value: "n/a (qualitative)"
+  wording: "it's both hard to actually even get hold of that information, but then even harder to actually make sense of what information is actually good, what has become out of date."
+  source:
+    org: Sequoia Capital
+    report: "Training Data podcast: How Glean CEO Arvind Jain Solved the Enterprise Search Problem (aired 2024-10-29)"
+    edition: 2024
+    url: https://sequoiacap.com/podcast/training-data-arvind-jain
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-bccrt-2024-moffatt-policy-page-knowledge
+  claim: "Air Canada's own bereavement policy page was correct and contradicted its chatbot; the case is an inconsistency between chatbot and page, not an outdated page (tribunal's summary, para. 17)"
+  value: "n/a (qualitative)"
+  wording: "The webpage says, in part, the bereavement policy does not apply to requests for bereavement consideration after travel has been completed. I address the inconsistency between Air Canada's chatbot and webpage later in this decision."
+  source:
+    org: British Columbia Civil Resolution Tribunal
+    report: "Moffatt v. Air Canada, 2024 BCCRT 149"
+    edition: 2024
+    url: https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-bccrt-2024-moffatt-holding-knowledge
+  claim: "The tribunal rejected Air Canada's argument that it was not liable for its chatbot and held it responsible for all information on its website (para. 27)"
+  value: "n/a (qualitative)"
+  wording: "In effect, Air Canada suggests the chatbot is a separate legal entity that is responsible for its own actions. This is a remarkable submission. While a chatbot has an interactive component, it is still just a part of Air Canada's website. It should be obvious to Air Canada that it is responsible for all the information on its website. It makes no difference whether the information comes from a static page or a chatbot."
+  source:
+    org: British Columbia Civil Resolution Tribunal
+    report: "Moffatt v. Air Canada, 2024 BCCRT 149"
+    edition: 2024
+    url: https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-olg-hamm-2026-source-data-correct-knowledge
+  claim: "A German clinic's chatbot falsely called its two doctors board-certified plastic surgeons, although the texts it drew on undisputedly held no such error, so the bot invented the claim (paras. 6 and 30; English: 'which, undisputedly, contain no incorrect statements about the specialist qualifications of its managing directors')"
+  value: "n/a (qualitative)"
+  wording: "die - dies ist unstreitig - keine unzutreffenden Angaben über die Facharztqualifikation ihrer Geschäftsführer enthalten"
+  source:
+    org: Oberlandesgericht Hamm
+    report: "Urteil vom 12.05.2026, 4 UKl 3/25"
+    edition: 2026
+    url: https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-olg-hamm-2026-users-trust-ai-knowledge
+  claim: "The court rejected the argument that users know AI chatbots make mistakes and fact-check them, finding many consumers place particular trust in computer-generated answers (para. 104; English: 'a large share of the targeted consumers place particular trust in the correctness of the computer-generated answer, since machines are generally perceived as less error-prone than humans')"
+  value: "n/a (qualitative)"
+  wording: "Vielmehr trifft es zu, dass ein Großteil der angesprochenen Verbraucher in besonderer Weise auf die Richtigkeit der computergenerierten Antwort vertraut, da Maschinen im Allgemeinen als weniger fehleranfällig als der Mensch wahrgenommen werden."
+  source:
+    org: Oberlandesgericht Hamm
+    report: "Urteil vom 12.05.2026, 4 UKl 3/25"
+    edition: 2026
+    url: https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-wettbewerbszentrale-2026-disclaimer-knowledge
+  claim: "A German fair-competition enforcement body concludes from the OLG Hamm ruling that generic disclaimers such as 'AI can make mistakes' do not reliably protect against liability; this is its commentary, not the court's words (English: 'Generic disclaimers such as AI can make mistakes do not reliably protect against liability for incorrect statements')"
+  value: "n/a (qualitative)"
+  wording: "Generische Disclaimer wie „KI kann Fehler machen“ schützen nicht zuverlässig vor einer Haftung für fehlerhafte Aussagen."
+  source:
+    org: Wettbewerbszentrale
+    report: "OLG Hamm lässt Unternehmen für Aussagen seines Chatbots haften, Volltext verfügbar"
+    edition: 2026
+    url: https://www.wettbewerbszentrale.de/olg-hamm-laesst-unternehmen-fuer-aussagen-seines-chatbots-haften-volltext-verfuegbar/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-zhang-2019-obsolete-at-posting-knowledge
+  claim: "In a keyword-identified set of obsolete Stack Overflow answers, 58.4% were flagged obsolete within 24 hours of posting, which the authors read as probably obsolete when first posted (volunteer software Q&A; keyword method 75% accurate)"
+  value: "58.4%"
+  wording: "More than half of the obsolete answers (58.4%) were probably already obsolete when they were first posted."
+  source:
+    org: "Zhang, Wang, Chen, Zou, Hassan"
+    report: "An Empirical Study of Obsolete Answers on Stack Overflow (IEEE TSE)"
+    edition: 2019
+    url: https://arxiv.org/abs/1903.12282
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-zhang-2019-obsolete-rarely-updated-knowledge
+  claim: "Once a Stack Overflow answer was noted as obsolete, it was updated in 20.5% of cases, in a manual sample of 669 confirmed obsolete answers (volunteer software Q&A)"
+  value: "20.5%"
+  wording: "When an obsolete answer is observed, only a small proportion (20.5%) of such answers are ever updated."
+  source:
+    org: "Zhang, Wang, Chen, Zou, Hassan"
+    report: "An Empirical Study of Obsolete Answers on Stack Overflow (IEEE TSE)"
+    edition: 2019
+    url: https://arxiv.org/abs/1903.12282
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-berkeley-2026-tkboost-learned-from-mistakes-knowledge
+  claim: "A Berkeley method builds knowledge for data agents from the agent's own mistakes on a few labeled queries, checked against known-correct results, so it depends on an answer key (benchmark preprint)"
+  value: "method"
+  wording: "To accumulate experience, Tk-Boost first asks the NL2SQL agent to answer a few queries on the database, identifies the agent's misconceptions by analyzing its mistakes on the database, and generates tribal knowledge to address them."
+  source:
+    org: "Agarwal, Biswal, Zeighami, Cheung, Gonzalez, Parameswaran (UC Berkeley)"
+    report: "Arming Data Agents with Tribal Knowledge"
+    edition: 2026
+    url: https://arxiv.org/abs/2602.13521
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-berkeley-2026-tkboost-accuracy-knowledge
+  claim: "Adding that learned knowledge raised data agents' accuracy by up to 16.9 percentage points on the Spider 2.0 benchmark and 13.7 on BIRD (benchmarks, not production; best case)"
+  value: "up to +16.9 (Spider 2.0), +13.7 (BIRD)"
+  wording: "Extensive experiments across the BIRD and Spider 2.0 benchmarks with various NL2SQL agents shows Tk-Boost improves NL2SQL agents accuracy by up to 16.9% on Spider 2.0 and 13.7% on BIRD."
+  source:
+    org: "Agarwal, Biswal, Zeighami, Cheung, Gonzalez, Parameswaran (UC Berkeley)"
+    report: "Arming Data Agents with Tribal Knowledge"
+    edition: 2026
+    url: https://arxiv.org/abs/2602.13521
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-meta-2026-self-refresh-decay-knowledge
+  claim: "Meta's AI-generated context for a data pipeline re-validates itself every few weeks, because the team holds that stale context is worse than none (engineering blog, one pipeline)"
+  value: "every few weeks"
+  wording: "The system self-refreshes every few weeks, validating file paths, identifying coverage gaps, re-running critic agents, and auto-fixing issues. Context that decays is worse than no context at all."
+  source:
+    org: "Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma)"
+    report: "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines"
+    edition: 2026
+    url: https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-meta-2026-critic-quality-gate-knowledge
+  claim: "Meta's other checks were AI critic scores on a 5-point scale and AI prompt testers running 55+ queries, with no stated way of judging a pass; the only check against the code itself was file-path verification (engineering blog, one pipeline)"
+  value: "critic scores 3.65 to 4.20 of 5.0; 55+ tested queries; 0 hallucinated paths"
+  wording: "three rounds of independent critic agents improved scores from 3.65 to 4.20 out of 5.0, and all referenced file paths were verified with zero hallucinations. ... Three prompt testers validated 55+ queries across five personas"
+  source:
+    org: "Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma)"
+    report: "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines"
+    edition: 2026
+    url: https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-meta-2026-six-task-preliminary-knowledge
+  claim: "Meta's evidence for the approach is preliminary tests on six tasks in one pipeline, not independently replicated"
+  value: "~40% fewer tool calls and tokens; n=6 tasks"
+  wording: "In preliminary tests on six tasks against our pipeline, agents with pre-computed context used roughly 40% fewer tool calls and tokens per task."
+  source:
+    org: "Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma)"
+    report: "How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines"
+    edition: 2026
+    url: https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csi-2027-reuse-is-review-knowledge
+  claim: "KCS treats reuse as review: knowledge that is used keeps improving, and unused articles cost no review time (STAKE: the Consortium is the certifying body for KCS)"
+  value: "n/a (qualitative)"
+  wording: "Let reuse draw attention to the articles that have value. Embracing this technique means we are constantly improving the knowledge that is being used. For articles that are never referenced, we do not waste time or money reviewing them."
+  source:
+    org: "Consortium for Service Innovation"
+    report: "Technique 2.1: Reuse is Review (Knowledge-Centered Success: Practices Guide (2027))"
+    edition: 2026
+    url: https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_2_Improve/Technique_2.1
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csi-2027-flag-it-or-fix-it-knowledge
+  claim: "In KCS, a reader who spots something wrong fixes it if confident and trained, and otherwise flags it for a subject-matter expert (STAKE: the Consortium is the certifying body for KCS)"
+  value: "n/a (qualitative)"
+  wording: "If we see something we think is wrong or doesn't make sense, we need to take one of two actions: flag it or fix it. ... Flag It: If we are not confident or we aren't trained to make the update, we flag it. KCS articles that are flagged need to trigger a workflow that will get the attention of a subject matter expert. ... Fix It: If we are confident and we are trained to make the update, we fix it."
+  source:
+    org: "Consortium for Service Innovation"
+    report: "Technique 2.2: Flag it or Fix it (Knowledge-Centered Success: Practices Guide (2027))"
+    edition: 2026
+    url: https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_2_Improve/Technique_2.2
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csi-2027-article-state-knowledge
+  claim: "KCS records each article's state in three metadata fields: confidence, audience, and governance (STAKE: the Consortium is the certifying body for KCS)"
+  value: "3 fields"
+  wording: "Article state is comprised of three metadata fields: article confidence, article audience, and article governance."
+  source:
+    org: "Consortium for Service Innovation"
+    report: "Technique 5.2: KCS Article State (Knowledge-Centered Success: Practices Guide (2027))"
+    edition: 2026
+    url: https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csi-2027-not-validated-knowledge
+  claim: "KCS says a Not Validated article should be used only when it fits the situation and the reader trusts the resolution, which requires judgment (STAKE: the Consortium is the certifying body for KCS)"
+  value: "n/a (qualitative)"
+  wording: "The users of the knowledge base who have visibility to Not Validated articles need to understand that Not Validated articles should not be used unless the article is relevant to the situation they are working on, and they have confidence in the resolution. Judgment is required."
+  source:
+    org: "Consortium for Service Innovation"
+    report: "Technique 5.2: KCS Article State (Knowledge-Centered Success: Practices Guide (2027))"
+    edition: 2026
+    url: https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csi-2027-archive-not-delete-knowledge
+  claim: "KCS advises archiving an article rather than deleting it, so records linked to it do not break (STAKE: the Consortium is the certifying body for KCS)"
+  value: "n/a (qualitative)"
+  wording: "Archiving an article is better than deleting it. If an article has been linked to a request, you will not want to delete the actual article from the knowledge base as it will result in a broken link between the knowledge base and the system of record."
+  source:
+    org: "Consortium for Service Innovation"
+    report: "Technique 5.2: KCS Article State (Knowledge-Centered Success: Practices Guide (2027))"
+    edition: 2026
+    url: https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csi-2027-kcs-rename-knowledge
+  claim: "KCS was renamed from Knowledge-Centered Service to Knowledge-Centered Success, keeping the acronym (STAKE: the Consortium is the certifying body for KCS)"
+  value: "n/a (qualitative)"
+  wording: "While the KCS acronym remains the same as previous versions, we have updated the name from Knowledge-Centered Service to Knowledge-Centered Success. This change reflects the broadening application of the methodology."
+  source:
+    org: "Consortium for Service Innovation"
+    report: "Knowledge-Centered Success: Practices Guide (2027)"
+    edition: 2026
+    url: https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-apqc-2025-ai-needs-curation-knowledge
+  claim: "APQC's knowledge-management lead says AI and agents embedded in core processes need ongoing curation and trusted expertise (an opinion post; STAKE: APQC is a membership benchmarking body selling KM research; verified via web.archive.org, the live site blocks fetches)"
+  value: "n/a (qualitative)"
+  wording: "Generative AI and autonomous agents are becoming embedded in core business processes and these technologies require ongoing curation and trusted expertise to deliver accurate outputs."
+  source:
+    org: "APQC"
+    report: "2026 Knowledge Management Predictions (Lynda Braksiek, Dec 3, 2025)"
+    edition: 2025
+    url: https://www.apqc.org/resources/blog/2026-knowledge-management-predictions
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-09-13

@@ -177,7 +177,7 @@
         "verification_posture": "verify-embedded-facts",
         "temporal_mode": "point-in-time-supersedable"
       },
-      "pageCount": 6
+      "pageCount": 7
     },
     {
       "slug": "enterprise-ai-transformation",
@@ -3162,6 +3162,207 @@
       "body": "Every guide in this bundle helps you make one decision well. It does not make the call for you. It gives you the options, the criteria that matter, the tradeoffs with evidence behind them, and the conditions under which each choice wins. Once you know the shape, you can read any guide in a couple of minutes and find the part you need.\n\n## What's in every guide\n\nThe same sections, always in this order:\n\n- **The decision** — what you're deciding, in a sentence, and who tends to face it.\n- **Does this apply to you?** — when this decision comes up, so you know the guide fits your situation before you read on.\n- **The options** — the real choices, each described honestly, without strawmen.\n- **What actually matters** — the handful of criteria that should drive the call, not everything you could weigh.\n- **How the options compare** — the options against those criteria, with the evidence and sources on the claims that carry weight.\n- **When each one wins** — plain \"if your situation is X, lean toward Y.\" This is the part to slow down on.\n- **How to decide** — a short aid: the few questions to answer about your own situation, in order.\n- **Watch out for** — the common traps, how reversible the choice is, and when to bring in a human expert.\n\n## How to read one\n\nSkim **The options** and **What actually matters** to frame the choice. Then spend your time in **When each one wins** and **How to decide** — that's where the guide meets your situation. The **How the options compare** section is where the sourcing lives, so it's the place to check a claim you want to lean on.\n\n## Using a guide with your AI assistant\n\nThis is where a guide earns its keep. Connect this knowledge base to your AI assistant over [MCP](/open-knowledge-format/02-the-potential/01-knowledge-for-agents.md), then ask it to help you decide — \"help me think through build vs. buy for our situation.\" Instead of the confident, unsourced list a generic chatbot produces, your assistant works from the guide. It walks you through the real criteria, weighs the sourced tradeoffs, and applies the \"when each wins\" logic to what you tell it. You still make the call — but on grounded, checkable ground rather than vibes.\n\n## What a guide is not\n\nA guide is not a recommendation for your specific situation. And it's not a substitute for advice when the stakes are high or the details are unusual. It gives you a well-framed, sourced way to think, dated to when it was written. When a lot rides on the call, use it to get sharp. Then check the load-bearing facts against their sources, and bring in someone who knows your specifics.",
       "updated": "2026-07-01",
       "sources": []
+    },
+    {
+      "bundle": "decision-guides",
+      "path": "keeping-what-your-ai-knows-true.md",
+      "url": "https://knowledge.onesteplabs.com/decision-guides/keeping-what-your-ai-knows-true/",
+      "title": "Keeping What Your AI Knows True",
+      "description": "How to keep the knowledge your AI acts on current, owned, and safe, with the right maintenance approach for each kind.",
+      "tags": [
+        "knowledge-management",
+        "ai-agents",
+        "governance",
+        "decision"
+      ],
+      "body": "## The decision\n\nYour AI assistants and agents answer from what your organization has written down: policies, procedures, product details, and notes about your systems. An agent is an AI that takes actions, such as sending a reply or updating a record. When that knowledge is wrong or out of date, the AI repeats it with the same confidence as a right answer.\n\nThe decision is how each body of knowledge your AI acts on stays true. That means who can change it, what triggers a review, and what the system does when it cannot be sure.\n\nThe short version: sort your knowledge by whether a machine can check it. Let AI help maintain the kind it can check, such as code and system settings. For policies and procedures, review them as they are used, and send every sign of a wrong answer to someone who can change the policy. For high-stakes knowledge, review it on a schedule and let the AI answer only from what has been reviewed.\n\nThis guide is for the person responsible for what an AI assistant or agent tells people, and for the AI assistant helping them decide.\n\n## Does this apply to you?\n\nUse it when an AI assistant or agent answers questions or takes actions using your organization's documents. The clearest sign you need it is an AI that gave someone a procedure, price, or policy that was no longer true. If a person checks every AI draft before it goes anywhere, that person is your review, and a lighter approach may do.\n\nThis guide does not cover connecting an AI to your systems, or defining shared business terms. For why agents need knowledge to carry its own context, see [Knowledge for Agents, Not People](/open-knowledge-format/02-the-potential/01-knowledge-for-agents.md). For a small team's shared wiki, see [The Team Second Brain](/team-second-brain/the-team-second-brain.md).\n\n## The options\n\nStart by sorting the knowledge, because the two kinds need different care:\n\n- **Knowledge a machine can check.** Code, system settings, database structures, and anything with a right answer to test against. When it drifts, a test fails.\n- **Knowledge only a person can judge.** Policies, procedures, pricing rules, and expert judgment. When the world changes, nothing in the documents has to change with it.\n\nThen choose how each body of knowledge stays true:\n\n- **Review it when it is used.** Whoever uses an article fixes or flags anything wrong in it, and articles nobody uses are left alone. This comes from Knowledge-Centered Success (KCS), a practice built for customer support teams.\n- **Review it on a schedule.** Each item carries a last-verified date, and its owner confirms it before that date runs out.\n- **Let AI maintain it.** An AI checks the knowledge regularly for contradictions, broken references, and claims that newer sources have replaced.\n- **Answer only from reviewed sources.** The AI answers only from knowledge a person has approved, and says it cannot answer when none applies.\n\nThese combine. You will likely use more than one, matched to each kind of knowledge. Whichever you choose, each body of knowledge needs an owner who can change it.\n\n## What actually matters\n\n- **Whether something can check the knowledge.** An automated check needs an answer key, a known-correct result to compare against. Without one, only a person can tell whether a policy is still true.\n- **How rare and how important the knowledge is.** Content that is used rarely but matters a great deal gets little review from use alone.\n- **Whether the owner can change the underlying policy.** An owner who can confirm a page but cannot change the rule behind it has no way to fix what is wrong.\n- **Whether the system enforces freshness or only hopes for it.** A last-verified date protects you only if the system acts on it.\n\n## How the options compare\n\n**Reviewing when used depends on people noticing.** Knowledge-Centered Success (KCS) is a practice that began in customer support, published by the Consortium for Service Innovation, which certifies practitioners. It treats reuse as review, so, by design, knowledge that is used gets improved. \"For articles that are never referenced, we do not waste time or money reviewing them\" ([Consortium for Service Innovation, 2026](#ev-csi-2027-reuse-is-review-knowledge)). The rule behind it is \"flag it or fix it.\" A reader who spots something wrong fixes it if confident and trained, and otherwise flags it for an expert ([Consortium for Service Innovation, 2026](#ev-csi-2027-flag-it-or-fix-it-knowledge)). That depends on a person reading. An AI agent that looks up an article raises no flag unless built to, so heavy use by agents is not review.\n\nKCS also records how far to trust each article, in three fields: confidence, audience, and governance ([Consortium for Service Innovation, 2026](#ev-csi-2027-article-state-knowledge)). An article marked Not Validated needs the reader's own judgment before use: \"Judgment is required\" ([Consortium for Service Innovation, 2026](#ev-csi-2027-not-validated-knowledge)). An agent cannot supply that judgment, so the system has to decide what an agent may use.\n\n**Some knowledge is wrong from the start.** A study of obsolete answers on Stack Overflow, a question-and-answer site for programmers, found 58.4% were flagged obsolete within a day of being posted ([Zhang et al., 2019](#ev-zhang-2019-obsolete-at-posting-knowledge)). Once an answer was noted as obsolete, only 20.5% were ever updated ([Zhang et al., 2019](#ev-zhang-2019-obsolete-rarely-updated-knowledge)). The study covers volunteer answers about software rather than company policy. There, readers noticed most of these errors within a day, while a review calendar leaves them in place until the first review.\n\n**AI maintenance needs an answer key.** Andrej Karpathy, an AI researcher, describes a wiki the AI model writes itself: \"the LLM writes and maintains all of it\" ([Karpathy, 2026](#ev-karpathy-llm-wiki-2026-llm-writes-all-knowledge)). For business use, he says only that people might review its updates: \"Possibly with humans in the loop reviewing updates\" ([Karpathy, 2026](#ev-karpathy-llm-wiki-2026-business-humans-possibly-knowledge)). Its regular health check looks for \"contradictions between pages, stale claims that newer sources have superseded, orphan pages\" ([Karpathy, 2026](#ev-karpathy-llm-wiki-2026-lint-checks-knowledge)). Each of those compares documents with other documents. None of them can notice a policy that changed in a meeting while no document changed.\n\nA Berkeley team built notes for AI agents that query databases, drawn from the agents' own mistakes and checked against known-correct results ([Agarwal et al., 2026](#ev-berkeley-2026-tkboost-learned-from-mistakes-knowledge)). Accuracy rose by up to 16.9 percentage points on one published test set and 13.7 on another ([Agarwal et al., 2026](#ev-berkeley-2026-tkboost-accuracy-knowledge)). That works because a database query has a right answer to test against. Meta's engineers had AI agents write notes explaining a data system to other agents, re-checked every few weeks. Their reason: \"Context that decays is worse than no context at all\" ([Engineering at Meta, 2026](#ev-meta-2026-self-refresh-decay-knowledge)). The only check against the code itself was on file paths. The rest were AI critic scores and AI-run test queries, with no stated way of judging a pass ([Engineering at Meta, 2026](#ev-meta-2026-critic-quality-gate-knowledge)). The evidence so far is preliminary tests on six tasks ([Engineering at Meta, 2026](#ev-meta-2026-six-task-preliminary-knowledge)).\n\n**Declining to answer prevents guesses.** A semantic layer is a defined set of business measures that an AI can query. dbt Labs, which sells one, ran a test where out-of-scope questions got a refusal instead of a guess. In its words, \"the Semantic Layer tells you it can't answer. It never returns invalid data\" ([dbt Labs, 2026](#ev-dbt-2026-semantic-layer-refuses-knowledge)). The test used 11 questions ([dbt Labs, 2026](#ev-dbt-2026-benchmark-method-knowledge)). Written knowledge has no such limit by default. An AI searching documents will find something to answer from, unless the system is built to decline.\n\n**Two rulings held companies responsible for what their chatbots said.** A Canadian tribunal held Air Canada responsible after its chatbot misstated a bereavement fare rule. \"It makes no difference whether the information comes from a static page or a chatbot\" ([Civil Resolution Tribunal, 2024](#ev-bccrt-2024-moffatt-holding-knowledge)). The airline's own policy page was correct, and the chatbot contradicted it ([Civil Resolution Tribunal, 2024](#ev-bccrt-2024-moffatt-policy-page-knowledge)). In Germany, a court ordered a clinic to stop claims its chatbot made, after it called two doctors board-certified plastic surgeons. The texts the chatbot drew on held no such error ([Oberlandesgericht Hamm, 2026](#ev-olg-hamm-2026-source-data-correct-knowledge)). In both cases the source was right and the AI was wrong, so current knowledge alone does not remove the risk.\n\n**No one has shown which approach works best.** We found no independent study comparing how well owners, review schedules, or AI maintenance keep business knowledge true. Nor did we find an audited measure of how often AI agents fail because their knowledge was out of date.\n\n## When each one wins\n\nThese conditions come from how each approach works, not from studies of outcomes.\n\n**Reviewing when used wins when:**\n\n- People read the knowledge before it reaches a customer, and can fix what they find.\n- The knowledge is used often, so errors surface quickly.\n\n**Reviewing on a schedule wins when:**\n\n- A regulator or auditor needs proof that knowledge was checked.\n- The knowledge is rarely used but high-stakes, so use alone will not surface errors.\n\n**Letting AI maintain it wins when:**\n\n- The knowledge has an answer key, such as code or system settings, and there is too much of it for people to check.\n\n**Answering only from reviewed sources wins when:**\n\n- A wrong answer carries legal, financial, or safety risk.\n- You can accept more answers of \"I cannot answer that\" in exchange.\n\n## How to decide\n\nThese steps follow from how each approach works. None has been tested against the others. Work through them for each AI assistant or agent:\n\n1. **List what the AI actually uses.** Name each body of knowledge it looks up or acts on, and where that knowledge lives.\n2. **Sort each by whether a machine can check it.** This decides whether automated maintenance can help at all.\n3. **Mark the high-stakes items.** Ask what a wrong answer would cost.\n4. **Name an owner who can change the rule itself.** If the person who can change a policy is not the person who maintains its page, connect them.\n5. **Send the owner every sign of a wrong answer.** Customer corrections, conflicting sources, escalations, and reopened tickets are signals an AI reader will not raise itself.\n6. **Make the system enforce what you decide.** If knowledge must be reviewed, set the AI to skip or flag anything past its date. Ask your vendor or IT team whether the tool can do this, and treat a no as a gap.\n7. **Retire knowledge by archiving it.** Keep the record of what was once true, and take it out of what the AI can use. KCS advises archiving rather than deleting, so records linked to the article do not break ([Consortium for Service Innovation, 2026](#ev-csi-2027-archive-not-delete-knowledge)).\n\nIf a wrong answer has already reached someone, correct it with that person first. Then fix or archive the source, find whether the content, the lookup, or the AI's writing failed, and send the case to the owner.\n\n## Watch out for\n\nMost of these have not been measured.\n\n- **A knowledge base that agrees with itself and is out of date.** AI checks find contradictions between documents, not changes in the world.\n- **Dates that move while content stays the same.** A review that only resets the date checks nothing.\n- **Blaming the wrong layer.** A wrong answer can come from the content, from what the AI looked up, or from what it wrote. Find which before you fix it.\n- **Disclaimers as protection.** The German court rejected the argument that users know chatbots make mistakes and check their answers ([Oberlandesgericht Hamm, 2026](#ev-olg-hamm-2026-users-trust-ai-knowledge)). A German fair-competition body concluded that disclaimers such as \"AI can make mistakes\" do not reliably protect a company ([Wettbewerbszentrale, 2026](#ev-wettbewerbszentrale-2026-disclaimer-knowledge)).\n- **Owners in name only.** An expert asked to own knowledge that an AI repeats carries the risk of every answer. Give them authority to match. Owners also move on, and Atlan, which sells a data catalog, warns that content can then \"lose certification silently\" ([Atlan, 2026](#ev-atlan-2026-ownership-lapse-knowledge)).\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Consortium for Service Innovation — *Technique 2.1: Reuse is Review (Knowledge-Centered Success: Practices Guide (2027))*, 2026.** Let reuse draw attention to the articles that have value. Embracing this technique means we are constantly improving the knowledge that is being used. For articles that are never referenced, we do not waste time or money reviewing them. [View source](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_2_Improve/Technique_2.1){#ev-csi-2027-reuse-is-review-knowledge} · verified 2026-09-13 · primary\n- **Consortium for Service Innovation — *Technique 2.2: Flag it or Fix it (Knowledge-Centered Success: Practices Guide (2027))*, 2026.** If we see something we think is wrong or doesn't make sense, we need to take one of two actions: flag it or fix it. ... Flag It: If we are not confident or we aren't trained to make the update, we flag it. KCS articles that are flagged need to trigger a workflow that will get the attention of a subject matter expert. ... Fix It: If we are confident and we are trained to make the update, we fix it. [View source](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_2_Improve/Technique_2.2){#ev-csi-2027-flag-it-or-fix-it-knowledge} · verified 2026-09-13 · primary\n- **Consortium for Service Innovation — *Technique 5.2: KCS Article State (Knowledge-Centered Success: Practices Guide (2027))*, 2026.** Article state is comprised of three metadata fields: article confidence, article audience, and article governance. [View source](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2){#ev-csi-2027-article-state-knowledge} · verified 2026-09-13 · primary\n- **Consortium for Service Innovation — *Technique 5.2: KCS Article State (Knowledge-Centered Success: Practices Guide (2027))*, 2026.** The users of the knowledge base who have visibility to Not Validated articles need to understand that Not Validated articles should not be used unless the article is relevant to the situation they are working on, and they have confidence in the resolution. Judgment is required. [View source](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2){#ev-csi-2027-not-validated-knowledge} · verified 2026-09-13 · primary\n- **Zhang, Wang, Chen, Zou, Hassan — *An Empirical Study of Obsolete Answers on Stack Overflow (IEEE TSE)*, 2019.** More than half of the obsolete answers (58.4%) were probably already obsolete when they were first posted. [View source](https://arxiv.org/abs/1903.12282){#ev-zhang-2019-obsolete-at-posting-knowledge} · verified 2026-09-13 · primary\n- **Zhang, Wang, Chen, Zou, Hassan — *An Empirical Study of Obsolete Answers on Stack Overflow (IEEE TSE)*, 2019.** When an obsolete answer is observed, only a small proportion (20.5%) of such answers are ever updated. [View source](https://arxiv.org/abs/1903.12282){#ev-zhang-2019-obsolete-rarely-updated-knowledge} · verified 2026-09-13 · primary\n- **Andrej Karpathy — *LLM Wiki (personal gist)*, 2026.** You never (or rarely) write the wiki yourself - the LLM writes and maintains all of it. You're in charge of sourcing, exploration, and asking the right questions. [View source](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f){#ev-karpathy-llm-wiki-2026-llm-writes-all-knowledge} · verified 2026-09-13 · primary\n- **Andrej Karpathy — *LLM Wiki (personal gist)*, 2026.** Business/team: an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents, customer calls. Possibly with humans in the loop reviewing updates. The wiki stays current because the LLM does the maintenance that no one on the team wants to do. [View source](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f){#ev-karpathy-llm-wiki-2026-business-humans-possibly-knowledge} · verified 2026-09-13 · primary\n- **Andrej Karpathy — *LLM Wiki (personal gist)*, 2026.** Periodically, ask the LLM to health-check the wiki. Look for: contradictions between pages, stale claims that newer sources have superseded, orphan pages with no inbound links. [View source](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f){#ev-karpathy-llm-wiki-2026-lint-checks-knowledge} · verified 2026-09-13 · primary\n- **Agarwal, Biswal, Zeighami, Cheung, Gonzalez, Parameswaran (UC Berkeley) — *Arming Data Agents with Tribal Knowledge*, 2026.** To accumulate experience, Tk-Boost first asks the NL2SQL agent to answer a few queries on the database, identifies the agent's misconceptions by analyzing its mistakes on the database, and generates tribal knowledge to address them. [View source](https://arxiv.org/abs/2602.13521){#ev-berkeley-2026-tkboost-learned-from-mistakes-knowledge} · verified 2026-09-13 · primary\n- **Agarwal, Biswal, Zeighami, Cheung, Gonzalez, Parameswaran (UC Berkeley) — *Arming Data Agents with Tribal Knowledge*, 2026.** Extensive experiments across the BIRD and Spider 2.0 benchmarks with various NL2SQL agents shows Tk-Boost improves NL2SQL agents accuracy by up to 16.9% on Spider 2.0 and 13.7% on BIRD. [View source](https://arxiv.org/abs/2602.13521){#ev-berkeley-2026-tkboost-accuracy-knowledge} · verified 2026-09-13 · primary\n- **Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma) — *How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines*, 2026.** The system self-refreshes every few weeks, validating file paths, identifying coverage gaps, re-running critic agents, and auto-fixing issues. Context that decays is worse than no context at all. [View source](https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/){#ev-meta-2026-self-refresh-decay-knowledge} · verified 2026-09-13 · primary\n- **Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma) — *How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines*, 2026.** three rounds of independent critic agents improved scores from 3.65 to 4.20 out of 5.0, and all referenced file paths were verified with zero hallucinations. ... Three prompt testers validated 55+ queries across five personas. [View source](https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/){#ev-meta-2026-critic-quality-gate-knowledge} · verified 2026-09-13 · primary\n- **Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma) — *How Meta Used AI to Map Tribal Knowledge in Large-Scale Data Pipelines*, 2026.** In preliminary tests on six tasks against our pipeline, agents with pre-computed context used roughly 40% fewer tool calls and tokens per task. [View source](https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/){#ev-meta-2026-six-task-preliminary-knowledge} · verified 2026-09-13 · primary\n- **dbt Labs — *Semantic Layer vs. Text-to-SQL: 2026 Benchmark Update (Jason Ganz, Benoit Perigaud)*, 2026.** But here's the critical difference: the Semantic Layer tells you it can't answer. It never returns invalid data. Text-to-SQL will cheerfully give you a wrong number. [View source](https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026){#ev-dbt-2026-semantic-layer-refuses-knowledge} · verified 2026-09-13 · primary\n- **dbt Labs — *Semantic Layer vs. Text-to-SQL: 2026 Benchmark Update (Jason Ganz, Benoit Perigaud)*, 2026.** 11 questions, each run 20 times, across multiple LLMs. [View source](https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026){#ev-dbt-2026-benchmark-method-knowledge} · verified 2026-09-13 · primary\n- **British Columbia Civil Resolution Tribunal — *Moffatt v. Air Canada, 2024 BCCRT 149*, 2024.** In effect, Air Canada suggests the chatbot is a separate legal entity that is responsible for its own actions. This is a remarkable submission. While a chatbot has an interactive component, it is still just a part of Air Canada's website. It should be obvious to Air Canada that it is responsible for all the information on its website. It makes no difference whether the information comes from a static page or a chatbot. [View source](https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do){#ev-bccrt-2024-moffatt-holding-knowledge} · verified 2026-09-13 · primary\n- **British Columbia Civil Resolution Tribunal — *Moffatt v. Air Canada, 2024 BCCRT 149*, 2024.** The webpage says, in part, the bereavement policy does not apply to requests for bereavement consideration after travel has been completed. I address the inconsistency between Air Canada's chatbot and webpage later in this decision. [View source](https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do){#ev-bccrt-2024-moffatt-policy-page-knowledge} · verified 2026-09-13 · primary\n- **Oberlandesgericht Hamm — *Urteil vom 12.05.2026, 4 UKl 3/25*, 2026.** die - dies ist unstreitig - keine unzutreffenden Angaben über die Facharztqualifikation ihrer Geschäftsführer enthalten. [View source](https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html){#ev-olg-hamm-2026-source-data-correct-knowledge} · verified 2026-09-13 · primary\n- **Consortium for Service Innovation — *Technique 5.2: KCS Article State (Knowledge-Centered Success: Practices Guide (2027))*, 2026.** Archiving an article is better than deleting it. If an article has been linked to a request, you will not want to delete the actual article from the knowledge base as it will result in a broken link between the knowledge base and the system of record. [View source](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2){#ev-csi-2027-archive-not-delete-knowledge} · verified 2026-09-13 · primary\n- **Oberlandesgericht Hamm — *Urteil vom 12.05.2026, 4 UKl 3/25*, 2026.** Vielmehr trifft es zu, dass ein Großteil der angesprochenen Verbraucher in besonderer Weise auf die Richtigkeit der computergenerierten Antwort vertraut, da Maschinen im Allgemeinen als weniger fehleranfällig als der Mensch wahrgenommen werden. [View source](https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html){#ev-olg-hamm-2026-users-trust-ai-knowledge} · verified 2026-09-13 · primary\n- **Wettbewerbszentrale — *OLG Hamm lässt Unternehmen für Aussagen seines Chatbots haften, Volltext verfügbar*, 2026.** Generische Disclaimer wie „KI kann Fehler machen“ schützen nicht zuverlässig vor einer Haftung für fehlerhafte Aussagen. [View source](https://www.wettbewerbszentrale.de/olg-hamm-laesst-unternehmen-fuer-aussagen-seines-chatbots-haften-volltext-verfuegbar/){#ev-wettbewerbszentrale-2026-disclaimer-knowledge} · verified 2026-09-13 · primary\n- **Atlan — *LLM Knowledge Base Staleness: Scoring, Causes, and How to Fix It*, 2026.** Staleness accumulates across three layers: source documents, schema drift, and ownership lapse. ... Owners move on and assets lose certification silently. [View source](https://atlan.com/know/llm-knowledge-base-staleness/){#ev-atlan-2026-ownership-lapse-knowledge} · verified 2026-09-13 · primary",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "id": "ev-karpathy-llm-wiki-2026-llm-writes-all-knowledge",
+          "org": "Andrej Karpathy",
+          "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+          "wording": "You never (or rarely) write the wiki yourself - the LLM writes and maintains all of it. You're in charge of sourcing, exploration, and asking the right questions.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-karpathy-llm-wiki-2026-business-humans-possibly-knowledge",
+          "org": "Andrej Karpathy",
+          "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+          "wording": "Business/team: an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents, customer calls. Possibly with humans in the loop reviewing updates. The wiki stays current because the LLM does the maintenance that no one on the team wants to do.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-karpathy-llm-wiki-2026-lint-checks-knowledge",
+          "org": "Andrej Karpathy",
+          "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+          "wording": "Periodically, ask the LLM to health-check the wiki. Look for: contradictions between pages, stale claims that newer sources have superseded, orphan pages with no inbound links",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-dbt-2026-semantic-layer-refuses-knowledge",
+          "org": "dbt Labs",
+          "url": "https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026",
+          "wording": "But here's the critical difference: the Semantic Layer tells you it can't answer. It never returns invalid data. Text-to-SQL will cheerfully give you a wrong number.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-dbt-2026-benchmark-method-knowledge",
+          "org": "dbt Labs",
+          "url": "https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026",
+          "wording": "11 questions, each run 20 times, across multiple LLMs.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-atlan-2026-ownership-lapse-knowledge",
+          "org": "Atlan",
+          "url": "https://atlan.com/know/llm-knowledge-base-staleness/",
+          "wording": "Staleness accumulates across three layers: source documents, schema drift, and ownership lapse. ... Owners move on and assets lose certification silently",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-bccrt-2024-moffatt-policy-page-knowledge",
+          "org": "British Columbia Civil Resolution Tribunal",
+          "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do",
+          "wording": "The webpage says, in part, the bereavement policy does not apply to requests for bereavement consideration after travel has been completed. I address the inconsistency between Air Canada's chatbot and webpage later in this decision.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-bccrt-2024-moffatt-holding-knowledge",
+          "org": "British Columbia Civil Resolution Tribunal",
+          "url": "https://decisions.civilresolutionbc.ca/crt/crtd/en/item/525448/index.do",
+          "wording": "In effect, Air Canada suggests the chatbot is a separate legal entity that is responsible for its own actions. This is a remarkable submission. While a chatbot has an interactive component, it is still just a part of Air Canada's website. It should be obvious to Air Canada that it is responsible for all the information on its website. It makes no difference whether the information comes from a static page or a chatbot.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-olg-hamm-2026-source-data-correct-knowledge",
+          "org": "Oberlandesgericht Hamm",
+          "url": "https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html",
+          "wording": "die - dies ist unstreitig - keine unzutreffenden Angaben über die Facharztqualifikation ihrer Geschäftsführer enthalten",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-olg-hamm-2026-users-trust-ai-knowledge",
+          "org": "Oberlandesgericht Hamm",
+          "url": "https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html",
+          "wording": "Vielmehr trifft es zu, dass ein Großteil der angesprochenen Verbraucher in besonderer Weise auf die Richtigkeit der computergenerierten Antwort vertraut, da Maschinen im Allgemeinen als weniger fehleranfällig als der Mensch wahrgenommen werden.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-wettbewerbszentrale-2026-disclaimer-knowledge",
+          "org": "Wettbewerbszentrale",
+          "url": "https://www.wettbewerbszentrale.de/olg-hamm-laesst-unternehmen-fuer-aussagen-seines-chatbots-haften-volltext-verfuegbar/",
+          "wording": "Generische Disclaimer wie „KI kann Fehler machen“ schützen nicht zuverlässig vor einer Haftung für fehlerhafte Aussagen.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-zhang-2019-obsolete-at-posting-knowledge",
+          "org": "Zhang, Wang, Chen, Zou, Hassan",
+          "url": "https://arxiv.org/abs/1903.12282",
+          "wording": "More than half of the obsolete answers (58.4%) were probably already obsolete when they were first posted.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-zhang-2019-obsolete-rarely-updated-knowledge",
+          "org": "Zhang, Wang, Chen, Zou, Hassan",
+          "url": "https://arxiv.org/abs/1903.12282",
+          "wording": "When an obsolete answer is observed, only a small proportion (20.5%) of such answers are ever updated.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-berkeley-2026-tkboost-learned-from-mistakes-knowledge",
+          "org": "Agarwal, Biswal, Zeighami, Cheung, Gonzalez, Parameswaran (UC Berkeley)",
+          "url": "https://arxiv.org/abs/2602.13521",
+          "wording": "To accumulate experience, Tk-Boost first asks the NL2SQL agent to answer a few queries on the database, identifies the agent's misconceptions by analyzing its mistakes on the database, and generates tribal knowledge to address them.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-berkeley-2026-tkboost-accuracy-knowledge",
+          "org": "Agarwal, Biswal, Zeighami, Cheung, Gonzalez, Parameswaran (UC Berkeley)",
+          "url": "https://arxiv.org/abs/2602.13521",
+          "wording": "Extensive experiments across the BIRD and Spider 2.0 benchmarks with various NL2SQL agents shows Tk-Boost improves NL2SQL agents accuracy by up to 16.9% on Spider 2.0 and 13.7% on BIRD.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-meta-2026-self-refresh-decay-knowledge",
+          "org": "Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma)",
+          "url": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/",
+          "wording": "The system self-refreshes every few weeks, validating file paths, identifying coverage gaps, re-running critic agents, and auto-fixing issues. Context that decays is worse than no context at all.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-meta-2026-critic-quality-gate-knowledge",
+          "org": "Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma)",
+          "url": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/",
+          "wording": "three rounds of independent critic agents improved scores from 3.65 to 4.20 out of 5.0, and all referenced file paths were verified with zero hallucinations. ... Three prompt testers validated 55+ queries across five personas",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-meta-2026-six-task-preliminary-knowledge",
+          "org": "Engineering at Meta (Krishna Ganeriwal, Plawan Rath, Ashwini Verma)",
+          "url": "https://engineering.fb.com/2026/04/06/developer-tools/how-meta-used-ai-to-map-tribal-knowledge-in-large-scale-data-pipelines/",
+          "wording": "In preliminary tests on six tasks against our pipeline, agents with pre-computed context used roughly 40% fewer tool calls and tokens per task.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-csi-2027-reuse-is-review-knowledge",
+          "org": "Consortium for Service Innovation",
+          "url": "https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_2_Improve/Technique_2.1",
+          "wording": "Let reuse draw attention to the articles that have value. Embracing this technique means we are constantly improving the knowledge that is being used. For articles that are never referenced, we do not waste time or money reviewing them.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-csi-2027-flag-it-or-fix-it-knowledge",
+          "org": "Consortium for Service Innovation",
+          "url": "https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_2_Improve/Technique_2.2",
+          "wording": "If we see something we think is wrong or doesn't make sense, we need to take one of two actions: flag it or fix it. ... Flag It: If we are not confident or we aren't trained to make the update, we flag it. KCS articles that are flagged need to trigger a workflow that will get the attention of a subject matter expert. ... Fix It: If we are confident and we are trained to make the update, we fix it.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-csi-2027-article-state-knowledge",
+          "org": "Consortium for Service Innovation",
+          "url": "https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2",
+          "wording": "Article state is comprised of three metadata fields: article confidence, article audience, and article governance.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-csi-2027-not-validated-knowledge",
+          "org": "Consortium for Service Innovation",
+          "url": "https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2",
+          "wording": "The users of the knowledge base who have visibility to Not Validated articles need to understand that Not Validated articles should not be used unless the article is relevant to the situation they are working on, and they have confidence in the resolution. Judgment is required.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-csi-2027-archive-not-delete-knowledge",
+          "org": "Consortium for Service Innovation",
+          "url": "https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.2",
+          "wording": "Archiving an article is better than deleting it. If an article has been linked to a request, you will not want to delete the actual article from the knowledge base as it will result in a broken link between the knowledge base and the system of record.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        }
+      ]
     },
     {
       "bundle": "decision-guides",
@@ -8927,7 +9128,7 @@
         "okf",
         "agents"
       ],
-      "body": "The reader of your knowledge is increasingly an AI agent, not only a person. That reader does not skim or infer context the way a colleague does. This page argues our view: when the reader is an agent, the format you publish in starts to matter as much as the words.\n\n## What changes when an agent is the reader\n\nA person reads a document with a lifetime of context. You know your own company's style, you can tell a draft from a decision, and you can guess which page is out of date. An agent has none of that unless the knowledge carries it.\n\nHand an agent a folder of documents and it has to guess. It guesses what is authoritative, what is current, and where each claim came from. Those guesses are where wrong answers start. The gap is not the agent's reading skill. It is the missing structure around the words.\n\n## Why raw documents fall short\n\nA raw document is written for a human reader. It assumes you can judge the source, weigh the author, and notice the date at the top. Strip that judgment away and a pile of documents becomes a pile of undifferentiated text.\n\nThe agent cannot see which page supersedes another. It cannot tell a definition from an aside, or a cited fact from an offhand line. A knowledge format fixes this by carrying structure with the content. It records what kind of thing each piece is, how the pieces relate, and [where each claim came from](/open-knowledge-format/01-understanding-okf/03-provenance-and-trust.md). That structure travels with the knowledge instead of living only in a reader's head.\n\n## The hand-it-over shift\n\nThe old way to share knowledge was to hand over a copy. You exported the documents, the other side ingested them, and both sides drifted apart from that moment on. A copy is stale the instant it is made.\n\nMCP, the Model Context Protocol, changes the exchange. It is an open protocol that lets an AI assistant connect to an outside source and use it as a live tool. The agent does not download a snapshot. It queries the real thing.\n\nThis knowledge base is published that way. Knowledgeville is served over MCP at `https://www.onesteplabs.com/knowledgeville/mcp`. An assistant can search it, open a page with its sources attached, and see what changed, all live, without downloading anything. The agent connects to structured, sourced knowledge instead of ingesting a document dump.\n\n## What this means for how you publish\n\nIf some of your readers are agents, publishing a folder of documents is no longer enough. The structure a person supplies in their head now has to live in the format itself. That is a change in how you publish, not only in what you write.\n\nOur take: treat the format as part of the knowledge. Record what each piece is, how it relates to the rest, and where its claims came from. Then serve it as something an agent can query live, not a copy it has to ingest. You do not have to rebuild everything at once, but the direction is worth planning for now.",
+      "body": "The reader of your knowledge is increasingly an AI agent, not only a person. That reader does not skim or infer context the way a colleague does. This page argues our view: when the reader is an agent, the format you publish in starts to matter as much as the words.\n\n## What changes when an agent is the reader\n\nA person reads a document with a lifetime of context. You know your own company's style, you can tell a draft from a decision, and you can guess which page is out of date. An agent has none of that unless the knowledge carries it.\n\nHand an agent a folder of documents and it has to guess. It guesses what is authoritative, what is current, and where each claim came from. Those guesses are where wrong answers start. The gap is not the agent's reading skill. It is the missing structure around the words. Keeping that knowledge current and owned is its own decision, covered in [Keeping What Your AI Knows True](/decision-guides/keeping-what-your-ai-knows-true.md).\n\n## Why raw documents fall short\n\nA raw document is written for a human reader. It assumes you can judge the source, weigh the author, and notice the date at the top. Strip that judgment away and a pile of documents becomes a pile of undifferentiated text.\n\nThe agent cannot see which page supersedes another. It cannot tell a definition from an aside, or a cited fact from an offhand line. A knowledge format fixes this by carrying structure with the content. It records what kind of thing each piece is, how the pieces relate, and [where each claim came from](/open-knowledge-format/01-understanding-okf/03-provenance-and-trust.md). That structure travels with the knowledge instead of living only in a reader's head.\n\n## The hand-it-over shift\n\nThe old way to share knowledge was to hand over a copy. You exported the documents, the other side ingested them, and both sides drifted apart from that moment on. A copy is stale the instant it is made.\n\nMCP, the Model Context Protocol, changes the exchange. It is an open protocol that lets an AI assistant connect to an outside source and use it as a live tool. The agent does not download a snapshot. It queries the real thing.\n\nThis knowledge base is published that way. Knowledgeville is served over MCP at `https://www.onesteplabs.com/knowledgeville/mcp`. An assistant can search it, open a page with its sources attached, and see what changed, all live, without downloading anything. The agent connects to structured, sourced knowledge instead of ingesting a document dump.\n\n## What this means for how you publish\n\nIf some of your readers are agents, publishing a folder of documents is no longer enough. The structure a person supplies in their head now has to live in the format itself. That is a change in how you publish, not only in what you write.\n\nOur take: treat the format as part of the knowledge. Record what each piece is, how it relates to the rest, and where its claims came from. Then serve it as something an agent can query live, not a copy it has to ingest. You do not have to rebuild everything at once, but the direction is worth planning for now.",
       "updated": "2026-07-01",
       "sources": []
     },
@@ -9858,6 +10059,16 @@
     {
       "date": "2026-09-13",
       "bundle": "decision-guides",
+      "entry": "Creation**: new guide, Keeping What Your AI Knows True:"
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "decision-guides",
+      "entry": "Update**: Glossary adds answer key, Knowledge-Centered Success"
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "decision-guides",
       "entry": "Creation**: new guide, Who Should Own the AI Bill:"
     },
     {
@@ -10024,6 +10235,11 @@
       "date": "2026-06-29",
       "bundle": "enterprise-ai-transformation",
       "entry": "Update**: Began tracking this bundle's change history here, as a per-bundle OKF log that ships with the bundle."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "open-knowledge-format",
+      "entry": "Update**: Knowledge for Agents, Not People"
     },
     {
       "date": "2026-08-25",

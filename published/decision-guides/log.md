@@ -2,6 +2,13 @@
 
 ## 2026-09-13
 
+* **Creation**: new guide, [Keeping What Your AI Knows True](/decision-guides/keeping-what-your-ai-knows-true.md):
+  how to keep the knowledge your AI assistants and agents act on current, owned, and safe. It sorts
+  knowledge by whether a machine can check it, and compares reviewing on use, reviewing on a schedule,
+  letting AI maintain it, and answering only from reviewed sources. It notes that in the two court
+  rulings found, the source content was correct and the AI still got it wrong.
+* **Update**: [Glossary](/decision-guides/glossary.md) adds answer key, Knowledge-Centered Success
+  (KCS), last-verified date, and semantic layer.
 * **Creation**: new guide, [Who Should Own the AI Bill](/decision-guides/who-should-own-the-ai-bill.md):
   who should hold each kind of AI spend, seat licenses and pay-per-use charges, and which budget
   controls help without choking the adoption you are paying for. It shows that seats hide use, that

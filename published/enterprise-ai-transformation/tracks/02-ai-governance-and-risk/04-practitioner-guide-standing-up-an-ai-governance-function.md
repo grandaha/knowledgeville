@@ -95,7 +95,7 @@ Owns the organization's model risk framework: model inventory, model validation 
 
 ### AI Legal and Privacy Counsel
 
-In-house or outside counsel with specific awareness of the EU AI Act (prohibited uses enforceable since February 2025, high-risk system obligations enforceable from August 2026), applicable US state AI laws (Colorado, Illinois, Texas, and others in progress), and sector-specific regulations with AI implications: HIPAA for clinical AI, FCRA for credit-related AI, EEOC guidance on AI in hiring.
+In-house or outside counsel with specific awareness of the EU AI Act (prohibited uses enforceable since February 2025, high-risk system obligations enforceable from December 2027), applicable US state AI laws (Colorado, Illinois, Texas, and others in progress), and sector-specific regulations with AI implications: HIPAA for clinical AI, FCRA for credit-related AI, EEOC guidance on AI in hiring.
 
 **Common mistake:** Relying on general counsel with no AI-specific background to advise on AI governance decisions. General counsel will default to the most conservative reading of existing law, which may be either overly restrictive or miss AI-specific obligations entirely.
 
@@ -175,7 +175,7 @@ Neither SR 11-7 nor SR 26-2 explicitly addresses agentic systems. Organizations 
 
 **Policy exists but the people making day-to-day AI decisions don't know about it.** A governance framework that lives on an intranet page but was never operationalized through training, intake processes, or champion networks provides no actual governance.
 
-**The charter is never updated.** The EU AI Act's enforcement timeline (prohibited uses since February 2025, high-risk system obligations from August 2026), the accumulation of US state AI laws, and new OMB guidance in the federal sector represent a genuinely dynamic regulatory environment. A governance charter written in 2024 and not updated since is not current.
+**The charter is never updated.** The EU AI Act's enforcement timeline (prohibited uses since February 2025, high-risk obligations postponed in 2026 to December 2027), the accumulation of US state AI laws, and new OMB guidance in the federal sector represent a genuinely dynamic regulatory environment. A governance charter written in 2024 and not updated since is not current.
 
 **All AI systems are reviewed with the same rigor.** Applying the same full governance review to a simple keyword-based routing rule and a customer-facing generative AI system wastes the governance function's time and creates fatigue across the organization. Risk-tiered review processes are not a shortcut — they are the only way to focus review resources where they matter.
 

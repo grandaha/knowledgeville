@@ -1,5 +1,25 @@
 # Update Log
 
+## 2026-09-13
+* **Update**: EU AI Act dates now reflect the AI Omnibus, which entered into force on 27 July 2026.
+  It moved high-risk obligations for sensitive areas such as employment and education (Annex III)
+  from 2 August 2026 to 2 December 2027, and for AI built into regulated products (Annex I) from
+  2 August 2027 to 2 August 2028. Corrected on the governance track's
+  [Executive Summary](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/01-executive-summary.md),
+  the [AI Governance Framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md)
+  (whose table had also mislabeled the two high-risk categories),
+  [Practitioner Guide: AI Policy and Acceptable Use](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use.md)
+  (which still called the postponement provisional),
+  [Practitioner Guide: Standing Up an AI Governance Function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md),
+  [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md)
+  (which also listed two general-purpose AI duties, training-data summaries and systemic-risk
+  notification, as high-risk duties), the data readiness track's
+  [Executive Summary](/enterprise-ai-transformation/tracks/03-data-readiness/01-executive-summary.md),
+  [Security & Compliance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/06-security-and-compliance.md),
+  [Total Cost of Data Debt](/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/total-cost-of-data-debt.md),
+  and the [Glossary](/enterprise-ai-transformation/glossary.md). The February 2025, August 2025, and
+  August 2026 transparency dates were already right and are unchanged.
+
 ## 2026-08-24
 * **Update**: [Access & Integration](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/04-access-and-integration.md)
   now attributes its data-architecture direction to Deloitte's State of AI in the Enterprise

@@ -2578,16 +2578,16 @@
   verified: 2026-06-22
   status: primary
 - id: ev-ec-ai-act-2024-application-timeline
-  claim: "EU AI Act phased application dates (GPAI vs high-risk obligations)"
-  value: "In force 1 Aug 2024; GPAI obligations apply 2 Aug 2025; most high-risk obligations apply 2 Aug 2026"
-  wording: "the governance rules and the obligations for general-purpose AI models became applicable on 2 August 2025; the majority of remaining obligations, including rules for high-risk AI systems, apply from 2 August 2026"
+  claim: "EU AI Act application dates after the 2026 AI Omnibus (GPAI, general application, and postponed high-risk obligations)"
+  value: "In force 1 Aug 2024; GPAI obligations 2 Aug 2025; generally applicable 2 Aug 2026; Annex III high-risk rules 2 Dec 2027; Annex I high-risk rules 2 Aug 2028; AI Omnibus in force 27 Jul 2026"
+  wording: "The AI Act entered into force on 1 August 2024 and became applicable on 2 August 2026, with some exceptions: ... the governance rules and the obligations for GPAI models became applicable on 2 August 2025 ... the rules for high-risk AI systems embedded into regulated products (Annex I) have an extended transition period until 2 August 2028 and the rules for high-risk use cases in certain sensitive areas (Annex III) have been extended to 2 December 2027 ... This legislative proposal (dubbed as the 'AI Omnibus') was adopted on 19 November 2025, a political agreement was reached on 7 May 2026 and entered into force on 27 July 2026."
   source:
     org: European Commission
     report: "Regulatory framework on AI (Regulation (EU) 2024/1689)"
-    edition: 2024
+    edition: 2026
     url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
     pdf_hash:
-  verified: 2026-06-21
+  verified: 2026-09-13
   status: primary
 - id: ev-dlapiper-gdpr-fines-2026-cumulative-total
   claim: "Cumulative GDPR fines since 25 May 2018"

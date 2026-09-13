@@ -173,7 +173,7 @@ The global privacy regulatory environment expanded significantly in 2025–2026.
 
 **GDPR (EU)** — Applies to AI processing personal data. Automated decision-making affecting individuals must be explainable. Right to erasure creates obligations when personal data is used in model training. Fines: up to €20M or 4% of global revenue.  <!-- noev: statutory penalty cap, cited by official designation (GDPR / CCPA) -->
 
-**EU AI Act** — Risk-based AI regulation. High-risk applications must document training data sources, implement bias controls, and maintain human oversight. Full enforcement August 2026.
+**EU AI Act** — Risk-based AI regulation. High-risk applications must document training data sources, implement bias controls, and maintain human oversight. High-risk requirements apply from December 2027, or August 2028 for AI built into regulated products.
 
 **CCPA/CPRA (California)** — Automated Decision-Making Technology (ADMT) requirements effective January 2026. Requires meaningful disclosure of decision-making logic and likely outcomes. Fines: \$2,663/negligent violation, \$7,988/intentional.  <!-- noev: statutory penalty cap, cited by official designation (GDPR / CCPA) -->
 

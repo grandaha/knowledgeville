@@ -343,7 +343,7 @@ A voluntary US framework published by the National Institute of Standards and Te
 
 ## EU AI Act
 
-The first legally binding AI regulation, enacted by the European Union. Risk-based: the higher the potential harm of an AI system, the stricter the obligations. High-risk applications (credit scoring, HR, critical infrastructure) face the most demanding requirements — technical documentation, training data transparency, bias controls, and regulatory notification. Enforcement by the European Commission began August 2026.
+The first legally binding AI regulation, enacted by the European Union. Risk-based: the higher the potential harm of an AI system, the stricter the obligations. High-risk applications (credit scoring, HR, critical infrastructure) face the most demanding requirements — technical documentation, training data transparency, bias controls, and regulatory notification. Most rules apply from August 2026. High-risk requirements were postponed to December 2027, or August 2028 for AI built into regulated products.
 
 ---
 

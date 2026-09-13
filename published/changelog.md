@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.2.0 — 2026-09-13
+
+### New & expanded content
+* Decision guide on which AI model for which job
+
 ## v12.1.1 — 2026-09-13
 
 ## EU AI Act dates corrected for the 2026 postponement

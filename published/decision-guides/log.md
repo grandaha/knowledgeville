@@ -1,5 +1,15 @@
 # Change log — Decision Guides
 
+## 2026-09-13
+
+* **Creation**: new guide, [Which AI Model for Which Job](/decision-guides/which-ai-model-for-which-job.md):
+  whether a team's recurring AI work should run on one model, a model per type of work, a router
+  that picks for each request, or an open-weight model. It explains why a listed price is not the
+  real cost, why being able to switch matters more than any single choice, and gives a 20-task
+  pilot for testing the decision on your own work.
+* **Update**: [Glossary](/decision-guides/glossary.md) adds acceptance test, cost per accepted
+  result, open-weight model, and routing.
+
 ## 2026-08-04
 
 * **Creation**: new guide — [When to Embed an Engineer](/decision-guides/when-to-embed-an-engineer.md):

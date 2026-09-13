@@ -78,7 +78,7 @@
 - id: ev-epoch-inference-price-2025
   claim: "Inference cost for a fixed capability level falls fast but unevenly across benchmarks; GPT-4-level science-question performance fell about 40x per year"
   value: "9x to 900x per year (median ~50x/yr); GPT-4-level GPQA ~40x/yr"
-  wording: "between 9x to 900x per year... with a median of 50x per year. The price to achieve GPT-4's performance on a set of PhD-level science questions fell by 40x per year."
+  wording: "Across all of these benchmarks and performance thresholds, we found prices declining between 9x per year and 900x per year, with a median of 50x per year. The price to achieve GPT-4's performance on a set of PhD-level science questions fell by 40x per year."
   source:
     org: "Epoch AI"
     report: "LLM inference prices have fallen rapidly but unequally across tasks"

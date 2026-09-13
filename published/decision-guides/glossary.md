@@ -12,9 +12,13 @@ generated:
 
 Plain-language definitions of the terms this bundle uses. It grows as the bundle does.
 
-- **Decision guide** — a page that helps you make one recurring, consequential decision: the options, the criteria, the tradeoffs, and when each choice wins.
-- **Criteria** — the handful of factors that should actually drive the decision, as opposed to everything you could consider.
-- **Tradeoff** — what you give up by choosing one option over another; the guides cite the evidence behind the important ones.
-- **When each wins** — the conditions under which a given option is the better call, written as plain "if your situation is X, lean toward Y."
-- **Reversibility** — how cheaply you can undo a choice if it turns out wrong; cheap-to-reverse decisions deserve less deliberation.
-- **Total cost of ownership (TCO)** — the full lifetime cost of an option, not just the upfront price — including maintenance, support, and the cost of your own time.
+- **Acceptance test**: a written description of what a usable result looks like for one type of job, set down before any model is tried, so every result is judged the same way.
+- **Cost per accepted result**: everything spent to get usable output, including failed attempts and the time people spend checking and fixing, divided by the number of results that passed the acceptance test.
+- **Criteria**: the handful of factors that should actually drive the decision, as opposed to everything you could consider.
+- **Decision guide**: a page that helps you make one recurring, consequential decision: the options, the criteria, the tradeoffs, and when each choice wins.
+- **Open-weight model**: an AI model whose trained weights are published for anyone to download and run. Its license may still limit how it can be used, so open-weight is not the same as open source.
+- **Reversibility**: how cheaply you can undo a choice if it turns out wrong; cheap-to-reverse decisions deserve less deliberation.
+- **Routing**: sending different requests to different AI models. It can mean a person assigning a model to each type of work, software choosing a model for each request, or a backup model taking over when the first is unavailable.
+- **Total cost of ownership (TCO)**: the full lifetime cost of an option, not just the upfront price. It includes maintenance, support, and the cost of your own time.
+- **Tradeoff**: what you give up by choosing one option over another; the guides cite the evidence behind the important ones.
+- **When each wins**: the conditions under which a given option is the better call, written as plain "if your situation is X, lean toward Y."

@@ -1,6 +1,14 @@
 # Update Log
 
 ## 2026-09-13
+* **Update**: [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md)
+  now cites its routing claim and splits routing into three patterns: a team assigning a cheaper
+  model to a task, a router choosing a model per request, and fallback to a second model. It adds
+  that benchmark savings do not carry over cleanly to multi-turn or agent work. The self-hosting
+  guidance drops the claim that suitable open models run on commodity hardware, and replaces a
+  2024 statistic with 2025 evidence and the OECD's volume threshold for self-hosting. The
+  prompt-caching paragraph now cites OpenAI's current guide, a discount of up to 90%, and drops
+  an unsupported 50% figure for earlier models.
 * **Update**: EU AI Act dates now reflect the AI Omnibus, which entered into force on 27 July 2026.
   It moved high-risk obligations for sensitive areas such as employment and education (Annex III)
   from 2 August 2026 to 2 December 2027, and for AI built into regulated products (Annex I) from

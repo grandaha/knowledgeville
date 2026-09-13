@@ -3383,18 +3383,18 @@
   status: primary
   expires: 2027-06-21
 - id: ev-openai-prompt-caching-2026-discount
-  claim: "OpenAI prompt caching trigger length and cached-input discount range"
-  value: "auto-applies at >=1,024 tokens; cached-input discount ~50% (earlier models) up to ~90% (newest)"
-  wording: "API calls to supported models will automatically benefit from Prompt Caching on prompts longer than 1,024 tokens ... reduce ... input token costs by up to 90%"
+  claim: "OpenAI cached-input discount and minimum cacheable prompt length"
+  value: "cached-input discount up to 90%; minimum cacheable length 1,024 tokens for GPT-5.6 and later, varies for earlier models"
+  wording: "Pay the model's reduced cached-input rate for reused tokens, discounted up to 90%. ... The minimum cacheable prompt length is 1,024 tokens for GPT-5.6 and later and varies by request settings for earlier models."
   source:
     org: OpenAI
-    report: "Prompt caching (OpenAI API guide); Prompt Caching in the API (launch announcement)"
+    report: "Prompt caching (OpenAI API guide)"
     edition: 2026
-    url: https://openai.com/index/api-prompt-caching/
+    url: https://developers.openai.com/api/docs/guides/prompt-caching
     pdf_hash:
-  verified: 2026-06-21
+  verified: 2026-09-13
   status: primary
-  expires: 2027-06-21
+  expires: 2027-03-13
 - id: ev-anthropic-batch-api-2026-discount
   claim: "Anthropic Message Batches API discount and turnaround"
   value: "50% cost reduction; most batches finish in under 1 hour"
@@ -3833,3 +3833,82 @@
     pdf_hash:
   verified: 2026-08-24
   status: primary
+# --- Technology Architecture Framework: routing and self-hosting corrections (2026-09-13) ---
+- id: ev-stanford-2023-frugalgpt-per-dataset-savings
+  claim: "On single-question benchmark tasks, a learned LLM cascade matched the best single model at much lower cost; savings vary by dataset (academic; 2023 models and prices)"
+  value: "cost savings from 50% to 98%, depending on the dataset"
+  wording: "Table 3 displays the overall cost savings of FrugalGPT, which range from 50% to 98%. This is feasible because FrugalGPT identifies the queries that can be accurately answered by smaller LLMs and, as a result, only invokes those cost-effective LLMs."
+  source:
+    org: "Chen, Zaharia, Zou (Stanford University)"
+    report: "FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance"
+    edition: 2023
+    url: https://arxiv.org/abs/2305.05176
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-lmsys-2024-routellm-2x-cost
+  claim: "Routers trained on human preference data cut cost on single-turn benchmarks while keeping most of the strong model's quality; the one case above 2x kept 95% of GPT-4's score (academic)"
+  value: "MT Bench 3.66x cost saving at 95% of GPT-4 quality; MMLU 1.41x (92%); GSM8K 1.49x (87%)"
+  wording: "We demonstrate that our router models significantly reduce costs-by over 2x-without substantially compromising quality. ... MT Bench 3.66 (95% GPT-4 quality) ... MMLU 1.41 (92% GPT-4 quality) ... GSM8K 1.49 (87% GPT-4 quality) ... Table 6: Cost saving ratio of our best performing routers over GPT-4."
+  source:
+    org: "LMSYS (UC Berkeley, Anyscale, Canva)"
+    report: "RouteLLM: Learning to Route LLMs with Preference Data"
+    edition: 2024
+    url: https://arxiv.org/abs/2406.18665v4
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-manifest-2026-complexity-emerges-mid-task
+  claim: "A gateway vendor that retired its own router found a request's real complexity often appears only after tool calls, so a router judging the prompt alone misclassifies it (STAKE: Manifest sells an LLM gateway)"
+  value: "n/a (qualitative)"
+  wording: "The prompt alone does not contain the whole task; it is just the trigger. A lot of the context that determines complexity is only discovered later through tool calls, web searches, and so on."
+  source:
+    org: Manifest
+    report: "Everyone is building LLM routers, we deprecated ours"
+    edition: 2026
+    url: https://manifest.build/blog/why-we-deprecated-our-llm-router
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-oecd-2026-self-hosting-scale-platform
+  claim: "Self-hosting open-weight models pays off only at scale; below about 100 million tokens a month the OECD found no saving (STAKE: a paper written to make the case for AI openness)"
+  value: "under 100M tokens/month: no benefit; medium ~30 months to break even (text: 1B tokens/month; Table 3.3: 500M, 30.4 months); large ~2 months (text: 10B; Table 3.3: 5B, 1.8 months); owned hardware only, GPU rental can pay off at modest volumes"
+  wording: "Self-hosting of open-weight models becomes cost-effective only at scale. ... The economic benefits of self-hosting are not evident for small workloads (less than 100 million tokens per month)."
+  source:
+    org: OECD
+    report: "Benefits of AI openness: OECD discussion paper for the G7"
+    edition: 2026
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/05/benefits-of-ai-openness_40eaff39/746e8c9a-en.pdf
+    pdf_hash: sha256:9b6da1c3e9a6886351f6f895570dfc71d89d5064415e8b69ef9582d89154c671
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-deepseek-2024-v3-serving-hardware-platform
+  claim: "A leading open-weight model has 671B parameters, and its developer's own inference demo runs across two machines of eight GPUs each (the developer's own model card)"
+  value: "671B total parameters (37B active); inference demo: 2 nodes x 8 GPUs"
+  wording: "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. ... torchrun --nnodes 2 --nproc-per-node 8 generate.py ... --config configs/config_671B.json"
+  source:
+    org: DeepSeek-AI
+    report: "DeepSeek-V3 (model card, README)"
+    edition: 2024
+    url: https://huggingface.co/deepseek-ai/DeepSeek-V3
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-a16z-2025-open-source-larger-enterprises
+  claim: "Open-source model adoption was higher at larger enterprises, driven by on-premises data security and compliance needs and by fine-tuning (STAKE: a16z invests in AI companies)"
+  value: "n/a (qualitative)"
+  wording: "Adoption of open source models like Llama and Mistral tended to be higher at larger enterprises relative to their adoption at smaller companies. This has typically been driven by the preference for on-prem solutions, given data security and compliance considerations, as well as the ability to fine-tune for specific enterprise use cases."
+  source:
+    org: "Andreessen Horowitz (a16z)"
+    report: "How 100 Enterprise CIOs Are Building and Buying Gen AI in 2025"
+    edition: 2025
+    url: https://a16z.com/ai-enterprise-2025/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-06-10

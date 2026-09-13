@@ -216,3 +216,355 @@
   verified: 2026-08-04
   status: primary
   expires: 2027-08-04
+# --- Which AI Model for Which Job (2026-09-13) ---
+- id: ev-a16z-cio-survey-2025-five-plus-models
+  claim: "A growing share of enterprise CIOs use five or more AI models (STAKE: a16z invests in AI companies)"
+  value: "37% use 5+ models, up from 29% a year earlier (100 CIOs across 15 industries, survey as of May 8, 2025)"
+  wording: "...surveyed 100 CIOs across 15 industries ... In this year's survey, 37% of respondents are now using 5 or more models as opposed to 29% last year."
+  source:
+    org: "Andreessen Horowitz (a16z)"
+    report: "How 100 Enterprise CIOs Are Building and Buying Gen AI in 2025"
+    edition: 2025
+    url: https://a16z.com/ai-enterprise-2025/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-06-10
+- id: ev-a16z-cio-survey-2025-cost-decides-simple-tasks
+  claim: "For simpler or internal tasks, CIOs report choosing a model mostly on cost (STAKE: a16z invests in AI companies)"
+  value: "n/a (qualitative)"
+  wording: "For simpler or internal tasks, model choice often comes down purely to cost."
+  source:
+    org: "Andreessen Horowitz (a16z)"
+    report: "How 100 Enterprise CIOs Are Building and Buying Gen AI in 2025"
+    edition: 2025
+    url: https://a16z.com/ai-enterprise-2025/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-06-10
+- id: ev-epoch-inference-price-2025-model-choice
+  claim: "The price of reaching a fixed level of AI capability falls fast and unevenly, so any price comparison dates quickly"
+  value: "9x to 900x per year (median ~50x/yr)"
+  wording: "Across all of these benchmarks and performance thresholds, we found prices declining between 9x per year and 900x per year, with a median of 50x per year."
+  source:
+    org: "Epoch AI"
+    report: "LLM inference prices have fallen rapidly but unequally across tasks"
+    edition: 2025
+    url: https://epoch.ai/data-insights/llm-inference-price-trends
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+  expires: 2027-07-01
+- id: ev-anthropic-prompt-caching-2026-model-choice
+  claim: "Reading a cached prompt costs a tenth of the normal input price or less, a discount that applies only while a session stays on the same model"
+  value: "cache reads 0.1x base input price (0.025x on some newest models); default cache lifetime 5 minutes"
+  wording: "Cache read tokens are 0.1 times the base input tokens price (see the table footnote for per-model exceptions) ... By default, the cache has a 5-minute lifetime."
+  source:
+    org: Anthropic
+    report: "Prompt caching (Claude Platform Docs)"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/docs/build-with-claude/prompt-caching
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-03-13
+- id: ev-frugalgpt-2023-cascade-savings-model-choice
+  claim: "On single-question benchmark tasks, a learned cascade of cheaper and stronger models matched the best single model at much lower cost (academic; 2023 models and prices)"
+  value: "cost savings from 50% to 98%, depending on the dataset"
+  wording: "Table 3 displays the overall cost savings of FrugalGPT, which range from 50% to 98%. This is feasible because FrugalGPT identifies the queries that can be accurately answered by smaller LLMs and, as a result, only invokes those cost-effective LLMs."
+  source:
+    org: "Chen, Zaharia, Zou (Stanford University)"
+    report: "FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance"
+    edition: 2023
+    url: https://arxiv.org/abs/2305.05176
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-routellm-2024-router-savings-model-choice
+  claim: "Routers trained on preference data cut cost on single-turn benchmarks while keeping most of the strong model's quality; the one case above 2x kept 95% of GPT-4's score (academic)"
+  value: "MT Bench 3.66x cost saving at 95% of GPT-4 quality; MMLU 1.41x (92%); GSM8K 1.49x (87%)"
+  wording: "We demonstrate that our router models significantly reduce costs-by over 2x-without substantially compromising quality. ... MT Bench 3.66 (95% GPT-4 quality) ... MMLU 1.41 (92% GPT-4 quality) ... GSM8K 1.49 (87% GPT-4 quality) ... Table 6: Cost saving ratio of our best performing routers over GPT-4."
+  source:
+    org: "LMSYS (UC Berkeley, Anyscale, Canva)"
+    report: "RouteLLM: Learning to Route LLMs with Preference Data"
+    edition: 2024
+    url: https://arxiv.org/abs/2406.18665v4
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-manifest-2026-router-retired-model-choice
+  claim: "A gateway vendor retired its own model router after four months across 7,000 cloud users and now recommends a single model for most uses (STAKE: Manifest sells an LLM gateway)"
+  value: "launched March 2026, deprecated June, shut down September 1; 7,000 cloud users; no cost or quality figures published"
+  wording: "We don't believe in model routing anymore. For most use cases, sticking to a single battle-tested model is the best thing you can do. ... After four months of usage across 7000 cloud users, we saw mixed results and a lot of GitHub issues and discussions about it."
+  source:
+    org: Manifest
+    report: "Everyone is building LLM routers, we deprecated ours"
+    edition: 2026
+    url: https://manifest.build/blog/why-we-deprecated-our-llm-router
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-manifest-2026-complexity-mid-task-model-choice
+  claim: "A request's real complexity often appears only after tool calls, so a router judging the prompt alone can misclassify it (STAKE: Manifest sells an LLM gateway)"
+  value: "n/a (qualitative)"
+  wording: "The prompt alone does not contain the whole task; it is just the trigger. A lot of the context that determines complexity is only discovered later through tool calls, web searches, and so on."
+  source:
+    org: Manifest
+    report: "Everyone is building LLM routers, we deprecated ours"
+    edition: 2026
+    url: https://manifest.build/blog/why-we-deprecated-our-llm-router
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-chawla-2026-agent-loop-routing-model-choice
+  claim: "Routing works for isolated requests, but a router that switches models inside an agent loop can cost more than one model, because each switch forfeits the prompt cache (STAKE: sponsored by DigitalOcean, which sells an inference router)"
+  value: "n/a (qualitative)"
+  wording: "That works for isolated requests. Inside an agent loop, though, a naive router can cost more than using one model throughout the session. ... But if you switch models mid-session, the new model must process the conversation again at full price."
+  source:
+    org: "Daily Dose of Data Science (Avi Chawla)"
+    report: "LLM Routing Can Cost More Than Not Routing"
+    edition: 2026
+    url: https://blog.dailydoseofds.com/p/llm-routing-can-cost-more-than-not
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-anthropic-2026-fable-mythos-suspension
+  claim: "A US export-control directive led Anthropic to disable two of its newest models for all customers on June 12, 2026, because it could not verify nationality in real time (the vendor's own account)"
+  value: "Directive received 5:21pm ET, June 12, 2026; 2 models disabled for all customers"
+  wording: "The US government, citing national security authorities, has issued an export control directive to suspend all access to Fable 5 and Mythos 5 by any foreign national... The net effect of this order is that we must abruptly disable Fable 5 and Mythos 5 for all our customers to ensure compliance. We received the directive from the government today at 5:21pm (ET)."
+  source:
+    org: Anthropic
+    report: "Statement on the US government directive to suspend access to Fable 5 and Mythos 5"
+    edition: 2026
+    url: https://www.anthropic.com/news/fable-mythos-access
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-anthropic-2026-fable-mythos-restored
+  claim: "The export controls were lifted June 30, 2026; Fable 5 returned on Anthropic's own platforms worldwide on July 1, with AWS, Google Cloud and Microsoft Foundry to follow; Mythos 5, previously released only to Project Glasswing partners, returned for a set of US organizations"
+  value: "Suspended June 12; lifted June 30; Fable 5 restored July 1"
+  wording: "Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users. As of today, June 30, the export controls on Fable 5 and Mythos 5 have been lifted. Fable 5 will be available starting tomorrow, Wednesday, July 1, to users globally on the Claude Platform, Claude.ai, Claude Code, and Claude Cowork. ... We will re-enable access on AWS, Google Cloud, and Microsoft Foundry as quickly as possible. ... Mythos 5 ... was only released to a small number of trusted Project Glasswing partners for use in defensive cybersecurity. ... We have also restored access to Mythos 5 for a set of US organizations, following the US government's approval on June 26."
+  source:
+    org: Anthropic
+    report: "Redeploying Fable 5"
+    edition: 2026
+    url: https://www.anthropic.com/news/redeploying-fable-5
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-csa-2026-two-substitute-models
+  claim: "The Cloud Security Alliance recommends keeping at least two tested substitute models for each critical AI-enabled workflow"
+  value: "at least 2 tested substitute models per critical workflow"
+  wording: "Organizations should maintain at least two tested substitute models for each critical AI-enabled workflow, with validated performance benchmarks and integration documentation stored in offline-accessible form."
+  source:
+    org: "Cloud Security Alliance (AI Safety Initiative)"
+    report: "Fable 5 Suspension: Enterprise AI Under Export Controls"
+    edition: 2026
+    url: https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-model-export-controls-enterprise-govern/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-openai-2026-deprecation-notice-periods
+  claim: "OpenAI's minimum notice before retiring a model, and the safety or compliance exception that can shorten it"
+  value: "GA models at least 6 months; specialized variants at least 3 months; preview models much shorter notice, such as 2 weeks"
+  wording: "Unless safety or compliance concerns require a faster timeline, we provide the following minimum notice periods before model retirement: Generally available models: At least 6 months... Preview models... may be retired with much shorter notice, such as 2 weeks."
+  source:
+    org: OpenAI
+    report: "Deprecations"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/deprecations
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-03-13
+- id: ev-anthropic-2026-deprecation-60-day-notice
+  claim: "Anthropic's minimum notice before retiring a publicly released model"
+  value: "at least 60 days"
+  wording: "Anthropic notifies customers with active deployments for models with upcoming retirements, providing at least 60 days' notice before model retirement for publicly released models."
+  source:
+    org: Anthropic
+    report: "Model deprecations"
+    edition: 2026
+    url: https://platform.claude.com/docs/en/about-claude/model-deprecations
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-03-13
+- id: ev-chen-2026-price-reversal-rate
+  claim: "Across eight reasoning models on 12 benchmark tasks, the model with the lower listed price cost more in total in about a third of pairwise comparisons (academic; cost only, quality not measured)"
+  value: "32% (106 of 336 pairwise comparisons: 28 model pairs x 12 tasks); prices as of May 1, 2026"
+  wording: "in 32% of model-pair comparisons, the model with a lower listed price actually incurs a higher total cost ... we examine all (8 choose 2) = 28 model pairs across 12 tasks, yielding 336 pairwise cost comparisons. Of these, 106 comparisons (32%) exhibit pricing reversal"
+  source:
+    org: "Chen et al."
+    report: "The Price Reversal Phenomenon: When Cheaper Reasoning Models Cost More"
+    edition: 2026
+    url: https://arxiv.org/abs/2603.23971v2
+    pdf_hash: e27756f59bf011dabbdfdabdf07279936a8ee156116e2f0e63591c0eeece6d24
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-chen-2026-price-reversal-thinking-tokens
+  claim: "On single-turn tasks, thinking tokens account for nearly all of the cost gap when a cheaper-listed model costs more"
+  value: "more than 95% of the cost difference among reversed pairs (single-turn tasks)"
+  wording: "Overall, the number of thinking tokens is the dominating factor for single-turn tasks. More than 95% of the cost difference among reversed model pairs is attributed to thinking tokens. For multi-turn tasks, on the other hand, both the number of turns and the cached input tokens contribute substantially."
+  source:
+    org: "Chen et al."
+    report: "The Price Reversal Phenomenon: When Cheaper Reasoning Models Cost More"
+    edition: 2026
+    url: https://arxiv.org/abs/2603.23971v2
+    pdf_hash: e27756f59bf011dabbdfdabdf07279936a8ee156116e2f0e63591c0eeece6d24
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-kapoor-2025-hal-reasoning-effort
+  claim: "In most tested agent runs, turning up reasoning effort did not raise accuracy (benchmarks; four models compared)"
+  value: "21 of 36 model-agent-benchmark combinations: equal or lower accuracy"
+  wording: "we observe that in 21 of 36 model-agent-benchmark combinations, increased reasoning effort produces equal or lower accuracy. More reasoning does not always mean better results."
+  source:
+    org: "Kapoor et al. (Princeton)"
+    report: "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation"
+    edition: 2025
+    url: https://arxiv.org/abs/2510.11977
+    pdf_hash: f224b5ef6ec2a9e1606878e39e81acd4e0ed8ac9f4d80b120f17266c5c281d0f
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-kapoor-2025-hal-accuracy-cost-pareto
+  claim: "Agent evaluations should report cost next to accuracy, because a slightly more accurate but much more expensive model may be the worse choice"
+  value: "n/a (qualitative)"
+  wording: "we present Pareto frontiers of accuracy versus cost (both dollar cost and token cost), enabling practitioners to select agents based on real-world constraints ... A computationally expensive model that achieves marginally better accuracy may be less suitable for deployment than a cheaper model with slightly lower performance."
+  source:
+    org: "Kapoor et al. (Princeton)"
+    report: "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation"
+    edition: 2025
+    url: https://arxiv.org/abs/2510.11977
+    pdf_hash: f224b5ef6ec2a9e1606878e39e81acd4e0ed8ac9f4d80b120f17266c5c281d0f
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-oecd-2026-open-weight-90pct-quality
+  claim: "Open-weight models reach about 90% of closed-model performance at launch, on a benchmark-based quality index (STAKE: a paper written to make the case for AI openness)"
+  value: "~90% of the closed-model quality index at release"
+  wording: "While open models achieve approximately 90% of the performance of closed models at launch, they are often available at significantly lower cost, resulting in a higher quality-to-price ratio."
+  source:
+    org: OECD
+    report: "Benefits of AI openness: OECD discussion paper for the G7"
+    edition: 2026
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/05/benefits-of-ai-openness_40eaff39/746e8c9a-en.pdf
+    pdf_hash: sha256:9b6da1c3e9a6886351f6f895570dfc71d89d5064415e8b69ef9582d89154c671
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-oecd-2026-open-weight-price-ratio
+  claim: "Open-weight models offered by cloud providers cost about a fifth of the price of closed models for the same task"
+  value: "price ratio 0.2"
+  wording: "In practical terms, a price ratio of 0.2 means that cloud-available open-weight models cost about 20% of the price of closed-weight models for the same task, offering substantially better value for money."
+  source:
+    org: OECD
+    report: "Benefits of AI openness: OECD discussion paper for the G7"
+    edition: 2026
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/05/benefits-of-ai-openness_40eaff39/746e8c9a-en.pdf
+    pdf_hash: sha256:9b6da1c3e9a6886351f6f895570dfc71d89d5064415e8b69ef9582d89154c671
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-oecd-2026-self-hosting-scale-only
+  claim: "Self-hosting open-weight models pays off only at scale; below about 100 million tokens a month the OECD found no saving"
+  value: "under 100M tokens/month: no benefit; medium ~30 months to break even (text: 1B tokens/month; Table 3.3: 500M, 30.4 months); large ~2 months (text: 10B; Table 3.3: 5B, 1.8 months); owned hardware only, GPU rental can pay off at modest volumes"
+  wording: "Self-hosting of open-weight models becomes cost-effective only at scale. ... The economic benefits of self-hosting are not evident for small workloads (less than 100 million tokens per month). Under medium workloads (1 billion tokens per month), private hosting becomes cheaper than pay-as-you-go cloud services only after 2.5 years (around 30 months). ... Table 3.3. Breakeven months for cloud API vs private GPU installation scenarios ... Medium (500 million tokens per month) 30.4 ... Under certain assumptions, GPU rental can therefore be cost-effective even at relatively modest usage levels."
+  source:
+    org: OECD
+    report: "Benefits of AI openness: OECD discussion paper for the G7"
+    edition: 2026
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/05/benefits-of-ai-openness_40eaff39/746e8c9a-en.pdf
+    pdf_hash: sha256:9b6da1c3e9a6886351f6f895570dfc71d89d5064415e8b69ef9582d89154c671
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-oecd-2026-benefits-only-scope
+  claim: "The OECD paper argues the benefits of AI openness and leaves risks explicitly out of scope"
+  value: "n/a (qualitative)"
+  wording: "The analysis focuses on the benefits associated with AI openness – potential risks or downsides fall outside the scope of this paper and are left for future research."
+  source:
+    org: OECD
+    report: "Benefits of AI openness: OECD discussion paper for the G7"
+    edition: 2026
+    url: https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/05/benefits-of-ai-openness_40eaff39/746e8c9a-en.pdf
+    pdf_hash: sha256:9b6da1c3e9a6886351f6f895570dfc71d89d5064415e8b69ef9582d89154c671
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-deepseek-2024-v3-serving-hardware
+  claim: "A leading open-weight model has 671B parameters, and its developer's own inference demo runs across two machines of eight GPUs each (the developer's own model card)"
+  value: "671B total parameters (37B active); inference demo: 2 nodes x 8 GPUs"
+  wording: "We present DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. ... torchrun --nnodes 2 --nproc-per-node 8 generate.py ... --config configs/config_671B.json"
+  source:
+    org: DeepSeek-AI
+    report: "DeepSeek-V3 (model card, README)"
+    edition: 2024
+    url: https://huggingface.co/deepseek-ai/DeepSeek-V3
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-cooley-2026-open-weight-licence-restrictions
+  claim: "Open-weight licences are not open-source licences and may restrict commercial use, volume, and training competing models (STAKE: law-firm client alert)"
+  value: "n/a (qualitative)"
+  wording: "\"Open weight\" is not \"open source.\" ... Depending on the model, organizations may encounter provisions addressing commercial use limitations, acceptable use restrictions, volume restrictions, and attribution or branding requirements. Some licenses also restrict using the model, its outputs or derivative works to train, develop or improve a competing AI model."
+  source:
+    org: Cooley LLP
+    report: "Unlocking the Weights: What Enterprises Should Know Before Deploying Open-Weight AI Models"
+    edition: 2026
+    url: https://www.cooley.com/news/insight/2026/2026-08-12-unlocking-the-weights-what-enterprises-should-know-before-deploying-open-weight-ai-models
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-cooley-2026-no-provider-indemnity
+  claim: "Self-hosted open-weight deployments may lack the provider indemnification that many hosted AI services offer (STAKE: law-firm client alert)"
+  value: "n/a (qualitative)"
+  wording: "Unlike many hosted AI services, self-hosted open-weight deployments may lack provider indemnification or related contractual and technical protections – not only for IP-infringing outputs, but also more broadly for harmful, inaccurate or discriminatory outputs."
+  source:
+    org: Cooley LLP
+    report: "Unlocking the Weights: What Enterprises Should Know Before Deploying Open-Weight AI Models"
+    edition: 2026
+    url: https://www.cooley.com/news/insight/2026/2026-08-12-unlocking-the-weights-what-enterprises-should-know-before-deploying-open-weight-ai-models
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-cooley-2026-origin-export-diligence
+  claim: "Many top open-weight models come from outside the US, so jurisdiction and export-control status belong in standard diligence, not as a bar to adoption (STAKE: law-firm client alert)"
+  value: "n/a (qualitative)"
+  wording: "a substantial share of today's top open-weight models are developed outside the United States, including by developers based in China. ... Organizations evaluating an open-weight model of foreign origin should treat these considerations as part of standard diligence – alongside licensing and IP review – rather than as a bar to adoption"
+  source:
+    org: Cooley LLP
+    report: "Unlocking the Weights: What Enterprises Should Know Before Deploying Open-Weight AI Models"
+    edition: 2026
+    url: https://www.cooley.com/news/insight/2026/2026-08-12-unlocking-the-weights-what-enterprises-should-know-before-deploying-open-weight-ai-models
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-openai-prompt-caching-2026-model-choice
+  claim: "OpenAI discounts cached input tokens by up to 90%"
+  value: "cached-input discount up to 90%; minimum cacheable length 1,024 tokens for GPT-5.6 and later, varies for earlier models"
+  wording: "Pay the model's reduced cached-input rate for reused tokens, discounted up to 90%. ... The minimum cacheable prompt length is 1,024 tokens for GPT-5.6 and later and varies by request settings for earlier models."
+  source:
+    org: OpenAI
+    report: "Prompt caching (OpenAI API guide)"
+    edition: 2026
+    url: https://developers.openai.com/api/docs/guides/prompt-caching
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-03-13

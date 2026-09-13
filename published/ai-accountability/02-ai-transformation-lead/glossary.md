@@ -23,3 +23,13 @@ Plain-language definitions of the terms this bundle uses. It grows as the bundle
 **Gatekeeper model.** A CoE structure where all AI delivery routes through a central team for sign-off. Right for an early-stage program; a bottleneck once the program scales.
 
 **Advisory model.** A CoE structure where delivery lives in the platform/product teams themselves, and the center sets guardrails rather than gatekeeping every project.
+
+**Owner (of a use case).** The business leader, named before anyone builds, who has the authority to redirect budget and who runs the result after launch.
+
+**Delegate.** The domain expert the owner names to work with the delivery team every day. The delegate decides what counts as a correct output and supplies the domain questions the team's tests are built from.
+
+**Hub.** The central AI team, often the CoE, that holds the shared data, security, and platform standards while delivery teams work with the business.
+
+**Delivery team.** The small team that builds a prioritized use case: the owner's delegate, one or two builders, and an architect from the hub. Vendors often call it a "pod," which is not the same as the standing Owner, Architect, and Verifier unit that runs a process after launch.
+
+**Handoff to the owner.** The point at which the owner's people can run and change a system without the team that built it.

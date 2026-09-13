@@ -12,5 +12,7 @@ New here? Start with [What the AI Transformation Lead Is — and the Role](/ai-a
 | --- | --- |
 | [What the AI Transformation Lead Is — and the Role](what-ai-transformation-lead-is.md)<br>What this role runs, why it exists between the Chief AI Officer and the AI Enablement Lead, and where it sits. | Updated 2026-07-02 |
 | [Running the AI Center of Excellence](running-the-ai-coe.md)<br>Staffing the steering committee, building an intake and prioritization backlog, and evolving the model as the program matures. | Updated 2026-07-02 |
+| [Staffing the Delivery Team](staffing-the-delivery-team.md)<br>Who builds a prioritized AI use case, whose time it really costs, and who must be on the team before anyone starts. | Updated 2026-09-13 |
+| [The Handoff to the Owner](the-handoff-to-the-owner.md)<br>What has to change hands when the delivery team moves on, and how to tell whether the owner can run what the team built. | Updated 2026-09-13 |
 | [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-07-02 |
 | [Validation](validation/)<br>How this bundle is validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-07-02 |

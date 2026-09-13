@@ -48,6 +48,8 @@ See [The Accountability Map](/ai-accountability/the-accountability-map.md) for h
 ## How this playbook is organized
 
 - [Running the AI Center of Excellence](/ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md) — staffing the steering committee, building the intake backlog, and evolving the model as the program matures.
+- [Staffing the Delivery Team](/ai-accountability/02-ai-transformation-lead/staffing-the-delivery-team.md): the first handoff, covering who builds a prioritized use case and who must own it before anyone starts.
+- [The Handoff to the Owner](/ai-accountability/02-ai-transformation-lead/the-handoff-to-the-owner.md): the second handoff, covering what has to change hands when the delivery team moves on and how to test that it did.
 
 ## Sources
 

@@ -11,7 +11,7 @@ generated:
 stale_after: "2027-07-02T00:00:00Z"
 verified:
   - by: "human:daveraffaele"
-    at: "2026-07-02T00:00:00Z"
+    at: "2026-09-13T00:00:00Z"
 sources:
   - id: ev-umbrex-caio-playbook-2025-operating-model
     resource: "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/"
@@ -19,7 +19,7 @@ sources:
     author: Umbrex
   - id: ev-umbrex-caio-playbook-2025-portfolio-council-cadence
     resource: "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/"
-    title: Chief AI Officer Playbook — The Chief AI Officer Mandate
+    title: "Chief AI Officer Playbook: The Chief AI Officer Mandate"
     author: Umbrex
 # okf:generated:end
 ---
@@ -40,7 +40,7 @@ What you leave distributed: the actual building. Business units and product team
 
 ## The portfolio council
 
-A working operating model needs a forum, not just a policy. A monthly portfolio council — you, a finance partner, IT/engineering leadership, the data organization, a risk leader, and the business leaders whose budgets are on the line — is where priorities actually get decided. The mechanic that keeps it from becoming a status meeting: you run the agenda and propose priorities, while the other leaders in the room commit resources and ownership ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-portfolio-council-cadence)). If nobody at the table is committing budget or headcount, it isn't a portfolio council — it's a briefing.
+A working operating model needs a forum, not just a policy. A monthly portfolio council — you, a finance partner, IT/engineering leadership, the data organization, a risk leader, and the business leaders whose budgets are on the line — is where priorities actually get decided. The mechanic that keeps it from becoming a status meeting: you run the agenda and propose priorities, business leaders commit sponsorship and benefits ownership, and technology leaders commit capacity ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-portfolio-council-cadence)). If nobody at the table is committing budget or headcount, it isn't a portfolio council — it's a briefing.
 
 ## The responsible-AI review
 
@@ -51,4 +51,4 @@ Keep risk decisions in a separate forum from funding decisions. A portfolio coun
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
 
 - **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** central standards and reviews, distributed delivery in product and business teams, and shared measurement. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-operating-model} · verified 2026-07-02 · primary
-- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-portfolio-council-cadence} · verified 2026-07-02 · primary
+- **Umbrex — *Chief AI Officer Playbook: The Chief AI Officer Mandate*, 2025.** The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-portfolio-council-cadence} · verified 2026-09-13 · primary

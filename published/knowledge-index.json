@@ -1,6 +1,6 @@
 {
-  "version": "v11.1.2",
-  "generated": "2026-08-25",
+  "version": "v12.0.0",
+  "generated": "2026-09-13",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
@@ -23,7 +23,7 @@
         "verification_posture": "verify-embedded-facts",
         "temporal_mode": "always-newer"
       },
-      "pageCount": 2
+      "pageCount": 4
     },
     {
       "slug": "03-ai-enablement",
@@ -235,7 +235,7 @@
         "chief-ai-officer",
         "operating-model"
       ],
-      "body": "The most common early mistake is choosing a single word — \"centralized\" or \"decentralized\" — and running the whole program on it. Neither survives contact with a real organization: pure centralization can't move fast enough for every business unit's use cases, and pure decentralization produces the fragmented, ungoverned sprawl a CAIO exists to prevent.\n\n## The federated model with centralized guardrails\n\nThe pattern most operator guidance converges on is federated: central standards and reviews, distributed delivery in product and business teams, and shared measurement ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-operating-model)). You set the guardrails once — risk tiers, approved platforms, a shared way to measure value — and let business units build inside them, rather than routing every initiative through a central team that becomes the bottleneck.\n\nWhat you own centrally:\n\n- **Standards** — risk tiers, approved data/platform choices, minimum lifecycle gates a project must clear before it ships.\n- **Review** — a portfolio council that decides what gets funded, and a separate responsible-AI review that decides what's safe to ship.\n- **Measurement** — one shared way to track value and adoption, so business units aren't each inventing their own definition of \"working.\"\n\nWhat you leave distributed: the actual building. Business units and product teams own delivery inside the guardrails you set.\n\n## The portfolio council\n\nA working operating model needs a forum, not just a policy. A monthly portfolio council — you, a finance partner, IT/engineering leadership, the data organization, a risk leader, and the business leaders whose budgets are on the line — is where priorities actually get decided. The mechanic that keeps it from becoming a status meeting: you run the agenda and propose priorities, while the other leaders in the room commit resources and ownership ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-portfolio-council-cadence)). If nobody at the table is committing budget or headcount, it isn't a portfolio council — it's a briefing.\n\n## The responsible-AI review\n\nKeep risk decisions in a separate forum from funding decisions. A portfolio council optimizes for value; mixing in risk sign-off pressures it to wave things through. A dedicated responsible-AI review sets risk gates proportional to how much is at stake — a low-stakes internal tool clears a lighter bar than a system making decisions about customers or employees. This is also where you formalize the minimum lifecycle gates every project must clear (see [The First 90 Days](/ai-accountability/01-chief-ai-officer/the-first-90-days.md) for what those gates look like in practice).\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** central standards and reviews, distributed delivery in product and business teams, and shared measurement. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-operating-model} · verified 2026-07-02 · primary\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-portfolio-council-cadence} · verified 2026-07-02 · primary",
+      "body": "The most common early mistake is choosing a single word — \"centralized\" or \"decentralized\" — and running the whole program on it. Neither survives contact with a real organization: pure centralization can't move fast enough for every business unit's use cases, and pure decentralization produces the fragmented, ungoverned sprawl a CAIO exists to prevent.\n\n## The federated model with centralized guardrails\n\nThe pattern most operator guidance converges on is federated: central standards and reviews, distributed delivery in product and business teams, and shared measurement ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-operating-model)). You set the guardrails once — risk tiers, approved platforms, a shared way to measure value — and let business units build inside them, rather than routing every initiative through a central team that becomes the bottleneck.\n\nWhat you own centrally:\n\n- **Standards** — risk tiers, approved data/platform choices, minimum lifecycle gates a project must clear before it ships.\n- **Review** — a portfolio council that decides what gets funded, and a separate responsible-AI review that decides what's safe to ship.\n- **Measurement** — one shared way to track value and adoption, so business units aren't each inventing their own definition of \"working.\"\n\nWhat you leave distributed: the actual building. Business units and product teams own delivery inside the guardrails you set.\n\n## The portfolio council\n\nA working operating model needs a forum, not just a policy. A monthly portfolio council — you, a finance partner, IT/engineering leadership, the data organization, a risk leader, and the business leaders whose budgets are on the line — is where priorities actually get decided. The mechanic that keeps it from becoming a status meeting: you run the agenda and propose priorities, business leaders commit sponsorship and benefits ownership, and technology leaders commit capacity ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-portfolio-council-cadence)). If nobody at the table is committing budget or headcount, it isn't a portfolio council — it's a briefing.\n\n## The responsible-AI review\n\nKeep risk decisions in a separate forum from funding decisions. A portfolio council optimizes for value; mixing in risk sign-off pressures it to wave things through. A dedicated responsible-AI review sets risk gates proportional to how much is at stake — a low-stakes internal tool clears a lighter bar than a system making decisions about customers or employees. This is also where you formalize the minimum lifecycle gates every project must clear (see [The First 90 Days](/ai-accountability/01-chief-ai-officer/the-first-90-days.md) for what those gates look like in practice).\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** central standards and reviews, distributed delivery in product and business teams, and shared measurement. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-operating-model} · verified 2026-07-02 · primary\n- **Umbrex — *Chief AI Officer Playbook: The Chief AI Officer Mandate*, 2025.** The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-portfolio-council-cadence} · verified 2026-09-13 · primary",
       "updated": "2026-07-02",
       "sources": [
         {
@@ -250,9 +250,9 @@
           "id": "ev-umbrex-caio-playbook-2025-portfolio-council-cadence",
           "org": "Umbrex",
           "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
-          "wording": "the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership.",
+          "wording": "The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic.",
           "status": "primary",
-          "verified": "2026-07-02"
+          "verified": "2026-09-13"
         }
       ]
     },
@@ -391,6 +391,172 @@
     },
     {
       "bundle": "02-ai-transformation-lead",
+      "path": "staffing-the-delivery-team.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/02-ai-transformation-lead/staffing-the-delivery-team/",
+      "title": "Staffing the Delivery Team",
+      "description": "Who builds a prioritized AI use case, whose time it really costs, and who must be on the team before anyone starts.",
+      "tags": [
+        "ai-transformation-lead",
+        "ai-delivery"
+      ],
+      "body": "Once your program prioritizes a use case, decide who will own the result before you decide who will build it. Delivery involves two handoffs: from the backlog to the team that builds, and from that team to the people who run the result. Treat them as one design problem.\n\nThis page covers the first handoff, and [The Handoff to the Owner](/ai-accountability/02-ai-transformation-lead/the-handoff-to-the-owner.md) covers the second. Choosing what to build comes before both. For that, see the [intake backlog](/ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md) and the value and feasibility scoring in [Running a Workflow Optimization Program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md).\n\n## Name the owner before you staff anyone\n\nStart with the person who will own the result after launch. The Umbrex Chief AI Officer playbook lists a named business owner first among a project's few non-negotiables ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery)). Name that person before you assign anyone to build.\n\nThe owner needs the authority to act on the result. The test from [When to Embed an Engineer](/decision-guides/when-to-embed-an-engineer.md) applies: someone who can already redirect budget and overrule a queue. A \"product owner\" title does not pass that test on its own.\n\nThat owner is usually too senior to sit with the team every day. So they name a delegate: someone who runs the workflow today and knows what a correct result looks like. Write down which decisions the delegate can make alone and which go back to the owner.\n\n## Who is on the team\n\nBuild the team around the workflow the use case changes. Three seats matter:\n\n- **The owner's delegate.** This is the domain expert, who decides what counts as a correct output. Sam Bhagwat, whose company makes an agent framework, describes how teams build their tests. They ask this person for a comprehensive list of domain questions ([Mastra, 2026](#ev-mastra-infoq-2026-sme-question-set)).\n- **One or two builders.** These are engineers who can build with AI tools and connect the result to your systems and data.\n- **An architect from the hub.** They hold the data, security, and platform standards that [Program Architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md) keeps central. One architect can often cover several teams part time.\n\nIn regulated work, add the compliance or model-risk reviewer at kickoff. A reviewer who first sees the system at launch is how a finished build fails its first review.\n\nThe smallest version of this team is two people. McKinsey's Rob Levin describes \"a product owner who knows the definition of what good looks like, and a full-stack engineer\" ([McKinsey, 2026](#ev-mckinsey-rewired-webinar-2026-two-person-team)). In the terms used here, his product owner is the delegate. The owner with budget authority still sits above the team.\n\nTreat claims about team size with care. We found no independent study of the right size for AI-era delivery teams. Most figures we found come from firms that sell these teams, and McKinsey sells the transformation work around them.\n\nTwo architects who consult on team design say the question is still open. In their words, \"we are not going to pretend the data settles it\" ([Hands-on Architects, 2026](#ev-handsonarchitects-2026-headcount-unsettled)). Whether the domain expert is really on the team matters more than its size.\n\n## The business owner's time is a cost\n\nThe domain expert is the scarcest person on the team. In our reading, most writing on delivery pods leaves their time out of the plan. Budget their hours the way you budget an engineer's: hours per week, for how many weeks, and who covers their normal job.\n\nThen change their objectives to include the result. Otherwise their day job wins every conflict, and the team ends up with a stand-in who can describe the process but cannot change it.\n\nSecure this commitment in the same meeting that sets the priority. In the Umbrex model, the chief AI officer proposes priorities, and business leaders commit sponsorship and benefits ownership ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-leaders-commit-ownership)). A business leader who approves a priority but will not release a person has not really approved it.\n\n## Run as many teams as you have owners\n\nYour limit is usually owners and domain experts rather than engineers, so six prioritized use cases do not mean six teams. You can run as many teams as you have owners who can give the time.\n\nWhere owners are scarce, run use cases one after another through the same team. Run them in parallel only where each one has its own owner and delegate.\n\nMore teams bring a coordination cost, such as duplicated integrations and conflicting data definitions. The hub's standards exist to absorb that cost. When the center itself becomes the bottleneck, [Running the AI Center of Excellence](/ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md) covers how the model has to change.\n\n## What a vendor means by \"pod\"\n\nYou will hear this team called a \"pod.\" In our reading, most published writing on AI pods comes from software firms that sell pods as an alternative to contract staff. Treat their speed figures as marketing claims rather than evidence.\n\nThe idea is older than the name. Amazon's two-pizza team is \"a small team that fully supports software for a particular business capability\" ([Fowler, 2023](#ev-fowler-bliki-2023-two-pizza-team-capability)). Team Topologies calls a similar unit a stream-aligned team, aligned to a flow of work from a segment of the business ([Team Topologies, n.d.](#ev-teamtopologies-key-concepts-stream-aligned)).\n\nThis site also uses \"pod\" for something else. In [The Three Accountabilities](/ai-native-organization/the-three-accountabilities.md), a pod is the standing Owner, Architect, and Verifier unit that runs a process once AI does the work. The delivery team builds the system, and that unit runs it. The owner you named first takes that unit's Owner seat. The delegate, whose questions the tests were built from, is the natural Verifier. That continuity is why you name them before anyone builds.\n\nA smaller team does not make the work smaller. In the words of Hands-on Architects: \"Generation gets cheap; verification, integration, and judgment get expensive\" ([Hands-on Architects, 2026](#ev-handsonarchitects-2026-cognitive-load-relocates)). Plan time for review, or the team will get its speed by skipping it.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** Define a minimum viable lifecycle with a few non-negotiables: named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery} · verified 2026-09-13 · primary\n- **Mastra (Sam Bhagwat, co-founder and CEO, on the InfoQ podcast) — *Tiger Teams, Evals and Agents: The New AI Engineering Playbook*, 2026.** Typically, the way that we see teams doing it is they'll bring in a subject matter expert. And so they'll ask the subject matter expert, \"Can you give us a list of questions that would be reasonably comprehensive of the domain?\". [View source](https://www.infoq.com/podcasts/tiger-teams-evals-agents/){#ev-mastra-infoq-2026-sme-question-set} · verified 2026-09-13 · primary\n- **McKinsey (Rob Levin, senior partner, McKinsey Live webinar) — *Rewired to win: Reimagining the enterprise with tech and AI (webinar transcript, edited for clarity and length)*, 2026.** It's really collapsing this model of the “two-pizza team” of around eight people, to two people: a product owner who knows the definition of what good looks like, and a full-stack engineer who can work with code writing systems, debug it, and work it into the architecture. [View source](https://web.archive.org/web/20260513062105/https://www.mckinsey.com/featured-insights/mckinsey-live/webinars/rewired-to-win-reimagining-the-enterprise-with-tech-and-ai){#ev-mckinsey-rewired-webinar-2026-two-person-team} · verified 2026-09-13 · ⚠ secondary mirror\n- **Hands-on Architects (Maciej Laskowski and Tomasz Michalak) — *Team Topologies in the AI Era: Where Does the Cognitive Load Go?*, 2026.** Does the team shrink to fewer generalists - or hold its headcount and own more scope? Both forks are live, and we are not going to pretend the data settles it. [View source](https://handsonarchitects.com/blog/2026/team-topologies-ai-harness-cognitive-load/){#ev-handsonarchitects-2026-headcount-unsettled} · verified 2026-09-13 · primary\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-leaders-commit-ownership} · verified 2026-09-13 · primary\n- **Martin Fowler — *Two Pizza Team (bliki)*, 2023.** A two-pizza team is a small team that fully supports software for a particular business capability. [View source](https://martinfowler.com/bliki/TwoPizzaTeam.html){#ev-fowler-bliki-2023-two-pizza-team-capability} · verified 2026-09-13 · primary\n- **Team Topologies (Matthew Skelton and Manuel Pais) — *Key Concepts*.** Stream-aligned team: aligned to a flow of work from (usually) a segment of the business domain. [View source](https://teamtopologies.com/key-concepts){#ev-teamtopologies-key-concepts-stream-aligned} · verified 2026-09-13 · primary\n- **Hands-on Architects (Maciej Laskowski and Tomasz Michalak) — *Team Topologies in the AI Era: Where Does the Cognitive Load Go?*, 2026.** The harness does not delete cognitive load. It relocates it. Generation gets cheap; verification, integration, and judgment get expensive. [View source](https://handsonarchitects.com/blog/2026/team-topologies-ai-harness-cognitive-load/){#ev-handsonarchitects-2026-cognitive-load-relocates} · verified 2026-09-13 · primary",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "id": "ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "Define a minimum viable lifecycle with a few non-negotiables: named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-umbrex-caio-playbook-2025-leaders-commit-ownership",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mckinsey-rewired-webinar-2026-two-person-team",
+          "org": "McKinsey (Rob Levin, senior partner, McKinsey Live webinar)",
+          "url": "https://web.archive.org/web/20260513062105/https://www.mckinsey.com/featured-insights/mckinsey-live/webinars/rewired-to-win-reimagining-the-enterprise-with-tech-and-ai",
+          "wording": "It's really collapsing this model of the “two-pizza team” of around eight people, to two people: a product owner who knows the definition of what good looks like, and a full-stack engineer who can work with code writing systems, debug it, and work it into the architecture.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mastra-infoq-2026-sme-question-set",
+          "org": "Mastra (Sam Bhagwat, co-founder and CEO, on the InfoQ podcast)",
+          "url": "https://www.infoq.com/podcasts/tiger-teams-evals-agents/",
+          "wording": "Typically, the way that we see teams doing it is they'll bring in a subject matter expert. And so they'll ask the subject matter expert, \"Can you give us a list of questions that would be reasonably comprehensive of the domain?\"",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-handsonarchitects-2026-headcount-unsettled",
+          "org": "Hands-on Architects (Maciej Laskowski and Tomasz Michalak)",
+          "url": "https://handsonarchitects.com/blog/2026/team-topologies-ai-harness-cognitive-load/",
+          "wording": "Does the team shrink to fewer generalists - or hold its headcount and own more scope? Both forks are live, and we are not going to pretend the data settles it.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-handsonarchitects-2026-cognitive-load-relocates",
+          "org": "Hands-on Architects (Maciej Laskowski and Tomasz Michalak)",
+          "url": "https://handsonarchitects.com/blog/2026/team-topologies-ai-harness-cognitive-load/",
+          "wording": "The harness does not delete cognitive load. It relocates it. Generation gets cheap; verification, integration, and judgment get expensive.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-fowler-bliki-2023-two-pizza-team-capability",
+          "org": "Martin Fowler",
+          "url": "https://martinfowler.com/bliki/TwoPizzaTeam.html",
+          "wording": "A two-pizza team is a small team that fully supports software for a particular business capability.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-teamtopologies-key-concepts-stream-aligned",
+          "org": "Team Topologies (Matthew Skelton and Manuel Pais)",
+          "url": "https://teamtopologies.com/key-concepts",
+          "wording": "Stream-aligned team: aligned to a flow of work from (usually) a segment of the business domain",
+          "status": "primary",
+          "verified": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "bundle": "02-ai-transformation-lead",
+      "path": "the-handoff-to-the-owner.md",
+      "url": "https://knowledge.onesteplabs.com/ai-accountability/02-ai-transformation-lead/the-handoff-to-the-owner/",
+      "title": "The Handoff to the Owner",
+      "description": "What has to change hands when the delivery team moves on, and how to tell whether the owner can run what the team built.",
+      "tags": [
+        "ai-transformation-lead",
+        "ai-delivery"
+      ],
+      "body": "A handoff is finished when the owner's people can run and change the system without the team that built it. Until then, the delivery team has only moved on, and what it built stays behind with nobody who understands it.\n\nThis is the second handoff in delivery, from the delivery team to the owner who runs the result. [When to Embed an Engineer](/decision-guides/when-to-embed-an-engineer.md) names what kills pilots at this point: nobody owns the system once its builders leave. [Staffing the Delivery Team](/ai-accountability/02-ai-transformation-lead/staffing-the-delivery-team.md) covers the first handoff, including the owner and the delegate this page relies on.\n\n## Why AI systems need an owner after launch\n\nLaunch starts the owner's job. Software usually costs more to keep running and changing than it did to build. Maintenance typically consumes 40 to 80 percent of lifetime cost, averaging about 60 percent ([Glass, 2003](#ev-glass-software-maintenance-2003-after-handoff)).\n\nAI systems add upkeep of their own. Researchers at Google found it common for machine learning systems to incur \"massive ongoing maintenance costs\" ([Sculley et al., 2015](#ev-sculley-nips-2015-ml-maintenance-cost)). One reason is that the world they depend on keeps moving: \"the external world is rarely stable\" ([Sculley et al., 2015](#ev-sculley-nips-2015-external-world-change)).\n\nUS banking regulators already expect banks to monitor traditional models as products, clients, data, and markets change ([OCC, Federal Reserve, and FDIC, 2026](#ev-occ-bulletin-2026-13-monitoring-after-deployment)). Their 2026 guidance leaves generative and agentic AI out of scope ([OCC, Federal Reserve, and FDIC, 2026](#ev-occ-bulletin-2026-13-genai-out-of-scope)). For those systems, the owner has to decide how the watching gets done, under the organization's own governance.\n\nPlan for this before launch, not after. Umbrex lists a monitoring plan among a project's few non-negotiables ([Umbrex, 2025](#ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery)).\n\n## What has to transfer\n\nThe handoff is complete only when each of these has a named person and a line in someone's budget:\n\n- **The running costs.** Hosting, model usage, and licenses move from the program's build budget to the owner's operating budget.\n- **Incidents.** Name the person who takes the call when the system gives a wrong answer on a Monday morning.\n- **The tests.** The team built checks from the delegate's domain questions. Name who reruns them after any change to the model, the prompts, or the data.\n- **Changes.** Name who may change prompts, rules, and data sources, and who approves those changes.\n- **The record.** Logs, decisions, and the reasons the team built the system the way it did.\n\nThese map onto [The Three Accountabilities](/ai-native-organization/the-three-accountabilities.md). The owner takes the Owner seat and answers for the outcome. An architect answers for the system. A verifier checks that it still works, and the delegate, whose questions shaped the tests, is the natural choice. If you cannot name all three people, the handoff has not happened.\n\n## Test the handoff before the team leaves\n\nBefore the delivery team leaves, ask the owner's people to make one real change without them. They might update a rule, add a new case, or handle an incident from start to finish. If they cannot, the knowledge is leaving with the builders.\n\nRun the test while the builders are still there to help, because a failed test after they have moved on becomes a stalled system.\n\n## When the team should not leave\n\nSome work should stay with the team that built it. When a use case is central to how a business unit competes and changes often, keep a small team with that unit permanently. Amazon's Werner Vogels states the principle plainly: \"you build it, you own it\" ([Vogels, 2026](#ev-vogels-2026-you-build-it-you-own-it)).\n\nMicrosoft's guidance for a maturing center of excellence also moves delivery closer to the teams that carry the work. It says to transfer AI delivery to the platform teams and turn the center into an advisory group ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-maturity-transfer)).\n\nA handoff suits a workflow that stays stable once built. A permanent team suits one that changes every month.\n\n## Measure it a year after launch\n\nStaying in production is hard even for experienced organizations. Gartner published survey results on this in 2025. At high-maturity organizations, 45% of leaders said their AI initiatives stay in production three years or more ([Gartner, 2025](#ev-gartner-2025-ai-longevity-by-maturity)). At low-maturity organizations, 20% said the same ([Gartner, 2025](#ev-gartner-2025-ai-longevity-by-maturity)). Both figures are leaders reporting on their own programs.\n\nSo judge a use case a year after launch, not on launch day. [Measuring Adoption](/ai-accountability/03-ai-enablement/07-measuring-adoption.md) covers how to measure real use rather than logins. Then ask three questions: is it still in use, is it still correct, and who fixed it the last time it broke? If the answer to the last question is the delivery team, the handoff did not happen.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Robert L. Glass — *Facts and Fallacies of Software Engineering (Fact 41), Addison-Wesley (ISBN 0-321-11742-5)*, 2003.** Maintenance typically consumes 40 to 80 percent (average, 60 percent) of software costs. Therefore, it is probably the most important life cycle phase of software. [View source](https://www.informit.com/store/facts-and-fallacies-of-software-engineering-9780321117427){#ev-glass-software-maintenance-2003-after-handoff} · verified 2026-07-01 · primary\n- **D. Sculley et al. (Google) — *Hidden Technical Debt in Machine Learning Systems, Advances in Neural Information Processing Systems 28 (NIPS 2015)*, 2015.** Using the software engineering framework of technical debt, we find it is common to incur massive ongoing maintenance costs in real-world ML systems. [View source](https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html){#ev-sculley-nips-2015-ml-maintenance-cost} · verified 2026-09-13 · primary\n- **D. Sculley et al. (Google) — *Hidden Technical Debt in Machine Learning Systems, section 7 (NIPS 2015)*, 2015.** Experience has shown that the external world is rarely stable. This background rate of change creates ongoing maintenance cost. [View source](https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf){#ev-sculley-nips-2015-external-world-change} · verified 2026-09-13 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13, section V*, 2026.** Ongoing model monitoring involves an evaluation of the extent to which a model is performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-bulletin-2026-13-monitoring-after-deployment} · verified 2026-09-13 · primary\n- **OCC, Federal Reserve, and FDIC — *Supervisory Guidance on Model Risk Management, Bulletin 2026-13, footnote 3*, 2026.** Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance. [View source](https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf){#ev-occ-bulletin-2026-13-genai-out-of-scope} · verified 2026-09-13 · primary\n- **Umbrex — *Chief AI Officer Playbook — The Chief AI Officer Mandate*, 2025.** Define a minimum viable lifecycle with a few non-negotiables: named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach. [View source](https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/){#ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery} · verified 2026-09-13 · primary\n- **Werner Vogels, All Things Distributed — *A return to two-pizza culture*, 2026.** They were expected to own a problem and deliver with autonomy, and ownership meant the same thing it has always meant at Amazon: you build it, you own it. [View source](https://www.allthingsdistributed.com/2026/06/return-to-two-pizza-culture.html){#ev-vogels-2026-you-build-it-you-own-it} · verified 2026-09-13 · primary\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Transfer AI delivery to the platform teams... Replace the CoE gatekeeper model that blocks work with an advisory group that sets guardrails. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-maturity-transfer} · verified 2026-07-02 · primary\n- **Gartner — *Gartner Survey Finds 45% of Organizations With High AI Maturity Keep AI Projects Operational for at Least Three Years*, 2025.** Forty-five percent of leaders in organizations with high AI maturity said their AI initiatives remain in production for three years or more to ensure sustained impact and value, according to a survey by Gartner, Inc. This compares to only 20% in low-maturity organizations. [View source](https://web.archive.org/web/20251230073030/https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years){#ev-gartner-2025-ai-longevity-by-maturity} · verified 2026-09-13 · ⚠ secondary mirror",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "id": "ev-microsoft-ai-coe-2025-maturity-transfer",
+          "org": "Microsoft",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence",
+          "wording": "Transfer AI delivery to the platform teams... Replace the CoE gatekeeper model that blocks work with an advisory group that sets guardrails.",
+          "status": "primary",
+          "verified": "2026-07-02"
+        },
+        {
+          "id": "ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery",
+          "org": "Umbrex",
+          "url": "https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/",
+          "wording": "Define a minimum viable lifecycle with a few non-negotiables: named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-glass-software-maintenance-2003-after-handoff",
+          "org": "Robert L. Glass",
+          "url": "https://www.informit.com/store/facts-and-fallacies-of-software-engineering-9780321117427",
+          "wording": "Maintenance typically consumes 40 to 80 percent (average, 60 percent) of software costs. Therefore, it is probably the most important life cycle phase of software.",
+          "status": "primary",
+          "verified": "2026-07-01"
+        },
+        {
+          "id": "ev-sculley-nips-2015-ml-maintenance-cost",
+          "org": "D. Sculley et al. (Google)",
+          "url": "https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html",
+          "wording": "Using the software engineering framework of technical debt, we find it is common to incur massive ongoing maintenance costs in real-world ML systems.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-sculley-nips-2015-external-world-change",
+          "org": "D. Sculley et al. (Google)",
+          "url": "https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf",
+          "wording": "Experience has shown that the external world is rarely stable. This background rate of change creates ongoing maintenance cost.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-occ-bulletin-2026-13-monitoring-after-deployment",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "Ongoing model monitoring involves an evaluation of the extent to which a model is performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-occ-bulletin-2026-13-genai-out-of-scope",
+          "org": "OCC, Federal Reserve, and FDIC",
+          "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf",
+          "wording": "Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-vogels-2026-you-build-it-you-own-it",
+          "org": "Werner Vogels, All Things Distributed",
+          "url": "https://www.allthingsdistributed.com/2026/06/return-to-two-pizza-culture.html",
+          "wording": "They were expected to own a problem and deliver with autonomy, and ownership meant the same thing it has always meant at Amazon: you build it, you own it.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-gartner-2025-ai-longevity-by-maturity",
+          "org": "Gartner",
+          "url": "https://web.archive.org/web/20251230073030/https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years",
+          "wording": "Forty-five percent of leaders in organizations with high AI maturity said their AI initiatives remain in production for three years or more to ensure sustained impact and value, according to a survey by Gartner, Inc. This compares to only 20% in low-maturity organizations.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "bundle": "02-ai-transformation-lead",
       "path": "what-ai-transformation-lead-is.md",
       "url": "https://knowledge.onesteplabs.com/ai-accountability/02-ai-transformation-lead/what-ai-transformation-lead-is/",
       "title": "What the AI Transformation Lead Is — and the Role",
@@ -399,7 +565,7 @@
         "ai-transformation-lead",
         "role-definition"
       ],
-      "body": "A Chief AI Officer can set a brilliant strategy and still watch it die in committee. Strategy is a direction. Turning it into a running portfolio of funded, staffed, prioritized work is a different job, done by a different person: the AI Transformation Lead.\n\n## What this role runs\n\nThe AI Transformation Lead owns execution of the AI program across every function it touches — not one workstream, all of them. In practice this usually means leading (or working through) an **AI Center of Excellence**: a dedicated team, with a named leader who acts as the single point of contact for turning AI strategy into delivered work ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-coe-leader-role)).\n\nThat means running the machinery a program needs to move: a steering committee with business and IT leaders, monthly progress reviews with sponsors, and direct access to C-level decision-makers so the program doesn't stall waiting for a signature ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-steering-committee)); and intake and prioritization workflows that keep a running, prioritized backlog of AI initiatives, so \"what are we working on next\" has an answer that isn't just whoever shouted loudest in the last meeting ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-intake-prioritization)).\n\n## Where it sits, and who it isn't\n\n- **Chief AI Officer** sets the direction and owns the bet — see [What a Chief AI Officer Is](/ai-accountability/01-chief-ai-officer/what-chief-ai-officer-is.md). You run the portfolio they've pointed at. If a bet fails, they answer for the call; you answer for the execution.\n- **AI Enablement Lead** owns one specific workstream inside your portfolio: adoption — see [What AI Enablement Is](/ai-accountability/03-ai-enablement/what-ai-enablement-is.md). You coordinate across all the workstreams (governance, data, platform, workflow, adoption, talent, measurement); they go deep on one.\n- The transformation program itself — the operating models, governance structures, and eight-track model this role executes against — is covered in [Enterprise AI Transformation](/enterprise-ai-transformation/index.md). This bundle is the operator's manual for the seat that runs it, not the program's own reference model.\n\nSee [The Accountability Map](/ai-accountability/the-accountability-map.md) for how every accountable role in this domain relates.\n\n## How this playbook is organized\n\n- [Running the AI Center of Excellence](/ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md) — staffing the steering committee, building the intake backlog, and evolving the model as the program matures.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Appoint an AI CoE leader... a dedicated leader who drives AI initiatives and acts as the single point of contact for AI strategy implementation. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-coe-leader-role} · verified 2026-07-02 · primary\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Form a steering committee with business and IT leaders, establish monthly progress reviews with sponsors, and ensure that the CoE has direct access to C-level decision makers. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-steering-committee} · verified 2026-07-02 · primary\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Create intake and prioritization workflows... Maintain a prioritized AI initiative backlog. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-intake-prioritization} · verified 2026-07-02 · primary",
+      "body": "A Chief AI Officer can set a brilliant strategy and still watch it die in committee. Strategy is a direction. Turning it into a running portfolio of funded, staffed, prioritized work is a different job, done by a different person: the AI Transformation Lead.\n\n## What this role runs\n\nThe AI Transformation Lead owns execution of the AI program across every function it touches — not one workstream, all of them. In practice this usually means leading (or working through) an **AI Center of Excellence**: a dedicated team, with a named leader who acts as the single point of contact for turning AI strategy into delivered work ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-coe-leader-role)).\n\nThat means running the machinery a program needs to move: a steering committee with business and IT leaders, monthly progress reviews with sponsors, and direct access to C-level decision-makers so the program doesn't stall waiting for a signature ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-steering-committee)); and intake and prioritization workflows that keep a running, prioritized backlog of AI initiatives, so \"what are we working on next\" has an answer that isn't just whoever shouted loudest in the last meeting ([Microsoft, 2025](#ev-microsoft-ai-coe-2025-intake-prioritization)).\n\n## Where it sits, and who it isn't\n\n- **Chief AI Officer** sets the direction and owns the bet — see [What a Chief AI Officer Is](/ai-accountability/01-chief-ai-officer/what-chief-ai-officer-is.md). You run the portfolio they've pointed at. If a bet fails, they answer for the call; you answer for the execution.\n- **AI Enablement Lead** owns one specific workstream inside your portfolio: adoption — see [What AI Enablement Is](/ai-accountability/03-ai-enablement/what-ai-enablement-is.md). You coordinate across all the workstreams (governance, data, platform, workflow, adoption, talent, measurement); they go deep on one.\n- The transformation program itself — the operating models, governance structures, and eight-track model this role executes against — is covered in [Enterprise AI Transformation](/enterprise-ai-transformation/index.md). This bundle is the operator's manual for the seat that runs it, not the program's own reference model.\n\nSee [The Accountability Map](/ai-accountability/the-accountability-map.md) for how every accountable role in this domain relates.\n\n## How this playbook is organized\n\n- [Running the AI Center of Excellence](/ai-accountability/02-ai-transformation-lead/running-the-ai-coe.md) — staffing the steering committee, building the intake backlog, and evolving the model as the program matures.\n- [Staffing the Delivery Team](/ai-accountability/02-ai-transformation-lead/staffing-the-delivery-team.md): the first handoff, covering who builds a prioritized use case and who must own it before anyone starts.\n- [The Handoff to the Owner](/ai-accountability/02-ai-transformation-lead/the-handoff-to-the-owner.md): the second handoff, covering what has to change hands when the delivery team moves on and how to test that it did.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Appoint an AI CoE leader... a dedicated leader who drives AI initiatives and acts as the single point of contact for AI strategy implementation. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-coe-leader-role} · verified 2026-07-02 · primary\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Form a steering committee with business and IT leaders, establish monthly progress reviews with sponsors, and ensure that the CoE has direct access to C-level decision makers. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-steering-committee} · verified 2026-07-02 · primary\n- **Microsoft — *Cloud Adoption Framework — Establish an AI Center of Excellence*, 2025.** Create intake and prioritization workflows... Maintain a prioritized AI initiative backlog. [View source](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence){#ev-microsoft-ai-coe-2025-intake-prioritization} · verified 2026-07-02 · primary",
       "updated": "2026-07-02",
       "sources": [
         {
@@ -8929,9 +9095,34 @@
   ],
   "changes": [
     {
+      "date": "2026-09-13",
+      "bundle": "01-chief-ai-officer",
+      "entry": "Update**: Setting the Operating Model now describes the portfolio council in Umbrex's own terms. You propose priorities, business leaders commit sponsorship and benefits ownership, and technology leaders commit capacity. The earlier wording paraphrased the source as \"other leaders commit resources and ownership.\""
+    },
+    {
       "date": "2026-07-02",
       "bundle": "01-chief-ai-officer",
       "entry": "Creation**: New bundle — the operator's manual for the Chief AI Officer, the executive accountable for enterprise AI strategy and the budget behind it. The intro What a Chief AI Officer Is — and the Role plus Setting the Operating Model and The First 90 Days. Selective citation posture: role-adoption and reporting-line statistics (IBM CEO Study 2026, Deloitte's 2026 CDAO Survey, Foundry's State of the CIO 2025) and the operating-model/playbook facts are cited to primary sources; the operator methods are grounded practice."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "02-ai-transformation-lead",
+      "entry": "Creation**: Staffing the Delivery Team, the first of two delivery handoffs, from the backlog to the team that builds a use case. Covers naming the business owner before staffing, who sits on the delivery team (the owner's delegate, one or two builders, an architect from the hub), budgeting the domain expert's time, and how many teams to run at once. Separates the vendor term \"pod\" from the run-state unit in The Three Accountabilities."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "02-ai-transformation-lead",
+      "entry": "Creation**: The Handoff to the Owner, the second delivery handoff, from the delivery team to the owner who runs the result. Covers why AI systems need an owner after launch, what has to transfer, a test to run before the team leaves, when a team should stay permanently, and measuring a use case a year after launch."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "02-ai-transformation-lead",
+      "entry": "Update**: Glossary adds owner, delegate, delivery team, and handoff to the owner."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "02-ai-transformation-lead",
+      "entry": "Update**: What the AI Transformation Lead Is lists the two delivery pages in its playbook overview."
     },
     {
       "date": "2026-07-02",

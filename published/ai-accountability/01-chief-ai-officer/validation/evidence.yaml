@@ -83,18 +83,18 @@
   status: primary
   expires: 2027-07-02
 - id: ev-umbrex-caio-playbook-2025-portfolio-council-cadence
-  claim: "How a CAIO's portfolio council runs — who sets the agenda, who commits resources"
-  value: "the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership"
-  wording: "the CAIO runs the agenda and proposes priorities while other leaders commit resources and ownership."
+  claim: "How a CAIO's portfolio council runs: who sets the agenda, and what each set of leaders commits"
+  value: "the CAIO proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves"
+  wording: "The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic."
   source:
     org: "Umbrex"
-    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    report: "Chief AI Officer Playbook: The Chief AI Officer Mandate"
     edition: 2025
     url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
     pdf_hash:
-  verified: 2026-07-02
+  verified: 2026-09-13
   status: primary
-  expires: 2027-07-02
+  expires: 2027-09-13
 - id: ev-umbrex-caio-playbook-2025-first-90-days
   claim: "What a CAIO should have running by day 90"
   value: "at least one production deployment with monitoring and benefits tracking"

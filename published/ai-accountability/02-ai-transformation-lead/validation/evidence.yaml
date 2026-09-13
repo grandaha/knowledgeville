@@ -82,3 +82,195 @@
   verified: 2026-07-02
   status: primary
   expires: 2027-07-02
+# --- Staffing the Delivery Team / The Handoff to the Owner (2026-09-13) ---
+- id: ev-umbrex-caio-playbook-2025-lifecycle-gates-delivery
+  claim: "The few non-negotiables of a minimum viable AI project lifecycle, led by a named business owner"
+  value: "named business owner, baseline, approved data access, risk review, monitoring plan, adoption approach"
+  wording: "Define a minimum viable lifecycle with a few non-negotiables: named business owner, baseline, approved data access, risk review, monitoring plan, and adoption approach."
+  source:
+    org: "Umbrex"
+    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    edition: 2025
+    url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-umbrex-caio-playbook-2025-leaders-commit-ownership
+  claim: "In the portfolio council, the CAIO proposes priorities and business leaders commit sponsorship and benefits ownership"
+  value: "the CAIO proposes priorities; business leaders commit sponsorship and benefits ownership"
+  wording: "The CAIO runs the agenda and proposes priorities; business leaders commit sponsorship and benefits ownership; technology leaders commit capacity and platform moves; risk leaders confirm control requirements; finance validates baselines and value logic."
+  source:
+    org: "Umbrex"
+    report: "Chief AI Officer Playbook — The Chief AI Officer Mandate"
+    edition: 2025
+    url: https://umbrex.com/resources/chief-ai-officer-playbook/the-chief-ai-officer-mandate/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-mckinsey-rewired-webinar-2026-two-person-team
+  claim: "A McKinsey senior partner describes AI collapsing the ~8-person two-pizza team to a product owner and a full-stack engineer"
+  value: "about 8 people to 2"
+  wording: "It's really collapsing this model of the “two-pizza team” of around eight people, to two people: a product owner who knows the definition of what good looks like, and a full-stack engineer who can work with code writing systems, debug it, and work it into the architecture."
+  source:
+    org: "McKinsey (Rob Levin, senior partner, McKinsey Live webinar)"
+    report: "Rewired to win: Reimagining the enterprise with tech and AI (webinar transcript, edited for clarity and length)"
+    edition: 2026
+    url: https://web.archive.org/web/20260513062105/https://www.mckinsey.com/featured-insights/mckinsey-live/webinars/rewired-to-win-reimagining-the-enterprise-with-tech-and-ai
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-09-13
+- id: ev-mastra-infoq-2026-sme-question-set
+  claim: "Teams build domain evaluations by asking a subject-matter expert for a comprehensive list of domain questions"
+  value: "n/a — qualitative"
+  wording: "Typically, the way that we see teams doing it is they'll bring in a subject matter expert. And so they'll ask the subject matter expert, \"Can you give us a list of questions that would be reasonably comprehensive of the domain?\""
+  source:
+    org: "Mastra (Sam Bhagwat, co-founder and CEO, on the InfoQ podcast)"
+    report: "Tiger Teams, Evals and Agents: The New AI Engineering Playbook"
+    edition: 2026
+    url: https://www.infoq.com/podcasts/tiger-teams-evals-agents/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-handsonarchitects-2026-headcount-unsettled
+  claim: "Whether AI-era teams should shrink or keep headcount and own more scope is not settled by current data"
+  value: "n/a — qualitative"
+  wording: "Does the team shrink to fewer generalists - or hold its headcount and own more scope? Both forks are live, and we are not going to pretend the data settles it."
+  source:
+    org: "Hands-on Architects (Maciej Laskowski and Tomasz Michalak)"
+    report: "Team Topologies in the AI Era: Where Does the Cognitive Load Go?"
+    edition: 2026
+    url: https://handsonarchitects.com/blog/2026/team-topologies-ai-harness-cognitive-load/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-handsonarchitects-2026-cognitive-load-relocates
+  claim: "AI tooling moves cognitive load from generation to verification, integration, and judgment rather than removing it"
+  value: "n/a — qualitative"
+  wording: "The harness does not delete cognitive load. It relocates it. Generation gets cheap; verification, integration, and judgment get expensive."
+  source:
+    org: "Hands-on Architects (Maciej Laskowski and Tomasz Michalak)"
+    report: "Team Topologies in the AI Era: Where Does the Cognitive Load Go?"
+    edition: 2026
+    url: https://handsonarchitects.com/blog/2026/team-topologies-ai-harness-cognitive-load/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-fowler-bliki-2023-two-pizza-team-capability
+  claim: "A two-pizza team is a small team that fully supports software for one business capability"
+  value: "n/a — qualitative"
+  wording: "A two-pizza team is a small team that fully supports software for a particular business capability."
+  source:
+    org: "Martin Fowler"
+    report: "Two Pizza Team (bliki)"
+    edition: 2023
+    url: https://martinfowler.com/bliki/TwoPizzaTeam.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+- id: ev-glass-software-maintenance-2003-after-handoff
+  claim: "Maintenance is the majority of a software system's total lifecycle cost (reused from the Decision Guides bundle)"
+  value: "40-80% of software cost (average ~60%)"
+  wording: "Maintenance typically consumes 40 to 80 percent (average, 60 percent) of software costs. Therefore, it is probably the most important life cycle phase of software."
+  source:
+    org: "Robert L. Glass"
+    report: "Facts and Fallacies of Software Engineering (Fact 41), Addison-Wesley (ISBN 0-321-11742-5)"
+    edition: 2003
+    url: https://www.informit.com/store/facts-and-fallacies-of-software-engineering-9780321117427
+    pdf_hash:
+  verified: 2026-07-01
+  status: primary
+- id: ev-sculley-nips-2015-ml-maintenance-cost
+  claim: "Real-world machine learning systems commonly incur massive ongoing maintenance costs"
+  value: "n/a — qualitative"
+  wording: "Using the software engineering framework of technical debt, we find it is common to incur massive ongoing maintenance costs in real-world ML systems."
+  source:
+    org: "D. Sculley et al. (Google)"
+    report: "Hidden Technical Debt in Machine Learning Systems, Advances in Neural Information Processing Systems 28 (NIPS 2015)"
+    edition: 2015
+    url: https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+- id: ev-sculley-nips-2015-external-world-change
+  claim: "Change in the external world creates ongoing maintenance cost for machine learning systems"
+  value: "n/a — qualitative"
+  wording: "Experience has shown that the external world is rarely stable. This background rate of change creates ongoing maintenance cost."
+  source:
+    org: "D. Sculley et al. (Google)"
+    report: "Hidden Technical Debt in Machine Learning Systems, section 7 (NIPS 2015)"
+    edition: 2015
+    url: https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf
+    pdf_hash: sha256:1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1
+  verified: 2026-09-13
+  status: primary
+- id: ev-occ-bulletin-2026-13-monitoring-after-deployment
+  claim: "US banking supervisors expect ongoing monitoring of whether a model still performs as expected as conditions change"
+  value: "performance against potential changes in products, exposures, activities, clients, data relevance, or market conditions"
+  wording: "Ongoing model monitoring involves an evaluation of the extent to which a model is performing as expected given potential changes in products, exposures, activities, clients, data relevance, or market conditions."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13, section V"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash: sha256:81f456d3b320706dbb884e1c55c3d82173784f1b94195019bd9327a237a8295d
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-occ-bulletin-2026-13-genai-out-of-scope
+  claim: "The 2026 interagency model risk guidance excludes generative and agentic AI models from its scope"
+  value: "n/a — qualitative"
+  wording: "Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance."
+  source:
+    org: "OCC, Federal Reserve, and FDIC"
+    report: "Supervisory Guidance on Model Risk Management, Bulletin 2026-13, footnote 3"
+    edition: 2026
+    url: https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13a.pdf
+    pdf_hash: sha256:81f456d3b320706dbb884e1c55c3d82173784f1b94195019bd9327a237a8295d
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-vogels-2026-you-build-it-you-own-it
+  claim: "Amazon's ownership principle for small teams, as Werner Vogels states it"
+  value: "n/a — qualitative"
+  wording: "They were expected to own a problem and deliver with autonomy, and ownership meant the same thing it has always meant at Amazon: you build it, you own it."
+  source:
+    org: "Werner Vogels, All Things Distributed"
+    report: "A return to two-pizza culture"
+    edition: 2026
+    url: https://www.allthingsdistributed.com/2026/06/return-to-two-pizza-culture.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-gartner-2025-ai-longevity-by-maturity
+  claim: "Share of leaders who say their AI initiatives stay in production three years or more, by AI maturity (self-reported)"
+  value: "45% (high maturity) vs 20% (low maturity)"
+  wording: "Forty-five percent of leaders in organizations with high AI maturity said their AI initiatives remain in production for three years or more to ensure sustained impact and value, according to a survey by Gartner, Inc. This compares to only 20% in low-maturity organizations."
+  source:
+    org: "Gartner"
+    report: "Gartner Survey Finds 45% of Organizations With High AI Maturity Keep AI Projects Operational for at Least Three Years"
+    edition: 2025
+    url: https://web.archive.org/web/20251230073030/https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-09-13
+- id: ev-teamtopologies-key-concepts-stream-aligned
+  claim: "Team Topologies defines a stream-aligned team as aligned to a flow of work from a segment of the business domain"
+  value: "n/a — qualitative"
+  wording: "Stream-aligned team: aligned to a flow of work from (usually) a segment of the business domain"
+  source:
+    org: "Team Topologies (Matthew Skelton and Manuel Pais)"
+    report: "Key Concepts"
+    edition:
+    url: https://teamtopologies.com/key-concepts
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13

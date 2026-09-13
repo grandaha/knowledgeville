@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.5.0 — 2026-09-13
+
+### New & expanded content
+* Research note on what an AI test can and cannot tell you
+
 ## v12.4.0 — 2026-09-13
 
 ## New decision guide: Keeping What Your AI Knows True

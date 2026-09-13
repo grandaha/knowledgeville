@@ -46,6 +46,7 @@ survive the next thing that gets published on the topic.
 
 | Page | Last updated |
 | --- | --- |
+| [What an AI Test Can and Cannot Tell You](what-an-ai-test-can-and-cannot-tell-you.md)<br>A working note on AI evals: what testing an AI system can tell you, what the evidence shows, and what nobody has shown yet. | Updated 2026-09-13 |
 | [Why Your AI Gives Three Different Answers](why-your-ai-gives-three-different-answers.md)<br>A working note on shared definitions — why the same question returns different numbers, and how much semantic modeling is actually worth doing. | Updated 2026-08-10 |
 | [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-08-10 |
 | [Validation](validation/)<br>How these notes are validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-08-10 |

@@ -210,7 +210,7 @@
         "verification_posture": "verify-embedded-facts",
         "temporal_mode": "living-document"
       },
-      "pageCount": 1
+      "pageCount": 3
     },
     {
       "slug": "team-second-brain",
@@ -9185,6 +9185,350 @@
     },
     {
       "bundle": "research-notes",
+      "path": "what-an-ai-test-can-and-cannot-tell-you.md",
+      "url": "https://knowledge.onesteplabs.com/research-notes/what-an-ai-test-can-and-cannot-tell-you/",
+      "title": "What an AI Test Can and Cannot Tell You",
+      "description": "A working note on AI evals: what testing an AI system can tell you, what the evidence shows, and what nobody has shown yet.",
+      "tags": [
+        "evals",
+        "ai-testing",
+        "ai-quality"
+      ],
+      "body": "!!! note \"Working notes\"\n    Current understanding of an active question, not a finished reference. Revised as the\n    research develops.\n\nIn 2026, Anthropic added a length limit to the instructions its coding assistant follows. After weeks of internal testing, it found \"no regressions in the set of evaluations we ran\" ([Anthropic, 2026](#ev-anthropic-april-2026-postmortem-no-regressions)). In other words, nothing that used to work had got worse, so the change shipped. One test in a broader set, run later during an investigation, showed a 3% drop ([Anthropic, 2026](#ev-anthropic-april-2026-postmortem-3pct-drop)).\n\nEach of those tests is an eval. Anthropic defines an eval as \"a test for an AI system.\" The method is to \"give an AI an input, then apply grading logic to its output to measure success\" ([Anthropic, 2026](#ev-anthropic-demystifying-evals-2026-definition)). I wanted to know what an eval can tell an organization, and where that runs out.\n\nThe short version: the testing techniques are sound when they are themselves checked. The weak point is what happens when a test, or a tester, raises a warning close to a ship date.\n\nThis note covers testing AI systems an organization builds or buys, on an ongoing basis. Choosing a model in the first place is covered in [Which AI Model for Which Job](/decision-guides/which-ai-model-for-which-job.md) and the [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md). Adversarial testing has its own page, [Running a Red Team](/ai-accountability/06-ai-security-lead/running-a-red-team.md).\n\n## What an eval is, and what is old about it\n\nMost of what gets called eval practice is software testing under a new name. GitHub runs \"more than 4,000 offline tests, most of them as part of our automated CI pipeline\" on Copilot, its AI coding assistant ([GitHub, 2025](#ev-github-copilot-2025-offline-tests)). Those are tests that run automatically on every change. It adds live internal trials \"similar to canary testing,\" where a change goes to a small group first. Both practices are decades old.\n\nAnthropic separates two kinds. One asks, \"What can this agent do well?\" Regression evals ask, \"Does the agent still handle all the tasks it used to?\" They \"should have a nearly 100% pass rate\" ([Anthropic, 2026](#ev-anthropic-demystifying-evals-2026-regression)). A regression suite with a near-perfect bar is standard testing practice.\n\nThree things are new, and each one makes the old discipline harder.\n\n**The grader is often another AI.** A conventional test checks an exact answer. A drafted letter has no exact answer, so teams ask a second AI model to score it. That grader makes its own mistakes, covered below.\n\n**The same question gets different answers.** An AI agent carries out multi-step tasks, such as looking up an order and then issuing a refund. On one benchmark, a shared public test set for agents, leading agents succeeded on under half the tasks ([Yao et al., 2024](#ev-tau-bench-2024-inconsistency)). On its simulated retail tasks, they succeeded on all eight of eight tries less than a quarter of the time. A test that passes once has not shown that the system passes reliably.\n\n**Behavior changes without a code change.** A new instruction, a new example, or the vendor's model update can each shift results. Anthropic's length limit was a change to instructions, not to software.\n\nOne old failure mode carries over intact. Tests written from past failures find past failures. Ben Hylak of Raindrop, which sells monitoring, says \"your evals just become a collection of issues you already know about\" ([Raindrop, 2025](#ev-raindrop-2025-known-issues)). He adds, \"I have an incentive for this to be true.\" The pattern is familiar from software testing all the same.\n\n## Four findings that hold up\n\nThese are the findings I would state without hedging. Each comes from research that measured it directly. All four were measured on public benchmarks and research datasets. None measured a company's own in-house tests.\n\n### An AI grader has to be checked against people\n\nThe best-known result is favorable. On general chat questions, OpenAI's GPT-4 agreed with expert raters, mostly graduate students, 85% of the time ([Zheng et al., 2023](#ev-zheng-mt-bench-2023-agreement-no-ties)). Humans agreed with each other 81% of the time. Those figures leave out ties, so random guessing would score 50% ([Zheng et al., 2023](#ev-zheng-mt-bench-2023-agreement-with-ties)).\n\nCounting ties, the picture is less flattering. GPT-4 agreed with humans 66% of the time, and humans agreed with each other 63% ([Zheng et al., 2023](#ev-zheng-mt-bench-2023-agreement-with-ties)). Random guessing would score 33%. The paper comes from the team behind Chatbot Arena, a public leaderboard that ranks models by visitors' votes.\n\nEither way, the AI grader matched people about as well as people matched each other, on everyday chat. Expert work looks different. In one study, dietitians agreed with an AI grader 64% of the time, and with each other 75% ([Szymanski et al., 2024](#ev-szymanski-2024-expert-baseline)). Clinical psychologists agreed with it 60% of the time, and with each other 72%. When the AI grader was told to act as an expert, agreement with it rose to 68% and 64% ([Szymanski et al., 2024](#ev-szymanski-2024-expert-agreement)). That is still below the experts' agreement with each other.\n\nHard questions expose more. JudgeBench tests AI graders on deliberately difficult questions that have an objectively correct answer. There, many strong models performed \"just slightly better than random guessing\" ([Tan et al., 2025](#ev-judgebench-2025-random-guessing)).\n\nA larger study found the same problems. It put 21 AI graders through about 541,000 judgments ([Norman et al., 2026](#ev-norman-2026-judge-validity)). On the chat questions from the GPT-4 study, simple agreement ran 33 to 41 points higher than agreement after removing what guessing alone would produce. Grader rankings shifted by up to 14 places between benchmarks ([Norman et al., 2026](#ev-norman-2026-judge-validity)).\n\nTwo graders already in use by companies gave highly consistent scores and still showed \"severe position bias\" ([Norman et al., 2026](#ev-norman-2026-judge-validity)). They favored an answer because of where it appeared.\n\nA study across 20 datasets reached the conclusion to keep. Large language models, the technology behind chatbots, \"should be carefully validated against human judgments before being used as evaluators\" ([Bavaresco et al., 2024](#ev-bavaresco-2024-validate-against-humans)). In practice, that means having people grade a sample first, then comparing their verdicts with the AI grader's.\n\n### Answer keys contain errors\n\nEvery test compares an output with something treated as correct, and that reference contains errors. Researchers estimate that 6.49% of the questions in MMLU, a popular knowledge test for AI models, contain errors ([Gema et al., 2024](#ev-gema-mmlu-redux-2024-error-rate)). In its virology section, 57% of the questions they analyzed did.\n\nAt least 6% of the labels in the test portion of ImageNet, a large collection of labeled photos, are wrong ([Northcutt et al., 2021](#ev-northcutt-label-errors-2021-imagenet-evals)). On Humanity's Last Exam, a hard exam written by experts, a targeted review found expert disagreement on about 18% of one subset ([Phan et al., 2026](#ev-hle-2026-expert-disagreement)). Its authors include Scale AI, which sells data labeling.\n\nAn organization's own answer key has no obvious reason to be cleaner. A key written and checked by one person has no one to catch its errors. I have not found anyone who measured an in-house key. When a test fails, the first question is whether the key is right. [Keeping What Your AI Knows True](/decision-guides/keeping-what-your-ai-knows-true.md) makes a related point: only some knowledge has an answer key at all.\n\n### Agent scores are easy to inflate\n\nScoring an agent means checking what it actually did, and those checks are often weak. One audit found that SWE-bench Verified, a coding benchmark, \"uses insufficient test cases\" ([Zhu et al., 2025](#ev-zhu-2025-agentic-benchmark-flaws)). Another benchmark \"counts empty responses as successful.\" Problems like these can distort a reported score \"by up to 100% in relative terms.\" That is, a reported score can be off by as much as the true score itself, in either direction.\n\nA 2026 study by Wang and colleagues audited 10 popular agent benchmarks ([Wang et al., 2026](#ev-benchjack-2026-reward-hacking)). Their tool built exploits that \"achieve near-perfect scores on most of the benchmarks without solving a single task.\" It found 219 distinct flaws.\n\nNobody has measured whether in-house agent tests share these flaws, so here I am reasoning by analogy. The practical lesson travels anyway: when an agent's score jumps, check what it actually did.\n\n### Small test sets overstate certainty\n\nAnthropic tells teams not to wait: \"20-50 simple tasks drawn from real failures is a great start\" ([Anthropic, 2026](#ev-anthropic-demystifying-evals-2026-start-small)). Its reasoning is that early changes tend to have large, obvious effects. It adds that more mature systems \"may need larger, more difficult evals to detect smaller effects.\"\n\nThat advice holds for catching something badly broken. It is weak for catching a slide. Error bars show the range a score could land in by chance, and the usual method assumes large samples. A 2025 paper argues that for smaller evaluations, those methods \"fail to provide adequate uncertainty estimates\" ([Bowyer et al., 2025](#ev-bowyer-2025-clt-small-evals)). Its title puts the line at a few hundred data points.\n\nTest questions often come in related groups, such as several questions about one document. When they do, correct error bars \"can be over 3X larger than naive standard errors,\" an Anthropic researcher found ([Miller, 2024](#ev-miller-2024-clustered-standard-errors)). Few benchmarks check any of this. Only 16.0% of those reviewed in one study ran any statistical test ([Bean et al., 2025](#ev-bean-2025-statistical-testing)).\n\nMy own arithmetic makes the point concrete. Take 50 test cases <!-- noev: author's worked example --> and an 80% pass rate <!-- noev: author's worked example -->. By the usual method, the score can swing about 11 points either way by chance alone <!-- noev: author's arithmetic, two standard errors of sqrt(0.8 x 0.2 / 50) -->. Methods suited to small samples give a wider range. A real 3-point slide <!-- noev: hypothetical --> would be lost in that noise. A few dozen cases will tell you something broke. They will not tell you it got slightly worse.\n\n## Every public case I found ended with users finding the problem\n\nI looked for a documented case of an eval stopping a bad release, and found none. In every public case I found, users found the problem after release.\n\n### OpenAI, 2025\n\nAn update made GPT-4o overly flattering, which OpenAI calls sycophancy, and OpenAI rolled it back ([OpenAI, 2025](#ev-openai-sycophancy-2025-rolled-back)). Its account says \"our offline evaluations ... generally looked good\" ([OpenAI, 2025](#ev-openai-sycophancy-2025-offline-evals)). Offline evaluations are tests run before release. OpenAI also \"didn't have specific deployment evaluations tracking sycophancy\" ([OpenAI, 2025](#ev-openai-sycophancy-2025-offline-evals)).\n\nSome expert testers said the model \"felt\" slightly off. OpenAI launched anyway, and now calls that \"the wrong call\" ([OpenAI, 2025](#ev-openai-sycophancy-2025-wrong-call)).\n\n### Anthropic, 2025\n\nAnthropic traced a stretch of worse answers to three separate issues in its systems. Its public write-up says: \"The evaluations we ran simply didn't capture the degradation users were reporting\" ([Anthropic, 2025](#ev-anthropic-2025-postmortem-evals-missed)).\n\n### Anthropic, 2026\n\nThe account covers three changes, and two matter here. The first is the length limit from the opening. The second lowered a default effort setting, which trades answer quality for speed. Anthropic made it \"to reduce the very long latency\" users saw ([Anthropic, 2026](#ev-anthropic-april-2026-postmortem-effort-reverted)).\n\nIts own testing had flagged the cost: \"In our internal evals and testing, medium effort achieved slightly lower intelligence\" ([Anthropic, 2026](#ev-anthropic-april-2026-postmortem-effort-tradeoff)). Anthropic later reversed the change, calling it \"the wrong tradeoff\" ([Anthropic, 2026](#ev-anthropic-april-2026-postmortem-effort-reverted)).\n\n### What the cases have in common\n\nTwo biases shape this record. Catches do not get public write-ups, so a working eval is invisible. And every account above was written by the company whose release it was.\n\nIn two of these changes, the warning existed before release. OpenAI's expert testers flagged the model. Anthropic's evals showed the lower effort setting cost quality. In both, the people who could stop the release saw the signal and shipped. Both companies later judged that the wrong decision.\n\nSo the weak point was not only test design. It was how a warning gets weighed against other signals near a ship date. OpenAI's own lesson says as much: \"We need to be critical of metrics that conflict with qualitative testing\" ([OpenAI, 2025](#ev-openai-sycophancy-2025-lessons)). It now treats behavior problems as \"launch blocking.\"\n\nThe published guidance says little about that decision. The US National Institute of Standards and Technology (NIST) publishes guidance on generative AI. It asks organizations to share pre-deployment test results \"with relevant GAI Actors, such as those with system release approval authority\" ([NIST, 2024](#ev-nist-ai-600-1-2024-share-release-authority)). GAI means generative AI. Sharing a result is not the same as deciding what it takes to stop a release.\n\nThe bank model-risk guidance in [Validating and Monitoring Models](/ai-accountability/05-ai-risk-officer/validating-and-monitoring-models.md) goes further: challenge must come from people with the standing to force a change. As that page notes, regulators have not yet applied that guidance to generative AI.\n\n## What I found no evidence for\n\n### That evals prevent incidents\n\nThe only figure I found says teams that skip evals for \"low-risk\" behavior have 2.3 times as many problems after release ([Galileo, 2026](#ev-galileo-2026-incidents-claim)). Galileo sells an eval platform and publishes no method. Figures credited to large consultancies in search results did not trace to any source, so I left them out.\n\n### How common the practice is, and whether results get used\n\nLangChain, which sells an eval product, found that 52.4% of respondents run evaluations on test sets ([LangChain, 2025](#ev-langchain-2025-offline-evals)). Only 37.3% evaluate live use ([LangChain, 2025](#ev-langchain-2025-offline-evals)). Its respondents skew toward small technology firms ([LangChain, 2025](#ev-langchain-2025-sample)). Galileo, the eval vendor above, reports that only 51.7% of teams \"consistently create evaluations after production incidents\" ([Galileo, 2026](#ev-galileo-2026-post-incident-evals)). I found no independent count.\n\nEven where teams test, using the results is hard. An interview study of 19 practitioners names a \"results-actionability gap\" ([van der Maden et al., 2026](#ev-van-der-maden-2026-actionability-gap)). Teams \"gather evaluation data but cannot translate findings into concrete improvements.\"\n\n### Who should own it\n\nHamel Husain, who sells an evals course, advises using \"one domain expert who understands your users as your quality decision maker (a 'benevolent dictator')\" ([Husain, 2025](#ev-husain-evals-faq-2025-benevolent-dictator)). This site says something close in [Staffing the Delivery Team](/ai-accountability/02-ai-transformation-lead/staffing-the-delivery-team.md). There, the business owner names a delegate who supplies the test questions and later checks the results.\n\nHaving one expert own it is efficient. It also means one person grades the system against a key they wrote. I found no survey of who actually owns evals.\n\n### A bar for \"good enough to ship\"\n\nSingapore's Infocomm Media Development Authority (IMDA) has published the only official guide I found for testing AI applications. It answers directly: \"Can a universal baseline apply to all apps? The simple answer is no\" ([IMDA, 2026](#ev-imda-2026-no-universal-baseline)). Instead, \"each organisation must determine its own safety threshold or baseline.\"\n\nNIST adds a warning: \"Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments\" ([NIST, 2024](#ev-nist-ai-600-1-2024-avoid-extrapolating)).\n\nPractitioners split on informal testing, where someone tries the system and judges by feel. OpenAI, which offers its own eval tools, lists \"Vibe-based evals\" as a practice to avoid ([OpenAI, 2026](#ev-openai-eval-best-practices-vibe-based)). In the interview study, 12 of 19 practitioners began with informal \"vibe checks\" ([van der Maden et al., 2026](#ev-van-der-maden-2026-vibe-checks)). The researchers call them \"an essential first line of evaluation.\"\n\n## Where this leaves me\n\nAn eval is a software test with a harder answer key and a less predictable system under test. The technical fixes are clear, and they come from the whole note:\n\n- Check any AI grader against people before trusting it.\n- Assume the answer key contains errors.\n- Run each case more than once.\n- When an agent's score jumps, check what it actually did.\n- Treat a score from a few dozen cases as a smoke alarm, not a gauge.\n\nThe harder part is not technical. In two of the changes I found, a warning existed and was overruled. What follows is my own proposal, with no evidence behind it yet. Set the bar for shipping before seeing the results. Decide in advance what a tester's warning counts for. Record every time a failed eval or a warning is overruled, and why. That record shows, later, whether the evals changed any decision.\n\nThese proposals are untested. This stays a note until I find an organization that has tried them and written it up.\n\n### Still open\n\n- How many cases does an ordinary business task, such as drafting a letter against a policy, need before a pass rate means anything?\n- Is there any independent evidence that evals reduce incidents, or any named case of one blocking a release?\n- When an eval fails near a ship date, who decides, and is the decision recorded?\n- Can the person who writes the answer key also be the one who checks the output?\n- Who checks the AI grader over time, when it is a vendor model that also changes?\n- What can a buyer check independently when a vendor tests its own system?\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Anthropic — *An update on recent Claude Code quality reports*, 2026.** After multiple weeks of internal testing and no regressions in the set of evaluations we ran, we felt confident about the change and shipped it alongside Opus 4.7 on April 16. [View source](https://www.anthropic.com/engineering/april-23-postmortem){#ev-anthropic-april-2026-postmortem-no-regressions} · verified 2026-09-13 · primary\n- **Anthropic — *An update on recent Claude Code quality reports*, 2026.** One of these evaluations showed a 3% drop for both Opus 4.6 and 4.7. [View source](https://www.anthropic.com/engineering/april-23-postmortem){#ev-anthropic-april-2026-postmortem-3pct-drop} · verified 2026-09-13 · primary\n- **Anthropic — *Demystifying evals for AI agents*, 2026.** An evaluation (\"eval\") is a test for an AI system: give an AI an input, then apply grading logic to its output to measure success. [View source](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents){#ev-anthropic-demystifying-evals-2026-definition} · verified 2026-09-13 · primary\n- **GitHub — *How we evaluate AI models and LLMs for GitHub Copilot*, 2025.** We run more than 4,000 offline tests, most of them as part of our automated CI pipeline. We also conduct live internal evaluations, similar to canary testing, where we switch a number of Hubbers to use a new model. [View source](https://github.blog/ai-and-ml/generative-ai/how-we-evaluate-models-for-github-copilot/){#ev-github-copilot-2025-offline-tests} · verified 2026-09-13 · primary\n- **Anthropic — *Demystifying evals for AI agents*, 2026.** \"quality\" evals ask, \"What can this agent do well?\" ... Regression evals ask, \"Does the agent still handle all the tasks it used to?\" and should have a nearly 100% pass rate. [View source](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents){#ev-anthropic-demystifying-evals-2026-regression} · verified 2026-09-13 · primary\n- **Yao et al. — *tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains (arXiv 2406.12045)*, 2024.** Our experiments show that even state-of-the-art function calling agents (like gpt-4o) succeed on <50% of the tasks, and are quite inconsistent (pass^8 <25% in retail). [View source](https://arxiv.org/abs/2406.12045){#ev-tau-bench-2024-inconsistency} · verified 2026-09-13 · primary\n- **Raindrop (Ben Hylak) — *Thoughts on Evals*, 2025.** As a result, your evals just become a collection of issues you already know about. ... The answer is monitoring. Don't take my word for it (I have an incentive for this to be true). [View source](https://www.raindrop.ai/blog/thoughts-on-evals/){#ev-raindrop-2025-known-issues} · verified 2026-09-13 · primary\n- **Zheng et al. — *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (arXiv 2306.05685), Section 4.2 and Table 5*, 2023.** We then use 2 kinds of judges: LLM judges and 58 expert-level human labelers. The labelers are mostly graduate students so they are considered experts and more skilled than average crowd workers. ... In Table 5, GPT-4 with both pairwise comparison and single answer grading show very high agreements with human experts. The agreement under setup S2 (w/o tie) between GPT-4 and humans reaches 85%, which is even higher than the agreement among humans (81%). [View source](https://arxiv.org/abs/2306.05685){#ev-zheng-mt-bench-2023-agreement-no-ties} · verified 2026-09-13 · primary\n- **Zheng et al. — *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (arXiv 2306.05685), Table 5*, 2023.** We report two setups: \"S1\" includes non-tie, tie, and inconsistent (due to position bias) votes and counts inconsistent as tie; \"S2\" only includes non-tie votes. The agreement between two random judges under each setup is denoted as \"R=\". [View source](https://arxiv.org/abs/2306.05685){#ev-zheng-mt-bench-2023-agreement-with-ties} · verified 2026-09-13 · primary\n- **Szymanski et al. — *Limitations of the LLM-as-a-Judge Approach for Evaluating LLM Outputs in Expert Knowledge Tasks (arXiv 2410.20266), Section 5.1*, 2024.** we found that SMEs show a relatively low level of agreement with our LLM judge, with 60% agreement in the mental health domain and 64% in the dietetics domain (see Table 3). By comparison, SMEs agreed with each other 72% in the mental health domain and 75% in the dietetics domain, with an overall agreement of 73% across both domains, establishing a higher baseline for expert agreement. Further, when adopting the expert persona method in prompt instructions, we observed a 4% improvement in the agreement between the LLM judge and SMEs for both domains in general preference questions. [View source](https://arxiv.org/abs/2410.20266){#ev-szymanski-2024-expert-baseline} · verified 2026-09-13 · primary\n- **Szymanski et al. — *Limitations of the LLM-as-a-Judge Approach for Evaluating LLM Outputs in Expert Knowledge Tasks (arXiv 2410.20266)*, 2024.** Our results showed that SMEs agreed with LLM judges 68% of the time in the dietetics domain and 64% in mental health when evaluating overall preference. [View source](https://arxiv.org/abs/2410.20266){#ev-szymanski-2024-expert-agreement} · verified 2026-09-13 · primary\n- **Tan et al. — *JudgeBench: A Benchmark for Evaluating LLM-based Judges (arXiv 2410.12784, v2)*, 2025.** with many strong models (e.g., GPT-4o) performing just slightly better than random guessing. [View source](https://arxiv.org/abs/2410.12784){#ev-judgebench-2025-random-guessing} · verified 2026-09-13 · primary\n- **Norman et al. — *Reliability without Validity: A Systematic, Large-Scale Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency, and Bias (arXiv 2606.19544)*, 2026.** 21 judges from nine providers across MT-Bench, JudgeBench, and RewardBench, evaluated under three protocols (agreement, consistency, bias audit) over 118 runs and approximately 541,000 individual judgments. Four findings emerge, consistent across the full cohort, including the April 2026 frontier: kappa deflation between exact match and Cohen's kappa is universal (33--41 pp on MT-Bench), judge rankings shift by up to 14 positions across benchmarks, high test--retest reliability (>0.95) coexists with severe position bias (>0.10) in two production-deployed judges. [View source](https://arxiv.org/abs/2606.19544){#ev-norman-2026-judge-validity} · verified 2026-09-13 · primary\n- **Bavaresco et al. — *LLMs instead of Human Judges? A Large Scale Empirical Study across 20 NLP Evaluation Tasks (arXiv 2406.18403)*, 2024.** We conclude that LLMs should be carefully validated against human judgments before being used as evaluators. [View source](https://arxiv.org/abs/2406.18403){#ev-bavaresco-2024-validate-against-humans} · verified 2026-09-13 · primary\n- **Gema et al. — *Are We Done with MMLU? (arXiv 2406.04127)*, 2024.** For example, we find that 57% of the analysed questions in the Virology subset contain errors. ... We estimate that 6.49% of MMLU questions contain errors. [View source](https://arxiv.org/abs/2406.04127){#ev-gema-mmlu-redux-2024-error-rate} · verified 2026-09-13 · primary\n- **Northcutt, Athalye & Mueller — *Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks (NeurIPS Datasets and Benchmarks)*, 2021.** label errors comprise at least 6% of the ImageNet validation set; we find an average of at least 3.3% errors across the 10 datasets. [View source](https://arxiv.org/abs/2103.14749){#ev-northcutt-label-errors-2021-imagenet-evals} · verified 2026-06-21 · primary\n- **Phan et al. — *Humanity's Last Exam (arXiv 2501.14249v11)*, 2026.** We conducted another targeted peer review on a biology, chemistry, and health subset, as proposed by [47], and found an expert disagreement rate of approximately 18%. [View source](https://arxiv.org/abs/2501.14249){#ev-hle-2026-expert-disagreement} · verified 2026-09-13 · primary\n- **Zhu et al. — *Establishing Best Practices for Building Rigorous Agentic Benchmarks (arXiv 2507.02825)*, 2025.** For example, SWE-bench-Verified uses insufficient test cases, while τ -bench counts empty responses as successful. Such issues can lead to under-or overestimation of agents' performance by up to 100% in relative terms. [View source](https://arxiv.org/abs/2507.02825){#ev-zhu-2025-agentic-benchmark-flaws} · verified 2026-09-13 · primary\n- **Wang et al. — *Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack (arXiv 2605.12673)*, 2026.** We apply BenchJack to 10 popular agent benchmarks spanning software engineering, web navigation, desktop computing, and terminal operations. BenchJack synthesizes reward-hacking exploits that achieve near-perfect scores on most of the benchmarks without solving a single task, surfacing 219 distinct flaws across the eight classes. [View source](https://arxiv.org/abs/2605.12673){#ev-benchjack-2026-reward-hacking} · verified 2026-09-13 · primary\n- **Anthropic — *Demystifying evals for AI agents*, 2026.** In reality, 20-50 simple tasks drawn from real failures is a great start. After all, in early agent development, each change to the system often has a clear, noticeable impact, and this large effect size means small sample sizes suffice. More mature agents may need larger, more difficult evals to detect smaller effects. [View source](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents){#ev-anthropic-demystifying-evals-2026-start-small} · verified 2026-09-13 · primary\n- **Bowyer, Aitchison & Ivanova — *Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints (arXiv 2503.01747)*, 2025.** we argue that while CLT-based methods for uncertainty quantification are appropriate when benchmarks consist of thousands of examples, they fail to provide adequate uncertainty estimates for LLM evaluations that rely on smaller, highly specialized benchmarks. [View source](https://arxiv.org/abs/2503.01747){#ev-bowyer-2025-clt-small-evals} · verified 2026-09-13 · primary\n- **Evan Miller (Anthropic) — *Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations (arXiv 2411.00640)*, 2024.** Analyzing the same data, clustered standard errors can be over 3X larger than naive standard errors. [View source](https://arxiv.org/abs/2411.00640){#ev-miller-2024-clustered-standard-errors} · verified 2026-09-13 · primary\n- **Bean et al. — *Measuring what Matters: Construct Validity in Large Language Model Benchmarks (arXiv 2511.04703)*, 2025.** At present, only 16.0% of reviewed benchmarks conducted any statistical testing. [View source](https://arxiv.org/abs/2511.04703){#ev-bean-2025-statistical-testing} · verified 2026-09-13 · primary\n- **OpenAI — *Expanding on what we missed with sycophancy*, 2025.** as flattery, but also as validating doubts, fueling anger, urging impulsive actions, or reinforcing negative emotions in ways that were not intended. ... We began rolling that update back on April 28th, and users now have access to an earlier version of GPT-4o. [View source](https://openai.com/index/expanding-on-sycophancy/){#ev-openai-sycophancy-2025-rolled-back} · verified 2026-09-13 · ⚠ secondary mirror\n- **OpenAI — *Expanding on what we missed with sycophancy*, 2025.** One of the key problems with this launch was that our offline evaluations ... generally looked good. ... We also didn't have specific deployment evaluations tracking sycophancy. [View source](https://openai.com/index/expanding-on-sycophancy/){#ev-openai-sycophancy-2025-offline-evals} · verified 2026-09-13 · ⚠ secondary mirror\n- **OpenAI — *Expanding on what we missed with sycophancy*, 2025.** Nevertheless, some expert testers had indicated that the model behavior \"felt\" slightly off. ... In the end, we decided to launch the model due to the positive signals from the users who tried out the model. Unfortunately, this was the wrong call. [View source](https://openai.com/index/expanding-on-sycophancy/){#ev-openai-sycophancy-2025-wrong-call} · verified 2026-09-13 · ⚠ secondary mirror\n- **Anthropic — *A postmortem of three recent issues*, 2025.** The evaluations we ran simply didn't capture the degradation users were reporting, in part because Claude often recovers well from isolated mistakes. [View source](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues){#ev-anthropic-2025-postmortem-evals-missed} · verified 2026-09-13 · primary\n- **Anthropic — *An update on recent Claude Code quality reports*, 2026.** On March 4, we changed Claude Code's default reasoning effort from high to medium to reduce the very long latency ... This was the wrong tradeoff. We reverted this change on April 7 after users told us they'd prefer to default to higher intelligence and opt into lower effort for simple tasks. [View source](https://www.anthropic.com/engineering/april-23-postmortem){#ev-anthropic-april-2026-postmortem-effort-reverted} · verified 2026-09-13 · primary\n- **Anthropic — *An update on recent Claude Code quality reports*, 2026.** In our internal evals and testing, medium effort achieved slightly lower intelligence with significantly less latency for the majority of tasks. [View source](https://www.anthropic.com/engineering/april-23-postmortem){#ev-anthropic-april-2026-postmortem-effort-tradeoff} · verified 2026-09-13 · primary\n- **OpenAI — *Expanding on what we missed with sycophancy*, 2025.** We now understand that personality and other behavioral issues should be launch blocking, and we're modifying our processes to reflect that. We need to be critical of metrics that conflict with qualitative testing. [View source](https://openai.com/index/expanding-on-sycophancy/){#ev-openai-sycophancy-2025-lessons} · verified 2026-09-13 · ⚠ secondary mirror\n- **NIST — *NIST AI 600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile*, 2024.** Share results of pre-deployment testing with relevant GAI Actors, such as those with system release approval authority. [View source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf){#ev-nist-ai-600-1-2024-share-release-authority} · verified 2026-09-13 · primary\n- **Galileo — *9 Key Findings from the State of AI Evaluation Engineering Report*, 2026.** Teams skipping evaluations for \"low-risk\" behaviors experience 2.3× more production incidents than those who test comprehensively. [View source](https://galileo.ai/blog/state-of-ai-evaluation){#ev-galileo-2026-incidents-claim} · verified 2026-09-13 · primary\n- **LangChain — *State of AI Agents (survey Nov 18 to Dec 2, 2025)*, 2025.** Just over half of organization (52.4%) report running offline evaluations on test sets, indicating that many teams see the importance of catching regressions and validating agent behavior before deployment. Adoption of online evals is lower (37.3%). [View source](https://www.langchain.com/state-of-agent-engineering){#ev-langchain-2025-offline-evals} · verified 2026-09-13 · primary\n- **LangChain — *State of AI Agents (survey Nov 18 to Dec 2, 2025)*, 2025.** We received 1340 responses. Here's some demographic data: Top 5 industries: Technology (63% of respondents) ... Company size: <100 people (49% of respondents). [View source](https://www.langchain.com/state-of-agent-engineering){#ev-langchain-2025-sample} · verified 2026-09-13 · primary\n- **Galileo — *9 Key Findings from the State of AI Evaluation Engineering Report*, 2026.** Only 51.7% of teams consistently create evaluations after production incidents. [View source](https://galileo.ai/blog/state-of-ai-evaluation){#ev-galileo-2026-post-incident-evals} · verified 2026-09-13 · primary\n- **van der Maden et al. — *Results-Actionability Gap: Understanding How Practitioners Evaluate LLM Products in the Wild (arXiv 2604.16304)*, 2026.** Through interviews with nineteen practitioners across diverse sectors, we identify ten evaluation practices spanning informal 'vibe checks' to organizational meta-work. Beyond confirming four documented challenges, we introduce a novel fifth we call the results-actionability gap, in which practitioners gather evaluation data but cannot translate findings into concrete improvements. [View source](https://arxiv.org/abs/2604.16304){#ev-van-der-maden-2026-actionability-gap} · verified 2026-09-13 · primary\n- **Hamel Husain — *AI Evals: Everything You Need to Know (published 2025-05-28, updated 2026-09-01)*, 2025.** Use one domain expert who understands your users as your quality decision maker (a \"benevolent dictator\"). [View source](https://hamel.dev/blog/posts/evals-faq/){#ev-husain-evals-faq-2025-benevolent-dictator} · verified 2026-09-13 · primary\n- **IMDA Singapore — *Starter Kit for Testing LLM-Based Applications for Safety and Reliability, Version 1.0*, 2026.** Can a universal baseline apply to all apps? The simple answer is no. App testing is highly context-specific. ... Ultimately, each organisation must determine its own safety threshold or baseline. [View source](https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/large-language-model-starter-kit.pdf){#ev-imda-2026-no-universal-baseline} · verified 2026-09-13 · primary\n- **NIST — *NIST AI 600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile*, 2024.** Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments. [View source](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf){#ev-nist-ai-600-1-2024-avoid-extrapolating} · verified 2026-09-13 · primary\n- **OpenAI — *Evaluation best practices (OpenAI API docs)*, 2026.** Vibe-based evals: Using \"it seems like it's working\" as an evaluation strategy, or waiting until you ship before implementing any evals. [View source](https://developers.openai.com/api/docs/guides/evaluation-best-practices){#ev-openai-eval-best-practices-vibe-based} · verified 2026-09-13 · primary\n- **van der Maden et al. — *Results-Actionability Gap: Understanding How Practitioners Evaluate LLM Products in the Wild (arXiv 2604.16304)*, 2026.** Twelve participants described beginning their evaluation with informal \"vibe checks.\" These are formative and exploratory assessments that serve as an essential first line of evaluation. [View source](https://arxiv.org/abs/2604.16304){#ev-van-der-maden-2026-vibe-checks} · verified 2026-09-13 · primary",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "id": "ev-anthropic-april-2026-postmortem-no-regressions",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+          "wording": "After multiple weeks of internal testing and no regressions in the set of evaluations we ran, we felt confident about the change and shipped it alongside Opus 4.7 on April 16.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-april-2026-postmortem-3pct-drop",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+          "wording": "One of these evaluations showed a 3% drop for both Opus 4.6 and 4.7.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-april-2026-postmortem-effort-tradeoff",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+          "wording": "In our internal evals and testing, medium effort achieved slightly lower intelligence with significantly less latency for the majority of tasks.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-april-2026-postmortem-effort-reverted",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+          "wording": "On March 4, we changed Claude Code's default reasoning effort from high to medium to reduce the very long latency ... This was the wrong tradeoff. We reverted this change on April 7 after users told us they'd prefer to default to higher intelligence and opt into lower effort for simple tasks.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-demystifying-evals-2026-definition",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+          "wording": "An evaluation (\"eval\") is a test for an AI system: give an AI an input, then apply grading logic to its output to measure success.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-demystifying-evals-2026-regression",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+          "wording": "\"quality\" evals ask, \"What can this agent do well?\" ... Regression evals ask, \"Does the agent still handle all the tasks it used to?\" and should have a nearly 100% pass rate.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-demystifying-evals-2026-start-small",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+          "wording": "In reality, 20-50 simple tasks drawn from real failures is a great start. After all, in early agent development, each change to the system often has a clear, noticeable impact, and this large effect size means small sample sizes suffice. More mature agents may need larger, more difficult evals to detect smaller effects",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-github-copilot-2025-offline-tests",
+          "org": "GitHub",
+          "url": "https://github.blog/ai-and-ml/generative-ai/how-we-evaluate-models-for-github-copilot/",
+          "wording": "We run more than 4,000 offline tests, most of them as part of our automated CI pipeline. We also conduct live internal evaluations, similar to canary testing, where we switch a number of Hubbers to use a new model.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-tau-bench-2024-inconsistency",
+          "org": "Yao et al.",
+          "url": "https://arxiv.org/abs/2406.12045",
+          "wording": "Our experiments show that even state-of-the-art function calling agents (like gpt-4o) succeed on <50% of the tasks, and are quite inconsistent (pass^8 <25% in retail).",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-raindrop-2025-known-issues",
+          "org": "Raindrop (Ben Hylak)",
+          "url": "https://www.raindrop.ai/blog/thoughts-on-evals/",
+          "wording": "As a result, your evals just become a collection of issues you already know about. ... The answer is monitoring. Don't take my word for it (I have an incentive for this to be true).",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-zheng-mt-bench-2023-agreement-no-ties",
+          "org": "Zheng et al.",
+          "url": "https://arxiv.org/abs/2306.05685",
+          "wording": "We then use 2 kinds of judges: LLM judges and 58 expert-level human labelers. The labelers are mostly graduate students so they are considered experts and more skilled than average crowd workers. ... In Table 5, GPT-4 with both pairwise comparison and single answer grading show very high agreements with human experts. The agreement under setup S2 (w/o tie) between GPT-4 and humans reaches 85%, which is even higher than the agreement among humans (81%).",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-zheng-mt-bench-2023-agreement-with-ties",
+          "org": "Zheng et al.",
+          "url": "https://arxiv.org/abs/2306.05685",
+          "wording": "We report two setups: \"S1\" includes non-tie, tie, and inconsistent (due to position bias) votes and counts inconsistent as tie; \"S2\" only includes non-tie votes. The agreement between two random judges under each setup is denoted as \"R=\".",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-szymanski-2024-expert-agreement",
+          "org": "Szymanski et al.",
+          "url": "https://arxiv.org/abs/2410.20266",
+          "wording": "Our results showed that SMEs agreed with LLM judges 68% of the time in the dietetics domain and 64% in mental health when evaluating overall preference.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-szymanski-2024-expert-baseline",
+          "org": "Szymanski et al.",
+          "url": "https://arxiv.org/abs/2410.20266",
+          "wording": "we found that SMEs show a relatively low level of agreement with our LLM judge, with 60% agreement in the mental health domain and 64% in the dietetics domain (see Table 3). By comparison, SMEs agreed with each other 72% in the mental health domain and 75% in the dietetics domain, with an overall agreement of 73% across both domains, establishing a higher baseline for expert agreement. Further, when adopting the expert persona method in prompt instructions, we observed a 4% improvement in the agreement between the LLM judge and SMEs for both domains in general preference questions",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-judgebench-2025-random-guessing",
+          "org": "Tan et al.",
+          "url": "https://arxiv.org/abs/2410.12784",
+          "wording": "with many strong models (e.g., GPT-4o) performing just slightly better than random guessing.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-norman-2026-judge-validity",
+          "org": "Norman et al.",
+          "url": "https://arxiv.org/abs/2606.19544",
+          "wording": "21 judges from nine providers across MT-Bench, JudgeBench, and RewardBench, evaluated under three protocols (agreement, consistency, bias audit) over 118 runs and approximately 541,000 individual judgments. Four findings emerge, consistent across the full cohort, including the April 2026 frontier: kappa deflation between exact match and Cohen's kappa is universal (33--41 pp on MT-Bench), judge rankings shift by up to 14 positions across benchmarks, high test--retest reliability (>0.95) coexists with severe position bias (>0.10) in two production-deployed judges",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-bavaresco-2024-validate-against-humans",
+          "org": "Bavaresco et al.",
+          "url": "https://arxiv.org/abs/2406.18403",
+          "wording": "We conclude that LLMs should be carefully validated against human judgments before being used as evaluators.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-gema-mmlu-redux-2024-error-rate",
+          "org": "Gema et al.",
+          "url": "https://arxiv.org/abs/2406.04127",
+          "wording": "For example, we find that 57% of the analysed questions in the Virology subset contain errors. ... We estimate that 6.49% of MMLU questions contain errors.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-northcutt-label-errors-2021-imagenet-evals",
+          "org": "Northcutt, Athalye & Mueller",
+          "url": "https://arxiv.org/abs/2103.14749",
+          "wording": "label errors comprise at least 6% of the ImageNet validation set; we find an average of at least 3.3% errors across the 10 datasets",
+          "status": "primary",
+          "verified": "2026-06-21"
+        },
+        {
+          "id": "ev-hle-2026-expert-disagreement",
+          "org": "Phan et al.",
+          "url": "https://arxiv.org/abs/2501.14249",
+          "wording": "We conducted another targeted peer review on a biology, chemistry, and health subset, as proposed by [47], and found an expert disagreement rate of approximately 18%.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-zhu-2025-agentic-benchmark-flaws",
+          "org": "Zhu et al.",
+          "url": "https://arxiv.org/abs/2507.02825",
+          "wording": "For example, SWE-bench-Verified uses insufficient test cases, while τ -bench counts empty responses as successful. Such issues can lead to under-or overestimation of agents' performance by up to 100% in relative terms.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-benchjack-2026-reward-hacking",
+          "org": "Wang et al.",
+          "url": "https://arxiv.org/abs/2605.12673",
+          "wording": "We apply BenchJack to 10 popular agent benchmarks spanning software engineering, web navigation, desktop computing, and terminal operations. BenchJack synthesizes reward-hacking exploits that achieve near-perfect scores on most of the benchmarks without solving a single task, surfacing 219 distinct flaws across the eight classes.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-bowyer-2025-clt-small-evals",
+          "org": "Bowyer, Aitchison & Ivanova",
+          "url": "https://arxiv.org/abs/2503.01747",
+          "wording": "we argue that while CLT-based methods for uncertainty quantification are appropriate when benchmarks consist of thousands of examples, they fail to provide adequate uncertainty estimates for LLM evaluations that rely on smaller, highly specialized benchmarks.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-miller-2024-clustered-standard-errors",
+          "org": "Evan Miller (Anthropic)",
+          "url": "https://arxiv.org/abs/2411.00640",
+          "wording": "Analyzing the same data, clustered standard errors can be over 3X larger than naive standard errors.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-bean-2025-statistical-testing",
+          "org": "Bean et al.",
+          "url": "https://arxiv.org/abs/2511.04703",
+          "wording": "At present, only 16.0% of reviewed benchmarks conducted any statistical testing.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-openai-sycophancy-2025-offline-evals",
+          "org": "OpenAI",
+          "url": "https://openai.com/index/expanding-on-sycophancy/",
+          "wording": "One of the key problems with this launch was that our offline evaluations ... generally looked good. ... We also didn't have specific deployment evaluations tracking sycophancy.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-openai-sycophancy-2025-wrong-call",
+          "org": "OpenAI",
+          "url": "https://openai.com/index/expanding-on-sycophancy/",
+          "wording": "Nevertheless, some expert testers had indicated that the model behavior \"felt\" slightly off. ... In the end, we decided to launch the model due to the positive signals from the users who tried out the model. Unfortunately, this was the wrong call.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-openai-sycophancy-2025-rolled-back",
+          "org": "OpenAI",
+          "url": "https://openai.com/index/expanding-on-sycophancy/",
+          "wording": "as flattery, but also as validating doubts, fueling anger, urging impulsive actions, or reinforcing negative emotions in ways that were not intended. ... We began rolling that update back on April 28th, and users now have access to an earlier version of GPT-4o",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-openai-sycophancy-2025-lessons",
+          "org": "OpenAI",
+          "url": "https://openai.com/index/expanding-on-sycophancy/",
+          "wording": "We now understand that personality and other behavioral issues should be launch blocking, and we're modifying our processes to reflect that. We need to be critical of metrics that conflict with qualitative testing",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-anthropic-2025-postmortem-evals-missed",
+          "org": "Anthropic",
+          "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
+          "wording": "The evaluations we ran simply didn't capture the degradation users were reporting, in part because Claude often recovers well from isolated mistakes.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-nist-ai-600-1-2024-share-release-authority",
+          "org": "NIST",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+          "wording": "Share results of pre-deployment testing with relevant GAI Actors, such as those with system release approval authority.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-nist-ai-600-1-2024-avoid-extrapolating",
+          "org": "NIST",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+          "wording": "Avoid extrapolating GAI system performance or capabilities from narrow, non-systematic, and anecdotal assessments.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-galileo-2026-incidents-claim",
+          "org": "Galileo",
+          "url": "https://galileo.ai/blog/state-of-ai-evaluation",
+          "wording": "Teams skipping evaluations for \"low-risk\" behaviors experience 2.3× more production incidents than those who test comprehensively",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-galileo-2026-post-incident-evals",
+          "org": "Galileo",
+          "url": "https://galileo.ai/blog/state-of-ai-evaluation",
+          "wording": "Only 51.7% of teams consistently create evaluations after production incidents.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-langchain-2025-offline-evals",
+          "org": "LangChain",
+          "url": "https://www.langchain.com/state-of-agent-engineering",
+          "wording": "Just over half of organization (52.4%) report running offline evaluations on test sets, indicating that many teams see the importance of catching regressions and validating agent behavior before deployment. Adoption of online evals is lower (37.3%)",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-langchain-2025-sample",
+          "org": "LangChain",
+          "url": "https://www.langchain.com/state-of-agent-engineering",
+          "wording": "We received 1340 responses. Here's some demographic data: Top 5 industries: Technology (63% of respondents) ... Company size: <100 people (49% of respondents)",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-husain-evals-faq-2025-benevolent-dictator",
+          "org": "Hamel Husain",
+          "url": "https://hamel.dev/blog/posts/evals-faq/",
+          "wording": "Use one domain expert who understands your users as your quality decision maker (a \"benevolent dictator\").",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-imda-2026-no-universal-baseline",
+          "org": "IMDA Singapore",
+          "url": "https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/large-language-model-starter-kit.pdf",
+          "wording": "Can a universal baseline apply to all apps? The simple answer is no. App testing is highly context-specific. ... Ultimately, each organisation must determine its own safety threshold or baseline.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-openai-eval-best-practices-vibe-based",
+          "org": "OpenAI",
+          "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
+          "wording": "Vibe-based evals: Using \"it seems like it's working\" as an evaluation strategy, or waiting until you ship before implementing any evals.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-van-der-maden-2026-vibe-checks",
+          "org": "van der Maden et al.",
+          "url": "https://arxiv.org/abs/2604.16304",
+          "wording": "Twelve participants described beginning their evaluation with informal \"vibe checks.\" These are formative and exploratory assessments that serve as an essential first line of evaluation.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-van-der-maden-2026-actionability-gap",
+          "org": "van der Maden et al.",
+          "url": "https://arxiv.org/abs/2604.16304",
+          "wording": "Through interviews with nineteen practitioners across diverse sectors, we identify ten evaluation practices spanning informal 'vibe checks' to organizational meta-work. Beyond confirming four documented challenges, we introduce a novel fifth we call the results-actionability gap, in which practitioners gather evaluation data but cannot translate findings into concrete improvements.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "bundle": "research-notes",
       "path": "why-your-ai-gives-three-different-answers.md",
       "url": "https://knowledge.onesteplabs.com/research-notes/why-your-ai-gives-three-different-answers/",
       "title": "Why Your AI Gives Three Different Answers",
@@ -9246,6 +9590,22 @@
           "verified": "2026-08-10"
         }
       ]
+    },
+    {
+      "bundle": "research-notes",
+      "path": "validation/audits/2026-09-13-what-an-ai-test-can-and-cannot-tell-you.md",
+      "url": "https://knowledge.onesteplabs.com/research-notes/validation/audits/2026-09-13-what-an-ai-test-can-and-cannot-tell-you/",
+      "title": "Citation Audit: What an AI Test Can and Cannot Tell You",
+      "description": "Validation of every cited number and quote in the research note on AI evals against its primary source.",
+      "tags": [
+        "audit",
+        "citations",
+        "validation",
+        "evals"
+      ],
+      "body": "## Purpose\n\nThis record covers a check of every statistic, quote, and attribution in [What an AI Test Can and Cannot Tell You](/research-notes/what-an-ai-test-can-and-cannot-tell-you.md). Each claim was compared with its primary source: the arXiv papers, the Anthropic, OpenAI, GitHub, LangChain, Galileo and Raindrop pages, the NIST AI 600-1 profile, and the IMDA starter kit.\n\n**Audit conducted:** September 13, 2026\n\n**Updates completed:** September 13, 2026\n\n**Scope:** the note and its 41 entries in this bundle's evidence ledger.\n\n**Summary verdict:** no fabricated numbers and no misattributed organizations. The author's own sample-size arithmetic is correct. Five passages said slightly more than their sources, two moderately and three in minor ways. All five were corrected.\n\n---\n\n## Changes applied\n\n- **Szymanski et al. (moderate).** The note presented the abstract's 68% and 64% as an inconsistency with the results section. The paper's Table 3 shows these are the agreement rates when the AI grader was told to act as an expert. The note and both ledger entries now say so.\n- **Anthropic, 2026 (moderate).** The note said the April 2026 postmortem covers two changes. It covers three: an effort-setting change, a caching change, and a prompt change. The note now says three, two of which matter here.\n- **Zhu et al. (minor).** The note glossed \"up to 100% in relative terms\" as a score reported at double its true value. That covers only overestimation. The gloss now covers both directions.\n- **JudgeBench (minor).** The source says \"many strong models\" perform slightly better than random guessing. The note had dropped \"many.\" Restored.\n- **Anthropic, 2026 (minor).** The 3% drop came from one evaluation in a broader set, not the whole set. Reworded.\n- **Sample-size arithmetic (optional nuance, applied).** The usual interval gives about 11 points either way at 50 cases and an 80% pass rate. The note now adds that methods suited to small samples give a wider range, consistent with the Bowyer et al. paper it cites.\n\n## Verified correct\n\nZheng et al. Table 5 (first turn, with and without ties), Norman et al. (kappa deflation of 33 to 41 points on MT-Bench, rankings shifting up to 14 places, position bias in two production judges), Bavaresco et al., Gema et al., Northcutt et al., Humanity's Last Exam (about 18%), BenchJack (10 benchmarks, 219 flaws), Bowyer et al., Miller, Bean et al. (16.0%), van der Maden et al., the OpenAI sycophancy account (read from an archived copy), the Anthropic 2025 and 2026 postmortems, the Anthropic, OpenAI and GitHub guidance pages, NIST AI 600-1 actions MS-2.3-003 and MS-2.5-001, the IMDA starter kit, and the Galileo and LangChain survey figures. Every stake description checked out.",
+      "updated": "2026-09-13",
+      "sources": []
     },
     {
       "bundle": "team-second-brain",
@@ -10255,6 +10615,11 @@
       "date": "2026-07-01",
       "bundle": "open-knowledge-format",
       "entry": "Creation**: two themes — Understanding OKF (the format as it stands today) and The Potential (our grounded read of where it could go)."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "research-notes",
+      "entry": "Creation**: what testing an AI system can and cannot tell an organization. Why an AI grader"
     },
     {
       "date": "2026-08-10",

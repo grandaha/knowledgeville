@@ -21,3 +21,8 @@ cannot substantiate something says so and states what would settle it.
 
 Dated audits land in `audits/` as they are run.
 
+## In this section
+
+| Page | Last updated |
+| --- | --- |
+| [Audits](audits/) | — |

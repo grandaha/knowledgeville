@@ -13,8 +13,11 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.5.0 — 2026-09-13
 
-### New & expanded content
-* Research note on what an AI test can and cannot tell you
+## New research note: What an AI Test Can and Cannot Tell You
+
+A working note on AI evals, the tests organizations run on the AI systems they build or buy. It sets out four findings that hold up: an AI grader has to be checked against people, answer keys contain errors, agent scores are easy to inflate, and small test sets overstate certainty. It also reports what the public record shows. In every published case found, users found the problem after release, and in two of the changes a warning existed before launch and was overruled. It is plain about what nobody has shown: that evals prevent incidents, how common they are outside vendor surveys, who should own them, and what bar is good enough to ship.
+
+- [What an AI Test Can and Cannot Tell You](https://knowledge.onesteplabs.com/research-notes/what-an-ai-test-can-and-cannot-tell-you/)
 
 ## v12.4.0 — 2026-09-13
 

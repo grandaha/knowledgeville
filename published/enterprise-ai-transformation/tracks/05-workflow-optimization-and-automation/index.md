@@ -13,7 +13,7 @@ Workflow optimization does not stand alone. It depends on [Data Readiness](/ente
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
 
 - **MIT Project NANDA — *The GenAI Divide: State of AI in Business 2025*, 2025.** Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact. [View source](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf){#ev-mit-nanda-genai-divide-2025-no-pl-impact} · verified 2026-06-20 · ⚠ secondary mirror
-- **McKinsey — *The State of AI*, 2025.** 21% of respondents reporting gen AI use say their organizations have fundamentally redesigned at least one workflow; redesigning workflows has the biggest effect on an organization's ability to see EBIT impact from gen AI. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-workflow-redesign} · verified 2026-06-20 · primary
+- **McKinsey — *The State of AI: How Organizations Are Rewiring to Capture Value*, 2025.** 21% of respondents reporting gen AI use say their organizations have fundamentally redesigned at least one workflow; redesigning workflows has the biggest effect on an organization's ability to see EBIT impact from gen AI. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value){#ev-mckinsey-state-of-ai-2025-workflow-redesign} · verified 2026-06-20 · primary
 
 ## In this section
 

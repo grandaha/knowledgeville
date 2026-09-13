@@ -1,6 +1,15 @@
 # Update Log
 
 ## 2026-09-13
+* **Update**: statistics refreshed to the latest editions of three recurring studies, across the
+  executive summary and the pages that cite them. BCG's 2025 study replaces the 2024 figure that 26% of companies
+  had moved past proofs of concept: now about 5% achieve value at scale and 60% little or none. BCG's
+  10-20-70 rule is cited to its 2025 restatement, as a rule for where to focus effort. McKinsey's
+  figures move to its 2026 survey: 89% of organizations use AI, 37% report any EBIT impact, and
+  about 6% are high performers, who are twice as likely as others to report committed leaders. Cisco's 2025 index replaces its
+  2024 "fully ready" figure: about 13% of organizations are "Pacesetters", unchanged for three years.
+  One McKinsey figure that could not be confirmed is replaced with BCG's verified measurement finding.
+  Figures that only McKinsey's earlier 2025 report measured are labelled as coming from it.
 * **Update**: [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md)
   now cites its routing claim and splits routing into three patterns: a team assigning a cheaper
   model to a task, a router choosing a model per request, and fallback to a second model. It adds

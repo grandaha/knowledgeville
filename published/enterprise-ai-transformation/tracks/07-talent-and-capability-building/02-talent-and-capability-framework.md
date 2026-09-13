@@ -11,7 +11,7 @@ generated:
 stale_after: "2026-12-31T00:00:00Z"
 verified:
   - by: "human:daveraffaele"
-    at: "2026-06-20T00:00:00Z"
+    at: "2026-09-13T00:00:00Z"
 sources:
   - id: ev-mckinsey-superagency-2025-too-slow-skill-gaps
     resource: "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work"
@@ -49,9 +49,9 @@ sources:
     resource: "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part"
     title: 2024 Work Trend Index Annual Report
     author: "Microsoft & LinkedIn"
-  - id: ev-bcg-2024-ten-twenty-seventy
-    resource: "https://www.bcg.com/publications/2024/wheres-value-in-ai"
-    title: "Where's the Value in AI?"
+  - id: ev-bcg-value-gap-2025-ten-twenty-seventy
+    resource: "https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf"
+    title: The Widening AI Value Gap
     author: BCG
 # okf:generated:end
 ---
@@ -119,7 +119,7 @@ Champions matter because the alternative — centralized training pushed from th
 
 Talent is the layer the rest of the framework rests on. A sophisticated [platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md) is inert if no one can build on it. [Workflow redesign](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/02-workflow-optimization-framework.md) cannot happen if the people doing the work lack the fluency to see where AI fits. [Governance](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md) fails when staff cannot recognize the risks they are told to manage. And [value never shows up in measurement](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md) because the capability to convert tools into changed work was never built.
 
-This is why so much AI investment strands: the spend goes to licenses and infrastructure, while the capability layer that would have turned them into outcomes is left at zero. The evidence that the human-and-process layer dominates is consistent — BCG estimates the effort split for value capture at roughly **10% algorithms, 20% technology and data, and 70% people and process** ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy)). Talent and capability building is the discipline of that 70%, applied to the workforce.
+This is why so much AI investment strands: the spend goes to licenses and infrastructure, while the capability layer that would have turned them into outcomes is left at zero. BCG's 10-20-70 rule puts roughly **70% of strategic focus on people and process, 20% on technology and data, and 10% on algorithms** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)). Talent and capability building is the discipline of that 70%, applied to the workforce.
 
 ---
 
@@ -130,7 +130,7 @@ This is why so much AI investment strands: the spend goes to licenses and infras
 - **Use four literacy levels — awareness, fluency, builder, architect — to set differentiated targets** rather than treating "AI skills" as a binary. Aim the bulk of the workforce at fluency.
 - **Build the broad middle, hire the deep core, partner for spikes and bridges.** Reskilling is usually cheaper and more durable than hiring against a 56% AI-skills wage premium ([PwC, 2025](#ev-pwc-ai-jobs-barometer-2025-wage-premium); [WEF, 2025](#ev-wef-future-of-jobs-2025-upskilling-priority)).
 - **Champions are the distribution layer.** Most people already learn AI from peers, not L&D — 75% use it, only 39% were trained ([Microsoft & LinkedIn, 2024](#ev-microsoft-work-trend-2024-use-at-work); [Microsoft & LinkedIn, 2024](#ev-microsoft-work-trend-2024-training-hiring)) — so make peer diffusion deliberate.
-- **Talent readiness gates every other track.** The 70% of value-capture effort that is people-and-process is what this track is about ([BCG, 2024](#ev-bcg-2024-ten-twenty-seventy)).
+- **Talent readiness gates every other track.** The 70% of value-capture effort that is people-and-process is what this track is about ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)).
 
 ## Sources
 
@@ -145,4 +145,4 @@ This is why so much AI investment strands: the spend goes to licenses and infras
 - **World Economic Forum — *Future of Jobs Report 2025*, 2025.** Upskilling is the most common workforce strategy for 2025-2030, with 85% of surveyed employers anticipating it; of a representative 100 workers, employers foresee 29 upskilled in their current roles and 19 upskilled and redeployed elsewhere, while 11 are unlikely to receive the reskilling needed. [View source](https://www.weforum.org/publications/the-future-of-jobs-report-2025/){#ev-wef-future-of-jobs-2025-upskilling-priority} · verified 2026-06-20 · primary
 - **Microsoft & LinkedIn — *2024 Work Trend Index Annual Report*, 2024.** 75% of knowledge workers now use AI at work. [View source](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part){#ev-microsoft-work-trend-2024-use-at-work} · verified 2026-06-20 · primary
 - **Microsoft & LinkedIn — *2024 Work Trend Index Annual Report*, 2024.** Only 39% of people who use AI at work have received AI training from their company; 66% of leaders say they would not hire someone without AI skills. [View source](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part){#ev-microsoft-work-trend-2024-training-hiring} · verified 2026-06-20 · primary
-- **BCG — *Where's the Value in AI?*, 2024.** AI leaders follow the rule of putting 10% of their resources into algorithms, 20% into technology and data, and 70% into people and processes. [View source](https://www.bcg.com/publications/2024/wheres-value-in-ai){#ev-bcg-2024-ten-twenty-seventy} · verified 2026-06-20 · primary
+- **BCG — *The Widening AI Value Gap*, 2025.** Adherence to our 10-20-70 rule for technology transformations will help speed the journey: 70% of a business's strategic focus should be on the people and processes, 20% on the tech, and 10% on algorithms. [View source](https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf){#ev-bcg-value-gap-2025-ten-twenty-seventy} · verified 2026-09-13 · primary

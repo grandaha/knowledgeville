@@ -11,6 +11,46 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.2.1 — 2026-09-13
+
+## Statistics refreshed to the latest editions of three recurring studies
+
+Enterprise AI Transformation pages now cite the newest edition of each study they rely on.
+
+- **McKinsey, The State of AI in 2026.** 89% of organizations use AI in at least one business function, 37% report any EBIT impact, and about 6% are high performers. 44% of organizations using AI are scaling it across the enterprise, and 54% of companies with $1 billion or more in revenue.
+- **BCG, The Widening AI Value Gap (2025).** About 5% of companies achieve AI value at scale, and 60% little or none. This replaces the 2024 figure that 26% had moved past proofs of concept. BCG's 10-20-70 rule is now cited to its 2025 restatement, as a rule for where to focus effort.
+- **Cisco AI Readiness Index 2025.** About 13% of organizations are its most AI-ready "Pacesetters", a share unchanged for three years.
+- One McKinsey figure that could not be confirmed is replaced with BCG's verified finding on measuring AI value.
+
+Pages updated:
+- [Executive Summary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/executive-summary/)
+- [Integrated Assessment](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/integrated-assessment/)
+- [Program Architecture](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/program-architecture/)
+- [Sequencing Playbooks](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/sequencing-playbooks/)
+- [Stakeholder Communication Templates](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/stakeholder-communication-templates/)
+- [The 90-Day Launch](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/the-90-day-launch/)
+- [AI Strategy Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework/)
+- [Practitioner Guide: Running an AI Strategy Process](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process/)
+- [Assessment: Strategic Readiness Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/05-assessment-strategic-readiness-scoring/)
+- [AI Governance Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework/)
+- [Practitioner Guide: Standing Up an AI Governance Function](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function/)
+- [AI Readiness Assessment Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/ai-readiness-assessment-framework/)
+- [Building a Data Culture](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/05-strategy-and-organization/building-a-data-culture/)
+- [Technology Architecture Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework/)
+- [Practitioner Guide: Designing an AI Platform Function](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function/)
+- [Technology Architecture & Platform](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/)
+- [Workflow Optimization Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/02-workflow-optimization-framework/)
+- [The Four Levels of Workflow AI Integration](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/03-the-four-levels-of-workflow-ai-integration/)
+- [Assessment: Workflow Maturity & Opportunity Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/06-assessment-workflow-maturity-and-opportunity-scoring/)
+- [AI Adoption Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework/)
+- [Practitioner Guide: Designing an Adoption Program](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program/)
+- [Talent & Capability Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/07-talent-and-capability-building/02-talent-and-capability-framework/)
+- [Assessment: Talent Readiness Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/07-talent-and-capability-building/05-assessment-talent-readiness-scoring/)
+- [Measurement & Value Realization Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework/)
+- [Attribution Methodology](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/03-attribution-methodology/)
+- [Practitioner Guide: Standing Up AI Measurement](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/04-practitioner-guide-standing-up-ai-measurement/)
+- [Assessment: Measurement Maturity Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/05-assessment-measurement-maturity-scoring/)
+
 ## v12.2.0 — 2026-09-13
 
 ## New decision guide: Which AI Model for Which Job

@@ -48,9 +48,9 @@
   wording: "88% of respondents report regular AI use in at least one business function, compared with 78% a year ago"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The state of AI in 2025: Agents, innovation, and transformation"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
     pdf_hash:
   verified: 2026-06-20
   status: primary
@@ -63,9 +63,9 @@
   wording: "About 39% of organizations report any enterprise-level EBIT impact from AI; most of those say less than 5% of EBIT is attributable to AI use"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The state of AI in 2025: Agents, innovation, and transformation"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
     pdf_hash:
   verified: 2026-06-20
   status: primary
@@ -77,9 +77,9 @@
   wording: "Respondents who attribute EBIT impact of 5 percent or more to AI use and say their organization has seen significant value from AI — about 6 percent of respondents — are defined as AI high performers"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The state of AI in 2025: Agents, innovation, and transformation"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
     pdf_hash:
   verified: 2026-06-20
   status: primary
@@ -141,33 +141,19 @@
   status: primary
   expires: 2026-12-31
 
-- id: ev-cisco-ai-readiness-2024-fully-ready
-  claim: "Organizations 'fully ready' to deploy and leverage AI"
-  value: "13%"
-  wording: "Only 13% of companies today are fully ready to capture AI's potential — down from 14% a year ago"
-  source:
-    org: Cisco
-    report: "Cisco 2024 AI Readiness Index"
-    edition: 2024
-    url: https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m11/cisco-2024-ai-readiness-index-urgency-rises-readiness-falls.html
-    pdf_hash:
-  verified: 2026-06-20
-  status: primary
-  expires: 2026-12-31
-
 - id: ev-bcg-value-gap-2025-distribution
   claim: "Share of companies achieving AI value at scale vs capturing little or no value"
   value: "~5% at scale; ~60% little or no value"
-  wording: "Only about 5% of companies (the 'future-built') are generating value at scale, while 60% of companies are laggards with little or no value; 35% are in between"
+  wording: "Only 5% of companies in our 2025 study of more than 1,250 firms worldwide are achieving AI value at scale ... Fully 60% of companies are not achieving material value at all, reporting minimal revenue and cost gains despite substantial investment. Another 35% (13 percentage points more than in 2024) are scaling up their efforts and seeing some returns ... the 60% that have little or no value"
   source:
     org: BCG
     report: "The Widening AI Value Gap"
     edition: 2025
     url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
     pdf_hash:
-  verified: 2026-06-20
+  verified: 2026-09-13
   status: primary
-  expires: 2026-09-30
+  expires: 2027-09-13
 
 - id: ev-bcg-value-gap-2025-leader-premium
   claim: "Performance premium of AI 'future-built' leaders over laggards"
@@ -197,19 +183,19 @@
   status: primary
   expires: 2026-12-31
 
-- id: ev-bcg-2024-ten-twenty-seventy
-  claim: "The 10-20-70 rule for where AI value comes from"
-  value: "10% algorithms, 20% technology & data, 70% people & process"
-  wording: "AI leaders follow the rule of putting 10% of their resources into algorithms, 20% into technology and data, and 70% into people and processes"
+- id: ev-bcg-value-gap-2025-ten-twenty-seventy
+  claim: "BCG's 10-20-70 rule for where to focus an AI transformation, restated in its 2025 study"
+  value: "70% people and processes, 20% technology, 10% algorithms"
+  wording: "Adherence to our 10-20-70 rule for technology transformations will help speed the journey: 70% of a business's strategic focus should be on the people and processes, 20% on the tech, and 10% on algorithms."
   source:
     org: BCG
-    report: "Where's the Value in AI?"
-    edition: 2024
-    url: https://www.bcg.com/publications/2024/wheres-value-in-ai
+    report: "The Widening AI Value Gap"
+    edition: 2025
+    url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
     pdf_hash:
-  verified: 2026-06-20
+  verified: 2026-09-13
   status: primary
-  expires: 2026-12-31
+  expires: 2027-09-13
 
 - id: ev-mit-nanda-genai-divide-2025-no-pl-impact
   claim: "Enterprise gen-AI pilots delivering no measurable P&L impact"
@@ -244,9 +230,9 @@
   wording: "21% of respondents reporting gen AI use say their organizations have fundamentally redesigned at least one workflow; redesigning workflows has the biggest effect on an organization's ability to see EBIT impact from gen AI"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
     pdf_hash:
   verified: 2026-06-20
   status: primary
@@ -1120,18 +1106,18 @@
   expires: 2026-12-31
 
 - id: ev-bcg-value-gap-2025-track-value-leaders-laggards
-  claim: "Future-built leaders that systematically measure/report AI value vs stagnating firms"
+  claim: "Future-built leaders that rigorously track AI value vs stagnating firms"
   value: ">60% vs 17% (~3.5x)"
-  wording: "More than 60% of future-built firms systematically measure and report AI value, compared with only 17% of stagnating companies"
+  wording: "Leaders consistently track and report results. More than 60% of future-built firms rigorously track AI value, compared with only 17% of stagnating companies."
   source:
     org: BCG
     report: "The Widening AI Value Gap"
     edition: 2025
     url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
-  expires: 2026-09-30
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
 
 - id: ev-gartner-ai-maturity-2025-roi-analysis
   claim: "Among high-AI-maturity orgs, share running financial/ROI analysis and measuring customer impact"
@@ -1479,26 +1465,12 @@
   wording: "About one-third of organizations have begun to scale AI across the enterprise; larger companies are the most likely to have reached the scaling phase"
   source:
     org: McKinsey
-    report: "The State of AI in 2025"
+    report: "The state of AI in 2025: Agents, innovation, and transformation"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
     pdf_hash:
   verified: 2026-06-20
   status: primary
-  expires: 2026-12-31
-
-- id: ev-mckinsey-state-of-ai-2024-high-performers-measurement
-  claim: "Gen-AI high performers with clear ways to measure/track AI value vs other orgs (figure not pinned to a public McKinsey 2024 quote)"
-  value: "more than a third vs about one in ten (unconfirmed)"
-  wording: "More than a third of gen-AI high performers have clear ways to measure and track the value of their gen-AI work, versus only about one in ten of other organizations; this specific split could not be confirmed against a public McKinsey 2024 quote and should be re-verified"
-  source:
-    org: McKinsey
-    report: "The State of AI in early 2024"
-    edition: 2024
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024
-    pdf_hash:
-  verified: 2026-06-20
-  status: blocked
   expires: 2026-12-31
 
 - id: ev-gartner-ai-board-2024-board-presence
@@ -1798,9 +1770,9 @@
   wording: "AI high performers are 2.8 times more likely to report fundamental workflow redesign than other organizations (55% versus 20%)"
   source:
     org: McKinsey
-    report: "The State of AI in 2025"
+    report: "The state of AI in 2025: Agents, innovation, and transformation"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
     pdf_hash:
   verified: 2026-06-20
   status: primary
@@ -2962,16 +2934,16 @@
   verified: 2026-06-21
   status: secondary-mirror
 - id: ev-cisco-ai-readiness-2025-pacesetters
-  claim: "Share of organizations qualifying as 'Pacesetters' and their advantage in moving pilots to production"
-  value: "~13% are Pacesetters; 4x more likely to move pilots into production"
-  wording: "about 13% of organizations qualify as Pacesetters (fully AI-ready); Pacesetters are 4x more likely to move AI pilots into production than their peers"
+  claim: "Share of organizations in Cisco's most AI-ready tier, the 'Pacesetters', steady at about 13% for three years, and their advantage in moving pilots to production"
+  value: "~13% Pacesetters, unchanged for three years; 4x more likely to move pilots into production"
+  wording: "The Most AI-ready Companies Outpace Peers in the Race to Value ... A small but consistent group of companies surveyed - the 'Pacesetters,' about 13% of organizations for the last three years - outperform their peers across every measure of AI value ... The 'Pacesetters' are 4x more likely to move AI pilots into production"
   source:
     org: Cisco
     report: "2025 Cisco AI Readiness Index: Realizing the Value of AI"
     edition: 2025
     url: https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m10/cisco-ai-research-the-most-ai-ready-companies-outpace-peers-in-the-race-to-value.html
     pdf_hash:
-  verified: 2026-06-21
+  verified: 2026-09-13
   status: primary
 - id: ev-ibm-ai-adoption-index-2023-strategy-split
   claim: "Share of AI-engaged enterprises with a holistic vs limited-use-case vs in-development AI strategy"
@@ -3087,9 +3059,9 @@
   wording: "High performers are three times more likely than their peers to strongly agree that senior leaders at their organizations demonstrate ownership of and commitment to their AI initiatives"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The state of AI in 2025: Agents, innovation, and transformation"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/the%20state%20of%20ai/november%202025/the-state-of-ai-2025-agents-innovation_cmyk-v1.pdf
     pdf_hash:
   verified: 2026-06-21
   status: secondary-mirror
@@ -3243,9 +3215,9 @@
   wording: "More than 80 percent of respondents say their organizations aren't seeing a tangible impact on enterprise-level EBIT from their use of gen AI"
   source:
     org: McKinsey
-    report: "The State of AI"
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
     edition: 2025
-    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
     pdf_hash:
   verified: 2026-06-21
   status: secondary-mirror
@@ -3912,3 +3884,87 @@
   verified: 2026-09-13
   status: primary
   expires: 2027-06-10
+- id: ev-mckinsey-state-of-ai-2026-adoption
+  claim: "Organizations reporting regular AI use in at least one business function"
+  value: "89% (Exhibit 1 chart: 72 and 78 plotted for 2024, 88 for 2025, 89 for 2026)"
+  wording: "Nearly nine in ten respondents report regular use of AI in at least one business function"
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-mckinsey-state-of-ai-2025-adoption
+- id: ev-mckinsey-state-of-ai-2026-ebit-any
+  claim: "Organizations reporting that AI has contributed any EBIT impact"
+  value: "37% (about the same as 2025)"
+  wording: "About four in ten respondents (37 percent) report that AI has contributed positively to their organizations' EBIT, essentially unchanged from 2025"
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-mckinsey-state-of-ai-2025-ebit-any
+- id: ev-mckinsey-state-of-ai-2026-high-performers
+  claim: "AI high performers (attribute 5% or more of EBIT to AI and report significant value)"
+  value: "~6%, unchanged from 2025"
+  wording: "AI high performers - respondents who attribute an EBIT impact of 5 percent or more to AI use and say their organizations have seen 'significant' value from AI use - account for just 6 percent of survey respondents, unchanged from 2025."
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-mckinsey-state-of-ai-2025-high-performers
+- id: ev-mckinsey-state-of-ai-2026-scaling-by-size
+  claim: "Organizations using AI that are scaling it across the enterprise, overall and by company size"
+  value: "44% of organizations using AI (38% in 2025); 54% at $1B+ revenue vs one-third of smaller organizations"
+  wording: "44 percent now report that AI is scaling across their enterprise, up from 38 percent a year ago ... Fifty-four percent of respondents from organizations with at least $1 billion in annual revenue report scaling AI across the enterprise, compared with one-third of those from smaller organizations."
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-mckinsey-state-of-ai-2025-scaling-by-size
+- id: ev-mckinsey-state-of-ai-2026-workflow-redesign-highperf
+  claim: "AI high performers vs others on fundamental workflow redesign"
+  value: "nearly three-quarters vs one-quarter (high performers up from 55% in 2025)"
+  wording: "Nearly three-quarters of high performers report fundamentally redesigning workflows because of their AI use, up from 55 percent last year. By comparison, just one-quarter of other respondents report doing so."
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-mckinsey-state-of-ai-2025-workflow-redesign-highperf
+- id: ev-mckinsey-state-of-ai-2026-leader-commitment-2x
+  claim: "AI high performers vs others on senior leaders demonstrating commitment to AI initiatives"
+  value: "2x as likely"
+  wording: "they are twice as likely as others to say that their senior leaders demonstrate commitment to AI initiatives and to report that their organizations have defined processes to measure the impact of those initiatives."
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-mckinsey-state-of-ai-2025-leader-ownership-3x

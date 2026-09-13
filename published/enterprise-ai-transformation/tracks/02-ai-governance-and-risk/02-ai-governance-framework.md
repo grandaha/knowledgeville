@@ -20,13 +20,9 @@ sources:
     resource: "https://newsroom.ibm.com/2024-07-30-ibm-report-escalating-data-breach-disruption-pushes-costs-to-new-highs"
     title: Cost of a Data Breach Report 2024
     author: IBM (Ponemon Institute)
-  - id: ev-mckinsey-state-of-ai-2025-adoption
+  - id: ev-mckinsey-state-of-ai-2026-adoption
     resource: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-    title: The State of AI
-    author: McKinsey
-  - id: ev-mckinsey-state-of-ai-2024-adoption
-    resource: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value"
-    title: "The State of AI: How Organizations Are Rewiring to Capture Value"
+    title: "The state of AI in 2026: On the road to ROI"
     author: McKinsey
   - id: ev-mckinsey-trust-2026-maturity-level-three
     resource: "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era"
@@ -74,7 +70,7 @@ This is not a marginal difference. It is a structural one. AI systems have emerg
 > **Only 25%** of organizations have a fully implemented AI governance program, despite widespread awareness of regulatory obligations ([AuditBoard, 2025](#ev-auditboard-blueprint-to-reality-2025-governance-gap))
 > The average cost of a data breach reached **$4.88 million** in 2024 — its largest yearly jump since the pandemic ([IBM, 2024](#ev-ibm-cost-of-breach-2024-average-cost))
 
-The governance gap is the management problem of the moment. AI adoption is accelerating — McKinsey's 2025 State of AI found that 88% of organizations are using AI in at least one business function ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-adoption)), up from 78% the prior year ([McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-adoption)). But governance maturity has not kept pace: only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance ([McKinsey, 2026](#ev-mckinsey-trust-2026-maturity-level-three)).
+The governance gap is the management problem of the moment. AI adoption is near-universal: in McKinsey's 2026 survey, 89% of organizations regularly used AI in at least one business function, up from 78% in 2024 ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-adoption)). But governance maturity has not kept pace: only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance ([McKinsey, 2026](#ev-mckinsey-trust-2026-maturity-level-three)).
 
 This track builds the coverage that closes that gap. It sits immediately downstream of [AI Strategy & Leadership](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/index.md), which sets intent and risk appetite. This track operationalizes both — converting appetite into controls, policy into enforcement, and regulatory obligation into organizational action. The [practitioner guide to standing up an AI governance function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md) is the companion for organizations building this capability from scratch.
 
@@ -249,8 +245,7 @@ Assess governance maturity against the companion [governance maturity scoring as
 
 - **AuditBoard — *From blueprint to reality: Execute effective AI governance in a volatile landscape*, 2025.** 82% say they're using AI across functions, yet only 25% report that they have a fully implemented AI governance program. [View source](https://auditboard.com/resources/ebook/from-blueprint-to-reality-execute-effective-ai-governance-in-a-volatile-landscape){#ev-auditboard-blueprint-to-reality-2025-governance-gap} · verified 2026-06-21 · primary
 - **IBM (Ponemon Institute) — *Cost of a Data Breach Report 2024*, 2024.** The global average cost of a data breach reached USD 4.88 million in 2024, a 10% increase from the prior year and the largest yearly jump since the pandemic. [View source](https://newsroom.ibm.com/2024-07-30-ibm-report-escalating-data-breach-disruption-pushes-costs-to-new-highs){#ev-ibm-cost-of-breach-2024-average-cost} · verified 2026-06-21 · primary
-- **McKinsey — *The State of AI*, 2025.** 88% of respondents report regular AI use in at least one business function, compared with 78% a year ago. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-adoption} · verified 2026-06-20 · primary
-- **McKinsey — *The State of AI: How Organizations Are Rewiring to Capture Value*, 2024.** 78% of organizations now use AI in at least one business function (up from 72% in early 2024 and 55% in 2023). [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value){#ev-mckinsey-state-of-ai-2024-adoption} · verified 2026-06-22 · primary
+- **McKinsey — *The state of AI in 2026: On the road to ROI*, 2026.** Nearly nine in ten respondents report regular use of AI in at least one business function. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2026-adoption} · verified 2026-09-13 · primary
 - **McKinsey — *State of AI Trust in 2026: Shifting to the Agentic Era*, 2026.** Only about one-third of organizations report maturity levels of three or higher in strategy, governance, and agentic AI governance; average responsible-AI maturity rose to 2.3 in 2026 from 2.0 in 2025. [View source](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era){#ev-mckinsey-trust-2026-maturity-level-three} · verified 2026-06-21 · ⚠ secondary mirror
 - **Ncontracts — *2025 Third-Party Risk Management Survey*, 2025.** 49% of financial institutions experienced a vendor-related cyber incident in the past year. [View source](https://www.ncontracts.com/nsight-blog/ncontracts-2025-third-party-risk-management-survey){#ev-ncontracts-tprm-survey-2025-vendor-cyber-incident} · verified 2026-06-21 · primary
 - **Ncontracts — *2025 Third-Party Risk Management Survey*, 2025.** Nearly three-quarters of respondents (73%) have two or fewer full-time employees managing vendor risk, even though more than half oversee more than 300 vendors. [View source](https://www.ncontracts.com/nsight-blog/ncontracts-2025-third-party-risk-management-survey){#ev-ncontracts-tprm-survey-2025-vendor-risk-staffing} · verified 2026-06-21 · primary

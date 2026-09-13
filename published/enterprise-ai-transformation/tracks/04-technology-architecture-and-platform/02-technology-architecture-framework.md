@@ -12,9 +12,9 @@ verified:
   - by: "human:daveraffaele"
     at: "2026-09-13T00:00:00Z"
 sources:
-  - id: ev-mckinsey-state-of-ai-2025-adoption
+  - id: ev-mckinsey-state-of-ai-2026-adoption
     resource: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-    title: The State of AI
+    title: "The state of AI in 2026: On the road to ROI"
     author: McKinsey
   - id: ev-finops-foundation-state-of-finops-2025-tracking-spend
     resource: "https://data.finops.org/2025-report/"
@@ -111,11 +111,11 @@ sources:
 
 Most enterprises did not set out to build an AI platform. They set out to solve individual problems. A customer service team integrated a chatbot. A product team added a copilot. An engineer connected a business process to a model API over a weekend. Each experiment was rational in isolation. Collectively, they produced something no one intended: a sprawl of point solutions, redundant subscriptions, disconnected embedding pipelines, and business units spinning up their own models against their own API keys with no central visibility into cost, performance, or risk.
 
-This is not a hypothetical. McKinsey's 2025 *State of AI* survey found that 88% of organizations now use AI in at least one business function ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-adoption)) — but adoption has not been matched by consolidation. The data on the financial side is telling: as of the 2025 FinOps Foundation survey, 63% of organizations were tracking or managing AI spend, up sharply from 31% the year before — which means more than a third still could not account for what they spent on AI ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend)). When most of an organization's AI usage is unattributed, there is no way to aggregate cost, enforce policy, or catch a runaway agent before the invoice arrives.
+This is not a hypothetical. McKinsey's 2026 *State of AI* survey found that 89% of organizations now use AI in at least one business function ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-adoption)) — but adoption has not been matched by consolidation. The data on the financial side is telling: as of the 2025 FinOps Foundation survey, 63% of organizations were tracking or managing AI spend, up sharply from 31% the year before — which means more than a third still could not account for what they spent on AI ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend)). When most of an organization's AI usage is unattributed, there is no way to aggregate cost, enforce policy, or catch a runaway agent before the invoice arrives.
 
 The cost of point-solution sprawl is not only financial. It is architectural. An enterprise cannot audit what it cannot see, cannot govern what it did not provision, and cannot optimize what it has no unified view of. When every team routes its prompts through a different API key, there is no way to aggregate cost, enforce policy, or catch a runaway agent before the invoice arrives. When every team selects its own models, there is no shared evaluation, no compliance review, and no mechanism to retire a model that turns out to be unsuitable.
 
-> **88% of organizations** now use AI in at least one business function ([McKinsey, 2025](#ev-mckinsey-state-of-ai-2025-adoption)), yet as of 2025 only **63% of organizations were managing their AI spend** — up from 31% a year earlier ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend)). Centralized cost attribution remains the exception, not the rule.
+> **89% of organizations** now use AI in at least one business function ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-adoption)), yet as of 2025 only **63% of organizations were managing their AI spend** — up from 31% a year earlier ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend)). Centralized cost attribution remains the exception, not the rule.
 
 This consolidation gap shows up in the maturity data as well. Only about 21% of organizations report having a mature model for governing autonomous AI agents ([Deloitte, 2026](#ev-deloitte-state-ai-enterprise-2026-agentic-governance-gap)), and the organizations that pull ahead tend to be the ones that centralize: "future-built" firms are roughly three times as likely to operate a central, integrated AI platform as their lagging peers ([BCG, 2025](#ev-bcg-value-gap-2025-central-platform-3x)). Centralization is not bureaucratic overhead — it is the pattern that correlates with capturing value.
 
@@ -261,7 +261,7 @@ Assess your organization's current platform maturity against the [platform matur
 
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
 
-- **McKinsey — *The State of AI*, 2025.** 88% of respondents report regular AI use in at least one business function, compared with 78% a year ago. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2025-adoption} · verified 2026-06-20 · primary
+- **McKinsey — *The state of AI in 2026: On the road to ROI*, 2026.** Nearly nine in ten respondents report regular use of AI in at least one business function. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2026-adoption} · verified 2026-09-13 · primary
 - **FinOps Foundation — *The State of FinOps*, 2025.** AI spending is now managed by the majority of respondents (63% up from 31% last year). [View source](https://data.finops.org/2025-report/){#ev-finops-foundation-state-of-finops-2025-tracking-spend} · verified 2026-06-20 · primary
 - **Deloitte — *State of AI in the Enterprise 2026 (Agentic AI is scaling faster than guardrails)*, 2026.** By 2027, 74% of respondents expect their companies to be using AI agents at least moderately, but only 21% say their organizations have a mature governance model in place for agentic AI. [View source](https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html){#ev-deloitte-state-ai-enterprise-2026-agentic-governance-gap} · verified 2026-06-21 · primary
 - **BCG — *The Widening AI Value Gap (Build for the Future 2025 Global Study, n=1,250)*, 2025.** 3x More central AI platforms in operation to enable scale and adoption. [View source](https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf){#ev-bcg-value-gap-2025-central-platform-3x} · verified 2026-06-21 · primary

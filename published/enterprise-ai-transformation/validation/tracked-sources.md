@@ -3,11 +3,11 @@ type: Reference
 title: Tracked Sources
 description: Public registry of the recurring research franchises this knowledge base relies on — cadence, the edition currently cited, and when to check for a newer one.
 tags: [validation, citations, sources, freshness]
-timestamp: "2026-06-20"
+timestamp: "2026-09-13"
 appendix: true
 generated:
   by: process:build_tracked_sources
-  at: "2026-06-20T00:00:00Z"
+  at: "2026-09-13T00:00:00Z"
 ---
 
 <!-- generated from validation/sources.yaml — do not edit; run scripts/build_index.py -->
@@ -30,7 +30,7 @@ Stale-after rule of thumb from the edition date: quarterly +9 months, annual +18
 
 | Franchise | Cadence | Latest edition | Edition | Verified | Stale after |
 | --- | --- | --- | --- | --- | --- |
-| AI Readiness Index | annual | 2024 | 2024-11 | 2026-06-20 | 2026-05 |
+| AI Readiness Index | annual | 2025 | 2025-10 | 2026-09-13 | 2027-04 |
 
 ### Gartner
 
@@ -48,5 +48,5 @@ Stale-after rule of thumb from the edition date: quarterly +9 months, annual +18
 
 | Franchise | Cadence | Latest edition | Edition | Verified | Stale after |
 | --- | --- | --- | --- | --- | --- |
-| The State of AI (QuantumBlack) | annual | 2025 | 2025-11 | 2026-06-20 | 2027-05 |
+| The State of AI (QuantumBlack) | annual | 2026 | 2026-08 | 2026-09-13 | 2028-02 |
 | Superagency in the Workplace | irregular | 2025 | 2025-01 | 2026-06-20 | 2026-07 |

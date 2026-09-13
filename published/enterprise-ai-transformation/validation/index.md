@@ -31,4 +31,4 @@ See the dated records under **Audits**.
 | Page | Last updated |
 | --- | --- |
 | [Audits](audits/) | — |
-| [Tracked Sources](tracked-sources.md)<br>Public registry of the recurring research franchises this knowledge base relies on — cadence, the edition currently cited, and when to check for a newer one. | Updated 2026-06-20 |
+| [Tracked Sources](tracked-sources.md)<br>Public registry of the recurring research franchises this knowledge base relies on — cadence, the edition currently cited, and when to check for a newer one. | Updated 2026-09-13 |

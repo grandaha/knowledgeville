@@ -171,7 +171,7 @@ Neither SR 11-7 nor SR 26-2 explicitly addresses agentic systems. Organizations 
 
 ## The most common failure modes
 
-**Governance has authority to review but not to block.** A function that can raise concerns but cannot halt a deployment is an advisory body, not a governance function. Business units will treat it accordingly. Only 18% of organizations have an enterprise-wide council or board with the authority to make decisions on responsible AI governance ([McKinsey, 2024](#ev-mckinsey-state-of-ai-early-2024-rai-council)) — the scarce ingredient is rarely the committee; it is the committee's teeth.
+**Governance has authority to review but not to block.** A function that can raise concerns but cannot halt a deployment is an advisory body, not a governance function. Business units will treat it accordingly. In McKinsey's early-2024 survey, only 18% of organizations had an enterprise-wide council or board with the authority to make decisions on responsible AI governance ([McKinsey, 2024](#ev-mckinsey-state-of-ai-early-2024-rai-council)) — the scarce ingredient is rarely the committee; it is the committee's teeth.
 
 **Policy exists but the people making day-to-day AI decisions don't know about it.** A governance framework that lives on an intranet page but was never operationalized through training, intake processes, or champion networks provides no actual governance.
 

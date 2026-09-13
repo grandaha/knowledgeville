@@ -13,8 +13,21 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.1.1 — 2026-09-13
 
-### Freshness & supersede updates
-* EU AI Act high-risk dates now Dec 2027 / Aug 2028
+## EU AI Act dates corrected for the 2026 postponement
+
+In July 2026 the EU postponed the AI Act's high-risk obligations. Rules for high-risk AI in sensitive areas such as employment and education now apply from 2 December 2027, not 2 August 2026. Rules for AI built into regulated products, such as lifts or toys, apply from 2 August 2028. Eight Enterprise AI Transformation pages and the glossary still gave the old date. They now carry the current ones, checked against the European Commission's AI Act page.
+
+- [Executive Summary: AI Governance & Risk](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/01-executive-summary/)
+- [AI Governance Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework/): its EU AI Act table had also mislabeled the two high-risk categories.
+- [Practitioner Guide: AI Policy and Acceptable Use](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-ai-policy-and-acceptable-use/): no longer calls the postponement provisional.
+- [Practitioner Guide: Standing Up an AI Governance Function](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function/)
+- [Executive Summary: Data Readiness](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/01-executive-summary/)
+- [Data Governance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance/): also no longer lists two duties of general-purpose AI model makers as duties for high-risk systems.
+- [Security & Compliance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/06-security-and-compliance/)
+- [Total Cost of Data Debt](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/04-assessment-and-measurement/total-cost-of-data-debt/)
+- [Glossary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/glossary/)
+
+The dates for the February 2025 bans, the August 2025 general-purpose AI rules, and the August 2026 transparency rules were already right and are unchanged.
 
 ## v12.1.0 — 2026-09-13
 

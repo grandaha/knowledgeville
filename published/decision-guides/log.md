@@ -2,6 +2,13 @@
 
 ## 2026-09-13
 
+* **Creation**: new guide, [Who Should Own the AI Bill](/decision-guides/who-should-own-the-ai-bill.md):
+  who should hold each kind of AI spend, seat licenses and pay-per-use charges, and which budget
+  controls help without choking the adoption you are paying for. It shows that seats hide use, that
+  pay-per-use spend is visible only to whoever builds the tracking, and that no study shows charging
+  business units changes how they use AI.
+* **Update**: [Glossary](/decision-guides/glossary.md) adds chargeback, FinOps, pay-per-use spend,
+  seat license, showback, and token.
 * **Creation**: new guide, [Which AI Model for Which Job](/decision-guides/which-ai-model-for-which-job.md):
   whether a team's recurring AI work should run on one model, a model per type of work, a router
   that picks for each request, or an open-weight model. It explains why a listed price is not the

@@ -3968,3 +3968,43 @@
   status: primary
   expires: 2027-09-13
   supersedes: ev-mckinsey-state-of-ai-2025-leader-ownership-3x
+- id: ev-finops-foundation-state-of-finops-2026-manage-ai
+  claim: "Almost all FinOps practitioners surveyed now manage AI spend (STAKE: a practitioner body with vendor members; respondents are FinOps practitioners, not organizations in general)"
+  value: "98% of 1,192 respondents (31% two years earlier)"
+  wording: "Almost all the 1,192 survey respondents (98%) are managing AI spend, it has become the norm, up from 31% just two years ago."
+  source:
+    org: FinOps Foundation
+    report: "State of FinOps 2026 (Linux Foundation press release: State of FinOps Survey: AI Value and Skills Top Priorities as FinOps Matures Across Technology Value)"
+    edition: 2026
+    url: https://www.linuxfoundation.org/press/state-of-finops-survey-ai-value-and-skills-top-priorities-as-finops-matures-across-technology-value-98-manage-ai-90-saas-64-licensing-48-data-center-1
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+  supersedes: ev-finops-foundation-state-of-finops-2025-tracking-spend
+- id: ev-kpmg-2026-cost-visibility-26
+  claim: "Only 26% of large US organizations report full, real-time visibility into what their AI systems cost to operate, though 66% have monitoring dashboards (STAKE: KPMG sells AI advisory; n=204 leaders at $1B+ revenue companies, Apr 28-May 25, 2026)"
+  value: "26% (66% have dashboards)"
+  wording: "while two-thirds of organizations have monitoring dashboards (66%) and approval processes (61%) in place, only 26% report full, real-time visibility into what their AI systems cost to operate."
+  source:
+    org: KPMG US
+    report: "AI Quarterly Pulse Survey: Q2 2026 (press release, June 24, 2026)"
+    edition: 2026
+    url: https://kpmg.com/us/en/media/news/q2-ai-pulse-2026.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-finops-foundation-state-of-finops-2026-ai-allocation
+  claim: "Allocating AI costs to business units was the third most-cited of 12 challenges FinOps practitioners face with AI spend (multi-select, so a count of mentions, not a ranking; STAKE: a practitioner body whose members include many cost-tool vendors)"
+  value: "39.0%, third of 12 (multi-select, N=649)"
+  wording: "Top challenges cited: ... Allocating AI costs to business units: harder than traditional infrastructure"
+  source:
+    org: FinOps Foundation
+    report: "State of FinOps 2026 Report"
+    edition: 2026
+    url: https://data.finops.org/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13

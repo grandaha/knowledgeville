@@ -568,3 +568,289 @@
   verified: 2026-09-13
   status: primary
   expires: 2027-03-13
+- id: ev-finops-foundation-state-of-finops-2026-manage-ai-ai-bill
+  claim: "Almost all FinOps practitioners surveyed now manage AI spend (STAKE: a practitioner body with vendor members; respondents are FinOps practitioners, not organizations in general)"
+  value: "98% of 1,192 respondents (31% two years earlier)"
+  wording: "Almost all the 1,192 survey respondents (98%) are managing AI spend, it has become the norm, up from 31% just two years ago."
+  source:
+    org: FinOps Foundation
+    report: "State of FinOps 2026 (Linux Foundation press release: State of FinOps Survey: AI Value and Skills Top Priorities as FinOps Matures Across Technology Value)"
+    edition: 2026
+    url: https://www.linuxfoundation.org/press/state-of-finops-survey-ai-value-and-skills-top-priorities-as-finops-matures-across-technology-value-98-manage-ai-90-saas-64-licensing-48-data-center-1
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-finops-foundation-state-of-finops-2026-self-fund-ai-bill
+  claim: "Organizations are often asked to pay for AI out of efficiency savings (STAKE: a practitioner body with vendor members)"
+  value: "n/a (qualitative)"
+  wording: "Many organizations report being asked to self-fund AI investments through efficiency gains, tying FinOps directly to strategic AI enablement."
+  source:
+    org: FinOps Foundation
+    report: "State of FinOps 2026 (Linux Foundation press release: State of FinOps Survey: AI Value and Skills Top Priorities as FinOps Matures Across Technology Value)"
+    edition: 2026
+    url: https://www.linuxfoundation.org/press/state-of-finops-survey-ai-value-and-skills-top-priorities-as-finops-matures-across-technology-value-98-manage-ai-90-saas-64-licensing-48-data-center-1
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-dbt-2025-weekly-daily-usage-ai-bill
+  claim: "In a UK government Microsoft 365 Copilot pilot, about 64% of licence holders used it at least weekly and about 30% on a given working day (one department; about 70% of participants volunteered)"
+  value: "64% weekly; 30% daily (working days)"
+  wording: "This data implies around 64% of licence holders used M365 Copilot at least once a week, while around 30% used it at least once per working day."
+  source:
+    org: UK Department for Business and Trade
+    report: "The Evaluation of the M365 Copilot Pilot in the Department for Business and Trade"
+    edition: 2025
+    url: https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf
+    pdf_hash: sha256:249b2e039d69b5bf3ab74da61fd2bca3179e0d74f613b385c1a28887de8eee95
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-dbt-2025-pilot-scale-selection-ai-bill
+  claim: "The pilot ran 1,000 licences for three months, October to December 2024, about 70% allocated to volunteers"
+  value: "1,000 licences; Oct-Dec 2024; ~70% volunteers"
+  wording: "One thousand licences were available for a 3-month pilot from October to December 2024 and were allocated to UK-based staff. The sample contained a mixture of volunteers (~70%) and randomly selected participants (~30%) to ensure that findings were as representative as possible across a range of characteristics."
+  source:
+    org: UK Department for Business and Trade
+    report: "The Evaluation of the M365 Copilot Pilot in the Department for Business and Trade"
+    edition: 2025
+    url: https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf
+    pdf_hash: sha256:249b2e039d69b5bf3ab74da61fd2bca3179e0d74f613b385c1a28887de8eee95
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-dbt-2025-no-productivity-evidence-ai-bill
+  claim: "The evaluation found no robust evidence that Copilot time savings improved productivity, while noting productivity was not a key aim"
+  value: "n/a (qualitative)"
+  wording: "We did not find robust evidence to suggest that time savings are leading to improved productivity. However, this was not a key aim of the evaluation and therefore limited data was collected to identify if time savings have led to productivity gains."
+  source:
+    org: UK Department for Business and Trade
+    report: "The Evaluation of the M365 Copilot Pilot in the Department for Business and Trade"
+    edition: 2025
+    url: https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf
+    pdf_hash: sha256:249b2e039d69b5bf3ab74da61fd2bca3179e0d74f613b385c1a28887de8eee95
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-register-2025-forrester-minimal-users-ai-bill
+  claim: "A Forrester analyst warned that seat-based AI licensing can leave buyers paying for people who barely use the product"
+  value: "n/a (qualitative)"
+  wording: "Lisa Singer, Forrester principal analyst, told The Register that the downside of the seat-based approach to AI licensing is that if end user uptake is below expectations, \"the buyer might be paying for users that are minimally using the products.\""
+  source:
+    org: The Register
+    report: "Salesforce opts for seat-based AI licensing as customers demand predictability"
+    edition: 2025
+    url: https://www.theregister.com/2025/12/12/ai_agents_salesforce_pricing/
+    pdf_hash: 
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-register-2025-forrester-seats-vs-usage-ai-bill
+  claim: "A Forrester analyst expects assistants to stay seat-priced and workflow agents to move to usage- or outcome-based pricing"
+  value: "n/a (qualitative)"
+  wording: "Copilots will continue as seat-based since their usage is tied to humans and generally use is predictable. Workflow automation agents will migrate to pricing based on usage or outputs or outcomes."
+  source:
+    org: The Register
+    report: "Salesforce opts for seat-based AI licensing as customers demand predictability"
+    edition: 2025
+    url: https://www.theregister.com/2025/12/12/ai_agents_salesforce_pricing/
+    pdf_hash: 
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-register-2025-benioff-flexibility-ai-bill
+  claim: "Salesforce's CEO said customers pushed back on usage-based AI agent pricing, and seat-based licensing became Salesforce's preferred option (STAKE: the vendor describing its own pricing)"
+  value: "n/a (qualitative)"
+  wording: "When we first started with Agentforce, we were talking about [charging] so much per conversation. It was this type of pricing, maybe transaction-based pricing, usage-based pricing, but customers have pushed for more flexibility"
+  source:
+    org: The Register
+    report: "Salesforce opts for seat-based AI licensing as customers demand predictability"
+    edition: 2025
+    url: https://www.theregister.com/2025/12/12/ai_agents_salesforce_pricing/
+    pdf_hash: 
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-a16z-2025-innovation-budget-7pct-ai-bill
+  claim: "Innovation budgets' share of enterprise spending on large language models fell from about a quarter to 7%, with spend moving to central IT and business-unit budgets (STAKE: a16z invests in AI companies; 100 CIOs across 15 industries)"
+  value: "7% (down from a quarter)"
+  wording: "Last year, innovation budgets still made up a quarter of LLM spending; this has now dropped to just 7%. Enterprises are increasingly paying for AI models and apps via centralized IT and business unit budgets, reflecting the growing sentiment that gen AI is no longer experimental but essential to business operations."
+  source:
+    org: Andreessen Horowitz (a16z)
+    report: "How 100 Enterprise CIOs Are Building and Buying Gen AI in 2025"
+    edition: 2025
+    url: https://a16z.com/ai-enterprise-2025/
+    pdf_hash: 
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-finops-2026-invoice-no-business-unit-ai-bill
+  claim: "A direct model-provider invoice splits spend at most by API key or project; the data needed for showback or chargeback exists only if the organization builds its own tracking (STAKE: a practitioner body with vendor members)"
+  value: "n/a (qualitative)"
+  wording: "When an organization receives an invoice from OpenAI or Anthropic, it typically shows aggregate token consumption across the account, broken down at most by API key or project. There is no native concept of business unit, cost center, application, or workload. The data that FinOps teams need to perform showback and chargeback does not exist in the provider’s billing export unless the organization builds the instrumentation layer itself."
+  source:
+    org: FinOps Foundation
+    report: "Tokenomics: Managing AI Value in SaaS Model Token Costs"
+    edition: 2026
+    url: https://www.finops.org/wg/token-economics-saas/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-finops-2026-seat-tokens-abstracted-ai-bill
+  claim: "For seat-licensed AI such as Microsoft 365 Copilot, token costs are hidden inside a per-seat or add-on fee the vendor manages (STAKE: a practitioner body with vendor members)"
+  value: "n/a (qualitative)"
+  wording: "Microsoft 365 Copilot, Salesforce Einstein, ServiceNow Now Assist, and dozens of other enterprise SaaS products now bundle AI capabilities into seat-based licenses or consumption add-ons. In these products, token eomics [sic] are abstracted entirely: the organization pays a per-seat fee or a platform-level add-on, and the vendor manages model selection, infrastructure, and token cost internally."
+  source:
+    org: FinOps Foundation
+    report: "Tokenomics: Managing AI Value in SaaS Model Token Costs"
+    edition: 2026
+    url: https://www.finops.org/wg/token-economics-saas/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-finops-2026-ai-allocation-challenge-ai-bill
+  claim: "Allocating AI costs to business units was the third most-cited of 12 challenges FinOps practitioners face with AI spend (multi-select, so a count of mentions, not a ranking; STAKE: a practitioner body whose members include many cost-tool vendors)"
+  value: "39.0%, third of 12 (multi-select, N=649)"
+  wording: "Top challenges cited: ... Allocating AI costs to business units: harder than traditional infrastructure"
+  source:
+    org: FinOps Foundation
+    report: "State of FinOps 2026 Report"
+    edition: 2026
+    url: https://data.finops.org/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-doit-2026-accountability-split-ai-bill
+  claim: "Finance leaders surveyed for DoiT split accountability for AI spend between technology leadership (55%) and finance (53%), with no clear single owner; the shares sum past 100% (STAKE: DoiT commissioned the survey and sells AI cost attribution; n=500 finance leaders, US and UK, 1,000+ employees, Feb 2026)"
+  value: "Technology 55%, Finance 53%"
+  wording: "The survey found accountability for AI spend split almost evenly between Technology leadership at 55% and Finance at 53%, with no clear single owner at the operational level."
+  source:
+    org: DoiT
+    report: "Why 79% of Enterprises Overspent on AI in 2026"
+    edition: 2026
+    url: https://www.doit.com/blog/ai-spending-survey
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-semianalysis-2026-budgets-norm-ai-bill
+  claim: "Per-employee AI budgets have become common among the enterprises one analyst firm spoke with, with no agreed amount (STAKE: sells research and is bullish on AI compute demand; informal conversations with over 50 enterprises, not a survey)"
+  value: "from $250 to tens of thousands of dollars a month"
+  wording: "Budgets are now the new norm, but there’s no consensus number with budgets starting at $250 and going up to tens of thousands a month."
+  source:
+    org: SemiAnalysis
+    report: "TokenBudgeting: Our Conversations with Enterprises on Token Spend"
+    edition: 2026
+    url: https://newsletter.semianalysis.com/p/tokenbudgeting-our-conversations
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-semianalysis-2026-soft-limits-seniority-ai-bill
+  claim: "The most mature companies treat AI spending limits as soft guidelines; at one cybersecurity company limits rise with seniority, and going over alerts a manager rather than cutting the employee off (STAKE: sells research and is bullish on AI compute demand)"
+  value: "$800/month juniors; $1,600-$4,000 senior (one company)"
+  wording: "The most mature companies are implementing a soft limit, which should be viewed by employees as guidelines rather than a hard rule. At a public cybersecurity company, the Director of Analytics, who oversees all developers and data scientists, said they set a “limit” of $800 a month for juniors and anywhere from $1,600-$4,000 a month for more senior staff. [...] Should employees exceed their allowance, managers are alerted to have a conversation rather than cutting them off until the count resets."
+  source:
+    org: SemiAnalysis
+    report: "TokenBudgeting: Our Conversations with Enterprises on Token Spend"
+    edition: 2026
+    url: https://newsletter.semianalysis.com/p/tokenbudgeting-our-conversations
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-semianalysis-2026-poor-incentives-ai-bill
+  claim: "One analyst firm argues the headline Uber and Meta AI overspend stories came from poor incentives and lax oversight, not from a lack of valuable uses (STAKE: sells research and is bullish on AI compute demand)"
+  value: "qualitative (over 50 conversations)"
+  wording: "Across over 50 conversations with medium to large enterprises, one thing became clear: the headline Uber, Meta, and other Fortune 500 tokenmaxxing stories were a result of poor incentives and lax oversight rather than an absence of high ROI activities/projects to spend those tokens on."
+  source:
+    org: SemiAnalysis
+    report: "TokenBudgeting: Our Conversations with Enterprises on Token Spend"
+    edition: 2026
+    url: https://newsletter.semianalysis.com/p/tokenbudgeting-our-conversations
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-kpmg-2026-cost-visibility-26-ai-bill
+  claim: "Only 26% of large US organizations report full, real-time visibility into what their AI systems cost to operate, though 66% have monitoring dashboards (STAKE: KPMG sells AI advisory; n=204 leaders at $1B+ revenue companies, Apr 28-May 25, 2026)"
+  value: "26% (66% have dashboards)"
+  wording: "while two-thirds of organizations have monitoring dashboards (66%) and approval processes (61%) in place, only 26% report full, real-time visibility into what their AI systems cost to operate."
+  source:
+    org: KPMG US
+    report: "AI Quarterly Pulse Survey: Q2 2026 (press release, June 24, 2026)"
+    edition: 2026
+    url: https://kpmg.com/us/en/media/news/q2-ai-pulse-2026.html
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-fortune-2026-uber-coding-budget-four-months-ai-bill
+  claim: "Uber reportedly used up its 2026 budget for AI coding tools in four months after an internal leaderboard ranked teams by AI tool usage (Fortune credits unnamed reports, likely The Information's paywalled interview with Uber's CTO; the headline overstates the body as the whole AI budget)"
+  value: "2026 AI coding tools budget used up in four months"
+  wording: "The comments follow reports that the firm had already burnt through its entire 2026 AI coding tools budget in just four months after incentivizing employees to adopt the technology through an internal leaderboard ranking teams by total AI tool usage."
+  source:
+    org: Fortune
+    report: "Uber burned through its entire 2026 AI budget in four months. Now its COO is questioning whether it's worth it"
+    edition: 2026
+    url: https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-03-13
+- id: ev-techcrunch-2026-uber-1500-cap-ai-bill
+  claim: "Uber was reported in June 2026 to cap AI coding tool use at $1,500 a month per employee for each tool, with exceptions by permission (TechCrunch credits Bloomberg, which is paywalled)"
+  value: "$1,500 per employee, per tool, per month"
+  wording: "Bloomberg reports that the company has instituted a new rule that places a monthly $1,500 cap per employee and per agentic coding tool, including Anthropic’s Claude Code or Cursor. The usage is trackable via an internal dashboard that each employee has access to, although - in certain cases - the caps can be exceeded with permission, the company says."
+  source:
+    org: TechCrunch
+    report: "Uber caps employee AI spending after blowing through budget in 4 months"
+    edition: 2026
+    url: https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-03-13
+- id: ev-fortune-2026-uber-cto-efficiency-ai-bill
+  claim: "By August 2026 Uber's CTO said its cost per token fell as the number of employees using frontier AI tools quadrupled, through technical savings and letting engineers see their usage and costs, not by restricting access (Fortune quoting the CTO's post on X)"
+  value: "n/a (qualitative)"
+  wording: "Uber quadrupled the number of employees who use frontier AI tools, Naga explained, which brought down the cost per token. It was able to do this by improving prompt caching, as well as adjusting its default model setting, evaluating new models for efficiency, and allowing engineers to see their AI usage and costs per hour. “You might expect costs to rise as adoption accelerates,” Naga continued. “We’ve seen the opposite. Not because we’ve restricted access, but because we’ve treated efficiency as an engineering problem rather than a budget problem.”"
+  source:
+    org: Fortune
+    report: "After blowing through AI budget in a matter of months, Uber CTO says tokenmaxxing era is over"
+    edition: 2026
+    url: https://fortune.com/2026/08/07/uber-ai-spending-tokenmaxxing-is-over-cto/
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-03-13
+- id: ev-thenextweb-2026-atlassian-ai-wallets-ai-bill
+  claim: "Atlassian gives research-and-development staff monthly AI wallets of $500 to $2,000, sized by role, with the option to ask for more (The Next Web names no source; The Guardian reported it first)"
+  value: "$500-$2,000 per month"
+  wording: "Atlassian’s wallets run from $500 to $2,000 a month for research-and-development staff, with the size set by role and the option to ask for more, a structure meant to keep spending visible rather than to starve it."
+  source:
+    org: The Next Web
+    report: "Atlassian puts its engineers on an AI budget as the cost of ‘tokenmaxxing’ bites"
+    edition: 2026
+    url: https://thenextweb.com/news/atlassian-ai-wallets-tokenmaxxing
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-03-13
+- id: ev-register-2025-gartner-unpredictability-ai-bill
+  claim: "A Gartner analyst said customers remain cautious about investing in generative AI because its pricing models are unpredictable"
+  value: "n/a (qualitative)"
+  wording: "\"Customers still adopt a cautious approach to investing in GenAI because of the unpredictability of pricing models,\" he told The Register."
+  source:
+    org: The Register
+    report: "Salesforce opts for seat-based AI licensing as customers demand predictability"
+    edition: 2025
+    url: https://www.theregister.com/2025/12/12/ai_agents_salesforce_pricing/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13

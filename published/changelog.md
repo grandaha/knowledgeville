@@ -11,6 +11,23 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.3.0 — 2026-09-13
+
+## New decision guide: Who Should Own the AI Bill
+
+Organizations pay for AI in two ways, and the two bills behave differently. Seat licenses, such as Microsoft 365 Copilot, cost the same whether they are used daily or never. Pay-per-use spend shows use, but only to whoever builds the tracking. The guide helps a finance lead or budget holder decide who holds each bill and which control to use: showback, chargeback, a finance-held pool, or per-person allowances. It also says plainly what no one has shown. No study finds that charging business units changes how they use AI, and the guide cites no vendor overrun rates.
+
+- [Who Should Own the AI Bill](https://knowledge.onesteplabs.com/decision-guides/who-should-own-the-ai-bill/)
+- [Decision Guides glossary](https://knowledge.onesteplabs.com/decision-guides/glossary/): adds chargeback, FinOps, pay-per-use spend, seat license, showback, and token.
+
+## AI spend figures updated
+
+Three platform pages now use 2026 evidence. 98% of FinOps practitioners now manage AI spend, but only 26% of large US companies report full, real-time visibility into what their AI costs to run. The first two pages also link to the new guide.
+
+- [Technology Architecture Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework/)
+- [Practitioner Guide: Designing an AI Platform Function](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function/)
+- [Assessment: Platform Maturity Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/05-assessment-platform-maturity-scoring/)
+
 ## v12.2.1 — 2026-09-13
 
 ## Statistics refreshed to the latest editions of three recurring studies

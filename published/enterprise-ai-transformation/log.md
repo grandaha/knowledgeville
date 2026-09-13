@@ -1,6 +1,12 @@
 # Update Log
 
 ## 2026-09-13
+* **Update**: AI spend figures on the [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md),
+  [Designing an AI Platform Function](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function.md), and
+  [Assessment: Platform Maturity Scoring](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/05-assessment-platform-maturity-scoring.md) now use 2026
+  evidence. 98% of FinOps practitioners now manage AI spend, but only 26% of large US companies report
+  full, real-time visibility into what their AI costs to run. The first two pages link to the new
+  decision guide on who should own the AI bill.
 * **Update**: statistics refreshed to the latest editions of three recurring studies, across the
   executive summary and the pages that cite them. BCG's 2025 study replaces the 2024 figure that 26% of companies
   had moved past proofs of concept: now about 5% achieve value at scale and 60% little or none. BCG's

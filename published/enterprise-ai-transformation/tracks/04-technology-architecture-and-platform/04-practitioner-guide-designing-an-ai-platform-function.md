@@ -28,10 +28,10 @@ sources:
     resource: "https://www.ibm.com/reports/data-breach"
     title: Cost of a Data Breach Report
     author: IBM
-  - id: ev-finops-foundation-state-of-finops-2025-tracking-spend
-    resource: "https://data.finops.org/2025-report/"
-    title: The State of FinOps
-    author: FinOps Foundation
+  - id: ev-kpmg-2026-cost-visibility-26
+    resource: "https://kpmg.com/us/en/media/news/q2-ai-pulse-2026.html"
+    title: "AI Quarterly Pulse Survey: Q2 2026 (press release, June 24, 2026)"
+    author: KPMG US
   - id: ev-menlo-ventures-state-genai-2025-llm-spend-share
     resource: "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/"
     title: State of Generative AI in the Enterprise
@@ -63,7 +63,7 @@ Conduct the audit through three channels: an engineering survey (low barrier; as
 
 ### Mapping API spend by team
 
-Once you have a list of AI systems and teams, map the spend. This is often the first time anyone has a consolidated view of what AI is actually costing the organization — and that gap is the norm, not the exception: as of 2025, only 63% of organizations were tracking or managing AI spend at all, up from 31% a year earlier ([FinOps Foundation, 2025](#ev-finops-foundation-state-of-finops-2025-tracking-spend)). Common findings: one or two teams account for a disproportionate share of spend with no awareness of the cost, duplicate API subscriptions to the same providers under different payment methods, and significant spend on high-cost models for use cases that would be adequately served by lower-cost alternatives.
+Once you have a list of AI systems and teams, map the spend. This is often the first time anyone has a consolidated view of what AI is actually costing the organization — and full visibility is rare: only 26% of large US companies report full, real-time visibility into what their AI systems cost to operate ([KPMG, 2026](#ev-kpmg-2026-cost-visibility-26)). Common findings: one or two teams account for a disproportionate share of spend with no awareness of the cost, duplicate API subscriptions to the same providers under different payment methods, and significant spend on high-cost models for use cases that would be adequately served by lower-cost alternatives. Who should own that spend once it is visible is a separate decision, covered in [Who Should Own the AI Bill](/decision-guides/who-should-own-the-ai-bill.md).
 
 Collect invoices, expense reports, and any corporate card charges from AI vendors. Build a simple spreadsheet: team, provider, monthly spend, use case, model used. This artifact drives the cost governance design in Phase 1.
 
@@ -299,5 +299,5 @@ For framework context on the technology architecture decisions underlying the pl
 - **S&P Global Market Intelligence — *Generative AI shows rapid growth but yields mixed results (Voice of the Enterprise: AI & Machine Learning, Use Cases)*, 2025.** The proportion of companies that abandon most of their AI initiatives has increased from 17% to 42%, with the average organization scrapping 46% of its proof-of-concept projects prior to production. [View source](https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/generative-ai-shows-rapid-growth-but-yields-mixed-results){#ev-sp-global-vote-2025-abandoned-ai-initiatives} · verified 2026-06-21 · ⚠ secondary mirror
 - **Microsoft & LinkedIn — *2024 Work Trend Index Annual Report*, 2024.** 78% of AI users are bringing their own AI tools to work (BYOAI). [View source](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part){#ev-microsoft-work-trend-2024-byoai} · verified 2026-06-20 · primary
 - **IBM — *Cost of a Data Breach Report*, 2025.** having a high level of shadow AI ... added an extra USD 670,000 to the global average breach cost ... Shadow AI ... was a factor in 20% of breaches (2025 global average breach cost fell 9% to USD 4.44 million). [View source](https://www.ibm.com/reports/data-breach){#ev-ibm-cost-of-breach-2025-shadow-ai} · verified 2026-06-21 · primary
-- **FinOps Foundation — *The State of FinOps*, 2025.** AI spending is now managed by the majority of respondents (63% up from 31% last year). [View source](https://data.finops.org/2025-report/){#ev-finops-foundation-state-of-finops-2025-tracking-spend} · verified 2026-06-20 · primary
+- **KPMG US — *AI Quarterly Pulse Survey: Q2 2026 (press release, June 24, 2026)*, 2026.** while two-thirds of organizations have monitoring dashboards (66%) and approval processes (61%) in place, only 26% report full, real-time visibility into what their AI systems cost to operate. [View source](https://kpmg.com/us/en/media/news/q2-ai-pulse-2026.html){#ev-kpmg-2026-cost-visibility-26} · verified 2026-09-13 · primary
 - **Menlo Ventures — *State of Generative AI in the Enterprise*, 2025.** We estimate Anthropic now earns 40% of enterprise LLM spend ... OpenAI lost nearly half of its enterprise share, falling to 27% from 50% in 2023. [View source](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/){#ev-menlo-ventures-state-genai-2025-llm-spend-share} · verified 2026-06-21 · primary

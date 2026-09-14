@@ -11,6 +11,18 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.6.2 — 2026-09-14
+
+## Updated: how many generative-AI projects were abandoned
+
+Several pages still presented Gartner's 2024 forecast, that at least 30% of generative-AI projects would be abandoned after proof of concept by the end of 2025, as a live prediction. That deadline has passed. A January 2026 Gartner article reports that at least 50% were abandoned by the end of 2025, well above the forecast. Gartner gives no sample or method for that figure, and the pages that discuss the evidence say so.
+
+- [The 90-Day Launch](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/the-90-day-launch/)
+- [Integrated Assessment](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/integrated-assessment/)
+- [AI Strategy Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework/)
+- [Workflow Optimization Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/02-workflow-optimization-framework/) and the [Measurement & Value Realization Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework/) keep the 2024 forecast as history and add the 2026 figure.
+- [Practitioner Guide: Standing Up AI Measurement](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/04-practitioner-guide-standing-up-ai-measurement/) and [Assessment: Measurement Maturity Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/05-assessment-measurement-maturity-scoring/)
+
 ## v12.6.1 — 2026-09-14
 
 ## Corrections: the evidence on redesigning work for AI

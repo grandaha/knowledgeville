@@ -11,7 +11,7 @@ generated:
 stale_after: "2026-09-30T00:00:00Z"
 verified:
   - by: "human:daveraffaele"
-    at: "2026-09-13T00:00:00Z"
+    at: "2026-09-14T00:00:00Z"
 sources:
   - id: ev-mckinsey-state-of-ai-2026-adoption
     resource: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
@@ -40,6 +40,10 @@ sources:
   - id: ev-gartner-genai-poc-2024-abandonment
     resource: "https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025"
     title: "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025"
+    author: Gartner
+  - id: ev-gartner-genai-failure-2026-half-abandoned
+    resource: "https://www.gartner.com/en/articles/genai-project-failure"
+    title: "Why Half of GenAI Projects Fail: Avoid These 5 Common Mistakes (Arun Chandrasekaran, January 26, 2026)"
     author: Gartner
   - id: ev-microsoft-work-trend-2024-leaders-quantify-productivity
     resource: "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part"
@@ -92,7 +96,7 @@ sources:
 
 Enterprise AI has won the adoption argument and lost the proof argument. Usage is now the norm: 89% of organizations report regular AI use in at least one business function, up from 78% in 2024 ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-adoption); [McKinsey, 2024](#ev-mckinsey-state-of-ai-2024-adoption)), and 75% of knowledge workers already use AI at work ([Microsoft & LinkedIn, 2024](#ev-microsoft-work-trend-2024-use-at-work)). The tools are deployed, the pilots are funded, and the dashboards are lit up.
 
-What is missing is evidence that any of it moved the financials. Only 37% of organizations attribute *any* level of EBIT impact to AI ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-ebit-any)). That leaves roughly six in ten unable to point to a single point of profit. The picture from independent research is harsher still: 95% of enterprise generative-AI pilots delivered no measurable P&L impact ([MIT Project NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)). By some estimates more than 80% of AI projects fail, about twice the failure rate of non-AI IT projects, and the root causes are organizational rather than technical ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate)). Gartner projects that at least 30% of generative-AI projects will be abandoned after proof of concept by the end of 2025, citing poor data quality, inadequate risk controls, escalating costs, or unclear business value ([Gartner, 2024](#ev-gartner-genai-poc-2024-abandonment)).
+What is missing is evidence that any of it moved the financials. Only 37% of organizations attribute *any* level of EBIT impact to AI ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-ebit-any)). That leaves roughly six in ten unable to point to a single point of profit. The picture from independent research is harsher still: 95% of enterprise generative-AI pilots delivered no measurable P&L impact ([MIT Project NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)). By some estimates more than 80% of AI projects fail, about twice the failure rate of non-AI IT projects, and the root causes are organizational rather than technical ([RAND, 2024](#ev-rand-ai-projects-fail-2024-failure-rate)). In 2024, Gartner forecast that at least 30% of generative-AI projects would be abandoned after proof of concept by the end of 2025 ([Gartner, 2024](#ev-gartner-genai-poc-2024-abandonment)). A January 2026 Gartner article reported at least 50%, without publishing its method ([Gartner, 2026](#ev-gartner-genai-failure-2026-half-abandoned)).
 
 > Programs are everywhere. Proof is nowhere.
 
@@ -166,6 +170,7 @@ To put this framework into practice, see the companion pages: [attribution metho
 - **MIT Project NANDA — *The GenAI Divide: State of AI in Business 2025*, 2025.** Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact. [View source](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf){#ev-mit-nanda-genai-divide-2025-no-pl-impact} · verified 2026-06-20 · ⚠ secondary mirror
 - **RAND — *The Root Causes of Failure for Artificial Intelligence Projects and How They Can Succeed*, 2024.** By some estimates more than 80 percent of AI projects fail, twice the rate of failure for information technology projects that do not involve AI. [View source](https://www.rand.org/pubs/research_reports/RRA2680-1.html){#ev-rand-ai-projects-fail-2024-failure-rate} · verified 2026-06-20 · primary
 - **Gartner — *Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025*, 2024.** At least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, due to poor data quality, inadequate risk controls, escalating costs or unclear business value. [View source](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025){#ev-gartner-genai-poc-2024-abandonment} · verified 2026-06-20 · primary
+- **Gartner — *Why Half of GenAI Projects Fail: Avoid These 5 Common Mistakes (Arun Chandrasekaran, January 26, 2026)*, 2026.** Gartner finds that by the end of last year, at least 50% of generative AI projects were abandoned after proof of concept due to poor data quality, inadequate risk controls, escalating costs or unclear business value. [View source](https://www.gartner.com/en/articles/genai-project-failure){#ev-gartner-genai-failure-2026-half-abandoned} · verified 2026-09-14 · ⚠ secondary mirror
 - **Microsoft & LinkedIn — *2024 Work Trend Index Annual Report*, 2024.** 59% of leaders worry about quantifying the productivity gains of AI. [View source](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part){#ev-microsoft-work-trend-2024-leaders-quantify-productivity} · verified 2026-06-20 · primary
 - **MIT Project NANDA — *The GenAI Divide: State of AI in Business 2025*, 2025.** 60% of organizations evaluated enterprise-grade systems, but only 20% reached pilot stage and just 5% reached production. [View source](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf){#ev-mit-nanda-genai-divide-2025-pilot-funnel} · verified 2026-06-20 · ⚠ secondary mirror
 - **Microsoft & LinkedIn — *2024 Work Trend Index Annual Report*, 2024.** 46% of users started using AI at work less than six months ago. [View source](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part){#ev-microsoft-work-trend-2024-started-six-months} · verified 2026-06-20 · primary

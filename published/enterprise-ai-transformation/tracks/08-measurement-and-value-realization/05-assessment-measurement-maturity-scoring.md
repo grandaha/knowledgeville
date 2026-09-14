@@ -11,15 +11,15 @@ generated:
 stale_after: "2026-12-31T00:00:00Z"
 verified:
   - by: "human:daveraffaele"
-    at: "2026-09-13T00:00:00Z"
+    at: "2026-09-14T00:00:00Z"
 sources:
   - id: ev-mit-nanda-genai-divide-2025-no-pl-impact
     resource: "https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf"
     title: "The GenAI Divide: State of AI in Business 2025"
     author: MIT Project NANDA
-  - id: ev-gartner-genai-poc-2024-abandonment
-    resource: "https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025"
-    title: "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025"
+  - id: ev-gartner-genai-failure-2026-half-abandoned
+    resource: "https://www.gartner.com/en/articles/genai-project-failure"
+    title: "Why Half of GenAI Projects Fail: Avoid These 5 Common Mistakes (Arun Chandrasekaran, January 26, 2026)"
     author: Gartner
   - id: ev-mckinsey-rewiring-2025-kpi-tracking
     resource: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value"
@@ -72,7 +72,7 @@ sources:
 
 This assessment tells you where your organization actually stands on AI *measurement* — not how many dashboards you have, but whether you can tie AI to value, prove it to finance, and act on what you learn. It is the scoring companion to the [measurement framework](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md) (the argument), the [attribution methodology](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/03-attribution-methodology.md) (which isolates AI's contribution from confounders), and the [practitioner guide to standing up AI measurement](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/04-practitioner-guide-standing-up-ai-measurement.md) (which builds the capability). Score before you launch a measurement program, to find the binding constraint; score again on a cadence, to see whether it is moving.
 
-A dedicated measurement score is needed because measurement is the gap between piloting and value — and the place most organizations are weakest. MIT's NANDA initiative found **95% of enterprise gen-AI pilots delivered no measurable P&L impact** ([MIT Project NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)), and **at least 30% of gen-AI projects are projected to be abandoned after proof of concept by the end of 2025**, unclear business value among the reasons ([Gartner, 2024](#ev-gartner-genai-poc-2024-abandonment)). The problem is rarely the model; it is that no one defined success, instrumented for it, or attributed the result. A score that counts dashboards would miss all of this; a score that counts whether AI's value reaches the CFO tells the truth.
+A dedicated measurement score is needed because measurement is the gap between piloting and value — and the place most organizations are weakest. MIT's NANDA initiative found **95% of enterprise gen-AI pilots delivered no measurable P&L impact** ([MIT Project NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)), and Gartner reports that **at least 50% of gen-AI projects were abandoned after proof of concept by the end of 2025**, unclear business value among the reasons ([Gartner, 2026](#ev-gartner-genai-failure-2026-half-abandoned)). The problem is rarely the model; it is that no one defined success, instrumented for it, or attributed the result. A score that counts dashboards would miss all of this; a score that counts whether AI's value reaches the CFO tells the truth.
 
 This page gives you five scoring dimensions, a 1–5 maturity ladder for each, calibration benchmarks, and a method for interpreting the result.
 
@@ -197,7 +197,7 @@ Measurement gates value realization itself: a low score here means you cannot te
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
 
 - **MIT Project NANDA — *The GenAI Divide: State of AI in Business 2025*, 2025.** Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact. [View source](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf){#ev-mit-nanda-genai-divide-2025-no-pl-impact} · verified 2026-06-20 · ⚠ secondary mirror
-- **Gartner — *Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025*, 2024.** At least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, due to poor data quality, inadequate risk controls, escalating costs or unclear business value. [View source](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025){#ev-gartner-genai-poc-2024-abandonment} · verified 2026-06-20 · primary
+- **Gartner — *Why Half of GenAI Projects Fail: Avoid These 5 Common Mistakes (Arun Chandrasekaran, January 26, 2026)*, 2026.** Gartner finds that by the end of last year, at least 50% of generative AI projects were abandoned after proof of concept due to poor data quality, inadequate risk controls, escalating costs or unclear business value. [View source](https://www.gartner.com/en/articles/genai-project-failure){#ev-gartner-genai-failure-2026-half-abandoned} · verified 2026-09-14 · ⚠ secondary mirror
 - **McKinsey — *The State of AI: How Organizations Are Rewiring to Capture Value*, 2025.** Less than one in five organizations are tracking KPIs for gen AI solutions — and tracking well-defined KPIs is the practice with the most impact on the bottom line. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value){#ev-mckinsey-rewiring-2025-kpi-tracking} · verified 2026-06-20 · primary
 - **Deloitte — *The State of Generative AI in the Enterprise: Now decides Next (Q3)*, 2024.** Organizations are using specific KPIs for evaluating GenAI performance (48%). [View source](https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html){#ev-deloitte-state-genai-2024-specific-kpis} · verified 2026-06-20 · primary
 - **Deloitte — *The State of Generative AI in the Enterprise: Now decides Next (Q3)*, 2024.** 41% have struggled to define and measure the exact impacts of their GenAI efforts. [View source](https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html){#ev-deloitte-state-genai-2024-measure-impacts-struggle} · verified 2026-06-20 · primary

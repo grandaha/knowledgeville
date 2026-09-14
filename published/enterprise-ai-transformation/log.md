@@ -1,5 +1,17 @@
 # Update Log
 
+## 2026-09-14
+* **Update**: Gartner's 2024 forecast that at least 30% of generative-AI projects would be abandoned after
+  proof of concept by the end of 2025 is no longer presented as a live prediction. A January 2026 Gartner
+  article reports at least 50% abandoned by the end of 2025, with no published method. Updated on
+  [The 90-Day Launch](/enterprise-ai-transformation/running-the-program/the-90-day-launch.md), the
+  [integrated assessment](/enterprise-ai-transformation/running-the-program/integrated-assessment.md), the
+  [AI strategy framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md), the
+  [workflow optimization framework](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/02-workflow-optimization-framework.md), the
+  [measurement framework](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md), the
+  [guide to standing up AI measurement](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/04-practitioner-guide-standing-up-ai-measurement.md), and the
+  [measurement maturity assessment](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/05-assessment-measurement-maturity-scoring.md).
+
 ## 2026-09-13
 * **Update**: the workflow-redesign evidence now matches its source. McKinsey's 2025 finding is described
   as a correlation with self-reported EBIT impact, not a cause, on

@@ -3,11 +3,11 @@ type: Reference
 title: Tracked Sources
 description: Public registry of the recurring research franchises this knowledge base relies on — cadence, the edition currently cited, and when to check for a newer one.
 tags: [validation, citations, sources, freshness]
-timestamp: "2026-09-13"
+timestamp: "2026-09-14"
 appendix: true
 generated:
   by: process:build_tracked_sources
-  at: "2026-09-13T00:00:00Z"
+  at: "2026-09-14T00:00:00Z"
 ---
 
 <!-- generated from validation/sources.yaml — do not edit; run scripts/build_index.py -->
@@ -36,7 +36,7 @@ Stale-after rule of thumb from the edition date: quarterly +9 months, annual +18
 
 | Franchise | Cadence | Latest edition | Edition | Verified | Stale after |
 | --- | --- | --- | --- | --- | --- |
-| Generative AI predictions | annual | 2024 | 2024-07 | 2026-06-20 | 2026-01 |
+| Generative AI predictions | annual | 2026 | 2026-01 | 2026-09-14 | 2027-07 |
 
 ### MIT Project NANDA
 

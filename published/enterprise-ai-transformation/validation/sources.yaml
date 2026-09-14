@@ -64,13 +64,13 @@
   org: Gartner
   franchise: "Generative AI predictions"
   cadence: annual
-  latest_edition: "2024"
-  edition_date: "2024-07"
-  verified: 2026-06-20
-  stale_after: "2026-01"
+  latest_edition: "2026"
+  edition_date: "2026-01"
+  verified: 2026-09-14
+  stale_after: "2027-07"
   homepage: https://www.gartner.com/en/topics/generative-ai
-  search_hint: "Gartner generative AI prediction abandoned proof of concept 2026"
-  notes: "We cite the 2024 '30% abandoned after PoC by end of 2025' press release. Past horizon — check for a newer prediction. Domain blocks fetchers."
+  search_hint: "Gartner generative AI projects abandoned proof of concept 2027"
+  notes: "The 2024 press release forecast at least 30% abandoned after PoC by end of 2025. Gartner's January 2026 article 'Why Half of GenAI Projects Fail' reports at least 50% abandoned by end of 2025, with no published method; it does not cite the 2024 forecast. The latest edition here is that report of results, not a new prediction. The newest actual prediction on record is the June 2025 forecast that over 40% of agentic AI projects will be canceled by end of 2027. Domain blocks fetchers; read via archive.org."
 
 - id: src-cisco-ai-readiness-index
   org: Cisco

@@ -100,16 +100,16 @@
   expires: 2026-12-31
 
 - id: ev-mckinsey-rewiring-2025-ceo-oversight
-  claim: "Organizations where the CEO directly oversees AI governance"
+  claim: "Organizations where the CEO oversees AI governance; CEO oversight is one element most correlated with self-reported bottom-line impact overall, and the element with the most impact at larger companies (correlation analysis, per the report's footnote)"
   value: "28%"
-  wording: "Only 28% of companies report that their CEO directly oversees AI governance (and just 17% report that their board does)"
+  wording: "Our survey analyses show that a CEO's oversight of AI governance ... is one element most correlated with higher self-reported bottom-line impact from an organization's gen AI use. ... That's particularly true at larger companies, where CEO oversight is the element with the most impact on EBIT attributable to gen AI. Twenty-eight percent of respondents whose organizations use AI report that their CEO is responsible for overseeing AI governance ... and 17 percent say AI governance is overseen by their board of directors."
   source:
     org: McKinsey
     report: "The State of AI: How Organizations Are Rewiring to Capture Value"
     edition: 2025
     url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
     pdf_hash:
-  verified: 2026-06-20
+  verified: 2026-09-14
   status: primary
   expires: 2026-12-31
 
@@ -156,18 +156,18 @@
   expires: 2027-09-13
 
 - id: ev-bcg-value-gap-2025-leader-premium
-  claim: "Performance premium of AI 'future-built' leaders over laggards"
-  value: "1.7x revenue growth, 1.6x EBIT margin, ~40% greater cost savings"
-  wording: "Future-built companies already generate 1.7 times more revenue growth and 1.6 times higher EBIT margins than laggards, with about 40% more cost savings"
+  claim: "Performance premium of BCG's 'future-built' companies: revenue growth and EBIT margins versus the 60% BCG terms stagnating or emerging (financial metrics from CapitalIQ and Orbis), plus EXPECTED cost reductions versus laggards. STAKE: BCG sells AI transformation work, and its methodology notes that company performance has multiple drivers beyond AI"
+  value: "1.7x revenue growth, 1.6x EBIT margins; 1.4x greater expected cost reductions"
+  wording: "Future-built companies already generate 1.7 times more revenue growth and 1.6 times higher EBIT margins than the 60% of companies in the categories we term stagnating or emerging. ... As a result of this investment, they expect twice the revenue increase and 1.4 times greater cost reductions than laggards in the areas where they apply AI."
   source:
     org: BCG
     report: "The Widening AI Value Gap"
     edition: 2025
     url: https://media-publications.bcg.com/The-Widening-AI-Value-Gap-Sept-2025.pdf
     pdf_hash:
-  verified: 2026-06-20
+  verified: 2026-09-14
   status: primary
-  expires: 2026-09-30
+  expires: 2027-09-14
 
 - id: ev-bcg-value-2024-beyond-poc
   claim: "Companies with capabilities to move beyond proofs of concept to tangible value"
@@ -1501,19 +1501,33 @@
   status: primary
   expires: 2026-12-31
 
-- id: ev-gartner-genai-trough-disillusionment-2024
-  claim: "Generative AI entered the trough of disillusionment as excitement outran realized value"
-  value: "trough of disillusionment (2024)"
-  wording: "After spending 2022 and 2023 at the peak of inflated expectations, generative AI entered the trough of disillusionment in 2024 as organizations confronted performance issues and low ROI"
+- id: ev-gartner-emerging-tech-hype-cycle-2024-genai-past-peak
+  claim: "In August 2024 Gartner said generative AI was past the peak of inflated expectations; it did not yet place it in the trough. STAKE: Gartner sells research and advisory services"
+  value: "past the peak (August 2024)"
+  wording: "Generative AI (GenAI) is over the Peak of Inflated Expectations as business focus continues to shift from excitement around foundation models to use cases that drive ROI"
   source:
     org: Gartner
-    report: "Hype Cycle for Generative AI, 2024"
+    report: "Hype Cycle for Emerging Technologies, 2024 (press release, 21 August 2024)"
     edition: 2024
-    url: https://www.gartner.com/en/documents/5636791
+    url: https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-experience-ai-and-security
     pdf_hash:
-  verified: 2026-06-20
-  status: secondary-mirror
-  expires: 2026-12-31
+  verified: 2026-09-14
+  status: primary
+  expires: 2027-09-14
+
+- id: ev-gartner-ai-hype-cycle-2025-genai-trough
+  claim: "Gartner's 2025 Hype Cycle for Artificial Intelligence placed generative AI in the trough of disillusionment, noting AI leaders' difficulty proving its value. STAKE: Gartner sells research and advisory services"
+  value: "trough of disillusionment (2025)"
+  wording: "This year, GenAI enters the Trough of Disillusionment as organizations gain understanding of its potential and limits. AI leaders continue to face challenges when it comes to proving GenAI's value to the business."
+  source:
+    org: Gartner
+    report: "The 2025 Hype Cycle for Artificial Intelligence Goes Beyond GenAI"
+    edition: 2025
+    url: https://web.archive.org/web/20251231151227/https://www.gartner.com/en/articles/hype-cycle-for-artificial-intelligence
+    pdf_hash:
+  verified: 2026-09-14
+  status: primary
+  expires: 2027-09-14
 
 - id: ev-mitsmr-wavestone-2024-cdo-presence
   claim: "Large organizations with an established CDO/CDAO function, vs 2012"

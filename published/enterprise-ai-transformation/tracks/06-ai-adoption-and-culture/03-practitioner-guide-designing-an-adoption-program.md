@@ -113,7 +113,7 @@ The [AI Adoption Framework](/enterprise-ai-transformation/tracks/06-ai-adoption-
 
 It is deliberately structured as a sequence — sponsorship before champions, champions before communication, communication and enablement running together, resistance managed throughout, and measurement wired in from day one. The order matters because the most common cause of failed adoption is starting in the middle: buying licenses and announcing training without securing the sponsorship and safety that make either land. The companion [Adoption Maturity Scoring](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/04-assessment-adoption-maturity-scoring.md) assessment is the measurement instrument this guide points to; here we keep metrics light and focus on building the program.
 
-A grounding fact to keep in front of you: BCG's accounting of where AI effort should go is **roughly 10% on algorithms, 20% on technology and data, and 70% on people and process** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)). An adoption program is how you spend the 70% deliberately instead of by accident.
+Keep BCG's 10-20-70 rule of thumb in front of you. It puts **70% of strategic focus on people and processes, 20% on technology, and 10% on algorithms** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)). An adoption program is how you spend the 70% deliberately instead of by accident.
 
 ---
 

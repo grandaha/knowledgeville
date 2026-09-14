@@ -141,7 +141,7 @@ So "adoption" in this framework means something specific:
 - **Habitual use** — the tool is part of how recurring work gets done, not a novelty pulled out occasionally.
 - **Workflow integration** — the surrounding process has been redesigned so the tool's output flows into the next step rather than being bolted onto an unchanged sequence.
 
-Value lives at the last two levels. Most measurement stops at the first. The job of an adoption effort is to move people up this ladder — and that is a human and cultural problem long before it is a technical one. BCG frames the split as **roughly 10% of the effort on algorithms, 20% on technology and data, and 70% on people and process** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)). The 70% is what this track is about.
+Value lives at the last two levels. Most measurement stops at the first. The job of an adoption effort is to move people up this ladder — and that is a human and cultural problem long before it is a technical one. BCG's rule of thumb puts **70% of strategic focus on people and processes, 20% on technology, and 10% on algorithms** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)). The 70% is what this track is about.
 
 ---
 
@@ -159,7 +159,7 @@ Trust in AI fails in both directions, and an adoption strategy has to manage bot
 
 **Over-trust (automation bias).** The opposite and equally damaging error: treating the automated output as authoritative and dropping the vigilance a human colleague would receive. Decades of human-factors research document automation bias and the complacency that accompanies it — users commit errors of omission (missing what the system missed) and commission (following a wrong recommendation against contrary evidence) ([Parasuraman & Manzey, 2010](#ev-parasuraman-manzey-2010-automation-bias)). The current data shows this is not hypothetical: **66% of employees report having relied on AI output at work without critically evaluating it, and 56% say they have made mistakes in their work because of AI** ([KPMG, 2025](#ev-kpmg-trust-ai-2025-relied-uncritically); [KPMG, 2025](#ev-kpmg-trust-ai-2025-made-mistakes)).
 
-> **66% have relied on AI output without critically evaluating it; 56% have made work mistakes because of AI** — over-trust is as much an adoption risk as under-trust ([KPMG, 2025](#ev-kpmg-trust-ai-2025-relied-uncritically); [KPMG, 2025](#ev-kpmg-trust-ai-2025-made-mistakes)).
+> **66% have relied on AI output without critically evaluating it; 56% have made work mistakes because of AI**. Over-trust is an adoption risk too, not only under-trust ([KPMG, 2025](#ev-kpmg-trust-ai-2025-relied-uncritically); [KPMG, 2025](#ev-kpmg-trust-ai-2025-made-mistakes)).
 
 The baseline disposition is wary: only **46% of people globally say they are willing to trust AI systems** ([KPMG, 2025](#ev-kpmg-trust-ai-2025-willing-to-trust)). The goal of an adoption program is not to maximize trust — it is to *calibrate* it: raise it where the tool is reliable and the human is the bottleneck, and hold it down where the output needs verification. A culture that punishes every AI error pushes people into under-trust and abandonment; a culture that celebrates AI uncritically pushes them into over-trust and unmanaged risk. Both destroy value.
 

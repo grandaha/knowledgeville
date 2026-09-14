@@ -92,7 +92,7 @@ Treat "prompt engineering" as a *general literacy*, not a specialist track. The 
 
 A smaller program develops the **Builder** layer — people who compose agents, automations, and retrieval workflows on top of the [platform](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md). Builders are the multiplier between the specialist core and the fluent majority; under-investing here leaves the platform unused. Select for aptitude and interest surfaced in Phases 1–2, give them deeper hands-on training and sandboxed build time, and connect them to the architect/specialist core.
 
-For the **Architect/specialist** layer, capability is usually closed by **hiring and partnering** rather than internal development, because the depth required is too slow to grow from scratch — and because the market premium for that talent is steep (**a 56% wage premium for AI skills**) ([PwC, 2025](#ev-pwc-ai-jobs-barometer-2025-wage-premium)).
+For the **Architect/specialist** layer, capability is usually closed by **hiring and partnering** rather than internal development, because the depth required is too slow to grow from scratch. That talent is expensive: PwC found jobs requiring AI skills carry **an average 56% wage premium** ([PwC, 2025](#ev-pwc-ai-jobs-barometer-2025-wage-premium)).
 
 ---
 

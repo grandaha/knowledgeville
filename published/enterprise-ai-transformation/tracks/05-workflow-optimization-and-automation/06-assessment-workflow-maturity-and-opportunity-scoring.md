@@ -57,7 +57,7 @@ Run it when: a function has accumulated more automation ideas than it can fund; 
 
 > Across roughly 300 public deployments, an MIT study found that about **95% of enterprise generative-AI pilots delivered little to no measurable impact on profit and loss** — and the root cause was not model quality but the failure to integrate AI into actual workflows ([MIT NANDA, 2025](#ev-mit-nanda-genai-divide-2025-no-pl-impact)).
 >
-> **Nearly three-quarters** of AI high performers have fundamentally redesigned workflows because of their AI use, against one-quarter of other organizations ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-workflow-redesign-highperf)).
+> **Nearly three-quarters** of AI high performers report fundamentally redesigning workflows because of their AI use, against one-quarter of other respondents ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-workflow-redesign-highperf)).
 
 The lesson behind those two numbers is the entire reason this assessment exists: value comes from picking the *right workflows* and rebuilding them, not from deploying AI on top of whatever process happens to be loudest in the room. The widely cited failure rates of automation programs are, more often than not, prioritization failures — chasing the flashy use case, ignoring data readiness, and underestimating complexity. This assessment is a structured defense against all three.
 

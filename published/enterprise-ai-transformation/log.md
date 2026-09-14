@@ -1,6 +1,31 @@
 # Update Log
 
 ## 2026-09-14
+* **Update**: survey findings from consultancies and analyst firms now say only what their sources say. In
+  McKinsey's survey, CEO oversight of AI governance is one of the elements most correlated with self-reported
+  bottom-line impact (the strongest at larger companies), not the single strongest predictor. Program
+  architecture now says that finding is about AI governance, not program governance. BCG's future-built
+  companies show 1.7 times the revenue growth and 1.6 times the EBIT margins of the companies BCG calls
+  stagnating or emerging; their 1.4 times greater cost reductions are expected, not achieved. BCG's 10-20-70
+  rule is quoted as BCG states it: 70% of strategic focus on people and processes, 20% on technology, 10% on
+  algorithms. Gartner placed generative AI in the trough of disillusionment in its 2025 Hype Cycle for AI, not
+  in 2024, when it said gen AI was past the peak. Prosci's studies rank active sponsorship as the top
+  contributor to change success, not a predictor of it. Accenture's strategic-bet finding is described as a
+  correlation, McKinsey's executive survey as covering US executives, and an unverifiable Deloitte quote is
+  removed. Pages: the [executive summary](/enterprise-ai-transformation/executive-summary.md),
+  [The 90-Day Launch](/enterprise-ai-transformation/running-the-program/the-90-day-launch.md),
+  [program architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md), the
+  [integrated assessment](/enterprise-ai-transformation/running-the-program/integrated-assessment.md), the
+  [AI strategy framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md), the
+  [tooling landscape](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/03-tooling-landscape.md), the
+  [AI governance framework](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework.md),
+  [the four levels of workflow AI integration](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/03-the-four-levels-of-workflow-ai-integration.md),
+  the [workflow maturity assessment](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/06-assessment-workflow-maturity-and-opportunity-scoring.md),
+  the [AI adoption framework](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md), the
+  [guide to designing an adoption program](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program.md), the
+  [talent and capability framework](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/02-talent-and-capability-framework.md), the
+  [capability-building roadmap](/enterprise-ai-transformation/tracks/07-talent-and-capability-building/04-practitioner-guide-capability-building-roadmap.md), and the
+  [measurement framework](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md).
 * **Update**: Gartner's 2024 forecast that at least 30% of generative-AI projects would be abandoned after
   proof of concept by the end of 2025 is no longer presented as a live prediction. A January 2026 Gartner
   article reports at least 50% abandoned by the end of 2025, with no published method. Updated on

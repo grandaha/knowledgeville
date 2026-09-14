@@ -13,8 +13,33 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.6.3 — 2026-09-14
 
-### Citation corrections
-* Consultancy survey findings say only what their sources say (source-diversity pass 1)
+## Updated: survey findings now say only what their sources say
+
+Several Enterprise AI Transformation pages leaned on a single consultancy or analyst survey to claim more than that survey showed. Each such sentence was checked against the source's exact wording, and the ones that overstated it were corrected.
+
+- Gartner placed generative AI in the trough of disillusionment in its 2025 Hype Cycle for AI, not in 2024. In August 2024 it said gen AI was past the peak.
+- BCG's leading companies show 1.7 times the revenue growth and 1.6 times the EBIT margins of the 60% it calls stagnating or emerging. Their 1.4 times greater cost reductions are expected, not achieved, and the gap is an association, not proof of cause.
+- McKinsey found CEO oversight of AI governance to be one of the elements most correlated with self-reported impact, not the single strongest predictor. That finding is about governing AI systems, not running a transformation program.
+- BCG's 10-20-70 rule is quoted as BCG states it: 70% of strategic focus on people and processes, 20% on technology, 10% on algorithms.
+- Prosci ranks active sponsorship as the top contributor to change success; the pages no longer call it a predictor.
+- An unverifiable Deloitte quote is removed, McKinsey's executive survey is described as covering US executives, and Accenture's strategic-bet finding is described as a correlation.
+
+Pages updated:
+
+- [Executive Summary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/executive-summary/)
+- [The 90-Day Launch](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/the-90-day-launch/)
+- [Program Architecture](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/program-architecture/)
+- [Integrated Assessment](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/integrated-assessment/)
+- [AI Strategy Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework/)
+- [Tooling & Frameworks Landscape](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/03-tooling-landscape/)
+- [AI Governance Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/02-ai-governance-framework/)
+- [The Four Levels of Workflow AI Integration](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/03-the-four-levels-of-workflow-ai-integration/)
+- [Assessment: Workflow Maturity & Opportunity Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/06-assessment-workflow-maturity-and-opportunity-scoring/)
+- [AI Adoption Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework/)
+- [Practitioner Guide: Designing an Adoption Program](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/03-practitioner-guide-designing-an-adoption-program/)
+- [Talent & Capability Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/07-talent-and-capability-building/02-talent-and-capability-framework/)
+- [Practitioner Guide: Capability Building Roadmap](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/07-talent-and-capability-building/04-practitioner-guide-capability-building-roadmap/)
+- [Measurement & Value Realization Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework/)
 
 ## v12.6.2 — 2026-09-14
 

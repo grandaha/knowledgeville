@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.6.1 — 2026-09-14
+
+### Citation corrections
+* Describe the workflow-redesign finding as a correlation
+
 ## v12.6.0 — 2026-09-14
 
 ## New research note: Rethink the Process, or Just Add AI?

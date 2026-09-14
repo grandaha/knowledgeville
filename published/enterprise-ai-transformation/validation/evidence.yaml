@@ -225,9 +225,9 @@
   expires: 2026-12-31
 
 - id: ev-mckinsey-state-of-ai-2025-workflow-redesign
-  claim: "Organizations using gen AI that have fundamentally redesigned at least one workflow; redesign has the strongest correlation with EBIT impact"
+  claim: "Organizations using gen AI that have fundamentally redesigned at least some workflows; redesign has the strongest correlation with EBIT impact (the report's footnote calls the analysis correlational, R-squared 0.20 across 25 attributes)"
   value: "21%"
-  wording: "21% of respondents reporting gen AI use say their organizations have fundamentally redesigned at least one workflow; redesigning workflows has the biggest effect on an organization's ability to see EBIT impact from gen AI"
+  wording: "the redesign of workflows has the biggest effect on an organization's ability to see EBIT impact from its use of gen AI. ... Twenty-one percent of respondents reporting gen AI use by their organizations say their organizations have fundamentally redesigned at least some workflows."
   source:
     org: McKinsey
     report: "The State of AI: How Organizations Are Rewiring to Capture Value"
@@ -4008,3 +4008,29 @@
   verified: 2026-09-13
   status: primary
   expires: 2027-09-13
+- id: ev-hammer-1990-paving-cow-paths-eat
+  claim: "Hammer's founding argument for reengineering: do not automate existing processes, obliterate them (read via an archive.org snapshot of the HBR page)"
+  value: "qualitative"
+  wording: "They leave the existing processes intact and use computers simply to speed them up. ... It is time to stop paving the cow paths. Instead of embedding outdated processes in silicon and software, we should obliterate them and start over."
+  source:
+    org: Michael Hammer
+    report: "Reengineering Work: Don't Automate, Obliterate (Harvard Business Review, July-August 1990)"
+    edition: 1990
+    url: https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2030-09-13
+- id: ev-mit-nanda-genai-divide-2025-exec-summary
+  claim: "MIT NANDA's executive summary: the 95% framing applied to organizations, the note that tools mainly help individuals, the authors' hedge on model quality, and the study's methods"
+  value: "95% of organizations getting zero return; over 300 initiatives reviewed, 52 organizations interviewed, 153 leaders surveyed"
+  wording: "this report uncovers a surprising result in that 95% of organizations are getting zero return. ... This divide does not seem to be driven by model quality or regulation, but seems to be determined by approach. ... Over 80 percent of organizations have explored or piloted them, and nearly 40 percent report deployment. But these tools primarily enhance individual productivity, not P&L performance. ... a systematic review of over 300 publicly disclosed AI initiatives, structured interviews with representatives from 52 organizations, and survey responses from 153 senior leaders"
+  source:
+    org: MIT Project NANDA
+    report: "The GenAI Divide: State of AI in Business 2025"
+    edition: 2025
+    url: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2026-12-31

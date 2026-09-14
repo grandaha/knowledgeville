@@ -36,7 +36,7 @@ Start where value and feasibility are both high. These are your beachheads. A vi
 
 ## The workflow-redesign lever
 
-The biggest mistake is bolting AI onto a process and expecting change. The value comes from redesigning the work around what AI now makes cheap. Do not ask where you can insert the tool. Ask how you would run the work differently if a task took minutes instead of hours. That is where the real gains sit. It is also why adoption and workflow redesign are the same project, not two. For the program-level treatment of redesigning work around AI, see [Workflow Optimization & Automation](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/index.md).
+A common mistake is bolting AI onto a process and expecting it to change the business. Adding a well-fitted tool to the current process can pay, so it is a reasonable place to start. The gains tend to be larger when the work changes along with the tool, though that is not yet proven. Ask how you would run the work differently if a task took minutes instead of hours. That question is why adoption and workflow redesign belong in the same project. For the program-level treatment of redesigning work around AI, see [Workflow Optimization & Automation](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/index.md). For the evidence on both sides, see [Rethink the Process, or Just Add AI?](/research-notes/rethink-the-process-or-just-add-ai.md).
 
 ## Avoiding pilot sprawl
 

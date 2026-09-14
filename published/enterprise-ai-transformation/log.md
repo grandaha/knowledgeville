@@ -1,6 +1,16 @@
 # Update Log
 
 ## 2026-09-13
+* **Update**: the workflow-redesign evidence now matches its source. McKinsey's 2025 finding is described
+  as a correlation with self-reported EBIT impact, not a cause, on
+  [Running a Workflow Optimization Program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md),
+  the [Workflow Optimization & Automation](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/index.md) introduction, and the
+  [AI adoption framework](/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework.md). The "paving the cow path" phrase is
+  now credited to Michael Hammer's 1990 case for reengineering. The adoption framework's 95% takeaway no longer
+  claims a cause. The 21% figure now reads "fundamentally redesigned at least some workflows", as McKinsey
+  wrote it, on the adoption framework, the measurement framework, the measurement maturity assessment, and the
+  sequencing playbooks. The pages link to the research note
+  [Rethink the Process, or Just Add AI?](/research-notes/rethink-the-process-or-just-add-ai.md).
 * **Update**: AI spend figures on the [Technology Architecture Framework](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/02-technology-architecture-framework.md),
   [Designing an AI Platform Function](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/04-practitioner-guide-designing-an-ai-platform-function.md), and
   [Assessment: Platform Maturity Scoring](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/05-assessment-platform-maturity-scoring.md) now use 2026

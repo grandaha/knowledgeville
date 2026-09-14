@@ -632,3 +632,432 @@
   verified: 2026-09-13
   status: primary
   expires: 2027-09-13
+- id: ev-mittr-deloitte-2026-agent-first
+  claim: "Sponsored piece arguing companies must redesign processes around AI agents (STAKE: produced with Deloitte, which sells transformation work)"
+  value: "qualitative"
+  wording: "In association with the Deloitte Microsoft Technology Practice ... unlocking their potential requires redesigning processes around agents rather than bolting them onto fragmented legacy workflows using traditional optimization methods. Companies must become agent first."
+  source:
+    org: MIT Technology Review Insights
+    report: "Enabling agent-first process redesign"
+    edition: 2026
+    url: https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-hammer-1990-paving-cow-paths
+  claim: "Hammer's founding argument for reengineering: do not automate existing processes, obliterate them (read via an archive.org snapshot of the HBR page)"
+  value: "qualitative"
+  wording: "They leave the existing processes intact and use computers simply to speed them up. ... It is time to stop paving the cow paths. Instead of embedding outdated processes in silicon and software, we should obliterate them and start over."
+  source:
+    org: Michael Hammer
+    report: "Reengineering Work: Don't Automate, Obliterate (Harvard Business Review, July-August 1990)"
+    edition: 1990
+    url: https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2030-09-13
+- id: ev-hammer-1990-all-or-nothing
+  claim: "Hammer framed reengineering as all-or-nothing rather than incremental (read via an archive.org snapshot of the HBR page)"
+  value: "qualitative"
+  wording: "Reengineering cannot be planned meticulously and accomplished in small and cautious steps. It's an all-or-nothing proposition with an uncertain result."
+  source:
+    org: Michael Hammer
+    report: "Reengineering Work: Don't Automate, Obliterate (Harvard Business Review, July-August 1990)"
+    edition: 1990
+    url: https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2030-09-13
+- id: ev-brynjolfsson-hitt-2003-long-run
+  claim: "Returns to computerization are larger over long periods, alongside complementary organizational investments (read from the 2002 working-paper version)"
+  value: "up to five times greater over long periods"
+  wording: "in the short term (using one year differences) ... the productivity and output contributions associated with computerization are up to five times greater over long periods (using five to seven year differences). The results suggest that the observed contribution of computerization is accompanied by relatively large and time-consuming investments in complementary inputs"
+  source:
+    org: Brynjolfsson & Hitt
+    report: "Computing Productivity: Firm-Level Evidence (Review of Economics and Statistics 85(4))"
+    edition: 2003
+    url: https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-brynjolfsson-hitt-2003-caveat
+  claim: "The authors cannot separate a true productivity effect from a return on the whole system of complementary investments"
+  value: "qualitative"
+  wording: "innovations in business methods and organization ... Without a direct measure of the cost and timing of complementary investments, we cannot determine whether correlations between computers and MFP represent a true correlation with MFP growth (if the complements were appropriately included) or simply an equilibrium return on a system of investments"
+  source:
+    org: Brynjolfsson & Hitt
+    report: "Computing Productivity: Firm-Level Evidence (Review of Economics and Statistics 85(4))"
+    edition: 2003
+    url: https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-bloom-sadun-van-reenen-2012-us-it
+  claim: "UK establishments taken over by US multinationals raised IT productivity; comparable sites taken over by non-US multinationals did not (read from the 2007 NBER version)"
+  value: "qualitative"
+  wording: "establishments that are taken over by US multinationals increase the productivity of their IT, whereas observationally identical establishments taken over by non-US multinationals do not. One explanation for these patterns is that US firms are organized in a way that allows them to use new technologies more efficiently."
+  source:
+    org: Bloom, Sadun & Van Reenen
+    report: "Americans Do IT Better: US Multinationals and the Productivity Miracle (American Economic Review 102(1); NBER w13085)"
+    edition: 2012
+    url: https://www.nber.org/papers/w13085
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-mcelheran-2025-industrial-ai-jcurve
+  claim: "US manufacturing plants show J-curve returns to industrial AI: losses first, gains later (Census Bureau data)"
+  value: "qualitative"
+  wording: "Working with the Census Bureau to collect detailed large-scale data for 2017 and 2021, we focus on AI-related technologies with industrial applications. We find causal evidence of J-curve-shaped returns, where short-term performance losses precede longer-term gains. Consistent with costly adjustment taking place within core production processes"
+  source:
+    org: McElheran, Yang, Kroff & Brynjolfsson
+    report: "The Rise of Industrial AI in America: Microfoundations of the Productivity J-curve(s) (US Census Bureau CES Working Paper 25-27)"
+    edition: 2025
+    url: https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-mcelheran-2025-abandoned-practices
+  claim: "Among older plants, abandoning structured management practices accounts for about a third of early AI losses"
+  value: "roughly one-third"
+  wording: "among older establishments, abandonment of structured production-management practices accounts for roughly one-third of these losses"
+  source:
+    org: McElheran, Yang, Kroff & Brynjolfsson
+    report: "The Rise of Industrial AI in America: Microfoundations of the Productivity J-curve(s) (US Census Bureau CES Working Paper 25-27)"
+    edition: 2025
+    url: https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-kim-kim-koning-2026-mapping-ai
+  claim: "Field experiment: startups shown how others reorganized production around AI found more use cases and earned more revenue (abstract as posted on an HKU seminar page; full text blocked)"
+  value: "515 startups; 44% more use cases; 1.9x higher revenue"
+  wording: "Across 515 startups from around the world, we run a field experiment in which treated firms receive information about how other firms have reorganized production around AI ... We find that treated firms discover more AI use cases, a 44% increase ... and generate 1.9x higher revenue. Revenue and investment gains are largest at the 90th percentile and above, consistent with AI unlocking the potential of especially promising ventures ... These results provide causal evidence that AI improves firm performance and productivity even at its current capabilities, and that discovering where and how to deploy AI is a key bottleneck"
+  source:
+    org: Kim, Kim & Koning
+    report: "Mapping AI into Production: A Field Experiment on Firm Performance (INSEAD Working Paper 2026/20)"
+    edition: 2026
+    url: https://www.hkubs.hku.hk/event/mapping-ai-into-production-a-field-experiment-on-firm-performance/
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-09-13
+- id: ev-dillon-2025-no-task-shifts
+  claim: "Randomized Copilot trial: individual time savings but no detectable shift in task composition (STAKE: several authors at Microsoft Research)"
+  value: "qualitative"
+  wording: "Apart from these individual time savings, we do not detect shifts in the quantity or composition of workers' tasks resulting from individual-level AI provision."
+  source:
+    org: Dillon, Jaffe, Immorlica & Stanton
+    report: "Shifting Work Patterns with Generative AI (NBER Working Paper 33795)"
+    edition: 2025
+    url: https://www.nber.org/papers/w33795
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-humlum-vestergaard-2025-precise-zeros
+  claim: "Danish study: AI chatbots had no significant effect on earnings or hours"
+  value: "effects larger than 1% ruled out"
+  wording: "We link our survey data to administrative records on monthly earnings, hours, and occupations ... AI chatbots have had no significant impact on earnings or recorded hours in any occupation, with confidence intervals ruling out effects larger than 1%."
+  source:
+    org: Humlum & Vestergaard
+    report: "Large Language Models, Small Labor Market Effects (Becker Friedman Institute Working Paper 2025-56)"
+    edition: 2025
+    url: https://bfi.uchicago.edu/wp-content/uploads/2025/04/BFI_WP_2025-56-1.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-brynjolfsson-li-raymond-2023-support
+  claim: "An AI assistant added to an existing customer-support workflow raised productivity, most for novices"
+  value: "14% average; 34% for novice and low-skilled workers"
+  wording: "Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers. We provide suggestive evidence that the AI model disseminates the best practices of more able workers"
+  source:
+    org: Brynjolfsson, Li & Raymond
+    report: "Generative AI at Work (NBER Working Paper 31161)"
+    edition: 2023
+    url: https://www.nber.org/papers/w31161
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2028-09-13
+- id: ev-fang-2026-retail-field-experiments
+  claim: "Seven field experiments adding generative AI to retail-platform workflows"
+  value: "no detectable impact to 16.3%"
+  wording: "GenAI into seven business workflows ... We find that GenAI adoption increases sales in most workflows, with effects ranging from no detectable impact to 16.3%, depending on GenAI's marginal contribution relative to baseline firm practices."
+  source:
+    org: Fang et al.
+    report: "Generative AI and Sales Productivity: Field Experiments in Online Retail (arXiv 2510.12049)"
+    edition: 2026
+    url: https://arxiv.org/abs/2510.12049
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-mckinsey-rewiring-2025-biggest-effect
+  claim: "McKinsey's March 2025 finding that workflow redesign had the biggest effect on gen AI EBIT impact, and the footnote describing it as correlation analysis (STAKE: McKinsey sells transformation work; read via archive.org)"
+  value: "25 attributes; R-squared 0.20"
+  wording: "out of 25 attributes tested for organizations of all sizes, the redesign of workflows has the biggest effect on an organization's ability to see EBIT impact from its use of gen AI. ... The correlation analyses considered 25 attributes and the reported effect of gen AI use on organizations' EBIT, and using the Johnson's Relative Weights regression analysis yielded an R-squared of 0.20."
+  source:
+    org: McKinsey
+    report: "The State of AI: How Organizations Are Rewiring to Capture Value"
+    edition: 2025
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-09-13
+- id: ev-mckinsey-state-of-ai-2026-highperf-definition-rethink
+  claim: "McKinsey 2026 defines AI high performers by self-reported EBIT attribution; they are about 6% of respondents (STAKE: McKinsey sells transformation work)"
+  value: "5% or more of EBIT; about 6% of respondents"
+  wording: 'AI high performers are respondents who reported that 5% or more of their organization''s EBIT and "significant value" are attributable to the organization''s use of AI. ... account for just 6 percent of survey respondents, unchanged from 2025.'
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-mckinsey-state-of-ai-2026-highperf-redesign-rethink
+  claim: "Workflow redesign among AI high performers versus others (STAKE: McKinsey sells transformation work)"
+  value: "nearly three-quarters vs one-quarter (high performers up from 55%)"
+  wording: "Nearly three-quarters of high performers report fundamentally redesigning workflows because of their AI use, up from 55 percent last year. By comparison, just one-quarter of other respondents report doing so."
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-mckinsey-state-of-ai-2026-bundle-rethink
+  claim: "McKinsey presents redesign as one of several mutually reinforcing high-performer practices (STAKE: McKinsey sells transformation work)"
+  value: "qualitative"
+  wording: "These are all practices that, in our experience, reinforce one another."
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-mckinsey-state-of-ai-2026-impact-flat-rethink
+  claim: "The share of respondents reporting enterprise-level financial impact from AI did not change between 2025 and 2026 (STAKE: McKinsey sells transformation work)"
+  value: "unchanged; 37% report positive EBIT contribution"
+  wording: "The share of respondents reporting enterprise-level financial impact from AI use has not changed since last year. ... About four in ten respondents (37 percent) report that AI has contributed positively to their organizations' EBIT, essentially unchanged from 2025"
+  source:
+    org: McKinsey
+    report: "The state of AI in 2026: On the road to ROI"
+    edition: 2026
+    url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    pdf_hash: sha256:6a327b1d99cabc05c00186d66b7e93ee99052106d70752322dce60fd1b875a8e
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-baslandze-2026-perceived-vs-measured
+  claim: "Finance chiefs' direct estimates of AI's productivity effect exceed the effect implied by their own reported revenue and employment changes; the authors attribute the gap mainly to delayed output"
+  value: "qualitative"
+  wording: "CFO-reported (that is, perceived) improvements in labor productivity due to AI are substantially larger than the revenue-based productivity gains implied by observed changes in revenue and employment due to AI. ... likely reflecting delayed output realization and quality improvements that are not yet captured in measured revenues ... the implied labor productivity effect of AI based on firms' own assessments of how AI investment has affected"
+  source:
+    org: Baslandze et al.
+    report: "Artificial Intelligence, Productivity, and the Workforce: Evidence from Corporate Executives (NBER Working Paper 34984; Atlanta Fed WP 2026-4)"
+    edition: 2026
+    url: https://www.nber.org/papers/w34984
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-aral-2006-reverse-causality
+  claim: "Performance gains from one enterprise system lead firms to buy more: causality runs in both directions"
+  value: "qualitative"
+  wording: "these results imply that firms that experience performance gains from ERP go on to purchase SCM and CRM."
+  source:
+    org: Aral, Brynjolfsson & Wu
+    report: "Which Came First, IT or Productivity? The Virtuous Cycle of Investment and Use in Enterprise Systems (ICIS 2006)"
+    edition: 2006
+    url: https://archive.nyu.edu/jspui/bitstream/2451/27759/2/CPP-11-06.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-denrell-2003-survivor-sample
+  claim: "Studying surviving organizations can make unrelated risky practices look like causes of success"
+  value: "qualitative"
+  wording: "risky practices, even if they are unrelated to performance in the full population of organizations, may seem to be positively related to performance in a sample of survivors."
+  source:
+    org: Jerker Denrell
+    report: "Vicarious Learning, Undersampling of Failure, and the Myths of Management (Organization Science 14(3)); abstract"
+    edition: 2003
+    url: https://www.gsb.stanford.edu/faculty-research/publications/vicarious-learning-undersampling-failure-myths-management
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-hammer-champy-1993-unscientific-estimate
+  claim: "The 50 to 70 percent reengineering 'failure' figure was the authors' own unscientific estimate of falling short of dramatic results (read in Internet Archive scans of the book; several books that quote it render the range as '50 percent to 70 percent')"
+  value: "as many as 50 to 70 percent"
+  wording: "Our unscientific estimate is that as many as 50 to 70 percent of the organizations that undertake a reengineering effort do not achieve the dramatic results they intended."
+  source:
+    org: Hammer & Champy
+    report: "Reengineering the Corporation: A Manifesto for Business Revolution"
+    edition: 1993
+    url: https://archive.org/details/reengineeringcor00hamm_1
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-hammer-stanton-1995-no-inherent-rate
+  claim: "Hammer later said reengineering has no inherent success or failure rate (book scan)"
+  value: "qualitative"
+  wording: "There is no inherent success or failure rate for reengineering."
+  source:
+    org: Hammer & Stanton
+    report: "The Reengineering Revolution: A Handbook"
+    edition: 1995
+    url: https://archive.org/details/reengineeringrev0000hamm
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-hughes-2011-seventy-percent
+  claim: "Review of published 70 percent change-failure claims finds no valid empirical support"
+  value: "qualitative"
+  wording: "whilst the existence of a popular narrative of 70 percent organizational change failure is acknowledged, there is no valid and reliable empirical evidence to support such a narrative."
+  source:
+    org: Mark Hughes
+    report: "Do 70 Per Cent of All Organizational Change Initiatives Really Fail? (Journal of Change Management 11(4)); abstract"
+    edition: 2011
+    url: https://doi.org/10.1080/14697017.2011.630506
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-hall-1993-reengineering-outcomes
+  claim: "Detailed study of 20 reengineering projects: large process-cost cuts but small business-unit gains (STAKE: authors were McKinsey consultants; read via archive.org)"
+  value: "process costs down 15% to 50%; 11 of 20 under 5% business-unit improvement"
+  wording: "Performance improvement in 11 of the 20 cases that we examined in detail measured less than 5% (whether evaluated in terms of change in earnings before interest and taxes ... or in terms of reduction in total business-unit costs). ... many of the same cases reduced costs of the redesigned process by an impressive 15% to 50%."
+  source:
+    org: Hall, Rosenthal & Wade
+    report: "How to Make Reengineering Really Work (Harvard Business Review, November-December 1993)"
+    edition: 1993
+    url: https://hbr.org/1993/11/how-to-make-reengineering-really-work
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2030-09-13
+- id: ev-hall-1993-breadth-depth
+  claim: "The same study's conclusion: narrow redesigns rarely moved business-unit results; broad and deep ones did (STAKE: authors were McKinsey consultants; read via archive.org)"
+  value: "qualitative"
+  wording: "Our study identified two factors ... breadth and depth ... that are critical in translating short-term, narrow-focus process improvements into long-term profits. ... fundamentally changing six crucial organizational elements, or depth levers ... roles and responsibilities, measurements and incentives, organizational structure, information technology, shared values, and skills."
+  source:
+    org: Hall, Rosenthal & Wade
+    report: "How to Make Reengineering Really Work (Harvard Business Review, November-December 1993)"
+    edition: 1993
+    url: https://hbr.org/1993/11/how-to-make-reengineering-really-work
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2030-09-13
+- id: ev-stoddard-jarvenpaa-1995-revolutionary-tactics
+  claim: "In redesign projects, revolutionary tactics were used early and gave way to incremental ones near implementation; abstract"
+  value: "qualitative"
+  wording: "The frequency of revolutionary tactics was highest in the early phases of the initiatives and decreased as they approached implementation."
+  source:
+    org: Stoddard & Jarvenpaa
+    report: "Business Process Redesign: Tactics for Managing Radical Change (Journal of Management Information Systems 12(1))"
+    edition: 1995
+    url: https://doi.org/10.1080/07421222.1995.11518071
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-davenport-1995-reduce-headcount
+  claim: "A reengineering originator on how the movement became synonymous with cutbacks (read via an archive.org capture of Fast Company)"
+  value: "qualitative"
+  wording: "The fastest way to show financial results was to reduce headcount. Reengineering became synonymous with cutbacks."
+  source:
+    org: Thomas H. Davenport
+    report: "The Fad That Forgot People (Fast Company, November 1995)"
+    edition: 1995
+    url: https://www.fastcompany.com/26310/fad-forgot-people
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2030-09-13
+- id: ev-klarna-2025-lower-quality
+  claim: "Klarna's CEO on pulling back an AI customer-service push over quality (Maginative, quoting a Bloomberg interview)"
+  value: "qualitative"
+  wording: "As cost unfortunately seems to have been a too predominant evaluation factor when organizing this, what you end up having is lower quality"
+  source:
+    org: Maginative
+    report: "Klarna dials back its AI customer service strategy, now it's hiring humans again"
+    edition: 2025
+    url: https://www.maginative.com/article/klarna-dials-back-its-ai-customer-service-strategy-now-its-hiring-humans-again/
+    pdf_hash:
+  verified: 2026-09-13
+  status: secondary-mirror
+  expires: 2027-09-13
+- id: ev-davenport-2026-faint-hearted
+  claim: "Davenport on the cost and difficulty of end-to-end process redesign with AI (STAKE: books and speaking)"
+  value: "qualitative"
+  wording: "Process reengineering for end-to-end processes is not for the faint-hearted or poverty-stricken."
+  source:
+    org: Thomas H. Davenport
+    report: "Why It's Hard to Redesign Work Processes with AI (Substack)"
+    edition: 2026
+    url: https://tdavenport.substack.com/p/why-its-hard-to-redesign-work-processes
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-madsen-slatten-2026-bpr-ai
+  claim: "Conceptual review: AI may make radical redesign more feasible without removing reengineering's classic risks; abstract"
+  value: "qualitative"
+  wording: "AI may alter the technical feasibility of radical process redesign while leaving many classic BPR risks intact."
+  source:
+    org: Madsen & Slåtten
+    report: "Business Process Reengineering in the Age of Generative and Agentic AI: Translation, Persistence, and Renewed Relevance (Administrative Sciences 16(8))"
+    edition: 2026
+    url: https://doi.org/10.3390/admsci16080364
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2027-09-13
+- id: ev-fda-2011-change-notification
+  claim: "In regulated drug manufacturing, some process changes require notifying the regulator before implementation"
+  value: "qualitative"
+  wording: "Certain manufacturing changes may call for formal notification to the Agency before implementation, as directed by existing regulations"
+  source:
+    org: US Food and Drug Administration
+    report: "Guidance for Industry. Process Validation: General Principles and Practices, Revision 1"
+    edition: 2011
+    url: https://www.fda.gov/files/drugs/published/Process-Validation--General-Principles-and-Practices.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13
+- id: ev-repenning-sterman-2001-tqm
+  claim: "Sustained process improvement pays but is rarely achieved; the capability trap"
+  value: "qualitative"
+  wording: "A number of careful studies have now demonstrated that companies making a serious commitment to the disciplines and methods associated with TQM outperform their competitors. ... few efforts to implement such programs actually produce significant results. ... To see the capability trap in action"
+  source:
+    org: Repenning & Sterman
+    report: "Nobody Ever Gets Credit for Fixing Problems that Never Happened: Creating and Sustaining Process Improvement (California Management Review 43(4))"
+    edition: 2001
+    url: https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf
+    pdf_hash:
+  verified: 2026-09-13
+  status: primary
+  expires: 2030-09-13

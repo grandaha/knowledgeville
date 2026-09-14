@@ -210,7 +210,7 @@
         "verification_posture": "verify-embedded-facts",
         "temporal_mode": "living-document"
       },
-      "pageCount": 3
+      "pageCount": 4
     },
     {
       "slug": "team-second-brain",
@@ -9185,6 +9185,286 @@
     },
     {
       "bundle": "research-notes",
+      "path": "rethink-the-process-or-just-add-ai.md",
+      "url": "https://knowledge.onesteplabs.com/research-notes/rethink-the-process-or-just-add-ai/",
+      "title": "Rethink the Process, or Just Add AI?",
+      "description": "Tests the advice to redesign a process for AI rather than automate it, against the evidence and the record of 1990s reengineering.",
+      "tags": [
+        "process-redesign",
+        "ai-adoption",
+        "workflow"
+      ],
+      "body": "!!! note \"Working notes\"\n    Current understanding of an active question, not a finished reference. Revised as the\n    research develops.\n\nA common piece of advice about AI goes like this. Do not automate the process you have. Rethink the whole process around what AI can do. A 2026 piece produced in association with Deloitte puts it bluntly: \"Companies must become agent first\" ([MIT Technology Review Insights, 2026](#ev-mittr-deloitte-2026-agent-first)).\n\nThis site has said it even more firmly. [Running a Workflow Optimization Program](/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program.md) warns against \"paving the cow path.\" [Finding Where AI Earns Its Keep](/ai-accountability/03-ai-enablement/04-finding-where-ai-earns-its-keep.md) calls bolting AI onto a process \"the biggest mistake.\" Part of this note is a check on our own advice.\n\nThe short version: the mild form of the claim holds, and the absolute form does not. The mild form says technology pays more when the organization changes around it. The absolute form says adding AI to an unchanged process does not pay. Two causal studies, covered below, measured gains from doing exactly that.\n\n## The advice dates from 1990s reengineering\n\nThe advice is older than it sounds. In 1990, Michael Hammer wrote that companies \"leave the existing processes intact and use computers simply to speed them up.\" His remedy: \"It is time to stop paving the cow paths\" ([Hammer, 1990](#ev-hammer-1990-paving-cow-paths)). Instead, he wrote, \"we should obliterate them and start over.\"\n\nHe called the approach reengineering, and he did not hedge. It was \"an all-or-nothing proposition with an uncertain result\" ([Hammer, 1990](#ev-hammer-1990-all-or-nothing)).\n\nToday's version swaps computers for AI and keeps the absolutism. The messengers are similar too. In my search for current voices, the most prominent were consultancies, analyst firms, and software vendors. Each has something to sell that is tied to redesign. Their stake is a reason to check the evidence underneath.\n\n## What holds: technology pays more with organizational change\n\nThe strongest support comes from economists who studied computers, long before generative AI. Brynjolfsson and Hitt studied large US firms. Gains from computerization were \"up to five times greater over long periods\" than over a single year ([Brynjolfsson & Hitt, 2003](#ev-brynjolfsson-hitt-2003-long-run)).\n\nThe long-run gains came with \"relatively large and time-consuming investments in complementary inputs,\" such as new business methods and organization. The authors did not measure those investments. So they cannot say whether the gain belongs to the computers or to the whole package ([Brynjolfsson & Hitt, 2003](#ev-brynjolfsson-hitt-2003-caveat)).\n\nStudies with stronger methods point the same way. Bloom, Sadun and Van Reenen studied UK sites bought by foreign firms. Sites bought by US multinationals got more productivity from their IT, and similar sites bought by others did not ([Bloom, Sadun & Van Reenen, 2012](#ev-bloom-sadun-van-reenen-2012-us-it)). The authors' explanation is that US firms \"are organized in a way that allows them to use new technologies more efficiently.\"\n\nFor AI, researchers studied US manufacturing plants with the Census Bureau. They found \"causal evidence of J-curve-shaped returns, where short-term performance losses precede longer-term gains\" ([McElheran et al., 2025](#ev-mcelheran-2025-industrial-ai-jcurve)). They link the early losses to \"costly adjustment taking place within core production processes.\" Among older plants, the same study found that abandoning working practices accounted for about a third of those losses, as a later section shows.\n\nOne caution runs through all of this. These studies measure or infer organizational practices that accompany technology, such as management methods, organization, and production practices. None of them measures process redesign as such. They support changing how the organization works, not any particular redesign program.\n\n### The one randomized trial on reorganizing around AI\n\nA field experiment covered 515 startups ([Kim, Kim & Koning, 2026](#ev-kim-kim-koning-2026-mapping-ai)). A randomly chosen group received \"information about how other firms have reorganized production around AI.\" Those firms found 44% more AI use cases and generated \"1.9x higher revenue.\"\n\nThe authors call this \"causal evidence\" that \"discovering where and how to deploy AI is a key bottleneck.\" It is the best evidence I found for rethinking where AI fits.\n\nIts limits matter. The treatment was information about reorganizing, not a redesign itself. The firms were young startups, not established companies with years of process behind them. And the gains were concentrated in a small group of top firms, which the authors read as AI \"unlocking the potential of especially promising ventures.\"\n\n### What general tools alone have shown\n\nGeneral AI tools handed to individuals have changed little on their own. A randomized trial of Microsoft's Copilot, run partly by Microsoft researchers, found individual time savings. Beyond those, \"we do not detect shifts in the quantity or composition of workers' tasks\" ([Dillon et al., 2025](#ev-dillon-2025-no-task-shifts)).\n\nIn Denmark, researchers linked survey data on chatbot use to administrative records. They found \"no significant impact on earnings or recorded hours,\" ruling out effects above 1% ([Humlum & Vestergaard, 2025](#ev-humlum-vestergaard-2025-precise-zeros)). These studies measure workers' tasks, earnings, and hours, not company output. Neither observed whether employers changed their processes.\n\nSo the mild claim holds, within limits. In these studies, general tools handed to individuals changed little, and the larger returns came with organizational change.\n\n## What fails: the absolute form\n\nThe absolute form says that adding AI to an existing process does not pay. Two causal studies say otherwise.\n\nOne customer-support operation added an AI assistant to its existing workflow. Issues resolved per hour rose \"by 14% on average, including a 34% improvement for novice and low-skilled workers\" ([Brynjolfsson, Li & Raymond, 2023](#ev-brynjolfsson-li-raymond-2023-support)). The same study found \"minimal impact on experienced and highly skilled workers.\"\n\nOn one online retail platform, researchers added generative AI to seven existing workflows in field experiments. Effects on sales ranged \"from no detectable impact to 16.3%\" ([Fang et al., 2026](#ev-fang-2026-retail-field-experiments)).\n\nBoth are single settings, so the size of the gain may not travel. Neither compared redesign against the tool alone, so redesign might have done better. They do show that adding AI to a current process can pay.\n\nThe difference from the weak results looks important to me. The tools that paid were built into one specific workflow. The tools that changed little were general assistants handed to individuals. That is my reading, not a tested finding.\n\n### The survey this site cites most\n\nThe source this site cites most is McKinsey, which sells transformation work. In March 2025 it reported that, of 25 attributes tested, workflow redesign \"has the biggest effect on an organization's ability to see EBIT impact\" ([McKinsey, 2025](#ev-mckinsey-rewiring-2025-biggest-effect)). EBIT is earnings before interest and taxes, a measure of operating profit.\n\nThe footnote describes the method more modestly. It calls the work \"correlation analyses,\" and all 25 attributes together \"yielded an R-squared of 0.20.\" That means they explained a fifth of the variation in reported EBIT impact. The report text gives no figure for redesign on its own.\n\nSeveral problems follow from the design:\n\n- The same respondent reports both whether the company redesigned and how much EBIT it credits to AI.\n- Executives' estimates run ahead of their own numbers. A 2026 study asked finance chiefs to estimate AI's effect on productivity directly. It compared that with the effect implied by the revenue and employment changes they reported. The direct estimates were \"substantially larger\" ([Baslandze et al., 2026](#ev-baslandze-2026-perceived-vs-measured)). The authors attribute the gap mainly to \"delayed output realization.\"\n- Causation can run backwards. A study of business software found that firms that gained from their first major system went on to buy more ([Aral, Brynjolfsson & Wu, 2006](#ev-aral-2006-reverse-causality)). Success can fund the next change, so successful firms look like heavy changers.\n\n### What McKinsey's 2026 survey shows\n\nThe August 2026 report runs no correlation analysis on redesign. It compares AI high performers with everyone else. High performers are respondents who credit \"5% or more of their organization's EBIT and 'significant value'\" to AI. They are about 6% of respondents ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-highperf-definition-rethink)).\n\n\"Nearly three-quarters of high performers report fundamentally redesigning workflows because of their AI use, up from 55 percent last year.\" Among other respondents, the figure is \"just one-quarter\" ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-highperf-redesign-rethink)). McKinsey presents redesign as one of several \"practices that, in our experience, reinforce one another\" ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-bundle-rethink)).\n\nThis comparison has a built-in problem. The group is defined by its result, so its practices will tend to look like causes of that result. Denrell showed a closely related trap in studies of surviving firms. There, practices \"unrelated to performance in the full population of organizations, may seem to be positively related to performance in a sample of survivors\" ([Denrell, 2003](#ev-denrell-2003-survivor-sample)).\n\nMeanwhile, the share of all respondents reporting enterprise-level financial impact from AI \"has not changed since last year\" ([McKinsey, 2026](#ev-mckinsey-state-of-ai-2026-impact-flat-rethink)). A survey built this way cannot show whether redesign produces that impact.\n\nI am correcting this site's own pages separately, so that they describe the 2025 finding as a correlation, as its source does.\n\n## What 1990s reengineering taught\n\nReengineering left a famous statistic: 50 to 70% of projects fail. It began as a guess. Hammer and Champy introduced the figure as \"Our unscientific estimate\" ([Hammer & Champy, 1993](#ev-hammer-champy-1993-unscientific-estimate)). They guessed that as many as 50 to 70% of organizations that tried it \"do not achieve the dramatic results they intended.\"\n\nThat describes falling short of dramatic results, not a measured failure rate. Two years later, Hammer wrote: \"There is no inherent success or failure rate for reengineering\" ([Hammer & Stanton, 1995](#ev-hammer-stanton-1995-no-inherent-rate)). In 2011, Hughes reviewed published claims that 70% of change programs fail. He found \"no valid and reliable empirical evidence to support such a narrative\" ([Hughes, 2011](#ev-hughes-2011-seventy-percent)).\n\n### What the projects actually delivered\n\nOne of the few detailed measurements from the period came from McKinsey consultants, who studied 20 projects closely. Many \"reduced costs of the redesigned process by an impressive 15% to 50%.\" Yet in 11 of the 20 cases, the business unit as a whole improved by less than 5% ([Hall, Rosenthal & Wade, 1993](#ev-hall-1993-reengineering-outcomes)).\n\nTheir conclusion was not to redesign less. It was to redesign more broadly and more deeply. They named breadth and depth as the factors \"critical in translating short-term, narrow-focus process improvements into long-term profits\" ([Hall, Rosenthal & Wade, 1993](#ev-hall-1993-breadth-depth)). Depth meant changing roles, incentives, structure, information technology, shared values, and skills.\n\nThat finding cuts both ways for today's advice. Narrow redesigns with dramatic process metrics often moved the business unit by less than 5% ([Hall, Rosenthal & Wade, 1993](#ev-hall-1993-reengineering-outcomes)). The redesigns that paid changed how the organization worked, which matches the evidence on complements above. The lesson I take is to judge results at the business-unit level, not the process level.\n\nField research added a second lesson. Stoddard and Jarvenpaa followed the redesign projects of three organizations. Revolutionary tactics were most common early and \"decreased as they approached implementation\" ([Stoddard & Jarvenpaa, 1995](#ev-stoddard-jarvenpaa-1995-revolutionary-tactics)). Teams delivered radical designs in increments. The all-or-nothing framing did not describe these projects even then.\n\n### The human cost\n\nThomas Davenport, one of the movement's originators, wrote in 1995: \"The fastest way to show financial results was to reduce headcount. Reengineering became synonymous with cutbacks\" ([Davenport, 1995](#ev-davenport-1995-reduce-headcount)).\n\nCost-led change has an AI-era echo, though not a redesign one. Klarna later pulled back from an AI customer-service push and began hiring people again. In a Bloomberg interview reported by Maginative, its chief executive said \"cost unfortunately seems to have been a too predominant evaluation factor\" ([Maginative, 2025](#ev-klarna-2025-lower-quality)). The result, he said, was \"lower quality.\"\n\nDavenport's 2026 view of AI redesign is sober: \"Process reengineering for end-to-end processes is not for the faint-hearted or poverty-stricken\" ([Davenport, 2026](#ev-davenport-2026-faint-hearted)). A 2026 academic review agrees. AI \"may alter the technical feasibility of radical process redesign while leaving many classic [reengineering] risks intact\" ([Madsen & Slåtten, 2026](#ev-madsen-slatten-2026-bpr-ai)).\n\n## When improving the existing process is the safer bet\n\nOnly the first and third rest on outcome studies, and the third covers only older plants. The others are FDA guidance and a pattern in improvement programs.\n\n#### When less experienced people do the work\n\nThe 34% gain for novices came from AI added to an unchanged workflow ([Brynjolfsson, Li & Raymond, 2023](#ev-brynjolfsson-li-raymond-2023-support)). The authors offer \"suggestive evidence\" that the tool \"disseminates the best practices\" of stronger workers.\n\n#### When the process encodes controls\n\nIn regulated work, change has a cost of its own. The US Food and Drug Administration's process guidance says \"Certain manufacturing changes may call for formal notification to the Agency before implementation\" ([FDA, 2011](#ev-fda-2011-change-notification)).\n\n#### When existing practices hold the operation together\n\nAmong older plants in the Census study, \"abandonment of structured production-management practices accounts for roughly one-third\" of the early losses from AI ([McElheran et al., 2025](#ev-mcelheran-2025-abandoned-practices)). Plants that dropped working practices while adopting AI paid for it.\n\n#### When the real gap is steady improvement\n\nRepenning and Sterman report that firms committed to total quality management (TQM) \"outperform their competitors\" ([Repenning & Sterman, 2001](#ev-repenning-sterman-2001-tqm)). Yet \"few efforts to implement such programs actually produce significant results.\"\n\nThey trace this to a \"capability trap\": under pressure, people work harder instead of improving the process. My own reading is that announcing a redesign can be another way to skip that slow work.\n\n## Where the evidence leaves the advice\n\nThe advice deserves a narrower form. The evidence supports the view that organizational change and technology pay off together. Rethinking where AI fits has one good randomized trial behind it, in startups. Two causal studies measured gains from adding AI to an existing process, so calling it a mistake is too strong.\n\nHere is what I would do, on my own reading of this evidence:\n\n- Add AI where it plainly helps, especially tools built into a specific workflow and used by less experienced staff.\n- Judge results at the business-unit level, not only the process.\n- Redesign where the process itself is the constraint. Go broad enough to change roles, incentives, and measures, and deliver it in steps.\n- Treat headcount cuts presented as redesign with suspicion. That point is an opinion, resting mainly on the reengineering record.\n\nNone of this is tested as a package. It stays a note until someone measures it.\n\n### Still open\n\n- Is there an experiment in established firms comparing redesign against the same AI tool without it? I found none.\n- How long does the dip before the gains last, and what predicts its depth?\n- When AI improves a process metric sharply, what happens at the business-unit level?\n- Which way does causation run: redesign then returns, or returns then redesign?\n- How can a company tell that the process itself, rather than the tool, is the constraint?\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **MIT Technology Review Insights — *Enabling agent-first process redesign*, 2026.** In association with the Deloitte Microsoft Technology Practice ... unlocking their potential requires redesigning processes around agents rather than bolting them onto fragmented legacy workflows using traditional optimization methods. Companies must become agent first. [View source](https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/){#ev-mittr-deloitte-2026-agent-first} · verified 2026-09-13 · primary\n- **Michael Hammer — *Reengineering Work: Don't Automate, Obliterate (Harvard Business Review, July-August 1990)*, 1990.** They leave the existing processes intact and use computers simply to speed them up. ... It is time to stop paving the cow paths. Instead of embedding outdated processes in silicon and software, we should obliterate them and start over. [View source](https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate){#ev-hammer-1990-paving-cow-paths} · verified 2026-09-13 · ⚠ secondary mirror\n- **Michael Hammer — *Reengineering Work: Don't Automate, Obliterate (Harvard Business Review, July-August 1990)*, 1990.** Reengineering cannot be planned meticulously and accomplished in small and cautious steps. It's an all-or-nothing proposition with an uncertain result. [View source](https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate){#ev-hammer-1990-all-or-nothing} · verified 2026-09-13 · ⚠ secondary mirror\n- **Brynjolfsson & Hitt — *Computing Productivity: Firm-Level Evidence (Review of Economics and Statistics 85(4))*, 2003.** in the short term (using one year differences) ... the productivity and output contributions associated with computerization are up to five times greater over long periods (using five to seven year differences). The results suggest that the observed contribution of computerization is accompanied by relatively large and time-consuming investments in complementary inputs. [View source](https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf){#ev-brynjolfsson-hitt-2003-long-run} · verified 2026-09-13 · primary\n- **Brynjolfsson & Hitt — *Computing Productivity: Firm-Level Evidence (Review of Economics and Statistics 85(4))*, 2003.** innovations in business methods and organization ... Without a direct measure of the cost and timing of complementary investments, we cannot determine whether correlations between computers and MFP represent a true correlation with MFP growth (if the complements were appropriately included) or simply an equilibrium return on a system of investments. [View source](https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf){#ev-brynjolfsson-hitt-2003-caveat} · verified 2026-09-13 · primary\n- **Bloom, Sadun & Van Reenen — *Americans Do IT Better: US Multinationals and the Productivity Miracle (American Economic Review 102(1); NBER w13085)*, 2012.** establishments that are taken over by US multinationals increase the productivity of their IT, whereas observationally identical establishments taken over by non-US multinationals do not. One explanation for these patterns is that US firms are organized in a way that allows them to use new technologies more efficiently. [View source](https://www.nber.org/papers/w13085){#ev-bloom-sadun-van-reenen-2012-us-it} · verified 2026-09-13 · primary\n- **McElheran, Yang, Kroff & Brynjolfsson — *The Rise of Industrial AI in America: Microfoundations of the Productivity J-curve(s) (US Census Bureau CES Working Paper 25-27)*, 2025.** Working with the Census Bureau to collect detailed large-scale data for 2017 and 2021, we focus on AI-related technologies with industrial applications. We find causal evidence of J-curve-shaped returns, where short-term performance losses precede longer-term gains. Consistent with costly adjustment taking place within core production processes. [View source](https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf){#ev-mcelheran-2025-industrial-ai-jcurve} · verified 2026-09-13 · primary\n- **Kim, Kim & Koning — *Mapping AI into Production: A Field Experiment on Firm Performance (INSEAD Working Paper 2026/20)*, 2026.** Across 515 startups from around the world, we run a field experiment in which treated firms receive information about how other firms have reorganized production around AI ... We find that treated firms discover more AI use cases, a 44% increase ... and generate 1.9x higher revenue. Revenue and investment gains are largest at the 90th percentile and above, consistent with AI unlocking the potential of especially promising ventures ... These results provide causal evidence that AI improves firm performance and productivity even at its current capabilities, and that discovering where and how to deploy AI is a key bottleneck. [View source](https://www.hkubs.hku.hk/event/mapping-ai-into-production-a-field-experiment-on-firm-performance/){#ev-kim-kim-koning-2026-mapping-ai} · verified 2026-09-13 · ⚠ secondary mirror\n- **Dillon, Jaffe, Immorlica & Stanton — *Shifting Work Patterns with Generative AI (NBER Working Paper 33795)*, 2025.** Apart from these individual time savings, we do not detect shifts in the quantity or composition of workers' tasks resulting from individual-level AI provision. [View source](https://www.nber.org/papers/w33795){#ev-dillon-2025-no-task-shifts} · verified 2026-09-13 · primary\n- **Humlum & Vestergaard — *Large Language Models, Small Labor Market Effects (Becker Friedman Institute Working Paper 2025-56)*, 2025.** We link our survey data to administrative records on monthly earnings, hours, and occupations ... AI chatbots have had no significant impact on earnings or recorded hours in any occupation, with confidence intervals ruling out effects larger than 1%. [View source](https://bfi.uchicago.edu/wp-content/uploads/2025/04/BFI_WP_2025-56-1.pdf){#ev-humlum-vestergaard-2025-precise-zeros} · verified 2026-09-13 · primary\n- **Brynjolfsson, Li & Raymond — *Generative AI at Work (NBER Working Paper 31161)*, 2023.** Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers. We provide suggestive evidence that the AI model disseminates the best practices of more able workers. [View source](https://www.nber.org/papers/w31161){#ev-brynjolfsson-li-raymond-2023-support} · verified 2026-09-13 · primary\n- **Fang et al. — *Generative AI and Sales Productivity: Field Experiments in Online Retail (arXiv 2510.12049)*, 2026.** GenAI into seven business workflows ... We find that GenAI adoption increases sales in most workflows, with effects ranging from no detectable impact to 16.3%, depending on GenAI's marginal contribution relative to baseline firm practices. [View source](https://arxiv.org/abs/2510.12049){#ev-fang-2026-retail-field-experiments} · verified 2026-09-13 · primary\n- **McKinsey — *The State of AI: How Organizations Are Rewiring to Capture Value*, 2025.** out of 25 attributes tested for organizations of all sizes, the redesign of workflows has the biggest effect on an organization's ability to see EBIT impact from its use of gen AI. ... The correlation analyses considered 25 attributes and the reported effect of gen AI use on organizations' EBIT, and using the Johnson's Relative Weights regression analysis yielded an R-squared of 0.20. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value){#ev-mckinsey-rewiring-2025-biggest-effect} · verified 2026-09-13 · ⚠ secondary mirror\n- **Baslandze et al. — *Artificial Intelligence, Productivity, and the Workforce: Evidence from Corporate Executives (NBER Working Paper 34984; Atlanta Fed WP 2026-4)*, 2026.** CFO-reported (that is, perceived) improvements in labor productivity due to AI are substantially larger than the revenue-based productivity gains implied by observed changes in revenue and employment due to AI. ... likely reflecting delayed output realization and quality improvements that are not yet captured in measured revenues ... the implied labor productivity effect of AI based on firms' own assessments of how AI investment has affected. [View source](https://www.nber.org/papers/w34984){#ev-baslandze-2026-perceived-vs-measured} · verified 2026-09-13 · primary\n- **Aral, Brynjolfsson & Wu — *Which Came First, IT or Productivity? The Virtuous Cycle of Investment and Use in Enterprise Systems (ICIS 2006)*, 2006.** these results imply that firms that experience performance gains from ERP go on to purchase SCM and CRM. [View source](https://archive.nyu.edu/jspui/bitstream/2451/27759/2/CPP-11-06.pdf){#ev-aral-2006-reverse-causality} · verified 2026-09-13 · primary\n- **McKinsey — *The state of AI in 2026: On the road to ROI*, 2026.** AI high performers are respondents who reported that 5% or more of their organization's EBIT and \"significant value\" are attributable to the organization's use of AI. ... account for just 6 percent of survey respondents, unchanged from 2025. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2026-highperf-definition-rethink} · verified 2026-09-13 · primary\n- **McKinsey — *The state of AI in 2026: On the road to ROI*, 2026.** Nearly three-quarters of high performers report fundamentally redesigning workflows because of their AI use, up from 55 percent last year. By comparison, just one-quarter of other respondents report doing so. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2026-highperf-redesign-rethink} · verified 2026-09-13 · primary\n- **McKinsey — *The state of AI in 2026: On the road to ROI*, 2026.** These are all practices that, in our experience, reinforce one another. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2026-bundle-rethink} · verified 2026-09-13 · primary\n- **Jerker Denrell — *Vicarious Learning, Undersampling of Failure, and the Myths of Management (Organization Science 14(3)); abstract*, 2003.** risky practices, even if they are unrelated to performance in the full population of organizations, may seem to be positively related to performance in a sample of survivors. [View source](https://www.gsb.stanford.edu/faculty-research/publications/vicarious-learning-undersampling-failure-myths-management){#ev-denrell-2003-survivor-sample} · verified 2026-09-13 · primary\n- **McKinsey — *The state of AI in 2026: On the road to ROI*, 2026.** The share of respondents reporting enterprise-level financial impact from AI use has not changed since last year. ... About four in ten respondents (37 percent) report that AI has contributed positively to their organizations' EBIT, essentially unchanged from 2025. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai){#ev-mckinsey-state-of-ai-2026-impact-flat-rethink} · verified 2026-09-13 · primary\n- **Hammer & Champy — *Reengineering the Corporation: A Manifesto for Business Revolution*, 1993.** Our unscientific estimate is that as many as 50 to 70 percent of the organizations that undertake a reengineering effort do not achieve the dramatic results they intended. [View source](https://archive.org/details/reengineeringcor00hamm_1){#ev-hammer-champy-1993-unscientific-estimate} · verified 2026-09-13 · primary\n- **Hammer & Stanton — *The Reengineering Revolution: A Handbook*, 1995.** There is no inherent success or failure rate for reengineering. [View source](https://archive.org/details/reengineeringrev0000hamm){#ev-hammer-stanton-1995-no-inherent-rate} · verified 2026-09-13 · primary\n- **Mark Hughes — *Do 70 Per Cent of All Organizational Change Initiatives Really Fail? (Journal of Change Management 11(4)); abstract*, 2011.** whilst the existence of a popular narrative of 70 percent organizational change failure is acknowledged, there is no valid and reliable empirical evidence to support such a narrative. [View source](https://doi.org/10.1080/14697017.2011.630506){#ev-hughes-2011-seventy-percent} · verified 2026-09-13 · primary\n- **Hall, Rosenthal & Wade — *How to Make Reengineering Really Work (Harvard Business Review, November-December 1993)*, 1993.** Performance improvement in 11 of the 20 cases that we examined in detail measured less than 5% (whether evaluated in terms of change in earnings before interest and taxes ... or in terms of reduction in total business-unit costs). ... many of the same cases reduced costs of the redesigned process by an impressive 15% to 50%. [View source](https://hbr.org/1993/11/how-to-make-reengineering-really-work){#ev-hall-1993-reengineering-outcomes} · verified 2026-09-13 · ⚠ secondary mirror\n- **Hall, Rosenthal & Wade — *How to Make Reengineering Really Work (Harvard Business Review, November-December 1993)*, 1993.** Our study identified two factors ... breadth and depth ... that are critical in translating short-term, narrow-focus process improvements into long-term profits. ... fundamentally changing six crucial organizational elements, or depth levers ... roles and responsibilities, measurements and incentives, organizational structure, information technology, shared values, and skills. [View source](https://hbr.org/1993/11/how-to-make-reengineering-really-work){#ev-hall-1993-breadth-depth} · verified 2026-09-13 · ⚠ secondary mirror\n- **Stoddard & Jarvenpaa — *Business Process Redesign: Tactics for Managing Radical Change (Journal of Management Information Systems 12(1))*, 1995.** The frequency of revolutionary tactics was highest in the early phases of the initiatives and decreased as they approached implementation. [View source](https://doi.org/10.1080/07421222.1995.11518071){#ev-stoddard-jarvenpaa-1995-revolutionary-tactics} · verified 2026-09-13 · primary\n- **Thomas H. Davenport — *The Fad That Forgot People (Fast Company, November 1995)*, 1995.** The fastest way to show financial results was to reduce headcount. Reengineering became synonymous with cutbacks. [View source](https://www.fastcompany.com/26310/fad-forgot-people){#ev-davenport-1995-reduce-headcount} · verified 2026-09-13 · ⚠ secondary mirror\n- **Maginative — *Klarna dials back its AI customer service strategy, now it's hiring humans again*, 2025.** As cost unfortunately seems to have been a too predominant evaluation factor when organizing this, what you end up having is lower quality. [View source](https://www.maginative.com/article/klarna-dials-back-its-ai-customer-service-strategy-now-its-hiring-humans-again/){#ev-klarna-2025-lower-quality} · verified 2026-09-13 · ⚠ secondary mirror\n- **Thomas H. Davenport — *Why It's Hard to Redesign Work Processes with AI (Substack)*, 2026.** Process reengineering for end-to-end processes is not for the faint-hearted or poverty-stricken. [View source](https://tdavenport.substack.com/p/why-its-hard-to-redesign-work-processes){#ev-davenport-2026-faint-hearted} · verified 2026-09-13 · primary\n- **Madsen & Slåtten — *Business Process Reengineering in the Age of Generative and Agentic AI: Translation, Persistence, and Renewed Relevance (Administrative Sciences 16(8))*, 2026.** AI may alter the technical feasibility of radical process redesign while leaving many classic BPR risks intact. [View source](https://doi.org/10.3390/admsci16080364){#ev-madsen-slatten-2026-bpr-ai} · verified 2026-09-13 · primary\n- **US Food and Drug Administration — *Guidance for Industry. Process Validation: General Principles and Practices, Revision 1*, 2011.** Certain manufacturing changes may call for formal notification to the Agency before implementation, as directed by existing regulations. [View source](https://www.fda.gov/files/drugs/published/Process-Validation--General-Principles-and-Practices.pdf){#ev-fda-2011-change-notification} · verified 2026-09-13 · primary\n- **McElheran, Yang, Kroff & Brynjolfsson — *The Rise of Industrial AI in America: Microfoundations of the Productivity J-curve(s) (US Census Bureau CES Working Paper 25-27)*, 2025.** among older establishments, abandonment of structured production-management practices accounts for roughly one-third of these losses. [View source](https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf){#ev-mcelheran-2025-abandoned-practices} · verified 2026-09-13 · primary\n- **Repenning & Sterman — *Nobody Ever Gets Credit for Fixing Problems that Never Happened: Creating and Sustaining Process Improvement (California Management Review 43(4))*, 2001.** A number of careful studies have now demonstrated that companies making a serious commitment to the disciplines and methods associated with TQM outperform their competitors. ... few efforts to implement such programs actually produce significant results. ... To see the capability trap in action. [View source](https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf){#ev-repenning-sterman-2001-tqm} · verified 2026-09-13 · primary",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "id": "ev-mittr-deloitte-2026-agent-first",
+          "org": "MIT Technology Review Insights",
+          "url": "https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/",
+          "wording": "In association with the Deloitte Microsoft Technology Practice ... unlocking their potential requires redesigning processes around agents rather than bolting them onto fragmented legacy workflows using traditional optimization methods. Companies must become agent first.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hammer-1990-paving-cow-paths",
+          "org": "Michael Hammer",
+          "url": "https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate",
+          "wording": "They leave the existing processes intact and use computers simply to speed them up. ... It is time to stop paving the cow paths. Instead of embedding outdated processes in silicon and software, we should obliterate them and start over.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hammer-1990-all-or-nothing",
+          "org": "Michael Hammer",
+          "url": "https://hbr.org/1990/07/reengineering-work-dont-automate-obliterate",
+          "wording": "Reengineering cannot be planned meticulously and accomplished in small and cautious steps. It's an all-or-nothing proposition with an uncertain result.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-brynjolfsson-hitt-2003-long-run",
+          "org": "Brynjolfsson & Hitt",
+          "url": "https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf",
+          "wording": "in the short term (using one year differences) ... the productivity and output contributions associated with computerization are up to five times greater over long periods (using five to seven year differences). The results suggest that the observed contribution of computerization is accompanied by relatively large and time-consuming investments in complementary inputs",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-brynjolfsson-hitt-2003-caveat",
+          "org": "Brynjolfsson & Hitt",
+          "url": "https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf",
+          "wording": "innovations in business methods and organization ... Without a direct measure of the cost and timing of complementary investments, we cannot determine whether correlations between computers and MFP represent a true correlation with MFP growth (if the complements were appropriately included) or simply an equilibrium return on a system of investments",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-bloom-sadun-van-reenen-2012-us-it",
+          "org": "Bloom, Sadun & Van Reenen",
+          "url": "https://www.nber.org/papers/w13085",
+          "wording": "establishments that are taken over by US multinationals increase the productivity of their IT, whereas observationally identical establishments taken over by non-US multinationals do not. One explanation for these patterns is that US firms are organized in a way that allows them to use new technologies more efficiently.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mcelheran-2025-industrial-ai-jcurve",
+          "org": "McElheran, Yang, Kroff & Brynjolfsson",
+          "url": "https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf",
+          "wording": "Working with the Census Bureau to collect detailed large-scale data for 2017 and 2021, we focus on AI-related technologies with industrial applications. We find causal evidence of J-curve-shaped returns, where short-term performance losses precede longer-term gains. Consistent with costly adjustment taking place within core production processes",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mcelheran-2025-abandoned-practices",
+          "org": "McElheran, Yang, Kroff & Brynjolfsson",
+          "url": "https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf",
+          "wording": "among older establishments, abandonment of structured production-management practices accounts for roughly one-third of these losses",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-kim-kim-koning-2026-mapping-ai",
+          "org": "Kim, Kim & Koning",
+          "url": "https://www.hkubs.hku.hk/event/mapping-ai-into-production-a-field-experiment-on-firm-performance/",
+          "wording": "Across 515 startups from around the world, we run a field experiment in which treated firms receive information about how other firms have reorganized production around AI ... We find that treated firms discover more AI use cases, a 44% increase ... and generate 1.9x higher revenue. Revenue and investment gains are largest at the 90th percentile and above, consistent with AI unlocking the potential of especially promising ventures ... These results provide causal evidence that AI improves firm performance and productivity even at its current capabilities, and that discovering where and how to deploy AI is a key bottleneck",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-dillon-2025-no-task-shifts",
+          "org": "Dillon, Jaffe, Immorlica & Stanton",
+          "url": "https://www.nber.org/papers/w33795",
+          "wording": "Apart from these individual time savings, we do not detect shifts in the quantity or composition of workers' tasks resulting from individual-level AI provision.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-humlum-vestergaard-2025-precise-zeros",
+          "org": "Humlum & Vestergaard",
+          "url": "https://bfi.uchicago.edu/wp-content/uploads/2025/04/BFI_WP_2025-56-1.pdf",
+          "wording": "We link our survey data to administrative records on monthly earnings, hours, and occupations ... AI chatbots have had no significant impact on earnings or recorded hours in any occupation, with confidence intervals ruling out effects larger than 1%.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-brynjolfsson-li-raymond-2023-support",
+          "org": "Brynjolfsson, Li & Raymond",
+          "url": "https://www.nber.org/papers/w31161",
+          "wording": "Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers. We provide suggestive evidence that the AI model disseminates the best practices of more able workers",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-fang-2026-retail-field-experiments",
+          "org": "Fang et al.",
+          "url": "https://arxiv.org/abs/2510.12049",
+          "wording": "GenAI into seven business workflows ... We find that GenAI adoption increases sales in most workflows, with effects ranging from no detectable impact to 16.3%, depending on GenAI's marginal contribution relative to baseline firm practices.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mckinsey-rewiring-2025-biggest-effect",
+          "org": "McKinsey",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value",
+          "wording": "out of 25 attributes tested for organizations of all sizes, the redesign of workflows has the biggest effect on an organization's ability to see EBIT impact from its use of gen AI. ... The correlation analyses considered 25 attributes and the reported effect of gen AI use on organizations' EBIT, and using the Johnson's Relative Weights regression analysis yielded an R-squared of 0.20.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mckinsey-state-of-ai-2026-highperf-definition-rethink",
+          "org": "McKinsey",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          "wording": "AI high performers are respondents who reported that 5% or more of their organization's EBIT and \"significant value\" are attributable to the organization's use of AI. ... account for just 6 percent of survey respondents, unchanged from 2025.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mckinsey-state-of-ai-2026-highperf-redesign-rethink",
+          "org": "McKinsey",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          "wording": "Nearly three-quarters of high performers report fundamentally redesigning workflows because of their AI use, up from 55 percent last year. By comparison, just one-quarter of other respondents report doing so.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mckinsey-state-of-ai-2026-bundle-rethink",
+          "org": "McKinsey",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          "wording": "These are all practices that, in our experience, reinforce one another.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-mckinsey-state-of-ai-2026-impact-flat-rethink",
+          "org": "McKinsey",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          "wording": "The share of respondents reporting enterprise-level financial impact from AI use has not changed since last year. ... About four in ten respondents (37 percent) report that AI has contributed positively to their organizations' EBIT, essentially unchanged from 2025",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-baslandze-2026-perceived-vs-measured",
+          "org": "Baslandze et al.",
+          "url": "https://www.nber.org/papers/w34984",
+          "wording": "CFO-reported (that is, perceived) improvements in labor productivity due to AI are substantially larger than the revenue-based productivity gains implied by observed changes in revenue and employment due to AI. ... likely reflecting delayed output realization and quality improvements that are not yet captured in measured revenues ... the implied labor productivity effect of AI based on firms' own assessments of how AI investment has affected",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-aral-2006-reverse-causality",
+          "org": "Aral, Brynjolfsson & Wu",
+          "url": "https://archive.nyu.edu/jspui/bitstream/2451/27759/2/CPP-11-06.pdf",
+          "wording": "these results imply that firms that experience performance gains from ERP go on to purchase SCM and CRM.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-denrell-2003-survivor-sample",
+          "org": "Jerker Denrell",
+          "url": "https://www.gsb.stanford.edu/faculty-research/publications/vicarious-learning-undersampling-failure-myths-management",
+          "wording": "risky practices, even if they are unrelated to performance in the full population of organizations, may seem to be positively related to performance in a sample of survivors.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hammer-champy-1993-unscientific-estimate",
+          "org": "Hammer & Champy",
+          "url": "https://archive.org/details/reengineeringcor00hamm_1",
+          "wording": "Our unscientific estimate is that as many as 50 to 70 percent of the organizations that undertake a reengineering effort do not achieve the dramatic results they intended.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hammer-stanton-1995-no-inherent-rate",
+          "org": "Hammer & Stanton",
+          "url": "https://archive.org/details/reengineeringrev0000hamm",
+          "wording": "There is no inherent success or failure rate for reengineering.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hughes-2011-seventy-percent",
+          "org": "Mark Hughes",
+          "url": "https://doi.org/10.1080/14697017.2011.630506",
+          "wording": "whilst the existence of a popular narrative of 70 percent organizational change failure is acknowledged, there is no valid and reliable empirical evidence to support such a narrative.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hall-1993-reengineering-outcomes",
+          "org": "Hall, Rosenthal & Wade",
+          "url": "https://hbr.org/1993/11/how-to-make-reengineering-really-work",
+          "wording": "Performance improvement in 11 of the 20 cases that we examined in detail measured less than 5% (whether evaluated in terms of change in earnings before interest and taxes ... or in terms of reduction in total business-unit costs). ... many of the same cases reduced costs of the redesigned process by an impressive 15% to 50%.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-hall-1993-breadth-depth",
+          "org": "Hall, Rosenthal & Wade",
+          "url": "https://hbr.org/1993/11/how-to-make-reengineering-really-work",
+          "wording": "Our study identified two factors ... breadth and depth ... that are critical in translating short-term, narrow-focus process improvements into long-term profits. ... fundamentally changing six crucial organizational elements, or depth levers ... roles and responsibilities, measurements and incentives, organizational structure, information technology, shared values, and skills.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-stoddard-jarvenpaa-1995-revolutionary-tactics",
+          "org": "Stoddard & Jarvenpaa",
+          "url": "https://doi.org/10.1080/07421222.1995.11518071",
+          "wording": "The frequency of revolutionary tactics was highest in the early phases of the initiatives and decreased as they approached implementation.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-davenport-1995-reduce-headcount",
+          "org": "Thomas H. Davenport",
+          "url": "https://www.fastcompany.com/26310/fad-forgot-people",
+          "wording": "The fastest way to show financial results was to reduce headcount. Reengineering became synonymous with cutbacks.",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-klarna-2025-lower-quality",
+          "org": "Maginative",
+          "url": "https://www.maginative.com/article/klarna-dials-back-its-ai-customer-service-strategy-now-its-hiring-humans-again/",
+          "wording": "As cost unfortunately seems to have been a too predominant evaluation factor when organizing this, what you end up having is lower quality",
+          "status": "secondary-mirror",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-davenport-2026-faint-hearted",
+          "org": "Thomas H. Davenport",
+          "url": "https://tdavenport.substack.com/p/why-its-hard-to-redesign-work-processes",
+          "wording": "Process reengineering for end-to-end processes is not for the faint-hearted or poverty-stricken.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-madsen-slatten-2026-bpr-ai",
+          "org": "Madsen & Slåtten",
+          "url": "https://doi.org/10.3390/admsci16080364",
+          "wording": "AI may alter the technical feasibility of radical process redesign while leaving many classic BPR risks intact.",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-fda-2011-change-notification",
+          "org": "US Food and Drug Administration",
+          "url": "https://www.fda.gov/files/drugs/published/Process-Validation--General-Principles-and-Practices.pdf",
+          "wording": "Certain manufacturing changes may call for formal notification to the Agency before implementation, as directed by existing regulations",
+          "status": "primary",
+          "verified": "2026-09-13"
+        },
+        {
+          "id": "ev-repenning-sterman-2001-tqm",
+          "org": "Repenning & Sterman",
+          "url": "https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf",
+          "wording": "A number of careful studies have now demonstrated that companies making a serious commitment to the disciplines and methods associated with TQM outperform their competitors. ... few efforts to implement such programs actually produce significant results. ... To see the capability trap in action",
+          "status": "primary",
+          "verified": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "bundle": "research-notes",
       "path": "what-an-ai-test-can-and-cannot-tell-you.md",
       "url": "https://knowledge.onesteplabs.com/research-notes/what-an-ai-test-can-and-cannot-tell-you/",
       "title": "What an AI Test Can and Cannot Tell You",
@@ -10615,6 +10895,11 @@
       "date": "2026-07-01",
       "bundle": "open-knowledge-format",
       "entry": "Creation**: two themes — Understanding OKF (the format as it stands today) and The Potential (our grounded read of where it could go)."
+    },
+    {
+      "date": "2026-09-13",
+      "bundle": "research-notes",
+      "entry": "Creation**: whether AI value requires redesigning a process rather than automating it. What the"
     },
     {
       "date": "2026-09-13",

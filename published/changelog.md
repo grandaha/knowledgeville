@@ -3,13 +3,21 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-09-13"
+timestamp: "2026-09-14"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.6.0 — 2026-09-14
+
+## New research note: Rethink the Process, or Just Add AI?
+
+A working note on the common advice that organizations should not automate their existing processes with AI, but redesign them around it. It finds that the mild form holds: technology pays more when the organization changes around it. The absolute form does not: two causal studies measured gains from adding AI to an unchanged workflow. It shows that the best-known survey finding behind the advice is a correlation, and that McKinsey's newest edition no longer repeats that analysis. It also looks at what 1990s reengineering taught, including where its famous failure rate came from, and when improving the existing process is the safer bet.
+
+- [Rethink the Process, or Just Add AI?](https://knowledge.onesteplabs.com/research-notes/rethink-the-process-or-just-add-ai/)
 
 ## v12.5.0 — 2026-09-13
 

@@ -11,6 +11,11 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.6.3 — 2026-09-14
+
+### Citation corrections
+* Consultancy survey findings say only what their sources say (source-diversity pass 1)
+
 ## v12.6.2 — 2026-09-14
 
 ## Updated: how many generative-AI projects were abandoned

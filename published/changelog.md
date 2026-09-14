@@ -13,8 +13,16 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.6.1 — 2026-09-14
 
-### Citation corrections
-* Describe the workflow-redesign finding as a correlation
+## Corrections: the evidence on redesigning work for AI
+
+Several pages presented McKinsey's 2025 finding on workflow redesign as a cause of AI profit impact. The report's own footnote calls it a correlation, so these pages now describe it that way. They quote its 21% figure as McKinsey wrote it ("fundamentally redesigned at least some workflows"), correct how the MIT study's figures and methods are described, and link to the research note that weighs the evidence.
+
+- [Running a Workflow Optimization Program](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/05-practitioner-guide-running-a-workflow-optimization-program/): the "paving the cow path" section now credits the phrase to Michael Hammer's 1990 case for reengineering.
+- [Workflow Optimization & Automation](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/05-workflow-optimization-and-automation/)
+- [AI Adoption Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/06-ai-adoption-and-culture/02-ai-adoption-framework/)
+- [Measurement & Value Realization Framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework/), [Assessment: Measurement Maturity Scoring](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/05-assessment-measurement-maturity-scoring/), and [Sequencing Playbooks](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/sequencing-playbooks/)
+- [Finding Where AI Earns Its Keep](https://knowledge.onesteplabs.com/ai-accountability/03-ai-enablement/04-finding-where-ai-earns-its-keep/) no longer calls adding AI to an existing process "the biggest mistake".
+- Research note: [Rethink the Process, or Just Add AI?](https://knowledge.onesteplabs.com/research-notes/rethink-the-process-or-just-add-ai/)
 
 ## v12.6.0 — 2026-09-14
 

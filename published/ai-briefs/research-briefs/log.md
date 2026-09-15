@@ -1,5 +1,10 @@
 # Change log — Research Briefs
 
+## 2026-09-15
+
+* **Creation**: A brief on a theory paper arguing that AI takes over runs of adjacent steps, not single tasks, so where AI-able work sits in a workflow matters as much as how much there is. Its evidence from 872 US occupations is correlational and sees only Claude usage. Opens the AI and Work theme. [How the Order of the Work May Shape What AI Takes On](/ai-briefs/research-briefs/ai-and-work/chaining-tasks.md)
+* **Creation**: A new theme section for papers on how AI changes tasks, jobs, and the way work is organized. [AI and Work](/ai-briefs/research-briefs/ai-and-work/index.md)
+
 ## 2026-06-29
 
 * **Creation**: Brief — AI models drop their causal caution when asked for advice (asserting cause-and-effect they'd hedge under analysis), and a one-line re-prompt restores it. Opens the Reasoning and Capabilities theme; first paper surfaced by the business-relevance discovery filter. — [Why AI Drops Its Caution the Moment You Ask for Advice](/ai-briefs/research-briefs/reasoning-and-capabilities/causal-caution.md)

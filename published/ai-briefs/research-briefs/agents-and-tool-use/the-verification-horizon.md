@@ -68,7 +68,7 @@ Trust the direction. Don't bank on the exact numbers.
 
 **Bottom line:** a credible, large-scale engineering report. Take the idea — that verification has to co-evolve with the generator — and leave the percentages as direction, not settled effect sizes.
 
-## So what — for you
+## So what, for you
 
 Concrete moves, in rough priority order:
 

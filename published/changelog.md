@@ -3,13 +3,22 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-09-14"
+timestamp: "2026-09-15"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.7.0 — 2026-09-15
+
+## New: how the order of the work may shape what AI takes on
+
+Research Briefs opens a new theme, AI and Work, with a brief of *Chaining Tasks, Redefining Work: A Theory of AI Automation* (Demirer, Horton, Immorlica, Lucier and Shahidi, 2026). The paper argues that AI pays off most on runs of neighboring steps with one human check at the end, so where AI-suitable work sits in a workflow matters, not just how much of it there is. The brief sets out what the evidence can and cannot show, and the authors' ties to Microsoft and Anthropic.
+
+- [How the Order of the Work May Shape What AI Takes On](https://knowledge.onesteplabs.com/ai-briefs/research-briefs/ai-and-work/chaining-tasks/)
+- [AI and Work](https://knowledge.onesteplabs.com/ai-briefs/research-briefs/ai-and-work/), the new theme
 
 ## v12.6.3 — 2026-09-14
 

@@ -62,7 +62,7 @@ Take the direction — advice framing flips caution off, a nudge flips it back �
 
 **Do the conclusions follow?** At the level the author states them, yes. The suppression and the recoverability are well supported. The "no difference between models" result is a weak null on a small sample, so don't read it as "all models behave identically." The organizational-risk and audit-design ideas are labeled as theory, not findings.
 
-## So what — for you
+## So what, for you
 
 If AI output feeds a real decision, assume any cause-and-effect claim made in "helpful advice" mode is suspect until it's re-checked.
 

@@ -13,7 +13,7 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.8.1 — 2026-09-16
 
-### Citations
+### Updated: independent evidence now sits beside the consultancy figures
 
 **Consultancy figures now say whose survey they are, and independent evidence sits beside them.** Across the Enterprise AI Transformation bundle, 44% of citations came from consultancies or analyst firms, and the concentration mattered more than the average: the executive summary sat at 85%, and the measurement and strategy pages at 68 to 84%. Where such a figure carries a claim, the page now names the publisher, says that respondents are describing their own organizations, and notes that the publisher sells the work.
 

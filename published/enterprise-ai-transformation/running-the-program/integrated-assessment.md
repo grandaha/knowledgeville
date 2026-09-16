@@ -73,7 +73,7 @@ This page is the *how-to-run-it* companion to the [Framework Architecture](/ente
 
 ## What This Is For
 
-The Integrated Assessment answers one question: **given everything in motion, where is value actually being throttled, and what should we fund next?** It is deliberately a cross-functional *session*, not a survey emailed to eight owners, because the most expensive AI gaps are organizational, not technical. BCG's guidance is to direct roughly **70% of AI effort to people and process, 20% to technology and data, and 10% to algorithms** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)) — and you only find people-and-process gaps when the people who own them are in the same room reconciling their scores against each other.
+The Integrated Assessment answers one question: **given everything in motion, where is value actually being throttled, and what should we fund next?** It is deliberately a cross-functional *session*, not a survey emailed to eight owners, because the most expensive AI gaps are organizational, not technical. BCG's rule of thumb, from a firm that sells transformation work, puts roughly **70% of strategic focus on people and processes, 20% on technology, and 10% on algorithms** ([BCG, 2025](#ev-bcg-value-gap-2025-ten-twenty-seventy)) — and you only find people-and-process gaps when the people who own them are in the same room reconciling their scores against each other.
 
 Use it three ways:
 

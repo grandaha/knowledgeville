@@ -11,7 +11,7 @@ generated:
 stale_after: "2026-12-31T00:00:00Z"
 verified:
   - by: "human:daveraffaele"
-    at: "2026-09-14T00:00:00Z"
+    at: "2026-09-16T00:00:00Z"
 sources:
   - id: ev-mit-nanda-genai-divide-2025-no-pl-impact
     resource: "https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf"
@@ -21,6 +21,10 @@ sources:
     resource: "https://www.gartner.com/en/articles/genai-project-failure"
     title: "Why Half of GenAI Projects Fail: Avoid These 5 Common Mistakes (Arun Chandrasekaran, January 26, 2026)"
     author: Gartner
+  - id: ev-wharton-gbk-2025-roi-metric-tracking
+    resource: "https://ai.wharton.upenn.edu/wp-content/uploads/2025/10/2025-Wharton-GBK-AI-Adoption-Report_Full-Report.pdf"
+    title: "Accountable Acceleration: Gen AI Fast-Tracks Into the Enterprise"
+    author: "Wharton Human-AI Research & GBK Collective"
   - id: ev-mckinsey-rewiring-2025-kpi-tracking
     resource: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value"
     title: "The State of AI: How Organizations Are Rewiring to Capture Value"
@@ -159,6 +163,8 @@ Each dimension climbs the same five rungs — **1 Blind → 2 Tracking → 3 Att
 
 ## Calibration Benchmarks
 
+The benchmarks below come almost entirely from consultancy and analyst surveys, in which executives describe their own organizations to a firm that sells this work. Use them to calibrate a score, not as measured fact. They also disagree with each other. A survey of 801 large-firm leaders found 72% saying they track structured, business-linked ROI metrics ([Wharton & GBK, 2025](#ev-wharton-gbk-2025-roi-metric-tracking)). McKinsey puts solution-level KPI tracking at fewer than one in five. The questions differ, and so do the answers.
+
 Use these to judge where "most organizations" sit, so a score reflects reality rather than optimism:
 
 - **KPI discipline is rare.** **Fewer than one in five organizations track well-defined KPIs for their gen-AI solutions** ([McKinsey, 2025](#ev-mckinsey-rewiring-2025-kpi-tracking)), and while **48% report using specific KPIs to evaluate gen-AI**, **41% have struggled to define and measure the exact impacts** ([Deloitte, 2024](#ev-deloitte-state-genai-2024-specific-kpis); [Deloitte, 2024](#ev-deloitte-state-genai-2024-measure-impacts-struggle)). Most organizations score **D1–D2 ≤ 2** until they act.
@@ -198,6 +204,7 @@ Measurement gates value realization itself: a low score here means you cannot te
 
 - **MIT Project NANDA — *The GenAI Divide: State of AI in Business 2025*, 2025.** Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact. [View source](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf){#ev-mit-nanda-genai-divide-2025-no-pl-impact} · verified 2026-06-20 · ⚠ secondary mirror
 - **Gartner — *Why Half of GenAI Projects Fail: Avoid These 5 Common Mistakes (Arun Chandrasekaran, January 26, 2026)*, 2026.** Gartner finds that by the end of last year, at least 50% of generative AI projects were abandoned after proof of concept due to poor data quality, inadequate risk controls, escalating costs or unclear business value. [View source](https://www.gartner.com/en/articles/genai-project-failure){#ev-gartner-genai-failure-2026-half-abandoned} · verified 2026-09-14 · ⚠ secondary mirror
+- **Wharton Human-AI Research & GBK Collective — *Accountable Acceleration: Gen AI Fast-Tracks Into the Enterprise*, 2025.** quarters (72%) of business leaders report tracking structured, business-linked ROI metrics. [View source](https://ai.wharton.upenn.edu/wp-content/uploads/2025/10/2025-Wharton-GBK-AI-Adoption-Report_Full-Report.pdf){#ev-wharton-gbk-2025-roi-metric-tracking} · verified 2026-09-16 · primary
 - **McKinsey — *The State of AI: How Organizations Are Rewiring to Capture Value*, 2025.** Less than one in five organizations are tracking KPIs for gen AI solutions — and tracking well-defined KPIs is the practice with the most impact on the bottom line. [View source](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value){#ev-mckinsey-rewiring-2025-kpi-tracking} · verified 2026-06-20 · primary
 - **Deloitte — *The State of Generative AI in the Enterprise: Now decides Next (Q3)*, 2024.** Organizations are using specific KPIs for evaluating GenAI performance (48%). [View source](https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html){#ev-deloitte-state-genai-2024-specific-kpis} · verified 2026-06-20 · primary
 - **Deloitte — *The State of Generative AI in the Enterprise: Now decides Next (Q3)*, 2024.** 41% have struggled to define and measure the exact impacts of their GenAI efforts. [View source](https://www.deloitte.com/us/en/about/press-room/state-of-generative-ai-Q3.html){#ev-deloitte-state-genai-2024-measure-impacts-struggle} · verified 2026-06-20 · primary

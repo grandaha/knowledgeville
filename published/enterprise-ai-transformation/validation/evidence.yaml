@@ -4061,3 +4061,256 @@
   verified: 2026-09-14
   status: secondary-mirror
   expires: 2027-09-14
+
+- id: ev-census-btos-2026-firm-ai-use
+  claim: "Share of US firms reporting current AI use, Census Bureau Business Trends and Outlook Survey. Counts firms one vote each, unweighted by size, so small businesses dominate the denominator. Stake: none, federal statistical agency"
+  value: "19.8% national rate (May 2026); 17-20% Dec 2025 to May 2026; 37% of firms with 250+ employees"
+  wording: "overall AI usage hovered between 17% and 20% ... the national rate (19.8%) ... 37% of firms with at least 250 employees reported using AI"
+  source:
+    org: "US Census Bureau"
+    report: "Large Firms With at Least 20 Employees Biggest AI Users (Business Trends and Outlook Survey)"
+    edition: "2026"
+    url: https://www.census.gov/library/stories/2026/05/ai-use-businesses.html
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-census-ces-2026-employment-weighted-ai-use
+  claim: "AI use from Census BTOS AI-supplement microdata, reported as a share of firms and employment-weighted, with the depth of use among adopters. Reference period Nov 2025 to Jan 2026. Working paper, not an official Bureau estimate; the performance link is a correlation, not causal. Stake: none"
+  value: "18% of firms, 32% employment-weighted; 50-60% (60-70% weighted) at very large knowledge-sector firms; 57% of adopters use AI in three or fewer functions"
+  wording: "18% of firms used AI in a business function, rising to 32% on an employment-weighted basis ... 50%-60% (60%-70%, employment-weighted) for very large firms ... 57% of users integrate AI in three or fewer business functions ... robust positive correlation between firm commercial performance and the breadth of AI integration"
+  source:
+    org: "Bonney, Breaux, Dinlersoz, Foster, Haltiwanger & Pande (US Census Bureau CES)"
+    report: "The Microstructure of AI Diffusion: Evidence from Firms, Business Functions, and Worker Tasks (CES-WP-26-25)"
+    edition: "2026"
+    url: https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-eurostat-2025-eu-enterprise-ai-use
+  claim: "Share of EU enterprises with 10 or more employees using at least one AI technology, and the year-on-year change. Firm counts unweighted by size; excludes the financial sector. Stake: none, EU statistical office"
+  value: "20.0% in 2025, up from 13.5% in 2024"
+  wording: "20.0% of EU enterprises with 10 or more employees used artificial intelligence ... 13.5% in 2024"
+  source:
+    org: "Eurostat"
+    report: "20% of EU enterprises use AI technologies (survey on ICT usage and e-commerce in enterprises)"
+    edition: "2025"
+    url: https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251211-2
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-nber-firm-data-on-ai-2026-no-own-firm-impact
+  claim: "Cross-country survey of about 6,000 senior executives at US, UK, German and Australian firms on AI use and its effect on their own firm over the past three years. Executive self-report, so subject to the same perception bias as consultancy panels; the value is independent authorship and a backward-looking question. Working paper, not peer reviewed. Stake: none commercial"
+  value: "69% of firms actively use AI; nine in ten executives report no impact on employment or productivity"
+  wording: "69% of firms actively use AI ... nine-in-ten reporting no impact on employment or productivity"
+  source:
+    org: "Yotzov, Barrero, Bloom, Bunn, Davis, Foster et al."
+    report: "Firm Data on AI (NBER Working Paper 34836)"
+    edition: "2026"
+    url: https://www.nber.org/papers/w34836
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-humlum-vestergaard-2026-null-earnings-hours-eat
+  claim: "Difference-in-differences estimate of AI chatbot adoption on earnings and recorded hours, linking adoption surveys in 11 exposed occupations to Danish administrative records. Measured outcomes rather than self-report. Denmark, chatbots only, two-year horizon; the March 2026 revision widened the ruled-out bound from 1% to 2%. Stake: none commercial"
+  value: "precise nulls ruling out effects larger than 2% two years after ChatGPT's launch"
+  wording: "ruling out effects larger than 2% two years after the launch of ChatGPT"
+  source:
+    org: "Humlum & Vestergaard"
+    report: "Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI (NBER Working Paper 33777, revised March 2026)"
+    edition: "2026"
+    url: https://www.nber.org/papers/w33777
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-census-btos-2024-ai-deadoption-expectation
+  claim: "Share of US firms currently using AI that did not expect to be using it six months later, from Census BTOS. This is firm-level churn in self-reported use, and an intention rather than an observed abandonment; it is not comparable to a project-level abandonment rate. Reference period Dec 2023 to Feb 2024, about 16% biweekly response rate. Working paper, not an official Census estimate. Stake: none"
+  value: "14.5% of current AI users did not expect to use AI in future; a further 17.6% did not know"
+  wording: "a non-trivial fraction (14.5%) of the current users do not expect to use in the future, and another 17.6% don't know whether they will ... The average biweekly response rate over the period of collection for AI-related core and supplement content is about 16%"
+  source:
+    org: "Bonney, Breaux, Buffington, Dinlersoz, Foster, Goldschlag, Haltiwanger, Kroff & Savage (US Census Bureau CES)"
+    report: "Tracking Firm Use of AI in Real Time: A Snapshot from the Business Trends and Outlook Survey (CES 24-16; also NBER w32319)"
+    edition: "2024"
+    url: https://www.census.gov/hfp/btos/downloads/CES-WP-24-16.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-faact-2026-ai-abandonment-post-deployment
+  claim: "Peer-reviewed study of documented AI abandonment cases: abandonment happens overwhelmingly after deployment, and is rarely documented at all. This is a distribution across documented cases with no denominator of AI projects, and selection favours mature, newsworthy systems, so it cannot be turned into a failure rate. Stake: none, academic (ACM FAccT)"
+  value: "85% of 91 analysed abandonment cases occurred post-deployment; abandonment appears in under 5% of repository entries"
+  wording: "85% (n=77) of analyzed incidents were abandoned post-deployment ... Less than 5% of all AIAAIC repository entries involved AI abandonment"
+  source:
+    org: "Chappidi & Singh (University of Cambridge)"
+    report: "To Build or Not to Build? Factors that Lead to Non-Development or Abandonment of AI Systems (ACM FAccT 2026)"
+    edition: "2026"
+    url: https://arxiv.org/pdf/2604.28053
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-wharton-gbk-2025-roi-metric-tracking
+  claim: "Share of large-firm leaders who say they track structured, business-linked gen-AI ROI metrics. Self-reported, and a broader question than tracking KPIs for a specific gen-AI solution, so it is not the complement of McKinsey's KPI figure. 801 senior decision-makers at US firms with 1,000+ employees. STAKE: co-produced with GBK Collective, which sells AI advisory work"
+  value: "72% report tracking structured, business-linked ROI metrics"
+  wording: "quarters (72%) of business leaders report tracking structured, business-linked ROI metrics"
+  source:
+    org: "Wharton Human-AI Research & GBK Collective"
+    report: "Accountable Acceleration: Gen AI Fast-Tracks Into the Enterprise"
+    edition: "2025"
+    url: https://ai.wharton.upenn.edu/wp-content/uploads/2025/10/2025-Wharton-GBK-AI-Adoption-Report_Full-Report.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-nanda-2025-method-limitations
+  claim: "The method behind the widely cited 95% zero-return figure: preliminary, interview-coded research with a researcher-defined success bar, which the report itself says is directional rather than drawn from company reporting. Recorded so pages citing the 95% can state what kind of evidence it is. STAKE: Project NANDA promotes agentic AI architecture, which is the report's own thesis"
+  value: "figures described as directional, from interviews rather than company reporting; success definitions vary across organizations"
+  wording: "95% of organizations are getting zero return ... directionally accurate based on individual interviews rather than official company reporting ... success definitions may differ across organizations"
+  source:
+    org: "MIT Project NANDA"
+    report: "The GenAI Divide: State of AI in Business 2025 (methodology and limitations)"
+    edition: "2025"
+    url: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: secondary-mirror
+  expires: 2027-09-16
+
+- id: ev-ieee-2010-chaos-figures-unpublished-method
+  claim: "Peer-reviewed precedent for discounting a failure rate whose method is not published: applying the Standish CHAOS definitions to 5,457 forecasts of 1,211 real projects produced meaningless figures, and Standish's chairman replied that the reports should be treated as opinion. About software projects in 2010, not AI; use for the methodological point only. Stake: none, academic"
+  value: "CHAOS definitions produce meaningless figures; publisher calls the reports opinion"
+  wording: "result in meaningless figures ... Standish opinion and the reader bears all risk in the use of this opinion"
+  source:
+    org: "Eveleens & Verhoef (Vrije Universiteit Amsterdam)"
+    report: "The Rise and Fall of the Chaos Report Figures (IEEE Software 27(1))"
+    edition: "2010"
+    url: https://www.cs.vu.nl/~x/the_rise_and_fall_of_the_chaos_report_figures.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-atlantafed-2026-reported-vs-implied-ai-productivity
+  claim: "Central-bank and academic survey that checked firms' reported AI productivity gains against the gains implied by the same firms' reported revenue and employment changes. Reported gains were about three times the implied ones. 603 responses to the AI questionnaire in the Duke/Atlanta Fed/Richmond Fed CFO Survey panel. Working paper; views not those of the Federal Reserve. Stake: none commercial"
+  value: "1.8% mean reported AI-attributable labour productivity growth for 2025 vs 0.6% implied"
+  wording: "the mean reported labor productivity growth attributable to AI is 1.8% ... implied labor productivity growth is substantially smaller at 0.6% ... produced 603 responses"
+  source:
+    org: "Baslandze, Edwards, Graham, McClure, Sparks, Meyer, Waddell & Weitz (Federal Reserve Bank of Atlanta)"
+    report: "Artificial Intelligence, Productivity, and the Workforce: Evidence from Corporate Executives (Atlanta Fed Working Paper 2026-4)"
+    edition: "2026"
+    url: https://www.atlantafed.org/-/media/Project/Atlanta/FRBA/Documents/research/publication/working-paper/2026/03/25/04-artificial-intelligence-productivity-and-the-workforce-evidence-from-corporate-executives.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-jmis-2022-it-cost-overrun-power-law
+  claim: "Peer-reviewed evidence that IT project cost overruns follow a power-law distribution, so a single headline failure rate is the wrong shape of claim: most projects overrun a little and a fat tail overruns enormously. 5,392 IT projects completed 2002 to 2014, so pre-AI, and about overruns rather than abandonment. Stake: none, academic"
+  value: "cost overruns power-law distributed across 5,392 projects"
+  wording: "IT project cost overruns follow a power-law distribution"
+  source:
+    org: "Flyvbjerg, Budzier, Lee, Keil, Lunn & Bester"
+    report: "The Empirical Reality of IT Project Cost Overruns: Discovering A Power-Law Distribution (Journal of Management Information Systems 39(3))"
+    edition: "2022"
+    url: https://arxiv.org/pdf/2210.01573
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-bloom-garicano-sadun-vanreenen-2009-it-decentralizes
+  claim: "Information technology and communication technology pull in opposite organizational directions: better information technology goes with MORE autonomy for plant managers and workers, while data networks go with less. 949 plants across the US and seven European countries, surveyed 2006. Correlational, with an instrumental-variables check using cross-country telecom-cost variation. Not about an AI centre of excellence. Stake: none, academic"
+  value: "information technology goes with more autonomy; communication technology with less"
+  wording: "better information technologies (Enterprise Resource Planning for plant managers and CAD/CAM for production workers) are associated with more autonomy and a wider span of control ... communication technologies (like data networks) decrease autonomy"
+  source:
+    org: "Bloom, Garicano, Sadun & Van Reenen"
+    report: "The Distinct Effects of Information Technology and Communication Technology on Firm Organization (NBER Working Paper 14975; later Management Science 60(12))"
+    edition: "2009"
+    url: https://www.nber.org/papers/w14975
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-wu-lou-hitt-2019-analytics-decentralized-innovation
+  claim: "Analytics capability delivered GREATER productivity benefit at firms whose innovation structure was decentralized, not centralized. Panel of 1,864 public firms, 1988 to 2013; correlational. Measures inventor-network structure rather than an AI operating model. Stake: none, academic (Management Science)"
+  value: "decentralized-innovation firms showed greater productivity benefit from analytics capability"
+  wording: "firms with a decentralized innovation structure have a greater demand for analytics skills and receive greater productivity benefits from their analytics capabilities"
+  source:
+    org: "Wu, Lou & Hitt"
+    report: "Data Analytics Supports Decentralized Innovation (Management Science 65(10))"
+    edition: "2019"
+    url: https://doi.org/10.1287/mnsc.2019.3344
+    pdf_hash:
+  verified: 2026-09-16
+  status: secondary-mirror
+  expires: 2027-09-16
+
+- id: ev-brynjolfsson-hitt-2000-long-run-computing-returns
+  claim: "Measured returns to computers rose sharply as the measurement window lengthened, which the authors attribute to complementary organizational investment: the same spending looks unproductive in year one and productive over seven. 600 large US firms, 1987 to 1994; correlational growth accounting with an instrumental-variables robustness check. Working-paper version; the published 2003 article reports 527 firms and up to five times. Stake: none, academic"
+  value: "returns two to five times greater over seven-year differences than one-year"
+  wording: "the implied returns to computers are two to five times greater when differences are taken over seven years instead of one year ... 600 large US firms over 1987-1994"
+  source:
+    org: "Brynjolfsson & Hitt"
+    report: "Computing Productivity: Firm-Level Evidence (MIT working paper, April 2000; published Review of Economics and Statistics 85(4), 2003)"
+    edition: "2000"
+    url: https://www.ic.unicamp.br/~wainer/cursos/impactos2001/eric-cp.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: secondary-mirror
+  expires: 2027-09-16
+
+- id: ev-bresnahan-brynjolfsson-hitt-2002-complementarities
+  claim: "Technology, workplace reorganization and new products act as complements: IT's effect on labour demand and output is larger where the organizational investments are present. About 300 large US firms, IT panel 1987 to 1994 plus an organizational-practices survey fielded 1995 to 1996. Correlational. Stake: none, academic (Quarterly Journal of Economics)"
+  value: "qualitative: IT effects larger alongside organizational investment"
+  wording: "The effects of IT on labor demand are greater when IT is combined with the particular organizational investments we identify ... evidence of complementarities among all three of these innovations in factor demand and productivity regressions"
+  source:
+    org: "Bresnahan, Brynjolfsson & Hitt"
+    report: "Information Technology, Workplace Organization, and the Demand for Skilled Labor (Quarterly Journal of Economics 117(1))"
+    edition: "2002"
+    url: https://cpi.stanford.edu/_media/pdf/Reference%20Media/Bresnahan_Brynjolfsson_Hitt_2002_Organizations.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-bloom-sadun-vanreenen-2012-management-multiplies-it
+  claim: "The same IT investment produced very different productivity depending on management practice: doubling IT capital went with 1.2% higher productivity at domestic and non-US multinationals but 4.9% at US-owned establishments, and management practices account for most of that gap. 7,121 UK establishments, 1995 to 2003, with a takeover event study strengthening identification. Stake: none, academic (American Economic Review)"
+  value: "1.2% vs 4.9% productivity from doubling IT capital"
+  wording: "A doubling of the IT capital stock is associated with 1.2 percent higher productivity for a domestic or non-US multinational, but 4.9 percent higher productivity for an establishment owned by a US multinational ... these management practices account for most of the higher output elasticity of IT of US firms"
+  source:
+    org: "Bloom, Sadun & Van Reenen"
+    report: "Americans Do IT Better: US Multinationals and the Productivity Miracle (American Economic Review 102(1))"
+    edition: "2012"
+    url: https://www.hbs.edu/ris/Publication%20Files/Americans%20Do%20IT%20Better_7cd547bc-c5f3-49b0-acf6-d0d4bc038a38.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+
+- id: ev-brynjolfsson-rock-syverson-2020-j-curve
+  claim: "General-purpose technologies require complementary intangible investment that national accounts measure poorly, so measured productivity is understated while the capability is being built and overstated later. US aggregate, 1980s to 2017. A calibrated growth-accounting adjustment resting on an assumed constant intangible multiplier, not a causal estimate. Working-paper version. Stake: none, academic"
+  value: "adjusted TFP 11.3% above official at end-2004; AI-related effects small but growing"
+  wording: "Our adjusted measure TFP is 11.3% higher than official measures at the end of 2004 ... these complementary investments are often intangible and poorly measured in the national accounts"
+  source:
+    org: "Brynjolfsson, Rock & Syverson"
+    report: "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies (NBER Working Paper 25148, revised January 2020; published AEJ: Macroeconomics 13(1), 2021)"
+    edition: "2020"
+    url: https://www.nber.org/system/files/working_papers/w25148/w25148.pdf
+    pdf_hash:
+  verified: 2026-09-16
+  status: primary
+  expires: 2027-09-16
+

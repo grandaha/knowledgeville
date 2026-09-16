@@ -11,6 +11,20 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.8.1 — 2026-09-16
+
+### Citations
+
+**Consultancy figures now say whose survey they are, and independent evidence sits beside them.** Across the Enterprise AI Transformation bundle, 44% of citations came from consultancies or analyst firms, and the concentration mattered more than the average: the executive summary sat at 85%, and the measurement and strategy pages at 68 to 84%. Where such a figure carries a claim, the page now names the publisher, says that respondents are describing their own organizations, and notes that the publisher sells the work.
+
+**Eighteen findings from official statistics and academic research now sit beside the consultancy surveys.** The headline adoption gap turns out to be definitional rather than a disagreement. 19.8% of US firms and 20.0% of EU enterprises report using AI, counting firms one vote each, so small businesses dominate. The Census AI supplement puts the firm share at 18% for November 2025 to January 2026, and at 32% weighted by employment, reaching 50 to 60% among very large firms in the Information, Professional Services and Finance sectors. On realized value, a Federal Reserve and Duke survey found reported AI productivity gains about three times the gains implied by the same firms' own revenue and employment, and a survey of some 6,000 executives found nine in ten reporting no impact at their own firm.
+
+**The claim that centralizing AI capability improves outcomes is now presented as contested.** The guide to running an AI strategy process previously told readers that the evidence favors holding the center. Independent research complicates it: across 949 plants, better information technology went with more autonomy for local managers, while communication technology centralized decisions. Neither that study nor the analytics research examines an AI centre of excellence, and no independent study measures returns from a central AI team against a federated one, so the pages now say so.
+
+**The MIT Project NANDA figure is no longer described as independent research.** It is a report that was not peer reviewed, held here through a secondary copy, and the entry now records what its own methodology section says: figures described as directional, drawn from interviews rather than company reporting, with success defined by the researchers.
+
+Pages updated: [executive summary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/executive-summary/) · [program architecture](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/program-architecture/) · [integrated assessment](https://knowledge.onesteplabs.com/enterprise-ai-transformation/running-the-program/integrated-assessment/) · [AI strategy framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework/) · [running an AI strategy process](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process/) · [measurement framework](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework/) · [measurement maturity assessment](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/05-assessment-measurement-maturity-scoring/)
+
 ## v12.8.0 — 2026-09-16
 
 ## New: where should the human check go?

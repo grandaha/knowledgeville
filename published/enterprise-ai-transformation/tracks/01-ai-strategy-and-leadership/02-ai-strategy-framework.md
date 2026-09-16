@@ -174,6 +174,8 @@ Readiness to deploy is itself a leadership decision. Drawing the boundary of whe
 
 ## Connecting AI Investment to Business Outcomes
 
+Most of the figures quoted in this section are consultancy and analyst surveys. Respondents are describing their own organizations, and the firms publishing the numbers sell AI strategy work. Treat them as the best available picture of what executives report, not as measured outcomes.
+
 A strategy earns its keep when its spend can be traced to the P&L. The honest starting point is that, for most enterprises, it cannot yet.
 
 > **60%** of companies achieve little or no value from AI; only about **5%** achieve value at scale ([BCG, 2025](#ev-bcg-value-gap-2025-distribution))

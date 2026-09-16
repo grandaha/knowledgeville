@@ -1,5 +1,45 @@
 # Update Log
 
+## 2026-09-16
+
+* **Update**: consultancy figures now say whose survey they are, and the claims that rest on them
+  are set against independent evidence. Measured across the bundle, 44% of citations came from
+  consultancies or analyst firms, but the concentration mattered more than the average: the
+  executive summary sat at 85%, and the measurement and strategy pages at 68 to 84%. Where such a
+  figure carries a claim, the page now names the publisher, says respondents are describing
+  themselves, and notes that the publisher sells the work. Pages built from quote boxes carry one
+  framing line per evidence section instead of a note inside every quote.
+* **Update**: eighteen findings from official statistics and academic research now sit beside the
+  consultancy surveys. The adoption gap turns out to be definitional rather than a disagreement:
+  19.8% of US firms and 20.0% of EU enterprises report using AI, counting firms one vote each. The
+  Census AI supplement puts the firm share at 18% for November 2025 to January 2026, and at 32%
+  weighted by employment. Among very large firms in the Information, Professional Services and
+  Finance sectors it reaches 50 to 60%, or 60 to 70% employment-weighted. On realized value, a
+  Federal Reserve and Duke survey found reported AI productivity gains about three times the gains
+  implied by the same firms' revenue and employment, and a survey of some 6,000 executives found
+  nine in ten reporting no impact at their own firm. In Denmark, administrative records show
+  chatbots moved worker earnings and recorded hours by less than 2% across 11 exposed occupations.
+* **Update**: the claim that centralizing AI capability improves outcomes is now presented as
+  contested. The strategy-process guide previously told readers the evidence favors holding the
+  center. Independent research complicates it: across 949 plants, better information technology
+  went with more autonomy for local managers while communication technology centralized decisions,
+  and analytics paid off more where innovation was decentralized. Neither study examines an AI
+  centre of excellence, and we found no independent study measuring returns from a central AI team
+  against a federated one, so the pages say that too.
+  Pages: the [executive summary](/enterprise-ai-transformation/executive-summary.md),
+  [program architecture](/enterprise-ai-transformation/running-the-program/program-architecture.md), the
+  [integrated assessment](/enterprise-ai-transformation/running-the-program/integrated-assessment.md), the
+  [AI strategy framework](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/02-ai-strategy-framework.md), the
+  [guide to running an AI strategy process](/enterprise-ai-transformation/tracks/01-ai-strategy-and-leadership/04-practitioner-guide-running-an-ai-strategy-process.md), the
+  [measurement framework](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/02-measurement-framework.md), and the
+  [measurement maturity assessment](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/05-assessment-measurement-maturity-scoring.md).
+* **Update**: the measurement framework no longer calls the MIT Project NANDA report independent
+  research. It is a report that was not peer reviewed, held here through a secondary copy, and the
+  entry now records what its own methodology section says: figures described as directional, drawn
+  from interviews rather than company reporting, with success defined by the researchers. The same
+  page distinguishes Gartner's project-level abandonment forecast from the Census figure for firms
+  dropping AI altogether, which comes from a working paper and measures something narrower.
+
 ## 2026-09-14
 * **Update**: survey findings from consultancies and analyst firms now say only what their sources say. In
   McKinsey's survey, CEO oversight of AI governance is one of the elements most correlated with self-reported

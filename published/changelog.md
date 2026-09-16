@@ -3,13 +3,23 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-09-15"
+timestamp: "2026-09-16"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.8.0 — 2026-09-16
+
+## New: where should the human check go?
+
+A research note on a question that follows from the Chaining Tasks brief: when AI does several steps of a job in a row, where should a person check the work, and does one check at the end catch mistakes made earlier?
+
+Fields that run high-consequence work, including surgery, nuclear power and banking, put the check just before the step that commits, where a mistake becomes costly or hard to undo. Recent research gives reasons to doubt that a single check there catches earlier mistakes. Errors feed on each other across steps, agents rarely notice a mistake they inherit, and reviewers tend to accept flawed AI output while growing more confident. No study yet tests the case that matters most: an end-of-job review against an early error hidden in a polished result.
+
+- [Where Should the Human Check Go?](https://knowledge.onesteplabs.com/research-notes/where-should-the-human-check-go/)
 
 ## v12.7.0 — 2026-09-15
 

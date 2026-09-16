@@ -1,5 +1,13 @@
 # Change log — Research Notes
 
+## 2026-09-15
+
+* **Creation**: where a person should check the work when AI does several steps in a row. Why
+  errors build on each other across steps, why a single review at the end often misses earlier
+  mistakes, where surgery, nuclear power and banking place their checks, and what checking costs.
+  No study yet tests whether an end review catches an early error hidden in a polished result -
+  [Where Should the Human Check Go?](/research-notes/where-should-the-human-check-go.md)
+
 ## 2026-09-13
 
 * **Creation**: whether AI value requires redesigning a process rather than automating it. What the

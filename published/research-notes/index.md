@@ -48,6 +48,7 @@ survive the next thing that gets published on the topic.
 | --- | --- |
 | [Rethink the Process, or Just Add AI?](rethink-the-process-or-just-add-ai.md)<br>Tests the advice to redesign a process for AI rather than automate it, against the evidence and the record of 1990s reengineering. | Updated 2026-09-13 |
 | [What an AI Test Can and Cannot Tell You](what-an-ai-test-can-and-cannot-tell-you.md)<br>A working note on AI evals: what testing an AI system can tell you, what the evidence shows, and what nobody has shown yet. | Updated 2026-09-13 |
+| [Where Should the Human Check Go?](where-should-the-human-check-go.md)<br>When AI does several steps of a job in a row, where should a person check the work, and does one check at the end catch earlier mistakes? | Updated 2026-09-15 |
 | [Why Your AI Gives Three Different Answers](why-your-ai-gives-three-different-answers.md)<br>A working note on shared definitions — why the same question returns different numbers, and how much semantic modeling is actually worth doing. | Updated 2026-08-10 |
 | [Glossary](glossary.md)<br>Plain-language definitions of the terms used across this bundle. | Updated 2026-08-10 |
 | [Validation](validation/)<br>How these notes are validated — sourced claims are checked and each sweep is recorded here. | Updated 2026-08-10 |

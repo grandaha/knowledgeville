@@ -11,6 +11,22 @@ appendix: true
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
 
+## v12.9.0 — 2026-09-16
+
+### New: what to write when AI work carries a graded target
+
+A new page for anyone who has been told that next quarter's objectives must include AI, and who has to write those objectives this week. The advice and one diagnostic question come first, and the evidence behind them follows.
+
+**The definition turns out to be the first finding.** A 2024 systematic review of the academic literature on Objectives and Key Results found 47 studies, and reported that nine of them cite no source at all for what an OKR is. The commonly cited sources describe materially different practices: a goal-setting discipline, an operational recipe with a fixed number of objectives per quarter, and management by objectives with milestones attached. Measuring the effect of a practice requires agreement about where the practice starts and stops.
+
+**The costs of numeric targets are better evidenced than the benefits of this one.** No study measuring OKR use against organizational outcomes surfaced in the published record, which describes the literature rather than the practice. By contrast, what targets do to hard-to-measure work is documented across economics, public administration and education research: attention moves toward whatever is cheapest to count, performance crowds toward the target from both directions, and misreporting rises with the stakes.
+
+**A quarterly grade suits review far better than cancellation.** Returns to this class of investment are J-curved, with short-term losses preceding longer-term gains, so an early decline is an expected shape rather than a verdict.
+
+**Two attributions that do not survive checking.** The sentence "when a measure becomes a target, it ceases to be a good measure" was written by the anthropologist Marilyn Strathern in 1997, about British university examination grades, and not by Goodhart. And Andrew Grove's *High Output Management*, the book credited with inventing the practice, contains the mechanism but never the acronym, and states that the system "is not a legal document upon which to base a performance review".
+
+Read it: [Goals and Targets for AI Work](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/06-goals-and-targets-for-ai-work/)
+
 ## v12.8.1 — 2026-09-16
 
 ### Updated: independent evidence now sits beside the consultancy figures

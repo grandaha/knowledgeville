@@ -4314,3 +4314,523 @@
   status: primary
   expires: 2027-09-16
 
+
+- id: ev-okr-mapping-2024-under-documented
+  claim: 'Systematic mapping study of the academic OKR literature, 47 studies, finding the practice theoretically under-documented. Stake: none, academic (UNIRIO).'
+  value: '47 studies'
+  wording: 'OKR use is under-documented from a theoretical point of view'
+  source:
+    org: 'Silva & Santos'
+    report: 'Surveying the Academic Literature on the Use of OKR, an Update (iSys 17(1))'
+    url: 'https://journals-sol.sbc.org.br/index.php/isys/article/download/3885/2670'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-okr-mapping-2024-no-reference
+  claim: 'Nine of the 47 studies reviewed cite no bibliographic source at all for what an OKR is, which the reviewers read as a rigor problem. Stake: none, academic.'
+  value: '9 of 47 studies'
+  wording: 'nine identified studies do not cite any bibliographic reference for OKR. This may indicate a lack of rigor and care'
+  source:
+    org: 'Silva & Santos'
+    report: 'Surveying the Academic Literature on the Use of OKR, an Update (iSys 17(1))'
+    url: 'https://journals-sol.sbc.org.br/index.php/isys/article/download/3885/2670'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-okr-mapping-2024-citation-counts
+  claim: "Of nineteen reference sources identified across the 47 studies, a 2018 trade book and a practitioner handbook are each cited by 15 studies while Grove's 1983 book is cited by one. Counts read from the review's Table 5. Stake: none, academic."
+  value: 'Doerr 15, Niven & Lamorte 15, Grove 1'
+  wording: 'nineteen sources were identified, six books, six scientific articles, and seven websites'
+  source:
+    org: 'Silva & Santos'
+    report: 'Surveying the Academic Literature on the Use of OKR, an Update (iSys 17(1))'
+    url: 'https://journals-sol.sbc.org.br/index.php/isys/article/download/3885/2670'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-okr-mapping-2024-definition-subjectivity
+  claim: 'Definitional instability appears among the difficulties the reviewed studies themselves reported. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'Subjectivity in the OKR definition'
+  source:
+    org: 'Silva & Santos'
+    report: 'Surveying the Academic Literature on the Use of OKR, an Update (iSys 17(1))'
+    url: 'https://journals-sol.sbc.org.br/index.php/isys/article/download/3885/2670'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-grove-1983-two-questions
+  claim: "Grove's own framing of the system his book describes, which he calls management by objectives throughout. Verified against the 1983 first edition: the text contains zero occurrences of OKR, iMBO, or Objectives and Key Results, 24 of MBO, and 6 of Drucker. Stake: Grove was Intel's president describing his own company's practice in a book he was selling."
+  value: 'two questions'
+  wording: 'A successful MBO system needs only to answer two questions'
+  source:
+    org: 'Andrew S. Grove'
+    report: 'High Output Management (Random House, 1983), pp. 110-114'
+    url: 'https://archive.org/details/dli.ernet.213936'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-grove-1983-not-a-review
+  claim: 'Grove explicitly bars the use the practice is now most often put to, namely grading individual performance. Stake: as above.'
+  value: 'qualitative'
+  wording: 'It is not a legal document upon which to base a performance review, but should be just one input used to determine how well an individual is doing'
+  source:
+    org: 'Andrew S. Grove'
+    report: 'High Output Management (Random House, 1983), pp. 110-114'
+    url: 'https://archive.org/details/dli.ernet.213936'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-grove-1983-columbus
+  claim: 'Grove treats hitting every key result while missing the objective as a normal outcome, illustrated with Columbus. Stake: as above.'
+  value: 'qualitative'
+  wording: 'he most certainly did not find a new trade route to China, and therefore failed to meet his objective'
+  source:
+    org: 'Andrew S. Grove'
+    report: 'High Output Management (Random House, 1983), pp. 112-113'
+    url: 'https://archive.org/details/dli.ernet.213936'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-locke-latham-2006-three-conditions
+  claim: "Goal-setting theory's core claim, stated by its authors with three conditions in the same sentence. Stake: the theory's own authors."
+  value: 'qualitative'
+  wording: 'there is a positive, linear relationship between goal difficulty and task performance'
+  source:
+    org: 'Locke & Latham'
+    report: 'New Directions in Goal-Setting Theory (Current Directions in Psychological Science 15(5))'
+    url: 'https://home.ubalt.edu/tmitch/642/Articles%20syllabus/locke%20latham%20new%20dir%20GS%20curr%20dir%20psy%20sci%202006.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-locke-latham-2002-complexity-effect-sizes
+  claim: "Meta-analytic goal-difficulty effect sizes are smaller on complex tasks than simple ones, though still positive. Stake: the theory's own authors."
+  value: 'd = .48 complex vs .67 least complex'
+  wording: 'of .48 for the most complex tasks versus .67 for the least complex tasks'
+  source:
+    org: 'Locke & Latham'
+    report: 'Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist 57(9))'
+    url: 'https://www-2.rotman.utoronto.ca/facbios/file/09%20-%20Locke%20&%20Latham%202002%20AP.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-locke-latham-2002-do-your-best
+  claim: "On a task that is complex for the performer, a do-your-best instruction can beat a specific difficult performance goal. Stake: the theory's own authors conceding a boundary condition."
+  value: 'qualitative'
+  wording: 'urging them to do their best sometimes leads to better strategies'
+  source:
+    org: 'Locke & Latham'
+    report: 'Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist 57(9))'
+    url: 'https://www-2.rotman.utoronto.ca/facbios/file/09%20-%20Locke%20&%20Latham%202002%20AP.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-locke-latham-2006-tunnel-vision
+  claim: "The authors' own name for the failure mode a performance goal produces on new, complex work. Stake: the theory's own authors."
+  value: 'qualitative'
+  wording: 'tunnel vision'
+  source:
+    org: 'Locke & Latham'
+    report: 'New Directions in Goal-Setting Theory (Current Directions in Psychological Science 15(5))'
+    url: 'https://home.ubalt.edu/tmitch/642/Articles%20syllabus/locke%20latham%20new%20dir%20GS%20curr%20dir%20psy%20sci%202006.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-locke-latham-2002-atc-simulation
+  claim: "In an air traffic controller simulation a performance-outcome goal interfered with acquiring the knowledge the task required. Reported by Locke & Latham, describing Kanfer & Ackerman (1989); the underlying study was not read. Stake: the theory's own authors."
+  value: 'qualitative'
+  wording: 'having a performance-outcome goal actually interfered with acquiring the knowledge necessary to perform the task'
+  source:
+    org: 'Locke & Latham'
+    report: 'Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist 57(9))'
+    url: 'https://www-2.rotman.utoronto.ca/facbios/file/09%20-%20Locke%20&%20Latham%202002%20AP.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-ordonez-2009-harm-ignored
+  claim: "The central charge of the best-known critique of goal setting. Stake: the critics have a reputational investment in the critique, as the theory's authors do in the theory."
+  value: 'qualitative'
+  wording: 'the beneficial effects of goal setting have been overstated'
+  source:
+    org: 'Ordonez, Schweitzer, Galinsky & Bazerman'
+    report: 'Goals Gone Wild (HBS NOM Working Paper 09-083)'
+    url: 'https://www.hbs.edu/ris/Publication%20Files/09-083.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-ordonez-2009-learning-goal-unusable
+  claim: "The critics' argument that goal-setting theory's own escape hatch, using a learning goal for complex work, cannot be operated by managers in practice. Stake: as above."
+  value: 'qualitative'
+  wording: 'The goal of setting the right goals is itself a challenging affair'
+  source:
+    org: 'Ordonez, Schweitzer, Galinsky & Bazerman'
+    report: 'Goals Gone Wild (HBS NOM Working Paper 09-083)'
+    url: 'https://www.hbs.edu/ris/Publication%20Files/09-083.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-ordonez-2009-prescription-strength
+  claim: 'What the critics actually recommend, which is careful dosing rather than abandonment. The accompanying sentence is hedged: many managers MAY conclude goals are not the best way to motivate. Stake: as above.'
+  value: 'qualitative'
+  wording: 'a prescription-strength medication that requires careful dosing'
+  source:
+    org: 'Ordonez, Schweitzer, Galinsky & Bazerman'
+    report: 'Goals Gone Wild (HBS NOM Working Paper 09-083)'
+    url: 'https://www.hbs.edu/ris/Publication%20Files/09-083.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-ordonez-2009-misreporting
+  claim: 'Goal setting drives a second gaming channel distinct from doing the wrong work, namely misreporting the result. Stake: as above.'
+  value: 'qualitative'
+  wording: 'goal setting can motivate people to misrepresent their performance level'
+  source:
+    org: 'Ordonez, Schweitzer, Galinsky & Bazerman'
+    report: 'Goals Gone Wild (HBS NOM Working Paper 09-083)'
+    url: 'https://www.hbs.edu/ris/Publication%20Files/09-083.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-holmstrom-milgrom-1991-attention
+  claim: "Incentive pay allocates attention across an agent's duties, not only effort. Stake: none, academic."
+  value: 'qualitative'
+  wording: "it also serves to direct the allocation of the agents' attention among their various duties"
+  source:
+    org: 'Holmstrom & Milgrom'
+    report: 'Multitask Principal-Agent Analyses (Journal of Law, Economics, & Organization 7)'
+    url: 'https://www.sfu.ca/~allen/HolmstromMilgrom.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-holmstrom-milgrom-1991-other-activities
+  claim: 'The case for incentivising one activity weakens as the OTHER activities competing for the same attention get harder to measure. This is the core mechanism against an AI usage target. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'the desirability of providing incentives for any one activity decreases with the difficulty of measuring performance in any other activities'
+  source:
+    org: 'Holmstrom & Milgrom'
+    report: 'Multitask Principal-Agent Analyses (Journal of Law, Economics, & Organization 7)'
+    url: 'https://www.sfu.ca/~allen/HolmstromMilgrom.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-baker-1992-not-first-best
+  claim: 'A performance measure correlated with value still fails to give first-best incentives, even with a risk-neutral agent. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'will not in general provide first-best incentives, even when the agent is risk neutral'
+  source:
+    org: 'George P. Baker'
+    report: 'Incentive Contracts and Performance Measurement (Journal of Political Economy 100(3))'
+    url: 'https://www.edegan.com/pdfs/Baker%20(1992)%20-%20Incentive%20Contracts%20and%20Performance%20Measurement.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-bevan-hood-2006-gaming
+  claim: 'Definition of gaming under a target regime, from a study of the English public health care system. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'hitting the target and missing the point'
+  source:
+    org: 'Bevan & Hood'
+    report: "What's Measured Is What Matters (Public Administration 84(3))"
+    url: 'http://straty.com/wp-content/uploads/2018/04/Whats-Measured-is-What-Matters-Bevan-Hood-2006.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-bevan-hood-2006-threshold
+  claim: 'Threshold effects: a target gives units already beating it an incentive to let performance decay toward it. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'perverse incentive for those doing better than the target to allow their performance to deteriorate to the standard'
+  source:
+    org: 'Bevan & Hood'
+    report: "What's Measured Is What Matters (Public Administration 84(3))"
+    url: 'http://straty.com/wp-content/uploads/2018/04/Whats-Measured-is-What-Matters-Bevan-Hood-2006.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-nove-1958-ratchet
+  claim: "The ratchet effect under targets set from last period's result. These are Nove's words from a 1958 study of Soviet planning, quoted by Bevan & Hood; the 1958 original was not read. Stake: none, academic."
+  value: '105 per cent, never 125'
+  wording: 'a wise director fulfils the plan 105 per cent, but never 125 per cent'
+  source:
+    org: 'Nove (1958), quoted in Bevan & Hood'
+    report: "What's Measured Is What Matters (Public Administration 84(3))"
+    url: 'http://straty.com/wp-content/uploads/2018/04/Whats-Measured-is-What-Matters-Bevan-Hood-2006.pdf'
+  verified: '2026-09-16'
+  status: secondary-mirror
+  expires: '2027-09-16'
+- id: ev-jacob-levitt-2002-cheating
+  claim: 'Measured rate of serious teacher or administrator cheating on standardized tests, and its responsiveness to small incentive changes. Read from the eScholarship copy, not NBER Working Paper 9413. Stake: none, academic.'
+  value: '4-5% of classrooms annually'
+  wording: 'a minimum of 4-5 percent of elementary school classrooms annually'
+  source:
+    org: 'Jacob & Levitt'
+    report: 'Rotten Apples: An Investigation of the Prevalence and Predictors of Teacher Cheating'
+    url: 'https://escholarship.org/content/qt4jz1d4sx/qt4jz1d4sx.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-azoulay-2011-tolerant-regime
+  claim: "Funding that tolerates early failure outperformed short review cycles with pre-defined deliverables, on publication output and on top-percentile work. Life-science grant cycles, so transfer to a company's AI pilot is not established. Stake: none, academic."
+  value: '+39% output, +96% top percentile'
+  wording: 'increases overall publication output by 39%'
+  source:
+    org: 'Azoulay, Graff Zivin & Manso'
+    report: 'Incentives and Creativity: Evidence from the Academic Life Sciences (NBER WP 15466)'
+    url: 'https://www.nber.org/system/files/working_papers/w15466/w15466.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-azoulay-2011-more-flops
+  claim: 'The price of the tolerant regime: the same scientists also produced more work below their own prior citation bar. Stake: none, academic.'
+  value: '+35% below-bar articles'
+  wording: 'they publish 35% more articles that fail to clear the'
+  source:
+    org: 'Azoulay, Graff Zivin & Manso'
+    report: 'Incentives and Creativity: Evidence from the Academic Life Sciences (NBER WP 15466)'
+    url: 'https://www.nber.org/system/files/working_papers/w15466/w15466.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-ederer-manso-2013-exploration
+  claim: 'Experimental evidence that pay-for-performance reduces exploration relative to a fixed wage, and that termination threat undermines innovation incentives. A laboratory experiment. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'explore less than subjects under the fixed-wage contract'
+  source:
+    org: 'Ederer & Manso'
+    report: 'Is Pay-for-Performance Detrimental to Innovation? (Management Science 59(7))'
+    url: 'https://faculty.haas.berkeley.edu/manso/em.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-manso-2011-innovation-conditions
+  claim: 'The three conditions the theory says are needed to motivate innovation. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'commitment to a long-term compensation plan, job security, and timely feedback on performance'
+  source:
+    org: 'Gustavo Manso'
+    report: 'Motivating Innovation (Journal of Finance 66)'
+    url: 'https://web.mit.edu/manso/www/mi.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-holmstrom-1989-mixing-costly
+  claim: 'Putting hard-to-measure innovation and easy-to-measure routine work under one incentive regime is itself costly. Stake: none, academic.'
+  value: 'qualitative'
+  wording: 'Mixing hard to measure activities (innovation) with easy to measure activities (routine) is particularly cost'
+  source:
+    org: 'Bengt Holmstrom'
+    report: 'Agency Costs and Innovation (Journal of Economic Behavior and Organization 12)'
+    url: 'http://www.jrdonaldson.com/reading_group/Holmstrom-Innovation.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-dora-2025-adoption-psychological
+  claim: "The largest research programme on AI in software development declines to measure adoption as a usage count, treating it as a psychological construct measured through reliance, trust and reflexive use. Stake: published by Google Cloud's research arm, which sells AI coding tools."
+  value: 'qualitative'
+  wording: 'Adoption is a psychological process involving attitudes, intentions, and actions'
+  source:
+    org: 'DORA (Google Cloud)'
+    report: 'State of AI-assisted Software Development 2025'
+    url: 'https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-dora-2024-adoption-elasticity
+  claim: "Association between rising AI adoption and worse delivery outcomes, reported in the 2025 report from DORA's 2024 research. Edition-bound and self-reported on both sides. Stake: against interest, since Google sells the tools."
+  value: '-1.5% throughput, +7.2% instability per +25% adoption'
+  wording: 'an estimated 1.5% reduction in software delivery throughput and an estimated 7.2% increase in software delivery instability for every 25% increase in AI adoption'
+  source:
+    org: 'DORA (Google Cloud)'
+    report: 'State of AI-assisted Software Development 2025'
+    url: 'https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-dora-2025-amplifier
+  claim: "DORA's framing of AI's role as magnifying existing organizational strengths and dysfunctions rather than supplying capability. Stake: as above."
+  value: 'qualitative'
+  wording: "AI's primary role in software development is that of an amplifier"
+  source:
+    org: 'DORA (Google Cloud)'
+    report: 'State of AI-assisted Software Development 2025'
+    url: 'https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-dora-2025-throughput-instability-pair
+  claim: 'DORA measures software delivery performance as a pair, throughput together with instability, so a gain in one cannot mask a loss in the other. Stake: as above.'
+  value: 'two factors'
+  wording: 'focus on two key factors: throughput and instability'
+  source:
+    org: 'DORA (Google Cloud)'
+    report: 'State of AI-assisted Software Development 2025'
+    url: 'https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-dora-2025-stance-moderates
+  claim: 'A clear and communicated organizational position on AI use moderates whether AI adoption produces gains at all. Stake: as above.'
+  value: 'qualitative'
+  wording: "A clear and communicated AI stance determines AI's impact on organizational performance"
+  source:
+    org: 'DORA (Google Cloud)'
+    report: 'State of AI-assisted Software Development 2025'
+    url: 'https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-uk-dbt-2025-copilot-null
+  claim: "A UK government department's evaluation of a 1,000-licence Microsoft 365 Copilot pilot found reported time savings but no evidence they produced measurable productivity. Stake: a department publishing a null result on its own pilot, so the stake runs against the finding."
+  value: 'no productivity link found'
+  wording: 'The evaluation did not find evidence that time savings have led to improved productivity'
+  source:
+    org: 'UK Department for Business and Trade'
+    report: 'The Evaluation of the M365 Copilot Pilot in the Department for Business and Trade (September 2025)'
+    url: 'https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-metr-2025-forecast-vs-measured
+  claim: "Experienced open-source developers forecast AI would speed them up and were measurably slowed. 16 developers, 246 tasks, early-2025 models. Read from the arXiv abstract. Superseded in part by the authors' own 2026 update; cite the two together. Stake: METR is an AI-evaluation nonprofit whose standing rests on measurement rigor."
+  value: 'forecast -24%, measured +19% completion time'
+  wording: 'we find that allowing AI actually increases completion time by 19%'
+  source:
+    org: 'Becker, Rush, Barnes & Rein (METR)'
+    report: 'Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (arXiv:2507.09089)'
+    url: 'https://arxiv.org/abs/2507.09089'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-metr-2026-uplift-update
+  claim: "METR's own February 2026 update qualifying the 2025 slowdown result: they now believe developers are likely more sped up, while calling the newer data unreliable because participants declined to work without AI. Stake: as above, and the update cuts against their own best-known result."
+  value: 'qualitative'
+  wording: 'we believe it is likely that developers are more sped up from AI tools now'
+  source:
+    org: 'METR'
+    report: 'We are Changing our Developer Productivity Experiment Design (24 February 2026)'
+    url: 'https://metr.org/blog/2026-02-24-uplift-update/'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-coinbase-2025-code-share-goal
+  claim: "Coinbase's chief executive stated an AI share-of-code target with a quarter deadline, in August 2025. Press reporting of a spoken podcast remark; the recording was not reached, and a higher figure was reportedly given weeks later. Stake: Coinbase benefits from an AI-forward story."
+  value: '~1/3 of code, goal 50% by quarter end'
+  wording: 'with a goal for 50% by the end of the quarter'
+  source:
+    org: 'Fortune (Marco Quiroz-Gutierrez)'
+    report: 'Coinbase CEO on AI coding assistants (25 August 2025)'
+    url: 'https://fortune.com/2025/08/25/coinbase-ceo-brian-armstrong-ai-coding-assistants-mandate-tech/'
+  verified: '2026-09-16'
+  status: secondary-mirror
+  expires: '2027-09-16'
+- id: ev-coinbase-2025-onboarding-firings
+  claim: "Coinbase engineers were dismissed after failing to onboard to AI tools within a one-week deadline, against colleagues' warning that adoption would take months. Press reporting of spoken remarks; the recording was not reached. Stake: as above."
+  value: 'qualitative'
+  wording: 'And they got fired'
+  source:
+    org: 'TechCrunch (Julie Bort)'
+    report: "Coinbase CEO explains why he fired engineers who didn't try AI immediately (22 August 2025)"
+    url: 'https://techcrunch.com/2025/08/22/coinbase-ceo-explains-why-he-fired-engineers-who-didnt-try-ai-immediately/'
+  verified: '2026-09-16'
+  status: secondary-mirror
+  expires: '2027-09-16'
+- id: ev-shopify-2025-headcount-test
+  claim: "Shopify's March 2025 memo required teams to show AI could not do the work before requesting headcount. Press reporting quoting a memo the company published; the memo itself was not reachable. Stake: Shopify benefits from an AI-native employer brand."
+  value: 'qualitative'
+  wording: 'Before asking for more headcount and resources, teams must demonstrate why they cannot get what they want done using AI'
+  source:
+    org: 'TechCrunch'
+    report: 'Shopify CEO tells teams to consider using AI before growing headcount (7 April 2025)'
+    url: 'https://techcrunch.com/2025/04/07/shopify-ceo-tells-teams-to-consider-using-ai-before-growing-headcount/'
+  verified: '2026-09-16'
+  status: secondary-mirror
+  expires: '2027-09-16'
+- id: ev-meta-2025-ai-driven-impact
+  claim: "Meta made AI-driven impact a core expectation from 2026, while excluding individual usage metrics from the 2025 review cycle. Business Insider reporting an internal memo it obtained; the memo has not been published. Stake: reporting incentive on the publication's side, employer-brand incentive on Meta's."
+  value: 'qualitative'
+  wording: 'core expectation'
+  source:
+    org: 'Business Insider (Jyoti Mann), via Yahoo Finance'
+    report: 'Meta to start grading workers on AI (14 November 2025)'
+    url: 'https://finance.yahoo.com/news/meta-start-grading-workers-ai-194500277.html'
+  verified: '2026-09-16'
+  status: secondary-mirror
+  expires: '2027-09-16'
+- id: ev-shrm-2026-pressure-by-level
+  claim: 'Pressure to adopt AI falls unevenly by seniority, measured across 5,875 US workers surveyed in March and April 2026. Some findings in the report derive from a 2,030-worker subsample and the data is unweighted. Stake: SHRM is the HR professional body and sells membership, certification and training.'
+  value: '45% entry-level, 70% directors and above'
+  wording: '45% reporting pressure to use AI'
+  source:
+    org: 'SHRM'
+    report: 'Navigating AI in the Workplace: 2026'
+    url: 'https://www.shrm.org/media-only/navigating-ai-in-the-workplace'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-shrm-2026-incentives-vs-consequences
+  claim: 'Among workers whose employers used a given adoption tactic, monetary incentives rated most effective, while negative consequences were the least common approach. The percentages are effectiveness ratings among exposed workers, not shares of all workers. Stake: as above.'
+  value: 'incentives 64%, negative consequences 15% exposure'
+  wording: 'the most effective methods were offering monetary incentives (64%)'
+  source:
+    org: 'SHRM'
+    report: 'Navigating AI in the Workplace: 2026'
+    url: 'https://www.shrm.org/media-only/navigating-ai-in-the-workplace'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-firmdata-2026-executive-own-use
+  claim: "Executives setting AI expectations report little personal AI use. Almost 6,000 CEOs, CFOs and senior finance managers across the US, UK, Germany and Australia, surveyed November 2025 to January 2026. The often-quoted 'nearly 70% under an hour' is the sum of two published bins, and the bin is 'up to' one hour. Same paper as NBER Working Paper 34836. Stake: none, central bank and academic."
+  value: '28% none, 41% up to 1 hour/week'
+  wording: 'only 28% of respondents do not use AI at all during the working week. The modal response is up to 1 hour a week (41%)'
+  source:
+    org: 'Yotzov, Barrero, Bloom et al.'
+    report: 'Firm Data on AI (Federal Reserve Bank of Atlanta Working Paper 2026-3)'
+    url: 'https://www.atlantafed.org/-/media/Project/Atlanta/FRBA/Documents/research/publication/working-paper/2026/03/24/03-firm-data-on-ai.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+- id: ev-strathern-1997-measure-target
+  claim: "The sentence universally attributed to Goodhart was written by Strathern in 1997, about British university examination grades; she credits Hoskin for attaching Goodhart's name. Goodhart's own 1975 formulation was a narrower monetary claim, and that 1975 volume is not digitized. Stake: none, academic."
+  value: 'qualitative'
+  wording: 'When a measure becomes a target, it ceases to be a good measure'
+  source:
+    org: 'Marilyn Strathern'
+    report: "'Improving ratings': audit in the British University system (European Review 5(3))"
+    url: 'https://gwern.net/doc/statistics/decision/1997-strathern.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+
+- id: ev-mcelheran-2025-ai-jcurve-returns
+  claim: 'Causal evidence of J-curve-shaped returns to industrial AI in US manufacturing: short-term performance losses precede longer-term gains. Census Bureau data for 2017 and 2021. Working paper, not peer reviewed. Stake: none, academic and federal statistical.'
+  value: 'qualitative'
+  wording: 'We find causal evidence of J-curve-shaped returns, where short-term performance losses precede longer-term gains'
+  source:
+    org: 'McElheran, Yang, Kroff & Brynjolfsson'
+    report: 'The Rise of Industrial AI in America: Microfoundations of the Productivity J-curve(s) (US Census Bureau CES Working Paper 25-27)'
+    url: 'https://www2.census.gov/library/working-papers/2025/adrm/ces/CES-WP-25-27.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2027-09-16'
+- id: ev-brynjolfsson-hitt-2003-computing-long-run
+  claim: 'Measured returns to computerization grow as the measurement window lengthens, which the authors attribute to large and slow complementary investments. Read from a hosted copy of the published article. Note a working-paper version of the same study reports different figures. Stake: none, academic.'
+  value: 'up to five times greater over long periods'
+  wording: 'the productivity and output contributions associated with computerization are up to five times greater over long periods ... accompanied by relatively large and time-consuming investments in complementary inputs'
+  source:
+    org: 'Brynjolfsson & Hitt'
+    report: 'Computing Productivity: Firm-Level Evidence (Review of Economics and Statistics 85(4))'
+    url: 'https://www.iecon.net/wp-content/uploads/2015/01/cpg.pdf'
+  verified: '2026-09-16'
+  status: primary
+  expires: '2030-09-16'
+
+- id: ev-shopify-2025-ai-baseline-expectation
+  claim: "Shopify's March 2025 memo made effective AI use a stated expectation of every employee, and added AI usage questions to performance and peer review. Memo dated 20 March 2025 and published by its author the following month. Press reporting that quotes the memo; the memo itself was not retrieved. Stake: Shopify benefits from an AI-native employer brand."
+  value: 'qualitative'
+  wording: 'Using AI effectively is now a fundamental expectation of everyone at Shopify ... AI usage questions to its performance and peer review questionnaires'
+  source:
+    org: 'BetaKit (Alex Riehl)'
+    report: 'Shopify CEO Tobi Lutke tells employees to prove AI cannot do the job before asking for resources (7 April 2025)'
+    url: 'https://betakit.com/shopify-ceo-tobi-lutke-tells-employees-to-prove-ai-cant-do-the-job-before-asking-for-resources/'
+  verified: '2026-09-16'
+  status: secondary-mirror
+  expires: '2027-09-16'

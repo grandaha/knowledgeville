@@ -2,6 +2,19 @@
 
 ## 2026-09-16
 
+* **Creation**: a page on goals and targets for AI work, for anyone told that next quarter's
+  objectives must include AI. It opens with the practical advice and one diagnostic question,
+  then sets out the evidence behind them. The definition of an objective and key result turns
+  out to be unstable in the research literature, and that is the first finding rather than
+  background. Nine of 47 academic studies cite no source at all for the term, and the commonly
+  cited sources describe materially different practices. No study measuring the practice against
+  organizational outcomes surfaced in the published record, which describes the literature rather
+  than the practice. The effects of numeric targets on hard-to-measure work are documented across
+  economics, public administration and education research. The page also carries two corrections. The sentence "when a measure becomes a target,
+  it ceases to be a good measure" was written by Marilyn Strathern in 1997 about university exam
+  grades, not by Goodhart. And Grove's own 1983 book states that the system is not a basis for a
+  performance review. Page: [goals and targets for AI work](/enterprise-ai-transformation/tracks/08-measurement-and-value-realization/06-goals-and-targets-for-ai-work.md).
+
 * **Update**: consultancy figures now say whose survey they are, and the claims that rest on them
   are set against independent evidence. Measured across the bundle, 44% of citations came from
   consultancies or analyst firms, but the concentration mattered more than the average: the

@@ -3,7 +3,7 @@ type: Concept
 title: Why Your AI Gives Three Different Answers
 description: A working note on shared definitions — why the same question returns different numbers, and how much semantic modeling is actually worth doing.
 tags: [semantics, data-governance, definitions]
-timestamp: "2026-08-10"
+timestamp: "2026-09-17"
 generated:
   by: claude-code/claude-opus-5
   at: "2026-08-10T00:00:00Z"
@@ -11,7 +11,7 @@ generated:
 stale_after: "2027-02-10T00:00:00Z"
 verified:
   - by: "human:daveraffaele"
-    at: "2026-08-10T00:00:00Z"
+    at: "2026-09-17T00:00:00Z"
 sources:
   - id: ev-osi-spec-v01-release-2026
     resource: "https://open-semantic-interchange.org/updates/"
@@ -24,6 +24,30 @@ sources:
     resource: "https://open-semantic-interchange.org/"
     title: "core-spec/spec.md (repo: apache/ossie, formerly open-semantic-interchange/OSI)"
     author: "Open Semantic Interchange (now Apache Ossie, incubating)"
+  - id: ev-ossie-2026-ontology-spec-exists-semantics
+    resource: "https://github.com/apache/ossie/blob/main/ontology/ontology.md"
+    title: Apache Ossie - Ontology Specification (ontology/ontology.md)
+    author: The Apache Software Foundation
+  - id: ev-ossie-2026-palantir-converter-semantics
+    resource: "https://github.com/apache/ossie/blob/main/converters/ontology/README.md"
+    title: Apache Ossie - converters/ontology/README.md
+    author: The Apache Software Foundation
+  - id: ev-ossie-2026-draft-not-for-production-semantics
+    resource: "https://github.com/apache/ossie/blob/main/core-spec/spec.md"
+    title: Apache Ossie - Core Metadata Specification (core-spec/spec.md)
+    author: The Apache Software Foundation
+  - id: ev-ossie-2026-field-vocabulary-semantics
+    resource: "https://github.com/apache/ossie/blob/main/core-spec/spec.md"
+    title: Apache Ossie - Core Metadata Specification (core-spec/spec.md)
+    author: The Apache Software Foundation
+  - id: ev-lippolis-2025-llm-drafts-beat-novices-semantics
+    resource: "https://arxiv.org/abs/2503.05388"
+    title: Ontology Generation using Large Language Models
+    author: "Lippolis, Saeedizade, Keskisarkka, Zuppiroli, Ceriani, Gangemi, Blomqvist, Nuzzolese"
+  - id: ev-bausili-2026-local-not-global-semantics
+    resource: "https://benbausili.com/posts/semantic-layers-are-overrated/"
+    title: Semantic Layers Are Overrated
+    author: "Ben Bausili, Global Director of AI Solutions at InterWorks (a data and AI consultancy that sells implementation work)"
   - id: ev-bird-external-knowledge-design-2023
     resource: "https://ar5iv.labs.arxiv.org/html/2305.03111"
     author: Li et al. (University of Hong Kong and collaborators)
@@ -34,6 +58,61 @@ sources:
   - id: ev-bird-benchmark-human-gap-2023
     resource: "https://ar5iv.labs.arxiv.org/html/2305.03111"
     author: Li et al. (University of Hong Kong and collaborators)
+  - id: ev-beaver-2026-benchmark-scale-semantics
+    resource: "https://arxiv.org/abs/2409.02038v3"
+    title: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    author: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+  - id: ev-beaver-2026-enterprise-warehouse-accuracy-semantics
+    resource: "https://arxiv.org/abs/2409.02038v3"
+    title: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    author: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+  - id: ev-beaver-2026-five-subtasks-semantics
+    resource: "https://arxiv.org/pdf/2409.02038v3"
+    title: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    author: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+  - id: ev-beaver-2026-annotation-settings-semantics
+    resource: "https://arxiv.org/pdf/2409.02038v3"
+    title: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    author: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+  - id: ev-beaver-2026-annotation-ladder-semantics
+    resource: "https://arxiv.org/pdf/2409.02038v3"
+    title: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    author: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+  - id: ev-motherduck-2026-comments-near-zero-semantics
+    resource: "https://motherduck.com/blog/bird-bench-and-data-models/"
+    title: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    author: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+  - id: ev-motherduck-2026-clean-schema-negative-semantics
+    resource: "https://motherduck.com/blog/bird-bench-and-data-models/"
+    title: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    author: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+  - id: ev-motherduck-2026-harness-caveat-semantics
+    resource: "https://motherduck.com/blog/bird-bench-and-data-models/"
+    title: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    author: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+  - id: ev-cube-2026-semantic-layer-delta-semantics
+    resource: "https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models"
+    title: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    author: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+  - id: ev-cube-2026-mcnemar-significance-semantics
+    resource: "https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models"
+    title: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    author: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+  - id: ev-cube-2026-treatment-is-a-markdown-file-semantics
+    resource: "https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models"
+    title: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    author: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+  - id: ev-cube-2026-analyst-afternoon-semantics
+    resource: "https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models"
+    title: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    author: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+  - id: ev-dataworld-2023-kg-accuracy-lift-semantics
+    resource: "https://arxiv.org/abs/2311.07509"
+    author: "Sequeda, Allemang, Jacob (all data.world, which sells a knowledge-graph-backed catalog)"
+  - id: ev-dataworld-2024-ontology-repair-semantics
+    resource: "https://arxiv.org/abs/2405.11706"
+    title: "Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!"
+    author: "Allemang, Sequeda (data.world AI Lab)"
 # okf:generated:end
 ---
 
@@ -78,8 +157,8 @@ after the fact rather than predicting a third.
 
 Taking it at face value gives a gradient. Metric definitions, then resolving identity on a few
 core entities, then modeling relationships between them, then the whole enterprise. The risk
-rises at every step. Where a given organization should stop is what I could not find answered
-anywhere.
+rises at every step. Where a given organization should stop is the question I found least
+answered, and there is now one partial answer to it further down this page.
 
 ## Why the sales pitch blurs the two
 
@@ -94,6 +173,12 @@ The skeptics have positions too. An article titled *why most enterprise ontologi
 an argument against doing the project. It usually argues for hiring someone who knows the way
 that does not fail. Selection bias compounds this. No one writes up the boring metrics layer that
 has worked for four years, so the visible record over-represents failure.
+
+That cuts at this note, not only at the vendors. The claim that the broad version is the recurring
+failure is an inference from the same visible record I have just called biased toward failure.
+And the claim that the narrow version quietly works rests on an absence of write-ups, which is
+not evidence. Both halves of the distinction this page is built on have weaker support than the
+confidence I state them with, and I have not found a way to test either.
 
 The blur matters because credibility transfers. A bounded standard for metric definitions gets
 discussed alongside a platform that models your whole business. The second borrows the first's
@@ -112,9 +197,28 @@ v1.0. The spec's own version history says otherwise, and the difference between 
 is most of what a reader wants to know about how settled something is.
 
 Note what it standardizes: datasets, relationships, fields and metrics, expressed in YAML
-([Open Semantic Interchange, 2026](#ev-osi-spec-scope-yaml-2026)). That is metric definitions —
-the bounded work with the good record. It is weak evidence for the enterprise modeling it gets
-quoted alongside.
+([Open Semantic Interchange, 2026](#ev-osi-spec-scope-yaml-2026)). That is metric definitions,
+the bounded work with the good record.
+
+I had the next part wrong, and the correction cuts against my own argument. Ossie does carry an
+ontology specification, covering concepts, relationships and business rules
+([The Apache Software Foundation, 2026](#ev-ossie-2026-ontology-spec-exists-semantics)). The
+repository also ships a converter that turns a Palantir ontology export into an Ossie model
+([The Apache Software Foundation, 2026](#ev-ossie-2026-palantir-converter-semantics)).
+So I cannot claim the standard confines itself to the bounded work.
+
+The argument has to rest on release status instead. Every ontology artifact sits inside the same
+unreleased draft, whose own header says the schema may still change before 0.2.0 is released
+([The Apache Software Foundation, 2026](#ev-ossie-2026-draft-not-for-production-semantics)).
+Nothing ontology-related appears in the one version that has actually shipped.
+
+One absence matters more than any of that. The spec's model-level vocabulary is entirely
+structural: datasets, relationships, fields, metrics, and an `ai_context` slot for synonyms and
+instructions ([The Apache Software Foundation, 2026](#ev-ossie-2026-field-vocabulary-semantics)).
+There is no field for who owns a definition, who approved it, or whether anyone did. I checked by
+listing every field the spec defines, rather than by searching and finding nothing. A standard can
+carry your definition and say nothing about whose it is, which is the half the three executives
+were fighting over.
 
 ## What the three words mean, once you need them
 
@@ -135,12 +239,22 @@ The honest steelman rests on three costs that moved, not on ontology improving.
 
 **Writing the model got cheap.** Drafting definitions and mappings was the bottleneck that helped
 kill the previous wave. Language models now produce a first draft at almost no cost, which moves
-the bottleneck to deciding.
+the bottleneck to deciding. This one has been tested rather than merely asserted: a peer-reviewed
+study found a reasoning model with a purpose-built prompting technique produced ontologies "of
+sufficient quality to meet the requirements of ontology engineers, significantly outperforming
+novice ontology engineers in modelling ability", while still noting "some common mistakes and
+variability of result quality" ([Lippolis et al., 2025](#ev-lippolis-2025-llm-drafts-beat-novices-semantics)).
+Cheaper drafts, not better judgment.
 
 **Incompleteness stopped being fatal.** Formal reasoners of the previous era needed the model to
 be correct. An inconsistent ontology broke them, so a half-finished model returned nothing.
 Language models degrade gradually, so partial semantics still helps. Every real model is
 permanently incomplete, so this changes the economics of the normal case.
+
+That pillar has since taken a hit from the evidence below. Partial semantics does not always
+help. On a schema whose names were already clear, adding definitions made accuracy worse, because
+the model had a correct picture and the notes introduced noise. "Degrades gradually" is not the
+same as "always helps," and I had been treating them as the same.
 
 **There is finally a consumer that reads definitions every day.** People route around bad
 definitions without noticing. An analyst knows which revenue figure is meant in which meeting.
@@ -152,6 +266,14 @@ vendor pitch describes. It also matches what this knowledge base argues elsewher
 property of the specific data path a use case touches, not a company-wide state to reach first.
 See
 [Readiness Is a Use-Case Property](/enterprise-ai-transformation/tracks/03-data-readiness/readiness-is-a-use-case-property.md).
+
+I am not alone on that counter, though the company is not disinterested. A consultancy's AI lead
+puts it as "the semantic layer becomes a local feature of each specialist, not a global
+infrastructure project", with definitions "scoped, maintained by the people who use them, and
+loaded only when relevant" ([Bausili, 2026](#ev-bausili-2026-local-not-global-semantics)). He
+sells implementation work, so the bounded engagement is also his business model. Agreement from
+someone with a reason to agree is worth less than it looks, which is why it stays a counter here
+rather than a conclusion.
 
 ## The failure mode nobody reports
 
@@ -169,9 +291,10 @@ measured result.
 
 ## What the evidence does and does not show
 
-**There is a controlled measurement, and it measures the wrong unit.** I went looking for evidence
-that an agreed semantic layer improves AI output, expecting to find none. What exists is close
-enough to be worth reporting and different enough that it does not settle the question.
+**The measurements exist, and not one of them measures quite the right unit.** I went looking for
+evidence that an agreed semantic layer improves AI output, expecting to find none. There is more
+than I expected. It does not all point the same way, and none of it answers the question a reader
+is actually asking.
 
 BIRD is an academic text-to-SQL benchmark built over real databases. It supplies hand-written
 notes explaining what each question means, on the explicit grounds that schema alone does not
@@ -198,6 +321,91 @@ valuable. They do not establish that a governed layer is how you supply it.
 
 For scale on the underlying task ([Li et al., 2023](#ev-bird-benchmark-human-gap-2023)), BIRD's headline gap at publication was 54.89% for the leading model against 92.96% for human annotators. Models have improved substantially since.
 
+**A second measurement uses a much better corpus, and it prices one layer of meaning separately.**
+BEAVER is built from real private enterprise warehouses rather than public databases, drawn from
+actual query logs. It holds 9128 question-SQL pairs over 812 tables across 19 domains
+([Chen et al., 2026](#ev-beaver-2026-benchmark-scale-semantics)). Its abstract reports a state-of-the-art agentic framework on GPT-5.2 reaching 10.8% execution accuracy ([Chen et al., 2026](#ev-beaver-2026-enterprise-warehouse-accuracy-semantics)).
+
+The useful part sits underneath that headline. The paper splits query generation into five
+subtasks: multi-table retrieval, join key detection, column mapping, domain knowledge extraction,
+and query decomposition ([Chen et al., 2026](#ev-beaver-2026-five-subtasks-semantics)). It then
+reports accuracy when a person supplies the answers to some of them. One condition supplies only
+the schema-linking subtasks. Another supplies all five
+([Chen et al., 2026](#ev-beaver-2026-annotation-settings-semantics)).
+
+Averaged across models, the strongest framework goes from 9.5% with no help, to 18.9% with the schema-linking answers supplied, to 25.9% with all five ([Chen et al., 2026](#ev-beaver-2026-annotation-ladder-semantics)).
+
+The first step is the interpretable one. Telling the model which tables to use, how they join, and
+which column means what roughly doubles accuracy. That is one layer of meaning, priced.
+
+I wanted the second step to be the uninteresting one, and it is not. It adds two things at once:
+the query decomposition, which no definitions project delivers, and domain knowledge extraction,
+which the paper illustrates as learning that "HASS school refers to SCHOOL_NAME" holds a
+particular value. That second thing is a business term mapped to a predicate, which is exactly
+what a glossary carries and exactly what the three executives are arguing about.
+
+So the ladder does not cleanly separate meaning from planning, and I should not claim it does. The
+most glossary-like component is bundled with the query plan, so the seven points between those last two figures cannot be attributed to either. Even with all five supplied, about three questions in four
+are still wrong.
+
+**Where it pays depends on how bad your names already are.** A MotherDuck author ran the same
+500 questions with and without column comments on every table. The comments moved accuracy by
+1.1 points on one split and 0.2 on the other
+([Matson, 2026](#ev-motherduck-2026-comments-near-zero-semantics)).
+
+The average hides the finding. Broken out by database, comments gained 8.7 points on the most
+cryptically named schema and lost 2.9 points on the most intuitive one
+([Matson, 2026](#ev-motherduck-2026-clean-schema-negative-semantics)). There, he concluded, they
+introduced noise into a mental model the models already had right.
+
+That shape is the most decision-useful thing on this page, and it suggests a check you can run
+before spending anything. Take the ten tables your first use case touches and read the column
+names as a stranger would. If a new analyst could tell what they mean, the annotation spend may
+be worth less than it costs. If they read like `debit_card_specializing`, that is where the
+payoff sits.
+
+I am deliberately not calling this an answer to where to stop. The instrument is too weak for
+that: his accuracy figures use his own judge-based scoring rather than the benchmark's strict
+measure, and he calls the harness "heavily vibe-coded, so YMMV, but the data is real and I've
+looked at all of it"
+([Matson, 2026](#ev-motherduck-2026-harness-caveat-semantics)). By the standard I apply further
+down to an untraceable survey figure, a non-standard scorer on a self-described vibe-coded
+harness is a direction to investigate, not a number to plan against. He also sells a warehouse,
+and his conclusion favors data modeling over metadata platforms.
+
+**One vendor's own benchmark undercuts its own pitch.** Cube sells a semantic layer. Its
+paired benchmark reports gains of 17 to 23 points across three frontier models
+([Rumiantsau, 2026](#ev-cube-2026-semantic-layer-delta-semantics)), significant under a McNemar
+test at n = 99 ([Rumiantsau, 2026](#ev-cube-2026-mcnemar-significance-semantics)).
+
+What they supplied as the treatment is the part worth knowing. It was not a platform. It was a
+hand-authored markdown document of measures, conventions and disambiguation rules, with "no code,
+no runtime, no tool calls. Just the document, pasted into the prompt"
+([Rumiantsau, 2026](#ev-cube-2026-treatment-is-a-markdown-file-semantics)). They give its size as
+4 KB, and the effort as "an afternoon of an analyst's time"
+([Rumiantsau, 2026](#ev-cube-2026-analyst-afternoon-semantics)). A semantic-layer vendor's best
+evidence is for a file an analyst could write in an afternoon.
+
+For even-handedness, that result has the same external-validity problem I raise about everyone
+else: 100 questions on one retail dataset, 99 of them paired, says nothing about a real warehouse.
+
+**The strongest evidence I found argues against my own distinction, and I am not going to bury
+it.** data.world sells a knowledge-graph-backed catalog. It reports GPT-4 going from 16% to 54% when the same questions are asked over a knowledge graph rather than SQL ([Sequeda et al., 2023](#ev-dataworld-2023-kg-accuracy-lift-semantics)).
+A later paper reached 72% with an ontology-based check ([Allemang and Sequeda, 2024](#ev-dataworld-2024-ontology-repair-semantics)).
+A separate 8% of answers were an explicit "I don't know" <!-- noev: same entry, cited immediately above -->.
+Their abstract says 72% "including" that 8%, but the paper's own table and its stated error rate of 19.44% show the two are added, not nested <!-- noev: the data.world 2024 entry cited immediately above carries the composition and the table reference -->.
+
+A knowledge graph with an ontology over it is the broad project, the one this note calls the
+recurring failure. Here it is, measured, winning. Three things keep me from revising the
+distinction on this evidence, and none of them is that I dislike the answer. The numbers are not
+one ladder: they are two separate experiments, and the second paper's own baseline is 42.88% rather than 54% ([Allemang and Sequeda, 2024](#ev-dataworld-2024-ontology-repair-semantics)).
+The benchmark is 43 questions on one insurance schema <!-- noev: carried in the edition notes of both data.world entries cited above -->.
+And an ontology built over one insurance schema to answer 43 known questions is the narrow work
+wearing the broad work's vocabulary, which is the blur this note is about.
+
+That third point is a real argument and it is also exactly what someone defending a thesis would
+say. Recorded as a live objection rather than a settled one.
+
 **Numbers I left out.** A widely repeated claim that only 27% of organizations <!-- noev: deliberately unsourced — the point is that this figure has no traceable instrument --> run knowledge
 graphs in production came with no instrument, sample, or definition of "in production." It also
 conflicts with a figure already published here, that roughly 15% report mature data governance <!-- noev: DATAVERSITY, cited in Master Data Management -->,
@@ -208,12 +416,22 @@ to 100 entity types is a consulting heuristic, even though it is easy to budget 
 forecasts of accuracy gains by 2027 are sold by the firms that sell the research, and they are
 evidence about the discourse rather than the effect.
 
+I also dropped a quote I had wanted, a neat line about formalization revealing that experts do not
+actually agree on what their terms mean. It sits on a page with no byline, no author metadata and
+no date, published by a site whose commercial backer sells AI implementation. By the standard I
+just applied to the knowledge-graph figure, that is not apparatus I can lean on.
+
 **Still open.** Has anyone round-tripped a real metric set between two rival platforms through
 the spec and got identical results? Is there a documented case, with a named organization and a
-named decision-maker, where a definitional conflict was settled? Does any published result break
-success out by scope, so that a number about metric definitions is not quoted to justify an
-enterprise program? Absent that last one, every published number describes something other than
-the decision a reader is making.
+named decision-maker, where a definitional conflict was settled?
+
+The third question I had here has moved a little. I asked whether any published result breaks
+success out by scope, and two now do, partially. The per-database split shows the gain tracking
+how cryptic the schema already was. The subtask ladder separates supplying meaning from supplying
+the query plan, and only the first is what a definitions project sells.
+
+Neither is an organizational result, and one runs on an instrument its own author disclaims. The
+question is better posed than it was and still open.
 
 ## Where this leaves me
 
@@ -230,6 +448,14 @@ that several functions answer differently. Get the argument settled by someone w
 to settle it. Only then encode the result where machines read it. That is a claim about
 sequencing, and it stays a note until I find someone who has done it and written it up.
 
+The newer evidence does not test that sequencing, but it fits it. The strongest vendor result came
+from a document an analyst could write in an afternoon, so encoding looks like the cheap half. And
+on real enterprise data, supplying the meaning doubled accuracy and still left most questions
+wrong, which argues against expecting a definitions project to carry an agent by itself.
+
+What that leaves me more confident about is narrow: the expensive part is the
+argument, not the artifact.
+
 ## Sources
 
 <!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->
@@ -237,6 +463,27 @@ sequencing, and it stays a note until I find someone who has done it and written
 - **Open Semantic Interchange (now Apache Ossie, incubating) — *core-spec/spec.md, Version History section (repo: apache/ossie, formerly open-semantic-interchange/OSI); the January 2026 announcement is 'OSI Specification Now Live' at open-semantic-interchange.org/updates/*, 2026.** 0.1.1 (2025-12-11): Initial release. [View source](https://open-semantic-interchange.org/updates/){#ev-osi-spec-v01-release-2026} · verified 2026-08-10 · primary
 - **The Apache Software Foundation — *Apache Ossie (Incubating): The New Name for Open Semantic Interchange*, 2026.** The Open Semantic Interchange project has been accepted into the Apache Incubator under a new name — Apache Ossie (incubating). [View source](https://ossie.apache.org/updates/){#ev-apache-ossie-incubator-2026} · verified 2026-08-10 · primary
 - **Open Semantic Interchange (now Apache Ossie, incubating) — *core-spec/spec.md (repo: apache/ossie, formerly open-semantic-interchange/OSI)*, 2026.** Support for datasets, relationships, fields, and metrics. [View source](https://open-semantic-interchange.org/){#ev-osi-spec-scope-yaml-2026} · verified 2026-08-10 · primary
+- **The Apache Software Foundation — *Apache Ossie - Ontology Specification (ontology/ontology.md)*, Version 0.2.0.dev0, Version History section; nothing ontology-related appears in the released 0.1.1.** - **0.2.0.dev0** (2026-05-29): Basic support for ontologies and logical schema mappings
+  - Core ontology structure: Concepts, relationships, and business rules (requires and derived_by). [View source](https://github.com/apache/ossie/blob/main/ontology/ontology.md){#ev-ossie-2026-ontology-spec-exists-semantics} · verified 2026-09-17 · primary
+- **The Apache Software Foundation — *Apache Ossie - converters/ontology/README.md*, repository state at 2026-09-17; the converter is converters/ontology/scripts/palantir_to_ossie.py, with tests and a CI workflow.** Converts a Palantir ontology export (a `.zip` archive or an already extracted folder containing a Palantir ontology JSON and a `data_sets` folder of one or more dataset spec JSON files) into an Ossie-compliant YAML representation, printed to stdout. [View source](https://github.com/apache/ossie/blob/main/converters/ontology/README.md){#ev-ossie-2026-palantir-converter-semantics} · verified 2026-09-17 · primary
+- **The Apache Software Foundation — *Apache Ossie - Core Metadata Specification (core-spec/spec.md)*, Version 0.2.0.dev0, unreleased; the only released version is 0.1.1 (2025-12-11).** > **DRAFT version** — in development, schema may change before 0.2.0 is released. [View source](https://github.com/apache/ossie/blob/main/core-spec/spec.md){#ev-ossie-2026-draft-not-for-production-semantics} · verified 2026-09-17 · primary
+- **The Apache Software Foundation — *Apache Ossie - Core Metadata Specification (core-spec/spec.md)*, Version 0.2.0.dev0; verified by enumerating every field table in the spec, where the only occurrence of owner, steward, approval, governance or certification vocabulary is the Apache licence header.** | `ai_context` | string/object | No | Additional context for AI tools (e.g., custom instructions) |. [View source](https://github.com/apache/ossie/blob/main/core-spec/spec.md){#ev-ossie-2026-field-vocabulary-semantics} · verified 2026-09-17 · primary
+- **Lippolis, Saeedizade, Keskisarkka, Zuppiroli, Ceriani, Gangemi, Blomqvist, Nuzzolese — *Ontology Generation using Large Language Models*, arXiv:2503.05388, 7 Mar 2025; published in The Semantic Web (ESWC), doi:10.1007/978-3-031-94575-5_18.** More specifically, the model OpenAI o1-preview with Ontogenia produces ontologies of sufficient quality to meet the requirements of ontology engineers, significantly outperforming novice ontology engineers in modelling ability. However, we still note some common mistakes and variability of result quality, which is important to take into account when using LLMs for ontology authoring support. [View source](https://arxiv.org/abs/2503.05388){#ev-lippolis-2025-llm-drafts-beat-novices-semantics} · verified 2026-09-17 · primary
+- **Ben Bausili, Global Director of AI Solutions at InterWorks (a data and AI consultancy that sells implementation work) — *Semantic Layers Are Overrated*, 2026-03-10, personal blog.** The semantic layer becomes a local feature of each specialist, not a global infrastructure project. Consistent definitions still exist. They're just scoped, maintained by the people who use them, and loaded only when relevant. [View source](https://benbausili.com/posts/semantic-layers-are-overrated/){#ev-bausili-2026-local-not-global-semantics} · verified 2026-09-17 · primary
 - **Li et al. (University of Hong Kong and collaborators) — *Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs (BIRD), arXiv:2305.03111 (v3)*, 2023.** Our emphasis on database values highlights the new challenges of dirty and noisy database values, external knowledge grounding between NL questions and database values, and SQL efficiency, particularly in the context of massive databases. [View source](https://ar5iv.labs.arxiv.org/html/2305.03111){#ev-bird-external-knowledge-design-2023} · verified 2026-08-10 · primary
 - **Li et al. (University of Hong Kong and collaborators) — *BIRD, arXiv:2305.03111 (v3), Table 2 — columns 'w/o knowledge' and 'w/ knowledge' for development and testing data*, 2023.** The Execution Accuracy (EX) of advanced text-to-SQL models in Bird. The human performance is also provided. [View source](https://ar5iv.labs.arxiv.org/html/2305.03111){#ev-bird-external-knowledge-delta-2023} · verified 2026-08-10 · primary
 - **Li et al. (University of Hong Kong and collaborators) — *Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs (BIRD), arXiv:2305.03111 (v3, NeurIPS version of record — the arXiv abstract PAGE still renders the superseded v1 abstract, which says ChatGPT/40.08%; quote the v3 full text, not the abs page)*, 2023.** even the most effective text-to-SQL models, i.e. GPT-4, only achieve 54.89% in execution accuracy, which is still far from the human result of 92.96%. [View source](https://ar5iv.labs.arxiv.org/html/2305.03111){#ev-bird-benchmark-human-gap-2023} · verified 2026-08-10 · primary
+- **Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI) — *BEAVER: An Enterprise Benchmark for Text-to-SQL*, arXiv:2409.02038v3, 13 May 2026.** It comprises 9128 question-SQL pairs sourced from real-world query logs and 812 tables across 19 diverse domains. [View source](https://arxiv.org/abs/2409.02038v3){#ev-beaver-2026-benchmark-scale-semantics} · verified 2026-09-17 · primary
+- **Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI) — *BEAVER: An Enterprise Benchmark for Text-to-SQL*, arXiv:2409.02038v3, 13 May 2026, abstract. These are the abstract's GPT-5.2 figures. The paper's own strongest end-to-end result is 11.4% (ReFoRCE with Claude-4.5-Sonnet, section 5.3 and Table 4), so 10.8% is not the maximum observed.** Our evaluation reveals a significant performance gap compared to existing benchmarks: SOTA agentic frameworks using the advanced model GPT-5.2 achieve only 10.8% accuracy. When provided with all subtask annotations as oracle hints, accuracy increases to 30.1%, confirming that a major bottleneck lies in correctly resolving these subtasks. [View source](https://arxiv.org/abs/2409.02038v3){#ev-beaver-2026-enterprise-warehouse-accuracy-semantics} · verified 2026-09-17 · primary
+- **Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI) — *BEAVER: An Enterprise Benchmark for Text-to-SQL*, arXiv:2409.02038v3, 13 May 2026, section 3. NOTE: this sentence is in the PDF, not the shorter abstract rendered on the /abs page.** five subtasks critical to successful query generation to enable fine-grained analysis: multi-table retrieval, join key detection, column mapping, domain knowledge extraction, and query decomposition. [View source](https://arxiv.org/pdf/2409.02038v3){#ev-beaver-2026-five-subtasks-semantics} · verified 2026-09-17 · primary
+- **Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI) — *BEAVER: An Enterprise Benchmark for Text-to-SQL*, arXiv:2409.02038v3, 13 May 2026, section 5.4 of the PDF (not on the /abs page).** Setting 1 provides annotations for schema-linking subtasks: table retrieval, join key detection, and column mappings. Setting 2 provides annotations for all subtasks. [View source](https://arxiv.org/pdf/2409.02038v3){#ev-beaver-2026-annotation-settings-semantics} · verified 2026-09-17 · primary
+- **Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI) — *BEAVER: An Enterprise Benchmark for Text-to-SQL*, arXiv:2409.02038v3, 13 May 2026, Table 6 of the PDF, Execution Accuracy column, ReFoRCE row of each setting. Other frameworks are lower in every setting (Setting 2: Few-shot 23.1, DIN-SQL 13.9, DAIL-SQL 11.2).** Table 6: Avg. execution accuracy and subtask performance in end-to-end setting and with subtask annotations across all models. [View source](https://arxiv.org/pdf/2409.02038v3){#ev-beaver-2026-annotation-ladder-semantics} · verified 2026-09-17 · primary
+- **Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms) — *Does "AI-Ready Data" simply mean "Good Data Modeling"?*, 2026-02-06; BIRD Mini-Dev, 500 questions, 11 databases, three frontier models; accuracy under the author's own LLM-judge scoring, not strict BIRD execution accuracy.** In BIRD benchmark testing, adding column comments to schemas improved accuracy by just 1.1 percentage points on the training set and 0.2 on the test set. Comments helped only when schemas were genuinely confusing (like a database called "debit_card_specializing"), but actually hurt performance on schemas with intuitive names. [View source](https://motherduck.com/blog/bird-bench-and-data-models/){#ev-motherduck-2026-comments-near-zero-semantics} · verified 2026-09-17 · primary
+- **Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms) — *Does "AI-Ready Data" simply mean "Good Data Modeling"?*, 2026-02-06; per-database breakdown blended across train and test.** Comments help when the schema is genuinely confusing. debit_card_specializing (try to guess what that schema looks like) got the biggest boost. But schemas with intuitive names and obvious relationships? Comments made things worse. The models had already formed a correct mental model, and the comments introduced noise. [View source](https://motherduck.com/blog/bird-bench-and-data-models/){#ev-motherduck-2026-clean-schema-negative-semantics} · verified 2026-09-17 · primary
+- **Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms) — *Does "AI-Ready Data" simply mean "Good Data Modeling"?*, 2026-02-06, methodology footer.** heavily vibe-coded, so YMMV, but the data is real and I've looked at all of it. [View source](https://motherduck.com/blog/bird-bench-and-data-models/){#ev-motherduck-2026-harness-caveat-semantics} · verified 2026-09-17 · primary
+- **Michael Rumiantsau, VP of Product at Cube (sells a semantic layer) — *Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models*, 2026-04-28; 100 natural-language questions over the Cleaned Contoso Retail Dataset in ClickHouse; paper arXiv:2604.25149.** Adding the semantic layer improves accuracy by +17 to +23 percentage points across all three models. [View source](https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models){#ev-cube-2026-semantic-layer-delta-semantics} · verified 2026-09-17 · primary
+- **Michael Rumiantsau, VP of Product at Cube (sells a semantic layer) — *Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models*, 2026-04-28.** All three paired improvements are statistically significant under two-sided exact McNemar (p ≤ 0.0015, n = 99). [View source](https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models){#ev-cube-2026-mcnemar-significance-semantics} · verified 2026-09-17 · primary
+- **Michael Rumiantsau, VP of Product at Cube (sells a semantic layer) — *Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models*, 2026-04-28, description of the treatment condition.** hand-authored markdown document describing the dataset's measures, conventions, and disambiguation rules. No code, no runtime, no tool calls. Just the document, pasted into the prompt. [View source](https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models){#ev-cube-2026-treatment-is-a-markdown-file-semantics} · verified 2026-09-17 · primary
+- **Michael Rumiantsau, VP of Product at Cube (sells a semantic layer) — *Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models*, 2026-04-28, section "Why this matters".** The markdown we used was 4 KB — an afternoon of an analyst's time. But it has to capture what your metrics actually mean. [View source](https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models){#ev-cube-2026-analyst-afternoon-semantics} · verified 2026-09-17 · primary
+- **Sequeda, Allemang, Jacob (all data.world, which sells a knowledge-graph-backed catalog) — *A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model's Accuracy for Question Answering on Enterprise SQL Databases*, arXiv:2311.07509v1, submitted 13 Nov 2023; 43 questions, one insurance-domain schema.** Our primary finding reveals that question answering using GPT-4, with zero-shot prompts directly on SQL databases, achieves an accuracy of 16%. Notably, this accuracy increases to 54% when questions are posed over a Knowledge Graph representation of the enterprise SQL database. [View source](https://arxiv.org/abs/2311.07509){#ev-dataworld-2023-kg-accuracy-lift-semantics} · verified 2026-09-17 · primary
+- **Allemang, Sequeda (data.world AI Lab) — *Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!*, arXiv:2405.11706v1, submitted 20 May 2024, section 6.1 and Table 1; same 43-question benchmark; this paper's own un-repaired baseline is 42.88%, not the 54% from the 2023 paper. The abstract's word 'including' is misleading, since Table 1 and the stated 19.44% error rate show the 8% is a separate additive category.** Using the chat with the data benchmark, our primary finding is that our approach increases the overall accuracy to 72% including an additional 8% of "I don't know" unknown results. Thus, the overall error rate is 20%. [View source](https://arxiv.org/abs/2405.11706){#ev-dataworld-2024-ontology-repair-semantics} · verified 2026-09-17 · primary

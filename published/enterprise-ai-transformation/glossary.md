@@ -716,13 +716,13 @@ A unified logical layer that connects disparate physical data sources through me
 
 ## Data Mesh
 
-A decentralized organizational model where domain teams own and publish their own data as products, governed by federated standards. Data mesh distributes responsibility; data fabric centralizes intelligence. AI limitation: mesh governance assumes human discovery workflows — agents need programmatic, autonomous access that the mesh model wasn't designed to support directly.
+A decentralized organizational model where domain teams own and publish their own data as products, governed by federated standards. Data mesh distributes responsibility; data fabric centralizes intelligence. The model leaves agreement on what a shared term means to federated governance rather than settling it. See [Why Your AI Gives Three Different Answers](/research-notes/why-your-ai-gives-three-different-answers.md).
 
 ---
 
 ## Semantic Layer
 
-A business-friendly translation layer that maps raw database fields and tables to human-readable (and machine-readable) business concepts. Ensures that "revenue" means the same thing whether queried from finance, sales, or an AI agent. For agentic AI, the semantic layer is the machine-readable context that allows agents to understand what data means without human interpretation.
+A business-friendly translation layer that maps raw database fields and tables to human-readable (and machine-readable) business concepts. It encodes an agreed definition of "revenue" so that the same one resolves for finance, sales, or an AI agent. It records an agreement rather than producing one: where the functions have never agreed, a semantic layer can only carry the disagreement forward.
 
 ---
 

@@ -3677,16 +3677,16 @@
 - id: ev-atlan-2026-context-layer-guide-vendor-example
   claim: "example of a data-catalog vendor publishing 'context layer' category-defining content in a shape that matches its own product line"
   value: "n/a — qualitative example"
-  wording: "the de facto standard for connecting agents to tools (referring to MCP). Atlan's own guide names its product line — Enterprise Data Graph, Context Agents, Context Lakehouse — as the delivery mechanism for the context layer it describes."
+  wording: "Atlan is the cross-platform context layer for AI. [...] Four product capabilities do the work: Enterprise Data Graph: More than 100 native connectors knit warehouses, BI tools, SaaS apps, and operational systems into one continuously updated graph."
   source:
     org: Atlan
     report: "Context Layer for AI Agents: Enterprise Guide 2026"
-    edition: "2026-05-08 (published), updated 2026-06-30"
+    edition: "2026-05-08 (published), updated 2026-08-28"
     url: https://atlan.com/know/context-layer-for-ai-agents/
     pdf_hash:
-  verified: 2026-07-08
+  verified: 2026-09-17
   status: primary
-  expires: 2027-01-08
+  expires: 2027-03-17
 
 - id: ev-mouzouni-2026-context-kubernetes
   claim: "arXiv preprint (solo author, not peer-reviewed) proposing a declarative, Kubernetes-inspired governance model for enterprise agent context"

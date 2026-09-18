@@ -1593,3 +1593,283 @@
   verified: 2026-09-15
   status: primary
   expires: 2027-09-15
+
+- id: ev-beaver-2026-enterprise-warehouse-accuracy-semantics
+  claim: "On a benchmark built from real private enterprise warehouses, a state-of-the-art agentic text-to-SQL framework on GPT-5.2 reaches 10.8% execution accuracy, rising to 30.1% when handed human annotations of every subtask"
+  value: "10.8%; 30.1% with all subtask annotations as oracle hints"
+  wording: "Our evaluation reveals a significant performance gap compared to existing benchmarks: SOTA agentic frameworks using the advanced model GPT-5.2 achieve only 10.8% accuracy. When provided with all subtask annotations as oracle hints, accuracy increases to 30.1%, confirming that a major bottleneck lies in correctly resolving these subtasks."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026, abstract. These are the abstract's GPT-5.2 figures. The paper's own strongest end-to-end result is 11.4% (ReFoRCE with Claude-4.5-Sonnet, section 5.3 and Table 4), so 10.8% is not the maximum observed"
+    url: https://arxiv.org/abs/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-beaver-2026-benchmark-scale-semantics
+  claim: "Scale and provenance of the BEAVER enterprise text-to-SQL benchmark"
+  value: "9128 question-SQL pairs; 812 tables; 19 domains"
+  wording: "It comprises 9128 question-SQL pairs sourced from real-world query logs and 812 tables across 19 diverse domains."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026"
+    url: https://arxiv.org/abs/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-motherduck-2026-comments-near-zero-semantics
+  claim: "A paired test by a warehouse vendor found adding column comments to every table moved text-to-SQL accuracy by about a point at most"
+  value: "+1.1pp (train), +0.2pp (test)"
+  wording: "In BIRD benchmark testing, adding column comments to schemas improved accuracy by just 1.1 percentage points on the training set and 0.2 on the test set. Comments helped only when schemas were genuinely confusing (like a database called \"debit_card_specializing\"), but actually hurt performance on schemas with intuitive names."
+  source:
+    org: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+    report: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    edition: "2026-02-06; BIRD Mini-Dev, 500 questions, 11 databases, three frontier models; accuracy under the author's own LLM-judge scoring, not strict BIRD execution accuracy"
+    url: https://motherduck.com/blog/bird-bench-and-data-models/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-motherduck-2026-clean-schema-negative-semantics
+  claim: "The same test found schema annotation helps most where names are cryptic and hurts where they are already intuitive"
+  value: "+8.7pp on the hardest schema; -2.9pp on the easiest"
+  wording: "Comments help when the schema is genuinely confusing. debit_card_specializing (try to guess what that schema looks like) got the biggest boost. But schemas with intuitive names and obvious relationships? Comments made things worse. The models had already formed a correct mental model, and the comments introduced noise."
+  source:
+    org: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+    report: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    edition: "2026-02-06; per-database breakdown blended across train and test"
+    url: https://motherduck.com/blog/bird-bench-and-data-models/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-motherduck-2026-harness-caveat-semantics
+  claim: "The author's own stated caveat about the evaluation harness behind these figures"
+  value: "n/a (qualitative)"
+  wording: "heavily vibe-coded, so YMMV, but the data is real and I've looked at all of it."
+  source:
+    org: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+    report: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    edition: "2026-02-06, methodology footer"
+    url: https://motherduck.com/blog/bird-bench-and-data-models/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-cube-2026-semantic-layer-delta-semantics
+  claim: "A semantic-layer vendor's paired benchmark found supplying business definitions raised text-to-SQL accuracy by 17 to 23 percentage points across three frontier models"
+  value: "+17.2 / +22.2 / +23.2 percentage points"
+  wording: "Adding the semantic layer improves accuracy by +17 to +23 percentage points across all three models."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28; 100 natural-language questions over the Cleaned Contoso Retail Dataset in ClickHouse; paper arXiv:2604.25149"
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-cube-2026-treatment-is-a-markdown-file-semantics
+  claim: "What the vendor's benchmark actually supplied as the treatment was a hand-written markdown document pasted into the prompt, with no platform or runtime involved"
+  value: "4 KB markdown document"
+  wording: "hand-authored markdown document describing the dataset's measures, conventions, and disambiguation rules. No code, no runtime, no tool calls. Just the document, pasted into the prompt."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28, description of the treatment condition"
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-cube-2026-mcnemar-significance-semantics
+  claim: "The vendor benchmark reports a significance test on its paired design"
+  value: "p <= 0.0015, n = 99"
+  wording: "All three paired improvements are statistically significant under two-sided exact McNemar (p ≤ 0.0015, n = 99)."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28"
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-dataworld-2023-kg-accuracy-lift-semantics
+  claim: "A knowledge-graph vendor's benchmark found GPT-4 zero-shot text-to-SQL at 16% accuracy, rising to 54% over a knowledge-graph representation of the same database"
+  value: "16% -> 54%"
+  wording: "Our primary finding reveals that question answering using GPT-4, with zero-shot prompts directly on SQL databases, achieves an accuracy of 16%. Notably, this accuracy increases to 54% when questions are posed over a Knowledge Graph representation of the enterprise SQL database."
+  source:
+    org: "Sequeda, Allemang, Jacob (all data.world, which sells a knowledge-graph-backed catalog)"
+    report: "A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model's Accuracy for Question Answering on Enterprise SQL Databases"
+    edition: "arXiv:2311.07509v1, submitted 13 Nov 2023; 43 questions, one insurance-domain schema"
+    url: https://arxiv.org/abs/2311.07509
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-dataworld-2024-ontology-repair-semantics
+  claim: "A follow-up from the same vendor added an ontology-based query check and reported 72% overall accuracy, counting an additional 8% of explicit refusals"
+  value: "72.55% accuracy with repairs, plus a separate 8% answering \"I don't know\", giving 80.56% and an error rate of 19.44% (Table 1)"
+  wording: "Using the chat with the data benchmark, our primary finding is that our approach increases the overall accuracy to 72% including an additional 8% of \"I don't know\" unknown results. Thus, the overall error rate is 20%."
+  source:
+    org: "Allemang, Sequeda (data.world AI Lab)"
+    report: "Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!"
+    edition: "arXiv:2405.11706v1, submitted 20 May 2024, section 6.1 and Table 1; same 43-question benchmark; this paper's own un-repaired baseline is 42.88%, not the 54% from the 2023 paper. The abstract's word 'including' is misleading, since Table 1 and the stated 19.44% error rate show the 8% is a separate additive category"
+    url: https://arxiv.org/abs/2405.11706
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-ossie-2026-draft-not-for-production-semantics
+  claim: "The current Apache Ossie core specification is an in-development draft that warns in its own header that the schema may still change"
+  value: "0.2.0.dev0 (unreleased)"
+  wording: "> **DRAFT version** — in development, schema may change before 0.2.0 is released."
+  source:
+    org: "The Apache Software Foundation"
+    report: "Apache Ossie - Core Metadata Specification (core-spec/spec.md)"
+    edition: "Version 0.2.0.dev0, unreleased; the only released version is 0.1.1 (2025-12-11)"
+    url: https://github.com/apache/ossie/blob/main/core-spec/spec.md
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-ossie-2026-field-vocabulary-semantics
+  claim: "The Ossie core spec's model-level vocabulary is entirely structural: it carries no field for the owner, steward, approver or approval status of a definition, so accountability for a metric's meaning sits outside the standard"
+  value: "n/a (qualitative; 24 metadata field names, none naming an owner or steward)"
+  wording: "| `ai_context` | string/object | No | Additional context for AI tools (e.g., custom instructions) |"
+  source:
+    org: "The Apache Software Foundation"
+    report: "Apache Ossie - Core Metadata Specification (core-spec/spec.md)"
+    edition: "Version 0.2.0.dev0; verified by enumerating every field table in the spec, where the only occurrence of owner, steward, approval, governance or certification vocabulary is the Apache licence header"
+    url: https://github.com/apache/ossie/blob/main/core-spec/spec.md
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-ossie-2026-ontology-spec-exists-semantics
+  claim: "Ossie does carry an ontology specification, covering concepts, relationships and business rules, but only inside the same unreleased draft"
+  value: "ontology spec at 0.2.0.dev0, dated 2026-05-29"
+  wording: "- **0.2.0.dev0** (2026-05-29): Basic support for ontologies and logical schema mappings\n  - Core ontology structure: Concepts, relationships, and business rules (requires and derived_by)"
+  source:
+    org: "The Apache Software Foundation"
+    report: "Apache Ossie - Ontology Specification (ontology/ontology.md)"
+    edition: "Version 0.2.0.dev0, Version History section; nothing ontology-related appears in the released 0.1.1"
+    url: https://github.com/apache/ossie/blob/main/ontology/ontology.md
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-lippolis-2025-llm-drafts-beat-novices-semantics
+  claim: "A peer-reviewed study found a reasoning model with a purpose-built prompting technique drafted ontologies good enough to meet ontology engineers' requirements and significantly better than novices, while still producing common mistakes and inconsistent quality"
+  value: "n/a (qualitative; 10 ontologies, 100 competency questions, 29 user stories)"
+  wording: "More specifically, the model OpenAI o1-preview with Ontogenia produces ontologies of sufficient quality to meet the requirements of ontology engineers, significantly outperforming novice ontology engineers in modelling ability. However, we still note some common mistakes and variability of result quality, which is important to take into account when using LLMs for ontology authoring support."
+  source:
+    org: "Lippolis, Saeedizade, Keskisarkka, Zuppiroli, Ceriani, Gangemi, Blomqvist, Nuzzolese"
+    report: "Ontology Generation using Large Language Models"
+    edition: "arXiv:2503.05388, 7 Mar 2025; published in The Semantic Web (ESWC), doi:10.1007/978-3-031-94575-5_18"
+    url: https://arxiv.org/abs/2503.05388
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-bausili-2026-local-not-global-semantics
+  claim: "A consultancy AI lead argues the semantic layer should be a scoped, per-specialist feature rather than one enterprise-wide infrastructure programme"
+  value: "n/a (qualitative)"
+  wording: "The semantic layer becomes a local feature of each specialist, not a global infrastructure project. Consistent definitions still exist. They're just scoped, maintained by the people who use them, and loaded only when relevant."
+  source:
+    org: "Ben Bausili, Global Director of AI Solutions at InterWorks (a data and AI consultancy that sells implementation work)"
+    report: "Semantic Layers Are Overrated"
+    edition: "2026-03-10, personal blog"
+    url: https://benbausili.com/posts/semantic-layers-are-overrated/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-beaver-2026-five-subtasks-semantics
+  claim: "BEAVER annotates and scores five named subtasks of query generation, so accuracy can be reported for conditions where a person supplies the answers to some of them"
+  value: "n/a (qualitative)"
+  wording: "five subtasks critical to successful query generation to enable fine-grained analysis: multi-table retrieval, join key detection, column mapping, domain knowledge extraction, and query decomposition."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026, section 3. NOTE: this sentence is in the PDF, not the shorter abstract rendered on the /abs page"
+    url: https://arxiv.org/pdf/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-beaver-2026-annotation-settings-semantics
+  claim: "The benchmark has one annotation condition supplying only the schema-linking subtasks, and another supplying all five, which adds domain-knowledge extraction and query decomposition together rather than separately"
+  value: "n/a (qualitative)"
+  wording: "Setting 1 provides annotations for schema-linking subtasks: table retrieval, join key detection, and column mappings. Setting 2 provides annotations for all subtasks."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026, section 5.4 of the PDF (not on the /abs page)"
+    url: https://arxiv.org/pdf/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-beaver-2026-annotation-ladder-semantics
+  claim: "Averaged across models, supplying schema meaning roughly doubles execution accuracy on real enterprise warehouses, and supplying the query plan as well raises it again, with most questions still wrong"
+  value: "Strongest framework (ReFoRCE), averaged across all models: 9.5% with no annotations, 18.9% with schema-linking annotations only, 25.9% with annotations of all subtasks"
+  wording: "Table 6: Avg. execution accuracy and subtask performance in end-to-end setting and with subtask annotations across all models."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026, Table 6 of the PDF, Execution Accuracy column, ReFoRCE row of each setting. Other frameworks are lower in every setting (Setting 2: Few-shot 23.1, DIN-SQL 13.9, DAIL-SQL 11.2)"
+    url: https://arxiv.org/pdf/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-cube-2026-analyst-afternoon-semantics
+  claim: "The vendor states the size of the document that produced its accuracy gain, and the effort it represents"
+  value: "4 KB; an afternoon of an analyst's time"
+  wording: "The markdown we used was 4 KB — an afternoon of an analyst's time. But it has to capture what your metrics actually mean."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28, section \"Why this matters\""
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+
+- id: ev-ossie-2026-palantir-converter-semantics
+  claim: "The Ossie repository ships a converter that imports a Palantir ontology export into an Ossie model, so an import path from the best-known commercial ontology product exists today"
+  value: "n/a (qualitative)"
+  wording: "Converts a Palantir ontology export (a `.zip` archive or an already extracted folder containing a Palantir ontology JSON and a `data_sets` folder of one or more dataset spec JSON files) into an Ossie-compliant YAML representation, printed to stdout."
+  source:
+    org: "The Apache Software Foundation"
+    report: "Apache Ossie - converters/ontology/README.md"
+    edition: "repository state at 2026-09-17; the converter is converters/ontology/scripts/palantir_to_ossie.py, with tests and a CI workflow"
+    url: https://github.com/apache/ossie/blob/main/converters/ontology/README.md
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17

@@ -56,7 +56,10 @@ system that uses it.
 
 > **\$2.5 trillion** in worldwide AI spending forecast for 2026 — all of it dependent on data that MDM makes trustworthy ([Gartner, 2026](#ev-gartner-ai-spending-2026-worldwide-total))
 
-In 2026, MDM programs that don't account for AI consumption are already behind. AI agents are now the primary consumers of master data at scale. Even small data deviations that human analysts would catch and correct can propagate silently through thousands of agent decisions before anyone notices.
+An MDM program designed before agents began reading master data will not have accounted for how
+they read it. The mechanism that matters is propagation. A deviation a human analyst would catch
+can pass unremarked through a long run of agent decisions. How much of an organization's
+master-data traffic now comes from agents rather than people is not something we found measured.
 
 ---
 
@@ -240,7 +243,12 @@ The canonical data model for a Customer entity might specify:
 - Relationships: a customer may have multiple contacts, multiple addresses, multiple orders
 - Business rules: a customer record must have at least one verified contact method
 
-Most organizations underestimate how contentious this step is. Finance defines "customer" differently than sales, which defines it differently than support. Reaching agreement on a canonical definition requires cross-functional governance — not just a technical decision.
+This step is where the work stalls, and the reason is structural rather than technical. Finance
+defines "customer" differently from sales, which defines it differently from support. Each
+definition is correct for the job it was built for. Reaching one canonical definition therefore
+requires someone with the authority to overrule the others, not just a modeling exercise.
+[Why Your AI Gives Three Different Answers](/research-notes/why-your-ai-gives-three-different-answers.md)
+covers what happens when that authority is never exercised.
 
 ---
 

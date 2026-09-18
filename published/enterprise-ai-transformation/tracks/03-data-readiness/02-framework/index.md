@@ -43,7 +43,7 @@ targeting a known gap.
 | Page | Last updated |
 | --- | --- |
 | [Data Quality](01-data-quality.md)<br>What data quality means for the path a use case touches — six dimensions, a five-step framework, tooling, and what changes if you train models. | Updated 2026-07-03 |
-| [Lineage & Metadata](02-lineage-and-metadata.md)<br>The evidence layer that makes data quality, governance, and access provable — four lineage types, column-level lineage, active metadata, the business glossary, model lineage, and the AI context layer. | Updated 2026-07-03 |
+| [Lineage & Metadata](02-lineage-and-metadata.md)<br>The evidence layer that makes data quality, governance, and access provable — four lineage types, column-level lineage, active metadata, the business glossary, model lineage, and what the "context layer" label does and does not settle. | Updated 2026-07-03 |
 | [Data Governance](03-data-governance.md)<br>Why governance is different for AI — ownership, policy infrastructure, bias monitoring, explainability, the NIST / EU AI Act / ISO 42001 landscape, agentic governance, and a readiness checklist. | Updated 2026-07-03 |
 | [Access & Integration](04-access-and-integration.md)<br>The bridge between data that exists and data AI can use — the silo problem, four integration patterns, lake/warehouse/lakehouse/fabric/mesh architectures, cataloging, and agentic access requirements. | Updated 2026-07-03 |
 | [Infrastructure Readiness](05-infrastructure-readiness.md)<br>The most-skipped step in enterprise AI — the MLOps/LLMOps/AgentOps stack, the seven infrastructure layers, a maturity ladder, tooling landscape, and a readiness checklist. | Updated 2026-06-12 |

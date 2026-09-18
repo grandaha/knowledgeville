@@ -3,13 +3,41 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-09-16"
+timestamp: "2026-09-18"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.10.0 — 2026-09-18
+
+### Updated: what the evidence now says about shared business definitions
+
+The working note on why an AI assistant returns three different answers to the same question has been brought up to date, and one of its claims has been corrected.
+
+**A benchmark built on real enterprise data, and it prices one layer of meaning.** Most published results on this question run over public databases. This one is built from private enterprise warehouses drawn from real query logs. Telling the model which tables to use, how they join, and what each column means roughly doubles accuracy, from 9.5% to 18.9%. Supplying everything else as well, including the query plan, reaches 25.9%, so about three questions in four are still wrong even then.
+
+**Where the work pays depends on how bad your names already are.** A paired test of schema annotation gained 8.7 points on the most cryptically named database and *lost* 2.9 points on the most intuitive one, where the notes introduced noise into a picture the model already had right. That is the first published result that tracks the payoff against how much meaning is genuinely absent, and it suggests a check worth running before spending anything: read the column names your first use case touches as a stranger would.
+
+**Two vendor benchmarks, with their own numbers and their stake named.** One of them undercuts its own pitch. A semantic-layer vendor's strongest result came from a hand-written 4 KB markdown document pasted into a prompt, with no platform, runtime or tooling involved.
+
+**A correction.** The note implied the Apache Ossie metric standard confines itself to agreed measure definitions, the bounded work with the good track record. It does not: an ontology specification and an import path from Palantir's ontology both exist in the repository. What survives is narrower and better evidenced. Every ontology artifact sits in an unreleased draft that warns against depending on it, and the specification has no field at all for who owns a definition, who approved it, or whether anyone did.
+
+Read it: [Why Your AI Gives Three Different Answers](https://knowledge.onesteplabs.com/research-notes/why-your-ai-gives-three-different-answers/)
+
+### Corrected: four pages on semantics and metadata
+
+Two pages disagreed with each other about the same practice, and three claims did not survive checking.
+
+**When recording competing definitions is documentation, and when it is an evasion.** The business glossary guidance still calls for recording known variations in a definition across business units, but only where each definition is genuinely bounded to its own use. Where the variations are instead the output of work meant to settle on one answer, the disagreement survives with governance metadata attached, and an assistant asked a general question still returns whichever variant it reaches first.
+
+**"Context layer" is a category still being defined, largely by the firms that sell it,** rather than a settled architectural pattern. Three places that asserted the label in our own voice now attribute it to the vendor defining it.
+
+**Three claims withdrawn or corrected.** That AI agents are now the primary consumers of master data at scale: withdrawn, as nothing measuring it surfaced. That a semantic layer *ensures* a shared definition: it encodes an agreement rather than producing one, and where the functions never agreed it can only carry the disagreement forward. And the claim that the data mesh model does not address programmatic access for agents was simply wrong, since programmatic addressability is one of the model's named characteristics of a data product.
+
+Pages: [Lineage & Metadata](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata/) · [Master Data Management](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/master-data-management/) · [Data Audits & Automated Quality Governance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-audits-and-automated-quality-governance/) · [Glossary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/glossary/)
 
 ## v12.9.0 — 2026-09-16
 

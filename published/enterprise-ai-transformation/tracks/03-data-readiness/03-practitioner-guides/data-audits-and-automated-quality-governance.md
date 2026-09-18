@@ -618,7 +618,7 @@ Pricing on request.
 
 **Atlan**
 
-What it is: an active metadata platform that unifies data catalog, data quality governance, lineage, and discovery in a single control plane. Atlan's Data Quality Studio lets teams define and automate quality rules directly in cloud warehouses, with trust signals and alerts embedded in everyday workflows. It integrates upstream tools like Monte Carlo, Soda, and Anomalo to provide a 360-degree quality view. For AI specifically, it serves as the context layer that agents can query programmatically to understand data assets before consuming them.
+What it is: an active metadata platform that unifies data catalog, data quality governance, lineage, and discovery in a single control plane. Atlan's Data Quality Studio lets teams define and automate quality rules directly in cloud warehouses, with trust signals and alerts embedded in everyday workflows. It integrates upstream tools like Monte Carlo, Soda, and Anomalo to provide a 360-degree quality view. For AI specifically, Atlan positions itself as a context layer that agents can query programmatically before consuming a data asset. On what that label does and does not settle, see [MCP and the Context Gap](/enterprise-ai-transformation/tracks/04-technology-architecture-and-platform/06-mcp-and-the-context-gap.md).
 
 Best for: organizations that want to replace fragmented point tools with a single governed platform. Gartner Magic Quadrant Leader for Data and Analytics Governance Platforms (2026) and Metadata Management Solutions (2025).
 

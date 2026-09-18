@@ -1,5 +1,45 @@
 # Update Log
 
+## 2026-09-17
+
+* **Update**: the guidance on recording competing definitions of a business term now says when
+  that is documentation and when it is an evasion. The business glossary still carries known
+  variations in a definition across business units, but only where each definition is genuinely
+  bounded to its own use. Where the variations are instead the output of work meant to settle on
+  one answer, the disagreement survives with governance metadata attached, and an agent asked a
+  general question still returns whichever variant it reaches first. The canonical data model
+  section now also says plainly that agreeing a definition needs someone with the authority to
+  overrule the other functions, rather than a modeling exercise. Pages:
+  [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md),
+  [Master Data Management](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/master-data-management.md).
+
+* **Update**: "context layer" is now described as a category still being defined, largely by the
+  firms that sell it, rather than as a settled 2026 architectural pattern. The section names the
+  vendor whose own guide defines the category in the shape of its product line, and points to the
+  page that works through what is genuinely settled underneath the label. The underlying need is
+  still described as real, and as four capabilities that can be bought or built separately. Two
+  other places that asserted the label in our own voice now attribute it to the vendor instead.
+  Pages:
+  [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md),
+  [Data Audits & Automated Quality Governance](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/data-audits-and-automated-quality-governance.md).
+
+* **Correction**: the glossary said the data mesh model does not address programmatic access for
+  agents. That is wrong. Programmatic addressability is one of the model's named characteristics
+  of a data product, and cross-domain identity is a named concern too. What the model does leave
+  open is the agreement itself, which it delegates to federated governance. Page:
+  [Glossary](/enterprise-ai-transformation/glossary.md).
+
+* **Update**: three claims about what semantics does for AI are corrected. The assertion that AI
+  agents are now the primary consumers of master data at scale is withdrawn, as nothing measuring
+  that surfaced; what remains is the propagation mechanism, and an explicit note that the traffic
+  share is unmeasured. A semantic layer is now said to encode an agreement rather than to ensure
+  one, since where the functions never agreed it can only carry the disagreement forward. The
+  claim that a business glossary is what enables machines to understand data now points to the
+  evidence instead. Pages:
+  [Master Data Management](/enterprise-ai-transformation/tracks/03-data-readiness/03-practitioner-guides/master-data-management.md),
+  [Glossary](/enterprise-ai-transformation/glossary.md),
+  [Lineage & Metadata](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/02-lineage-and-metadata.md).
+
 ## 2026-09-16
 
 * **Creation**: a page on goals and targets for AI work, for anyone told that next quarter's

@@ -13,8 +13,23 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.10.1 — 2026-09-19
 
-### Citation corrections
-* Name the US law that binds, and stop pointing at deleted guidance
+### Corrected: what US law actually requires of AI in employment decisions
+
+Three pages described the US regulatory position in a way a US reader could reasonably take as "nothing here binds us." That is wrong, and the correction turned out to be larger than the wording.
+
+**The regulatory landscape section compared three frameworks, none of which is US law.** NIST's framework, the EU AI Act and ISO 42001 sat under an enforceability column reading "Voluntary (US)". Read together, the page's only regulatory map contained no binding US obligation at all. It now carries the ones that do bind, and says plainly that the table compares frameworks rather than jurisdictions.
+
+**What binds today.** New York City requires an independent bias audit of an automated employment decision tool within the past year, a published summary, and candidate notice at least ten business days before use. Illinois makes discriminatory use of AI a civil rights violation across recruitment, promotion, discharge and discipline, not only hiring, and makes failing to notify employees a separate violation. California makes it unlawful to use an automated-decision system that discriminates on a protected basis.
+
+**What is arriving.** From October 2026, Connecticut provides that using such a tool "shall not be a defense against a complaint alleging a discriminatory practice", and requires an employer filing a federal layoff notice to disclose whether the layoffs relate to its use of AI. Colorado follows in January 2027, with the state attorney general's implementing rules still to be adopted.
+
+**The part that is not new at all.** The federal Uniform Guidelines on Employee Selection Procedures have shaped selection testing since 1978, and the pages now state their four-fifths rule accurately. A selection rate below four-fifths of the highest group's rate "will generally be regarded ... as evidence of adverse impact," while smaller differences "may nevertheless constitute adverse impact". It is a rebuttable inference with exceptions running in both directions, not the pass mark it is often treated as.
+
+**These obligations differ in kind, and that matters more than the dates.** One mandates a recurring audit and advance notice. One mandates non-discrimination and notice with no audit at all. One extends an existing discrimination prohibition without either. A compliance approach built for one does not transfer to the others.
+
+**Two further corrections.** A board-facing page asserted that rules covering hiring were "already in force or imminent" and never named one; it now names two. And a practitioner guide told counsel to be specifically briefed on federal agency guidance covering AI in hiring. That guidance is no longer published, so the briefing now points at the statutes, which have proved more durable than the guidance interpreting them.
+
+Pages: [Data Governance](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance/) · [Executive Summary](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/01-executive-summary/) · [Standing Up an AI Governance Function](https://knowledge.onesteplabs.com/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function/)
 
 ## v12.10.0 — 2026-09-18
 

@@ -4834,3 +4834,157 @@
   verified: '2026-09-16'
   status: secondary-mirror
   expires: '2027-09-16'
+
+- id: ev-nyc-ll144-2023-annual-bias-audit
+  claim: "New York City has required since 2023 that an employer using an automated employment decision tool have it independently bias-audited within the past year, making a US jurisdiction's AI hiring obligation legally binding rather than voluntary"
+  value: "annual audit; in force 2023-01-01, enforced from 2023-07-05"
+  wording: "may not use or continue to use an AEDT if more than one year has passed since the most recent bias audit of the AEDT."
+  source:
+    org: "New York City Department of Consumer and Worker Protection"
+    report: "Rules implementing Local Law 144 of 2021, 6 RCNY 5-301(a) (Notice of Adoption of Final Rule)"
+    edition: "Local Law 144 effective 2023-01-01; DCWP enforcement from 2023-07-05. The Notice of Adoption PDF carries no adoption date and secondary sources disagree by a day, so none is asserted here"
+    url: https://rules.cityofnewyork.us/wp-content/uploads/2023/04/DCWP-NOA-for-Use-of-Automated-Employment-Decisionmaking-Tools-2.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-illinois-hb3773-2026-ai-employment-discrimination
+  claim: "Illinois made discriminatory use of AI across the whole employment lifecycle, not only hiring, a civil rights violation"
+  value: "n/a (qualitative); effective 2026-01-01"
+  wording: "With respect to recruitment, hiring, promotion, renewal of employment, selection for training or apprenticeship, discharge, discipline, tenure, or the terms, privileges, or conditions of employment, for an employer to use artificial intelligence that has the effect of subjecting employees to discrimination on the basis of protected classes under this Article or to use zip codes as a proxy for protected classes under this Article."
+  source:
+    org: "State of Illinois"
+    report: "Public Act 103-0804 (HB 3773), amending the Illinois Human Rights Act at 775 ILCS 5/2-102(L)(1)"
+    edition: "Effective 2026-01-01. Carries no bias-audit requirement; the notice specification is delegated to Illinois Department of Human Rights rules"
+    url: https://www.ilga.gov/documents/legislation/publicacts/103/PDF/103-0804.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-illinois-hb3773-2026-notice-duty
+  claim: "The same Illinois act makes failing to tell employees that AI is being used for those decisions a separate violation"
+  value: "n/a (qualitative)"
+  wording: "For an employer to fail to provide notice to an employee that the employer is using artificial intelligence for the purposes described in paragraph (1)."
+  source:
+    org: "State of Illinois"
+    report: "Public Act 103-0804 (HB 3773), 775 ILCS 5/2-102(L)(2)"
+    edition: "Effective 2026-01-01"
+    url: https://www.ilga.gov/documents/legislation/publicacts/103/PDF/103-0804.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-connecticut-pa26-15-2026-tool-is-no-defense
+  claim: "Connecticut removed the argument that using an automated tool excuses a discriminatory outcome, while making the quality of anti-bias testing admissible in mitigation"
+  value: "n/a (qualitative); effective 2026-10-01"
+  wording: "The use of an automated employment-related decision technology, as defined in section 7 of this act, shall not be a defense against a complaint alleging a discriminatory practice in violation of this subdivision."
+  source:
+    org: "State of Connecticut"
+    report: "Public Act No. 26-15 (Substitute Senate Bill No. 5), An Act Concerning Online Safety, section 13, amending Conn. Gen. Stat. 46a-60(b)(1)"
+    edition: "Effective 2026-10-01. The same section provides that the commission or court may consider evidence of anti-bias testing, including its quality, efficacy, recency and scope"
+    url: https://www.cga.ct.gov/2026/act/pa/pdf/2026PA-00015-R00SB-00005-PA.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-connecticut-pa26-15-2026-layoff-ai-disclosure
+  claim: "Connecticut requires an employer filing a federal WARN layoff notice to tell the state whether AI or another technological change drove the layoffs"
+  value: "n/a (qualitative); effective 2026-10-01"
+  wording: "shall disclose to the department, in a form and manner prescribed by the Labor Commissioner, whether the layoffs that are the subject of such written notice are related to the employer's use of artificial intelligence or another technological change."
+  source:
+    org: "State of Connecticut"
+    report: "Public Act No. 26-15 (Substitute Senate Bill No. 5), An Act Concerning Online Safety, section 26"
+    edition: "Effective 2026-10-01; attaches to notices served under 29 USC 2102(a)"
+    url: https://www.cga.ct.gov/2026/act/pa/pdf/2026PA-00015-R00SB-00005-PA.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-california-crd-2025-ads-record-retention
+  claim: "California raised its general employment-records retention period from two years to four, and the quoted clause fixes the period; the sentence that names automated-decision-system data among those records is a separate entry"
+  value: "four years from the record or the personnel action, whichever is later"
+  wording: "four years from the date of the making of the record or the date of the personnel action involved, whichever occurs later."
+  source:
+    org: "California Civil Rights Council"
+    report: "Employment Regulations Regarding Automated-Decision Systems, amending 2 CCR 11013 (Final Unmodified Text, Attachment B)"
+    edition: "Approved by the Office of Administrative Law 2025-06-27, effective 2025-10-01, amending a pre-existing general retention rule. The final text's surviving redline reads 'twofour years'. This clause is not AI-specific on its own"
+    url: https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2025/03/Attachment-B-Final-Unmodified-Text-of-Proposed-Employment-Regulations-Regarding-Automated-Decision-Systems.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-ugesp-1978-four-fifths-rebuttable
+  claim: "The federal four-fifths rule for employment selection has existed since 1978 and is a rebuttable inference with exceptions in both directions, not a pass/fail threshold"
+  value: "80% of the highest group's selection rate, generally"
+  wording: "A selection rate for any race, sex, or ethnic group which is less than four-fifths ( 4/5 ) (or eighty percent) of the rate for the group with the highest rate will generally be regarded by the Federal enforcement agencies as evidence of adverse impact, while a greater than four-fifths rate will generally not be regarded by Federal enforcement agencies as evidence of adverse impact. Smaller differences in selection rate may nevertheless constitute adverse impact"
+  source:
+    org: "Equal Employment Opportunity Commission, Civil Service Commission, Department of Labor and Department of Justice"
+    report: "Uniform Guidelines on Employee Selection Procedures, 29 CFR 1607.4(D)"
+    edition: "Issued 1978; text as codified. The provision continues that greater differences may not constitute adverse impact where they rest on small numbers and are not statistically significant"
+    url: https://www.law.cornell.edu/cfr/text/29/1607.4
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-california-crd-2025-ads-discrimination-unlawful
+  claim: "The substance of California's automated-decision-system regulations is a prohibition on discriminatory use, not a documentation duty"
+  value: "n/a (qualitative); effective 2025-10-01"
+  wording: "It is unlawful for an employer or other covered entity to use an automated-decision system or selection criteria (including a qualification standard, employment test, or proxy) that discriminates against an applicant or employee or a class of applicants or employees on a basis protected by the Act"
+  source:
+    org: "California Civil Rights Council"
+    report: "Employment Regulations Regarding Automated-Decision Systems (Final Unmodified Text, Attachment B)"
+    edition: "Approved by the Office of Administrative Law 2025-06-27, effective 2025-10-01. The regulations extend existing FEHA prohibitions to automated-decision systems and carry roughly thirty ADS provisions, including an adverse-impact rule that incorporates the Uniform Guidelines by reference"
+    url: https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2025/03/Attachment-B-Final-Unmodified-Text-of-Proposed-Employment-Regulations-Regarding-Automated-Decision-Systems.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-california-crd-2025-ads-data-within-retained-records
+  claim: "California folded automated-decision-system data into the general employment records an employer must preserve, rather than creating a separate AI retention duty"
+  value: "general retention raised from two years to four"
+  wording: "This includes all applications, personnel records, membership records, employment referral records, selection criteria, automated-decision system data, and other records created or received by the employer or other covered entity dealing with any employment practice and affecting any employment benefit of any applicant or employee."
+  source:
+    org: "California Civil Rights Council"
+    report: "Employment Regulations Regarding Automated-Decision Systems, amending 2 CCR 11013(c) (Final Unmodified Text, Attachment B)"
+    edition: "Effective 2025-10-01. The final text's surviving redline reads 'twofour years', showing the amendment raised the pre-existing general employment-records retention period from two years to four for every personnel record, with automated-decision-system data enumerated among them"
+    url: https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2025/03/Attachment-B-Final-Unmodified-Text-of-Proposed-Employment-Regulations-Regarding-Automated-Decision-Systems.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-colorado-ag-2026-admt-act-rulemaking
+  claim: "Colorado's automated decision-making technology law requires the state attorney general to adopt implementing rules before it takes effect on 2027-01-01"
+  value: "rules required before 2027-01-01"
+  wording: "The ADMT Act requires the Colorado Attorney General's Office to adopt rules to clarify and implement specific provisions of the law before January 1, 2027."
+  source:
+    org: "Colorado Department of Law, Office of the Attorney General"
+    report: "Artificial Intelligence (coag.gov/ai), rulemaking status page"
+    edition: "Retrieved 2026-09-19. Proposed draft rules were filed 2026-08-11 with a comment period; nothing adopted at time of retrieval. The Colorado General Assembly's own bill pages returned 404 and 406 to scripted access, so the statute text itself is not verified here"
+    url: https://coag.gov/ai/
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19
+
+- id: ev-nyc-ll144-2023-candidate-notice-window
+  claim: "New York City requires candidates to be notified before an automated employment decision tool is used on them, with a defined lead time"
+  value: "at least 10 business days before use"
+  wording: "at least 10 business days before use of an AEDT"
+  source:
+    org: "New York City Department of Consumer and Worker Protection"
+    report: "Rules implementing Local Law 144 of 2021, 6 RCNY 5-304(b) (Notice of Adoption of Final Rule)"
+    edition: "Local Law 144 effective 2023-01-01; DCWP enforcement from 2023-07-05. The rule offers three permitted notice methods, each carrying the same lead time"
+    url: https://rules.cityofnewyork.us/wp-content/uploads/2023/04/DCWP-NOA-for-Use-of-Automated-Employment-Decisionmaking-Tools-2.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-03-19

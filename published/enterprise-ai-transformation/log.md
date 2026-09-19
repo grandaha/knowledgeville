@@ -1,5 +1,41 @@
 # Update Log
 
+## 2026-09-19
+
+* **Correction**: the bundle described the US regulatory position for AI in a way that a US
+  reader could reasonably take as "nothing here binds us." The regulatory landscape section
+  compared three frameworks, none of which is US law, under an enforceability column reading
+  "Voluntary (US)". It now carries the binding US obligations alongside them: New York City's
+  annual independent bias audit of automated employment decision tools, Illinois making
+  discriminatory AI use across the employment lifecycle a civil rights violation along with a
+  separate notice duty, California making discriminatory use of an automated-decision system unlawful,
+  Connecticut from October 2026 providing that the tool is no defense to a discrimination
+  complaint and that a federal layoff notice must disclose whether AI drove the layoffs, and
+  Colorado from January 2027. The federal Uniform Guidelines on Employee Selection Procedures,
+  which have shaped selection testing since 1978, are named as the floor underneath most of
+  them, with their four-fifths rule described as the rebuttable inference it is rather than a
+  pass mark. The comparison table now says plainly that it compares frameworks rather than
+  jurisdictions, and that "voluntary" describes the NIST framework and not the United States.
+  These obligations differ in kind, which the page now says: one mandates a recurring audit
+  and advance notice, one mandates non-discrimination and notice with no audit, and one
+  extends an existing discrimination prohibition without either. California is described by
+  its prohibition rather than its retention rule, because the four-year period is a general
+  employment-records rule that automated-decision-system data was folded into, not an
+  AI-specific duty.
+  Pages:
+  [Data Governance](/enterprise-ai-transformation/tracks/03-data-readiness/02-framework/03-data-governance.md),
+  [Executive Summary](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/01-executive-summary.md).
+
+* **Correction**: a board-facing page asserted that rules covering hiring were "already in force
+  or imminent" without naming one, so a reader who asked which had no answer. It now names the
+  two that bind today.
+
+* **Correction**: the governance practitioner guide told counsel to be specifically briefed on
+  federal agency guidance covering AI in hiring. That guidance is no longer published. The
+  briefing now points at the statutes instead, which have proved more durable than the guidance
+  interpreting them, and the guide says so. Page:
+  [Standing Up an AI Governance Function](/enterprise-ai-transformation/tracks/02-ai-governance-and-risk/04-practitioner-guide-standing-up-an-ai-governance-function.md).
+
 ## 2026-09-17
 
 * **Update**: the guidance on recording competing definitions of a business term now says when

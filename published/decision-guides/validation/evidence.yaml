@@ -1192,3 +1192,148 @@
   verified: 2026-09-13
   status: secondary-mirror
   expires: 2027-09-13
+# --- Does This Need a Language Model? (2026-09-19) ---
+- id: ev-cohere-2025-classify-finetunes-inaccessible
+  claim: "Cohere retired fine-tuning for its classify and rerank models on 2025-09-15, and customers' already-fine-tuned models stopped being accessible"
+  value: "effective 2025-09-15; previously fine-tuned models no longer accessible"
+  wording: "Fine-tuning for the command-light , command , command-r , classify , and rerank models is being retired. This covers both the Cohere dashboard and API. Previously fine-tuned models will no longer be accessible."
+  source:
+    org: "Cohere"
+    report: "Deprecations"
+    edition: 2025
+    url: https://docs.cohere.com/docs/deprecations
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-kolla-2025-moderation-fpr-spread
+  claim: "Across five commercial moderation APIs on four curated hate-speech benchmarks, false-positive rates ranged from 1.2% to 76.8% (CAVEAT: the non-toxic half of these corpora is deliberately adversarial (counter-speech, reclaimed slurs, identity terms), so these are not rates on natural traffic; the authors also chose the category mapping per API; data collected March-August 2024)"
+  value: "1.2% (Perspective on ToxiGen) to 76.8% (Google on HateXplain)"
+  wording: "HateXplain Dataset: OpenAI performed best for most metrics, including AUC (87.3%) and F1 (77.2%), while Google had the lowest F1 (58.9%) and highest FPR (76.8%)."
+  source:
+    org: "Kolla, Salminen et al."
+    report: "Lost in Moderation: How Commercial Content Moderation APIs Over- and Under-Moderate Group-Targeting Hate Speech (CHI '25)"
+    edition: 2025
+    url: https://arxiv.org/html/2503.01623
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-zhang-2025-safeguard-dos-30-chars
+  claim: "A ~30-character adversarial prompt, injected into the prompt template, made Llama Guard 3 block over 97% of user requests (CAVEAT: white-box setting, one specific safeguard model, attacker controls the template)"
+  value: "~30 characters; over 97% of user requests blocked"
+  wording: "the attacker can use our optimization process to automatically generate seemingly safe adversarial prompts, approximately only 30 characters long, that universally block over 97% of user requests on Llama Guard 3."
+  source:
+    org: "Zhang, Xiong and Mao"
+    report: "LLM Safeguard is a Double-Edged Sword: Exploiting False Positives for Denial-of-Service Attacks (ACM CCS LAMPS Workshop)"
+    edition: 2025
+    url: https://arxiv.org/abs/2410.02916
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-gutierrez-2026-threshold-recalibration-recovery
+  claim: "A stylometric phishing classifier lost 28.0 points of F1 when tested against a different text generator; recalibrating the decision threshold on a small labelled sample recovered 86% of that loss without retraining"
+  value: "28.0 percentage point drop; recalibration cut the gap to 4.0 points, an 86% reduction"
+  wording: "Recalibrating the threshold on a small target subset reduced the gap to 4.0 percentage points (an 86% reduction), and an aggregated-pool detector achieved F1 = 0.997 on each generator."
+  source:
+    org: "Gutierrez, Villegas-Ch and Govea"
+    report: "Cross-model evaluation of phishing detectors against LLM-generated emails (Frontiers in Big Data)"
+    edition: 2026
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13504170/
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-casanueva-2020-banking77-ten-examples
+  claim: "On BANKING77, a 77-class intent benchmark, a fine-tuned BERT reached 83.42% accuracy with only 10 training examples per intent, against 93.66% with the full training set (metric is accuracy, not F1)"
+  value: "83.42% at 10 examples per intent; 93.66% on full data"
+  wording: "Table 3: Accuracy scores (×100%) on all three intent detection data sets with varying number of training examples (10 examples per intent; 30 examples per intent; Full training data)."
+  source:
+    org: "Casanueva, Temcinas, Gerz, Henderson and Vulic"
+    report: "Efficient Intent Detection with Dual Sentence Encoders"
+    edition: 2020
+    url: https://arxiv.org/abs/2003.04807
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-yang-2023-gluex-ood-decay
+  claim: "Across 19 fine-tuned pre-trained language models on 8 tasks, average performance decay out of distribution was 20.05%"
+  value: "20.05% average decay"
+  wording: "all pre-trained models involved in GLUE-X show significant performance decay under the OOD test compared to the ID performance (20.05% decay in average)."
+  source:
+    org: "Yang, Zhang, Chen et al."
+    report: "GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-Distribution Generalization Perspective (Findings of ACL)"
+    edition: 2023
+    url: https://aclanthology.org/2023.findings-acl.806.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-yang-2023-gluex-human-vs-model-decay
+  claim: "Humans lost 7.82% moving from in-domain to out-of-domain on the same tasks, against 16.33% for the best-performing model (NOTE: this compares humans to the single best model, not to the 20.05% all-model average)"
+  value: "humans 7.82% decay; best model 16.33%"
+  wording: "The average performance decay between in- and out-of-domain tests of humans (87.10% - ID vs. 80.14% - OOD) is significantly lower than models, even for the best-performing model with the lowest performance decay (7.82% vs. 16.33%)"
+  source:
+    org: "Yang, Zhang, Chen et al."
+    report: "GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-Distribution Generalization Perspective (Findings of ACL)"
+    edition: 2023
+    url: https://aclanthology.org/2023.findings-acl.806.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-klarna-2025-cost-too-dominant
+  claim: "Klarna's CEO said cost had been too dominant a factor in how the company organized its AI customer service, and that quality suffered (STAKE: quote given to Bloomberg; this outlet is the accessible relay) (published 2025-05-09)"
+  value: "n/a (qualitative)"
+  wording: "\"As cost unfortunately seems to have been a too predominant evaluation factor when organizing this, what you end up having is lower quality,\" Siemiatkowski told Bloomberg."
+  source:
+    org: "Customer Experience Dive"
+    report: "Klarna reinvests in human talent for customer service, quoting Sebastian Siemiatkowski to Bloomberg"
+    edition: 2025
+    url: https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/
+    pdf_hash:
+  verified: 2026-09-19
+  status: secondary-mirror
+  expires: 2027-09-19
+- id: ev-klarna-2025-chatbot-still-two-thirds
+  claim: "After the correction, Klarna's chatbot still handled two-thirds of customer inquiries (STAKE: company-supplied figure, and the same two-thirds Klarna published in its own 2024 marketing) (published 2025-05-09)"
+  value: "two-thirds of all customer inquiries"
+  wording: "The chatbot still handles two-thirds of all customer inquiries."
+  source:
+    org: "Customer Experience Dive"
+    report: "Klarna reinvests in human talent for customer service"
+    edition: 2025
+    url: https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/
+    pdf_hash:
+  verified: 2026-09-19
+  status: secondary-mirror
+  expires: 2027-09-19
+# --- Does This Need a Language Model? — rules carry a maintenance cost (2026-09-19) ---
+- id: ev-ey-2016-rpa-failure-rate-rules
+  claim: "Share of initial rule-based automation (RPA) projects that fail"
+  value: "30 to 50%"
+  wording: "as many as 30 to 50% of initial RPA projects fail"
+  source:
+    org: EY
+    report: "Get ready for robots: Why planning makes the difference between success and disappointment"
+    edition: 2016
+    url: https://eyfs.ie/wp-content/uploads/2016/11/ey-get-ready-for-robots.pdf
+    pdf_hash:
+  verified: 2026-09-19
+  status: primary
+  expires: 2027-09-19
+- id: ev-forrester-2019-rpa-services-ratio-rules
+  claim: "Services-to-licence spend ratio for rule-based automation (RPA): the software is the small part of the bill"
+  value: "$3.41 services per $1 of software"
+  wording: "for every dollar spent on RPA software, $3.41 was spent on services to make it work"
+  source:
+    org: "Forrester (via CIO.com)"
+    report: "4 surprising RPA research findings from Forrester"
+    edition: 2019
+    url: https://www.cio.com/article/215856/4-surprising-rpa-research-findings-from-forrester.html
+    pdf_hash:
+  verified: 2026-09-19
+  status: secondary-mirror
+  expires: 2027-09-19

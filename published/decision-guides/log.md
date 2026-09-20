@@ -1,5 +1,22 @@
 # Change log — Decision Guides
 
+## 2026-09-19
+
+* **Creation**: new guide, [Does This Need a Language Model?](/decision-guides/does-this-need-a-language-model.md):
+  what should make a recurring automated decision, comparing a rule, a model trained on your own
+  examples, a general language model, and two of those working together. It puts two cheaper steps
+  first, measuring the current cost and writing rules for the obvious cases, and shows that ten
+  labelled examples per category carried a trained model most of the way to its full-data accuracy
+  on a 77-answer benchmark. It also records that when a classifier's accuracy collapsed under a
+  shift, recalibrating its threshold on a small sample recovered most of the loss without retraining,
+  and that one provider's retirement left customers unable to run models they had already trained.
+  The guide also records that rules are cheap to run and expensive to keep, citing a 30 to 50% failure
+  rate for an earlier generation of rule-based automation.
+* **Update**: [Glossary](/decision-guides/glossary.md) adds deflection, fine-tuning, labelled examples,
+  precision and recall, and threshold, and extends routing to cover a cascade.
+* **Update**: [Which AI Model for Which Job](/decision-guides/which-ai-model-for-which-job.md) now points
+  readers at the prior question, whether the work needs a language model at all.
+
 ## 2026-09-13
 
 * **Creation**: new guide, [Keeping What Your AI Knows True](/decision-guides/keeping-what-your-ai-knows-true.md):

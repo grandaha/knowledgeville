@@ -3,7 +3,7 @@ type: Decision
 title: Which AI Model for Which Job
 description: "How to decide whether your team's recurring AI work should run on one model or several, and how to test the choice."
 tags: [decision-guides, ai-models, cost]
-timestamp: "2026-09-13"
+timestamp: "2026-09-19"
 generated:
   by: human:daveraffaele
   at: "2026-09-13T00:00:00Z"
@@ -223,6 +223,8 @@ Answer these in order, for one recurring piece of work at a time:
 4. **Run your current choice and one alternative.** Record every attempt, the time spent checking and fixing, and whether each result passed.
 5. **Work out cost per accepted result for each.** Add up everything spent, including people's time, and divide by the number of results that passed.
 6. **Choose, write it down, and keep a fallback tested.** The runner-up is your fallback if your first choice is retired or withdrawn. For critical work, keep at least two, as the Cloud Security Alliance recommends.
+
+Before running it, check that this work needs a language model at all. For a repetitive decision with a fixed set of answers, a rule or a model trained on your own examples can be cheaper and steadier. [Does This Need a Language Model?](/decision-guides/does-this-need-a-language-model.md) works through that choice.
 
 This test compares the first two options directly. If a router or self-hosting looks promising, the same numbers tell you whether the savings justify bringing in engineers.
 

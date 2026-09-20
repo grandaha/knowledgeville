@@ -3,13 +3,18 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-09-19"
+timestamp: "2026-09-20"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v12.11.0 — 2026-09-20
+
+### New & expanded content
+* A decision guide for whether a step needs a language model
 
 ## v12.10.1 — 2026-09-19
 

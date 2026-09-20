@@ -13,8 +13,29 @@ This page records how this knowledge base has changed over time — new and expa
 
 ## v12.11.0 — 2026-09-20
 
-### New & expanded content
-* A decision guide for whether a step needs a language model
+### New guide: does this need a language model?
+
+A recurring decision has to be made by something. This guide compares four options and shows how to test the choice with your own numbers: a rule you write, a general language model told what you want, a model trained on your own examples, or two of those working together.
+
+**Two cheaper steps come first, and neither is a model.** Measure what the work costs you now, including how often it is currently wrong. Write the rules for the cases where a person would not hesitate. What is left is a smaller problem, and sometimes there is nothing left to automate.
+
+**A few labelled examples are worth more than most people assume.** On a banking benchmark with 77 possible answers, a trained model reached 83.42% accuracy from ten examples per category, against 93.66% on the full training set. Both framings of that pair are true and the guide gives both: ten examples got most of the way up the scale, and the full set still removed about three fifths of the remaining errors. That benchmark is also the friendly case, with balanced and cleanly separable categories, so imbalance and overlap push the number you need up sharply.
+
+**When accuracy drops, check the threshold before replacing the model.** A trained model returns a score, and a person picks the score above which you act. In one study a detector lost 28 points of F1 when the people it was detecting changed tools; recalibrating that cut-off on a few hundred fresh examples recovered 86% of the loss with nothing retrained. The guide includes the test for when recalibration is not the answer.
+
+**Rules are cheap to run and expensive to keep.** In an earlier generation of rule-based automation, EY put the failure rate for initial projects at 30 to 50%, and Forrester found $3.41 spent on services for every $1 of software. Write the obvious rules, give them an owner, and stop there.
+
+**What you trained is not what you own.** Cohere retired fine-tuning for its classification models in September 2025, and previously fine-tuned models stopped being accessible. Customers lost the trained thing itself, not just the ability to make more. Your labelled examples are the part of that investment that survives.
+
+The guide closes with a worked example: 4,000 support tickets a month into twelve queues, run through every step. It lands on using a general language model, not because a language model is clever, but because at that volume anything you build costs more than it saves.
+
+Page: [Does This Need a Language Model?](https://knowledge.onesteplabs.com/decision-guides/does-this-need-a-language-model/)
+
+### Updated
+
+[Which AI Model for Which Job](https://knowledge.onesteplabs.com/decision-guides/which-ai-model-for-which-job/) now points readers at the prior question, whether the work needs a language model at all, before comparing language models to each other.
+
+The [Decision Guides glossary](https://knowledge.onesteplabs.com/decision-guides/glossary/) adds deflection, fine-tuning, labelled examples, precision and recall, and threshold, and extends routing to cover a cascade.
 
 ## v12.10.1 — 2026-09-19
 

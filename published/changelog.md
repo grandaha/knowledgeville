@@ -3,13 +3,26 @@ type: Reference
 title: What's Changed
 description: A generated, release-by-release record of how this knowledge base has changed.
 tags: [changelog, releases, provenance]
-timestamp: "2026-09-20"
+timestamp: "2026-09-26"
 appendix: true
 ---
 
 <!-- generated from GitHub Releases by scripts/build_changelog.py — do not edit -->
 
 This page records how this knowledge base has changed over time — new and expanded content, citation corrections, freshness updates, and structural changes — captured release by release. *How the knowledge changed is itself a form of provenance.*
+
+## v13.0.0 — 2026-09-26
+
+### New & expanded content
+
+**New bundle: [Operating Cadence](https://knowledge.onesteplabs.com/operating-cadence/)** — how an organization sets direction and keeps it moving across a year, with every layer of the stack graded by what the evidence actually supports and what is inherited convention.
+
+* [How the Planning Stack Fits Together](https://knowledge.onesteplabs.com/operating-cadence/how-the-planning-stack-fits/) — why the vocabulary of mission, vision, purpose and strategy is genuinely unsettled, what the research says about mission and values statements, and where the famous strategy execution-failure statistic came from. It opens with the short list of what survives scrutiny.
+* [The Planning Year](https://knowledge.onesteplabs.com/operating-cadence/the-planning-year/) — the end-to-end annual sequence, from strategy refresh through annual and quarterly goals to the monthly and weekly reviews. Only two organizations have published a dated sequence, and they disagree with each other.
+* [Running It When It Is Already Broken](https://knowledge.onesteplabs.com/operating-cadence/running-it-when-its-broken/) — how to diagnose a planning system that has already disappointed people, what to change in week one, and what to remove rather than add.
+* [Glossary](https://knowledge.onesteplabs.com/operating-cadence/glossary/) and [Validation](https://knowledge.onesteplabs.com/operating-cadence/validation/) — thirteen terms, and the sourcing rules this bundle holds itself to.
+
+*by @grandaha in https://github.com/grandaha/knowledgeville-workspace/pull/307*
 
 ## v12.11.0 — 2026-09-20
 

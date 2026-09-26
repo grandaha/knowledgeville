@@ -1,6 +1,6 @@
 {
-  "version": "v12.10.1",
-  "generated": "2026-09-19",
+  "version": "v12.11.0",
+  "generated": "2026-09-24",
   "site": "https://knowledge.onesteplabs.com",
   "bundles": [
     {
@@ -200,6 +200,17 @@
         "temporal_mode": "point-in-time-supersedable"
       },
       "pageCount": 8
+    },
+    {
+      "slug": "operating-cadence",
+      "title": "Operating Cadence",
+      "description": "How an organization sets direction and keeps it moving across a year, with every layer graded by what the evidence supports and what is inherited convention.",
+      "posture": {
+        "citation_style": "deeply-cited",
+        "verification_posture": "full",
+        "temporal_mode": "point-in-time-supersedable"
+      },
+      "pageCount": 3
     },
     {
       "slug": "research-notes",
@@ -10104,6 +10115,382 @@
       "sources": []
     },
     {
+      "bundle": "operating-cadence",
+      "path": "how-the-planning-stack-fits.md",
+      "url": "https://knowledge.onesteplabs.com/operating-cadence/how-the-planning-stack-fits/",
+      "title": "How the Planning Stack Fits Together",
+      "description": "What mission, vision, strategy and goals each actually are, where the definitions contradict each other, and which layers the evidence supports having at all.",
+      "tags": [
+        "operating-cadence",
+        "strategy",
+        "goals"
+      ],
+      "body": "## What to do this week\n\nIf a planning system is not working, the instinct is to fix the process. Run a better offsite, write tighter objectives, buy a tool.\n\nTry something cheaper first. Ask three leaders, separately, what the difference is between the company's mission and its vision. If the answers conflict, that is not a training gap in your organization. It is the state of the field, and this page documents it.\n\nThen ask a harder question about the layer below. Does the strategy name an obstacle, and does it say what the company will deliberately not do? If it does neither, the team has a list of ambitions, and no amount of goal-setting discipline further down will supply what is missing above.\n\n## What survives\n\nMost of what follows is demolition, so it is worth naming up front what holds.\n\n**One mechanic is strongly evidenced.** Check progress often, out loud, in writing. A meta-analysis of 138 randomised studies found that interventions \"promoted goal attainment (d+ = 0.40, 95% CI [0.32, 0.48])\" ([Harkin et al., 2016](#ev-harkin-2016-monitoring-attainment-cadence)). The effect was larger \"when the outcomes were reported or made public, and when the information was physically recorded\" ([Harkin et al., 2016](#ev-harkin-2016-moderators-cadence)). That corpus is dominated by individual health behaviours rather than teams at work, so carrying it into an organization is an inference.\n\n**Formal planning has a real but modest effect**, around five percent of variance. The detail sits further down this page, and it is more interesting than the headline.\n\n**One definition is worth adopting on its merits.** A strategy names an obstacle and states a refusal. That is a named argument rather than a tested finding, and it is graded as such below. It is still the most useful distinction on this page.\n\nTwo numbers you will hear are folklore, and each is traced where a reader meets it. The claim that most strategies fail in execution has no underlying study, traced below. The seventy percent target for goal attainment matches no literature at all, traced in [Running It When It Is Already Broken](/operating-cadence/running-it-when-its-broken.md).\n\nIf a planning system already exists and has already disappointed people, that repair page is the better place to start than this one.\n\n## The vocabulary is genuinely unsettled\n\nMost planning advice assumes a settled hierarchy. Mission sits above vision, vision above strategy, strategy above goals. Teams that cannot keep the layers straight are treated as not having learned the model.\n\nThere is no model to learn. The two best-known frameworks invert each other.\n\nThe most-cited practitioner account of vision puts vision at the top, as the container. It holds core ideology and an envisioned future, with purpose sitting inside it. Its authors open by conceding the problem directly. Vision, they write, \"has become one of the most overused and least understood words in the language\" ([Collins and Porras, 1996](#ev-collins-porras-1996-vision-overused)). Much of the practitioner and textbook tradition runs the other way, treating mission as the container and vision as one component of it. <!-- noev: characterisation of a tradition rather than a sourced count; the sourced half of this contrast is the Collins and Porras framework quoted above -->\n\nBoth camps are well populated, and each treats its ordering as obvious. A team asked to write a mission and then a vision is being asked to perform a sequence that authoritative sources define in opposite directions.\n\nThe practical consequence is narrow and worth saying out loud in a room. Disagreement about these words is not a sign that anyone has failed to read the material. It is a reason to stop arguing about the labels and to ask what each document is supposed to change about anyone's behaviour.\n\n## Mission statements do not earn their place\n\nThe strongest systematic review of the field screened 2,233 documents down to 53 articles in ranked journals, covering thirty years. On the question everyone actually cares about, it found research relating mission statements to performance \"scarce and inconclusive\" ([Alegre et al., 2018](#ev-alegre-2018-mission-performance-inconclusive)).\n\nIts summary of the field is blunter. Mission statements are \"widely used in practice but poorly researched in theory\" ([Alegre et al., 2018](#ev-alegre-2018-poorly-researched)).\n\nThat is a statement about the evidence, not a finding that missions fail. The distinction matters and should survive into any conversation with a leadership team that has just spent a quarter writing one.\n\nThere is one positive result worth carrying, and it points somewhere unexpected. Where a mission has been found to relate to performance, the path is indirect. It runs through commitment to the mission, and through alignment of internal structure, policies and procedures. Those change employee behaviour, and behaviour is what relates to financial results. The document is not doing the work. The alignment machinery around it is.\n\nThat reframes the question usefully. A mission statement is cheap, and nothing here argues for deleting one. What it will not do is substitute for changing how the organization is actually arranged.\n\n## Values statements are weaker still\n\nThe cleanest study on this coded the values that companies advertise across the entire S&P 500 and tested them against performance. Its second finding comes from a different sample, a set of firms whose employees were surveyed directly. Read them as two tests, not one.\n\nThe finding: \"proclaimed values appear irrelevant. Yet, when employees perceive top managers as trustworthy and ethical, firm's performance is stronger\" ([Guiso et al., 2013](#ev-guiso-2013-proclaimed-values-irrelevant)).\n\nThe authors explain the asymmetry in a sentence that applies to every layer of this stack. The cost of claiming a value such as integrity on a website \"is close to zero\". So \"most firms will do it, regardless of the actual set of values present in the organization\" ([Guiso et al., 2013](#ev-guiso-2013-cheap-talk)).\n\nA claim that costs nothing to make carries little information. The authors do report one exception, since firms advertising integrity scored higher on customer satisfaction. What predicted the broader performance measures was not the advertised value but the independently measured one, taken from employees rather than from a website.\n\nThe test to apply to any layer of a planning stack follows from this. What did it cost to write, and what would it cost to break?\n\n## Vision splits into two different claims\n\nThe evidence here looks contradictory until the claim is divided in two, and the authors of the most-cited vision framework draw the line themselves.\n\nThey are explicit that the document is not the thing. \"Don't confuse core ideology itself with core-ideology statements. A company can have a very strong core ideology without a formal statement\" ([Collins and Porras, 1996](#ev-collins-porras-1996-ideology-without-statement)). Identifying values and purpose, they write, is \"not an exercise in wordsmithery\" ([Collins and Porras, 1996](#ev-collins-porras-1996-not-wordsmithery)).\n\nThat is the split. Having a direction and communicating it repeatedly is one claim. Producing a statement is a different and much weaker one, and the popular evidence usually offered for the second does not survive scrutiny.\n\nThe best-known study of visionary companies drew its evidence from sources already shaped by knowing which firms had done well. Pick successful companies and look backwards. Rely on \"articles in the business press and on retrospective interviews\". You will find them \"said to have strong cultures, solid values, and a commitment to excellence\" ([Rosenzweig, 2007](#ev-rosenzweig-2007-halo-sources)).\n\nWhat happened next is the test. \"In the five years after the study ended, the performance of the 18 Visionary companies regressed sharply\" ([Rosenzweig, 2007](#ev-rosenzweig-2007-visionary-regressed)). On total shareholder return, more than half failed to match the overall market.\n\nSo write the statement if you want one, and keep it cheap. The work that matters is deciding the direction and saying it often enough that people can act on it without rereading the page.\n\n## Strategy is the one layer with a real definition\n\nThree authorities converge on this from different directions, and their agreement is the most useful thing on the page.\n\nA strategy must name the obstacle. A long list of things to do, \"often mislabeled as strategies or objectives, is not a strategy. It is just a list of things to do\" ([Rumelt, 2011](#ev-rumelt-2011-list-is-not-strategy)).\n\nA strategy must state a refusal. \"The essence of strategy is choosing what not to do\" ([Porter, 1996](#ev-porter-1996-choosing-what-not-to-do)).\n\nAnd the standard planning artifact fails both tests. Take a vision statement, a list of initiatives, and those initiatives converted into financials. The author who described that sequence calls it \"a truly terrible way to make strategy\" ([Martin, 2014](#ev-martin-2014-terrible-way)).\n\nPut together, a strategy needs three things a goal set does not have. A named obstacle. An explicit refusal. A causal argument connecting the chosen actions to an advantage. A goal set has a target and a number.\n\nOne honesty note belongs here. All three of these are arguments from named practitioners, not empirical tests. They are influential, internally consistent, and unvalidated. They are cited here because the distinction they draw is useful and testable in a room. Nobody has demonstrated that organizations following it perform better.\n\n## Does the apparatus work at all?\n\nYes, modestly, and the detail is more interesting than the headline.\n\nA random-effects meta-analysis of strategic planning and organizational performance pooled 87 correlations across 31 studies and found a population effect size of .229, with a confidence interval of .186 to .271 ([George et al., 2019](#ev-george-2019-planning-performance-effect)). That is roughly five percent of variance. Real, and not large.\n\nTwo things sit underneath it that matter more than the number. Heterogeneity is extreme, at an I-squared of 91.6% ([George et al., 2019](#ev-george-2019-planning-performance-effect)). The studies disagree with each other far more than sampling error explains. And studies drawing planning and performance from separate data sources reported significantly weaker effects than those drawing both from the same respondent. When researchers stop asking the same person both questions, the effect shrinks.\n\nThere is also a tension in this literature worth leaving visible rather than resolving. The same analysis found formal planning had the strongest effect, and participatory planning a weaker one. That is precisely the arrangement its most famous critic attacks. His objection is a category error rather than a dispute about effect sizes: \"strategic planning is not strategic thinking. Indeed, strategic planning often spoils strategic thinking, causing managers to confuse real vision with the manipulation of numbers\" ([Mintzberg, 1994](#ev-mintzberg-1994-not-strategic-thinking)).\n\nBoth can be true. Formalizing a process may improve average performance while degrading the rare, valuable output that formalization cannot produce.\n\n## The number you will be quoted, and where it comes from\n\nSomeone will tell you that most strategies fail in execution. The figure is usually seventy percent, sometimes ninety.\n\nA peer-reviewed review went looking for the source. Its conclusion: \"the true rate of implementation failure remains to be determined. Most of the estimates presented in the literature are based on evidence that is outdated, fragmentary, fragile, or just absent\" ([Candido and Santos, 2015](#ev-candido-2015-failure-rate-undetermined)).\n\nThe reviewers then did what nobody else had. They tried to obtain the underlying consultancy studies. \"In total, more than 45 e-mails were sent. In spite of all the efforts made to obtain copies of the studies, most of these efforts proved unfruitful\" ([Candido and Santos, 2015](#ev-candido-2015-studies-unobtainable)). Companies and authors replied. The studies were no longer available.\n\nTheir own recommendation is the one to carry into a planning meeting. They warn against using those estimates \"to justify any course of action, whether in research or in management practice\" ([Candido and Santos, 2015](#ev-candido-2015-warning-against-use)).\n\nTwo fair notes in the other direction. The review is about strategy implementation specifically, not about planning generally. And the authors observe a downward trend in the estimates over time. They read that as genuine progress in the field, not as evidence the literature is worthless.\n\n## Key Takeaways\n\n- **The hierarchy is not settled.** The two best-known frameworks put mission and vision in opposite order. Stop treating disagreement about the words as a failure to learn the model.\n- **A claim that costs nothing to make carries no information.** Advertised values showed no relationship to performance across the S&P 500; independently measured ones did.\n- **Where a mission relates to performance, the path runs through alignment and behaviour**, not through the document. Writing it is not the intervention.\n- **Split the vision claim.** The framework's own authors say a company can hold a strong ideology with no formal statement, so the writing is not the intervention. The best-known evidence for visionary companies does not survive its own five-year follow-up.\n- **A strategy needs a named obstacle, an explicit refusal, and a causal argument.** A goal set has a target and a number, which is why a goal set cannot stand in for one.\n- **Formal planning has a real but modest effect**, around five percent of variance, and it shrinks when planning and performance are measured from different people.\n- **The famous execution-failure statistic has no underlying study.** Researchers tried to obtain it and could not.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran — *Does Monitoring Goal Progress Promote Goal Attainment? A Meta-Analysis of the Experimental Evidence (Psychological Bulletin 142(2), 198-229)*, 2016.** A random effects model revealed that, on average, interventions were successful at increasing the frequency of monitoring goal progress (d+ = 1.98, 95% CI [1.71, 2.24]) and promoted goal attainment (d+ = 0.40, 95% CI [0.32, 0.48]). [View source](https://doi.org/10.1037/bul0000025){#ev-harkin-2016-monitoring-attainment-cadence} · verified 2026-09-24 · primary\n- **Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran — *Does Monitoring Goal Progress Promote Goal Attainment? A Meta-Analysis of the Experimental Evidence (Psychological Bulletin 142(2), 198-229)*, 2016.** progress monitoring had larger effects on goal attainment when the outcomes were reported or made public, and when the information was physically recorded. [View source](https://doi.org/10.1037/bul0000025){#ev-harkin-2016-moderators-cadence} · verified 2026-09-24 · primary\n- **Collins and Porras — *Building Your Company's Vision (Harvard Business Review, September-October)*, 1996.** one of the most overused and least understood. [View source](https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf){#ev-collins-porras-1996-vision-overused} · verified 2026-09-24 · primary\n- **Alegre, Berbegal-Mirabent, Guerrero and Mas-Machuca — *The real mission of the mission statement: A systematic review of the literature (Journal of Management & Organization 24(4))*, 2018.** Research examining the relationship between mission statements and performance is scarce and inconclusive. [View source](https://upcommons.upc.edu/bitstream/2117/360203/1/Manuscript%20UPC%20Commons.pdf){#ev-alegre-2018-mission-performance-inconclusive} · verified 2026-09-24 · primary\n- **Alegre, Berbegal-Mirabent, Guerrero and Mas-Machuca — *The real mission of the mission statement: A systematic review of the literature (Journal of Management & Organization 24(4))*, 2018.** mission statements are widely used in practice but poorly researched in theory. [View source](https://upcommons.upc.edu/bitstream/2117/360203/1/Manuscript%20UPC%20Commons.pdf){#ev-alegre-2018-poorly-researched} · verified 2026-09-24 · primary\n- **Guiso, Sapienza and Zingales — *The Value of Corporate Culture, NBER Working Paper 19557 (October 2013). Later published in the Journal of Financial Economics 117(1), 2015; quotes here are verified against the 2013 working paper*, 2013.** We find that proclaimed values appear irrelevant. Yet, when employees perceive top managers as trustworthy and ethical, firm's performance is stronger. [View source](https://www.nber.org/system/files/working_papers/w19557/w19557.pdf){#ev-guiso-2013-proclaimed-values-irrelevant} · verified 2026-09-24 · primary\n- **Guiso, Sapienza and Zingales — *The Value of Corporate Culture, NBER Working Paper 19557 (October 2013). Later published in the Journal of Financial Economics 117(1), 2015; quotes here are verified against the 2013 working paper*, 2013.** Since the cost of claiming on the Web values such as integrity or care of the environment is close to zero, most firms will do it, regardless of the actual set of values present in the organization. [View source](https://www.nber.org/system/files/working_papers/w19557/w19557.pdf){#ev-guiso-2013-cheap-talk} · verified 2026-09-24 · primary\n- **Collins and Porras — *Building Your Company's Vision (Harvard Business Review, September-October)*, 1996.** strong core ideology without a formal statement. [View source](https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf){#ev-collins-porras-1996-ideology-without-statement} · verified 2026-09-24 · primary\n- **Collins and Porras — *Building Your Company's Vision (Harvard Business Review, September-October)*, 1996.** not an exercise in wordsmithery. [View source](https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf){#ev-collins-porras-1996-not-wordsmithery} · verified 2026-09-24 · primary\n- **Phil Rosenzweig — *Misunderstanding the Nature of Company Performance: The Halo Effect and Other Business Delusions (California Management Review 49(4))*, 2007.** relying on articles in the business press and on retrospective interviews, and you may well find that they're said to have strong cultures, solid values, and a commitment to excellence. [View source](https://cebma.org/assets/Uploads/Rosenzweig-2007.pdf){#ev-rosenzweig-2007-halo-sources} · verified 2026-09-24 · primary\n- **Phil Rosenzweig — *Misunderstanding the Nature of Company Performance: The Halo Effect and Other Business Delusions (California Management Review 49(4))*, 2007.** In the five years after the study ended, the performance of the 18 Visionary companies regressed sharply. [View source](https://cebma.org/assets/Uploads/Rosenzweig-2007.pdf){#ev-rosenzweig-2007-visionary-regressed} · verified 2026-09-24 · primary\n- **Richard Rumelt — *The perils of bad strategy (McKinsey Quarterly), adapted from Good Strategy/Bad Strategy*, 2011.** A long list of things to do, often mislabeled as strategies or objectives, is not a strategy. It is just a list of things to do. [View source](https://www.hlsconsult.com/attachments/File/Articles/Mckinsey_-_Perils_of_Bad_Strategy.pdf){#ev-rumelt-2011-list-is-not-strategy} · verified 2026-09-24 · primary\n- **Michael E. Porter — *What Is Strategy? (Harvard Business Review, November-December)*, 1996.** The essence of strategy is choosing what not to do. [View source](https://lumsa.it/sites/default/files/UTENTI/u95/LM51_ITA_What%20is%20Strategy%20-%20Porter.pdf){#ev-porter-1996-choosing-what-not-to-do} · verified 2026-09-24 · primary\n- **Roger L. Martin — *The Big Lie of Strategic Planning (Harvard Business Review, January-February)*, 2014.** This is a truly terrible way to make strategy. [View source](https://todopmp.com/wp-content/uploads/2018/12/The-Big-Lie-of-Strategic-Planning-1.pdf){#ev-martin-2014-terrible-way} · verified 2026-09-24 · primary\n- **George, Walker and Monster — *Does Strategic Planning Improve Organizational Performance? A Meta-Analysis (Public Administration Review 79(6))*, 2019.** 87 (31 studies) .229 [.186, .271]. [View source](https://biblio.ugent.be/publication/8637323/file/8638087.pdf){#ev-george-2019-planning-performance-effect} · verified 2026-09-24 · primary\n- **Henry Mintzberg — *The Fall and Rise of Strategic Planning (Harvard Business Review, January-February)*, 1994.** strategic planning is not strategic thinking. Indeed, strategic planning often spoils strategic thinking, causing managers to confuse real vision with the manipulation of numbers. [View source](https://info.eaglenet.jbu.edu/depts/odl/om/resources/om4234/FallandRise.pdf){#ev-mintzberg-1994-not-strategic-thinking} · verified 2026-09-24 · primary\n- **Candido and Santos — *Strategy implementation: What is the failure rate? (Journal of Management & Organization 21(2))*, 2015.** the true rate of implementation failure remains to be determined. Most of the estimates presented in the literature are based on evidence that is outdated, fragmentary, fragile, or just absent. [View source](https://doi.org/10.1017/jmo.2014.77){#ev-candido-2015-failure-rate-undetermined} · verified 2026-09-24 · primary\n- **Candido and Santos — *Strategy implementation: What is the failure rate? (Journal of Management & Organization 21(2))*, 2015.** In total, more than 45 e-mails were sent. In spite of all the efforts made to obtain copies of the studies, most of these efforts proved unfruitful. [View source](https://doi.org/10.1017/jmo.2014.77){#ev-candido-2015-studies-unobtainable} · verified 2026-09-24 · primary\n- **Candido and Santos — *Strategy implementation: What is the failure rate? (Journal of Management & Organization 21(2))*, 2015.** a warning against the use of the current higher estimates of rates of failure (70 to 90 percent) to justify any course of action, whether in research or in management practice. [View source](https://doi.org/10.1017/jmo.2014.77){#ev-candido-2015-warning-against-use} · verified 2026-09-24 · primary",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "id": "ev-alegre-2018-mission-performance-inconclusive",
+          "org": "Alegre, Berbegal-Mirabent, Guerrero and Mas-Machuca",
+          "url": "https://upcommons.upc.edu/bitstream/2117/360203/1/Manuscript%20UPC%20Commons.pdf",
+          "wording": "Research examining the relationship between mission statements and performance is scarce and inconclusive",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-alegre-2018-poorly-researched",
+          "org": "Alegre, Berbegal-Mirabent, Guerrero and Mas-Machuca",
+          "url": "https://upcommons.upc.edu/bitstream/2117/360203/1/Manuscript%20UPC%20Commons.pdf",
+          "wording": "mission statements are widely used in practice but poorly researched in theory",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-guiso-2013-proclaimed-values-irrelevant",
+          "org": "Guiso, Sapienza and Zingales",
+          "url": "https://www.nber.org/system/files/working_papers/w19557/w19557.pdf",
+          "wording": "We find that proclaimed values appear irrelevant. Yet, when employees perceive top managers as trustworthy and ethical, firm's performance is stronger.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-guiso-2013-cheap-talk",
+          "org": "Guiso, Sapienza and Zingales",
+          "url": "https://www.nber.org/system/files/working_papers/w19557/w19557.pdf",
+          "wording": "Since the cost of claiming on the Web values such as integrity or care of the environment is close to zero, most firms will do it, regardless of the actual set of values present in the organization.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-collins-porras-1996-vision-overused",
+          "org": "Collins and Porras",
+          "url": "https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf",
+          "wording": "one of the most overused and least understood",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-rumelt-2011-list-is-not-strategy",
+          "org": "Richard Rumelt",
+          "url": "https://www.hlsconsult.com/attachments/File/Articles/Mckinsey_-_Perils_of_Bad_Strategy.pdf",
+          "wording": "A long list of things to do, often mislabeled as strategies or objectives, is not a strategy. It is just a list of things to do.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-porter-1996-choosing-what-not-to-do",
+          "org": "Michael E. Porter",
+          "url": "https://lumsa.it/sites/default/files/UTENTI/u95/LM51_ITA_What%20is%20Strategy%20-%20Porter.pdf",
+          "wording": "The essence of strategy is choosing what not to do.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-martin-2014-terrible-way",
+          "org": "Roger L. Martin",
+          "url": "https://todopmp.com/wp-content/uploads/2018/12/The-Big-Lie-of-Strategic-Planning-1.pdf",
+          "wording": "This is a truly terrible way to make strategy.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-mintzberg-1994-not-strategic-thinking",
+          "org": "Henry Mintzberg",
+          "url": "https://info.eaglenet.jbu.edu/depts/odl/om/resources/om4234/FallandRise.pdf",
+          "wording": "strategic planning is not strategic thinking. Indeed, strategic planning often spoils strategic thinking, causing managers to confuse real vision with the manipulation of numbers.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-george-2019-planning-performance-effect",
+          "org": "George, Walker and Monster",
+          "url": "https://biblio.ugent.be/publication/8637323/file/8638087.pdf",
+          "wording": "87 (31 studies) .229 [.186, .271]",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-candido-2015-failure-rate-undetermined",
+          "org": "Candido and Santos",
+          "url": "https://doi.org/10.1017/jmo.2014.77",
+          "wording": "the true rate of implementation failure remains to be determined. Most of the estimates presented in the literature are based on evidence that is outdated, fragmentary, fragile, or just absent.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-candido-2015-warning-against-use",
+          "org": "Candido and Santos",
+          "url": "https://doi.org/10.1017/jmo.2014.77",
+          "wording": "a warning against the use of the current higher estimates of rates of failure (70 to 90 percent) to justify any course of action, whether in research or in management practice",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-candido-2015-studies-unobtainable",
+          "org": "Candido and Santos",
+          "url": "https://doi.org/10.1017/jmo.2014.77",
+          "wording": "In total, more than 45 e-mails were sent. In spite of all the efforts made to obtain copies of the studies, most of these efforts proved unfruitful.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-harkin-2016-monitoring-attainment-cadence",
+          "org": "Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran",
+          "url": "https://doi.org/10.1037/bul0000025",
+          "wording": "A random effects model revealed that, on average, interventions were successful at increasing the frequency of monitoring goal progress (d+ = 1.98, 95% CI [1.71, 2.24]) and promoted goal attainment (d+ = 0.40, 95% CI [0.32, 0.48]).",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-harkin-2016-moderators-cadence",
+          "org": "Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran",
+          "url": "https://doi.org/10.1037/bul0000025",
+          "wording": "progress monitoring had larger effects on goal attainment when the outcomes were reported or made public, and when the information was physically recorded",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-collins-porras-1996-ideology-without-statement",
+          "org": "Collins and Porras",
+          "url": "https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf",
+          "wording": "strong core ideology without a formal statement",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-collins-porras-1996-not-wordsmithery",
+          "org": "Collins and Porras",
+          "url": "https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf",
+          "wording": "not an exercise in wordsmithery",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-rosenzweig-2007-halo-sources",
+          "org": "Phil Rosenzweig",
+          "url": "https://cebma.org/assets/Uploads/Rosenzweig-2007.pdf",
+          "wording": "relying on articles in the business press and on retrospective interviews, and you may well find that they're said to have strong cultures, solid values, and a commitment to excellence",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-rosenzweig-2007-visionary-regressed",
+          "org": "Phil Rosenzweig",
+          "url": "https://cebma.org/assets/Uploads/Rosenzweig-2007.pdf",
+          "wording": "In the five years after the study ended, the performance of the 18 Visionary companies regressed sharply.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "bundle": "operating-cadence",
+      "path": "running-it-when-its-broken.md",
+      "url": "https://knowledge.onesteplabs.com/operating-cadence/running-it-when-its-broken/",
+      "title": "Running It When It Is Already Broken",
+      "description": "How to diagnose a planning system that has already disappointed people, what to change in week one, and what to remove rather than add.",
+      "tags": [
+        "operating-cadence",
+        "goals",
+        "repair"
+      ],
+      "body": "## What to do this week\n\nChange one thing, and make it the weekly check. Every key result gets a number, written down, in the same place, said out loud to the team.\n\nLeave the goals alone. Rewriting them in week one confirms the suspicion that this is all churn, and the goals are rarely the problem anyway.\n\n## Most repairs start in the wrong place\n\nThe instinct with a struggling system is to improve the process. Better offsites, tighter objectives, a tool.\n\nThe more common situation is that a goal-setting instrument is being used outside the conditions where goal setting works at all. Five questions test that, and each one traces to evidence rather than to consulting habit. They are worth running before anything is changed.\n\n**Which system are you actually running?** If three leaders describe it differently, that is the documented state of the field rather than a failing of the team. That makes it safe to raise early. See [How the Planning Stack Fits Together](/operating-cadence/how-the-planning-stack-fits.md) for why the vocabulary is genuinely unsettled.\n\n**Is the work too complex for the instrument?** Goal-difficulty effect sizes weaken as complexity rises, to \".48 for the most complex tasks versus .67 for the least complex tasks\" ([Locke and Latham, 2002](#ev-locke-latham-2002-complexity-effect-sizes-oc)). The critics put it more sharply. Goals \"cause the most harm in complex, natural settings when outcomes are interdependent, monitoring is difficult, and cheating possible\" ([Ordonez et al., 2009](#ev-ordonez-2009-complex-settings-harm)). That describes most knowledge work.\n\n**Does anyone hold conflicting goals?** A team carrying quarterly objectives, a roadmap commitment and a service target is not being asked to prioritise. It is being asked to fail at something and choose which.\n\n**Is the system wired to performance review?** If it is, people will negotiate the number down before the cycle starts, and they are right to.\n\n**Can the team measure an outcome at all?** Where they cannot, key results quietly become task lists whatever the training said. The signature is a number that sits at zero for weeks and then jumps to complete.\n\n## The number everyone has wrong\n\nA specific confusion causes more damage than any process flaw, and it dissolves on contact with the source texts.\n\nThe convention says aim for seventy percent. The man usually credited with the method wrote something far more aggressive. Objectives should be set so high that even someone pushing hard \"will still only have a fifty-fifty chance of making them\" ([Grove, 1983](#ev-grove-1983-fifty-fifty)).\n\nThe research literature is more demanding still. Characterising the goal-setting research, Sitkin and colleagues describe a challenging goal as carrying \"a nonzero (typically, 10 percent) probability of attainment\" ([Sitkin et al., 2011](#ev-sitkin-2011-attainment-probabilities)). A stretch goal, in their definition, is seemingly impossible.\n\nLine those up and the seventy percent is the softest of the set, not a midpoint: 70, then Grove's 50, then 10, then near zero.\n\nIt is also not the same measurement. Seventy percent is an expected score, meaning how much of the goal you land. The other two are probabilities of hitting the goal at all. Comparing them directly is a category error, which is part of why the number travels so easily.\n\nWhere it does come from is one company's internal practice, and there it applies only to goals explicitly marked aspirational. Goals marked committed are expected to be met in full, with a miss requiring an explanation. <!-- noev: Google's published OKR playbook; described rather than quoted -->\n\nMost struggling systems have merged those two categories, applied the softer number to everything, and then attached the result to performance ratings. Separating them again is the cheapest high-value change available, and it costs one conversation.\n\n## If they are reaching for stretch goals, stop\n\nA team that has missed its targets often proposes more ambitious ones. This is the worst available move, and it is predictable.\n\nStretch goals help organizations with strong recent performance and spare capacity, and harm those without either. They are \"paradoxically, most seductive for organizations that can least afford the risks associated with them\" ([Sitkin et al., 2011](#ev-sitkin-2011-stretch-most-seductive)).\n\nA struggling client proposing a harder target is that paradox in motion. The evidence supports easier goals this cycle, not harder ones, and says so on the same grounds that would otherwise recommend stretch.\n\nThis is not an argument against goals. The critics stop well short of that. They recommend treating goal setting as \"a prescription-strength medication that requires careful dosing\" and close supervision ([Ordonez et al., 2009](#ev-ordonez-2009-prescription-strength-oc)).\n\n## Expect the cascade to be broken, because it usually is\n\nWhen goals do not connect to work, the instinct is to blame the teams writing them. The evidence points a layer up.\n\nThe best available empirical study drew on 47 interviews and 512 survey responses inside one large organization. In it, \"more than 50% of managers reported that they are not very effective at translating OKRs\" downward ([Butler et al., 2023](#ev-butler-2023-middle-management-gap)).\n\nThat is the normal outcome rather than a local failure, and it changes what to fix. The cascade depends on every middle manager performing a translation most of them report doing poorly. That is a design problem, not a discipline problem.\n\n## Week one\n\nSix moves, in order. Five of them are removals or clarifications.\n\n1. **Do not rewrite the goals.** Whatever is on the board stays for this cycle.\n2. **Start the weekly check immediately.** Same time, one page, every key result with a number and a confidence score. This is the only addition on the list.\n3. **Sever the link to ratings, out loud, from leadership.** Sandbagging stops when the reason for it is removed, not when it is asked to stop.\n4. **Find the step functions.** Any key result that jumps from zero to complete is a task. List them without fixing them, because the list is the teaching material for the next setting session.\n5. **Give the cycle an owner, and have leadership attend rather than receive.** The sector that succeeded with this kind of system had \"permanent employees overseeing the entire process\" ([Pavlickova et al., 2022](#ev-hoshin-review-2022-ownership-and-smes)). Smaller organizations had the most serious problems. If nobody's calendar has the cycle on it, nobody is running it.\n6. **At the next setting session, change exactly one thing.** Split committed from aspirational. That single move repairs the seventy percent confusion, makes a miss meaningful again, and costs nothing.\n\n## What to remove\n\nSubtraction buys more credibility with a sour team than addition, and none of these removals touches anything evidenced.\n\n**Individual goals.** They collapse into task lists and pull the whole system toward performance review. Company and team level only.\n\n**Mechanical cascading.** Every level waits for the level above, so a quarter is partly gone before teams begin. The translation step is one most managers report doing poorly anyway. Publish the company goals, let teams write their own against them, then check the connection.\n\n**Tooling, for now.** The study above concluded that \"tracking, measuring and setting goals is hard work, regardless of tools used\" ([Butler et al., 2023](#ev-butler-2023-hard-regardless-of-tools)). That finding comes from authors whose employer sold goal-setting software at the time, which makes it more credible rather than less. A shared document everyone can see beats a system nobody opens.\n\n**The grading ceremony.** Keep a score for the retrospective. Nobody has measured whether the grade itself changes behaviour, so it does not deserve the meeting it usually gets.\n\n## One thing to tell them early\n\nIn large companies, implementation of this kind of system \"had been successful and improved over the years through 5-year cycles\" ([Pavlickova et al., 2022](#ev-hoshin-review-2022-years-to-mature)). Improvement arrived over years, on five-year policy horizons rather than quarterly ones.\n\nThat is a finding about large organizations, and it is the closest thing to a timescale anyone has published. Read against it, a team two quarters in and frustrated is early rather than failing. Saying that out loud is worth more than most of the techniques here. It converts a felt failure into an expected stage, and buys the patience every other change needs.\n\nThe same review found the most serious problems in smaller organizations. It credits the sector that succeeded with \"having permanent employees overseeing the entire process\" ([Pavlickova et al., 2022](#ev-hoshin-review-2022-ownership-and-smes)). At small scale the constraint is rarely the design. It is whether the cycle is anybody's actual job.\n\n## Key Takeaways\n\n- **Change the weekly check first and the goals last.** The goals are rarely the problem, and rewriting them in week one confirms the team's worst suspicion.\n- **Run the five questions before the repair.** Most struggling systems are using a goal-setting instrument outside the conditions where goal setting works.\n- **The seventy percent matches no literature.** The originator said fifty-fifty and the research says ten percent. The company the number comes from applies it only to goals marked aspirational.\n- **A struggling team proposing harder targets is the stretch-goal paradox in motion.** The evidence recommends easier goals this cycle.\n- **Assume the cascade is weak at middle management,** because most managers report being not very effective at the translation it depends on.\n- **Subtract before adding.** Individual goals, mechanical cascading, tooling and the grading ceremony can all go without touching anything evidenced.\n- **Tell them improvement arrives over years.** Where large organizations succeeded with this, the gains came over five-year horizons, so a team two quarters in is early rather than failing.\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Locke and Latham — *Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist 57(9))*, 2002.** goal difficulty effect sizes (d) of .48 for the most complex tasks versus .67 for the least complex tasks. [View source](https://med.stanford.edu/content/dam/sm/s-spire/documents/PD.locke-and-latham-retrospective_Paper.pdf){#ev-locke-latham-2002-complexity-effect-sizes-oc} · verified 2026-09-24 · primary\n- **Ordonez, Schweitzer, Galinsky and Bazerman — *Goals Gone Wild (Academy of Management Perspectives 23(1); HBS working paper 09-083)*, 2009.** we argue that goals cause the most harm in complex, natural settings when outcomes are interdependent, monitoring is difficult, and cheating possible. [View source](https://www.hbs.edu/ris/Publication%20Files/09-083.pdf){#ev-ordonez-2009-complex-settings-harm} · verified 2026-09-24 · primary\n- **Andrew S. Grove — *High Output Management (Random House), verified against the full text*, 1983.** objectives should be set at a point high enough so that even if the individual (or organization) pushes himself hard, he will still only have a fifty-fifty chance of making them. [View source](https://archive.org/details/dli.ernet.213936){#ev-grove-1983-fifty-fifty} · verified 2026-09-24 · primary\n- **Sitkin, See, Miller, Lawless and Carton — *The Paradox of Stretch Goals (Academy of Management Review 36(3))*, 2011.** nonzero (typically, 10 percent) probability of at. [View source](https://journals.aom.org/doi/abs/10.5465/amr.2008.0038){#ev-sitkin-2011-attainment-probabilities} · verified 2026-09-24 · primary\n- **Sitkin, See, Miller, Lawless and Carton — *The Paradox of Stretch Goals (Academy of Management Review 36(3))*, 2011.** stretch goals are, paradoxically, most seductive for organizations that can least afford the risks associated with them. [View source](https://journals.aom.org/doi/abs/10.5465/amr.2008.0038){#ev-sitkin-2011-stretch-most-seductive} · verified 2026-09-24 · primary\n- **Ordonez, Schweitzer, Galinsky and Bazerman — *Goals Gone Wild (Harvard Business School working paper 09-083; later published in Academy of Management Perspectives 23(1)). The saved copy is the working-paper draft and carries no year in its own text*, 2009.** managers and scholars need to conceptualize goal setting as a prescription-strength medication that requires careful dosing, consideration of harmful side effects, and close supervision. [View source](https://www.hbs.edu/ris/Publication%20Files/09-083.pdf){#ev-ordonez-2009-prescription-strength-oc} · verified 2026-09-24 · primary\n- **Butler, Zimmermann and Bird (Microsoft) — *Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; later published at ICSE SEIP 2024). Quotes verified against the arXiv preprint, which carries no date in its own text*, 2023.** more than 50% of managers reported that they are not very effec. [View source](https://arxiv.org/abs/2311.00236){#ev-butler-2023-middle-management-gap} · verified 2026-09-24 · primary\n- **Pavlickova, Mojzisova and Pocsova — *Hoshin Kanri Process: A Review and Bibliometric Analysis (Processes 10, 1854)*, 2022.** The healthcare area was very successful in the implementations of Hoshin Kanri due to having permanent employees overseeing the entire process. [View source](https://doi.org/10.3390/pr10091854){#ev-hoshin-review-2022-ownership-and-smes} · verified 2026-09-24 · primary\n- **Butler, Zimmermann and Bird (Microsoft) — *Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; later published at ICSE SEIP 2024). Quotes verified against the arXiv preprint, which carries no date in its own text*, 2023.** tracking, measuring and setting goals is. [View source](https://arxiv.org/abs/2311.00236){#ev-butler-2023-hard-regardless-of-tools} · verified 2026-09-24 · primary\n- **Pavlickova, Mojzisova and Pocsova — *Hoshin Kanri Process: A Review and Bibliometric Analysis (Processes 10, 1854)*, 2022.** implementation in large companies had been successful and improved over the years through 5-year cycles. [View source](https://doi.org/10.3390/pr10091854){#ev-hoshin-review-2022-years-to-mature} · verified 2026-09-24 · primary",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "id": "ev-grove-1983-fifty-fifty",
+          "org": "Andrew S. Grove",
+          "url": "https://archive.org/details/dli.ernet.213936",
+          "wording": "objectives should be set at a point high enough so that even if the individual (or organization) pushes himself hard, he will still only have a fifty-fifty chance of making them",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-sitkin-2011-stretch-most-seductive",
+          "org": "Sitkin, See, Miller, Lawless and Carton",
+          "url": "https://journals.aom.org/doi/abs/10.5465/amr.2008.0038",
+          "wording": "stretch goals are, paradoxically, most seductive for organizations that can least afford the risks associated with them",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-sitkin-2011-attainment-probabilities",
+          "org": "Sitkin, See, Miller, Lawless and Carton",
+          "url": "https://journals.aom.org/doi/abs/10.5465/amr.2008.0038",
+          "wording": "nonzero (typically, 10 percent) probability of at",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-ordonez-2009-complex-settings-harm",
+          "org": "Ordonez, Schweitzer, Galinsky and Bazerman",
+          "url": "https://www.hbs.edu/ris/Publication%20Files/09-083.pdf",
+          "wording": "we argue that goals cause the most harm in complex, natural settings when outcomes are interdependent, monitoring is difficult, and cheating possible",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-ordonez-2009-prescription-strength-oc",
+          "org": "Ordonez, Schweitzer, Galinsky and Bazerman",
+          "url": "https://www.hbs.edu/ris/Publication%20Files/09-083.pdf",
+          "wording": "managers and scholars need to conceptualize goal setting as a prescription-strength medication that requires careful dosing, consideration of harmful side effects, and close supervision",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-locke-latham-2002-complexity-effect-sizes-oc",
+          "org": "Locke and Latham",
+          "url": "https://med.stanford.edu/content/dam/sm/s-spire/documents/PD.locke-and-latham-retrospective_Paper.pdf",
+          "wording": "goal difficulty effect sizes (d) of .48 for the most complex tasks versus .67 for the least complex tasks",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-butler-2023-middle-management-gap",
+          "org": "Butler, Zimmermann and Bird (Microsoft)",
+          "url": "https://arxiv.org/abs/2311.00236",
+          "wording": "more than 50% of managers reported that they are not very effec",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-butler-2023-hard-regardless-of-tools",
+          "org": "Butler, Zimmermann and Bird (Microsoft)",
+          "url": "https://arxiv.org/abs/2311.00236",
+          "wording": "tracking, measuring and setting goals is",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-hoshin-review-2022-years-to-mature",
+          "org": "Pavlickova, Mojzisova and Pocsova",
+          "url": "https://doi.org/10.3390/pr10091854",
+          "wording": "implementation in large companies had been successful and improved over the years through 5-year cycles",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-hoshin-review-2022-ownership-and-smes",
+          "org": "Pavlickova, Mojzisova and Pocsova",
+          "url": "https://doi.org/10.3390/pr10091854",
+          "wording": "The healthcare area was very successful in the implementations of Hoshin Kanri due to having permanent employees overseeing the entire process.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "bundle": "operating-cadence",
+      "path": "the-planning-year.md",
+      "url": "https://knowledge.onesteplabs.com/operating-cadence/the-planning-year/",
+      "title": "The Planning Year",
+      "description": "When strategy, annual plans, quarterly goals and the weekly check actually happen, and which parts of the calendar have evidence behind them.",
+      "tags": [
+        "operating-cadence",
+        "planning",
+        "cadence"
+      ],
+      "body": "## What to do this week\n\nFind out when your strategy work is expected to finish, and when the goals it feeds are due. If the gap is less than a quarter, the cascade will eat the period it was meant to direct. No amount of discipline inside that quarter recovers it.\n\nThat single measurement tells you more about why a planning year is failing than any audit of the goals themselves.\n\n## The cycle length is a feedback question\n\nQuarterly is the default, and almost nobody can say why. The reasoning exists, it is forty years old, and it is not about the calendar.\n\nThe argument is feedback latency. \"For the feedback to be effective, it must be received very soon after the activity it is measuring occurs. Accordingly, an MBO system should set objectives for a relatively short period.\" Then the prescription, routinely quoted backwards. The time frame \"should be at least as often as quarterly or perhaps even monthly\" ([Grove, 1983](#ev-grove-1983-cadence-quarterly-is-the-floor)).\n\nAt least as often as quarterly. Quarterly is the floor, not the target. The practice inherited a ceiling from a sentence that set a minimum.\n\nThe test that follows is not what everyone else does. It is how long your organization can act on stale information without noticing. Work whose feedback arrives in weeks wants a shorter cycle than work whose feedback arrives in quarters. Both can live in the same company.\n\n## The two sequences anyone actually publishes\n\nMost published planning calendars are generic diagrams. Two organizations have described a dated sequence, and they are the useful evidence because they disagree about almost everything except the timing.\n\n**Amazon.** Its own filed account says the cycle \"begins in the fall, and concludes early in the new year\" ([Amazon, 2009](#ev-amazon-2009-goal-cycle-timing)). The output is specific rather than thematic: \"For 2010, we have 452 detailed goals with owners, deliverables, and targeted completion dates\" ([Amazon, 2009](#ev-amazon-2009-goal-count)).\n\nOne honesty note. Former executives describe the process starting earlier, around June, with a top-down guidance step. That account is credible and widely repeated. It is not what the company filed, and the two should not be merged.\n\nSit with the tension in that number. Grove wrote that focus \"can only happen if we keep the number of objectives small\" ([Grove, 1983](#ev-grove-1983-focus-on-nothing)). He gives no figure. Amazon tracks 452, and says these \"are not the only goals our teams set for themselves\" ([Amazon, 2009](#ev-amazon-2009-goal-count)). The tracked set and the working set are different things.\n\n**A manufacturing site running Hoshin Kanri.** This is the Swedish arm of a Japanese-owned group, around 460 people, described through a single interview in a master's thesis. Small evidence, and the only published dated sequence besides Amazon's. Its cycle \"is divided into two periods, December to March, 'the strategic part', and April to March, 'the operational part'\" ([Alic and Ideskog, 2016](#ev-hoshin-case-2016-strategic-period)). The strategic part overlaps the tail of the previous cycle, so the two run in parallel for four months.\n\n## The handoff needs lead time, and only one sequence shows how much\n\nThe useful question is how much runway the handoff needs. Only one of these two answers it directly, and the other is often misread as agreeing.\n\nIn the Hoshin case, the negotiation between levels runs for four months and has to be finished before the year starts. By April \"every level in the organization should have decided upon their Strategic pillars and Hoshins\" ([Alic and Ideskog, 2016](#ev-hoshin-case-2016-ready-by-april)).\n\nAmazon is the case that gets misread, including by an earlier draft of this page. Its process \"concludes early in the new year\" ([Amazon, 2009](#ev-amazon-2009-goal-cycle-timing)), and the goals it produces are for that same year. The cycle runs into the year it governs rather than finishing ahead of it.\n\nSo the two published sequences disagree about the handoff, and the disagreement is the finding. One finishes its negotiation before the year opens. The other is still concluding goals in the opening weeks of the year those goals govern.\n\nWhat transfers is the scheduling question rather than a number. If the top of the house has not settled direction by the time teams must write goals, everything downstream is guesswork or delay. Four months of overlap is one documented answer. It is not a rule, because only one organization has published one.\n\n## A re-baseline worth considering\n\nThere is a second move worth considering, widely described by former Amazon executives and absent from anything the company has filed. It addresses a problem every organization has. Treat what follows as our recommendation rather than as a documented practice. <!-- noev: recommendation built on insider accounts; the filed source describes continuous revision, not a single scheduled re-baseline -->\n\nA plan gets written and approved before the year's largest uncertainty resolves, which for a retailer is the holiday quarter. Rather than planning blind or waiting until February, you revise against actuals early in the new year. That revision becomes the version you operate against.\n\nThis is not about retail. Every organization plans before something important is known. The choice is usually framed as plan early and be wrong, or plan late and lose the quarter. Splitting the lock is a third option. Approve the plan on schedule, then hold one short, scheduled revision once the thing you were waiting on is known.\n\nThe trap to avoid is letting that revision become continuous. A scheduled re-baseline is a decision point. An unscheduled one is a plan nobody trusts.\n\n## Frequent progress checks are the one evidenced mechanic\n\nEverything above is convention. This is not.\n\nA meta-analysis covered 138 studies and 19,951 people. Monitoring interventions raised how often people checked progress, and \"promoted goal attainment\" ([Harkin et al., 2016](#ev-harkin-2016-monitoring-attainment-cadence)).\n\nTwo design features strengthened it, and together they specify what a weekly check has to do. The effect was larger \"when the outcomes were reported or made public, and when the information was physically recorded\" ([Harkin et al., 2016](#ev-harkin-2016-moderators-cadence)).\n\nFrequently. Out loud, to someone else. Written down. That is the evidenced core, and it is the beat that gets cancelled first when the quarter gets busy.\n\nNote what the evidence does not say. It supports more frequent monitoring against less frequent; it names no interval. Weekly is a convention, and a reasonable one, but it is our choice rather than the study's finding.\n\nOne caveat belongs in the open. That corpus is dominated by individual health behaviours rather than team goals at work. Carrying it into an organization is a reasonable inference and not a finding.\n\n## What the review ladder is for\n\nUnderneath the annual cycle, organizations run a ladder of reviews, and the useful distinction is what each one is allowed to decide.\n\nA weekly operating review surfaces exceptions. It does not solve them. The versions described publicly keep strategic discussion out deliberately, which is what keeps the meeting short enough to hold weekly. Those are practitioner accounts rather than studies, and no one has tested the separation.\n\nA monthly or quarterly business review compares progress against the plan and is the sanctioned place to propose changing it. Without that channel, teams carry goals they privately know are dead.\n\nAn annual review closes the year and feeds the next planning session. That is why it is scheduled against the start of the next cycle rather than the end of the last.\n\nHoshin Kanri adds a fourth that has no common Western equivalent. Its annual diagnosis audits how the planning process itself ran, including how the negotiation between levels went, rather than only whether the goals were met. It is the one mechanic in this survey aimed at stopping the cadence from rotting into ceremony, and it costs a single meeting a year. <!-- noev: description of a documented method, no performance claim attached -->\n\n## The budget question\n\nMost organizations bolt goals onto the budget calendar without asking whether that is right. There is a real argument that they should not, and it is worth stating accurately in both directions.\n\nThe case against is that the annual budget makes one number serve as target, forecast and resource allocation at once. The movement built on that argument puts it directly. Organise management processes \"around business rhythms and events; not around the calendar year only\" ([Beyond Budgeting Institute, 2023](#ev-beyond-budgeting-2023-rhythm-principle)). That source advocates the position it describes, which is worth knowing when weighing it.\n\nThe evidence does not support the stronger version of the claim. A two-country survey of 558 organizations found them \"adapting their use ... rather than abandoning budgets altogether\" ([Libby and Lindsay, 2010](#ev-libby-lindsay-2010-adapting-not-abandoning)).\n\nThe same survey measured the cost that the abandonment case rests on, and found it smaller than claimed. Median time for a business unit to complete the annual budget was 6.0 weeks in the Canadian sample and 10.0 in the US one, with an individual manager spending 3 to 4 weeks a year on it ([Libby and Lindsay, 2010](#ev-libby-lindsay-2010-budget-time-cost)).\n\nThe defensible middle is the one most organizations already occupy. Keep the budget, and separate the target from the forecast from the resource allocation, so that one number stops doing three jobs.\n\n## What has no evidence at all\n\nSaid plainly, because the absence is useful.\n\n**The three-year plan.** There is no evidence for that horizon, or for any particular number. Set the horizon by the lead time of the commitments being made, such as hiring, capital or platform work, rather than by a convention.\n\n**Most of Hoshin Kanri's specifics.** A systematic review found the implementation data \"often only conceptual and theoretical\" ([Pavlickova et al., 2022](#ev-hoshin-review-2022-evidence-thin)). The same review reports that smaller organizations struggled most with it, and credits success elsewhere to having permanent staff who own running the cycle. At small scale the binding constraint is usually not the calendar design but whether anyone owns it.\n\n**Every published cascade-duration statistic.** The numbers in circulation about cascade duration, or about what share of goal programmes get abandoned, come from companies selling goal-setting software. None states a method. They are omitted here rather than repeated with a caveat.\n\n## Key Takeaways\n\n- **Quarterly is a floor, not a prescription.** The original argument is about how fast feedback has to arrive to still be actionable, and it explicitly permits monthly.\n- **Give the handoff a full quarter.** Both organizations with a published dated sequence finish strategy work well before the goals it feeds are due. One overlaps the prior cycle to manage it.\n- **Schedule one re-baseline** after the year's largest uncertainty resolves, rather than planning blind or planning late.\n- **Protect the weekly beat above everything else.** It is the only part of the rhythm with strong evidence, and the specification is frequent, said out loud to someone, and written down.\n- **Give each review a decision it is allowed to make.** A weekly that solves problems becomes a monthly. A monthly that cannot change the plan becomes theatre.\n- **Audit the process once a year, not just the results.** Nothing else in the calendar stops the calendar itself from rotting.\n- **Keep the budget if you have one, but stop making one number be target, forecast and allocation at once.**\n\n## Sources\n\n<!-- generated from validation/evidence.yaml — do not edit; run scripts/build_index.py -->\n\n- **Andrew S. Grove — *High Output Management (Random House), verified against the full text*, 1983.** For the feedback to be effective, it must be received very soon after the activity it is measuring occurs. Accordingly, an MBO system should set objectives for a relatively short period. For example, if we plan on a yearly basis, the corresponding MBO system's time frame should be at least as often as quarterly or perhaps even monthly. [View source](https://archive.org/details/dli.ernet.213936){#ev-grove-1983-cadence-quarterly-is-the-floor} · verified 2026-09-24 · primary\n- **Amazon (Jeff Bezos) — *2009 Letter to Shareholders, filed with the SEC as Exhibit 99.1*, 2009.** Our annual goal setting process begins in the fall, and concludes early in the new year after we've completed our peak holiday quarter. [View source](https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm){#ev-amazon-2009-goal-cycle-timing} · verified 2026-09-24 · primary\n- **Amazon (Jeff Bezos) — *2009 Letter to Shareholders, filed with the SEC as Exhibit 99.1*, 2009.** For 2010, we have 452 detailed goals with owners, deliverables, and targeted completion dates. [View source](https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm){#ev-amazon-2009-goal-count} · verified 2026-09-24 · primary\n- **Andrew S. Grove — *High Output Management (Random House), verified against the full text*, 1983.** The one thing an MBO system should provide par excellence is focus. This can only happen if we keep the number of objectives small. [View source](https://archive.org/details/dli.ernet.213936){#ev-grove-1983-focus-on-nothing} · verified 2026-09-24 · primary\n- **Alic and Ideskog — *Hoshin Kanri implementation, master's thesis, Jonkoping International Business School*, 2016.** Company B's Hoshin Kanri process is divided into two periods, December to March, 'the strategic part', and April to March, 'the operational part'. [View source](https://www.diva-portal.org/smash/get/diva2:930907/FULLTEXT01.pdf){#ev-hoshin-case-2016-strategic-period} · verified 2026-09-24 · primary\n- **Alic and Ideskog — *Hoshin Kanri implementation, master's thesis, Jonkoping International Business School*, 2016.** When April comes every level in the organization should have decided upon their Strategic pillars and Hoshins so that they can start to implement them. [View source](https://www.diva-portal.org/smash/get/diva2:930907/FULLTEXT01.pdf){#ev-hoshin-case-2016-ready-by-april} · verified 2026-09-24 · primary\n- **Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran — *Does Monitoring Goal Progress Promote Goal Attainment? A Meta-Analysis of the Experimental Evidence (Psychological Bulletin 142(2), 198-229)*, 2016.** A random effects model revealed that, on average, interventions were successful at increasing the frequency of monitoring goal progress (d+ = 1.98, 95% CI [1.71, 2.24]) and promoted goal attainment (d+ = 0.40, 95% CI [0.32, 0.48]). [View source](https://doi.org/10.1037/bul0000025){#ev-harkin-2016-monitoring-attainment-cadence} · verified 2026-09-24 · primary\n- **Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran — *Does Monitoring Goal Progress Promote Goal Attainment? A Meta-Analysis of the Experimental Evidence (Psychological Bulletin 142(2), 198-229)*, 2016.** progress monitoring had larger effects on goal attainment when the outcomes were reported or made public, and when the information was physically recorded. [View source](https://doi.org/10.1037/bul0000025){#ev-harkin-2016-moderators-cadence} · verified 2026-09-24 · primary\n- **Beyond Budgeting Institute — *Beyond Budgeting at 25, white paper (dated 03.23 in the document; no bare year string appears in it)*, 2023.** around business rhythms and events; not around the calendar year only. [View source](https://bbrt.org/wp-content/uploads/bb-white-paper.pdf){#ev-beyond-budgeting-2023-rhythm-principle} · verified 2026-09-24 · primary\n- **Libby and Lindsay — *Beyond budgeting or budgeting reconsidered? A survey of North-American budgeting practice (Management Accounting Research 21)*, 2010.** While problems exist with budgets, organizations are adapting their use to account for these problems rather than abandoning budgets altogether. [View source](https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/36875/files/2016/12/Libby-Lindsay_budgeting_survey-17bvsph.pdf){#ev-libby-lindsay-2010-adapting-not-abandoning} · verified 2026-09-24 · primary\n- **Libby and Lindsay — *Beyond budgeting or budgeting reconsidered? A survey of North-American budgeting practice (Management Accounting Research 21), Table 3*, 2010.** FIRM WEEKS Canadian sample (in weeks) 6.0 4.7 1 20 102 US sample (in weeks) 10.0 6.6 2 36 77 MANAGER TIME Canadian sample (in weeks) 3-4. [View source](https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/36875/files/2016/12/Libby-Lindsay_budgeting_survey-17bvsph.pdf){#ev-libby-lindsay-2010-budget-time-cost} · verified 2026-09-24 · primary\n- **Pavlickova, Mojzisova and Pocsova — *Hoshin Kanri Process: A Review and Bibliometric Analysis (Processes 10, 1854)*, 2022.** A few practical pieces of evidence exist on how to successfully introduce Hoshin Kanri, but the data are often only conceptual and theoretical. [View source](https://doi.org/10.3390/pr10091854){#ev-hoshin-review-2022-evidence-thin} · verified 2026-09-24 · primary",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "id": "ev-grove-1983-cadence-quarterly-is-the-floor",
+          "org": "Andrew S. Grove",
+          "url": "https://archive.org/details/dli.ernet.213936",
+          "wording": "For the feedback to be effective, it must be received very soon after the activity it is measuring occurs. Accordingly, an MBO system should set objectives for a relatively short period. For example, if we plan on a yearly basis, the corresponding MBO system's time frame should be at least as often as quarterly or perhaps even monthly.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-grove-1983-focus-on-nothing",
+          "org": "Andrew S. Grove",
+          "url": "https://archive.org/details/dli.ernet.213936",
+          "wording": "The one thing an MBO system should provide par excellence is focus. This can only happen if we keep the number of objectives small.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-amazon-2009-goal-cycle-timing",
+          "org": "Amazon (Jeff Bezos)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm",
+          "wording": "Our annual goal setting process begins in the fall, and concludes early in the new year after we've completed our peak holiday quarter.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-amazon-2009-goal-count",
+          "org": "Amazon (Jeff Bezos)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm",
+          "wording": "For 2010, we have 452 detailed goals with owners, deliverables, and targeted completion dates.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-hoshin-case-2016-strategic-period",
+          "org": "Alic and Ideskog",
+          "url": "https://www.diva-portal.org/smash/get/diva2:930907/FULLTEXT01.pdf",
+          "wording": "Company B's Hoshin Kanri process is divided into two periods, December to March, 'the strategic part', and April to March, 'the operational part'.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-hoshin-case-2016-ready-by-april",
+          "org": "Alic and Ideskog",
+          "url": "https://www.diva-portal.org/smash/get/diva2:930907/FULLTEXT01.pdf",
+          "wording": "When April comes every level in the organization should have decided upon their Strategic pillars and Hoshins so that they can start to implement them",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-hoshin-review-2022-evidence-thin",
+          "org": "Pavlickova, Mojzisova and Pocsova",
+          "url": "https://doi.org/10.3390/pr10091854",
+          "wording": "A few practical pieces of evidence exist on how to successfully introduce Hoshin Kanri, but the data are often only conceptual and theoretical.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-libby-lindsay-2010-adapting-not-abandoning",
+          "org": "Libby and Lindsay",
+          "url": "https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/36875/files/2016/12/Libby-Lindsay_budgeting_survey-17bvsph.pdf",
+          "wording": "While problems exist with budgets, organizations are adapting their use to account for these problems rather than abandoning budgets altogether.",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-libby-lindsay-2010-budget-time-cost",
+          "org": "Libby and Lindsay",
+          "url": "https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/36875/files/2016/12/Libby-Lindsay_budgeting_survey-17bvsph.pdf",
+          "wording": "FIRM WEEKS Canadian sample (in weeks) 6.0 4.7 1 20 102 US sample (in weeks) 10.0 6.6 2 36 77 MANAGER TIME Canadian sample (in weeks) 3-4",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-beyond-budgeting-2023-rhythm-principle",
+          "org": "Beyond Budgeting Institute",
+          "url": "https://bbrt.org/wp-content/uploads/bb-white-paper.pdf",
+          "wording": "around business rhythms and events; not around the calendar year only",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-harkin-2016-monitoring-attainment-cadence",
+          "org": "Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran",
+          "url": "https://doi.org/10.1037/bul0000025",
+          "wording": "A random effects model revealed that, on average, interventions were successful at increasing the frequency of monitoring goal progress (d+ = 1.98, 95% CI [1.71, 2.24]) and promoted goal attainment (d+ = 0.40, 95% CI [0.32, 0.48]).",
+          "status": "primary",
+          "verified": "2026-09-24"
+        },
+        {
+          "id": "ev-harkin-2016-moderators-cadence",
+          "org": "Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran",
+          "url": "https://doi.org/10.1037/bul0000025",
+          "wording": "progress monitoring had larger effects on goal attainment when the outcomes were reported or made public, and when the information was physically recorded",
+          "status": "primary",
+          "verified": "2026-09-24"
+        }
+      ]
+    },
+    {
       "bundle": "research-notes",
       "path": "rethink-the-process-or-just-add-ai.md",
       "url": "https://knowledge.onesteplabs.com/research-notes/rethink-the-process-or-just-add-ai/",
@@ -11807,6 +12194,10 @@
       ]
     },
     {
+      "bundle": "operating-cadence",
+      "terms": []
+    },
+    {
       "bundle": "research-notes",
       "terms": []
     },
@@ -12400,6 +12791,66 @@
       "date": "2026-07-01",
       "bundle": "open-knowledge-format",
       "entry": "Creation**: two themes — Understanding OKF (the format as it stands today) and The Potential (our grounded read of where it could go)."
+    },
+    {
+      "date": "2026-09-25",
+      "bundle": "operating-cadence",
+      "entry": "Update**: How the Planning Stack Fits Together"
+    },
+    {
+      "date": "2026-09-25",
+      "bundle": "operating-cadence",
+      "entry": "Update**: the monitoring meta-analysis entry now records both reported effect sizes verbatim,"
+    },
+    {
+      "date": "2026-09-25",
+      "bundle": "operating-cadence",
+      "entry": "Update**: The Planning Year no longer describes the"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Update**: The Planning Year corrects its central"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Update**: the same page no longer presents a plan-then-re-baseline sequence as a documented"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Update**: the same page no longer attributes a weekly interval to the monitoring evidence. The"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Update**: Running It When It Is Already Broken"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Update**: How the Planning Stack Fits Together"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Creation**: new bundle, Operating Cadence: how an organization"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Creation**: How the Planning Stack Fits Together:"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Creation**: The Planning Year: when strategy, annual"
+    },
+    {
+      "date": "2026-09-24",
+      "bundle": "operating-cadence",
+      "entry": "Creation**: Running It When It Is Already Broken:"
     },
     {
       "date": "2026-09-17",

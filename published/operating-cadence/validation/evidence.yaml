@@ -1,0 +1,518 @@
+- id: ev-alegre-2018-mission-performance-inconclusive
+  claim: A systematic review screening 2,233 documents down to 53 Q1/Q2 articles found research on mission statements and organizational performance to be scarce and inconclusive
+  value: 2,233 documents screened to 53 articles, 1984-2014
+  wording: Research examining the relationship between mission statements and performance is scarce and inconclusive
+  source:
+    org: Alegre, Berbegal-Mirabent, Guerrero and Mas-Machuca
+    report: 'The real mission of the mission statement: A systematic review of the literature (Journal of Management & Organization 24(4))'
+    edition: 2018
+    url: https://upcommons.upc.edu/bitstream/2117/360203/1/Manuscript%20UPC%20Commons.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-alegre-2018-poorly-researched
+  claim: The same review's overarching verdict on the state of the field
+  value: n/a (qualitative)
+  wording: mission statements are widely used in practice but poorly researched in theory
+  source:
+    org: Alegre, Berbegal-Mirabent, Guerrero and Mas-Machuca
+    report: 'The real mission of the mission statement: A systematic review of the literature (Journal of Management & Organization 24(4))'
+    edition: 2018
+    url: https://upcommons.upc.edu/bitstream/2117/360203/1/Manuscript%20UPC%20Commons.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-guiso-2013-proclaimed-values-irrelevant
+  claim: Coding advertised corporate values across the S&P 500 found no relationship to firm performance; independently measured values (employee perceptions of managerial trustworthiness) did predict it
+  value: n/a (qualitative finding on a full S&P 500 sample)
+  wording: We find that proclaimed values appear irrelevant. Yet, when employees perceive top managers as trustworthy and ethical, firm's performance is stronger.
+  source:
+    org: Guiso, Sapienza and Zingales
+    report: The Value of Corporate Culture, NBER Working Paper 19557 (October 2013). Later published in the Journal of Financial Economics 117(1), 2015; quotes here are verified against the 2013 working
+      paper
+    edition: 2013
+    url: https://www.nber.org/system/files/working_papers/w19557/w19557.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-guiso-2013-cheap-talk
+  claim: The authors' stated explanation for why advertised values carry no signal
+  value: n/a (qualitative)
+  wording: Since the cost of claiming on the Web values such as integrity or care of the environment is close to zero, most firms will do it, regardless of the actual set of values present in the organization.
+  source:
+    org: Guiso, Sapienza and Zingales
+    report: The Value of Corporate Culture, NBER Working Paper 19557 (October 2013). Later published in the Journal of Financial Economics 117(1), 2015; quotes here are verified against the 2013 working
+      paper
+    edition: 2013
+    url: https://www.nber.org/system/files/working_papers/w19557/w19557.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-collins-porras-1996-vision-overused
+  claim: 'The authors of the most-cited vision framework open by calling the word itself overused and poorly understood (NOTE: the source PDF is two-column and the sentence interleaves; the full sentence
+    reads ''But vision has become one of the most overused and least understood words in the language, conjuring up different images for different people'')'
+  value: n/a (qualitative)
+  wording: one of the most overused and least understood
+  source:
+    org: Collins and Porras
+    report: Building Your Company's Vision (Harvard Business Review, September-October)
+    edition: 1996
+    url: https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-rumelt-2011-list-is-not-strategy
+  claim: Rumelt's central distinction between a strategy and a set of goals
+  value: n/a (practitioner argument)
+  wording: A long list of things to do, often mislabeled as strategies or objectives, is not a strategy. It is just a list of things to do.
+  source:
+    org: Richard Rumelt
+    report: The perils of bad strategy (McKinsey Quarterly), adapted from Good Strategy/Bad Strategy
+    edition: 2011
+    url: https://www.hlsconsult.com/attachments/File/Articles/Mckinsey_-_Perils_of_Bad_Strategy.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-porter-1996-choosing-what-not-to-do
+  claim: 'Porter''s definition of what makes a strategy a strategy (NOTE: source is two-column; adjacent text interleaves around this sentence)'
+  value: n/a (practitioner argument)
+  wording: The essence of strategy is choosing what not to do.
+  source:
+    org: Michael E. Porter
+    report: What Is Strategy? (Harvard Business Review, November-December)
+    edition: 1996
+    url: https://lumsa.it/sites/default/files/UTENTI/u95/LM51_ITA_What%20is%20Strategy%20-%20Porter.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-martin-2014-terrible-way
+  claim: 'Martin''s verdict on the standard strategic plan, being a mission statement plus an initiative list converted into financials (NOTE: two-column source, text interleaves)'
+  value: n/a (practitioner argument)
+  wording: This is a truly terrible way to make strategy.
+  source:
+    org: Roger L. Martin
+    report: The Big Lie of Strategic Planning (Harvard Business Review, January-February)
+    edition: 2014
+    url: https://todopmp.com/wp-content/uploads/2018/12/The-Big-Lie-of-Strategic-Planning-1.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-mintzberg-1994-not-strategic-thinking
+  claim: 'Mintzberg''s core objection: planning is analysis, strategy making is synthesis, and confusing them damages the latter'
+  value: n/a (scholarly argument)
+  wording: strategic planning is not strategic thinking. Indeed, strategic planning often spoils strategic thinking, causing managers to confuse real vision with the manipulation of numbers.
+  source:
+    org: Henry Mintzberg
+    report: The Fall and Rise of Strategic Planning (Harvard Business Review, January-February)
+    edition: 1994
+    url: https://info.eaglenet.jbu.edu/depts/odl/om/resources/om4234/FallandRise.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-george-2019-planning-performance-effect
+  claim: Random-effects meta-analysis of strategic planning and organizational performance; the effect is real and modest, with very high heterogeneity
+  value: r = .229, 95% CI [.186, .271], from 87 correlations across 31 studies; I-squared = 91.6%
+  wording: 87 (31 studies) .229 [.186, .271]
+  source:
+    org: George, Walker and Monster
+    report: Does Strategic Planning Improve Organizational Performance? A Meta-Analysis (Public Administration Review 79(6))
+    edition: 2019
+    url: https://biblio.ugent.be/publication/8637323/file/8638087.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-candido-2015-failure-rate-undetermined
+  claim: A peer-reviewed review of strategy-implementation failure rates concluded the true rate is unknown and the circulating estimates rest on absent or fragile evidence
+  value: estimates range 28% to 90% across general business strategy studies
+  wording: the true rate of implementation failure remains to be determined. Most of the estimates presented in the literature are based on evidence that is outdated, fragmentary, fragile, or just absent.
+  source:
+    org: Candido and Santos
+    report: 'Strategy implementation: What is the failure rate? (Journal of Management & Organization 21(2))'
+    edition: 2015
+    url: https://doi.org/10.1017/jmo.2014.77
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-candido-2015-warning-against-use
+  claim: The same review's explicit warning against using the high failure-rate figures to justify decisions
+  value: the 70% to 90% estimates specifically
+  wording: a warning against the use of the current higher estimates of rates of failure (70 to 90 percent) to justify any course of action, whether in research or in management practice
+  source:
+    org: Candido and Santos
+    report: 'Strategy implementation: What is the failure rate? (Journal of Management & Organization 21(2))'
+    edition: 2015
+    url: https://doi.org/10.1017/jmo.2014.77
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-candido-2015-studies-unobtainable
+  claim: The reviewers tried to obtain the consultancy studies underlying the widely quoted figures and could not; many of the most-quoted studies were authored by consulting firms and are unavailable
+  value: more than 45 emails sent
+  wording: In total, more than 45 e-mails were sent. In spite of all the efforts made to obtain copies of the studies, most of these efforts proved unfruitful.
+  source:
+    org: Candido and Santos
+    report: 'Strategy implementation: What is the failure rate? (Journal of Management & Organization 21(2))'
+    edition: 2015
+    url: https://doi.org/10.1017/jmo.2014.77
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-grove-1983-cadence-quarterly-is-the-floor
+  claim: Grove's stated reasoning for the planning cycle is feedback latency, and he names quarterly as the slowest acceptable cadence rather than the prescribed one
+  value: at least quarterly, perhaps monthly
+  wording: For the feedback to be effective, it must be received very soon after the activity it is measuring occurs. Accordingly, an MBO system should set objectives for a relatively short period. For
+    example, if we plan on a yearly basis, the corresponding MBO system's time frame should be at least as often as quarterly or perhaps even monthly.
+  source:
+    org: Andrew S. Grove
+    report: High Output Management (Random House), verified against the full text
+    edition: 1983
+    url: https://archive.org/details/dli.ernet.213936
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-grove-1983-focus-on-nothing
+  claim: 'Grove on how many objectives a system should carry: he gives a principle and no number'
+  value: n/a (no number given)
+  wording: The one thing an MBO system should provide par excellence is focus. This can only happen if we keep the number of objectives small.
+  source:
+    org: Andrew S. Grove
+    report: High Output Management (Random House), verified against the full text
+    edition: 1983
+    url: https://archive.org/details/dli.ernet.213936
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-amazon-2009-goal-cycle-timing
+  claim: 'Amazon''s own filed description of when its annual goal-setting runs (NOTE: insider accounts put the start earlier, in June; this is the company''s own statement and the two should not be merged)'
+  value: begins in the fall, concludes early in the new year
+  wording: Our annual goal setting process begins in the fall, and concludes early in the new year after we've completed our peak holiday quarter.
+  source:
+    org: Amazon (Jeff Bezos)
+    report: 2009 Letter to Shareholders, filed with the SEC as Exhibit 99.1
+    edition: 2009
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-amazon-2009-goal-count
+  claim: The scale of Amazon's tracked annual goal set, and that each carries an owner and a date
+  value: 452 detailed goals for 2010
+  wording: For 2010, we have 452 detailed goals with owners, deliverables, and targeted completion dates.
+  source:
+    org: Amazon (Jeff Bezos)
+    report: 2009 Letter to Shareholders, filed with the SEC as Exhibit 99.1
+    edition: 2009
+    url: https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-hoshin-case-2016-strategic-period
+  claim: A Japanese multinational's Hoshin Kanri cycle splits into a four-month strategic period and a twelve-month operational one, with the strategic part overlapping the tail of the prior cycle
+  value: December to March strategic; April to March operational
+  wording: Company B's Hoshin Kanri process is divided into two periods, December to March, 'the strategic part', and April to March, 'the operational part'.
+  source:
+    org: Alic and Ideskog
+    report: Hoshin Kanri implementation, master's thesis, Jonkoping International Business School
+    edition: 2016
+    url: https://www.diva-portal.org/smash/get/diva2:930907/FULLTEXT01.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-hoshin-case-2016-ready-by-april
+  claim: 'The lead time the cascade needs: every level has agreed its goals before the operational year begins'
+  value: four months of catchball before the year starts
+  wording: When April comes every level in the organization should have decided upon their Strategic pillars and Hoshins so that they can start to implement them
+  source:
+    org: Alic and Ideskog
+    report: Hoshin Kanri implementation, master's thesis, Jonkoping International Business School
+    edition: 2016
+    url: https://www.diva-portal.org/smash/get/diva2:930907/FULLTEXT01.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-hoshin-review-2022-evidence-thin
+  claim: A PRISMA systematic review of Hoshin Kanri found the evidence on implementation thin and largely non-empirical
+  value: 126 articles found; 26 contained a detailed implementation with empirical research
+  wording: A few practical pieces of evidence exist on how to successfully introduce Hoshin Kanri, but the data are often only conceptual and theoretical.
+  source:
+    org: Pavlickova, Mojzisova and Pocsova
+    report: 'Hoshin Kanri Process: A Review and Bibliometric Analysis (Processes 10, 1854)'
+    edition: 2022
+    url: https://doi.org/10.3390/pr10091854
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-libby-lindsay-2010-adapting-not-abandoning
+  claim: A two-country survey of budget practice found organizations adapting their budgeting rather than abandoning it, against the Beyond Budgeting prescription
+  value: 558 responses (Canada 346, US 212); 79% use budgets for control
+  wording: While problems exist with budgets, organizations are adapting their use to account for these problems rather than abandoning budgets altogether.
+  source:
+    org: Libby and Lindsay
+    report: Beyond budgeting or budgeting reconsidered? A survey of North-American budgeting practice (Management Accounting Research 21)
+    edition: 2010
+    url: https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/36875/files/2016/12/Libby-Lindsay_budgeting_survey-17bvsph.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-libby-lindsay-2010-budget-time-cost
+  claim: The measured cost of the annual budget cycle, which is substantially lower than the figures the Beyond Budgeting literature quotes
+  value: median 6.0 weeks (Canada, n=102) and 10.0 weeks (US, n=77) for the firm; 3-4 weeks of an individual manager's year in both samples
+  wording: FIRM WEEKS Canadian sample (in weeks) 6.0 4.7 1 20 102 US sample (in weeks) 10.0 6.6 2 36 77 MANAGER TIME Canadian sample (in weeks) 3-4
+  source:
+    org: Libby and Lindsay
+    report: Beyond budgeting or budgeting reconsidered? A survey of North-American budgeting practice (Management Accounting Research 21), Table 3
+    edition: 2010
+    url: https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/8/36875/files/2016/12/Libby-Lindsay_budgeting_survey-17bvsph.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-beyond-budgeting-2023-rhythm-principle
+  claim: 'The Beyond Budgeting principle that speaks directly to cadence: organise the management calendar around the business, not around the year (STAKE: published by the movement that advocates it)'
+  value: n/a (stated principle)
+  wording: around business rhythms and events; not around the calendar year only
+  source:
+    org: Beyond Budgeting Institute
+    report: Beyond Budgeting at 25, white paper (dated 03.23 in the document; no bare year string appears in it)
+    edition: 2023
+    url: https://bbrt.org/wp-content/uploads/bb-white-paper.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-harkin-2016-monitoring-attainment-cadence
+  claim: 'Meta-analysis of randomised progress-monitoring interventions; the only strongly evidenced mechanic in the operating rhythm (CAVEAT: the corpus is dominated by individual health behaviours, not
+    team goals at work)'
+  value: 138 studies, N = 19,951; d+ = 0.40, 95% CI [0.32, 0.48] on goal attainment
+  wording: A random effects model revealed that, on average, interventions were successful at increasing the frequency of monitoring goal progress (d+ = 1.98, 95% CI [1.71, 2.24]) and promoted goal attainment (d+ = 0.40, 95% CI [0.32, 0.48]).
+  source:
+    org: Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran
+    report: Does Monitoring Goal Progress Promote Goal Attainment? A Meta-Analysis of the Experimental Evidence (Psychological Bulletin 142(2), 198-229)
+    edition: 2016
+    url: https://doi.org/10.1037/bul0000025
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-harkin-2016-moderators-cadence
+  claim: The two design features that strengthened the effect, which together specify what a weekly check-in has to do
+  value: reported or made public, and physically recorded
+  wording: progress monitoring had larger effects on goal attainment when the outcomes were reported or made public, and when the information was physically recorded
+  source:
+    org: Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn and Sheeran
+    report: Does Monitoring Goal Progress Promote Goal Attainment? A Meta-Analysis of the Experimental Evidence (Psychological Bulletin 142(2), 198-229)
+    edition: 2016
+    url: https://doi.org/10.1037/bul0000025
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-grove-1983-fifty-fifty
+  claim: Grove's actual prescription for goal difficulty, which is far more aggressive than the 70% convention attributed to him
+  value: a fifty-fifty chance of making them
+  wording: objectives should be set at a point high enough so that even if the individual (or organization) pushes himself hard, he will still only have a fifty-fifty chance of making them
+  source:
+    org: Andrew S. Grove
+    report: High Output Management (Random House), verified against the full text
+    edition: 1983
+    url: https://archive.org/details/dli.ernet.213936
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-sitkin-2011-stretch-most-seductive
+  claim: 'The central paradox of stretch goals: the organizations most drawn to them are the ones least able to absorb the risk'
+  value: n/a (theoretical conclusion)
+  wording: stretch goals are, paradoxically, most seductive for organizations that can least afford the risks associated with them
+  source:
+    org: Sitkin, See, Miller, Lawless and Carton
+    report: The Paradox of Stretch Goals (Academy of Management Review 36(3))
+    edition: 2011
+    url: https://journals.aom.org/doi/abs/10.5465/amr.2008.0038
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-sitkin-2011-attainment-probabilities
+  claim: 'Goal-setting theory''s operating definition of a challenging goal is roughly a 10% chance of attainment, and an academic stretch goal is near zero; the 70% used in practice matches neither literature
+    (NOTE: two-column source, the sentence interleaves; it reads ''we depart markedly from the focus in organizational behavior research on challenging goals, which have a nonzero (typically, 10 percent)
+    probability of attainment'')'
+  value: stretch goal ~0%; challenging goal ~10%
+  wording: nonzero (typically, 10 percent) probability of at
+  source:
+    org: Sitkin, See, Miller, Lawless and Carton
+    report: The Paradox of Stretch Goals (Academy of Management Review 36(3))
+    edition: 2011
+    url: https://journals.aom.org/doi/abs/10.5465/amr.2008.0038
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-ordonez-2009-complex-settings-harm
+  claim: Where the critics say goal setting does most damage, which is the setting most knowledge work occupies
+  value: n/a (qualitative)
+  wording: we argue that goals cause the most harm in complex, natural settings when outcomes are interdependent, monitoring is difficult, and cheating possible
+  source:
+    org: Ordonez, Schweitzer, Galinsky and Bazerman
+    report: Goals Gone Wild (Academy of Management Perspectives 23(1); HBS working paper 09-083)
+    edition: 2009
+    url: https://www.hbs.edu/ris/Publication%20Files/09-083.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-ordonez-2009-prescription-strength-oc
+  claim: The critics' own prescription, which is careful dosing rather than abstinence
+  value: n/a (qualitative)
+  wording: managers and scholars need to conceptualize goal setting as a prescription-strength medication that requires careful dosing, consideration of harmful side effects, and close supervision
+  source:
+    org: Ordonez, Schweitzer, Galinsky and Bazerman
+    report: Goals Gone Wild (Harvard Business School working paper 09-083; later published in Academy of Management Perspectives 23(1)). The saved copy is the working-paper draft and carries no year in
+      its own text
+    edition: 2009
+    url: https://www.hbs.edu/ris/Publication%20Files/09-083.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-locke-latham-2002-complexity-effect-sizes-oc
+  claim: Goal-setting effects weaken as task complexity rises, on both of the measures the authors report
+  value: d = .48 most complex vs .67 least complex for goal difficulty; .41 vs .77 for specific-difficult versus do-your-best
+  wording: goal difficulty effect sizes (d) of .48 for the most complex tasks versus .67 for the least complex tasks
+  source:
+    org: Locke and Latham
+    report: Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist 57(9))
+    edition: 2002
+    url: https://med.stanford.edu/content/dam/sm/s-spire/documents/PD.locke-and-latham-retrospective_Paper.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-butler-2023-middle-management-gap
+  claim: In the best available empirical study of goal frameworks in practice, most managers report they cannot do the translation the cascade depends on
+  value: more than 50% of managers; 512 survey responses plus 47 interviews in one large organization
+  wording: more than 50% of managers reported that they are not very effec
+  source:
+    org: Butler, Zimmermann and Bird (Microsoft)
+    report: Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; later published at ICSE SEIP 2024). Quotes verified against the arXiv preprint, which carries no date in its own
+      text
+    edition: 2023
+    url: https://arxiv.org/abs/2311.00236
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-butler-2023-hard-regardless-of-tools
+  claim: 'The same study''s conclusion on tooling (STAKE: the authors'' employer sold goal-setting software at the time, which cuts against this finding rather than for it)'
+  value: n/a (qualitative)
+  wording: tracking, measuring and setting goals is
+  source:
+    org: Butler, Zimmermann and Bird (Microsoft)
+    report: Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; later published at ICSE SEIP 2024). Quotes verified against the arXiv preprint, which carries no date in its own
+      text
+    edition: 2023
+    url: https://arxiv.org/abs/2311.00236
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-collins-porras-1996-ideology-without-statement
+  claim: 'The authors of the most-cited vision framework state that the written statement is not the thing itself (NOTE: two-column source, the sentence interleaves; it reads ''Don''t confuse core ideology
+    itself with core-ideology statements. A company can have a very strong core ideology without a formal statement.'')'
+  value: n/a (qualitative)
+  wording: strong core ideology without a formal statement
+  source:
+    org: Collins and Porras
+    report: Building Your Company's Vision (Harvard Business Review, September-October)
+    edition: 1996
+    url: https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-collins-porras-1996-not-wordsmithery
+  claim: The same authors on what the work of identifying values and purpose actually is
+  value: n/a (qualitative)
+  wording: not an exercise in wordsmithery
+  source:
+    org: Collins and Porras
+    report: Building Your Company's Vision (Harvard Business Review, September-October)
+    edition: 1996
+    url: https://www.cin.ufpe.br/~genesis/docpublicacoes/visao.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-rosenzweig-2007-halo-sources
+  claim: 'Why studies of visionary companies are contaminated: the underlying sources are themselves shaped by knowing which firms performed well'
+  value: n/a (methodological critique)
+  wording: relying on articles in the business press and on retrospective interviews, and you may well find that they're said to have strong cultures, solid values, and a commitment to excellence
+  source:
+    org: Phil Rosenzweig
+    report: 'Misunderstanding the Nature of Company Performance: The Halo Effect and Other Business Delusions (California Management Review 49(4))'
+    edition: 2007
+    url: https://cebma.org/assets/Uploads/Rosenzweig-2007.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-rosenzweig-2007-visionary-regressed
+  claim: What happened to the eighteen visionary companies after the study window closed
+  value: more than half failed to match the overall market over the next five years
+  wording: In the five years after the study ended, the performance of the 18 Visionary companies regressed sharply.
+  source:
+    org: Phil Rosenzweig
+    report: 'Misunderstanding the Nature of Company Performance: The Halo Effect and Other Business Delusions (California Management Review 49(4))'
+    edition: 2007
+    url: https://cebma.org/assets/Uploads/Rosenzweig-2007.pdf
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-hoshin-review-2022-years-to-mature
+  claim: Where this kind of system worked, it improved over years rather than cycles, which sets the realistic expectation for a team one or two cycles in
+  value: improvement over years, through five-year cycles
+  wording: implementation in large companies had been successful and improved over the years through 5-year cycles
+  source:
+    org: Pavlickova, Mojzisova and Pocsova
+    report: 'Hoshin Kanri Process: A Review and Bibliometric Analysis (Processes 10, 1854)'
+    edition: 2022
+    url: https://doi.org/10.3390/pr10091854
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24
+- id: ev-hoshin-review-2022-ownership-and-smes
+  claim: 'The binding constraint at smaller scale is who owns running the cycle, not the design of it: SMEs had the most serious problems, while the sector that succeeded had dedicated staff for the process'
+  value: n/a (qualitative, from 42 companies across 26 studies)
+  wording: The healthcare area was very successful in the implementations of Hoshin Kanri due to having permanent employees overseeing the entire process.
+  source:
+    org: Pavlickova, Mojzisova and Pocsova
+    report: 'Hoshin Kanri Process: A Review and Bibliometric Analysis (Processes 10, 1854)'
+    edition: 2022
+    url: https://doi.org/10.3390/pr10091854
+    pdf_hash: null
+  verified: 2026-09-24
+  status: primary
+  expires: 2027-09-24

@@ -104,6 +104,13 @@ Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to u
   number is still cited and verified. The first one asks
   [Why Your AI Gives Three Different Answers](/research-notes/why-your-ai-gives-three-different-answers.md).
 
+- **[Operating Cadence](/operating-cadence/index.md)** — how an organization sets direction and
+  keeps it moving across a year: mission, vision, strategy, company goals, team goals, and the
+  weekly loop. Every layer is graded by what the evidence actually supports, what is inherited
+  convention, and what is folklore with no traceable source. The first page,
+  [How the Planning Stack Fits Together](/operating-cadence/how-the-planning-stack-fits.md), asks
+  which of those layers earn their place at all.
+
 ## Where to start
 
 - **New here?** Read [What OKF Is](/open-knowledge-format/what-okf-is.md) — the open format everything here is built on, in a five-minute read.

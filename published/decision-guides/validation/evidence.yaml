@@ -1337,3 +1337,276 @@
   verified: 2026-09-19
   status: secondary-mirror
   expires: 2027-09-19
+- id: ev-snowflake-2026-no-context-baseline-dg
+  claim: "Snowflake's own measured baseline for agent accuracy on its own internal data with no context layer, which lands in the same range as the independent enterprise benchmark. NOTE: Snowflake also cites an Anthropic figure of 21% here; that link could not be reached and what Anthropic measured is NOT verified, so it is deliberately left out of the page"
+  value: "around 25% accuracy with no context layer"
+  wording: "Our data team found that without any context layer, AI had around 25% accuracy"
+  source:
+    org: "Snowflake (Agarwal, Vadrevu, Samdani and Richards)"
+    report: "Introducing Cortex Sense: Grounded Context for the Data You Never Modeled, Snowflake blog, 30 June 2026"
+    edition: 2026
+    url: https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2026-baseline-task-shape-dg
+  claim: "What the baseline questions actually required, which is what makes the low number meaningful rather than a strawman"
+  value: "cross-table joins, metric formula lookups, filter convention knowledge"
+  wording: "we evaluated agents on product analytics questions on Snowflake's internal data requiring cross-table joins, metric formula lookups and filter convention knowledge"
+  source:
+    org: "Snowflake (Agarwal, Vadrevu, Samdani and Richards)"
+    report: "Introducing Cortex Sense: Grounded Context for the Data You Never Modeled, Snowflake blog, 30 June 2026"
+    edition: 2026
+    url: https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2026-context-layer-lift-dg
+  claim: "The size of the lift Snowflake attributes to its managed context layer on its own benchmark (STAKE: vendor measuring its own product; disclosed by Snowflake as internal)"
+  value: "24.1% to 86.3%"
+  wording: "Cortex Sense improved accuracy from 24.1% to 86.3% on our benchmark."
+  source:
+    org: "Snowflake (Agarwal, Vadrevu, Samdani and Richards)"
+    report: "Introducing Cortex Sense: Grounded Context for the Data You Never Modeled, Snowflake blog, 30 June 2026. NOTE: this figure comes from a SECOND, harder benchmark (a set of hard questions), not the baseline evaluation that produced the around-25% figure; the 24.1% arm is vanilla CoCo WITH semantic-view retrieval available, not a no-context-layer condition"
+    edition: 2026
+    url: https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2026-internal-disclosure-dg
+  claim: "Snowflake's own disclosure that the figures are internal, which is what makes the claim checkable rather than hidden"
+  value: "stated in the post"
+  wording: "Based on internal test results and cost calculations in June 2026."
+  source:
+    org: "Snowflake (Agarwal, Vadrevu, Samdani and Richards)"
+    report: "Introducing Cortex Sense: Grounded Context for the Data You Never Modeled, Snowflake blog, 30 June 2026"
+    edition: 2026
+    url: https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2026-self-building-claim-dg
+  claim: "The specific 2026 claim an operator should test, that the context layer no longer has to be authored by hand"
+  value: "a single day; no semantic views to author"
+  wording: "Standing up Cortex Sense took a single day rather than the months these projects usually run, since there is no consulting engagement or manual build to wait on. Because there are no new semantic views to author, you just connect to sources and go without having to spend days on curation."
+  source:
+    org: "Snowflake (Agarwal, Vadrevu, Samdani and Richards)"
+    report: "Introducing Cortex Sense: Grounded Context for the Data You Never Modeled, Snowflake blog, 30 June 2026"
+    edition: 2026
+    url: https://www.snowflake.com/en/blog/enterprise-ai-agents-grounded-context/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2024-headline-accuracy-dg
+  claim: "The headline accuracy figure that travels, and the fact that it is stated as requiring a semantic model"
+  value: "90%+ SQL accuracy"
+  wording: "an agentic AI system, coupled with a semantic model to achieve an impressive 90%+ SQL accuracy on real-world use cases"
+  source:
+    org: "Snowflake (Renee Huang)"
+    report: "Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy for Real-World BI, Snowflake engineering blog, 29 August 2024"
+    edition: 2024
+    url: https://www.snowflake.com/en/engineering-blog/cortex-analyst-text-to-sql-accuracy-bi/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2024-internal-suite-dg
+  claim: "The benchmark behind the headline figure is the vendor's own, and the vendor says so plainly"
+  value: "internal suite, 150 questions"
+  wording: "we developed an internal benchmark suite of 150 questions that mirror the real-world tasks business users encounter"
+  source:
+    org: "Snowflake (Renee Huang)"
+    report: "Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy for Real-World BI, Snowflake engineering blog, 29 August 2024"
+    edition: 2024
+    url: https://www.snowflake.com/en/engineering-blog/cortex-analyst-text-to-sql-accuracy-bi/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2024-lenient-scoring-dg
+  claim: "The scoring rule behind the headline figure: the vendor deliberately chose a looser test than strict execution accuracy, and explains why"
+  value: "precision and recall for column matching, more lenient threshold"
+  wording: "Instead of requiring an exact match with the gold query, we calculate precision and recall for column matching, setting a more lenient threshold to judge accuracy."
+  source:
+    org: "Snowflake (Renee Huang)"
+    report: "Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy for Real-World BI, Snowflake engineering blog, 29 August 2024"
+    edition: 2024
+    url: https://www.snowflake.com/en/engineering-blog/cortex-analyst-text-to-sql-accuracy-bi/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-snowflake-2024-curated-tables-dg
+  claim: "The table shape the headline figure was measured on, which is not the shape of a raw warehouse"
+  value: "curated BI tables, flattened and wide"
+  wording: "curated BI tables are typically structured with clear distinctions between dimensions, time dimensions and measures. This often results in a flattened, wide table"
+  source:
+    org: "Snowflake (Renee Huang)"
+    report: "Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy for Real-World BI, Snowflake engineering blog, 29 August 2024"
+    edition: 2024
+    url: https://www.snowflake.com/en/engineering-blog/cortex-analyst-text-to-sql-accuracy-bi/
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-badger-2026-benchmark-production-gap-dg
+  claim: "An industry paper stating the gap between controlled benchmark scores and deployed reliability (STAKE: Merkle Analytics sells enterprise analytics implementation, so framing the gap as an implementation problem serves its business)"
+  value: "exceed 90% on controlled benchmarks; persistent gap in the field"
+  wording: "state-of-the-art systems now exceed 90% execution accuracy on controlled benchmarks"
+  source:
+    org: "Serrao, Chatterjee, Strori, Sharma and Miller (Merkle Analytics)"
+    report: "BADGER: Bridging Agentic and Deterministic Evaluation for Generative Enterprise Reasoning"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.02109
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-badger-2026-practitioner-gap-dg
+  claim: "The same paper's statement of what practitioners report after deployment"
+  value: "a persistent gap between benchmark scores and real-world reliability"
+  wording: "Yet practitioners deploying these systems report a persistent gap between benchmark scores and real-world reliability"
+  source:
+    org: "Serrao, Chatterjee, Strori, Sharma and Miller (Merkle Analytics)"
+    report: "BADGER: Bridging Agentic and Deterministic Evaluation for Generative Enterprise Reasoning"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.02109
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-badger-2026-ex-false-negatives-dg
+  claim: "The direction of execution accuracy's error: it rejects correct queries. This is why a LOW execution-accuracy score is a floor rather than an inflated figure, and it is the check that stopped this page treating one instrument as both too strict and too loose"
+  value: "42.4-45.6% false negative rates across six external frameworks"
+  wording: "False negative rates are high for most baselines (42.4-45.6%): these frameworks reject roughly half of queries that human experts consider correct."
+  source:
+    org: "Serrao, Chatterjee, Strori, Sharma and Miller (Merkle Analytics)"
+    report: "BADGER: Bridging Agentic and Deterministic Evaluation for Generative Enterprise Reasoning, section 6"
+    edition: 2026
+    url: https://arxiv.org/abs/2606.02109
+    pdf_hash:
+  verified: 2026-09-29
+  status: primary
+  expires: 2027-09-29
+- id: ev-beaver-2026-enterprise-accuracy-dg
+  claim: "On a benchmark built from real private enterprise warehouses, a state-of-the-art agentic text-to-SQL framework on GPT-5.2 reaches 10.8% execution accuracy, rising to 30.1% when handed human annotations of every subtask [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "10.8%; 30.1% with all subtask annotations as oracle hints"
+  wording: "Our evaluation reveals a significant performance gap compared to existing benchmarks: SOTA agentic frameworks using the advanced model GPT-5.2 achieve only 10.8% accuracy. When provided with all subtask annotations as oracle hints, accuracy increases to 30.1%, confirming that a major bottleneck lies in correctly resolving these subtasks."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026, abstract. These are the abstract's GPT-5.2 figures. The paper's own strongest end-to-end result is 11.4% (ReFoRCE with Claude-4.5-Sonnet, section 5.3 and Table 4), so 10.8% is not the maximum observed"
+    url: https://arxiv.org/abs/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-beaver-2026-annotation-ladder-dg
+  claim: "Averaged across models, supplying schema meaning roughly doubles execution accuracy on real enterprise warehouses, and supplying the query plan as well raises it again, with most questions still wrong [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "Strongest framework (ReFoRCE), averaged across all models: 9.5% with no annotations, 18.9% with schema-linking annotations only, 25.9% with annotations of all subtasks"
+  wording: "Table 6: Avg. execution accuracy and subtask performance in end-to-end setting and with subtask annotations across all models."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026, Table 6 of the PDF, Execution Accuracy column, ReFoRCE row of each setting. Other frameworks are lower in every setting (Setting 2: Few-shot 23.1, DIN-SQL 13.9, DAIL-SQL 11.2)"
+    url: https://arxiv.org/pdf/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-beaver-2026-benchmark-scale-dg
+  claim: "Scale and provenance of the BEAVER enterprise text-to-SQL benchmark [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "9128 question-SQL pairs; 812 tables; 19 domains"
+  wording: "It comprises 9128 question-SQL pairs sourced from real-world query logs and 812 tables across 19 diverse domains."
+  source:
+    org: "Chen, Yang, Li, Wenz, Zhang, Tatbul, Cafarella, Demiralp, Stonebraker (MIT, Harvard, TU Munich, Greenshoe, Intel, AWS AI)"
+    report: "BEAVER: An Enterprise Benchmark for Text-to-SQL"
+    edition: "arXiv:2409.02038v3, 13 May 2026"
+    url: https://arxiv.org/abs/2409.02038v3
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-motherduck-2026-schema-conditional-dg
+  claim: "The same test found schema annotation helps most where names are cryptic and hurts where they are already intuitive [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "+8.7pp on the hardest schema; -2.9pp on the easiest"
+  wording: "Comments help when the schema is genuinely confusing. debit_card_specializing (try to guess what that schema looks like) got the biggest boost. But schemas with intuitive names and obvious relationships? Comments made things worse. The models had already formed a correct mental model, and the comments introduced noise."
+  source:
+    org: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+    report: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    edition: "2026-02-06; per-database breakdown blended across train and test"
+    url: https://motherduck.com/blog/bird-bench-and-data-models/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-motherduck-2026-harness-caveat-dg
+  claim: "The author's own stated caveat about the evaluation harness behind these figures [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "n/a (qualitative)"
+  wording: "heavily vibe-coded, so YMMV, but the data is real and I've looked at all of it."
+  source:
+    org: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+    report: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    edition: "2026-02-06, methodology footer"
+    url: https://motherduck.com/blog/bird-bench-and-data-models/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-cube-2026-semantic-layer-delta-dg
+  claim: "A semantic-layer vendor's paired benchmark found supplying business definitions raised text-to-SQL accuracy by 17 to 23 percentage points across three frontier models [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "+17.2 / +22.2 / +23.2 percentage points"
+  wording: "Adding the semantic layer improves accuracy by +17 to +23 percentage points across all three models."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28; 100 natural-language questions over the Cleaned Contoso Retail Dataset in ClickHouse; paper arXiv:2604.25149"
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-cube-2026-markdown-treatment-dg
+  claim: "What the vendor's benchmark actually supplied as the treatment was a hand-written markdown document pasted into the prompt, with no platform or runtime involved [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "4 KB markdown document"
+  wording: "hand-authored markdown document describing the dataset's measures, conventions, and disambiguation rules. No code, no runtime, no tool calls. Just the document, pasted into the prompt."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28, description of the treatment condition"
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-cube-2026-analyst-afternoon-dg
+  claim: "The vendor states the size of the document that produced its accuracy gain, and the effort it represents [reused from the research-notes bundle; ids are globally unique so this carries a new id with the original verified wording and date]"
+  value: "4 KB; an afternoon of an analyst's time"
+  wording: "The markdown we used was 4 KB — an afternoon of an analyst's time. But it has to capture what your metrics actually mean."
+  source:
+    org: "Michael Rumiantsau, VP of Product at Cube (sells a semantic layer)"
+    report: "Why semantic layers make LLM analytics reliable: a paired benchmark across three frontier models"
+    edition: "2026-04-28, section \"Why this matters\""
+    url: https://cube.dev/blog/why-semantic-layers-make-llm-analytics-reliable-a-paired-benchmark-across-three-frontier-models
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17
+- id: ev-motherduck-2026-method-dg
+  claim: "A paired test by a warehouse vendor found adding column comments to every table moved text-to-SQL accuracy by about a point at most [reused from the research-notes bundle with a new id; carries the question count and the scoring caveat the guide relies on]"
+  value: "+1.1pp (train), +0.2pp (test)"
+  wording: "In BIRD benchmark testing, adding column comments to schemas improved accuracy by just 1.1 percentage points on the training set and 0.2 on the test set. Comments helped only when schemas were genuinely confusing (like a database called \"debit_card_specializing\"), but actually hurt performance on schemas with intuitive names."
+  source:
+    org: "Jacob Matson, MotherDuck (sells a data warehouse; argues for data modeling over metadata platforms)"
+    report: "Does \"AI-Ready Data\" simply mean \"Good Data Modeling\"?"
+    edition: "2026-02-06; BIRD Mini-Dev, 500 questions, 11 databases, three frontier models; accuracy under the author's own LLM-judge scoring, not strict BIRD execution accuracy"
+    url: https://motherduck.com/blog/bird-bench-and-data-models/
+    pdf_hash:
+  verified: 2026-09-17
+  status: primary
+  expires: 2027-03-17

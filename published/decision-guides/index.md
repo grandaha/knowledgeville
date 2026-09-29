@@ -18,6 +18,7 @@ all share, or go straight to [Build vs. Buy](/decision-guides/build-vs-buy.md).
 | Page | Last updated |
 | --- | --- |
 | [How These Guides Work](how-these-guides-work.md)<br>What every decision guide contains, how to read it, and how to use one with your AI assistant. | Updated 2026-07-01 |
+| [Before You Buy AI for Your Warehouse](before-you-buy-ai-for-your-warehouse.md)<br>How to find out whether AI can answer questions about your own data, in about two weeks, instead of deciding from a vendor benchmark. | Updated 2026-09-29 |
 | [Build vs. Buy](build-vs-buy.md)<br>How to decide whether to build a capability yourself or buy it off the shelf — the options, the tradeoffs, and when each one wins. | Updated 2026-07-05 |
 | [Does This Need a Language Model?](does-this-need-a-language-model.md)<br>How to choose what makes a recurring automated decision: a rule, a trained classifier, a language model, or two working together. | Updated 2026-09-19 |
 | [Keeping What Your AI Knows True](keeping-what-your-ai-knows-true.md)<br>How to keep the knowledge your AI acts on current, owned, and safe, with the right maintenance approach for each kind. | Updated 2026-09-13 |

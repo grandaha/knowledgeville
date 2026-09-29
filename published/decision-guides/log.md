@@ -1,5 +1,21 @@
 # Change log — Decision Guides
 
+## 2026-09-29
+
+* **Creation**: [Before You Buy AI for Your Warehouse](/decision-guides/before-you-buy-ai-for-your-warehouse.md)
+  a guide for an operator who already owns a warehouse and has a vendor pitch in front of them. It does
+  not rank platforms. It sets out a five-step test, costed across two weeks, for finding out what the
+  technology does on your own tables. The central finding is that two unassisted measurements, one from
+  a platform vendor on its own data and one from an academic benchmark built on real private warehouses,
+  differ from each other by more than a factor of two. That spread is the argument for measuring your own
+  warehouse rather than trusting anyone's published figure. Those two measurements are themselves not
+  strictly comparable, which the guide states rather than smooths over: different systems, different
+  questions and different scoring, with one an average across seven models and the other a single
+  measurement. The guide also sets the pass mark before the test rather than after, because a score with
+  no pre-agreed meaning is read by whoever most wants a particular outcome. The test holds ten of the
+  twenty questions back, so the definitions written partway through are not scored on the questions that
+  shaped them, and it states plainly that twenty questions is a coarse sample.
+
 ## 2026-09-19
 
 * **Creation**: new guide, [Does This Need a Language Model?](/decision-guides/does-this-need-a-language-model.md):

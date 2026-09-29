@@ -277,7 +277,7 @@
   expires: 2027-09-24
 - id: ev-libby-lindsay-2010-budget-time-cost
   claim: The measured cost of the annual budget cycle, which is substantially lower than the figures the Beyond Budgeting literature quotes
-  value: median 6.0 weeks (Canada, n=102) and 10.0 weeks (US, n=77) for the firm; 3-4 weeks of an individual manager's year in both samples
+  value: median 6.0 weeks (Canada, n=102) and 10.0 weeks (US, n=77) for the BUSINESS UNIT, not the whole firm (the variable is named FIRM WEEKS but the question asked how long the process takes "in their business unit"); 3-4 weeks of an individual manager's year in both samples
   wording: FIRM WEEKS Canadian sample (in weeks) 6.0 4.7 1 20 102 US sample (in weeks) 10.0 6.6 2 36 77 MANAGER TIME Canadian sample (in weeks) 3-4
   source:
     org: Libby and Lindsay
@@ -415,7 +415,7 @@
   wording: more than 50% of managers reported that they are not very effec
   source:
     org: Butler, Zimmermann and Bird (Microsoft)
-    report: Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; later published at ICSE SEIP 2024). Quotes verified against the arXiv preprint, which carries no date in its own
+    report: Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; listed in the ICSE 2024 programme among the authors' contributions; the specific track is unconfirmed). Quotes verified against the arXiv preprint, which carries no date in its own
       text
     edition: 2023
     url: https://arxiv.org/abs/2311.00236
@@ -429,7 +429,7 @@
   wording: tracking, measuring and setting goals is
   source:
     org: Butler, Zimmermann and Bird (Microsoft)
-    report: Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; later published at ICSE SEIP 2024). Quotes verified against the arXiv preprint, which carries no date in its own
+    report: Objectives and Key Results in Software Teams (arXiv:2311.00236, November 2023; listed in the ICSE 2024 programme among the authors' contributions; the specific track is unconfirmed). Quotes verified against the arXiv preprint, which carries no date in its own
       text
     edition: 2023
     url: https://arxiv.org/abs/2311.00236

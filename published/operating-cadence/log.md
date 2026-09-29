@@ -1,5 +1,15 @@
 # Change log — Operating Cadence
 
+## 2026-09-27
+
+* **Update**: the budget-cycle entry behind [The Planning Year](/operating-cadence/the-planning-year.md)
+  records the correct unit of analysis. The survey variable is named FIRM WEEKS, but the question asked
+  how long the process takes in the respondent's business unit. The page already said business unit; the
+  provenance record said firm, and would have carried that error into any reuse.
+* **Update**: the two entries for the software-teams OKR study no longer claim publication at a named
+  conference track. The paper is listed in the ICSE 2024 programme, which is confirmed, but the track is
+  not. Quotes remain verified against the preprint, which is what they were always checked against.
+
 ## 2026-09-25
 
 * **Update**: [How the Planning Stack Fits Together](/operating-cadence/how-the-planning-stack-fits.md)

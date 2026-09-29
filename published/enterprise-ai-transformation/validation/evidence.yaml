@@ -3602,7 +3602,7 @@
     pdf_hash:
   verified: 2026-07-06
   status: primary
-  expires: 2026-09-06
+  expires: 2027-09-27
 
 - id: ev-mcp-spec-2025-06-18-primitives
   claim: "the exact set of primitives MCP standardizes between clients and servers"

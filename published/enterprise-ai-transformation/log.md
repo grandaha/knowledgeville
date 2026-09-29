@@ -1,5 +1,11 @@
 # Update Log
 
+## 2026-09-27
+
+* **Update**: re-verified the executive-course faculty entry against the live course page. The six named
+  instructors, the two DAIN Studios co-founder chief executives among them, and the framework's place as
+  the course backbone all still hold, so the entry is renewed rather than superseded.
+
 ## 2026-09-19
 
 * **Correction**: the bundle described the US regulatory position for AI in a way that a US

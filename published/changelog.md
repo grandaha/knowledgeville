@@ -14,10 +14,16 @@ This page records how this knowledge base has changed over time — new and expa
 ## v13.1.0 — 2026-09-29
 
 ### New & expanded content
-* Before You Buy AI for Your Warehouse
+
+* **[Before You Buy AI for Your Warehouse](https://knowledge.onesteplabs.com/decision-guides/before-you-buy-ai-for-your-warehouse/)** — a new Decision guide for an operator who already owns a data warehouse and has a vendor pitch in front of them. It does not rank platforms. It sets out a five-step test, costed across two weeks, for finding out what the technology does on your own tables.
+
+  The finding it is built on: two unassisted measurements, one published by a platform vendor about its own data and one from an academic benchmark built from real private warehouses, differ from each other by more than a factor of two. Those two are not strictly comparable either, which the guide states rather than smooths over. Once the system, the questions and the scoring all move, no published figure describes your situation.
+
+  The guide also sets the pass mark before the test rather than after, holds ten of its twenty questions back so the definitions written partway through are not scored on the questions that shaped them, and says plainly that twenty questions is a coarse sample.
 
 ### Citation corrections
-* Fix a scope error, an unverified venue, and an expired entry
+
+* **[The Planning Year](https://knowledge.onesteplabs.com/operating-cadence/the-planning-year/)** and **[Running It When It Is Already Broken](https://knowledge.onesteplabs.com/operating-cadence/running-it-when-its-broken/)** — two source records corrected. A budget-cycle figure is recorded against the business unit the survey actually asked about rather than the whole firm, and the software-teams OKR study is no longer credited to a conference track that could not be confirmed. Quotes remain verified against the preprint they were always checked against.
 
 ## v13.0.0 — 2026-09-26
 
